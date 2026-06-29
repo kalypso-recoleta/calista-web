@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { whatsappLink } from '../lib/whatsapp';
+import { site } from '../lib/site';
+---
+
+<Layout
+  title="Nuestra historia"
+  description="Más de una década de trabajo inmobiliario honesto en Asunción."
+>
+  <section class="section">
+    <div class="container narrow">
+      <p class="eyebrow">Quiénes somos</p>
+      <h1>Una inmobiliaria que se construyó sobre la confianza.</h1>
+
+      <p class="lead">
+        Calista nació en Asunción hace más de diez años, con una idea simple:
+        tratar cada propiedad y cada cliente como si fueran propios.
+      </p>
+
+      <div class="prose">
+        <p>
+          En todo este tiempo acompañamos a familias que compraron su primera
+          casa, a propietarios que confiaron en nosotros para vender o alquilar,
+          y a inversores que buscaban crecer con criterio. No trabajamos con
+          volumen ni con apuro: trabajamos con personas.
+        </p>
+
+        <h2>En qué creemos</h2>
+        <p>
+          Conocemos bien el mercado paraguayo, también sus zonas grises. Por eso
+          elegimos hacer las cosas de otra manera. Cuando un cliente del
+          exterior se acerca, lo asesoramos con la misma honestidad que a
+          cualquiera: explicamos el proceso y lo derivamos a profesionales
+          legales <strong>independientes</strong> para escrituras, residencia y
+          trámites. Nunca atamos un servicio a otro ni usamos los trámites como
+          excusa para empujar una propiedad.
+        </p>
+        <p>
+          Nuestra reputación se construyó recomendación por recomendación. Eso
+          es lo que más cuidamos.
+        </p>
+
+        <h2>Cómo te acompañamos</h2>
+        <p>
+          Desde la primera consulta hasta la firma, hablás siempre con una
+          persona. Visitamos cada propiedad, conocemos a los propietarios y te
+          contamos lo bueno y lo no tan bueno de cada zona. Si algo no te
+          conviene, te lo decimos.
+        </p>
+      </div>
+
+      <div class="cta">
+        <a href="/comprar" class="btn btn--primary">Ver propiedades</a>
+        <WhatsAppButton
+          href={whatsappLink('Hola Calista, me gustaría conocerlos mejor.')}
+          label="Conversar"
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .narrow {
+    max-width: 760px;
+  }
+  .prose {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+  }
+  .prose h2 {
+    margin-top: 2.2rem;
+  }
+  .prose strong {
+    color: var(--brand);
+  }
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+  }
+</style>

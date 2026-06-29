@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Sin imagen">
+  <rect width="640" height="440" fill="#f3e7fb"/>
+  <g fill="none" stroke="#c9a0e8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M320 150 L420 230 L420 320 L220 320 L220 230 Z"/>
+    <path d="M260 320 L260 260 L300 260 L300 320"/>
+  </g>
+  <text x="320" y="370" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#9020c6">Calista</text>
+</svg>

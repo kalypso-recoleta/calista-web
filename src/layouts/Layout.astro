@@ -1,0 +1,116 @@
+---
+import { site } from '../lib/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string; // URL absolue pour l'aperçu de partage
+}
+
+const {
+  title,
+  description = site.lema,
+  image,
+} = Astro.props;
+
+const pageTitle = title ? `${title} · ${site.nombre}` : site.nombre;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = image
+  ? new URL(image, Astro.site).toString()
+  : new URL('/og-default.png', Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+
+    <!-- Aperçu de partage (WhatsApp, réseaux) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.nombre} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Polices : Fraunces (display) + Hanken Grotesk (texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Active les animations seulement si le navigateur le permet -->
+    <script is:inline>
+      if (
+        'IntersectionObserver' in window &&
+        !matchMedia('(prefers-reduced-motion: reduce)').matches
+      ) {
+        document.documentElement.classList.add('anim');
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+    <Header />
+    <main id="contenido">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Révélation au scroll
+      const SEL =
+        '.hero-text, .hero-media, .cats > .cat, .row-head, .cab, .grid-biens > *, .porque-intro, .valores > li, .testimonios > .testi, .pasos > li, .incluye > li, .prop-band, .cierre, .gallery, .specs, .cta-card';
+      try {
+        if (
+          document.documentElement.classList.contains('anim') &&
+          'IntersectionObserver' in window
+        ) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const e of entries) {
+                if (e.isIntersecting) {
+                  e.target.classList.add('is-visible');
+                  io.unobserve(e.target);
+                }
+              }
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+          );
+          document.querySelectorAll(SEL).forEach((el) => io.observe(el));
+        }
+      } catch {
+        // En cas de souci, on révèle tout (rien ne reste caché)
+        document.documentElement.classList.remove('anim');
+      }
+    </script>
+
+    <style>
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: 0;
+        background: var(--brand);
+        color: #fff;
+        padding: 0.6rem 1rem;
+        z-index: 100;
+        border-radius: 0 0 8px 0;
+      }
+      .skip-link:focus {
+        left: 0;
+      }
+    </style>
+  </body>
+</html>

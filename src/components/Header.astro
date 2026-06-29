@@ -1,0 +1,175 @@
+---
+import { site } from '../lib/site';
+import { whatsappLink } from '../lib/whatsapp';
+
+const nav = [
+  { href: '/comprar', label: 'Comprar' },
+  { href: '/alquilar', label: 'Alquilar' },
+  { href: '/desarrollos', label: 'Desarrollos' },
+  { href: '/terrenos', label: 'Terrenos' },
+  { href: '/exclusivos', label: 'Exclusivos' },
+  { href: '/propietarios', label: 'Propietarios' },
+  { href: '/resenas', label: 'Reseñas' },
+];
+
+const path = Astro.url.pathname;
+const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a href="/" class="brand" aria-label={`${site.nombre} — inicio`}>
+      <img src="/logo-calista.png" alt={site.nombre} class="logo" width="180" height="76" />
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'nav-link',
+              { active: path === item.href || path.startsWith(item.href + '/') },
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="actions">
+      <a href={wa} class="btn btn--primary header-cta" target="_blank" rel="noopener">
+        Contactar
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Móvil" hidden>
+    {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+    <a href="/contacto">Contacto</a>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 86%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: 72px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    color: var(--ink);
+  }
+  .brand:hover {
+    text-decoration: none;
+  }
+  .logo {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
+  .nav {
+    display: flex;
+    gap: 0.35rem;
+    margin-inline: auto;
+  }
+  .nav-link {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 0.96rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    position: relative;
+  }
+  .nav-link:hover {
+    text-decoration: none;
+    background: var(--violet-soft);
+  }
+  .nav-link.active {
+    color: var(--brand);
+  }
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.15rem;
+    height: 2px;
+    background: var(--violet);
+    border-radius: 2px;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: transform 0.2s;
+  }
+  .mobile-nav {
+    flex-direction: column;
+    padding: 0.5rem var(--gutter) 1rem;
+    border-top: 1px solid var(--line);
+  }
+  .mobile-nav[hidden] {
+    display: none;
+  }
+  .mobile-nav a {
+    color: var(--ink);
+    padding: 0.7rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+    font-weight: 500;
+  }
+
+  @media (max-width: 880px) {
+    .nav,
+    .header-cta {
+      display: none;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+    .mobile-nav:not([hidden]) {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const mobile = document.querySelector('.mobile-nav');
+  toggle?.addEventListener('click', () => {
+    const open = mobile?.hasAttribute('hidden');
+    if (open) mobile?.removeAttribute('hidden');
+    else mobile?.setAttribute('hidden', '');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+</script>

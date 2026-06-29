@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ListadoBiens from '../components/ListadoBiens.astro';
+
+const biens = (await getCollection('biens'))
+  .filter((b) => b.data.desarrollo)
+  .sort((a, b) => +b.data.fecha - +a.data.fecha);
+---
+
+<Layout title="Nuevos desarrollos" description="Departamentos en pozo y proyectos en construcción, con financiación directa.">
+  <ListadoBiens
+    eyebrow="En pozo"
+    titulo="Nuevos desarrollos"
+    intro="Proyectos en construcción y unidades en pozo. Comprar en esta etapa suele significar un mejor precio y planes de pago durante la obra."
+    biens={biens}
+    mostrarBanos={false}
+  />
+</Layout>

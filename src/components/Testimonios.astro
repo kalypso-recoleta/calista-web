@@ -1,0 +1,92 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  resenas: CollectionEntry<'resenas'>[];
+}
+const { resenas } = Astro.props;
+---
+
+<div class="testimonios">
+  {
+    resenas.map((r) => (
+      <figure class="testi">
+        <div class="estrellas" aria-label={`${r.data.estrellas} de 5`}>
+          {Array.from({ length: 5 }).map((_, i) => (
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill={i < r.data.estrellas ? 'currentColor' : 'none'}
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7L2.2 9l6.9-.7z" />
+            </svg>
+          ))}
+        </div>
+        <blockquote>{r.data.texto}</blockquote>
+        <figcaption>
+          <span class="nombre">{r.data.nombre}</span>
+          {r.data.contexto && <span class="contexto">{r.data.contexto}</span>}
+        </figcaption>
+      </figure>
+    ))
+  }
+</div>
+
+<style>
+  .testimonios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(1.2rem, 3vw, 1.8rem);
+  }
+  .testi {
+    margin: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .estrellas {
+    display: flex;
+    gap: 2px;
+    color: var(--violet);
+  }
+  blockquote {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  blockquote::before {
+    content: '“';
+    color: var(--violet);
+  }
+  blockquote::after {
+    content: '”';
+    color: var(--violet);
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .nombre {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .contexto {
+    font-size: 0.83rem;
+    color: var(--muted);
+  }
+</style>

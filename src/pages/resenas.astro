@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Testimonios from '../components/Testimonios.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { whatsappLink } from '../lib/whatsapp';
+
+const resenas = (await getCollection('resenas')).sort(
+  (a, b) => +b.data.fecha - +a.data.fecha
+);
+---
+
+<Layout
+  title="Reseñas"
+  description="Lo que dicen quienes ya compraron, vendieron o alquilaron con Calista."
+>
+  <section class="section">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">Reseñas</p>
+        <h1>Lo que dicen nuestros clientes.</h1>
+        <p class="lead">
+          Nuestra mejor carta de presentación son las personas que ya confiaron
+          en nosotros. Esto es lo que cuentan.
+        </p>
+      </header>
+
+      {
+        resenas.length > 0 ? (
+          <Testimonios resenas={resenas} />
+        ) : (
+          <p class="lead">Pronto vas a ver acá las experiencias de nuestros clientes.</p>
+        )
+      }
+
+      <div class="cta">
+        <WhatsAppButton
+          href={whatsappLink('Hola Calista, quisiera hacer una consulta.')}
+          label="Quiero trabajar con ustedes"
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cab {
+    max-width: 60ch;
+    margin-bottom: 2.2rem;
+  }
+  .cab h1 {
+    margin-bottom: 0.4rem;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+</style>

@@ -1,0 +1,107 @@
+---
+import { parseUbicacion } from '../lib/geo';
+import { site } from '../lib/site';
+
+interface Props {
+  ubicacion?: string;
+  zona?: string; // libellé affiché (ex. "Villa Morra, Asunción")
+}
+const { ubicacion, zona } = Astro.props;
+const punto = parseUbicacion(ubicacion) ?? site.mapaCentro;
+const hayPunto = parseUbicacion(ubicacion) !== null;
+---
+
+<div class="mapa-wrap">
+  <div
+    id="mapa"
+    data-lat={punto.lat}
+    data-lng={punto.lng}
+    data-aprox={hayPunto ? '1' : '0'}
+    role="img"
+    aria-label={`Ubicación aproximada${zona ? ` en ${zona}` : ''}`}
+  >
+  </div>
+  <p class="nota">
+    📍 Ubicación aproximada{zona ? ` — ${zona}` : ''}. La dirección exacta se
+    comparte al coordinar una visita.
+  </p>
+</div>
+
+<!-- Leaflet + OpenStreetMap : gratuit, sin clave API ni tarjeta -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+
+<style>
+  .mapa-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #mapa {
+    height: 340px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--violet-soft);
+    z-index: 0;
+  }
+  .nota {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+</style>
+
+<script>
+  // @ts-nocheck
+  function initMapa() {
+    const el = document.getElementById('mapa');
+    if (!el || el.dataset.ready) return;
+    el.dataset.ready = '1';
+
+    const lat = parseFloat(el.dataset.lat);
+    const lng = parseFloat(el.dataset.lng);
+    const aprox = el.dataset.aprox === '1';
+
+    const map = L.map(el, { scrollWheelZoom: false, zoomControl: true }).setView(
+      [lat, lng],
+      aprox ? 15 : 12
+    );
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Cercle "approximatif" plutôt qu'un pin précis : signature visuelle
+    // + confidentialité de l'adresse exacte.
+    if (aprox) {
+      L.circle([lat, lng], {
+        radius: 320,
+        color: '#9020c6',
+        weight: 2,
+        fillColor: '#9020c6',
+        fillOpacity: 0.14,
+      }).addTo(map);
+    }
+  }
+
+  function loadLeaflet() {
+    if (window.L) return initMapa();
+    const s = document.createElement('script');
+    s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    s.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+    s.crossOrigin = '';
+    s.onload = initMapa;
+    document.head.appendChild(s);
+  }
+
+  loadLeaflet();
+  document.addEventListener('astro:after-swap', () => {
+    delete document.getElementById('mapa')?.dataset.ready;
+    loadLeaflet();
+  });
+</script>

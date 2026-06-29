@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ListadoBiens from '../components/ListadoBiens.astro';
+
+const biens = (await getCollection('biens'))
+  .filter((b) => b.data.operacion === 'venta' && b.data.tipo !== 'terreno')
+  .sort((a, b) => +b.data.fecha - +a.data.fecha);
+---
+
+<Layout title="Comprar" description="Casas, departamentos y propiedades en venta en Asunción y alrededores.">
+  <ListadoBiens
+    eyebrow="En venta"
+    titulo="Propiedades en venta"
+    intro="Casas, departamentos y más, seleccionados con criterio. Filtrá por ciudad, barrio o tipo para encontrar lo que buscás."
+    biens={biens}
+  />
+</Layout>

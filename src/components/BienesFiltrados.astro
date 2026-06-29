@@ -1,0 +1,282 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import PropertyCard from './PropertyCard.astro';
+import { formatUbicacion } from '../lib/format';
+import { ciudades, barriosPorCiudad as barriosMaestros } from '../lib/site';
+
+interface Props {
+  biens: CollectionEntry<'biens'>[];
+  mostrarDormitorios?: boolean;
+  mostrarBanos?: boolean;
+}
+const {
+  biens,
+  mostrarDormitorios = true,
+  mostrarBanos = true,
+} = Astro.props;
+
+const tipos = [...new Set(biens.map((b) => b.data.tipo))];
+
+// Barrios : liste maîtresse (ex. tout Asunción) + ceux réellement publiés
+const barriosPorCiudad: Record<string, string[]> = {};
+for (const [ciudad, lista] of Object.entries(barriosMaestros)) {
+  barriosPorCiudad[ciudad] = [...lista];
+}
+for (const b of biens) {
+  if (b.data.barrio) {
+    (barriosPorCiudad[b.data.ciudad] ??= []).push(b.data.barrio);
+  }
+}
+for (const c of Object.keys(barriosPorCiudad)) {
+  barriosPorCiudad[c] = [...new Set(barriosPorCiudad[c])].sort((a, b) =>
+    a.localeCompare(b, 'es')
+  );
+}
+
+const tipoLabels: Record<string, string> = {
+  casa: 'Casas',
+  departamento: 'Departamentos',
+  duplex: 'Dúplex',
+  terreno: 'Terrenos',
+  oficina: 'Oficinas',
+  local: 'Locales',
+  deposito: 'Depósitos',
+  quinta: 'Quintas',
+};
+---
+
+<div class="filtros" data-filtros>
+  <div class="campo busca">
+    <input
+      type="search"
+      placeholder="Buscar por título, barrio…"
+      data-f="busca"
+      aria-label="Buscar"
+    />
+  </div>
+  <div class="campo">
+    <select data-f="ciudad" aria-label="Ciudad">
+      <option value="">Todas las ciudades</option>
+      {ciudades.map((c) => <option value={c}>{c}</option>)}
+    </select>
+  </div>
+  <div class="campo">
+    <select data-f="barrio" aria-label="Barrio">
+      <option value="">Todos los barrios</option>
+    </select>
+  </div>
+  <div class="campo">
+    <select data-f="tipo" aria-label="Tipo">
+      <option value="">Todo tipo</option>
+      {tipos.map((t) => <option value={t}>{tipoLabels[t] ?? t}</option>)}
+    </select>
+  </div>
+  {
+    mostrarDormitorios && (
+      <div class="campo">
+        <select data-f="dorm" aria-label="Dormitorios">
+          <option value="">Dormitorios</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+        </select>
+      </div>
+    )
+  }
+  {
+    mostrarBanos && (
+      <div class="campo">
+        <select data-f="banos" aria-label="Baños">
+          <option value="">Baños</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+        </select>
+      </div>
+    )
+  }
+  <button type="button" class="reset" data-reset hidden>Limpiar</button>
+</div>
+
+<script type="application/json" data-barrios set:html={JSON.stringify(barriosPorCiudad)}></script>
+
+<p class="contador"><span data-contador>{biens.length}</span> propiedades</p>
+
+<div class="grid-biens" data-grid>
+  {
+    biens.map((bien) => (
+      <div
+        class="item"
+        data-ciudad={bien.data.ciudad}
+        data-barrio={bien.data.barrio ?? ''}
+        data-tipo={bien.data.tipo}
+        data-dorm={bien.data.dormitorios ?? 0}
+        data-banos={bien.data.banos ?? 0}
+        data-busca={`${bien.data.titulo} ${formatUbicacion(bien.data)}`.toLowerCase()}
+      >
+        <PropertyCard bien={bien} />
+      </div>
+    ))
+  }
+</div>
+
+<p class="vacio" data-vacio hidden>
+  No encontramos propiedades con esos criterios. Probá ampliar la búsqueda o
+  escribinos directamente.
+</p>
+
+<style>
+  .filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+    padding: 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .campo {
+    flex: 1 1 140px;
+  }
+  .campo.busca {
+    flex: 2 1 200px;
+  }
+  .filtros input,
+  .filtros select {
+    width: 100%;
+    font-family: var(--body);
+    font-size: 0.95rem;
+    color: var(--ink);
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--paper);
+  }
+  .filtros input:focus,
+  .filtros select:focus {
+    outline: none;
+    border-color: var(--violet);
+    box-shadow: 0 0 0 3px var(--violet-soft);
+  }
+  .reset {
+    flex: 0 0 auto;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 0 1rem;
+    font-family: var(--body);
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .reset:hover {
+    border-color: var(--brand);
+    color: var(--brand);
+  }
+  .contador {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin: 0 0 1.2rem;
+  }
+  .contador span {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .item.oculto {
+    display: none;
+  }
+  .vacio {
+    text-align: center;
+    color: var(--muted);
+    padding: 2.5rem 1rem;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-filtros]').forEach((barra) => {
+    const scope = barra.parentElement!;
+    const grid = scope.querySelector<HTMLElement>('[data-grid]')!;
+    const items = Array.from(grid.querySelectorAll<HTMLElement>('.item'));
+    const contador = scope.querySelector<HTMLElement>('[data-contador]')!;
+    const vacio = scope.querySelector<HTMLElement>('[data-vacio]')!;
+    const reset = barra.querySelector<HTMLButtonElement>('[data-reset]')!;
+
+    const ciudadSel = barra.querySelector<HTMLSelectElement>('[data-f="ciudad"]')!;
+    const barrioSel = barra.querySelector<HTMLSelectElement>('[data-f="barrio"]')!;
+
+    // Carte barrios par ville
+    const dataEl = scope.querySelector<HTMLElement>('[data-barrios]');
+    let barriosPorCiudad: Record<string, string[]> = {};
+    try {
+      barriosPorCiudad = JSON.parse(dataEl?.textContent || '{}');
+    } catch {}
+    const todosBarrios = [
+      ...new Set(Object.values(barriosPorCiudad).flat()),
+    ].sort();
+
+    function poblarBarrios() {
+      const ciudad = ciudadSel.value;
+      const lista =
+        ciudad && barriosPorCiudad[ciudad] ? barriosPorCiudad[ciudad] : todosBarrios;
+      const actual = barrioSel.value;
+      barrioSel.innerHTML =
+        '<option value="">Todos los barrios</option>' +
+        lista.map((b) => `<option value="${b}">${b}</option>`).join('');
+      barrioSel.value = lista.includes(actual) ? actual : '';
+    }
+
+    const controles = Array.from(
+      barra.querySelectorAll<HTMLInputElement | HTMLSelectElement>('[data-f]')
+    );
+
+    function aplicar() {
+      const f: Record<string, string> = {};
+      let activos = 0;
+      controles.forEach((c) => {
+        f[c.dataset.f!] = c.value.trim().toLowerCase();
+        if (c.value.trim()) activos++;
+      });
+      reset.hidden = activos === 0;
+
+      let visibles = 0;
+      items.forEach((it) => {
+        const ok =
+          (!f.ciudad || it.dataset.ciudad?.toLowerCase() === f.ciudad) &&
+          (!f.barrio || it.dataset.barrio?.toLowerCase() === f.barrio) &&
+          (!f.tipo || it.dataset.tipo === f.tipo) &&
+          (!f.dorm || Number(it.dataset.dorm) >= Number(f.dorm)) &&
+          (!f.banos || Number(it.dataset.banos) >= Number(f.banos)) &&
+          (!f.busca || it.dataset.busca?.includes(f.busca));
+        it.classList.toggle('oculto', !ok);
+        if (ok) visibles++;
+      });
+      contador.textContent = String(visibles);
+      vacio.hidden = visibles !== 0;
+    }
+
+    // La ville repeuple les barrios puis filtre
+    ciudadSel.addEventListener('change', () => {
+      poblarBarrios();
+      aplicar();
+    });
+    // Les autres contrôles filtrent directement
+    controles
+      .filter((c) => c !== ciudadSel)
+      .forEach((c) => {
+        c.addEventListener('input', aplicar);
+        c.addEventListener('change', aplicar);
+      });
+
+    reset.addEventListener('click', () => {
+      controles.forEach((c) => (c.value = ''));
+      poblarBarrios();
+      aplicar();
+    });
+
+    poblarBarrios();
+  });
+</script>

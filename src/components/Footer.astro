@@ -1,0 +1,118 @@
+---
+import { site } from '../lib/site';
+import { whatsappLink } from '../lib/whatsapp';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container grid">
+    <div class="col">
+      <img src="/logo-calista-oscuro.png" alt={site.nombre} class="logo" width="180" height="76" />
+      <p class="lema">{site.lema}</p>
+    </div>
+
+    <div class="col">
+      <h4>Propiedades</h4>
+      <a href="/comprar">Comprar</a>
+      <a href="/alquilar">Alquilar</a>
+      <a href="/desarrollos">Nuevos desarrollos</a>
+      <a href="/terrenos">Terrenos</a>
+      <a href="/exclusivos">Exclusivos</a>
+    </div>
+
+    <div class="col">
+      <h4>Propietarios</h4>
+      <a href="/propietarios#vender">Vender mi propiedad</a>
+      <a href="/propietarios#administracion">Administración de alquileres</a>
+    </div>
+
+    <div class="col">
+      <h4>Agencia</h4>
+      <a href="/resenas">Reseñas</a>
+      <a href="/historia">Nuestra historia</a>
+      <a href="/contacto">Contacto</a>
+      <a href={whatsappLink()} target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <div class="col">
+      <h4>Contacto</h4>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+      <span>{site.telefono}</span>
+      <span>{site.direccion}</span>
+    </div>
+  </div>
+
+  <div class="container legal">
+    <span>© {year} {site.nombre}</span>
+    <span>Asunción · Paraguay</span>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    background: var(--brand);
+    color: #d9d4ee;
+    padding-block: 3.5rem 1.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    gap: 1.6rem;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .col h4 {
+    font-family: var(--body);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #b3aada;
+    margin: 0 0 0.4rem;
+  }
+  .col a,
+  .col span {
+    color: #d9d4ee;
+    font-size: 0.95rem;
+  }
+  .col a:hover {
+    color: #fff;
+  }
+  .logo {
+    height: 42px;
+    width: auto;
+    align-self: flex-start;
+    margin-bottom: 0.9rem;
+  }
+  .lema {
+    color: #b3aada;
+    max-width: 34ch;
+    font-size: 0.95rem;
+  }
+  .legal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.85rem;
+    color: #9990c4;
+  }
+  @media (max-width: 760px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 460px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .legal {
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+  }
+</style>

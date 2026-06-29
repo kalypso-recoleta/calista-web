@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BienesFiltrados from './BienesFiltrados.astro';
+
+interface Props {
+  eyebrow: string;
+  titulo: string;
+  intro?: string;
+  biens: CollectionEntry<'biens'>[];
+  mostrarDormitorios?: boolean;
+  mostrarBanos?: boolean;
+}
+const {
+  eyebrow,
+  titulo,
+  intro,
+  biens,
+  mostrarDormitorios = true,
+  mostrarBanos = true,
+} = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <header class="cab">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{titulo}</h1>
+      {intro && <p class="lead">{intro}</p>}
+    </header>
+
+    {
+      biens.length === 0 ? (
+        <p class="lead">
+          Por el momento no hay propiedades publicadas en esta sección.
+          Escribinos y te avisamos apenas ingrese algo acorde a lo que buscás.
+        </p>
+      ) : (
+        <BienesFiltrados
+          biens={biens}
+          mostrarDormitorios={mostrarDormitorios}
+          mostrarBanos={mostrarBanos}
+        />
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .cab {
+    max-width: 62ch;
+    margin-bottom: 2rem;
+  }
+  .cab h1 {
+    margin-bottom: 0.4rem;
+  }
+</style>
