@@ -1,0 +1,7 @@
+---
+import ListingBody from '../../components/pages/ListingBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<ListingBody kind="alquilar" />

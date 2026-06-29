@@ -1,24 +1,36 @@
 ---
 import { site } from '../lib/site';
 import { whatsappLink } from '../lib/whatsapp';
+import {
+  getLangFromUrl,
+  useTranslations,
+  localizePath,
+  stripLocale,
+  LOCALES,
+  LANG_LABEL,
+} from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const nav = [
-  { href: '/comprar', label: 'Comprar' },
-  { href: '/alquilar', label: 'Alquilar' },
-  { href: '/desarrollos', label: 'Desarrollos' },
-  { href: '/terrenos', label: 'Terrenos' },
-  { href: '/exclusivos', label: 'Exclusivos' },
-  { href: '/propietarios', label: 'Propietarios' },
-  { href: '/resenas', label: 'Reseñas' },
+  { href: '/comprar', label: t('nav.comprar') },
+  { href: '/alquilar', label: t('nav.alquilar') },
+  { href: '/desarrollos', label: t('nav.desarrollos') },
+  { href: '/terrenos', label: t('nav.terrenos') },
+  { href: '/exclusivos', label: t('nav.exclusivos') },
+  { href: '/propietarios', label: t('nav.propietarios') },
+  { href: '/resenas', label: t('nav.resenas') },
 ];
 
-const path = Astro.url.pathname;
-const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
+// Chemin courant sans préfixe de langue, pour l'état actif et le sélecteur
+const basePath = stripLocale(Astro.url.pathname).replace(/\/$/, '') || '/';
+const wa = whatsappLink(t('nav.wa_consulta'));
 ---
 
 <header class="site-header">
   <div class="container bar">
-    <a href="/" class="brand" aria-label={`${site.nombre} — inicio`}>
+    <a href={localizePath('/', lang)} class="brand" aria-label={`${site.nombre} — inicio`}>
       <img src="/logo-calista.png" alt={site.nombre} class="logo" width="180" height="76" />
     </a>
 
@@ -26,10 +38,10 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
       {
         nav.map((item) => (
           <a
-            href={item.href}
+            href={localizePath(item.href, lang)}
             class:list={[
               'nav-link',
-              { active: path === item.href || path.startsWith(item.href + '/') },
+              { active: basePath === item.href || basePath.startsWith(item.href + '/') },
             ]}
           >
             {item.label}
@@ -39,18 +51,45 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
     </nav>
 
     <div class="actions">
+      <div class="lang-switch" role="group" aria-label="Idioma / langue / language">
+        {
+          LOCALES.map((l) => (
+            <a
+              href={localizePath(basePath, l)}
+              class:list={['lang', { on: l === lang }]}
+              hreflang={l}
+              aria-current={l === lang ? 'true' : undefined}
+            >
+              {LANG_LABEL[l]}
+            </a>
+          ))
+        }
+      </div>
       <a href={wa} class="btn btn--primary header-cta" target="_blank" rel="noopener">
-        Contactar
+        {t('nav.contactar')}
       </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="menu-toggle" aria-label="Menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 
   <nav class="mobile-nav" aria-label="Móvil" hidden>
-    {nav.map((item) => <a href={item.href}>{item.label}</a>)}
-    <a href="/contacto">Contacto</a>
+    {nav.map((item) => <a href={localizePath(item.href, lang)}>{item.label}</a>)}
+    <a href={localizePath('/contacto', lang)}>{t('nav.contacto')}</a>
+    <div class="lang-switch mobile">
+      {
+        LOCALES.map((l) => (
+          <a
+            href={localizePath(basePath, l)}
+            class:list={['lang', { on: l === lang }]}
+            hreflang={l}
+          >
+            {LANG_LABEL[l]}
+          </a>
+        ))
+      }
+    </div>
   </nav>
 </header>
 
@@ -67,7 +106,7 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1.2rem;
     height: 72px;
   }
   .brand {
@@ -85,14 +124,14 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
   }
   .nav {
     display: flex;
-    gap: 0.35rem;
+    gap: 0.25rem;
     margin-inline: auto;
   }
   .nav-link {
     color: var(--ink);
     font-weight: 500;
-    font-size: 0.96rem;
-    padding: 0.5rem 0.75rem;
+    font-size: 0.94rem;
+    padding: 0.5rem 0.7rem;
     border-radius: 8px;
     position: relative;
   }
@@ -106,8 +145,8 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
   .nav-link.active::after {
     content: '';
     position: absolute;
-    left: 0.75rem;
-    right: 0.75rem;
+    left: 0.7rem;
+    right: 0.7rem;
     bottom: 0.15rem;
     height: 2px;
     background: var(--violet);
@@ -118,6 +157,34 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
     align-items: center;
     gap: 0.6rem;
   }
+
+  /* Sélecteur de langue */
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+    background: var(--violet-soft);
+    border-radius: 999px;
+    padding: 2px;
+  }
+  .lang-switch .lang {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--brand-700);
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    line-height: 1;
+  }
+  .lang-switch .lang:hover {
+    text-decoration: none;
+    color: var(--brand);
+  }
+  .lang-switch .lang.on {
+    background: var(--violet);
+    color: #fff;
+  }
+
   .menu-toggle {
     display: none;
     flex-direction: column;
@@ -142,13 +209,26 @@ const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
   .mobile-nav[hidden] {
     display: none;
   }
-  .mobile-nav a {
+  .mobile-nav a:not(.lang) {
     color: var(--ink);
     padding: 0.7rem 0.25rem;
     border-bottom: 1px solid var(--line);
     font-weight: 500;
   }
+  .lang-switch.mobile {
+    align-self: flex-start;
+    margin-top: 0.9rem;
+  }
 
+  @media (max-width: 1040px) {
+    .nav {
+      gap: 0.1rem;
+    }
+    .nav-link {
+      padding: 0.5rem 0.55rem;
+      font-size: 0.9rem;
+    }
+  }
   @media (max-width: 880px) {
     .nav,
     .header-cta {

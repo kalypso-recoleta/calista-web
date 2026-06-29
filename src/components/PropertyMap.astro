@@ -1,6 +1,10 @@
 ---
 import { parseUbicacion } from '../lib/geo';
 import { site } from '../lib/site';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 interface Props {
   ubicacion?: string;
@@ -18,12 +22,11 @@ const hayPunto = parseUbicacion(ubicacion) !== null;
     data-lng={punto.lng}
     data-aprox={hayPunto ? '1' : '0'}
     role="img"
-    aria-label={`Ubicación aproximada${zona ? ` en ${zona}` : ''}`}
+    aria-label={`${t('map.aprox')}${zona ? ` — ${zona}` : ''}`}
   >
   </div>
   <p class="nota">
-    📍 Ubicación aproximada{zona ? ` — ${zona}` : ''}. La dirección exacta se
-    comparte al coordinar una visita.
+    📍 {t('map.aprox')}{zona ? ` — ${zona}` : ''}. {t('map.nota')}
   </p>
 </div>
 

@@ -1,65 +1,54 @@
 import type { CollectionEntry } from 'astro:content';
+import { useTranslations, type Lang } from '../i18n/utils';
 
 type Bien = CollectionEntry<'biens'>['data'];
 
-/** Prix formaté avec devise. Ex. "USD 185.000", "Gs. 2.500.000 /mes". */
-export function formatPrecio(bien: Bien): string {
-  const { precio, moneda, periodo, operacion } = bien;
+const LOCALE_NUM: Record<Lang, string> = {
+  es: 'es-PY',
+  fr: 'fr-FR',
+  en: 'en-US',
+};
 
-  const numero = new Intl.NumberFormat('es-PY', {
+/** Prix formaté avec devise. */
+export function formatPrecio(bien: Bien, lang: Lang): string {
+  const t = useTranslations(lang);
+  const numero = new Intl.NumberFormat(LOCALE_NUM[lang], {
     maximumFractionDigits: 0,
-  }).format(precio);
+  }).format(bien.precio);
 
-  const etiquetaMoneda = moneda === 'USD' ? 'USD' : 'Gs.';
+  const etiquetaMoneda = bien.moneda === 'USD' ? 'USD' : 'Gs.';
   let texto = `${etiquetaMoneda} ${numero}`;
 
-  if (operacion === 'alquiler' && periodo === 'mes') texto += ' /mes';
-  if (operacion === 'alquiler' && periodo === 'dia') texto += ' /día';
+  if (bien.operacion === 'alquiler' && bien.periodo === 'mes')
+    texto += ' ' + t('periodo.mes');
+  if (bien.operacion === 'alquiler' && bien.periodo === 'dia')
+    texto += ' ' + t('periodo.dia');
 
   return texto;
 }
 
-const LABELS_TIPO: Record<Bien['tipo'], string> = {
-  casa: 'Casa',
-  departamento: 'Departamento',
-  duplex: 'Dúplex',
-  terreno: 'Terreno',
-  oficina: 'Oficina',
-  local: 'Local comercial',
-  deposito: 'Depósito',
-  quinta: 'Quinta',
-};
-
-const LABELS_OPERACION: Record<Bien['operacion'], string> = {
-  venta: 'En venta',
-  alquiler: 'En alquiler',
-};
-
-const LABELS_ESTADO: Record<Bien['estado'], string> = {
-  disponible: 'Disponible',
-  reservado: 'Reservado',
-  vendido: 'Vendido',
-  alquilado: 'Alquilado',
-};
-
-export const tipoLabel = (t: Bien['tipo']) => LABELS_TIPO[t];
-export const operacionLabel = (o: Bien['operacion']) => LABELS_OPERACION[o];
-export const estadoLabel = (e: Bien['estado']) => LABELS_ESTADO[e];
+export const tipoLabel = (tipo: Bien['tipo'], lang: Lang) =>
+  useTranslations(lang)(`tipo.${tipo}`);
+export const operacionLabel = (op: Bien['operacion'], lang: Lang) =>
+  useTranslations(lang)(`op.${op}`);
+export const estadoLabel = (estado: Bien['estado'], lang: Lang) =>
+  useTranslations(lang)(`estado.${estado}`);
 
 /** Un bien est-il encore proposé activement ? */
 export const estaActivo = (bien: Bien) =>
   bien.estado === 'disponible' || bien.estado === 'reservado';
 
-/** Surface affichable. Priorité au terrain pour les terrenos. */
-export function formatSuperficie(bien: Bien): string | null {
+/** Surface affichable. */
+export function formatSuperficie(bien: Bien, lang: Lang): string | null {
+  const t = useTranslations(lang);
   if (bien.tipo === 'terreno' && bien.superficie_terreno) {
-    return `${bien.superficie_terreno} m² de terreno`;
+    return `${bien.superficie_terreno} ${t('unit.terreno')}`;
   }
   if (bien.superficie_construida) {
-    return `${bien.superficie_construida} m² construidos`;
+    return `${bien.superficie_construida} ${t('unit.construidos')}`;
   }
   if (bien.superficie_terreno) {
-    return `${bien.superficie_terreno} m²`;
+    return `${bien.superficie_terreno} ${t('unit.m2')}`;
   }
   return null;
 }

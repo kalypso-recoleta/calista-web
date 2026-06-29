@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('cont.title')} description={t('cont.lead')}>
+  <section class="section">
+    <div class="container contacto">
+      <div class="info">
+        <p class="eyebrow">{t('cont.eyebrow')}</p>
+        <h1>{t('cont.title')}</h1>
+        <p class="lead">{t('cont.lead')}</p>
+
+        <div class="directo">
+          <WhatsAppButton
+            href={whatsappLink('Hola Calista, quisiera hacer una consulta.')}
+            full
+          />
+          <a href={`mailto:${site.email}`} class="linea">
+            <span class="k">{t('cont.email')}</span>
+            <span>{site.email}</span>
+          </a>
+          <div class="linea">
+            <span class="k">{t('cont.telefono')}</span>
+            <span>{site.telefono}</span>
+          </div>
+          <div class="linea">
+            <span class="k">{t('cont.donde')}</span>
+            <span>{site.direccion}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrap">
+        <form
+          name="contacto"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action={localizePath('/gracias', lang)}
+          class="form"
+        >
+          <input type="hidden" name="form-name" value="contacto" />
+          <p class="hp" hidden>
+            <label>No llenar: <input name="bot-field" /></label>
+          </p>
+
+          <label class="campo">
+            <span>{t('cont.f_nombre')}</span>
+            <input type="text" name="nombre" required autocomplete="name" />
+          </label>
+
+          <div class="fila">
+            <label class="campo">
+              <span>{t('cont.f_email')}</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label class="campo">
+              <span>{t('cont.f_telefono')}</span>
+              <input type="tel" name="telefono" autocomplete="tel" />
+            </label>
+          </div>
+
+          <label class="campo">
+            <span>{t('cont.f_motivo')}</span>
+            <select name="motivo">
+              <option>{t('cont.m1')}</option>
+              <option>{t('cont.m2')}</option>
+              <option>{t('cont.m3')}</option>
+              <option>{t('cont.m4')}</option>
+              <option>{t('cont.m5')}</option>
+            </select>
+          </label>
+
+          <label class="campo">
+            <span>{t('cont.f_mensaje')}</span>
+            <textarea name="mensaje" rows="4"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--primary full">{t('cont.f_enviar')}</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .contacto {
+    display: grid; grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(2rem, 5vw, 4rem); align-items: start;
+  }
+  .directo { display: flex; flex-direction: column; gap: 0.9rem; margin-top: 1.8rem; }
+  .linea { display: flex; flex-direction: column; color: var(--ink); }
+  .linea:hover { text-decoration: none; }
+  .linea .k {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+  }
+  .form-wrap {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: clamp(1.4rem, 3vw, 2rem); box-shadow: var(--shadow);
+  }
+  .form { display: flex; flex-direction: column; gap: 1rem; }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .campo { display: flex; flex-direction: column; gap: 0.35rem; }
+  .campo > span { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .form input, .form select, .form textarea {
+    font-family: var(--body); font-size: 1rem; color: var(--ink);
+    padding: 0.75rem 0.85rem; border: 1px solid var(--line);
+    border-radius: var(--radius-sm); background: var(--paper); width: 100%;
+  }
+  .form input:focus, .form select:focus, .form textarea:focus {
+    outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px var(--violet-soft);
+  }
+  .full { width: 100%; justify-content: center; }
+  @media (max-width: 760px) { .contacto, .fila { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,212 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PropertyGallery from '../PropertyGallery.astro';
+import PropertyMap from '../PropertyMap.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { img } from '../../lib/cloudinary';
+import { whatsappBien } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
+import {
+  formatPrecio,
+  formatUbicacion,
+  formatSuperficie,
+  tipoLabel,
+  operacionLabel,
+  estadoLabel,
+} from '../../lib/format';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+interface Props {
+  bien: CollectionEntry<'biens'>;
+}
+const { bien } = Astro.props;
+const d = bien.data;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
+
+const { Content } = await render(bien);
+
+const url = new URL(`/propiedad/${bien.id}`, Astro.site).toString();
+const wa = whatsappBien({ titulo: d.titulo, ref: bien.id, url });
+const superficie = formatSuperficie(d, lang);
+const ogImage = d.imagenes[0] ? img(d.imagenes[0], { w: 1200, h: 630 }) : undefined;
+
+// Données structurées de l'annonce (prix, devise, disponibilité, attributs).
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const DISPONIBILIDAD: Record<string, string> = {
+  disponible: 'https://schema.org/InStock',
+  reservado: 'https://schema.org/LimitedAvailability',
+  vendido: 'https://schema.org/SoldOut',
+  alquilado: 'https://schema.org/OutOfStock',
+};
+const atributos = [
+  d.dormitorios != null && { '@type': 'PropertyValue', name: 'dormitorios', value: d.dormitorios },
+  d.banos != null && { '@type': 'PropertyValue', name: 'banos', value: d.banos },
+  d.cocheras != null && { '@type': 'PropertyValue', name: 'cocheras', value: d.cocheras },
+  (d.superficie_construida || d.superficie_terreno) && {
+    '@type': 'PropertyValue',
+    name: 'superficie_m2',
+    value: d.superficie_construida || d.superficie_terreno,
+    unitCode: 'MTK',
+  },
+].filter(Boolean);
+
+const listingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: d.titulo,
+  description: d.descripcion,
+  image: ogImage ? [new URL(ogImage, Astro.site).toString()] : undefined,
+  url: canonical,
+  category: tipoLabel(d.tipo, 'es'),
+  brand: { '@type': 'Organization', name: site.nombre },
+  additionalProperty: atributos,
+  offers: {
+    '@type': 'Offer',
+    price: d.precio,
+    priceCurrency: d.moneda,
+    availability: DISPONIBILIDAD[d.estado] ?? 'https://schema.org/InStock',
+    businessFunction:
+      d.operacion === 'alquiler'
+        ? 'http://purl.org/goodrelations/v1#LeaseOut'
+        : 'http://purl.org/goodrelations/v1#Sell',
+    url: canonical,
+    seller: { '@type': 'Organization', name: site.nombre },
+  },
+};
+
+const specs = [
+  d.dormitorios != null && { label: t('spec.dormitorios'), value: d.dormitorios },
+  d.banos != null && { label: t('spec.banos_full'), value: d.banos },
+  d.cocheras != null && { label: t('spec.cocheras'), value: d.cocheras },
+  superficie && { label: t('spec.superficie'), value: superficie },
+  d.entrega && { label: t('spec.entrega'), value: d.entrega },
+  d.financiacion && { label: t('spec.financiacion'), value: t('spec.financiacion_si') },
+].filter(Boolean) as { label: string; value: string | number }[];
+---
+
+<Layout title={d.titulo} description={d.descripcion} image={ogImage}>
+  <article class="section detalle">
+    <script type="application/ld+json" set:html={JSON.stringify(listingSchema)} />
+    <div class="container">
+      <nav class="crumbs" aria-label="•">
+        <a href={L('/')}>{t('det.inicio')}</a>
+        <span>/</span>
+        <a href={d.operacion === 'venta' ? L('/comprar') : L('/alquilar')}>
+          {operacionLabel(d.operacion, lang)}
+        </a>
+        <span>/</span>
+        <span>{d.titulo}</span>
+      </nav>
+
+      <PropertyGallery imagenes={d.imagenes} titulo={d.titulo} />
+
+      <div class="layout">
+        <div class="main">
+          <p class="loc">{tipoLabel(d.tipo, lang)} · {formatUbicacion(d)}</p>
+          <h1>{d.titulo}</h1>
+
+          <div class="meta-row">
+            <span class="badge">{operacionLabel(d.operacion, lang)}</span>
+            {d.desarrollo && <span class="badge">{t('badge.pozo_largo')}</span>}
+            {d.exclusivo && <span class="badge badge--exclusivo">{t('badge.exclusivo')}</span>}
+            {
+              d.estado !== 'disponible' && (
+                <span class={`badge badge--${d.estado}`}>{estadoLabel(d.estado, lang)}</span>
+              )
+            }
+          </div>
+
+          {
+            specs.length > 0 && (
+              <ul class="specs">
+                {specs.map((s) => (
+                  <li>
+                    <span class="v">{s.value}</span>
+                    <span class="k">{s.label}</span>
+                  </li>
+                ))}
+              </ul>
+            )
+          }
+
+          <div class="prose">
+            <Content />
+          </div>
+
+          <div class="mapa">
+            <h3>{t('det.ubicacion')}</h3>
+            <PropertyMap ubicacion={d.ubicacion} zona={formatUbicacion(d)} />
+          </div>
+        </div>
+
+        <aside class="side">
+          <div class="cta-card">
+            <p class="precio">{formatPrecio(d, lang)}</p>
+            <p class="ref">{t('det.ref')} {bien.id}</p>
+            <WhatsAppButton href={wa} full />
+            <a href={L('/contacto')} class="btn btn--ghost full-ghost">
+              {t('det.enviar_consulta')}
+            </a>
+            <p class="nota">{t('det.nota')}</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .crumbs {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.85rem;
+    color: var(--muted); margin-bottom: 1.2rem;
+  }
+  .crumbs a { color: var(--muted); }
+  .crumbs a:hover { color: var(--brand); }
+  .layout {
+    display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem;
+    margin-top: 2rem; align-items: start;
+  }
+  .loc { color: var(--muted); margin: 0 0 0.3rem; font-size: 0.9rem; }
+  .main h1 { margin-bottom: 0.8rem; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .specs {
+    list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px; padding: 0; margin: 0 0 2rem; background: var(--line);
+    border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  }
+  .specs li {
+    background: var(--surface); padding: 1rem 1.1rem; display: flex;
+    flex-direction: column; gap: 0.15rem;
+  }
+  .specs .v {
+    font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--brand);
+  }
+  .specs .k {
+    font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .prose { font-size: 1.06rem; line-height: 1.7; max-width: 64ch; }
+  .prose :global(h2), .prose :global(h3) { margin-top: 1.6rem; }
+  .prose :global(strong) { color: var(--brand); }
+  .mapa { margin-top: 2.5rem; }
+  .mapa h3 { margin-bottom: 0.8rem; }
+  .side { position: sticky; top: 92px; }
+  .cta-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 1.5rem; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 0.7rem;
+  }
+  .cta-card .precio {
+    font-family: var(--display); font-size: 2rem; font-weight: 600; color: var(--brand); margin: 0;
+  }
+  .cta-card .ref { font-size: 0.8rem; color: var(--muted); margin: -0.4rem 0 0.4rem; }
+  .full-ghost { width: 100%; justify-content: center; }
+  .cta-card .nota { font-size: 0.8rem; color: var(--muted); margin: 0.3rem 0 0; line-height: 1.4; }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .side { position: static; order: -1; }
+  }
+</style>

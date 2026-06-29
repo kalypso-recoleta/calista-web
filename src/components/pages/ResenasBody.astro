@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Testimonios from '../Testimonios.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const resenas = (await getCollection('resenas')).sort(
+  (a, b) => +b.data.fecha - +a.data.fecha
+);
+---
+
+<Layout title={t('res.title')} description={t('res.lead')}>
+  <section class="section">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">{t('res.eyebrow')}</p>
+        <h1>{t('res.title')}</h1>
+        <p class="lead">{t('res.lead')}</p>
+      </header>
+
+      {
+        resenas.length > 0 ? (
+          <Testimonios resenas={resenas} />
+        ) : (
+          <p class="lead">{t('res.vacia')}</p>
+        )
+      }
+
+      <div class="cta">
+        <WhatsAppButton
+          href={whatsappLink('Hola Calista, quisiera hacer una consulta.')}
+          label={t('res.cta')}
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cab {
+    max-width: 60ch;
+    margin-bottom: 2.2rem;
+  }
+  .cab h1 {
+    margin-bottom: 0.4rem;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+</style>

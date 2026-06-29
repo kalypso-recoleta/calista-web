@@ -9,19 +9,25 @@ import {
   tipoLabel,
   estadoLabel,
 } from '../lib/format';
+import { getLangFromUrl, useTranslations, localizePath } from '../i18n/utils';
 
 interface Props {
   bien: CollectionEntry<'biens'>;
 }
 const { bien } = Astro.props;
 const d = bien.data;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const href = localizePath(`/propiedad/${bien.id}`, lang);
+
 const portada = d.imagenes[0];
-const superficie = formatSuperficie(d);
+const superficie = formatSuperficie(d, lang);
 const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 ---
 
 <article class:list={['card', { inactivo }]}>
-  <a href={`/propiedad/${bien.id}`} class="media" aria-label={d.titulo}>
+  <a href={href} class="media" aria-label={d.titulo}>
     <img
       src={img(portada, { w: 640, h: 440 })}
       alt={d.titulo}
@@ -30,15 +36,15 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
       loading="lazy"
     />
     <div class="tags">
-      <span class="badge">{operacionLabel(d.operacion)}</span>
-      {d.desarrollo && <span class="badge">Pozo</span>}
+      <span class="badge">{operacionLabel(d.operacion, lang)}</span>
+      {d.desarrollo && <span class="badge">{t('badge.pozo')}</span>}
       {
         d.exclusivo && (
           <span class="badge badge--exclusivo">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7L2.2 9l6.9-.7z" />
             </svg>
-            Exclusivo
+            {t('badge.exclusivo')}
           </span>
         )
       }
@@ -46,28 +52,28 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     {
       inactivo && (
         <div class="overlay">
-          <span class={`badge badge--${d.estado}`}>{estadoLabel(d.estado)}</span>
+          <span class={`badge badge--${d.estado}`}>{estadoLabel(d.estado, lang)}</span>
         </div>
       )
     }
   </a>
 
   <div class="body">
-    <p class="loc">{tipoLabel(d.tipo)} · {formatUbicacion(d)}</p>
+    <p class="loc">{tipoLabel(d.tipo, lang)} · {formatUbicacion(d)}</p>
     <h3 class="titulo">
-      <a href={`/propiedad/${bien.id}`}>{d.titulo}</a>
+      <a href={href}>{d.titulo}</a>
     </h3>
 
     <ul class="specs">
-      {d.dormitorios != null && <li>{d.dormitorios} dorm.</li>}
-      {d.banos != null && <li>{d.banos} baños</li>}
-      {d.cocheras != null && <li>{d.cocheras} coch.</li>}
+      {d.dormitorios != null && <li>{d.dormitorios} {t('spec.dorm')}</li>}
+      {d.banos != null && <li>{d.banos} {t('spec.banos')}</li>}
+      {d.cocheras != null && <li>{d.cocheras} {t('spec.coch')}</li>}
       {superficie && <li>{superficie}</li>}
     </ul>
 
     <div class="foot">
-      <span class="precio">{formatPrecio(d)}</span>
-      <span class="ver">Ver →</span>
+      <span class="precio">{formatPrecio(d, lang)}</span>
+      <span class="ver">{t('common.ver')} →</span>
     </div>
   </div>
 </article>

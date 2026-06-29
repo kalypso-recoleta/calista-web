@@ -1,0 +1,7 @@
+---
+import PropietariosBody from '../../components/pages/PropietariosBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<PropietariosBody />

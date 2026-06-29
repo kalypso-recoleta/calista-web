@@ -9,6 +9,7 @@ import {
   tipoLabel,
 } from '../lib/format';
 import WhatsAppButton from './WhatsAppButton.astro';
+import { getLangFromUrl, useTranslations, localizePath } from '../i18n/utils';
 
 interface Props {
   bien: CollectionEntry<'biens'>;
@@ -16,23 +17,28 @@ interface Props {
 }
 const { bien, indice } = Astro.props;
 const d = bien.data;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const href = localizePath(`/propiedad/${bien.id}`, lang);
+
 const reverse = indice % 2 === 1;
 const num = String(indice + 1).padStart(2, '0');
 
 const url = new URL(`/propiedad/${bien.id}`, Astro.site).toString();
 const wa = whatsappBien({ titulo: d.titulo, ref: bien.id, url });
-const superficie = formatSuperficie(d);
+const superficie = formatSuperficie(d, lang);
 
 const specs = [
-  d.dormitorios != null && `${d.dormitorios} dorm.`,
-  d.banos != null && `${d.banos} baños`,
-  d.cocheras != null && `${d.cocheras} cocheras`,
+  d.dormitorios != null && `${d.dormitorios} ${t('spec.dorm')}`,
+  d.banos != null && `${d.banos} ${t('spec.banos')}`,
+  d.cocheras != null && `${d.cocheras} ${t('spec.coch')}`,
   superficie,
 ].filter(Boolean) as string[];
 ---
 
 <article class:list={['feature', { reverse }]}>
-  <a class="media" href={`/propiedad/${bien.id}`} aria-label={d.titulo}>
+  <a class="media" href={href} aria-label={d.titulo}>
     <img
       src={img(d.imagenes[0], { w: 1000, h: 760 })}
       alt={d.titulo}
@@ -44,7 +50,7 @@ const specs = [
 
   <div class="content">
     <span class="num" aria-hidden="true">{num}</span>
-    <p class="loc">{tipoLabel(d.tipo)} · {formatUbicacion(d)}</p>
+    <p class="loc">{tipoLabel(d.tipo, lang)} · {formatUbicacion(d)}</p>
     <h2>{d.titulo}</h2>
     <p class="desc">{d.descripcion}</p>
 
@@ -58,11 +64,11 @@ const specs = [
       )
     }
 
-    <p class="precio">{formatPrecio(d)}</p>
+    <p class="precio">{formatPrecio(d, lang)}</p>
 
     <div class="cta">
-      <a href={`/propiedad/${bien.id}`} class="btn btn--primary">Ver propiedad</a>
-      <WhatsAppButton href={wa} label="Consulta privada" />
+      <a href={href} class="btn btn--primary">{t('common.ver_propiedad')}</a>
+      <WhatsAppButton href={wa} label={t('excl.feature_wa')} />
     </div>
   </div>
 </article>

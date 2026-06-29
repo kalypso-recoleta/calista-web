@@ -11,10 +11,10 @@ export const site = {
 
   // ⚠️ Numéro WhatsApp au format international SANS "+", ni espaces, ni "0".
   // Paraguay = 595. Ex. pour 0981 123 456 → "595981123456"
-  whatsapp: '595981000000',
+  whatsapp: '595994385487',
 
-  email: 'contacto@calista.com.py',
-  telefono: '+595 21 000 000',
+  email: 'louisthomassin.pro@gmail.com',
+  telefono: '+595 994 385487',
   direccion: 'Asunción, Paraguay',
 
   // Cloudinary : nom du "cloud" (visible dans ton dashboard Cloudinary).

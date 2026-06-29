@@ -1,20 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../layouts/Layout.astro';
-import ListadoBiens from '../components/ListadoBiens.astro';
-
-const biens = (await getCollection('biens'))
-  .filter((b) => b.data.tipo === 'terreno')
-  .sort((a, b) => +b.data.fecha - +a.data.fecha);
+import ListingBody from '../components/pages/ListingBody.astro';
 ---
-
-<Layout title="Terrenos" description="Terrenos y lotes en venta para construir o invertir.">
-  <ListadoBiens
-    eyebrow="Lotes"
-    titulo="Terrenos"
-    intro="Lotes para construir tu casa o invertir, con documentación verificada y asesoramiento sobre la zona."
-    biens={biens}
-    mostrarDormitorios={false}
-    mostrarBanos={false}
-  />
-</Layout>
+<ListingBody kind="terrenos" />

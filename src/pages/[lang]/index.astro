@@ -1,0 +1,7 @@
+---
+import HomeBody from '../../components/pages/HomeBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<HomeBody />

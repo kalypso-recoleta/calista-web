@@ -1,18 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../layouts/Layout.astro';
-import ListadoBiens from '../components/ListadoBiens.astro';
-
-const biens = (await getCollection('biens'))
-  .filter((b) => b.data.operacion === 'alquiler')
-  .sort((a, b) => +b.data.fecha - +a.data.fecha);
+import ListingBody from '../components/pages/ListingBody.astro';
 ---
-
-<Layout title="Alquilar" description="Departamentos y casas en alquiler en Asunción y zonas aledañas.">
-  <ListadoBiens
-    eyebrow="En alquiler"
-    titulo="Propiedades en alquiler"
-    intro="Opciones en alquiler verificadas y acompañadas de principio a fin, desde la visita hasta la firma del contrato."
-    biens={biens}
-  />
-</Layout>
+<ListingBody kind="alquilar" />

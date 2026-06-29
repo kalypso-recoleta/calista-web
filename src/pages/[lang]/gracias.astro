@@ -1,0 +1,7 @@
+---
+import GraciasBody from '../../components/pages/GraciasBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<GraciasBody />

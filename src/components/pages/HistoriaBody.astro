@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('hist.title')} description={t('hist.lead')}>
+  <section class="section">
+    <div class="container narrow">
+      <p class="eyebrow">{t('hist.eyebrow')}</p>
+      <h1>{t('hist.title')}</h1>
+
+      <p class="lead">{t('hist.lead')}</p>
+
+      <div class="prose">
+        <p>{t('hist.p1')}</p>
+
+        <h2>{t('hist.h2_creemos')}</h2>
+        <p>{t('hist.p_creemos')}</p>
+        <p>{t('hist.p_reputacion')}</p>
+
+        <h2>{t('hist.h2_acompanamos')}</h2>
+        <p>{t('hist.p_acompanamos')}</p>
+      </div>
+
+      <div class="cta">
+        <a href={localizePath('/comprar', lang)} class="btn btn--primary">{t('hist.cta_ver')}</a>
+        <WhatsAppButton
+          href={whatsappLink('Hola Calista, me gustaría conocerlos mejor.')}
+          label={t('hist.cta_wa')}
+        />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .narrow {
+    max-width: 760px;
+  }
+  .prose {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+  }
+  .prose h2 {
+    margin-top: 2.2rem;
+  }
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ListadoBiens from '../ListadoBiens.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+interface Props {
+  kind: 'comprar' | 'alquilar' | 'terrenos' | 'desarrollos';
+}
+const { kind } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const todos = await getCollection('biens');
+let biens = todos;
+if (kind === 'comprar') {
+  biens = todos.filter((b) => b.data.operacion === 'venta' && b.data.tipo !== 'terreno');
+} else if (kind === 'alquilar') {
+  biens = todos.filter((b) => b.data.operacion === 'alquiler');
+} else if (kind === 'terrenos') {
+  biens = todos.filter((b) => b.data.tipo === 'terreno');
+} else if (kind === 'desarrollos') {
+  biens = todos.filter((b) => b.data.desarrollo);
+}
+biens = biens.sort((a, b) => +b.data.fecha - +a.data.fecha);
+
+const mostrarDormitorios = kind !== 'terrenos';
+const mostrarBanos = kind !== 'terrenos' && kind !== 'desarrollos';
+
+const titulo = t(`lista.${kind}_title`);
+const eyebrow = t(`lista.${kind}_eyebrow`);
+const intro = t(`lista.${kind}_intro`);
+---
+
+<Layout title={titulo} description={intro}>
+  <ListadoBiens
+    eyebrow={eyebrow}
+    titulo={titulo}
+    intro={intro}
+    biens={biens}
+    mostrarDormitorios={mostrarDormitorios}
+    mostrarBanos={mostrarBanos}
+  />
+</Layout>

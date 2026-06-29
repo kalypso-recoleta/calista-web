@@ -1,10 +1,14 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
 interface Props {
   href: string;
   label?: string;
   full?: boolean;
 }
-const { href, label = 'Consultar por WhatsApp', full = false } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { href, label = t('common.consultar_wa'), full = false } = Astro.props;
 ---
 
 <a

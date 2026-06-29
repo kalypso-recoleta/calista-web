@@ -1,6 +1,10 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BienesFiltrados from './BienesFiltrados.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 interface Props {
   eyebrow: string;
@@ -30,10 +34,7 @@ const {
 
     {
       biens.length === 0 ? (
-        <p class="lead">
-          Por el momento no hay propiedades publicadas en esta sección.
-          Escribinos y te avisamos apenas ingrese algo acorde a lo que buscás.
-        </p>
+        <p class="lead">{t('lista.vacia')}</p>
       ) : (
         <BienesFiltrados
           biens={biens}

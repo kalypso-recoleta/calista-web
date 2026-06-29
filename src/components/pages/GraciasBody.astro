@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t('grac.title')} description={t('grac.lead')} noindex>
+  <section class="section">
+    <div class="container center">
+      <p class="eyebrow">{t('grac.eyebrow')}</p>
+      <h1>{t('grac.title')}</h1>
+      <p class="lead">{t('grac.lead')}</p>
+      <div class="cta">
+        <a href={localizePath('/', lang)} class="btn btn--ghost">{t('grac.volver')}</a>
+        <a
+          href={whatsappLink('Hola Calista, acabo de enviar una consulta.')}
+          class="btn btn--wa"
+          target="_blank"
+          rel="noopener"
+        >
+          {t('grac.abrir_wa')}
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .center {
+    max-width: 620px;
+    text-align: center;
+  }
+  .cta {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+</style>

@@ -1,6 +1,11 @@
 ---
 import { site } from '../lib/site';
 import { whatsappLink } from '../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
 const year = new Date().getFullYear();
 ---
 
@@ -12,30 +17,30 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="col">
-      <h4>Propiedades</h4>
-      <a href="/comprar">Comprar</a>
-      <a href="/alquilar">Alquilar</a>
-      <a href="/desarrollos">Nuevos desarrollos</a>
-      <a href="/terrenos">Terrenos</a>
-      <a href="/exclusivos">Exclusivos</a>
+      <h4>{t('footer.propiedades')}</h4>
+      <a href={L('/comprar')}>{t('nav.comprar')}</a>
+      <a href={L('/alquilar')}>{t('nav.alquilar')}</a>
+      <a href={L('/desarrollos')}>{t('footer.desarrollos')}</a>
+      <a href={L('/terrenos')}>{t('nav.terrenos')}</a>
+      <a href={L('/exclusivos')}>{t('nav.exclusivos')}</a>
     </div>
 
     <div class="col">
-      <h4>Propietarios</h4>
-      <a href="/propietarios#vender">Vender mi propiedad</a>
-      <a href="/propietarios#administracion">Administración de alquileres</a>
+      <h4>{t('footer.propietarios')}</h4>
+      <a href={L('/propietarios') + '#vender'}>{t('footer.vender')}</a>
+      <a href={L('/propietarios') + '#administracion'}>{t('footer.administracion')}</a>
     </div>
 
     <div class="col">
-      <h4>Agencia</h4>
-      <a href="/resenas">Reseñas</a>
-      <a href="/historia">Nuestra historia</a>
-      <a href="/contacto">Contacto</a>
+      <h4>{t('footer.agencia')}</h4>
+      <a href={L('/resenas')}>{t('nav.resenas')}</a>
+      <a href={L('/historia')}>{t('footer.nuestra_historia')}</a>
+      <a href={L('/contacto')}>{t('footer.contacto')}</a>
       <a href={whatsappLink()} target="_blank" rel="noopener">WhatsApp</a>
     </div>
 
     <div class="col">
-      <h4>Contacto</h4>
+      <h4>{t('footer.contacto_titulo')}</h4>
       <a href={`mailto:${site.email}`}>{site.email}</a>
       <span>{site.telefono}</span>
       <span>{site.direccion}</span>

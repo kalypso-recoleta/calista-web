@@ -1,0 +1,141 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
+
+const waVender = whatsappLink('Hola Calista, quiero vender mi propiedad. ¿Cómo es el proceso?');
+const waAdmin = whatsappLink('Hola Calista, quiero que administren el alquiler de mi propiedad.');
+
+const pasosVender = [
+  { n: '01', t: t('prop.paso1_t'), d: t('prop.paso1_d') },
+  { n: '02', t: t('prop.paso2_t'), d: t('prop.paso2_d') },
+  { n: '03', t: t('prop.paso3_t'), d: t('prop.paso3_d') },
+  { n: '04', t: t('prop.paso4_t'), d: t('prop.paso4_d') },
+];
+
+const incluyeAdmin = [
+  t('prop.admin_i1'),
+  t('prop.admin_i2'),
+  t('prop.admin_i3'),
+  t('prop.admin_i4'),
+  t('prop.admin_i5'),
+];
+---
+
+<Layout title={t('prop.hero_title')} description={t('prop.hero_lead')}>
+  <section class="section hero">
+    <div class="container narrow">
+      <p class="eyebrow">{t('prop.hero_eyebrow')}</p>
+      <h1>{t('prop.hero_title')}</h1>
+      <p class="lead">{t('prop.hero_lead')}</p>
+      <div class="hero-cta">
+        <a href="#vender" class="btn btn--primary">{t('prop.cta_vender')}</a>
+        <a href="#administracion" class="btn btn--ghost">{t('prop.cta_admin')}</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vender" class="section bloque">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">{t('prop.vender_eyebrow')}</p>
+        <h2>{t('prop.vender_title')}</h2>
+        <p class="lead">{t('prop.vender_lead')}</p>
+      </header>
+
+      <ol class="pasos">
+        {
+          pasosVender.map((p) => (
+            <li>
+              <span class="num">{p.n}</span>
+              <h3>{p.t}</h3>
+              <p>{p.d}</p>
+            </li>
+          ))
+        }
+      </ol>
+
+      <div class="cta-linea">
+        <WhatsAppButton href={waVender} label={t('prop.vender_wa')} />
+        <a href={L('/contacto')} class="btn btn--ghost">{t('prop.vender_form')}</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="administracion" class="section bloque alt">
+    <div class="container admin-grid">
+      <div>
+        <p class="eyebrow">{t('prop.admin_eyebrow')}</p>
+        <h2>{t('prop.admin_title')}</h2>
+        <p class="lead">{t('prop.admin_lead')}</p>
+        <div class="cta-linea">
+          <WhatsAppButton href={waAdmin} label={t('prop.admin_wa')} />
+        </div>
+      </div>
+
+      <ul class="incluye">
+        {incluyeAdmin.map((i) => <li>{i}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cierre">
+        <h2>{t('prop.cierre_title')}</h2>
+        <p>{t('prop.cierre_text')}</p>
+        <div class="cta-linea center">
+          <WhatsAppButton href={waVender} label={t('prop.cierre_wa')} />
+          <a href={L('/contacto')} class="btn btn--ghost">{t('prop.cierre_form')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .narrow { max-width: 760px; }
+  .hero { padding-bottom: 1rem; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
+  .cab { max-width: 62ch; margin-bottom: 2rem; }
+  .bloque.alt { background: var(--surface); border-block: 1px solid var(--line); }
+  .pasos {
+    list-style: none; margin: 0; padding: 0; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem;
+  }
+  .pasos li {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow);
+  }
+  .pasos .num {
+    font-family: var(--display); font-size: 1.1rem; font-weight: 600;
+    color: var(--violet); letter-spacing: 0.05em;
+  }
+  .pasos h3 { margin: 0.5rem 0 0.4rem; }
+  .pasos p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .admin-grid {
+    display: grid; grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(2rem, 5vw, 4rem); align-items: center;
+  }
+  .incluye { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.8rem; }
+  .incluye li { position: relative; padding-left: 2rem; font-size: 1.02rem; }
+  .incluye li::before {
+    content: ''; position: absolute; left: 0; top: 0.45em; width: 13px; height: 7px;
+    border-left: 2.5px solid var(--violet); border-bottom: 2.5px solid var(--violet);
+    transform: rotate(-45deg);
+  }
+  .cta-linea { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
+  .cta-linea.center { justify-content: center; }
+  .cierre {
+    background: var(--brand); color: #fff; border-radius: 22px;
+    padding: clamp(2rem, 5vw, 3.5rem); text-align: center;
+  }
+  .cierre h2 { color: #fff; margin-bottom: 0.4rem; }
+  .cierre p { color: #cfc8ee; margin: 0; }
+  @media (max-width: 820px) { .admin-grid { grid-template-columns: 1fr; } }
+</style>
