@@ -10,7 +10,7 @@
 # Authentification : voir le README (option Netlify OAuth = 1 clic).
 backend:
   name: github
-  repo: owner/repo
+  repo: kalypso-recoleta/calista-web
   branch: main
 
 # Message de commit lisible dans l'historique GitHub
@@ -20,15 +20,17 @@ backend:
     delete: 'Eliminado: {{collection}} "{{slug}}"'
 
 # --- Images : Cloudinary (JAMAIS dans Git) ---
-# Renseigne cloud_name et api_key depuis ton dashboard Cloudinary.
+# cloud_name = nom du cloud Cloudinary. api_key = clé PUBLIQUE (sans danger,
+# elle apparaît côté navigateur). On ne met JAMAIS l'API Secret ici.
 # output_filename_only: false → on stocke l'URL complète, que le site
 # optimise ensuite (voir src/lib/cloudinary.ts).
 media_libraries:
   cloudinary:
     config:
-      cloud_name: TU_CLOUD_NAME
-      api_key: TU_API_KEY
+      cloud_name: dbsnme7pt
+      api_key: '477574996655192'
     output_filename_only: false
+    use_transformations: false
 
 # Dossier interne de secours (si jamais une image n'est pas sur Cloudinary).
 media_folder: 'public/uploads'

@@ -19,7 +19,7 @@ export const site = {
 
   // Cloudinary : nom du "cloud" (visible dans ton dashboard Cloudinary).
   // Sert à optimiser les images à la volée.
-  cloudinaryCloudName: 'TU_CLOUD_NAME',
+  cloudinaryCloudName: 'dbsnme7pt',
 
   // Réseaux (laisse vide pour masquer)
   instagram: '',
