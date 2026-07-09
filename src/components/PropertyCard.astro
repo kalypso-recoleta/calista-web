@@ -73,7 +73,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 
     <div class="foot">
       <span class="precio">{formatPrecio(d, lang)}</span>
-      <span class="ver">{t('common.ver')} →</span>
+      <a href={href} class="ver">{t('common.ver')}</a>
     </div>
   </div>
 </article>
@@ -195,5 +195,9 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--violet);
+  }
+  .ver:hover {
+    text-decoration: none;
+    color: var(--brand);
   }
 </style>

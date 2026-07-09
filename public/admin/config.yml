@@ -168,11 +168,11 @@ collections:
           - Salto del Guairá
         # Para sumar una ciudad nueva, agregala a esta lista (y a src/lib/site.ts).
       - { label: Barrio, name: barrio, widget: string, required: false }
-      - label: Ubicación aproximada (coordenadas)
+      - label: Ubicación (link de Google Maps o coordenadas)
         name: ubicacion
         widget: string
         required: false
-        hint: 'En Google Maps, clic derecho sobre el punto y clic en las coordenadas para copiarlas. Pegá acá en formato lat,lng. Ej: -25.2935,-57.5751'
+        hint: 'Pegá el link de Google Maps (Compartir → Copiar vínculo) o coordenadas lat,lng. Ej: https://maps.app.goo.gl/xxxx o -25.2935,-57.5751'
 
       # --- Características (dejá vacío lo que no aplica) ---
       - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }

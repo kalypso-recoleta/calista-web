@@ -1,5 +1,5 @@
 ---
-import { parseUbicacion } from '../lib/geo';
+import { resolverUbicacion } from '../lib/geo';
 import { site } from '../lib/site';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
@@ -11,8 +11,10 @@ interface Props {
   zona?: string; // libellé affiché (ex. "Villa Morra, Asunción")
 }
 const { ubicacion, zona } = Astro.props;
-const punto = parseUbicacion(ubicacion) ?? site.mapaCentro;
-const hayPunto = parseUbicacion(ubicacion) !== null;
+// Résolu au build : accepte lien Google Maps (court ou complet), "lat,lng"…
+const resuelto = await resolverUbicacion(ubicacion);
+const punto = resuelto ?? site.mapaCentro;
+const hayPunto = resuelto !== null;
 ---
 
 <div class="mapa-wrap">
