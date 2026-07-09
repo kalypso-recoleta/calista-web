@@ -39,6 +39,11 @@ public_folder: '/uploads'
 # Interface en espagnol
 locale: es
 
+# À l'enregistrement, ne pas écrire les champs optionnels laissés vides
+# (évite les valeurs "null" qui ne correspondent pas au schéma du site).
+output:
+  omit_empty_optional_fields: true
+
 collections:
   - name: biens
     label: Propiedades

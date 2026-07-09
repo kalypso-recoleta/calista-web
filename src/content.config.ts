@@ -2,6 +2,19 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 /**
+ * Le CMS (Sveltia) écrit `null` ou `''` quand un champ optionnel est laissé
+ * vide. Ces helpers convertissent ces valeurs en `undefined` pour que le
+ * schéma les accepte sans casser le build.
+ */
+const vacio = (v: unknown) => (v === '' || v === null ? undefined : v);
+const numOpc = () =>
+  z.preprocess(vacio, z.coerce.number().nonnegative().optional());
+const entOpc = () =>
+  z.preprocess(vacio, z.coerce.number().int().nonnegative().optional());
+const strOpc = () => z.preprocess(vacio, z.string().optional());
+const boolOpc = () => z.preprocess(vacio, z.coerce.boolean().optional());
+
+/**
  * Collection UNIQUE pour tous les biens.
  *
  * Principe clé : ta mère saisit chaque bien UNE seule fois ici.
@@ -48,21 +61,21 @@ const biens = defineCollection({
 
     // --- Localisation ---
     ciudad: z.string(),
-    barrio: z.string().optional(),
+    barrio: strOpc(),
     // Pin approximatif déposé sur la carte dans l'admin.
     // Format souple (GeoJSON, "lat,lng" ou objet) — voir src/lib/geo.ts
-    ubicacion: z.string().optional(),
+    ubicacion: strOpc(),
 
     // --- Caractéristiques (toutes optionnelles : un terrain n'a pas de chambres) ---
-    dormitorios: z.number().int().nonnegative().optional(),
-    banos: z.number().int().nonnegative().optional(),
-    cocheras: z.number().int().nonnegative().optional(),
-    superficie_terreno: z.number().nonnegative().optional(),
-    superficie_construida: z.number().nonnegative().optional(),
+    dormitorios: entOpc(),
+    banos: entOpc(),
+    cocheras: entOpc(),
+    superficie_terreno: numOpc(),
+    superficie_construida: numOpc(),
 
     // --- Spécifique aux développements / pozo ---
-    entrega: z.string().optional(), // ex. "Diciembre 2026"
-    financiacion: z.boolean().optional(),
+    entrega: strOpc(), // ex. "Diciembre 2026"
+    financiacion: boolOpc(),
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
     imagenes: z.array(z.string()).default([]),
@@ -87,7 +100,7 @@ const resenas = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/resenas' }),
   schema: z.object({
     nombre: z.string(),
-    contexto: z.string().optional(), // ex. "Compró una casa en Luque"
+    contexto: strOpc(), // ex. "Compró una casa en Luque"
     estrellas: z.number().int().min(1).max(5).default(5),
     destacada: z.boolean().default(false), // mise en avant sur l'accueil
     texto: z.string(),

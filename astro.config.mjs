@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // IMPORTANT : remplace cette URL par le domaine final de Calista
 // (ex. https://www.calista.com.py). Elle sert au sitemap et aux
 // aperçus de partage (OG) — les liens WhatsApp en dépendent.
-const SITE = 'https://calista-inmobiliaria.netlify.app';
+const SITE = 'https://calista.com.py';
 
 export default defineConfig({
   site: SITE,
