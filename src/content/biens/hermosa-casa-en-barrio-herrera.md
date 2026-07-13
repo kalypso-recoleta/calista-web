@@ -19,31 +19,28 @@ superficie_construida: 418
 entrega: '2016'
 financiacion: false
 imagenes:
-  - /uploads/IMG_1334.png
-  - /uploads/IMG_1335.png
-  - /uploads/IMG_1336.png
-  - /uploads/IMG_1337.png
-  - /uploads/IMG_1338.png
-  - /uploads/IMG_1339.png
-  - /uploads/IMG_1340.png
-  - /uploads/IMG_1341.png
-  - /uploads/IMG_1342.png
-  - /uploads/IMG_1345.png
-  - /uploads/IMG_1346.png
-  - /uploads/IMG_1347.png
-  - /uploads/IMG_1351.png
-  - /uploads/IMG_1352.png
-  - /uploads/IMG_1354.png
-  - /uploads/IMG_1355.png
-  - /uploads/IMG_1356.png
-  - /uploads/IMG_1357.png
-  - /uploads/IMG_1358.png
-  - /uploads/IMG_1359.png
-  - /uploads/IMG_1360.png
-  - /uploads/IMG_1361.png
-  - /uploads/IMG_1362.png
-  - /uploads/IMG_1363.png
-  - /uploads/IMG_1364.png
+  - /uploads/IMG_1335.jpg
+  - /uploads/IMG_1336.jpg
+  - /uploads/IMG_1337.jpg
+  - /uploads/IMG_1338.jpg
+  - /uploads/IMG_1339.jpg
+  - /uploads/IMG_1340.jpg
+  - /uploads/IMG_1341.jpg
+  - /uploads/IMG_1342.jpg
+  - /uploads/IMG_1345.jpg
+  - /uploads/IMG_1346.jpg
+  - /uploads/IMG_1347.jpg
+  - /uploads/IMG_1354.jpg
+  - /uploads/IMG_1355.jpg
+  - /uploads/IMG_1356.jpg
+  - /uploads/IMG_1357.jpg
+  - /uploads/IMG_1358.jpg
+  - /uploads/IMG_1359.jpg
+  - /uploads/IMG_1360.jpg
+  - /uploads/IMG_1361.jpg
+  - /uploads/IMG_1362.jpg
+  - /uploads/IMG_1363.jpg
+  - /uploads/IMG_1364.jpg
 descripcion: |-
   Versión corta:
   🏡 Casa moderna estilo europeo en una de las mejores zonas de Asunción
