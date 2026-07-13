@@ -19,6 +19,7 @@ superficie_construida: 250
 financiacion: false
 imagenes:
   - /uploads/IMG_1791.jpg
+  - /uploads/IMG_1792.jpg
   - /uploads/IMG_1793.jpg
   - /uploads/IMG_1794.jpg
   - /uploads/IMG_1795.jpg
@@ -48,7 +49,6 @@ fecha: 2026-07-12T22:38
 Hay ubicaciones que no se consiguen dos veces. Esta casa está sobre Concordia, a tan solo un minuto a pie del Colegio Francés: comodidad, espacio y una zona inmejorable, todo en un mismo lugar.
 
 Son 250 m² construidos, pensados para vivir bien desde el primer día:
-
 
 🛏️ 3 dormitorios amplios, uno en suite
 
