@@ -5,7 +5,7 @@ tipo: departamento
 estado: disponible
 destacado: true
 exclusivo: false
-desarrollo: false
+desarrollo: true
 precio: 565500000
 moneda: PYG
 periodo: total
