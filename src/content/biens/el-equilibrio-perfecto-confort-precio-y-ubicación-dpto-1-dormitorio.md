@@ -25,6 +25,6 @@ imagenes:
   - /uploads/kalypso-plano-3d.jpg
 descripcion: |-
   Compacto y funcional: 31,13 m² internos + balcón de 7,45 m². Dormitorio independiente, sala/comedor, cocina equipada y baño completo. El equilibrio perfecto entre precio y comodidad — muy buscado para alquiler.
-  Desde Gs. 347.750.000 (USD 56.336) · 10 % de entrega + 32 cuotas sin intereses.
+  Desde Gs. 347.750.000 (USD 57.299) · 10 % de entrega + 32 cuotas sin intereses.
 fecha: 2026-07-15T12:01
 ---
