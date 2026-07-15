@@ -11,13 +11,11 @@ moneda: PYG
 periodo: total
 ciudad: Asunción
 barrio: Villa Mora
-ubicacion: https://maps.app.goo.gl/GUa2K6aDYGeCHnaf9?g_st=ic
+ubicacion: https://maps.app.goo.gl/N19R3trVwHSLc9Nq8?g_st=ic
 dormitorios: 3
 banos: 4
 cocheras: 1
 superficie_terreno: 120
-superficie_construida: null
-entrega: ''
 financiacion: false
 imagenes:
   - /uploads/calista_01.JPG
