@@ -1,5 +1,5 @@
 ---
-titulo: Espacio para toda la familia, en el corazón de Recoleta
+titulo: Espacio para toda la familia Dpto 2 dormitorios, en el corazón de Recoleta
 operacion: venta
 tipo: departamento
 estado: disponible
