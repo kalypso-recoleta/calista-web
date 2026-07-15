@@ -17,16 +17,16 @@ cocheras: 1
 superficie_construida: 45
 financiacion: false
 imagenes:
-  - /uploads/IMG_5011.jpeg
-  - /uploads/IMG_5012.jpeg
-  - /uploads/IMG_5013.jpeg
-  - /uploads/IMG_5014.jpeg
-  - /uploads/IMG_5015.jpeg
-  - /uploads/IMG_5016.jpeg
-  - /uploads/IMG_5018.jpeg
-  - /uploads/IMG_5019.jpeg
-  - /uploads/IMG_5020.jpeg
-  - /uploads/IMG_5022.jpeg
+  - /uploads/depto-01.jpg
+  - /uploads/depto-02.jpg
+  - /uploads/depto-03.jpg
+  - /uploads/depto-04.jpg
+  - /uploads/depto-05.jpg
+  - /uploads/depto-06.jpg
+  - /uploads/depto-07.jpg
+  - /uploads/depto-08.jpg
+  - /uploads/depto-09.jpg
+  - /uploads/depto-10.jpg
 descripcion: |-
   Luminoso monoambiente de 45 m² propios, ubicado en piso 6 sobre concejal Vargas.
   Cuenta con espacios amplios, balcón, excelente ventilación y muy buena luz natural.
