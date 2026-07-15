@@ -27,9 +27,6 @@ imagenes:
   - /uploads/IMG_5019.jpeg
   - /uploads/IMG_5020.jpeg
   - /uploads/IMG_5022.jpeg
-  - /uploads/IMG_5027.jpeg
-  - /uploads/IMG_5030.jpeg
-  - /uploads/IMG_5036.jpeg
 descripcion: |-
   Luminoso monoambiente de 45 m² propios, ubicado en piso 6 sobre concejal Vargas.
   Cuenta con espacios amplios, balcón, excelente ventilación y muy buena luz natural.
