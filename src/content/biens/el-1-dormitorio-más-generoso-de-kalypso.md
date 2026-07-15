@@ -25,7 +25,7 @@ imagenes:
   - /uploads/kalypso-living-04.jpg
 descripcion: |-
   El 1 dormitorio más generoso: 48,13 m² internos + balcón de 9,69 m². Dormitorio amplio, sala/comedor independiente, cocina con lavadero y baño completo. Casi el confort de un 2 dormitorios, al precio de un 1 dormitorio.
-  Desde Gs. 497.250.000 (USD 81.933) · 10 % de entrega + 32 cuotas sin intereses.
+  Desde Gs. 497.250.000 (USD 81 933) · 10 % de entrega + 32 cuotas sin intereses.
   www.kalypso.com.py
 fecha: 2026-07-15T12:11
 ---
