@@ -26,6 +26,6 @@ imagenes:
   - /uploads/kalypso-03.jpg
 descripcion: |-
   El del gran balcón: 37,19 m² internos + 11,22 m² de balcón, el más amplio de todas las tipologías. Dormitorio independiente, sala/comedor amplio, cocina integrada y baño completo. Perfecto para quienes valoran el espacio exterior.
-  Desde Gs. 419.250.000 (USD 67.901) · 10 % de entrega + 32 cuotas sin intereses.
+  Desde Gs. 419.250.000 (USD 69.081) · 10 % de entrega + 32 cuotas sin intereses.
 fecha: 2026-07-15T12:04
 ---
