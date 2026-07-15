@@ -28,6 +28,6 @@ imagenes:
   - /uploads/kalypso-09.jpg
 descripcion: |-
   El más amplio del edificio. 55,02 m² internos + balcón de 10,48 m², con 2 dormitorios independientes, 2 baños completos, sala/comedor amplio, cocina con lavadero y balcón privado. Ideal para familias o parejas que buscan espacio en plena Recoleta.
-  Desde Gs. 565.500.000 (USD 91.500) · 10 % de entrega + 32 cuotas sin intereses.
+  Desde Gs. 565.500.000 (USD 93.178) · 10 % de entrega + 32 cuotas sin intereses.
 fecha: 2026-07-15T11:51
 ---
