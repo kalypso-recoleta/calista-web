@@ -82,6 +82,8 @@ const biens = defineCollection({
     link_externo: strOpc(),
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
+    // Photo de couverture explicite ; sinon la 1ère de la liste
+    portada_foto: strOpc(),
     imagenes: z.array(z.string()).default([]),
 
     // --- Texte ---

@@ -26,7 +26,7 @@ const href = externo || localizePath(`/propiedad/${bien.id}`, lang);
 const target = externo ? '_blank' : undefined;
 const rel = externo ? 'noopener' : undefined;
 
-const portada = d.imagenes[0];
+const portada = d.portada_foto || d.imagenes[0];
 const superficie = formatSuperficie(d, lang);
 const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 ---

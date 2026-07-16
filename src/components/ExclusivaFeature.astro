@@ -40,7 +40,7 @@ const specs = [
 <article class:list={['feature', { reverse }]}>
   <a class="media" href={href} aria-label={d.titulo}>
     <img
-      src={img(d.imagenes[0], { w: 1000, h: 760 })}
+      src={img(d.portada_foto || d.imagenes[0], { w: 1000, h: 760 })}
       alt={d.titulo}
       width="1000"
       height="760"

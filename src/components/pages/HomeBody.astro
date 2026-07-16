@@ -63,7 +63,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
         hero && (
           <a class="hero-media" href={L(`/propiedad/${hero.id}`)} aria-label={hero.data.titulo}>
             <img
-              src={img(hero.data.imagenes[0], { w: 760, h: 620 })}
+              src={img(hero.data.portada_foto || hero.data.imagenes[0], { w: 760, h: 620 })}
               alt={hero.data.titulo}
               width="760"
               height="620"

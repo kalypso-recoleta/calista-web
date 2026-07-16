@@ -135,6 +135,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     padding: 0.5rem 0.7rem;
     border-radius: 8px;
     position: relative;
+    white-space: nowrap; /* jamais de libellé coupé sur deux lignes */
   }
   .nav-link:hover {
     text-decoration: none;
@@ -221,7 +222,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     margin-top: 0.9rem;
   }
 
-  @media (max-width: 1040px) {
+  @media (max-width: 1320px) {
     .nav {
       gap: 0.1rem;
     }
@@ -230,7 +231,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
       font-size: 0.9rem;
     }
   }
-  @media (max-width: 880px) {
+  @media (max-width: 1180px) {
     .nav,
     .header-cta {
       display: none;

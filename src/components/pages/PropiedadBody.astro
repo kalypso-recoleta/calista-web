@@ -33,7 +33,11 @@ const { Content } = await render(bien);
 const url = new URL(`/propiedad/${bien.id}`, Astro.site).toString();
 const wa = whatsappBien({ titulo: d.titulo, ref: bien.id, url });
 const superficie = formatSuperficie(d, lang);
-const ogImage = d.imagenes[0] ? img(d.imagenes[0], { w: 1200, h: 630 }) : undefined;
+// La portada explicite passe en tête de galerie et sert d'image de partage
+const fotos = d.portada_foto
+  ? [d.portada_foto, ...d.imagenes.filter((f) => f !== d.portada_foto)]
+  : d.imagenes;
+const ogImage = fotos[0] ? img(fotos[0], { w: 1200, h: 630 }) : undefined;
 
 // Données structurées de l'annonce (prix, devise, disponibilité, attributs).
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
@@ -103,7 +107,7 @@ const specs = [
         <span>{d.titulo}</span>
       </nav>
 
-      <PropertyGallery imagenes={d.imagenes} titulo={d.titulo} />
+      <PropertyGallery imagenes={fotos} titulo={d.titulo} />
 
       <div class="layout">
         <div class="main">
