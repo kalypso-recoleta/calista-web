@@ -1,0 +1,224 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# ───────────────────────────────────────────────────────────
+# Panneau d'administration de Calista (Sveltia CMS).
+# Ta mère gère TOUS les biens depuis ici. Le schéma correspond
+# exactement à src/content.config.ts.
+# ───────────────────────────────────────────────────────────
+
+# --- Connexion au dépôt (où sont stockés les biens) ---
+# Remplace owner/repo par ton dépôt GitHub (ex. louis/calista-web).
+# Authentification : voir le README (option Netlify OAuth = 1 clic).
+backend:
+  name: github
+  repo: kalypso-recoleta/calista-web
+  branch: main
+
+# Message de commit lisible dans l'historique GitHub
+  commit_messages:
+    create: 'Nuevo: {{collection}} "{{slug}}"'
+    update: 'Editado: {{collection}} "{{slug}}"'
+    delete: 'Eliminado: {{collection}} "{{slug}}"'
+
+# --- Images : Cloudinary (JAMAIS dans Git) ---
+# cloud_name = nom du cloud Cloudinary. api_key = clé PUBLIQUE (sans danger,
+# elle apparaît côté navigateur). On ne met JAMAIS l'API Secret ici.
+# output_filename_only: false → on stocke l'URL complète, que le site
+# optimise ensuite (voir src/lib/cloudinary.ts).
+media_libraries:
+  cloudinary:
+    config:
+      cloud_name: dbsnme7pt
+      api_key: '477574996655192'
+    output_filename_only: false
+    use_transformations: false
+
+# Dossier interne de secours (si jamais une image n'est pas sur Cloudinary).
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+# Interface en espagnol
+locale: es
+
+# À l'enregistrement, ne pas écrire les champs optionnels laissés vides
+# (évite les valeurs "null" qui ne correspondent pas au schéma du site).
+output:
+  omit_empty_optional_fields: true
+
+collections:
+  - name: biens
+    label: Propiedades
+    label_singular: Propiedad
+    description: Todas las propiedades. Las páginas del sitio se arman solas según lo que cargues acá.
+    folder: src/content/biens
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: titulo
+    summary: '{{titulo}} — {{ciudad}}'
+    sortable_fields: [fecha, precio, titulo]
+    fields:
+      - { label: Título, name: titulo, widget: string }
+
+      - label: Operación
+        name: operacion
+        widget: select
+        options:
+          - { label: Venta, value: venta }
+          - { label: Alquiler, value: alquiler }
+        default: venta
+
+      - label: Tipo de propiedad
+        name: tipo
+        widget: select
+        options:
+          - { label: Casa, value: casa }
+          - { label: Departamento, value: departamento }
+          - { label: Dúplex, value: duplex }
+          - { label: Terreno, value: terreno }
+          - { label: Oficina, value: oficina }
+          - { label: Local comercial, value: local }
+          - { label: Depósito, value: deposito }
+          - { label: Quinta, value: quinta }
+        default: casa
+
+      - label: Estado
+        name: estado
+        widget: select
+        options:
+          - { label: Disponible, value: disponible }
+          - { label: Reservado, value: reservado }
+          - { label: Vendido, value: vendido }
+          - { label: Alquilado, value: alquilado }
+        default: disponible
+
+      # --- Etiquetas que deciden en qué página aparece ---
+      - { label: '¿Destacado? (aparece en la sección Destacados del inicio)', name: destacado, widget: boolean, default: false }
+      - { label: '⭐ ¿Usar como imagen de PORTADA del inicio?', name: portada, widget: boolean, default: false, required: false, hint: 'La propiedad con esta casilla marcada es la foto grande de la página de inicio. Marcá una sola.' }
+      - { label: '¿Cartera Exclusiva?', name: exclusivo, widget: boolean, default: false }
+      - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
+
+      # --- Precio ---
+      - { label: Precio, name: precio, widget: number, value_type: int, min: 0 }
+      - label: Moneda
+        name: moneda
+        widget: select
+        options: [USD, PYG]
+        default: USD
+      - label: Período (solo alquiler)
+        name: periodo
+        widget: select
+        options:
+          - { label: Por mes, value: mes }
+          - { label: Por día, value: dia }
+          - { label: Precio total, value: total }
+        default: total
+        required: false
+
+      # --- Ubicación ---
+      - label: Ciudad
+        name: ciudad
+        widget: select
+        options:
+          # Gran Asunción
+          - Asunción
+          - Lambaré
+          - Fernando de la Mora
+          - San Lorenzo
+          - Luque
+          - Mariano Roque Alonso
+          - Ñemby
+          - Villa Elisa
+          - San Antonio
+          - Limpio
+          - Capiatá
+          - Itauguá
+          - Itá
+          - Areguá
+          - Ypané
+          - Guarambaré
+          - J. Augusto Saldívar
+          - Villeta
+          - Nueva Italia
+          - Ypacaraí
+          # Cordillera / quintas
+          - San Bernardino
+          - Altos
+          - Atyrá
+          - Tobatí
+          - Caacupé
+          - Piribebuy
+          - Paraguarí
+          # Alto Paraná
+          - Ciudad del Este
+          - Presidente Franco
+          - Hernandarias
+          - Minga Guazú
+          # Itapúá
+          - Encarnación
+          # Otras ciudades del interior
+          - Coronel Oviedo
+          - Caaguazú
+          - Villarrica
+          - Pedro Juan Caballero
+          - Concepción
+          - Pilar
+          - San Juan Bautista
+          - San Ignacio
+          - Salto del Guairá
+        # Para sumar una ciudad nueva, agregala a esta lista (y a src/lib/site.ts).
+      - { label: Barrio, name: barrio, widget: string, required: false }
+      - label: 'Ubicación (hacé clic en el mapa)'
+        name: ubicacion
+        widget: map
+        required: false
+        hint: 'Hacé zoom y clic en la zona de la propiedad. No hace falta que sea exacto: un punto aproximado alcanza.'
+
+      # --- Características (dejá vacío lo que no aplica) ---
+      - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }
+      - { label: Baños, name: banos, widget: number, value_type: int, min: 0, required: false }
+      - { label: Cocheras, name: cocheras, widget: number, value_type: int, min: 0, required: false }
+      - { label: Superficie del terreno (m²), name: superficie_terreno, widget: number, value_type: int, min: 0, required: false }
+      - { label: Superficie construida (m²), name: superficie_construida, widget: number, value_type: int, min: 0, required: false }
+
+      # --- Solo para desarrollos / pozo ---
+      - { label: Fecha de entrega, name: entrega, widget: string, required: false, hint: 'Solo para pozo. Ej: Marzo 2027' }
+      - { label: '¿Ofrece financiación?', name: financiacion, widget: boolean, default: false, required: false }
+      - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }
+
+      # --- Imágenes (se suben a Cloudinary) ---
+      - label: Imágenes
+        name: imagenes
+        widget: image
+        multiple: true
+        required: false
+        media_library: { name: cloudinary }
+        hint: 'La primera imagen es la portada. Subí las fotos desde la pestaña Cloudinary.'
+
+      # --- Textos ---
+      - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases. Aparece en las tarjetas y al compartir por WhatsApp.' }
+      - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: Descripción completa, name: body, widget: markdown, required: false }
+
+  # ─── Avis clients ───
+  - name: resenas
+    label: Reseñas
+    label_singular: Reseña
+    description: Opiniones de clientes. Las marcadas como destacadas aparecen en la portada.
+    folder: src/content/resenas
+    create: true
+    delete: true
+    slug: '{{nombre}}-{{year}}{{month}}'
+    extension: md
+    format: frontmatter
+    identifier_field: nombre
+    summary: '{{nombre}} — {{contexto}}'
+    sortable_fields: [fecha, nombre]
+    fields:
+      - { label: Nombre, name: nombre, widget: string, hint: 'Podés usar solo el nombre y la inicial, ej. "Marta R."' }
+      - { label: Contexto, name: contexto, widget: string, required: false, hint: 'Ej. "Compró una casa en Luque"' }
+      - { label: Estrellas, name: estrellas, widget: number, value_type: int, min: 1, max: 5, default: 5 }
+      - { label: '¿Mostrar en la portada?', name: destacada, widget: boolean, default: false }
+      - { label: Reseña, name: texto, widget: text }
+      - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
