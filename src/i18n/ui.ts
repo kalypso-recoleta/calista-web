@@ -188,11 +188,16 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Quiénes somos',
     'hist.title': 'Una inmobiliaria que se construyó sobre la confianza.',
     'hist.lead':
-      'Calista nació en Asunción hace once años, con una idea simple: tratar cada propiedad y cada cliente como si fueran propios.',
+      'Más de veinte años de oficio inmobiliario, dos continentes y una misma idea: tratar cada propiedad y cada cliente como si fueran propios.',
     'hist.p1':
       'En todo este tiempo acompañamos a familias que compraron su primera casa, a propietarios que confiaron en nosotros para vender o alquilar, y a inversores que buscaban crecer con criterio. No trabajamos con volumen ni con apuro: trabajamos con personas.',
     'hist.p_martinica':
-      'Nuestra historia empezó del otro lado del Atlántico: en Martinica (Francia), donde nuestra agencia hermana Calista Immobilier acompaña a propietarios desde hace más de una década. Hace 11 años trajimos esa misma manera de trabajar a Paraguay. Hoy, entre ambas agencias, gestionamos más de cien propiedades en dos continentes.',
+      'Nuestra historia empezó del otro lado del Atlántico, en Martinica (Francia): más de veinte años dedicados a la promoción inmobiliaria y a la venta de propiedades. Allí, desde hace una docena de años, Hélène está al frente de nuestra agencia hermana, ',
+    'hist.p_mq_b': '.',
+    'hist.p_py_a':
+      'En 2014 la familia descubrió Paraguay, y en 2015 se instaló definitivamente — con los primeros proyectos en marcha desde el primer día. De ese impulso nacieron la desarrolladora ',
+    'hist.p_py_b':
+      ', con la que promovemos y construimos proyectos propios, y Calista Inmobiliaria, nuestra agencia en Asunción. Hoy, entre Francia y Paraguay, gestionamos más de cien propiedades.',
     'hist.h2_creemos': 'En qué creemos',
     'hist.p_creemos':
       'Conocemos bien el mercado paraguayo, también sus zonas grises. Por eso elegimos hacer las cosas de otra manera. Cuando un cliente del exterior se acerca, lo asesoramos con la misma honestidad que a cualquiera: explicamos el proceso y lo derivamos a profesionales legales independientes para escrituras, residencia y trámites. Nunca atamos un servicio a otro ni usamos los trámites como excusa para empujar una propiedad.',
@@ -306,7 +311,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.exclusivos': 'Exclusivités',
     'nav.propietarios': 'Gestion / Vente',
     'nav.resenas': 'Avis',
-    'nav.historia': 'Notre histoire',
+    'nav.historia': 'Histoire',
     'nav.contacto': 'Contact',
     'nav.contactar': 'Nous contacter',
     'nav.skip': 'Aller au contenu',
@@ -480,11 +485,16 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Qui sommes-nous',
     'hist.title': "Une agence bâtie sur la confiance.",
     'hist.lead':
-      "Calista est née à Asunción il y a onze ans, avec une idée simple : traiter chaque bien et chaque client comme les nôtres.",
+      "Plus de vingt ans de métier immobilier, deux continents et une même idée : traiter chaque bien et chaque client comme les nôtres.",
     'hist.p1':
       "Pendant toutes ces années, nous avons accompagné des familles qui achetaient leur première maison, des propriétaires qui nous ont confié une vente ou une location, et des investisseurs qui voulaient grandir avec discernement. Nous ne travaillons ni au volume ni dans la précipitation : nous travaillons avec des personnes.",
     'hist.p_martinica':
-      "Notre histoire a commencé de l'autre côté de l'Atlantique : en Martinique (France), où notre agence sœur Calista Immobilier accompagne les propriétaires depuis plus de dix ans. Il y a 11 ans, nous avons apporté cette même façon de travailler au Paraguay. Aujourd'hui, entre les deux agences, nous gérons plus de cent biens sur deux continents.",
+      "Notre histoire a commencé de l'autre côté de l'Atlantique, en Martinique : plus de vingt ans consacrés à la promotion immobilière et à la vente de biens. Depuis une douzaine d'années, Hélène y dirige notre agence sœur, ",
+    'hist.p_mq_b': '.',
+    'hist.p_py_a':
+      "En 2014, la famille a découvert le Paraguay ; en 2015, elle s'y est installée — et les premiers projets ont démarré aussitôt. De cet élan sont nés le promoteur ",
+    'hist.p_py_b':
+      ", avec lequel nous développons et construisons nos propres projets, et Calista Inmobiliaria, notre agence à Asunción. Aujourd'hui, entre la France et le Paraguay, nous gérons plus de cent biens.",
     'hist.h2_creemos': 'Ce en quoi nous croyons',
     'hist.p_creemos':
       "Nous connaissons bien le marché paraguayen, y compris ses zones grises. C'est pourquoi nous faisons les choses autrement. Quand un client de l'étranger nous contacte, nous le conseillons avec la même honnêteté que tout le monde : nous expliquons le processus et l'orientons vers des juristes indépendants pour les actes, la résidence et les démarches. Nous ne lions jamais un service à un autre et n'utilisons jamais les démarches comme prétexte pour pousser un bien.",
@@ -599,7 +609,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.exclusivos': 'Exclusive',
     'nav.propietarios': 'Management / Sales',
     'nav.resenas': 'Reviews',
-    'nav.historia': 'About us',
+    'nav.historia': 'Our story',
     'nav.contacto': 'Contact',
     'nav.contactar': 'Contact us',
     'nav.skip': 'Skip to content',
@@ -771,11 +781,16 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Who we are',
     'hist.title': 'An agency built on trust.',
     'hist.lead':
-      'Calista was born in Asunción eleven years ago, with a simple idea: to treat every property and every client as our own.',
+      'More than twenty years in real estate, two continents and one same idea: treating every property and every client as our own.',
     'hist.p1':
       "Over all this time we've guided families buying their first home, owners who trusted us to sell or rent, and investors looking to grow wisely. We don't work by volume or in a rush: we work with people.",
     'hist.p_martinica':
-      'Our story began on the other side of the Atlantic: in Martinique (France), where our sister agency Calista Immobilier has been serving owners for over a decade. Eleven years ago we brought that same way of working to Paraguay. Today, across both agencies, we manage more than one hundred properties on two continents.',
+      'Our story began on the other side of the Atlantic, in Martinique (France): more than twenty years dedicated to real estate development and property sales. For a dozen years now, Hélène has led our sister agency there, ',
+    'hist.p_mq_b': '.',
+    'hist.p_py_a':
+      'In 2014 the family discovered Paraguay; in 2015 they settled for good — with the first projects underway from day one. From that drive were born the developer ',
+    'hist.p_py_b':
+      ', through which we develop and build our own projects, and Calista Inmobiliaria, our agency in Asunción. Today, between France and Paraguay, we manage more than one hundred properties.',
     'hist.h2_creemos': 'What we believe',
     'hist.p_creemos':
       "We know the Paraguayan market well, including its grey areas. That's why we do things differently. When a client from abroad reaches out, we advise them with the same honesty as anyone: we explain the process and refer them to independent legal professionals for deeds, residency and paperwork. We never tie one service to another, nor use paperwork as an excuse to push a property.",
