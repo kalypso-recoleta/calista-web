@@ -17,8 +17,16 @@ const todos = await getCollection('biens');
 const activos = todos.filter(
   (b) => b.data.estado === 'disponible' || b.data.estado === 'reservado'
 );
-const destacados = activos.filter((b) => b.data.destacado).slice(0, 6);
-const hero = destacados[0] ?? activos[0];
+const destacados = activos
+  .filter((b) => b.data.destacado)
+  .sort((a, b) => +b.data.fecha - +a.data.fecha)
+  .slice(0, 6);
+// L'annonce cochée "⭐ Portada" dans l'admin gagne toujours ; sinon la
+// destacada la plus récente ; sinon la première annonce active.
+const conPortada = activos
+  .filter((b) => b.data.portada)
+  .sort((a, b) => +b.data.fecha - +a.data.fecha);
+const hero = conPortada[0] ?? destacados[0] ?? activos[0];
 
 const resenas = (await getCollection('resenas'))
   .filter((r) => r.data.destacada)
@@ -131,6 +139,29 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
           <p>{t('home.valor3_d')}</p>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <!-- CIFRAS : dos continentes -->
+  <section class="section cifras-section">
+    <div class="container">
+      <div class="cifras">
+        <div class="cifras-grid">
+          <div class="cifra">
+            <span class="v">{t('home.cifra1_v')}</span>
+            <span class="l">{t('home.cifra1_l')}</span>
+          </div>
+          <div class="cifra">
+            <span class="v">{t('home.cifra2_v')}</span>
+            <span class="l">{t('home.cifra2_l')}</span>
+          </div>
+          <div class="cifra">
+            <span class="v">{t('home.cifra3_v')}</span>
+            <span class="l">{t('home.cifra3_l')}</span>
+          </div>
+        </div>
+        <p class="cifras-nota">{t('home.cifras_nota')}</p>
+      </div>
     </div>
   </section>
 
@@ -286,6 +317,52 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   .porque {
     background: var(--surface);
     border-block: 1px solid var(--line);
+  }
+
+  /* Bande de chiffres (Martinique + Paraguay) */
+  .cifras-section {
+    padding-block: 0;
+  }
+  .cifras {
+    background: var(--brand);
+    color: #fff;
+    border-radius: 22px;
+    padding: clamp(1.8rem, 4vw, 2.8rem);
+  }
+  .cifras-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .cifra {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .cifra .v {
+    font-family: var(--display);
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    font-weight: 600;
+    color: #c9a0e8;
+    line-height: 1;
+  }
+  .cifra .l {
+    font-size: 0.95rem;
+    color: #cfc8ee;
+  }
+  .cifras-nota {
+    margin: 1.6rem auto 0;
+    max-width: 62ch;
+    text-align: center;
+    color: #b3aada;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 640px) {
+    .cifras-grid {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
   }
   .porque-grid {
     display: grid;

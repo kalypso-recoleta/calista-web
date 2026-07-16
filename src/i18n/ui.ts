@@ -11,7 +11,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.desarrollos': 'Desarrollos',
     'nav.terrenos': 'Terrenos',
     'nav.exclusivos': 'Exclusivos',
-    'nav.propietarios': 'Propietarios',
+    'nav.propietarios': 'Gestión / Venta',
     'nav.resenas': 'Reseñas',
     'nav.historia': 'Historia',
     'nav.contacto': 'Contacto',
@@ -130,6 +130,14 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.valor3_t': 'Atención personal',
     'home.valor3_d':
       'Hablás siempre con una persona, no con un sistema. Respondemos por WhatsApp y coordinamos cada visita con cuidado.',
+    'home.cifra1_v': '11',
+    'home.cifra1_l': 'Años en el mercado paraguayo',
+    'home.cifra2_v': '2',
+    'home.cifra2_l': 'Continentes: Martinica y Paraguay',
+    'home.cifra3_v': '+100',
+    'home.cifra3_l': 'Propiedades en gestión',
+    'home.cifras_nota':
+      'Junto a nuestra agencia hermana Calista Immobilier en Martinica (Francia), llevamos más de una década acompañando a propietarios e inversores a ambos lados del Atlántico.',
     'home.resenas_eyebrow': 'Reseñas',
     'home.resenas_title': 'Lo que dicen nuestros clientes',
     'home.prop_eyebrow': 'Para propietarios',
@@ -183,6 +191,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       'Calista nació en Asunción hace once años, con una idea simple: tratar cada propiedad y cada cliente como si fueran propios.',
     'hist.p1':
       'En todo este tiempo acompañamos a familias que compraron su primera casa, a propietarios que confiaron en nosotros para vender o alquilar, y a inversores que buscaban crecer con criterio. No trabajamos con volumen ni con apuro: trabajamos con personas.',
+    'hist.p_martinica':
+      'Nuestra historia empezó del otro lado del Atlántico: en Martinica (Francia), donde nuestra agencia hermana Calista Immobilier acompaña a propietarios desde hace más de una década. Hace 11 años trajimos esa misma manera de trabajar a Paraguay. Hoy, entre ambas agencias, gestionamos más de cien propiedades en dos continentes.',
     'hist.h2_creemos': 'En qué creemos',
     'hist.p_creemos':
       'Conocemos bien el mercado paraguayo, también sus zonas grises. Por eso elegimos hacer las cosas de otra manera. Cuando un cliente del exterior se acerca, lo asesoramos con la misma honestidad que a cualquiera: explicamos el proceso y lo derivamos a profesionales legales independientes para escrituras, residencia y trámites. Nunca atamos un servicio a otro ni usamos los trámites como excusa para empujar una propiedad.',
@@ -294,7 +304,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.desarrollos': 'Programmes neufs',
     'nav.terrenos': 'Terrains',
     'nav.exclusivos': 'Exclusivités',
-    'nav.propietarios': 'Propriétaires',
+    'nav.propietarios': 'Gestion / Vente',
     'nav.resenas': 'Avis',
     'nav.historia': 'Notre histoire',
     'nav.contacto': 'Contact',
@@ -411,6 +421,14 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.valor3_t': 'Un suivi personnel',
     'home.valor3_d':
       "Vous parlez toujours à une personne, pas à un système. Nous répondons sur WhatsApp et organisons chaque visite avec soin.",
+    'home.cifra1_v': '11',
+    'home.cifra1_l': 'Ans sur le marché paraguayen',
+    'home.cifra2_v': '2',
+    'home.cifra2_l': 'Continents : Martinique et Paraguay',
+    'home.cifra3_v': '+100',
+    'home.cifra3_l': 'Biens en gestion',
+    'home.cifras_nota':
+      "Avec notre agence sœur Calista Immobilier en Martinique (France), nous accompagnons depuis plus de dix ans propriétaires et investisseurs des deux côtés de l'Atlantique.",
     'home.resenas_eyebrow': 'Avis',
     'home.resenas_title': 'Ce que disent nos clients',
     'home.prop_eyebrow': 'Pour les propriétaires',
@@ -465,6 +483,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       "Calista est née à Asunción il y a onze ans, avec une idée simple : traiter chaque bien et chaque client comme les nôtres.",
     'hist.p1':
       "Pendant toutes ces années, nous avons accompagné des familles qui achetaient leur première maison, des propriétaires qui nous ont confié une vente ou une location, et des investisseurs qui voulaient grandir avec discernement. Nous ne travaillons ni au volume ni dans la précipitation : nous travaillons avec des personnes.",
+    'hist.p_martinica':
+      "Notre histoire a commencé de l'autre côté de l'Atlantique : en Martinique (France), où notre agence sœur Calista Immobilier accompagne les propriétaires depuis plus de dix ans. Il y a 11 ans, nous avons apporté cette même façon de travailler au Paraguay. Aujourd'hui, entre les deux agences, nous gérons plus de cent biens sur deux continents.",
     'hist.h2_creemos': 'Ce en quoi nous croyons',
     'hist.p_creemos':
       "Nous connaissons bien le marché paraguayen, y compris ses zones grises. C'est pourquoi nous faisons les choses autrement. Quand un client de l'étranger nous contacte, nous le conseillons avec la même honnêteté que tout le monde : nous expliquons le processus et l'orientons vers des juristes indépendants pour les actes, la résidence et les démarches. Nous ne lions jamais un service à un autre et n'utilisons jamais les démarches comme prétexte pour pousser un bien.",
@@ -577,7 +597,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.desarrollos': 'New developments',
     'nav.terrenos': 'Land',
     'nav.exclusivos': 'Exclusive',
-    'nav.propietarios': 'Owners',
+    'nav.propietarios': 'Management / Sales',
     'nav.resenas': 'Reviews',
     'nav.historia': 'About us',
     'nav.contacto': 'Contact',
@@ -693,6 +713,14 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.valor3_t': 'Personal attention',
     'home.valor3_d':
       'You always talk to a person, not a system. We answer on WhatsApp and arrange every visit with care.',
+    'home.cifra1_v': '11',
+    'home.cifra1_l': 'Years in the Paraguayan market',
+    'home.cifra2_v': '2',
+    'home.cifra2_l': 'Continents: Martinique and Paraguay',
+    'home.cifra3_v': '+100',
+    'home.cifra3_l': 'Properties under management',
+    'home.cifras_nota':
+      'Together with our sister agency Calista Immobilier in Martinique (France), we have been guiding owners and investors on both sides of the Atlantic for over a decade.',
     'home.resenas_eyebrow': 'Reviews',
     'home.resenas_title': 'What our clients say',
     'home.prop_eyebrow': 'For owners',
@@ -746,6 +774,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       'Calista was born in Asunción eleven years ago, with a simple idea: to treat every property and every client as our own.',
     'hist.p1':
       "Over all this time we've guided families buying their first home, owners who trusted us to sell or rent, and investors looking to grow wisely. We don't work by volume or in a rush: we work with people.",
+    'hist.p_martinica':
+      'Our story began on the other side of the Atlantic: in Martinique (France), where our sister agency Calista Immobilier has been serving owners for over a decade. Eleven years ago we brought that same way of working to Paraguay. Today, across both agencies, we manage more than one hundred properties on two continents.',
     'hist.h2_creemos': 'What we believe',
     'hist.p_creemos':
       "We know the Paraguayan market well, including its grey areas. That's why we do things differently. When a client from abroad reaches out, we advise them with the same honesty as anyone: we explain the process and refer them to independent legal professionals for deeds, residency and paperwork. We never tie one service to another, nor use paperwork as an excuse to push a property.",

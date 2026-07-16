@@ -34,9 +34,26 @@ const incluyeAdmin = [
       <h1>{t('prop.hero_title')}</h1>
       <p class="lead">{t('prop.hero_lead')}</p>
       <div class="hero-cta">
-        <a href="#vender" class="btn btn--primary">{t('prop.cta_vender')}</a>
-        <a href="#administracion" class="btn btn--ghost">{t('prop.cta_admin')}</a>
+        <a href="#administracion" class="btn btn--primary">{t('prop.cta_admin')}</a>
+        <a href="#vender" class="btn btn--ghost">{t('prop.cta_vender')}</a>
       </div>
+    </div>
+  </section>
+
+  <section id="administracion" class="section bloque alt">
+    <div class="container admin-grid">
+      <div>
+        <p class="eyebrow">{t('prop.admin_eyebrow')}</p>
+        <h2>{t('prop.admin_title')}</h2>
+        <p class="lead">{t('prop.admin_lead')}</p>
+        <div class="cta-linea">
+          <WhatsAppButton href={waAdmin} label={t('prop.admin_wa')} />
+        </div>
+      </div>
+
+      <ul class="incluye">
+        {incluyeAdmin.map((i) => <li>{i}</li>)}
+      </ul>
     </div>
   </section>
 
@@ -64,23 +81,6 @@ const incluyeAdmin = [
         <WhatsAppButton href={waVender} label={t('prop.vender_wa')} />
         <a href={L('/contacto')} class="btn btn--ghost">{t('prop.vender_form')}</a>
       </div>
-    </div>
-  </section>
-
-  <section id="administracion" class="section bloque alt">
-    <div class="container admin-grid">
-      <div>
-        <p class="eyebrow">{t('prop.admin_eyebrow')}</p>
-        <h2>{t('prop.admin_title')}</h2>
-        <p class="lead">{t('prop.admin_lead')}</p>
-        <div class="cta-linea">
-          <WhatsAppButton href={waAdmin} label={t('prop.admin_wa')} />
-        </div>
-      </div>
-
-      <ul class="incluye">
-        {incluyeAdmin.map((i) => <li>{i}</li>)}
-      </ul>
     </div>
   </section>
 

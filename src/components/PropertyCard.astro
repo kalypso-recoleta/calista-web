@@ -19,7 +19,12 @@ const d = bien.data;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const href = localizePath(`/propiedad/${bien.id}`, lang);
+// Si l'annonce a un link externe (ex. site du développeur), la vignette
+// envoie directement là-bas, dans un nouvel onglet.
+const externo = d.link_externo?.trim();
+const href = externo || localizePath(`/propiedad/${bien.id}`, lang);
+const target = externo ? '_blank' : undefined;
+const rel = externo ? 'noopener' : undefined;
 
 const portada = d.imagenes[0];
 const superficie = formatSuperficie(d, lang);
@@ -27,7 +32,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 ---
 
 <article class:list={['card', { inactivo }]}>
-  <a href={href} class="media" aria-label={d.titulo}>
+  <a href={href} target={target} rel={rel} class="media" aria-label={d.titulo}>
     <img
       src={img(portada, { w: 640, h: 440 })}
       alt={d.titulo}
@@ -61,7 +66,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
   <div class="body">
     <p class="loc">{tipoLabel(d.tipo, lang)} · {formatUbicacion(d)}</p>
     <h3 class="titulo">
-      <a href={href}>{d.titulo}</a>
+      <a href={href} target={target} rel={rel}>{d.titulo}</a>
     </h3>
 
     <ul class="specs">
@@ -73,7 +78,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 
     <div class="foot">
       <span class="precio">{formatPrecio(d, lang)}</span>
-      <a href={href} class="ver">{t('common.ver')}</a>
+      <a href={href} target={target} rel={rel} class="ver">{t('common.ver')}</a>
     </div>
   </div>
 </article>
@@ -82,6 +87,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
   .card {
     display: flex;
     flex-direction: column;
+    height: 100%; /* toutes les cartes d'une rangée font la même hauteur */
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -138,6 +144,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    flex: 1; /* occupe tout l'espace pour pousser le pied en bas */
     padding: 1.1rem 1.2rem 1.2rem;
   }
   .loc {
@@ -150,6 +157,12 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     font-size: 1.2rem;
     margin: 0;
     line-height: 1.2;
+    /* Max 2 lignes avec "…" : garde toutes les cartes uniformes.
+       Le titre complet s'affiche sur la fiche. */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .titulo a {
     color: var(--ink);
@@ -181,7 +194,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 0.6rem;
+    margin-top: auto; /* toujours en bas de la carte */
     padding-top: 0.8rem;
     border-top: 1px solid var(--line);
   }

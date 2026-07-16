@@ -1,5 +1,5 @@
 ---
-import { resolverUbicacion } from '../lib/geo';
+import { resolverUbicacion, coordsCiudad } from '../lib/geo';
 import { site } from '../lib/site';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
@@ -9,11 +9,13 @@ const t = useTranslations(lang);
 interface Props {
   ubicacion?: string;
   zona?: string; // libellé affiché (ex. "Villa Morra, Asunción")
+  ciudad?: string; // ville de l'annonce → centre de secours
 }
-const { ubicacion, zona } = Astro.props;
-// Résolu au build : accepte lien Google Maps (court ou complet), "lat,lng"…
+const { ubicacion, zona, ciudad } = Astro.props;
+// Résolu au build : point cliqué dans l'admin (GeoJSON), lien Google Maps,
+// "lat,lng"… Sinon on centre sur la ville de l'annonce, sinon Asunción.
 const resuelto = await resolverUbicacion(ubicacion);
-const punto = resuelto ?? site.mapaCentro;
+const punto = resuelto ?? (ciudad ? coordsCiudad[ciudad] : undefined) ?? site.mapaCentro;
 const hayPunto = resuelto !== null;
 ---
 

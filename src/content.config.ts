@@ -47,6 +47,8 @@ const biens = defineCollection({
     exclusivo: z.boolean().default(false),
     desarrollo: z.boolean().default(false),
     destacado: z.boolean().default(false),
+    // ⭐ Une seule annonce cochée "portada" = la grande image de l'accueil
+    portada: boolOpc(),
 
     // --- État de disponibilité (permet d'archiver sans supprimer) ---
     estado: z
@@ -76,6 +78,8 @@ const biens = defineCollection({
     // --- Spécifique aux développements / pozo ---
     entrega: strOpc(), // ex. "Diciembre 2026"
     financiacion: boolOpc(),
+    // Si renseigné, la vignette envoie vers ce site externe (ex. kalypso.com.py)
+    link_externo: strOpc(),
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
     imagenes: z.array(z.string()).default([]),
