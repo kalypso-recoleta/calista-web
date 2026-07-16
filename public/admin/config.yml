@@ -94,7 +94,8 @@ collections:
         default: disponible
 
       # --- Etiquetas que deciden en qué página aparece ---
-      - { label: '¿Destacado en la portada?', name: destacado, widget: boolean, default: false }
+      - { label: '¿Destacado? (aparece en la sección Destacados del inicio)', name: destacado, widget: boolean, default: false }
+      - { label: '⭐ ¿Usar como imagen de PORTADA del inicio?', name: portada, widget: boolean, default: false, required: false, hint: 'La propiedad con esta casilla marcada es la foto grande de la página de inicio. Marcá una sola.' }
       - { label: '¿Cartera Exclusiva?', name: exclusivo, widget: boolean, default: false }
       - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
 
@@ -168,11 +169,11 @@ collections:
           - Salto del Guairá
         # Para sumar una ciudad nueva, agregala a esta lista (y a src/lib/site.ts).
       - { label: Barrio, name: barrio, widget: string, required: false }
-      - label: Ubicación (link de Google Maps o coordenadas)
+      - label: 'Ubicación (hacé clic en el mapa)'
         name: ubicacion
-        widget: string
+        widget: map
         required: false
-        hint: 'Pegá el link de Google Maps (Compartir → Copiar vínculo) o coordenadas lat,lng. Ej: https://maps.app.goo.gl/xxxx o -25.2935,-57.5751'
+        hint: 'Hacé zoom y clic en la zona de la propiedad. No hace falta que sea exacto: un punto aproximado alcanza.'
 
       # --- Características (dejá vacío lo que no aplica) ---
       - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }
@@ -184,6 +185,7 @@ collections:
       # --- Solo para desarrollos / pozo ---
       - { label: Fecha de entrega, name: entrega, widget: string, required: false, hint: 'Solo para pozo. Ej: Marzo 2027' }
       - { label: '¿Ofrece financiación?', name: financiacion, widget: boolean, default: false, required: false }
+      - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }
 
       # --- Imágenes (se suben a Cloudinary) ---
       - label: Imágenes
