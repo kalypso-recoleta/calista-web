@@ -188,6 +188,11 @@ collections:
       - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }
 
       # --- Imágenes (se suben a Cloudinary) ---
+      - label: '⭐ Foto de portada (opcional)'
+        name: portada_foto
+        widget: image
+        required: false
+        hint: 'Si elegís una foto acá, será la imagen principal de la propiedad (tarjeta, inicio y al compartir). Si la dejás vacía, se usa la primera de la lista de abajo.'
       - label: Imágenes
         name: imagenes
         widget: image
