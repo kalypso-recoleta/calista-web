@@ -1,4 +1,5 @@
 ---
+import { slugify } from '../../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
@@ -30,8 +31,8 @@ const L = (p: string) => localizePath(p, lang);
 
 const { Content } = await render(bien);
 
-const url = new URL(`/propiedad/${bien.id}`, Astro.site).toString();
-const wa = whatsappBien({ titulo: d.titulo, ref: bien.id, url });
+const url = new URL(`/propiedad/${slugify(bien.id)}`, Astro.site).toString();
+const wa = whatsappBien({ titulo: d.titulo, ref: slugify(bien.id), url });
 const superficie = formatSuperficie(d, lang);
 // La portada explicite passe en tête de galerie et sert d'image de partage
 const fotos = d.portada_foto
@@ -151,11 +152,25 @@ const specs = [
         <aside class="side">
           <div class="cta-card">
             <p class="precio">{formatPrecio(d, lang)}</p>
-            <p class="ref">{t('det.ref')} {bien.id}</p>
+            <p class="ref">{t('det.ref')} {slugify(bien.id)}</p>
             <WhatsAppButton href={wa} full />
             <a href={L('/contacto')} class="btn btn--ghost full-ghost">
               {t('det.enviar_consulta')}
             </a>
+            <button
+              type="button"
+              class="btn btn--ghost full-ghost compartir"
+              data-compartir
+              data-titulo={d.titulo}
+              data-url={canonical}
+              data-copiado={t('det.copiado')}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+                <line x1="8.6" y1="10.5" x2="15.4" y2="6.5" /><line x1="8.6" y1="13.5" x2="15.4" y2="17.5" />
+              </svg>
+              <span data-label>{t('det.compartir')}</span>
+            </button>
             <p class="nota">{t('det.nota')}</p>
           </div>
         </aside>
@@ -208,9 +223,46 @@ const specs = [
   }
   .cta-card .ref { font-size: 0.8rem; color: var(--muted); margin: -0.4rem 0 0.4rem; }
   .full-ghost { width: 100%; justify-content: center; }
+  .compartir { display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; }
   .cta-card .nota { font-size: 0.8rem; color: var(--muted); margin: 0.3rem 0 0; line-height: 1.4; }
   @media (max-width: 900px) {
     .layout { grid-template-columns: 1fr; }
     .side { position: static; order: -1; }
   }
 </style>
+
+<script>
+  document.querySelectorAll('[data-compartir]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const titulo = btn.getAttribute('data-titulo') || document.title;
+      const url = btn.getAttribute('data-url') || location.href;
+      // Mobile : menu de partage natif (WhatsApp, etc.)
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: titulo, url });
+          return;
+        } catch {
+          /* partage annulé → rien à faire */
+          return;
+        }
+      }
+      // Ordinateur : copier le lien + confirmation temporaire
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        const tmp = document.createElement('textarea');
+        tmp.value = url;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand('copy');
+        tmp.remove();
+      }
+      const label = btn.querySelector('[data-label]');
+      if (label) {
+        const original = label.textContent;
+        label.textContent = btn.getAttribute('data-copiado') || 'OK';
+        setTimeout(() => (label.textContent = original), 2000);
+      }
+    });
+  });
+</script>

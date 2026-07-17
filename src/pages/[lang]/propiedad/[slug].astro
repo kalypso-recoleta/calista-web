@@ -1,4 +1,5 @@
 ---
+import { slugify } from '../../../lib/slug';
 import { getCollection } from 'astro:content';
 import PropiedadBody from '../../../components/pages/PropiedadBody.astro';
 
@@ -6,7 +7,7 @@ export async function getStaticPaths() {
   const biens = await getCollection('biens');
   const langs = ['fr', 'en'];
   return biens.flatMap((bien) =>
-    langs.map((lang) => ({ params: { lang, slug: bien.id }, props: { bien } }))
+    langs.map((lang) => ({ params: { lang, slug: slugify(bien.id) }, props: { bien } }))
   );
 }
 const { bien } = Astro.props;

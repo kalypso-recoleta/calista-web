@@ -294,6 +294,8 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Détail propriété
     'det.inicio': 'Inicio',
+    'det.compartir': 'Compartir',
+    'det.copiado': '¡Link copiado!',
     'det.ubicacion': 'Ubicación',
     'det.ref': 'Ref.',
     'det.enviar_consulta': 'Enviar consulta',
@@ -591,6 +593,8 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Détail
     'det.inicio': 'Accueil',
+    'det.compartir': 'Partager',
+    'det.copiado': 'Lien copié !',
     'det.ubicacion': 'Localisation',
     'det.ref': 'Réf.',
     'det.enviar_consulta': 'Envoyer une demande',
@@ -887,6 +891,8 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Détail
     'det.inicio': 'Home',
+    'det.compartir': 'Share',
+    'det.copiado': 'Link copied!',
     'det.ubicacion': 'Location',
     'det.ref': 'Ref.',
     'det.enviar_consulta': 'Send enquiry',

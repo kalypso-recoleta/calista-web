@@ -1,4 +1,5 @@
 ---
+import { slugify } from '../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { img } from '../lib/cloudinary';
 import { whatsappBien } from '../lib/whatsapp';
@@ -20,13 +21,13 @@ const d = bien.data;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const href = localizePath(`/propiedad/${bien.id}`, lang);
+const href = localizePath(`/propiedad/${slugify(bien.id)}`, lang);
 
 const reverse = indice % 2 === 1;
 const num = String(indice + 1).padStart(2, '0');
 
-const url = new URL(`/propiedad/${bien.id}`, Astro.site).toString();
-const wa = whatsappBien({ titulo: d.titulo, ref: bien.id, url });
+const url = new URL(`/propiedad/${slugify(bien.id)}`, Astro.site).toString();
+const wa = whatsappBien({ titulo: d.titulo, ref: slugify(bien.id), url });
 const superficie = formatSuperficie(d, lang);
 
 const specs = [

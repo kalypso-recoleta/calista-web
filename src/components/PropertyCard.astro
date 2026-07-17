@@ -1,4 +1,5 @@
 ---
+import { slugify } from '../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { img } from '../lib/cloudinary';
 import {
@@ -22,7 +23,7 @@ const t = useTranslations(lang);
 // Si l'annonce a un link externe (ex. site du développeur), la vignette
 // envoie directement là-bas, dans un nouvel onglet.
 const externo = d.link_externo?.trim();
-const href = externo || localizePath(`/propiedad/${bien.id}`, lang);
+const href = externo || localizePath(`/propiedad/${slugify(bien.id)}`, lang);
 const target = externo ? '_blank' : undefined;
 const rel = externo ? 'noopener' : undefined;
 
