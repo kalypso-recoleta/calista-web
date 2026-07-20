@@ -3,7 +3,7 @@ titulo: Tu monoambiente a estrenar en Recoleta, desde USD 4.150
 operacion: venta
 tipo: casa
 estado: disponible
-destacado: true
+destacado: false
 exclusivo: false
 desarrollo: true
 precio: 269750000
