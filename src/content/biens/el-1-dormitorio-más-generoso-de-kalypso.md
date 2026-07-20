@@ -3,7 +3,7 @@ titulo: El 1 dormitorio más generoso de Kalypso
 operacion: venta
 tipo: departamento
 estado: disponible
-destacado: true
+destacado: false
 exclusivo: false
 desarrollo: true
 precio: 497250000
