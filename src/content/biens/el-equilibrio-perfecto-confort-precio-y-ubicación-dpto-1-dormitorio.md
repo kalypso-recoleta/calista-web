@@ -3,7 +3,7 @@ titulo: 'El equilibrio perfecto: confort, precio y ubicación Dpto 1 dormitorio'
 operacion: venta
 tipo: departamento
 estado: disponible
-destacado: true
+destacado: false
 exclusivo: false
 desarrollo: true
 precio: 347750000
