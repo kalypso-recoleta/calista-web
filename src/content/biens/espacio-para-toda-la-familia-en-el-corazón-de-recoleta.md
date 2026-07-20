@@ -3,7 +3,7 @@ titulo: Espacio para toda la familia Dpto 2 dormitorios, en el corazón de Recol
 operacion: venta
 tipo: departamento
 estado: disponible
-destacado: true
+destacado: false
 exclusivo: false
 desarrollo: true
 precio: 565500000
