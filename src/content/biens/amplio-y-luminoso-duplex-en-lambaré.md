@@ -18,6 +18,7 @@ cocheras: 2
 superficie_terreno: 113
 superficie_construida: 180
 financiacion: false
+portada_foto: /uploads/PHOTO-2026-07-17-15-24-15.jpg
 imagenes:
   - /uploads/161dbe83-5d8a-486e-82cc-b162e916c9ea.JPG
   - /uploads/07f10a93-191d-4129-a908-011d66d6c873.JPG
