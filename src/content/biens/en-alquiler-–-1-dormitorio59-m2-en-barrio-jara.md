@@ -17,6 +17,7 @@ banos: 1
 cocheras: 0
 superficie_construida: 59
 financiacion: false
+portada_foto: /uploads/propiedad2-04.jpg
 imagenes:
   - /uploads/propiedad2-06.jpg
   - /uploads/propiedad2-01.jpg
