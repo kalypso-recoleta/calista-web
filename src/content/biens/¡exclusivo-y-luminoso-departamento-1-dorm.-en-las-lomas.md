@@ -18,7 +18,6 @@ cocheras: 1
 superficie_construida: 53
 financiacion: false
 imagenes:
-  - /uploads/IMG_4996.jpeg
   - /uploads/IMG_4965.jpeg
   - /uploads/IMG_4957.jpeg
   - /uploads/IMG_4959.jpeg
