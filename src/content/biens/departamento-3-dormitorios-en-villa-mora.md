@@ -6,7 +6,7 @@ estado: disponible
 destacado: true
 exclusivo: true
 desarrollo: false
-precio: 7500000
+precio: 6000000
 moneda: PYG
 periodo: total
 ciudad: Asunción
