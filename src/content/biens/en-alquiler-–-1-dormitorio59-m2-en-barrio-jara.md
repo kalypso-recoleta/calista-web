@@ -1,5 +1,5 @@
 ---
-titulo: En Alquiler – 1 Dormitorio 59 m2 en Barrio Jara
+titulo: ALQUILADO !! 1 Dormitorio 59 m2 en Barrio Jara
 operacion: alquiler
 tipo: departamento
 estado: disponible
