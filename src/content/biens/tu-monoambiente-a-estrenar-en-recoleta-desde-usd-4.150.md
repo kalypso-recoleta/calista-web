@@ -17,16 +17,12 @@ banos: 1
 superficie_construida: 31
 entrega: 31/05/2029
 financiacion: true
+portada_foto: /uploads/01_post1-tipo3_1de6_portada.JPG
 imagenes:
-  - /uploads/kalypso-01.jpg
-  - /uploads/kalypso-02.jpg
-  - /uploads/kalypso-03.jpg
-  - /uploads/kalypso-04.jpg
-  - /uploads/kalypso-05.jpg
-  - /uploads/kalypso-06.jpg
-  - /uploads/kalypso-07.jpg
-  - /uploads/kalypso-08.jpg
-  - /uploads/kalypso-09.jpg
+  - /uploads/02_post1-tipo3_2de6_vista.JPG
+  - /uploads/03_post1-tipo3_3de6_ambiente.JPG
+  - /uploads/04_post1-tipo3_4de6_cocina.JPG
+  - /uploads/05_post1-tipo3_5de6_planta.JPG
 descripcion: |-
   Kalypso Recoleta — Monoambientes a estrenar desde USD 41.500
   Reservá hoy con solo USD 4.150 y pagá el saldo en 32 cuotas sin intereses durante la construcción. Ubicación imbatible en Cruz del Chaco esq. Alfredo Seiferheld, a pasos del Shopping Mariscal.
@@ -73,7 +69,6 @@ Y mientras pagás tus cuotas, tu inversión trabaja para vos: al momento de la e
 
 **Plan de pago simple y accesible**
 
-|  |  |
 | **Entrega inicial** | USD 4.150 (10 %) a la firma |
 | **Saldo** | 32 cuotas mensuales sin intereses |
 | **Cochera opcional** | USD 15.000 |
