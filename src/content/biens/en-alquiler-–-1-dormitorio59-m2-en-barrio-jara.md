@@ -5,7 +5,7 @@ tipo: departamento
 estado: disponible
 destacado: true
 portada: true
-exclusivo: true
+exclusivo: false
 desarrollo: false
 precio: 89000
 moneda: USD
