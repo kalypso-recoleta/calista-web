@@ -84,10 +84,10 @@ const googleMaps = `https://www.google.com/maps/search/?api=1&query=${punto.lat}
     white-space: nowrap;
   }
 
-  /* Fond de carte en gris doux : seul le cercle violet ressort.
+  /* Fond de carte désaturé avec une légère teinte violette (charte CALISTA).
      Le filtre ne touche que les tuiles, pas le cercle ni les boutons. */
   #mapa :global(.leaflet-tile-pane) {
-    filter: grayscale(1) brightness(1.04) contrast(0.92);
+    filter: grayscale(1) sepia(0.35) hue-rotate(245deg) saturate(1.4) brightness(1.03) contrast(0.92);
   }
   /* Boutons de zoom aux couleurs du site : carrés, violets */
   #mapa :global(.leaflet-bar) {
