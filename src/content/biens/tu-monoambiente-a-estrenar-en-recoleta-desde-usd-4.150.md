@@ -4,6 +4,7 @@ operacion: venta
 tipo: casa
 estado: disponible
 destacado: false
+portada: false
 exclusivo: false
 desarrollo: true
 precio: 269750000
@@ -17,12 +18,12 @@ banos: 1
 superficie_construida: 31
 entrega: 31/05/2029
 financiacion: true
-portada_foto: /uploads/01_post1-tipo3_1de6_portada.JPG
+portada_foto: /uploads/SALA 3.jpg
 imagenes:
-  - /uploads/02_post1-tipo3_2de6_vista.JPG
-  - /uploads/03_post1-tipo3_3de6_ambiente.JPG
-  - /uploads/04_post1-tipo3_4de6_cocina.JPG
-  - /uploads/05_post1-tipo3_5de6_planta.JPG
+  - /uploads/BALCON.jpg
+  - /uploads/SALA 1.jpg
+  - /uploads/SALA 2.jpg
+  - /uploads/SALA 4.jpg
 descripcion: |-
   Kalypso Recoleta — Monoambientes a estrenar desde USD 41.500
   Reservá hoy con solo USD 4.150 y pagá el saldo en 32 cuotas sin intereses durante la construcción. Ubicación imbatible en Cruz del Chaco esq. Alfredo Seiferheld, a pasos del Shopping Mariscal.
