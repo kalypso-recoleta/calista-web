@@ -9,7 +9,7 @@ import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const biens = (await getCollection('biens'))
+const biens = (await getCollection('biens', (b) => b.data.en_linea !== false))
   .filter((b) => b.data.exclusivo)
   .sort((a, b) => +b.data.fecha - +a.data.fecha);
 

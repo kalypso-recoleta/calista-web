@@ -46,7 +46,7 @@ function deRubrica(d: { operacion: string; tipo: string; desarrollo: boolean }, 
 
 /** Biens cochés « panel lateral », encore actifs, de la rubrique demandée */
 export async function bienesLaterales(r: Rubrica) {
-  return (await getCollection('biens'))
+  return (await getCollection('biens', (b) => b.data.en_linea !== false))
     .filter(
       (b) =>
         b.data.lateral &&

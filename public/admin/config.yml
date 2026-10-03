@@ -71,6 +71,7 @@ collections:
       - { label: 'Disponibles', field: estado, pattern: disponible }
       - { label: 'Vendidos', field: estado, pattern: vendido }
       - { label: 'Alquilados', field: estado, pattern: alquilado }
+      - { label: 'Fuera de línea', field: en_linea, pattern: false }
     # Regroupements (bouton « Agrupar ») : par opération, par type, par état…
     view_groups:
       - { label: 'Operación', field: operacion }
@@ -79,6 +80,7 @@ collections:
       - { label: 'Estado', field: estado }
     fields:
       - { label: Título, name: titulo, widget: string }
+      - { label: '🟢 ¿En línea? (visible en el sitio)', name: en_linea, widget: boolean, default: true, hint: 'Desmarcá para sacar la propiedad del sitio SIN borrarla. Podés volver a ponerla en línea cuando quieras.' }
 
       - label: Operación
         name: operacion

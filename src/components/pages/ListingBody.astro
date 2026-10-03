@@ -14,7 +14,7 @@ const { kind } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const todos = await getCollection('biens');
+const todos = await getCollection('biens', (b) => b.data.en_linea !== false);
 let biens = todos;
 if (kind === 'comprar') {
   // Comprar = biens déjà construits : les programmes neufs (« pozo ») n'apparaissent que dans Desarrollos.

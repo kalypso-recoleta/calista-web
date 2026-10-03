@@ -31,6 +31,8 @@ const biens = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/biens' }),
   schema: z.object({
     titulo: z.string(),
+    // Hors ligne : le bien reste dans l'admin mais disparaît du site
+    en_linea: z.boolean().default(true),
 
     // --- Classement (ce qui détermine sur quelles pages le bien apparaît) ---
     operacion: z.enum(['venta', 'alquiler']),
