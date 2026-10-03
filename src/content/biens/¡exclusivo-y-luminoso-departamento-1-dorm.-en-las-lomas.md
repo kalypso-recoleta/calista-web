@@ -4,7 +4,7 @@ operacion: venta
 tipo: departamento
 estado: disponible
 destacado: true
-portada: false
+portada: true
 exclusivo: false
 desarrollo: false
 precio: 119000
