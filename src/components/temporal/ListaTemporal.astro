@@ -11,9 +11,9 @@ const loc = LOCALE[lang];
 const items = await temporalesActivos();
 // Deux gammes : les résidences de la marque Kalypso d'abord, puis les logements d'autres propriétaires
 const grupos = [
-  { key: 'kalypso', titulo: t('temp.kalypso_title'), intro: t('temp.kalypso_intro'), items: items.filter((i) => i.data.gama === 'kalypso') },
-  { key: 'otros', titulo: t('temp.otros_title'), intro: t('temp.otros_intro'), items: items.filter((i) => i.data.gama !== 'kalypso') },
-].filter((g) => g.items.length > 0);
+  { key: 'kalypso', titulo: t('temp.kalypso_title'), intro: t('temp.kalypso_intro'), vacio: t('temp.kalypso_vacio'), items: items.filter((i) => i.data.gama === 'kalypso') },
+  { key: 'otros', titulo: t('temp.otros_title'), intro: t('temp.otros_intro'), vacio: t('temp.otros_vacio'), items: items.filter((i) => i.data.gama !== 'kalypso') },
+];
 const textos = {
   disponible: t('temp.disponible'),
   alquilado: t('temp.alquilado'),
@@ -32,15 +32,14 @@ const textos = {
       </header>
 
       {
-        items.length === 0 ? (
-          <p class="lead">{t('temp.vacia')}</p>
-        ) : (
+        (
           grupos.map((g) => (
             <section class={`grupo grupo--${g.key}`}>
               <header class="grupo-cab">
                 <h2>{g.titulo}</h2>
                 <p>{g.intro}</p>
               </header>
+              {g.items.length === 0 && <p class="vacio">{g.vacio}</p>}
               <div class="grid-biens" data-temporales data-textos={JSON.stringify(textos)}>
                 {g.items.map((it) => {
                   const d = it.data;
@@ -135,6 +134,7 @@ const textos = {
   .precios strong { color: var(--brand); font-size: 1.05rem; }
   .ver { margin-top: auto; padding-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--violet); }
   .grupo + .grupo { margin-top: 3.5rem; }
+  .vacio { margin: 0; padding: 1.2rem 1.4rem; background: #fff; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); }
   .grupo-cab { margin-bottom: 1.3rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
   .grupo-cab h2 { margin: 0 0 0.2rem; }
   .grupo-cab p { margin: 0; color: var(--muted); }

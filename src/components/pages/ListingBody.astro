@@ -46,14 +46,6 @@ const intro = t(`lista.${kind}_intro`);
     mostrarBanos={mostrarBanos}
   >
     {
-      kind === 'alquilar' && (
-        <a class="temp-banner" href={localizePath('/alquiler-temporal', lang)}>
-          <span>{t('temp.banner')}</span>
-          <strong>{t('temp.banner_cta')} →</strong>
-        </a>
-      )
-    }
-    {
       kind === 'desarrollos' && (
         <p class="promotor">
           {t('lista.desarrollos_promotor')}{' '}
@@ -80,20 +72,5 @@ const intro = t(`lista.${kind}_intro`);
   }
   .promotor a {
     font-weight: 700;
-  }
-  .temp-banner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.4rem 1rem;
-    margin: 0.9rem 0 0;
-    padding: 0.8rem 1rem;
-    background: var(--violet);
-    color: #fff;
-    border-radius: var(--radius);
-  }
-  .temp-banner:hover {
-    text-decoration: none;
-    background: var(--violet-700);
   }
 </style>

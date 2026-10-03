@@ -157,6 +157,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.comprar_title': 'Propiedades en venta',
     'lista.comprar_intro':
       'Casas, departamentos y más, seleccionados con criterio. Filtrá por ciudad, barrio o tipo para encontrar lo que buscás.',
+    'temp.kalypso_vacio': "Pronto vas a encontrar acá nuestras Residencias Kalypso.",
+    'temp.otros_vacio': "Pronto vas a encontrar acá más departamentos amoblados.",
     'temp.kalypso_title': "Residencias Kalypso",
     'temp.kalypso_intro': "Nuestra propia gama de residencias amobladas, diseñadas y gestionadas por nosotros.",
     'temp.kalypso_badge': "Residencia Kalypso",
@@ -508,6 +510,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.comprar_title': 'Biens à vendre',
     'lista.comprar_intro':
       "Maisons, appartements et plus encore, sélectionnés avec soin. Filtrez par ville, quartier ou type pour trouver ce que vous cherchez.",
+    'temp.kalypso_vacio': "Nos Résidences Kalypso seront bientôt présentées ici.",
+    'temp.otros_vacio': "D’autres appartements meublés seront bientôt présentés ici.",
     'temp.kalypso_title': "Résidences Kalypso",
     'temp.kalypso_intro': "Notre propre gamme de résidences meublées, conçues et gérées par nos soins.",
     'temp.kalypso_badge': "Résidence Kalypso",
@@ -858,6 +862,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.comprar_title': 'Properties for sale',
     'lista.comprar_intro':
       'Houses, apartments and more, carefully selected. Filter by city, neighborhood or type to find what you need.',
+    'temp.kalypso_vacio': "Our Kalypso Residences will be listed here soon.",
+    'temp.otros_vacio': "More furnished apartments will be listed here soon.",
     'temp.kalypso_title': "Kalypso Residences",
     'temp.kalypso_intro': "Our own range of furnished residences, designed and managed by us.",
     'temp.kalypso_badge': "Kalypso Residence",
