@@ -6,20 +6,20 @@
  */
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE, bienesLaterales } from './datos';
+import { slugTemporal, reservasJson, precioTxt, LOCALE, bienesLaterales, temporalesLaterales, type Rubrica } from './datos';
 import { slugify } from '../../lib/slug';
 import { formatPrecio, operacionLabel, estadoLabel } from '../../lib/format';
 
 interface Props {
-  enTemporal?: boolean; // déjà sur la page Alquiler temporal : pas de lien « voir tout »
+  rubrica: Rubrica; // chaque page ne montre que les annonces de sa rubrique
 }
-const { enTemporal = false } = Astro.props;
+const { rubrica } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
-const items = (await temporalesActivos()).filter((i) => i.data.destacado);
-const bienes = await bienesLaterales();
+const items = await temporalesLaterales(rubrica);
+const bienes = await bienesLaterales(rubrica);
 const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'), libre: t('temp.libre_desde'), locale: loc };
 ---
 
@@ -53,7 +53,6 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
               <span class="pestado" data-estado hidden />
             </div>
             <div class="pbody">
-              <p class="pgama pgama--temp">{t('temp.title')}</p>
               {d.gama === 'kalypso' && (
                 <p class="pgama">{t('temp.kalypso_badge')}{d.residencia ? ` · ${d.residencia}` : ''}</p>
               )}
@@ -65,7 +64,6 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
           </a>
         );
       })}
-      {!enTemporal && items.length > 0 && <a class="panel-mas" href={L('/alquiler-temporal')}>{t('temp.banner_cta')} →</a>}
     </aside>
   )
 }

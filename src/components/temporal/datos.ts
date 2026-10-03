@@ -33,15 +33,36 @@ export function precioTxt(n: number | undefined, moneda: 'USD' | 'PYG', locale: 
 
 export const LOCALE: Record<string, string> = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' };
 
-/** Biens (vente / location) cochés « panel lateral », encore actifs */
-export async function bienesLaterales() {
+export type Rubrica = 'comprar' | 'alquilar' | 'desarrollos' | 'terrenos' | 'temporal';
+
+/** Le bien appartient-il à la rubrique ? (mêmes règles que les pages de listes) */
+function deRubrica(d: { operacion: string; tipo: string; desarrollo: boolean }, r: Rubrica): boolean {
+  if (r === 'comprar') return d.operacion === 'venta' && d.tipo !== 'terreno' && !d.desarrollo;
+  if (r === 'alquilar') return d.operacion === 'alquiler';
+  if (r === 'desarrollos') return d.desarrollo;
+  if (r === 'terrenos') return d.tipo === 'terreno';
+  return false; // Alquiler temporal : seulement les logements meublés
+}
+
+/** Biens cochés « panel lateral », encore actifs, de la rubrique demandée */
+export async function bienesLaterales(r: Rubrica) {
   return (await getCollection('biens'))
-    .filter((b) => b.data.lateral && (b.data.estado === 'disponible' || b.data.estado === 'reservado'))
+    .filter(
+      (b) =>
+        b.data.lateral &&
+        (b.data.estado === 'disponible' || b.data.estado === 'reservado') &&
+        deRubrica(b.data, r)
+    )
     .sort((a, b) => +b.data.fecha - +a.data.fecha);
 }
 
-/** Y a-t-il quelque chose à montrer dans le panneau latéral ? */
-export async function hayPanel(): Promise<boolean> {
-  const t = (await temporalesActivos()).some((i) => i.data.destacado);
-  return t || (await bienesLaterales()).length > 0;
+/** Logements meublés « Destacar » : uniquement dans Alquiler temporal */
+export async function temporalesLaterales(r: Rubrica) {
+  if (r !== 'temporal') return [];
+  return (await temporalesActivos()).filter((i) => i.data.destacado);
+}
+
+/** Y a-t-il quelque chose à montrer dans le panneau de cette rubrique ? */
+export async function hayPanel(r: Rubrica): Promise<boolean> {
+  return (await temporalesLaterales(r)).length > 0 || (await bienesLaterales(r)).length > 0;
 }
