@@ -17,6 +17,8 @@ const { ubicacion, zona, ciudad } = Astro.props;
 const resuelto = await resolverUbicacion(ubicacion);
 const punto = resuelto ?? (ciudad ? coordsCiudad[ciudad] : undefined) ?? site.mapaCentro;
 const hayPunto = resuelto !== null;
+// Lien Google Maps vers le même point approximatif (ouvre l'app sur téléphone)
+const googleMaps = `https://www.google.com/maps/search/?api=1&query=${punto.lat},${punto.lng}`;
 ---
 
 <div class="mapa-wrap">
@@ -29,9 +31,17 @@ const hayPunto = resuelto !== null;
     aria-label={`${t('map.aprox')}${zona ? ` — ${zona}` : ''}`}
   >
   </div>
-  <p class="nota">
-    📍 {t('map.aprox')}{zona ? ` — ${zona}` : ''}. {t('map.nota')}
-  </p>
+  <div class="pie">
+    <p class="nota">
+      📍 {t('map.aprox')}{zona ? ` — ${zona}` : ''}. {t('map.nota')}
+    </p>
+    <a class="btn btn--ghost gmaps" href={googleMaps} target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+      </svg>
+      {t('map.google')}
+    </a>
+  </div>
 </div>
 
 <!-- Leaflet + OpenStreetMap : gratuit, sin clave API ni tarjeta -->
@@ -55,10 +65,55 @@ const hayPunto = resuelto !== null;
     background: var(--violet-soft);
     z-index: 0;
   }
+  .pie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem 1.2rem;
+    flex-wrap: wrap;
+  }
   .nota {
     margin: 0;
+    flex: 1 1 280px;
     font-size: 0.82rem;
     color: var(--muted);
+  }
+  .gmaps {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  /* Fond de carte en gris doux : seul le cercle violet ressort.
+     Le filtre ne touche que les tuiles, pas le cercle ni les boutons. */
+  #mapa :global(.leaflet-tile-pane) {
+    filter: grayscale(1) brightness(1.04) contrast(0.92);
+  }
+  /* Boutons de zoom aux couleurs du site : carrés, violets */
+  #mapa :global(.leaflet-bar) {
+    border: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(62, 0, 85, 0.25);
+  }
+  #mapa :global(.leaflet-bar a) {
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    background: var(--violet);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  #mapa :global(.leaflet-bar a:last-child) {
+    border-bottom: 0;
+  }
+  #mapa :global(.leaflet-bar a:hover) {
+    background: var(--violet-700);
+    color: #fff;
+  }
+  #mapa :global(.leaflet-bar a.leaflet-disabled) {
+    background: #c8bccd;
+    color: #fff;
   }
 </style>
 

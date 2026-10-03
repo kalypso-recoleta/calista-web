@@ -94,6 +94,7 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Carte
     'map.aprox': 'Ubicación aproximada',
+    'map.google': 'Ver en Google Maps',
     'map.nota':
       'La dirección exacta se comparte al coordinar una visita.',
 
@@ -394,6 +395,7 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Carte
     'map.aprox': 'Localisation approximative',
+    'map.google': 'Voir sur Google Maps',
     'map.nota':
       "L'adresse exacte est communiquée au moment d'organiser une visite.",
 
@@ -696,6 +698,7 @@ export const ui: Record<Lang, Record<string, string>> = {
 
     // Carte
     'map.aprox': 'Approximate location',
+    'map.google': 'View on Google Maps',
     'map.nota': 'The exact address is shared when arranging a visit.',
 
     // Accueil
