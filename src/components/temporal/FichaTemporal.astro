@@ -1,0 +1,372 @@
+---
+import { render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PropertyGallery from '../PropertyGallery.astro';
+import PropertyMap from '../PropertyMap.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { img } from '../../lib/cloudinary';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+import { type Temporal, slugTemporal, reservasJson, precioTxt, LOCALE } from './datos';
+
+interface Props {
+  item: Temporal;
+}
+const { item } = Astro.props;
+const d = item.data;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
+const loc = LOCALE[lang];
+const { Content } = await render(item);
+
+const fotos = d.portada_foto ? [d.portada_foto, ...d.imagenes.filter((f) => f !== d.portada_foto)] : d.imagenes;
+const ogImage = fotos[0] ? img(fotos[0], { w: 1200, h: 630 }) : undefined;
+const zona = [d.barrio, d.ciudad].filter(Boolean).join(', ');
+const url = new URL(`/alquiler-temporal/${slugTemporal(item)}`, Astro.site).toString();
+// Message WhatsApp en espagnol (l'agence lit en espagnol)
+const waGeneral = whatsappLink(
+  `Hola, me interesa el alquiler temporal "${d.titulo}".\n${url}\n¿Qué fechas tienen disponibles?`
+);
+const semana = precioTxt(d.precio_semana, d.moneda, loc);
+const mes = precioTxt(d.precio_mes, d.moneda, loc);
+const specs = [
+  d.dormitorios != null && { k: t('temp.dormitorios'), v: d.dormitorios },
+  d.banos != null && { k: t('temp.banos'), v: d.banos },
+  d.huespedes != null && { k: t('temp.huespedes'), v: d.huespedes },
+  d.superficie != null && { k: t('temp.superficie'), v: `${d.superficie} m²` },
+].filter(Boolean) as { k: string; v: string | number }[];
+
+const textos = {
+  locale: loc,
+  llegada: t('temp.llegada'),
+  salida: t('temp.salida'),
+  noches: t('temp.noches'),
+  min: t('temp.min'),
+  max: t('temp.max'),
+  ocupado: t('temp.ocupado'),
+  elegir: t('temp.elegir'),
+  anterior: t('temp.anterior'),
+  siguiente: t('temp.siguiente'),
+  disponible: t('temp.disponible'),
+  alquilado: t('temp.alquilado'),
+  libre: t('temp.libre_desde'),
+};
+---
+
+<Layout title={`${d.titulo} — ${t('temp.title')}`} description={d.descripcion} image={ogImage}>
+  <article class="section">
+    <div class="container">
+      <nav class="crumbs" aria-label="•">
+        <a href={L('/')}>{t('det.inicio')}</a><span>/</span>
+        <a href={L('/alquiler-temporal')}>{t('temp.title')}</a><span>/</span>
+        <span>{d.titulo}</span>
+      </nav>
+
+      <PropertyGallery imagenes={fotos} titulo={d.titulo} />
+
+      <div class="layout">
+        <div class="main">
+          <p class="loc">{zona}</p>
+          <h1>{d.titulo}</h1>
+          <p class="estado-hoy" data-estado-hoy data-reservas={reservasJson(item)} hidden></p>
+
+          {
+            specs.length > 0 && (
+              <ul class="specs">
+                {specs.map((s) => (
+                  <li><span class="v">{s.v}</span><span class="k">{s.k}</span></li>
+                ))}
+              </ul>
+            )
+          }
+
+          <div class="prose"><Content /></div>
+
+          {
+            d.incluye.length > 0 && (
+              <div class="incluye">
+                <h3>{t('temp.incluye')}</h3>
+                <ul>{d.incluye.map((x) => <li>{x}</li>)}</ul>
+              </div>
+            )
+          }
+
+          <!-- Calendrier de disponibilité + choix des dates -->
+          <section class="cal" id="disponibilidad"
+            data-cal
+            data-reservas={reservasJson(item)}
+            data-textos={JSON.stringify(textos)}
+            data-titulo={d.titulo}
+            data-url={url}
+            data-wa={whatsappLink()}
+          >
+            <h3>{t('temp.calendario')}</h3>
+            <p class="ayuda">{t('temp.elegir')}</p>
+            <div class="cal-nav">
+              <button type="button" data-prev aria-label={t('temp.anterior')}>‹</button>
+              <div class="meses" data-meses></div>
+              <button type="button" data-next aria-label={t('temp.siguiente')}>›</button>
+            </div>
+            <div class="leyenda">
+              <span><i class="l-libre"></i>{t('temp.libre')}</span>
+              <span><i class="l-ocupado"></i>{t('temp.ocupado_ley')}</span>
+            </div>
+            <div class="resumen" data-resumen hidden>
+              <p data-fechas></p>
+              <p class="error" data-error hidden></p>
+              <div class="acciones">
+                <a class="btn btn--wa" data-wa-fechas target="_blank" rel="noopener" hidden>{t('temp.consultar')}</a>
+                <button type="button" class="btn btn--ghost" data-borrar>{t('temp.borrar')}</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="mapa">
+            <h3>{t('det.ubicacion')}</h3>
+            <PropertyMap ubicacion={d.ubicacion} zona={zona} ciudad={d.ciudad} />
+          </div>
+        </div>
+
+        <aside class="side">
+          <div class="cta-card">
+            {semana && <p class="precio">{semana} <small>{t('temp.semana')}</small></p>}
+            {mes && <p class="precio">{mes} <small>{t('temp.mes')}</small></p>}
+            <a href="#disponibilidad" class="btn btn--primary full">{t('temp.ver')}</a>
+            <WhatsAppButton href={waGeneral} full />
+            <p class="nota">{t('temp.condiciones')}</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<script>
+  import { leerRangos, estadoHoy, hoy, noche, masMeses, fechaCorta, DIA_MS, type Rango } from '../../lib/temporal';
+
+  // Badge « Disponible / Alquilado » sous le titre
+  document.querySelectorAll<HTMLElement>('[data-estado-hoy]').forEach((el) => {
+    const cal = document.querySelector<HTMLElement>('[data-cal]');
+    const tx = JSON.parse(cal?.dataset.textos || '{}');
+    const e = estadoHoy(leerRangos(el.dataset.reservas));
+    el.textContent = e.alquilado ? `${tx.alquilado} · ${tx.libre} ${fechaCorta(e.libre!, tx.locale)}` : tx.disponible;
+    el.classList.add(e.alquilado ? 'es-alquilado' : 'es-libre');
+    el.hidden = false;
+  });
+
+  document.querySelectorAll<HTMLElement>('[data-cal]').forEach((cal) => {
+    const tx = JSON.parse(cal.dataset.textos || '{}');
+    const rangos: Rango[] = leerRangos(cal.dataset.reservas);
+    const hoyDia = hoy();
+    const limite = masMeses(hoyDia, 12); // on montre 12 mois à l'avance
+    const mesesBox = cal.querySelector<HTMLElement>('[data-meses]')!;
+    const resumen = cal.querySelector<HTMLElement>('[data-resumen]')!;
+    const fechasP = cal.querySelector<HTMLElement>('[data-fechas]')!;
+    const errorP = cal.querySelector<HTMLElement>('[data-error]')!;
+    const waBtn = cal.querySelector<HTMLAnchorElement>('[data-wa-fechas]')!;
+    const ancho = () => (window.innerWidth >= 720 ? 2 : 1); // 2 mois côte à côte sur ordinateur
+
+    const h = new Date(hoyDia * DIA_MS);
+    let mesY = h.getUTCFullYear();
+    let mesM = h.getUTCMonth();
+    let llegada: number | null = null;
+    let salida: number | null = null;
+
+    const fmtMes = new Intl.DateTimeFormat(tx.locale, { month: 'long', year: 'numeric', timeZone: 'UTC' });
+    const fmtDia = new Intl.DateTimeFormat(tx.locale, { weekday: 'narrow', timeZone: 'UTC' });
+    // Lundi 1er janvier 2024 → initiales des jours, semaine commençant le lundi
+    const iniciales = Array.from({ length: 7 }, (_, i) => fmtDia.format(new Date(Date.UTC(2024, 0, 1 + i))));
+
+    function validar(): string | null {
+      if (llegada == null || salida == null) return null;
+      if (salida - llegada < 7) return tx.min;
+      if (salida > masMeses(llegada, 6)) return tx.max;
+      for (let x = llegada; x < salida; x++) if (noche(rangos, x)) return tx.ocupado;
+      return null;
+    }
+
+    function dibujar() {
+      mesesBox.innerHTML = '';
+      for (let k = 0; k < ancho(); k++) {
+        const y = mesY + Math.floor((mesM + k) / 12);
+        const m = (mesM + k) % 12;
+        const primero = Date.UTC(y, m, 1) / DIA_MS;
+        const dias = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+        const desfase = (new Date(primero * DIA_MS).getUTCDay() + 6) % 7; // lundi = 0
+
+        const box = document.createElement('div');
+        box.className = 'mes';
+        const tit = document.createElement('p');
+        tit.className = 'mes-tit';
+        const txtMes = fmtMes.format(new Date(primero * DIA_MS));
+        tit.textContent = txtMes.charAt(0).toUpperCase() + txtMes.slice(1); // « Octubre de 2026 »
+        box.append(tit);
+        const grid = document.createElement('div');
+        grid.className = 'grid7';
+        iniciales.forEach((i) => {
+          const s = document.createElement('span');
+          s.className = 'ini';
+          s.textContent = i;
+          grid.append(s);
+        });
+        for (let i = 0; i < desfase; i++) grid.append(document.createElement('span'));
+        for (let n = 0; n < dias; n++) {
+          const dia = primero + n;
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.textContent = String(n + 1);
+          b.className = 'dia';
+          const pasado = dia < hoyDia || dia > limite;
+          const ocup = noche(rangos, dia);
+          if (pasado) b.classList.add('pasado');
+          if (ocup) b.classList.add('ocupado');
+          if (llegada != null && dia === llegada) b.classList.add('sel');
+          if (salida != null && dia === salida) b.classList.add('sel');
+          if (llegada != null && salida != null && dia > llegada && dia < salida) b.classList.add('rango');
+          // Un jour occupé peut servir de date de DÉPART (on libère le matin)
+          const elegible = !pasado && (!ocup || (llegada != null && salida == null && dia > llegada));
+          b.disabled = !elegible;
+          b.addEventListener('click', () => elegir(dia));
+          grid.append(b);
+        }
+        box.append(grid);
+        mesesBox.append(box);
+      }
+      resumenActualizar();
+    }
+
+    function elegir(dia: number) {
+      if (llegada == null || salida != null || dia <= llegada) {
+        if (noche(rangos, dia)) return;
+        llegada = dia;
+        salida = null;
+      } else {
+        salida = dia;
+      }
+      dibujar();
+    }
+
+    function resumenActualizar() {
+      if (llegada == null) {
+        resumen.hidden = true;
+        return;
+      }
+      resumen.hidden = false;
+      const noches = salida != null ? salida - llegada : 0;
+      fechasP.textContent =
+        `${tx.llegada} ${fechaCorta(llegada, tx.locale)}` +
+        (salida != null ? ` → ${tx.salida} ${fechaCorta(salida, tx.locale)} · ${noches} ${tx.noches}` : '');
+      const err = validar();
+      errorP.hidden = !err;
+      errorP.textContent = err || '';
+      const ok = salida != null && !err;
+      waBtn.hidden = !ok;
+      if (ok) {
+        const es = (x: number) => fechaCorta(x, 'es-PY');
+        const msg =
+          `Hola, quisiera alquilar "${cal.dataset.titulo}" del ${es(llegada)} al ${es(salida!)} (${noches} noches).\n` +
+          `${cal.dataset.url}\n¿Está disponible?`;
+        waBtn.href = `${cal.dataset.wa}?text=${encodeURIComponent(msg)}`;
+      }
+    }
+
+    cal.querySelector('[data-borrar]')!.addEventListener('click', () => {
+      llegada = salida = null;
+      dibujar();
+    });
+    cal.querySelector('[data-prev]')!.addEventListener('click', () => {
+      const ahora = new Date(hoyDia * DIA_MS);
+      if (mesY === ahora.getUTCFullYear() && mesM === ahora.getUTCMonth()) return;
+      mesM -= 1;
+      if (mesM < 0) { mesM = 11; mesY -= 1; }
+      dibujar();
+    });
+    cal.querySelector('[data-next]')!.addEventListener('click', () => {
+      if (Date.UTC(mesY, mesM + 1, 1) / DIA_MS > limite) return;
+      mesM += 1;
+      if (mesM > 11) { mesM = 0; mesY += 1; }
+      dibujar();
+    });
+    let w = window.innerWidth;
+    window.addEventListener('resize', () => {
+      if ((w >= 720) !== (window.innerWidth >= 720)) dibujar();
+      w = window.innerWidth;
+    });
+    dibujar();
+  });
+</script>
+
+<style>
+  /* l'attribut hidden doit l'emporter sur les display des boutons */
+  [hidden] { display: none !important; }
+  .crumbs { display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); margin-bottom: 1.2rem; }
+  .crumbs a { color: var(--muted); }
+  .layout { display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; margin-top: 2rem; align-items: start; }
+  .loc { color: var(--muted); margin: 0 0 0.3rem; font-size: 0.9rem; }
+  .main h1 { margin-bottom: 0.6rem; font-size: clamp(1.6rem, 2.6vw, 2.15rem); }
+  .estado-hoy { display: inline-block; margin: 0 0 1.4rem; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; }
+  .estado-hoy.es-libre { background: #dcfce7; color: var(--ok); }
+  .estado-hoy.es-alquilado { background: var(--brand); color: #fff; }
+  .specs {
+    list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px; padding: 0; margin: 0 0 2rem; background: var(--line);
+    border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+  }
+  .specs li { background: var(--surface); padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.15rem; }
+  .specs .v { font-size: 1.3rem; font-weight: 600; color: var(--brand); }
+  .specs .k { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .prose { font-size: 1.06rem; line-height: 1.7; max-width: 64ch; }
+  .incluye { margin-top: 1.5rem; }
+  .incluye ul { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0.6rem 0 0; }
+  .incluye li { padding: 0.35rem 0.8rem; background: var(--violet-soft); color: var(--violet); border-radius: 20px; font-size: 0.88rem; font-weight: 600; }
+  .cal {
+    margin-top: 2.5rem; padding: 1.4rem; background: var(--surface); border: 1px solid var(--line);
+    border-top: 4px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  .cal h3 { margin: 0 0 0.3rem; }
+  .ayuda { margin: 0 0 1rem; color: var(--muted); font-size: 0.92rem; }
+  .cal-nav { display: flex; align-items: flex-start; gap: 0.6rem; }
+  .cal-nav > button {
+    flex: none; width: 34px; height: 34px; margin-top: 0.1rem; border: 1px solid var(--violet);
+    background: #fff; color: var(--violet); border-radius: var(--radius); font-size: 1.3rem; line-height: 1; cursor: pointer;
+  }
+  .meses { flex: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.4rem; }
+  .meses :global(.mes-tit) { margin: 0.35rem 0 0.6rem; text-align: center; font-weight: 700; }
+  .meses :global(.grid7) { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+  .meses :global(.ini) { text-align: center; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; padding-bottom: 0.2rem; }
+  .meses :global(.dia) {
+    aspect-ratio: 1; border: 0; border-radius: 3px; background: #f1f8f3; color: var(--ink);
+    font: inherit; font-size: 0.88rem; cursor: pointer;
+  }
+  .meses :global(.dia:hover:not(:disabled)) { outline: 2px solid var(--violet-vivo); }
+  .meses :global(.dia.ocupado) { background: #ece9ef; color: #a7a1ad; text-decoration: line-through; }
+  .meses :global(.dia.pasado) { background: transparent; color: #c9c6cd; text-decoration: none; }
+  .meses :global(.dia:disabled) { cursor: default; }
+  .meses :global(.dia.rango) { background: var(--violet-soft); color: var(--violet); }
+  .meses :global(.dia.sel) { background: var(--violet); color: #fff; font-weight: 700; text-decoration: none; }
+  .leyenda { display: flex; gap: 1.2rem; margin-top: 0.9rem; font-size: 0.82rem; color: var(--muted); }
+  .leyenda span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .leyenda i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+  .l-libre { background: #f1f8f3; border: 1px solid #cfe8d6; }
+  .l-ocupado { background: #ece9ef; }
+  .resumen { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .resumen p { margin: 0 0 0.6rem; font-weight: 600; }
+  .resumen .error { color: #b91c1c; font-weight: 600; }
+  .acciones { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .mapa { margin-top: 2.5rem; }
+  .mapa h3 { margin-bottom: 0.8rem; }
+  .side { position: sticky; top: 92px; }
+  .cta-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 1.5rem; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 0.7rem;
+  }
+  .precio { margin: 0; font-size: 1.6rem; font-weight: 700; color: var(--brand); }
+  .precio small { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
+  .full { width: 100%; justify-content: center; }
+  .nota { font-size: 0.8rem; color: var(--muted); margin: 0.3rem 0 0; line-height: 1.4; }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .side { position: static; order: -1; }
+  }
+</style>

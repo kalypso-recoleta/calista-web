@@ -1,0 +1,13 @@
+---
+import FichaTemporal from '../../../components/temporal/FichaTemporal.astro';
+import { temporalesActivos, slugTemporal } from '../../../components/temporal/datos';
+
+export async function getStaticPaths() {
+  const items = await temporalesActivos();
+  return items.flatMap((item) =>
+    ['fr', 'en'].map((lang) => ({ params: { lang, slug: slugTemporal(item) }, props: { item } }))
+  );
+}
+const { item } = Astro.props;
+---
+<FichaTemporal item={item} />

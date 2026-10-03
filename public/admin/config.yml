@@ -236,6 +236,68 @@ collections:
       - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: Descripción completa, name: body, widget: markdown, required: false }
 
+  # ─── Alquiler temporal (location meublée 7 jours – 6 mois) ───
+  # Logements toujours en ligne ; seules les réservations changent.
+  # ⚠️ Dépôt public : saisir uniquement des DATES, jamais de nom de locataire.
+  - name: temporales
+    label: Alquiler temporal
+    label_singular: Departamento amoblado
+    description: 'Departamentos amoblados (7 días a 6 meses). Siempre visibles en el sitio: el estado "Disponible / Alquilado" se calcula solo con las reservas que cargues abajo. Cargá solo fechas, nunca nombres.'
+    folder: src/content/temporales
+    create: true
+    delete: true
+    slug: '{{titulo}}'
+    extension: md
+    format: frontmatter
+    identifier_field: titulo
+    summary: '{{titulo}} — {{barrio}} {{ciudad}}'
+    sortable_fields: [orden, titulo]
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: '¿Mostrar en el sitio?', name: activo, widget: boolean, default: true, hint: 'Desmarcá para ocultarlo sin borrarlo.' }
+      - { label: 'Orden (1 = primero)', name: orden, widget: number, value_type: int, min: 1, required: false }
+      - { label: Ciudad, name: ciudad, widget: string, default: 'Asunción' }
+      - { label: Barrio, name: barrio, widget: string, required: false }
+      - label: 'Ubicación (hacé clic en el mapa)'
+        name: ubicacion
+        widget: map
+        required: false
+        hint: 'Un punto aproximado alcanza.'
+      - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }
+      - { label: Baños, name: banos, widget: number, value_type: int, min: 0, required: false }
+      - { label: 'Huéspedes (capacidad)', name: huespedes, widget: number, value_type: int, min: 1, required: false }
+      - { label: 'Superficie (m²)', name: superficie, widget: number, value_type: int, min: 0, required: false }
+      - label: Moneda
+        name: moneda
+        widget: select
+        options: [USD, PYG]
+        default: USD
+      - { label: 'Precio por semana', name: precio_semana, widget: number, value_type: int, min: 0, required: false }
+      - { label: 'Precio por mes', name: precio_mes, widget: number, value_type: int, min: 0, required: false }
+      - { label: 'Incluye (wifi, luz, limpieza…)', name: incluye, widget: list, required: false }
+      - label: '⭐ Foto de portada (opcional)'
+        name: portada_foto
+        widget: image
+        required: false
+      - label: Imágenes
+        name: imagenes
+        widget: image
+        multiple: true
+        required: false
+        media_library: { name: cloudinary }
+        hint: 'Subí las fotos desde la pestaña Cloudinary.'
+      - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases (aparece al compartir por WhatsApp).' }
+      - { label: Descripción completa, name: body, widget: markdown, required: false }
+      - label: 'Reservas (días ocupados)'
+        name: reservas
+        widget: list
+        required: false
+        summary: '{{fields.desde}} → {{fields.hasta}}'
+        hint: 'Una línea por reserva. "Hasta" = día de salida (ese día queda libre). Podés borrar las reservas pasadas cuando quieras.'
+        fields:
+          - { label: 'Desde (llegada)', name: desde, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
+          - { label: 'Hasta (salida)', name: hasta, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
+
   # ─── Avis clients ───
   - name: resenas
     label: Reseñas

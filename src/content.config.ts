@@ -121,4 +121,45 @@ const resenas = defineCollection({
   }),
 });
 
-export const collections = { biens, resenas };
+/**
+ * Alquiler temporal (location meublée de 7 jours à 6 mois).
+ * Collection À PART des biens : ces logements restent toujours en ligne ;
+ * seul leur état change (Disponible / Alquilado), calculé dans le navigateur
+ * à partir des réservations saisies dans l'admin.
+ * ⚠️ Le dépôt GitHub est public : ne jamais saisir de nom de locataire,
+ * seulement les dates.
+ */
+const fecha = () =>
+  z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date());
+
+const temporales = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/temporales' }),
+  schema: z.object({
+    titulo: z.string(),
+    activo: z.boolean().default(true), // décocher pour retirer du site sans supprimer
+    orden: entOpc(), // ordre d'affichage (1 = en premier)
+    ciudad: z.string(),
+    barrio: strOpc(),
+    ubicacion: strOpc(),
+    dormitorios: entOpc(),
+    banos: entOpc(),
+    huespedes: entOpc(),
+    superficie: numOpc(),
+    moneda: z.enum(['USD', 'PYG']).default('USD'),
+    precio_semana: numOpc(),
+    precio_mes: numOpc(),
+    incluye: z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]),
+    portada_foto: strOpc(),
+    imagenes: z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]),
+    descripcion: z.string(),
+    // Périodes occupées : « hasta » = jour de départ (libre ce jour-là)
+    reservas: z
+      .preprocess(
+        (v) => (v == null ? [] : v),
+        z.array(z.object({ desde: fecha(), hasta: fecha() }))
+      )
+      .default([]),
+  }),
+});
+
+export const collections = { biens, resenas, temporales };
