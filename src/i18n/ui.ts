@@ -163,6 +163,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       'Lotes para construir tu casa o invertir, con documentación verificada y asesoramiento sobre la zona.',
     'lista.desarrollos_eyebrow': 'En pozo',
+    'lista.desarrollos_promotor': "Desarrollos de",
+    'lista.desarrollos_mas_info': "Más información:",
     'lista.desarrollos_title': 'Desarrollos Kalypso',
     'lista.desarrollos_intro':
       'Proyectos en construcción y unidades en pozo. Comprar en esta etapa suele significar un mejor precio y planes de pago durante la obra.',
@@ -472,6 +474,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       "Des terrains pour construire votre maison ou investir, avec des documents vérifiés et des conseils sur la zone.",
     'lista.desarrollos_eyebrow': 'Sur plan',
+    'lista.desarrollos_promotor': "Programmes réalisés par",
+    'lista.desarrollos_mas_info': "Plus d'informations :",
     'lista.desarrollos_title': 'Programmes neufs Kalypso',
     'lista.desarrollos_intro':
       "Projets en construction et achats sur plan. Acheter à ce stade, c'est souvent un meilleur prix et des paiements échelonnés pendant les travaux.",
@@ -780,6 +784,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       'Lots to build your home or invest, with verified documents and advice about the area.',
     'lista.desarrollos_eyebrow': 'Off-plan',
+    'lista.desarrollos_promotor': "Developments by",
+    'lista.desarrollos_mas_info': "More information:",
     'lista.desarrollos_title': 'Kalypso new developments',
     'lista.desarrollos_intro':
       'Projects under construction and off-plan units. Buying at this stage usually means a better price and payment plans during construction.',

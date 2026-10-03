@@ -44,5 +44,33 @@ const intro = t(`lista.${kind}_intro`);
     biens={biens}
     mostrarDormitorios={mostrarDormitorios}
     mostrarBanos={mostrarBanos}
-  />
+  >
+    {
+      kind === 'desarrollos' && (
+        <p class="promotor">
+          {t('lista.desarrollos_promotor')}{' '}
+          <a href="https://www.elsolar.com.py" target="_blank" rel="noopener">El Solar SRL</a>
+          {' · '}
+          {t('lista.desarrollos_mas_info')}{' '}
+          <a href="https://www.kalypso.com.py" target="_blank" rel="noopener">www.kalypso.com.py</a>
+        </p>
+      )
+    }
+  </ListadoBiens>
 </Layout>
+
+<style>
+  .promotor {
+    margin: 0.9rem 0 0;
+    padding: 0.7rem 1rem;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--violet);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  .promotor a {
+    font-weight: 700;
+  }
+</style>
