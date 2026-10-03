@@ -83,6 +83,15 @@ const hayPunto = resuelto !== null;
       maxZoom: 19,
     }).addTo(map);
 
+    // La carte peut être créée avant que la page ait fini sa mise en page
+    // (police, galerie, feuille de style Leaflet) : Leaflet ne charge alors
+    // qu'une partie des tuiles. On lui redonne sa taille réelle dès qu'elle
+    // change, et une fois la page entièrement chargée.
+    const recalcular = () => map.invalidateSize();
+    if ('ResizeObserver' in window) new ResizeObserver(recalcular).observe(el);
+    window.addEventListener('load', recalcular);
+    setTimeout(recalcular, 400);
+
     // Cercle "approximatif" plutôt qu'un pin précis : signature visuelle
     // + confidentialité de l'adresse exacte.
     if (aprox) {
