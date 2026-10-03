@@ -11,9 +11,32 @@
  *
  * Pas de mise en cache : les règles de Google n'autorisent à conserver
  * que l'identifiant de la fiche, pas le contenu des avis.
- * Pour maîtriser le coût, plafonner les requêtes par jour dans
- * Google Cloud (voir les étapes de mise en place).
+ *
+ * Plafond de coût : Google ne permet pas de baisser le quota journalier
+ * de Places API (New). On compte donc nous-mêmes les appels du jour
+ * (Netlify Blobs) : au-delà de LIMITE_DIARIA, on ne contacte plus Google
+ * et le site affiche simplement les avis saisis à la main.
+ * 30/jour ≈ 900/mois, sous les 1 000 appels gratuits mensuels de Google.
  */
+
+import { getStore } from '@netlify/blobs';
+
+const LIMITE_DIARIA = 30;
+
+/** Renvoie true si on peut encore appeler Google aujourd'hui (et compte l'appel). */
+async function cupoDisponible() {
+  try {
+    const store = getStore('google-resenas');
+    const clave = `llamadas-${new Date().toISOString().slice(0, 10)}`; // jour UTC
+    const n = Number((await store.get(clave)) ?? 0);
+    if (n >= LIMITE_DIARIA) return false;
+    await store.set(clave, String(n + 1));
+    return true;
+  } catch {
+    // Si le compteur est indisponible, on ne bloque pas le site.
+    return true;
+  }
+}
 
 const LANGS = ['es', 'fr', 'en'];
 
@@ -30,6 +53,8 @@ export default async (req) => {
   const key = process.env.GOOGLE_PLACES_API_KEY;
   const placeId = process.env.GOOGLE_PLACE_ID;
   if (!key || !placeId) return json({ error: 'sin-configurar' }, 503);
+
+  if (!(await cupoDisponible())) return json({ error: 'cupo-diario' }, 429);
 
   const pedido = new URL(req.url).searchParams.get('lang');
   const lang = LANGS.includes(pedido) ? pedido : 'es';
