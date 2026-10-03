@@ -133,6 +133,9 @@ const textos = {
     const lista = box.querySelector('[data-g-lista]')!;
     for (const r of d.resenas) {
       const fig = el('figure', 'testi g-testi');
+      // Les cartes arrivent après le chargement : on les marque visibles tout de suite,
+      // sinon l'animation d'apparition au scroll (global.css) les laisse transparentes.
+      fig.classList.add('is-visible');
       const est = el('div', 'estrellas');
       est.innerHTML = Array.from({ length: 5 }, (_, i) => (i < Math.round(r.estrellas) ? ESTRELLA : VACIA)).join('');
       est.setAttribute('aria-label', `${r.estrellas} / 5`);
