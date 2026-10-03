@@ -2,8 +2,9 @@
 titulo: Amplio y luminoso duplex en Lambaré
 operacion: venta
 tipo: duplex
-estado: disponible
+estado: reservado
 destacado: true
+portada: false
 exclusivo: false
 desarrollo: false
 precio: 649000000
