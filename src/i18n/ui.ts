@@ -293,6 +293,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.vacia': 'Pronto vas a ver acá las experiencias de nuestros clientes.',
     'res.google_ver': 'Ver todas nuestras reseñas en Google',
     'res.google_escribir': 'Dejanos tu reseña en Google',
+    'res.g_resenas': 'reseñas',
+    'res.g_ver': 'Ver en Google',
+    'res.g_reportar': 'Reportar',
+    'res.g_fuente': 'Reseñas de Google Maps',
+    'res.g_leer': 'Leer más',
     'res.cta': 'Quiero trabajar con ustedes',
 
     // Détail propriété
@@ -597,6 +602,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.vacia': 'Vous verrez bientôt ici les expériences de nos clients.',
     'res.google_ver': 'Voir tous nos avis sur Google',
     'res.google_escribir': 'Laissez-nous un avis sur Google',
+    'res.g_resenas': 'avis',
+    'res.g_ver': 'Voir sur Google',
+    'res.g_reportar': 'Signaler',
+    'res.g_fuente': 'Avis Google Maps',
+    'res.g_leer': 'Lire la suite',
     'res.cta': 'Je veux travailler avec vous',
 
     // Détail
@@ -900,6 +910,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.vacia': "You'll soon see our clients' experiences here.",
     'res.google_ver': 'See all our reviews on Google',
     'res.google_escribir': 'Leave us a review on Google',
+    'res.g_resenas': 'reviews',
+    'res.g_ver': 'View on Google',
+    'res.g_reportar': 'Report',
+    'res.g_fuente': 'Google Maps reviews',
+    'res.g_leer': 'Read more',
     'res.cta': 'I want to work with you',
 
     // Détail

@@ -7,11 +7,36 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 
 interface Props {
   resenas: CollectionEntry<'resenas'>[];
+  // Si les avis Google se chargent, masquer les avis saisis à la main
+  // (accueil : on n'affiche qu'une série d'avis).
+  reemplazar?: boolean;
 }
-const { resenas } = Astro.props;
+const { resenas, reemplazar = false } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const textos = {
+  resenas: t('res.g_resenas'),
+  ver: t('res.g_ver'),
+  reportar: t('res.g_reportar'),
+  fuente: t('res.g_fuente'),
+  leer: t('res.g_leer'),
+};
 ---
 
-<div class="testimonios">
+<!-- Avis Google chargés automatiquement (voir netlify/functions/google-resenas.mjs).
+     Caché tant qu'ils ne sont pas arrivés ; en cas d'échec, rien ne s'affiche. -->
+<div
+  class="g-auto"
+  data-google-resenas
+  data-lang={lang}
+  data-reemplazar={reemplazar ? '1' : '0'}
+  data-textos={JSON.stringify(textos)}
+  hidden
+>
+  <a class="g-resumen" data-g-resumen target="_blank" rel="noopener"></a>
+  <div class="testimonios" data-g-lista></div>
+</div>
+
+<div class="testimonios" data-manuales>
   {
     resenas.map((r) => (
       <figure class="testi">
@@ -67,7 +92,181 @@ const { resenas } = Astro.props;
   )
 }
 
+<script>
+  // Charge les avis Google quand la section approche de l'écran
+  // (une seule requête par visite, et seulement si on y arrive).
+  const ESTRELLA =
+    '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="currentColor" stroke-width="1.5" d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7L2.2 9l6.9-.7z"/></svg>';
+  const VACIA =
+    '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.7L12 17.8 5.9 20.3l1.4-6.7L2.2 9l6.9-.7z"/></svg>';
+
+  function el(tag: string, cls?: string, text?: string) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text; // textContent : aucun HTML injecté
+    return e;
+  }
+
+  async function cargar(box: HTMLElement) {
+    const tx = JSON.parse(box.dataset.textos || '{}');
+    let d: any;
+    try {
+      const r = await fetch(`/api/google-resenas?lang=${box.dataset.lang}`);
+      if (!r.ok) return;
+      d = await r.json();
+    } catch {
+      return;
+    }
+    if (!d?.resenas?.length) return;
+
+    // Résumé : note moyenne + nombre d'avis + mention Google Maps (obligatoire)
+    const resumen = box.querySelector<HTMLAnchorElement>('[data-g-resumen]')!;
+    if (d.url) resumen.href = d.url;
+    const nota = typeof d.nota === 'number' ? d.nota.toLocaleString(box.dataset.lang, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '';
+    resumen.append(
+      el('span', 'g-nota', nota),
+      el('span', 'g-estr', '★'),
+      el('span', 'g-total', d.total ? `${d.total} ${tx.resenas}` : ''),
+      el('span', 'g-fuente', tx.fuente)
+    );
+
+    const lista = box.querySelector('[data-g-lista]')!;
+    for (const r of d.resenas) {
+      const fig = el('figure', 'testi g-testi');
+      const est = el('div', 'estrellas');
+      est.innerHTML = Array.from({ length: 5 }, (_, i) => (i < Math.round(r.estrellas) ? ESTRELLA : VACIA)).join('');
+      est.setAttribute('aria-label', `${r.estrellas} / 5`);
+      fig.append(est);
+      if (r.texto) fig.append(el('blockquote', 'g-texto', r.texto));
+
+      const cap = el('figcaption', 'g-autor');
+      if (r.foto) {
+        const img = el('img', 'g-foto') as HTMLImageElement;
+        img.src = r.foto;
+        img.alt = '';
+        img.width = 36;
+        img.height = 36;
+        img.loading = 'lazy';
+        img.referrerPolicy = 'no-referrer';
+        cap.append(img);
+      }
+      const quien = el('div', 'g-quien');
+      const nombre = el(r.autorUrl ? 'a' : 'span', 'nombre', r.autor) as HTMLAnchorElement;
+      if (r.autorUrl) {
+        nombre.href = r.autorUrl;
+        nombre.target = '_blank';
+        nombre.rel = 'noopener';
+      }
+      quien.append(nombre, el('span', 'contexto', r.cuando));
+      cap.append(quien);
+      fig.append(cap);
+
+      const pie = el('div', 'g-links');
+      if (r.url) {
+        const a = el('a', '', tx.ver) as HTMLAnchorElement;
+        a.href = r.url; a.target = '_blank'; a.rel = 'noopener';
+        pie.append(a);
+      }
+      if (r.reportar) {
+        const a = el('a', '', tx.reportar) as HTMLAnchorElement;
+        a.href = r.reportar; a.target = '_blank'; a.rel = 'noopener nofollow';
+        pie.append(a);
+      }
+      fig.append(pie);
+      lista.append(fig);
+    }
+
+    box.hidden = false;
+    if (box.dataset.reemplazar === '1') {
+      box.parentElement?.querySelector<HTMLElement>('[data-manuales]')?.setAttribute('hidden', '');
+    }
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-google-resenas]').forEach((box) => {
+    if (!('IntersectionObserver' in window)) return void cargar(box);
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          cargar(box);
+        }
+      },
+      { rootMargin: '400px' }
+    );
+    // On observe le bloc parent (le bloc Google lui-même est caché)
+    io.observe(box.parentElement || box);
+  });
+</script>
+
 <style>
+  .g-auto {
+    margin-bottom: 2rem;
+  }
+  .g-auto[hidden],
+  .testimonios[hidden] {
+    display: none;
+  }
+  .g-resumen {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.6rem;
+    margin-bottom: 1.2rem;
+    color: var(--ink);
+  }
+  .g-resumen:hover {
+    text-decoration: none;
+  }
+  .g-resumen :global(.g-nota) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--violet);
+  }
+  .g-resumen :global(.g-estr) {
+    color: var(--violet);
+    letter-spacing: 0.08em;
+  }
+  .g-resumen :global(.g-total) {
+    font-weight: 600;
+  }
+  .g-resumen :global(.g-fuente) {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .g-auto :global(.g-texto) {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .g-auto :global(figcaption.g-autor) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .g-auto :global(.g-foto) {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+  }
+  .g-auto :global(.g-quien) {
+    display: flex;
+    flex-direction: column;
+  }
+  .g-auto :global(.g-quien a.nombre) {
+    color: var(--ink);
+  }
+  .g-auto :global(.g-links) {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .g-auto :global(.g-links a:last-child:not(:first-child)) {
+    color: var(--muted);
+  }
   .google {
     display: flex;
     align-items: center;
@@ -96,7 +295,7 @@ const { resenas } = Astro.props;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: clamp(1.2rem, 3vw, 1.8rem);
   }
-  .testi {
+  .testimonios :global(.testi) {
     margin: 0;
     background: var(--surface);
     border: 1px solid var(--line);
@@ -108,12 +307,12 @@ const { resenas } = Astro.props;
     flex-direction: column;
     gap: 0.9rem;
   }
-  .estrellas {
+  .testimonios :global(.estrellas) {
     display: flex;
     gap: 2px;
     color: var(--violet);
   }
-  blockquote {
+  .testimonios :global(blockquote) {
     margin: 0;
     font-family: var(--display);
     font-size: 1.15rem;
@@ -121,26 +320,26 @@ const { resenas } = Astro.props;
     color: var(--ink);
     font-weight: 400;
   }
-  blockquote::before {
+  .testimonios :global(blockquote)::before {
     content: '“';
     color: var(--violet);
   }
-  blockquote::after {
+  .testimonios :global(blockquote)::after {
     content: '”';
     color: var(--violet);
   }
-  figcaption {
+  .testimonios :global(figcaption) {
     display: flex;
     flex-direction: column;
     margin-top: auto;
     padding-top: 0.5rem;
     border-top: 1px solid var(--line);
   }
-  .nombre {
+  .testimonios :global(.nombre) {
     font-weight: 700;
     font-size: 0.95rem;
   }
-  .contexto {
+  .testimonios :global(.contexto) {
     font-size: 0.83rem;
     color: var(--muted);
   }
