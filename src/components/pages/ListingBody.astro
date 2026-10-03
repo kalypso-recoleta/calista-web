@@ -15,7 +15,10 @@ const t = useTranslations(lang);
 const todos = await getCollection('biens');
 let biens = todos;
 if (kind === 'comprar') {
-  biens = todos.filter((b) => b.data.operacion === 'venta' && b.data.tipo !== 'terreno');
+  // Comprar = biens déjà construits : les programmes neufs (« pozo ») n'apparaissent que dans Desarrollos.
+  biens = todos.filter(
+    (b) => b.data.operacion === 'venta' && b.data.tipo !== 'terreno' && !b.data.desarrollo
+  );
 } else if (kind === 'alquilar') {
   biens = todos.filter((b) => b.data.operacion === 'alquiler');
 } else if (kind === 'terrenos') {
