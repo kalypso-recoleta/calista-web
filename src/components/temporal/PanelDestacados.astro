@@ -18,8 +18,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
-const items = await temporalesLaterales(rubrica);
-const bienes = await bienesLaterales(rubrica);
+// 2 annonces maximum : le panneau tient en entier à l'écran sur un portable
+const MAX = 2;
+const items = (await temporalesLaterales(rubrica)).slice(0, MAX);
+const bienes = (await bienesLaterales(rubrica)).slice(0, MAX);
 const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'), libre: t('temp.libre_desde'), locale: loc };
 ---
 
