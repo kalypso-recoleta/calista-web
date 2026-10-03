@@ -37,6 +37,7 @@ const resenas = (await getCollection('resenas'))
 const categorias = [
   { href: '/comprar', label: t('home.cat_comprar'), desc: t('home.cat_comprar_d') },
   { href: '/alquilar', label: t('home.cat_alquilar'), desc: t('home.cat_alquilar_d') },
+  { href: '/alquiler-temporal', label: t('home.cat_temporal'), desc: t('home.cat_temporal_d') },
   { href: '/desarrollos', label: t('home.cat_desarrollos'), desc: t('home.cat_desarrollos_d') },
   { href: '/terrenos', label: t('home.cat_terrenos'), desc: t('home.cat_terrenos_d') },
 ];
@@ -262,7 +263,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   }
   .cats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
   }
   .cat {
