@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE } from './datos';
+import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE, hayPanel } from './datos';
 import PanelDestacados from './PanelDestacados.astro';
 
 const lang = getLangFromUrl(Astro.url);
@@ -10,7 +10,7 @@ const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
 const items = await temporalesActivos();
-const conPanel = items.some((i) => i.data.destacado);
+const conPanel = await hayPanel();
 // Deux gammes : les résidences de la marque Kalypso d'abord, puis les logements d'autres propriétaires
 const grupos = [
   { key: 'kalypso', titulo: t('temp.kalypso_title'), intro: t('temp.kalypso_intro'), vacio: t('temp.kalypso_vacio'), items: items.filter((i) => i.data.gama === 'kalypso') },

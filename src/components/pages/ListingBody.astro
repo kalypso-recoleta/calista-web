@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import ListadoBiens from '../ListadoBiens.astro';
 import PanelDestacados from '../temporal/PanelDestacados.astro';
-import { temporalesActivos } from '../temporal/datos';
+import { hayPanel } from '../temporal/datos';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 
 interface Props {
@@ -33,8 +33,8 @@ biens = biens.sort((a, b) => +b.data.fecha - +a.data.fecha);
 const mostrarDormitorios = kind !== 'terrenos';
 const mostrarBanos = kind !== 'terrenos' && kind !== 'desarrollos';
 
-// Panneau « Destacados » (location temporaire) à droite de la page Alquilar
-const conPanel = kind === 'alquilar' && (await temporalesActivos()).some((i) => i.data.destacado);
+// Panneau « Destacados » à droite de toutes les pages de listes
+const conPanel = await hayPanel();
 
 const titulo = t(`lista.${kind}_title`);
 const eyebrow = t(`lista.${kind}_eyebrow`);

@@ -47,6 +47,8 @@ const biens = defineCollection({
     exclusivo: z.boolean().default(false),
     desarrollo: z.boolean().default(false),
     destacado: z.boolean().default(false),
+    // Affiché dans le panneau latéral « Destacados » des pages de listes
+    lateral: boolOpc(),
     // ⭐ Une seule annonce cochée "portada" = la grande image de l'accueil
     portada: boolOpc(),
 

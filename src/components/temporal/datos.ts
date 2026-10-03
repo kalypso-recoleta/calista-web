@@ -32,3 +32,16 @@ export function precioTxt(n: number | undefined, moneda: 'USD' | 'PYG', locale: 
 }
 
 export const LOCALE: Record<string, string> = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' };
+
+/** Biens (vente / location) cochés « panel lateral », encore actifs */
+export async function bienesLaterales() {
+  return (await getCollection('biens'))
+    .filter((b) => b.data.lateral && (b.data.estado === 'disponible' || b.data.estado === 'reservado'))
+    .sort((a, b) => +b.data.fecha - +a.data.fecha);
+}
+
+/** Y a-t-il quelque chose à montrer dans le panneau latéral ? */
+export async function hayPanel(): Promise<boolean> {
+  const t = (await temporalesActivos()).some((i) => i.data.destacado);
+  return t || (await bienesLaterales()).length > 0;
+}

@@ -67,6 +67,7 @@ collections:
       - { label: 'Terrenos', field: tipo, pattern: terreno }
       - { label: 'Exclusivos', field: exclusivo, pattern: true }
       - { label: 'Destacados en el inicio', field: destacado, pattern: true }
+      - { label: 'En el panel lateral', field: lateral, pattern: true }
       - { label: 'Disponibles', field: estado, pattern: disponible }
       - { label: 'Vendidos', field: estado, pattern: vendido }
       - { label: 'Alquilados', field: estado, pattern: alquilado }
@@ -113,6 +114,7 @@ collections:
 
       # --- Etiquetas que deciden en qué página aparece ---
       - { label: '¿Destacado? (aparece en la sección Destacados del inicio)', name: destacado, widget: boolean, default: false }
+      - { label: '⭐ ¿Mostrar en el panel lateral?', name: lateral, widget: boolean, default: false, required: false, hint: 'Aparece en la columna "Destacados" a la derecha de las páginas Comprar, Alquilar, Alquiler temporal, Desarrollos y Terrenos.' }
       - { label: '⭐ ¿Usar como imagen de PORTADA del inicio?', name: portada, widget: boolean, default: false, required: false, hint: 'La propiedad con esta casilla marcada es la foto grande de la página de inicio. Marcá una sola.' }
       - { label: '¿Cartera Exclusiva?', name: exclusivo, widget: boolean, default: false }
       - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
@@ -269,7 +271,7 @@ collections:
         default: otros
       - { label: 'Nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Solo para Residencias Kalypso. Ej: Yrupé' }
       - { label: '¿Mostrar en el sitio?', name: activo, widget: boolean, default: true, hint: 'Desmarcá para ocultarlo sin borrarlo.' }
-      - { label: '⭐ ¿Destacar en el panel lateral?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la columna de la derecha de las páginas Alquilar y Alquiler temporal.' }
+      - { label: '⭐ ¿Destacar en el panel lateral?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la columna "Destacados" a la derecha de las páginas de propiedades.' }
       - { label: 'Orden (1 = primero)', name: orden, widget: number, value_type: int, min: 1, required: false }
       - { label: Ciudad, name: ciudad, widget: string, default: 'Asunción' }
       - { label: Barrio, name: barrio, widget: string, required: false }

@@ -6,7 +6,9 @@
  */
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE } from './datos';
+import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE, bienesLaterales } from './datos';
+import { slugify } from '../../lib/slug';
+import { formatPrecio, operacionLabel, estadoLabel } from '../../lib/format';
 
 interface Props {
   enTemporal?: boolean; // déjà sur la page Alquiler temporal : pas de lien « voir tout »
@@ -17,14 +19,29 @@ const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
 const items = (await temporalesActivos()).filter((i) => i.data.destacado);
+const bienes = await bienesLaterales();
 const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'), libre: t('temp.libre_desde'), locale: loc };
 ---
 
 {
-  items.length > 0 && (
+  (items.length > 0 || bienes.length > 0) && (
     <aside class="panel" data-panel-destacados data-textos={JSON.stringify(textos)}>
       <p class="panel-tit">★ {t('temp.destacados')}</p>
-      <p class="panel-sub">{t('temp.destacados_sub')}</p>
+      {bienes.map((b) => {
+        const d = b.data;
+        return (
+          <a class="pcard" href={L(`/propiedad/${slugify(b.id)}`)}>
+            <div class="pmedia">
+              <img src={img(d.portada_foto || d.imagenes[0], { w: 520, h: 340 })} alt={d.titulo} width="520" height="340" loading="lazy" />
+              <span class="pestado es-op">{d.estado === 'reservado' ? estadoLabel(d.estado, lang) : operacionLabel(d.operacion, lang)}</span>
+            </div>
+            <div class="pbody">
+              <p class="ptitulo">{d.titulo}</p>
+              <p class="pprecio"><strong>{formatPrecio(d, lang)}</strong></p>
+            </div>
+          </a>
+        );
+      })}
       {items.map((it) => {
         const d = it.data;
         const semana = precioTxt(d.precio_semana, d.moneda, loc);
@@ -36,6 +53,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
               <span class="pestado" data-estado hidden />
             </div>
             <div class="pbody">
+              <p class="pgama pgama--temp">{t('temp.title')}</p>
               {d.gama === 'kalypso' && (
                 <p class="pgama">{t('temp.kalypso_badge')}{d.residencia ? ` · ${d.residencia}` : ''}</p>
               )}
@@ -47,7 +65,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
           </a>
         );
       })}
-      {!enTemporal && <a class="panel-mas" href={L('/alquiler-temporal')}>{t('temp.banner_cta')} →</a>}
+      {!enTemporal && items.length > 0 && <a class="panel-mas" href={L('/alquiler-temporal')}>{t('temp.banner_cta')} →</a>}
     </aside>
   )
 }
@@ -84,6 +102,8 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
   .pestado { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.2rem 0.55rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700; background: #fff; }
   .pestado.es-libre { color: var(--ok); }
   .pestado.es-alquilado { background: var(--brand); color: #fff; }
+  .pestado.es-op { color: var(--ink); }
+  .pgama--temp { color: var(--muted); }
   .pbody { padding: 0.7rem 0.8rem 0.8rem; display: flex; flex-direction: column; gap: 0.2rem; }
   .pgama { margin: 0; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
   .ptitulo { margin: 0; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
