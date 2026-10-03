@@ -85,6 +85,8 @@ const biens = defineCollection({
     // Photo de couverture explicite ; sinon la 1ère de la liste
     portada_foto: strOpc(),
     imagenes: z.array(z.string()).default([]),
+    // Fiche commerciale PDF (stockée dans public/uploads/fichas) — optionnelle
+    ficha_pdf: strOpc(),
 
     // --- Texte ---
     descripcion: z.string(), // résumé court : cartes + aperçu de partage

@@ -154,6 +154,17 @@ const specs = [
             <p class="precio">{formatPrecio(d, lang)}</p>
             <p class="ref">{t('det.ref')} {slugify(bien.id)}</p>
             <WhatsAppButton href={wa} full />
+            {
+              d.ficha_pdf && (
+                <a href={d.ficha_pdf} class="btn btn--primary full-ghost ficha" target="_blank" rel="noopener" download>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" />
+                    <line x1="12" y1="12" x2="12" y2="18" /><polyline points="9 15 12 18 15 15" />
+                  </svg>
+                  {t('det.ficha')}
+                </a>
+              )
+            }
             <a href={L('/contacto')} class="btn btn--ghost full-ghost">
               {t('det.enviar_consulta')}
             </a>

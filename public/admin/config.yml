@@ -201,6 +201,18 @@ collections:
         media_library: { name: cloudinary }
         hint: 'La primera imagen es la portada. Subí las fotos desde la pestaña Cloudinary.'
 
+      # --- Ficha comercial en PDF (opcional) ---
+      # Les PDF sont stockés dans le dépôt (public/uploads/fichas), pas sur
+      # Cloudinary : le site les sert tels quels via un bouton « Descargar ficha ».
+      - label: 'Ficha comercial (PDF, opcional)'
+        name: ficha_pdf
+        widget: file
+        required: false
+        accept: application/pdf
+        media_folder: /public/uploads/fichas
+        public_folder: /uploads/fichas
+        hint: 'Subí la ficha en PDF (ideal: menos de 5 MB). Aparece un botón «Descargar ficha» en la página de la propiedad.'
+
       # --- Textos ---
       - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases. Aparece en las tarjetas y al compartir por WhatsApp.' }
       - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }

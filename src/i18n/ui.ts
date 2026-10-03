@@ -299,6 +299,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'det.ubicacion': 'Ubicación',
     'det.ref': 'Ref.',
     'det.enviar_consulta': 'Enviar consulta',
+    'det.ficha': 'Descargar ficha (PDF)',
     'det.nota': 'Te respondemos personalmente. Sin intermediarios automáticos.',
     'det.wa_msg_a': 'Hola, me interesa la propiedad',
     'det.wa_msg_b': '¿Podrían darme más información?',
@@ -598,6 +599,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'det.ubicacion': 'Localisation',
     'det.ref': 'Réf.',
     'det.enviar_consulta': 'Envoyer une demande',
+    'det.ficha': 'Télécharger la fiche (PDF)',
     'det.nota':
       "Nous vous répondons personnellement. Sans intermédiaire automatique.",
     'det.wa_msg_a': "Bonjour, je suis intéressé(e) par le bien",
@@ -896,6 +898,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'det.ubicacion': 'Location',
     'det.ref': 'Ref.',
     'det.enviar_consulta': 'Send enquiry',
+    'det.ficha': 'Download fact sheet (PDF)',
     'det.nota': 'We reply personally. No automated middlemen.',
     'det.wa_msg_a': "Hello, I'm interested in the property",
     'det.wa_msg_b': 'Could you give me more information?',
