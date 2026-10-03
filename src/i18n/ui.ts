@@ -8,7 +8,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Comprar',
     'nav.alquilar': 'Alquilar',
-    'nav.desarrollos': 'Desarrollos',
+    'nav.desarrollos': 'Kalypso',
     'nav.terrenos': 'Terrenos',
     'nav.exclusivos': 'Exclusivos',
     'nav.propietarios': 'Gestión / Venta',
@@ -28,7 +28,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'footer.nuestra_historia': 'Nuestra historia',
     'footer.contacto': 'Contacto',
     'footer.contacto_titulo': 'Contacto',
-    'footer.desarrollos': 'Nuevos desarrollos',
+    'footer.desarrollos': 'Desarrollos Kalypso',
 
     // Communs
     'common.ver': 'Ver →',
@@ -112,7 +112,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.cat_comprar_d': 'Casas y departamentos en venta',
     'home.cat_alquilar': 'Alquilar',
     'home.cat_alquilar_d': 'Opciones en alquiler verificadas',
-    'home.cat_desarrollos': 'Desarrollos',
+    'home.cat_desarrollos': 'Desarrollos Kalypso',
     'home.cat_desarrollos_d': 'Unidades en pozo y proyectos',
     'home.cat_terrenos': 'Terrenos',
     'home.cat_terrenos_d': 'Lotes para construir o invertir',
@@ -163,7 +163,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       'Lotes para construir tu casa o invertir, con documentación verificada y asesoramiento sobre la zona.',
     'lista.desarrollos_eyebrow': 'En pozo',
-    'lista.desarrollos_title': 'Nuevos desarrollos',
+    'lista.desarrollos_title': 'Desarrollos Kalypso',
     'lista.desarrollos_intro':
       'Proyectos en construcción y unidades en pozo. Comprar en esta etapa suele significar un mejor precio y planes de pago durante la obra.',
     'lista.vacia':
@@ -318,7 +318,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Acheter',
     'nav.alquilar': 'Louer',
-    'nav.desarrollos': 'Programmes neufs',
+    'nav.desarrollos': 'Kalypso',
     'nav.terrenos': 'Terrains',
     'nav.exclusivos': 'Exclusivités',
     'nav.propietarios': 'Gestion / Vente',
@@ -338,7 +338,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'footer.nuestra_historia': 'Notre histoire',
     'footer.contacto': 'Contact',
     'footer.contacto_titulo': 'Contact',
-    'footer.desarrollos': 'Programmes neufs',
+    'footer.desarrollos': 'Programmes neufs Kalypso',
 
     // Communs
     'common.ver': 'Voir →',
@@ -420,7 +420,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.cat_comprar_d': 'Maisons et appartements à vendre',
     'home.cat_alquilar': 'Louer',
     'home.cat_alquilar_d': 'Des locations vérifiées',
-    'home.cat_desarrollos': 'Programmes neufs',
+    'home.cat_desarrollos': 'Programmes Kalypso',
     'home.cat_desarrollos_d': 'Achats sur plan et projets',
     'home.cat_terrenos': 'Terrains',
     'home.cat_terrenos_d': 'Lots à construire ou pour investir',
@@ -472,7 +472,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       "Des terrains pour construire votre maison ou investir, avec des documents vérifiés et des conseils sur la zone.",
     'lista.desarrollos_eyebrow': 'Sur plan',
-    'lista.desarrollos_title': 'Programmes neufs',
+    'lista.desarrollos_title': 'Programmes neufs Kalypso',
     'lista.desarrollos_intro':
       "Projets en construction et achats sur plan. Acheter à ce stade, c'est souvent un meilleur prix et des paiements échelonnés pendant les travaux.",
     'lista.vacia':
@@ -628,7 +628,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Buy',
     'nav.alquilar': 'Rent',
-    'nav.desarrollos': 'New developments',
+    'nav.desarrollos': 'Kalypso',
     'nav.terrenos': 'Land',
     'nav.exclusivos': 'Exclusive',
     'nav.propietarios': 'Management / Sales',
@@ -648,7 +648,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'footer.nuestra_historia': 'About us',
     'footer.contacto': 'Contact',
     'footer.contacto_titulo': 'Contact',
-    'footer.desarrollos': 'New developments',
+    'footer.desarrollos': 'Kalypso developments',
 
     // Communs
     'common.ver': 'View →',
@@ -729,7 +729,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.cat_comprar_d': 'Houses and apartments for sale',
     'home.cat_alquilar': 'Rent',
     'home.cat_alquilar_d': 'Verified rental options',
-    'home.cat_desarrollos': 'Developments',
+    'home.cat_desarrollos': 'Kalypso developments',
     'home.cat_desarrollos_d': 'Off-plan units and projects',
     'home.cat_terrenos': 'Land',
     'home.cat_terrenos_d': 'Lots to build on or invest',
@@ -780,7 +780,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'lista.terrenos_intro':
       'Lots to build your home or invest, with verified documents and advice about the area.',
     'lista.desarrollos_eyebrow': 'Off-plan',
-    'lista.desarrollos_title': 'New developments',
+    'lista.desarrollos_title': 'Kalypso new developments',
     'lista.desarrollos_intro':
       'Projects under construction and off-plan units. Buying at this stage usually means a better price and payment plans during construction.',
     'lista.vacia':
