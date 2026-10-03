@@ -21,6 +21,8 @@
   --violet-vivo: #9b01cd; /* --vivo : focus, détails */
   --violet-soft: #f7f2f9; /* survol clair du logiciel */
   --violet-light: #d6b3e3; /* violet lisible sur fond anthracite */
+  /* Voile violet transparent sous les vignettes (zone texte des cartes) */
+  --card-tint: linear-gradient(180deg, rgba(62, 0, 85, 0.03) 0%, rgba(62, 0, 85, 0.09) 100%);
 
   --ok: #15803d;
   --warn: #b45309;
