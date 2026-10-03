@@ -1,0 +1,96 @@
+---
+/**
+ * Panneau latéral « Destacados » : logements en location temporaire cochés
+ * « Destacar » dans l'admin. Affiché à droite des pages Alquilar et
+ * Alquiler temporal (sous la liste sur téléphone). Rien si aucun n'est coché.
+ */
+import { img } from '../../lib/cloudinary';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE } from './datos';
+
+interface Props {
+  enTemporal?: boolean; // déjà sur la page Alquiler temporal : pas de lien « voir tout »
+}
+const { enTemporal = false } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
+const loc = LOCALE[lang];
+const items = (await temporalesActivos()).filter((i) => i.data.destacado);
+const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'), libre: t('temp.libre_desde'), locale: loc };
+---
+
+{
+  items.length > 0 && (
+    <aside class="panel" data-panel-destacados data-textos={JSON.stringify(textos)}>
+      <p class="panel-tit">★ {t('temp.destacados')}</p>
+      <p class="panel-sub">{t('temp.destacados_sub')}</p>
+      {items.map((it) => {
+        const d = it.data;
+        const semana = precioTxt(d.precio_semana, d.moneda, loc);
+        const mes = precioTxt(d.precio_mes, d.moneda, loc);
+        return (
+          <a class="pcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>
+            <div class="pmedia">
+              <img src={img(d.portada_foto || d.imagenes[0], { w: 520, h: 340 })} alt={d.titulo} width="520" height="340" loading="lazy" />
+              <span class="pestado" data-estado hidden />
+            </div>
+            <div class="pbody">
+              {d.gama === 'kalypso' && (
+                <p class="pgama">{t('temp.kalypso_badge')}{d.residencia ? ` · ${d.residencia}` : ''}</p>
+              )}
+              <p class="ptitulo">{d.titulo}</p>
+              <p class="pprecio">
+                {semana ? <><strong>{semana}</strong> {t('temp.semana')}</> : mes && <><strong>{mes}</strong> {t('temp.mes')}</>}
+              </p>
+            </div>
+          </a>
+        );
+      })}
+      {!enTemporal && <a class="panel-mas" href={L('/alquiler-temporal')}>{t('temp.banner_cta')} →</a>}
+    </aside>
+  )
+}
+
+<script>
+  import { leerRangos, estadoHoy, fechaCorta } from '../../lib/temporal';
+  document.querySelectorAll<HTMLElement>('[data-panel-destacados]').forEach((panel) => {
+    const tx = JSON.parse(panel.dataset.textos || '{}');
+    panel.querySelectorAll<HTMLElement>('[data-reservas]').forEach((card) => {
+      const e = estadoHoy(leerRangos(card.dataset.reservas));
+      const b = card.querySelector<HTMLElement>('[data-estado]');
+      if (!b) return;
+      b.textContent = e.alquilado ? `${tx.alquilado} · ${tx.libre} ${fechaCorta(e.libre!, tx.locale)}` : tx.disponible;
+      b.classList.add(e.alquilado ? 'es-alquilado' : 'es-libre');
+      b.hidden = false;
+    });
+  });
+</script>
+
+<style>
+  [hidden] { display: none !important; }
+  .panel {
+    position: sticky; top: 96px;
+    display: flex; flex-direction: column; gap: 0.9rem;
+    padding: 1.2rem; background: #fff; border: 1px solid var(--line);
+    border-top: 4px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  .panel-tit { margin: 0; font-weight: 700; color: var(--violet); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem; }
+  .panel-sub { margin: -0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
+  .pcard { display: block; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .pcard:hover { text-decoration: none; border-color: var(--violet); }
+  .pmedia { position: relative; aspect-ratio: 16 / 10; background: var(--violet-soft); }
+  .pmedia img { width: 100%; height: 100%; object-fit: cover; }
+  .pestado { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.2rem 0.55rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700; background: #fff; }
+  .pestado.es-libre { color: var(--ok); }
+  .pestado.es-alquilado { background: var(--brand); color: #fff; }
+  .pbody { padding: 0.7rem 0.8rem 0.8rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .pgama { margin: 0; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
+  .ptitulo { margin: 0; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+  .pprecio { margin: 0; font-size: 0.85rem; color: var(--muted); }
+  .pprecio strong { color: var(--brand); }
+  .panel-mas { font-weight: 700; font-size: 0.88rem; color: var(--violet); }
+  @media (max-width: 1000px) {
+    .panel { position: static; }
+  }
+</style>

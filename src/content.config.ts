@@ -140,6 +140,7 @@ const temporales = defineCollection({
     gama: z.enum(['kalypso', 'otros']).default('otros'),
     residencia: strOpc(), // nom de la résidence Kalypso, ex. « Yrupé »
     activo: z.boolean().default(true), // décocher pour retirer du site sans supprimer
+    destacado: z.boolean().default(false), // affiché dans le panneau latéral « Destacados »
     orden: entOpc(), // ordre d'affichage (1 = en premier)
     ciudad: z.string(),
     barrio: strOpc(),

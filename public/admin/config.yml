@@ -255,6 +255,7 @@ collections:
     view_filters:
       - { label: 'Residencias Kalypso', field: gama, pattern: kalypso }
       - { label: 'Otros departamentos', field: gama, pattern: otros }
+      - { label: 'Destacados', field: destacado, pattern: true }
     view_groups:
       - { label: 'Gama', field: gama }
     fields:
@@ -268,6 +269,7 @@ collections:
         default: otros
       - { label: 'Nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Solo para Residencias Kalypso. Ej: Yrupé' }
       - { label: '¿Mostrar en el sitio?', name: activo, widget: boolean, default: true, hint: 'Desmarcá para ocultarlo sin borrarlo.' }
+      - { label: '⭐ ¿Destacar en el panel lateral?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la columna de la derecha de las páginas Alquilar y Alquiler temporal.' }
       - { label: 'Orden (1 = primero)', name: orden, widget: number, value_type: int, min: 1, required: false }
       - { label: Ciudad, name: ciudad, widget: string, default: 'Asunción' }
       - { label: Barrio, name: barrio, widget: string, required: false }
