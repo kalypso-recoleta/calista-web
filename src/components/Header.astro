@@ -99,9 +99,19 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     position: sticky;
     top: 0;
     z-index: 50;
-    background: color-mix(in srgb, var(--paper) 86%, transparent);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
+        background: #fff;
+    padding-top: 6px;
+    border-bottom: 3px solid var(--violet);
+  }
+  /* Bandeau du haut : violet puis anthracite, comme le logiciel */
+  .site-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(to right, var(--violet) 0 58%, var(--brand) 58%);
   }
   .bar {
     display: flex;
@@ -111,6 +121,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     height: 72px;
   }
   .brand {
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     color: var(--ink);
@@ -129,30 +140,25 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     margin-inline: auto;
   }
   .nav-link {
-    color: var(--ink);
-    font-weight: 500;
-    font-size: 0.94rem;
-    padding: 0.5rem 0.7rem;
-    border-radius: 8px;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.55rem 0.6rem;
+    border-radius: var(--radius);
     position: relative;
     white-space: nowrap; /* jamais de libellé coupé sur deux lignes */
   }
   .nav-link:hover {
     text-decoration: none;
     background: var(--violet-soft);
+    color: var(--violet);
   }
+  /* Onglet actif : fond violet, texte blanc (comme le menu du logiciel) */
   .nav-link.active {
-    color: var(--brand);
-  }
-  .nav-link.active::after {
-    content: '';
-    position: absolute;
-    left: 0.7rem;
-    right: 0.7rem;
-    bottom: 0.15rem;
-    height: 2px;
     background: var(--violet);
-    border-radius: 2px;
+    color: #fff;
   }
   .actions {
     display: flex;
@@ -165,8 +171,9 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     display: inline-flex;
     align-items: center;
     gap: 1px;
-    background: var(--violet-soft);
-    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--violet);
+    border-radius: var(--radius);
     padding: 2px;
   }
   .lang-switch .lang {
@@ -175,7 +182,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     letter-spacing: 0.03em;
     color: var(--brand-700);
     padding: 0.28rem 0.55rem;
-    border-radius: 999px;
+    border-radius: 2px;
     line-height: 1;
   }
   .lang-switch .lang:hover {
@@ -227,8 +234,9 @@ const wa = whatsappLink(t('nav.wa_consulta'));
       gap: 0.1rem;
     }
     .nav-link {
-      padding: 0.5rem 0.55rem;
-      font-size: 0.9rem;
+      padding: 0.5rem 0.45rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.07em;
     }
   }
   @media (max-width: 1180px) {

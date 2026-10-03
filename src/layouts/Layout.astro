@@ -82,7 +82,7 @@ const orgSchema = {
     <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
-    <meta name="theme-color" content="#9020c6" />
+    <meta name="theme-color" content="#3e0055" />
 
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
@@ -104,13 +104,7 @@ const orgSchema = {
     <!-- Données structurées : agence immobilière (toutes les pages) -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 
-    <!-- Polices : Fraunces (display) + Hanken Grotesk (texte) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Police : police système (comme le logiciel CALISTA) — aucun chargement externe -->
     <!-- Active les animations seulement si le navigateur le permet -->
     <script is:inline>
       if (

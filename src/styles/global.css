@@ -1,38 +1,41 @@
 /* ============================================================
    CALISTA — Système de design
-   Palette navy/violet de la marque, réchauffée par un papier
-   chaud et un or discret réservé aux biens "Exclusivos".
-   Typo : Fraunces (display, serif à caractère) + Hanken Grotesk (texte).
+   Aligné sur le logiciel de gestion CALISTA (estilo.css) et la
+   hoja membretada : violet #3E0055 / #530070, anthracite #212B35,
+   losanges en filigrane, bandeaux violet + anthracite, angles 4 px.
    ============================================================ */
 
 :root {
-  /* — Couleurs (alignées sur le logo : charbon + violet) — */
-  --paper: #fbf9f6; /* fond chaud, propre */
+  /* — Couleurs : identiques au logiciel de gestion CALISTA (estilo.css) — */
+  --paper: #fbfbfc; /* --fondo du logiciel */
   --surface: #ffffff;
-  --ink: #212933; /* charbon du logo (texte) */
-  --muted: #6a6f78; /* texte secondaire */
-  --line: #e7e3db; /* filets / bordures */
+  --tint: #faf7fb;
+  --ink: #212b35; /* --antracita */
+  --muted: #6b7280; /* --gris */
+  --line: #e6e6ea; /* --linea */
 
-  --brand: #212933; /* charbon du logo */
-  --brand-700: #333d49; /* hover */
-  --violet: #9020c6; /* violet du logo (accent) */
-  --violet-soft: #f3e7fb;
+  --brand: #212b35; /* anthracite (pied de page, fonds sombres) */
+  --brand-700: #2f3a46;
+  --violet: #3e0055; /* --violeta : couleur principale */
+  --violet-700: #530070; /* --medio : survol */
+  --violet-vivo: #9b01cd; /* --vivo : focus, détails */
+  --violet-soft: #f7f2f9; /* survol clair du logiciel */
+  --violet-light: #d6b3e3; /* violet lisible sur fond anthracite */
 
-  --ok: #2f7d57;
-  --warn: #b4632a;
+  --ok: #15803d;
+  --warn: #b45309;
 
-  /* — Type — */
-  --display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --body: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  /* — Type : police système, comme le logiciel — */
+  --display: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  /* — Rythme — */
-  --radius: 14px;
-  --radius-sm: 9px;
+  /* — Rythme : angles presque droits (4 px), comme le logiciel — */
+  --radius: 4px;
+  --radius-sm: 4px;
   --container: 1180px;
   --gutter: clamp(1.1rem, 4vw, 2.4rem);
-  --shadow: 0 1px 2px rgba(31, 27, 58, 0.04),
-    0 12px 30px -18px rgba(31, 27, 58, 0.22);
-  --shadow-lg: 0 24px 60px -28px rgba(31, 27, 58, 0.4);
+  --shadow: 0 1px 3px rgba(62, 0, 85, 0.07);
+  --shadow-lg: 0 16px 44px -20px rgba(62, 0, 85, 0.28);
 }
 
 *,
@@ -52,7 +55,14 @@ body {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--ink);
-  background: var(--paper);
+  background-color: var(--paper);
+  /* Losanges en filigrane, estompés vers le bas à gauche (repris du logiciel) */
+  background-image:
+    linear-gradient(212deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.58) 40%,
+      rgba(255, 255, 255, 0.95) 70%, #fff 100%),
+    repeating-linear-gradient(45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px),
+    repeating-linear-gradient(-45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -62,11 +72,10 @@ h2,
 h3,
 h4 {
   font-family: var(--display);
-  font-weight: 500;
-  line-height: 1.08;
+  font-weight: 700;
+  line-height: 1.15;
   letter-spacing: -0.015em;
   margin: 0 0 0.5em;
-  font-optical-sizing: auto;
 }
 
 h1 {
@@ -98,7 +107,7 @@ img {
 
 /* — Accessibilité : focus visible & motion réduit — */
 :focus-visible {
-  outline: 3px solid var(--violet);
+  outline: 2px solid var(--violet-vivo);
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -132,7 +141,8 @@ img {
   font-family: var(--body);
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--violet);
   margin: 0 0 0.7rem;
@@ -156,8 +166,8 @@ img {
   font-weight: 600;
   font-size: 0.98rem;
   line-height: 1;
-  padding: 0.85rem 1.4rem;
-  border-radius: 999px;
+  padding: 0.8rem 1.3rem;
+  border-radius: var(--radius);
   border: 1px solid transparent;
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease,
@@ -170,20 +180,21 @@ img {
 }
 
 .btn--primary {
-  background: var(--brand);
+  background: var(--violet);
   color: #fff;
 }
 .btn--primary:hover {
-  background: var(--brand-700);
+  background: var(--violet-700);
 }
 
 .btn--ghost {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--line);
+  /* = bouton « secundario » du logiciel */
+  background: #fff;
+  color: var(--violet);
+  border-color: var(--violet);
 }
 .btn--ghost:hover {
-  border-color: var(--brand);
+  background: var(--violet-soft);
 }
 
 .btn--wa {
@@ -205,15 +216,15 @@ img {
   font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  padding: 0.32rem 0.7rem;
-  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
   background: var(--violet-soft);
   color: var(--brand);
 }
 .badge--exclusivo {
   background: var(--violet-soft);
   color: var(--violet);
-  border: 1px solid rgba(144, 32, 198, 0.35);
+  border: 1px solid rgba(62, 0, 85, 0.3);
 }
 .badge--vendido,
 .badge--alquilado {
@@ -262,3 +273,4 @@ img {
   html.anim :is(.grid-biens, .cats, .testimonios, .valores, .pasos, .incluye) > *:nth-child(5) { transition-delay: 0.20s; }
   html.anim :is(.grid-biens, .cats, .testimonios, .valores, .pasos, .incluye) > *:nth-child(6) { transition-delay: 0.25s; }
 }
+

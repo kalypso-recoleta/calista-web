@@ -13,7 +13,7 @@ export const site = {
   // Paraguay = 595. Ex. pour 0981 123 456 → "595981123456"
   whatsapp: '595994385487',
 
-  email: 'louisthomassin.pro@gmail.com',
+  email: 'contacto@calista.com.py',
   telefono: '+595 994 385487',
   direccion: 'Asunción, Paraguay',
 

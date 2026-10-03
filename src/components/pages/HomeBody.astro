@@ -225,7 +225,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   .hero-media {
     position: relative;
     display: block;
-    border-radius: 20px;
+    border-radius: var(--radius);
     overflow: hidden;
     aspect-ratio: 5 / 4;
     box-shadow: var(--shadow-lg);
@@ -241,7 +241,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     bottom: 1rem;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(6px);
-    border-radius: 12px;
+    border-radius: var(--radius);
     padding: 0.7rem 1rem;
     display: flex;
     flex-direction: column;
@@ -272,6 +272,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     padding: 1.3rem 1.4rem;
     background: var(--surface);
     border: 1px solid var(--line);
+    border-top: 4px solid var(--violet); /* liseré violet, comme les « tarjetas » du logiciel */
     border-radius: var(--radius);
     color: var(--ink);
     position: relative;
@@ -279,7 +280,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   }
   .cat:hover {
     text-decoration: none;
-    border-color: var(--brand);
+    border-color: var(--violet);
     transform: translateY(-2px);
   }
   .cat-label {
@@ -327,7 +328,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   .cifras {
     background: var(--brand);
     color: #fff;
-    border-radius: 22px;
+    border-radius: var(--radius);
     padding: clamp(1.8rem, 4vw, 2.8rem);
   }
   .cifras-grid {
@@ -345,18 +346,18 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     font-family: var(--display);
     font-size: clamp(2.4rem, 5vw, 3.4rem);
     font-weight: 600;
-    color: #c9a0e8;
+    color: var(--violet-light);
     line-height: 1;
   }
   .cifra .l {
     font-size: 0.95rem;
-    color: #cfc8ee;
+    color: #d5d9de;
   }
   .cifras-nota {
     margin: 1.6rem auto 0;
     max-width: 62ch;
     text-align: center;
-    color: #b3aada;
+    color: #9aa2ac;
     font-size: 0.95rem;
   }
   @media (max-width: 640px) {
@@ -396,7 +397,7 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     align-items: center;
     background: var(--brand);
     color: #fff;
-    border-radius: 22px;
+    border-radius: var(--radius);
     padding: clamp(2rem, 4vw, 3rem);
   }
   .prop-band h2 {
@@ -404,10 +405,10 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     margin-bottom: 0.6rem;
   }
   .on-dark {
-    color: #b9aef2;
+    color: var(--violet-light);
   }
   .band-lead {
-    color: #cfc8ee;
+    color: #d5d9de;
     margin: 0;
     max-width: 48ch;
   }
