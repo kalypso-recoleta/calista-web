@@ -4,9 +4,10 @@ operacion: alquiler
 tipo: departamento
 estado: disponible
 destacado: true
+portada: false
 exclusivo: true
 desarrollo: false
-precio: 6000000
+precio: 5000000
 moneda: PYG
 periodo: total
 ciudad: Asunción
