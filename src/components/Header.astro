@@ -114,6 +114,8 @@ const wa = whatsappLink(t('nav.wa_consulta'));
     background: linear-gradient(to right, var(--violet) 0 58%, var(--brand) 58%);
   }
   .bar {
+    /* Le menu est plus large que le reste de la page : on lui laisse plus de place */
+    max-width: 1340px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,7 +241,7 @@ const wa = whatsappLink(t('nav.wa_consulta'));
       letter-spacing: 0.07em;
     }
   }
-  @media (max-width: 1180px) {
+  @media (max-width: 1230px) {
     .nav,
     .header-cta {
       display: none;

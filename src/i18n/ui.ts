@@ -8,7 +8,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Comprar',
     'nav.alquilar': 'Alquilar',
-    'nav.desarrollos': 'Kalypso',
+    'nav.desarrollos': 'Desarrollos Kalypso',
     'nav.terrenos': 'Terrenos',
     'nav.exclusivos': 'Exclusivos',
     'nav.propietarios': 'Gestión / Venta',
@@ -318,7 +318,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Acheter',
     'nav.alquilar': 'Louer',
-    'nav.desarrollos': 'Kalypso',
+    'nav.desarrollos': 'Programmes Kalypso',
     'nav.terrenos': 'Terrains',
     'nav.exclusivos': 'Exclusivités',
     'nav.propietarios': 'Gestion / Vente',
@@ -628,7 +628,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Navigation
     'nav.comprar': 'Buy',
     'nav.alquilar': 'Rent',
-    'nav.desarrollos': 'Kalypso',
+    'nav.desarrollos': 'Kalypso developments',
     'nav.terrenos': 'Land',
     'nav.exclusivos': 'Exclusive',
     'nav.propietarios': 'Management / Sales',
