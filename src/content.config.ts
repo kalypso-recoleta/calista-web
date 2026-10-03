@@ -136,6 +136,9 @@ const temporales = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/temporales' }),
   schema: z.object({
     titulo: z.string(),
+    // Gamme : résidences de la marque Kalypso (Yrupé…) ou logements gérés pour d'autres propriétaires
+    gama: z.enum(['kalypso', 'otros']).default('otros'),
+    residencia: strOpc(), // nom de la résidence Kalypso, ex. « Yrupé »
     activo: z.boolean().default(true), // décocher pour retirer du site sans supprimer
     orden: entOpc(), // ordre d'affichage (1 = en premier)
     ciudad: z.string(),

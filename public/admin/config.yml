@@ -252,8 +252,21 @@ collections:
     identifier_field: titulo
     summary: '{{titulo}} — {{barrio}} {{ciudad}}'
     sortable_fields: [orden, titulo]
+    view_filters:
+      - { label: 'Residencias Kalypso', field: gama, pattern: kalypso }
+      - { label: 'Otros departamentos', field: gama, pattern: otros }
+    view_groups:
+      - { label: 'Gama', field: gama }
     fields:
       - { label: Título, name: titulo, widget: string }
+      - label: Gama
+        name: gama
+        widget: select
+        options:
+          - { label: 'Residencias Kalypso', value: kalypso }
+          - { label: 'Otros departamentos (otros propietarios)', value: otros }
+        default: otros
+      - { label: 'Nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Solo para Residencias Kalypso. Ej: Yrupé' }
       - { label: '¿Mostrar en el sitio?', name: activo, widget: boolean, default: true, hint: 'Desmarcá para ocultarlo sin borrarlo.' }
       - { label: 'Orden (1 = primero)', name: orden, widget: number, value_type: int, min: 1, required: false }
       - { label: Ciudad, name: ciudad, widget: string, default: 'Asunción' }

@@ -9,6 +9,11 @@ const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
 const items = await temporalesActivos();
+// Deux gammes : les résidences de la marque Kalypso d'abord, puis les logements d'autres propriétaires
+const grupos = [
+  { key: 'kalypso', titulo: t('temp.kalypso_title'), intro: t('temp.kalypso_intro'), items: items.filter((i) => i.data.gama === 'kalypso') },
+  { key: 'otros', titulo: t('temp.otros_title'), intro: t('temp.otros_intro'), items: items.filter((i) => i.data.gama !== 'kalypso') },
+].filter((g) => g.items.length > 0);
 const textos = {
   disponible: t('temp.disponible'),
   alquilado: t('temp.alquilado'),
@@ -30,21 +35,30 @@ const textos = {
         items.length === 0 ? (
           <p class="lead">{t('temp.vacia')}</p>
         ) : (
-          <div class="grid-biens" data-temporales data-textos={JSON.stringify(textos)}>
-            {items.map((it) => {
-              const d = it.data;
-              const foto = d.portada_foto || d.imagenes[0];
-              const semana = precioTxt(d.precio_semana, d.moneda, loc);
-              const mes = precioTxt(d.precio_mes, d.moneda, loc);
-              return (
+          grupos.map((g) => (
+            <section class={`grupo grupo--${g.key}`}>
+              <header class="grupo-cab">
+                <h2>{g.titulo}</h2>
+                <p>{g.intro}</p>
+              </header>
+              <div class="grid-biens" data-temporales data-textos={JSON.stringify(textos)}>
+                {g.items.map((it) => {
+                  const d = it.data;
+                  const foto = d.portada_foto || d.imagenes[0];
+                  const semana = precioTxt(d.precio_semana, d.moneda, loc);
+                  const mes = precioTxt(d.precio_mes, d.moneda, loc);
+                  return (
                 <a class="tcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>
                   <div class="media">
                     <img src={img(foto, { w: 640, h: 440 })} alt={d.titulo} width="640" height="440" loading="lazy" />
                     <span class="estado" data-estado hidden />
                   </div>
                   <div class="body">
+                    {d.gama === 'kalypso' && (
+                      <p class="gama">{t('temp.kalypso_badge')}{d.residencia ? ` · ${d.residencia}` : ''}</p>
+                    )}
                     <p class="loc">{[d.barrio, d.ciudad].filter(Boolean).join(', ')}</p>
-                    <h2 class="titulo">{d.titulo}</h2>
+                    <h3 class="titulo">{d.titulo}</h3>
                     <p class="specs">
                       {[
                         d.dormitorios != null && `${d.dormitorios} ${t('spec.dorm')}`,
@@ -62,9 +76,11 @@ const textos = {
                     <span class="ver">{t('temp.ver')} →</span>
                   </div>
                 </a>
-              );
-            })}
-          </div>
+                  );
+                })}
+              </div>
+            </section>
+          ))
         )
       }
       <p class="cond">{t('temp.condiciones')}</p>
@@ -118,5 +134,10 @@ const textos = {
   .precios { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.4rem; color: var(--muted); font-size: 0.9rem; }
   .precios strong { color: var(--brand); font-size: 1.05rem; }
   .ver { margin-top: auto; padding-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--violet); }
+  .grupo + .grupo { margin-top: 3.5rem; }
+  .grupo-cab { margin-bottom: 1.3rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
+  .grupo-cab h2 { margin: 0 0 0.2rem; }
+  .grupo-cab p { margin: 0; color: var(--muted); }
+  .gama { margin: 0; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
   .cond { margin-top: 2rem; color: var(--muted); font-size: 0.9rem; }
 </style>
