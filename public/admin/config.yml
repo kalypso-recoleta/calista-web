@@ -58,6 +58,24 @@ collections:
     identifier_field: titulo
     summary: '{{titulo}} — {{ciudad}}'
     sortable_fields: [fecha, precio, titulo]
+    # Filtres rapides dans la liste des biens (bouton « Filtrar » de l'admin),
+    # calqués sur les rubriques du site.
+    view_filters:
+      - { label: 'En venta (Comprar)', field: operacion, pattern: venta }
+      - { label: 'En alquiler (Alquilar)', field: operacion, pattern: alquiler }
+      - { label: 'Desarrollos Kalypso', field: desarrollo, pattern: true }
+      - { label: 'Terrenos', field: tipo, pattern: terreno }
+      - { label: 'Exclusivos', field: exclusivo, pattern: true }
+      - { label: 'Destacados en el inicio', field: destacado, pattern: true }
+      - { label: 'Disponibles', field: estado, pattern: disponible }
+      - { label: 'Vendidos', field: estado, pattern: vendido }
+      - { label: 'Alquilados', field: estado, pattern: alquilado }
+    # Regroupements (bouton « Agrupar ») : par opération, par type, par état…
+    view_groups:
+      - { label: 'Operación', field: operacion }
+      - { label: '¿Desarrollo Kalypso?', field: desarrollo }
+      - { label: 'Tipo', field: tipo }
+      - { label: 'Estado', field: estado }
     fields:
       - { label: Título, name: titulo, widget: string }
 
