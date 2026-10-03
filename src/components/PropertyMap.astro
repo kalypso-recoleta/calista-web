@@ -84,11 +84,6 @@ const googleMaps = `https://www.google.com/maps/search/?api=1&query=${punto.lat}
     white-space: nowrap;
   }
 
-  /* Fond de carte en gris soutenu : seul le cercle violet ressort.
-     Le filtre ne touche que les tuiles, pas le cercle ni les boutons. */
-  #mapa :global(.leaflet-tile-pane) {
-    filter: grayscale(1) brightness(0.9) contrast(1.08);
-  }
   /* Boutons de zoom aux couleurs du site : carrés, violets */
   #mapa :global(.leaflet-bar) {
     border: 0;
