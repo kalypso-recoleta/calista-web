@@ -21,6 +21,12 @@ export const site = {
   // Sert à optimiser les images à la volée.
   cloudinaryCloudName: 'dbsnme7pt',
 
+  // Avis Google (laisse vide pour masquer le bouton correspondant)
+  // googleResenas : lien de la fiche Google (Google Maps → Partager → Copier le lien)
+  // googleEscribir : lien « Demander des avis » de Google Business Profile
+  googleResenas: 'https://maps.app.goo.gl/PYZGG6qqeB1Kstwt5',
+  googleEscribir: 'https://g.page/r/CaA9unLyN1e6EBM/review',
+
   // Réseaux (laisse vide pour masquer)
   instagram: '',
   facebook: '',

@@ -291,6 +291,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.lead':
       'Nuestra mejor carta de presentación son las personas que ya confiaron en nosotros. Esto es lo que cuentan.',
     'res.vacia': 'Pronto vas a ver acá las experiencias de nuestros clientes.',
+    'res.google_ver': 'Ver todas nuestras reseñas en Google',
+    'res.google_escribir': 'Dejanos tu reseña en Google',
     'res.cta': 'Quiero trabajar con ustedes',
 
     // Détail propriété
@@ -593,6 +595,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.lead':
       "Notre meilleure carte de visite, ce sont les personnes qui nous ont déjà fait confiance. Voici ce qu'elles racontent.",
     'res.vacia': 'Vous verrez bientôt ici les expériences de nos clients.',
+    'res.google_ver': 'Voir tous nos avis sur Google',
+    'res.google_escribir': 'Laissez-nous un avis sur Google',
     'res.cta': 'Je veux travailler avec vous',
 
     // Détail
@@ -894,6 +898,8 @@ export const ui: Record<Lang, Record<string, string>> = {
     'res.lead':
       'Our best introduction is the people who have already trusted us. Here is what they share.',
     'res.vacia': "You'll soon see our clients' experiences here.",
+    'res.google_ver': 'See all our reviews on Google',
+    'res.google_escribir': 'Leave us a review on Google',
     'res.cta': 'I want to work with you',
 
     // Détail
