@@ -1,17 +1,18 @@
 ---
-titulo: ALQUILADO !! 1 Dormitorio 59 m2 en Barrio Jara
-operacion: alquiler
+titulo: 1 Dormitorio 59 m2 en Barrio Jara
+operacion: venta
 tipo: departamento
 estado: disponible
 destacado: true
+portada: false
 exclusivo: false
 desarrollo: false
-precio: 3100000
-moneda: PYG
+precio: 89000
+moneda: USD
 periodo: total
 ciudad: Asunción
 barrio: Jara
-ubicacion: https://maps.app.goo.gl/zRhTVWKtAoca5a8Y6
+ubicacion: '{"type":"Point","coordinates":[-57.5996908,-25.2720917]}'
 dormitorios: 1
 banos: 1
 cocheras: 0
