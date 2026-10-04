@@ -67,8 +67,8 @@ collections:
       - { label: 'Desarrollos Kalypso', field: desarrollo, pattern: true }
       - { label: 'Terrenos', field: tipo, pattern: terreno }
       - { label: 'Exclusivos', field: exclusivo, pattern: true }
-      - { label: 'Destacados en el inicio', field: destacado, pattern: true }
-      - { label: 'En el panel lateral', field: lateral, pattern: true }
+      - { label: 'En la página de inicio', field: destacado, pattern: true }
+      - { label: 'Destacados en su rubro', field: lateral, pattern: true }
       - { label: 'Disponibles', field: estado, pattern: disponible }
       - { label: 'Vendidos', field: estado, pattern: vendido }
       - { label: 'Alquilados', field: estado, pattern: alquilado }
@@ -117,8 +117,8 @@ collections:
         default: disponible
 
       # --- Etiquetas que deciden en qué página aparece ---
-      - { label: '¿Destacado? (aparece en la sección Destacados del inicio)', name: destacado, widget: boolean, default: false }
-      - { label: '⭐ ¿Mostrar en el panel lateral?', name: lateral, widget: boolean, default: false, required: false, hint: 'Aparece en la columna "Destacados" a la derecha de las páginas Comprar, Alquilar, Alquiler temporal, Desarrollos y Terrenos.' }
+      - { label: '🏠 ¿Mostrar en la PÁGINA DE INICIO?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la sección Destacados de la página de inicio. No aplica al alquiler temporal.' }
+      - { label: '⭐ ¿Destacar en su rubro? (banda Destacados)', name: lateral, widget: boolean, default: false, required: false, hint: 'Aparece en la banda "Destacados" debajo de los filtros de su página: Comprar, Alquilar, Desarrollos, Terrenos o Alquiler temporal.' }
       - { label: '⭐ ¿Usar como imagen de PORTADA del inicio?', name: portada, widget: boolean, default: false, required: false, hint: 'La propiedad con esta casilla marcada es la foto grande de la página de inicio. Marcá una sola.' }
       - { label: '¿Cartera Exclusiva?', name: exclusivo, widget: boolean, default: false }
       - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
