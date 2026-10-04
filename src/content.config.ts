@@ -14,6 +14,27 @@ const entOpc = () =>
 const strOpc = () => z.preprocess(vacio, z.string().optional());
 const boolOpc = () => z.preprocess(vacio, z.coerce.boolean().optional());
 
+/** Champs propres à l'alquiler temporal (partagés par « biens » et l'ancienne collection) */
+const fechaTemp = () =>
+  z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date());
+const tarifasSchema = z
+  .preprocess(
+    (v) => (v == null ? [] : v),
+    z.array(
+      z.object({
+        duracion: z.enum(['s1', 's2', 's3', 'm1', 'm2', 'm3', 'm6']),
+        precio: z.coerce.number().nonnegative(),
+        unidad: z.enum(['total', 'semana', 'mes']).default('total'),
+      })
+    )
+  )
+  .default([]);
+// Périodes occupées : « hasta » = jour de départ (libre ce jour-là)
+const reservasSchema = z
+  .preprocess((v) => (v == null ? [] : v), z.array(z.object({ desde: fechaTemp(), hasta: fechaTemp() })))
+  .default([]);
+const listaTxt = z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]);
+
 /**
  * Collection UNIQUE pour tous les biens.
  *
@@ -35,7 +56,7 @@ const biens = defineCollection({
     en_linea: z.boolean().default(true),
 
     // --- Classement (ce qui détermine sur quelles pages le bien apparaît) ---
-    operacion: z.enum(['venta', 'alquiler']),
+    operacion: z.enum(['venta', 'alquiler', 'temporal']), // temporal = alquiler temporal amoblado
     tipo: z.enum([
       'casa',
       'departamento',
@@ -60,7 +81,7 @@ const biens = defineCollection({
       .default('disponible'),
 
     // --- Prix ---
-    precio: z.number().nonnegative(),
+    precio: z.preprocess((v) => (v === '' || v == null ? 0 : v), z.coerce.number().nonnegative()), // inutile en temporal (voir tarifas)
     moneda: z.enum(['USD', 'PYG']).default('USD'),
     // Pour les locations : période. Ignoré pour une vente.
     periodo: z.enum(['mes', 'dia', 'total']).default('total'),
@@ -84,6 +105,14 @@ const biens = defineCollection({
     financiacion: boolOpc(),
     // Si renseigné, la vignette envoie vers ce site externe (ex. kalypso.com.py)
     link_externo: strOpc(),
+
+    // --- Alquiler temporal (operacion = temporal) ---
+    gama: z.enum(['kalypso', 'otros']).default('otros'),
+    residencia: strOpc(),
+    huespedes: entOpc(),
+    incluye: listaTxt,
+    tarifas: tarifasSchema,
+    reservas: reservasSchema,
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
     // Photo de couverture explicite ; sinon la 1ère de la liste

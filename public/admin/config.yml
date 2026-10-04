@@ -62,7 +62,8 @@ collections:
     # calqués sur les rubriques du site.
     view_filters:
       - { label: 'En venta (Comprar)', field: operacion, pattern: venta }
-      - { label: 'En alquiler (Alquilar)', field: operacion, pattern: alquiler }
+      - { label: 'En alquiler (Alquilar)', field: operacion, pattern: '^alquiler$' }
+      - { label: 'Alquiler temporal', field: operacion, pattern: temporal }
       - { label: 'Desarrollos Kalypso', field: desarrollo, pattern: true }
       - { label: 'Terrenos', field: tipo, pattern: terreno }
       - { label: 'Exclusivos', field: exclusivo, pattern: true }
@@ -88,6 +89,7 @@ collections:
         options:
           - { label: Venta, value: venta }
           - { label: Alquiler, value: alquiler }
+          - { label: 'Alquiler temporal (amoblado, 7 días a 6 meses)', value: temporal }
         default: venta
 
       - label: Tipo de propiedad
@@ -122,7 +124,7 @@ collections:
       - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
 
       # --- Precio ---
-      - { label: Precio, name: precio, widget: number, value_type: int, min: 0 }
+      - { label: Precio, name: precio, widget: number, value_type: int, min: 0, required: false, hint: 'Para alquiler temporal dejalo vacío y completá "Tarifas según la duración" más abajo.' }
       - label: Moneda
         name: moneda
         widget: select
@@ -237,61 +239,20 @@ collections:
 
       # --- Textos ---
       - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases. Aparece en las tarjetas y al compartir por WhatsApp.' }
-      - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
-      - { label: Descripción completa, name: body, widget: markdown, required: false }
 
-  # ─── Alquiler temporal (location meublée 7 jours – 6 mois) ───
-  # Logements toujours en ligne ; seules les réservations changent.
-  # ⚠️ Dépôt public : saisir uniquement des DATES, jamais de nom de locataire.
-  - name: temporales
-    label: Alquiler temporal
-    label_singular: Departamento amoblado
-    description: 'Departamentos amoblados (7 días a 6 meses). Siempre visibles en el sitio: el estado "Disponible / Alquilado" se calcula solo con las reservas que cargues abajo. Cargá solo fechas, nunca nombres.'
-    folder: src/content/temporales
-    create: true
-    delete: true
-    slug: '{{titulo}}'
-    extension: md
-    format: frontmatter
-    identifier_field: titulo
-    summary: '{{titulo}} — {{barrio}} {{ciudad}}'
-    sortable_fields: [orden, titulo]
-    view_filters:
-      - { label: 'Residencias Kalypso', field: gama, pattern: kalypso }
-      - { label: 'Otros departamentos', field: gama, pattern: otros }
-      - { label: 'Destacados', field: destacado, pattern: true }
-    view_groups:
-      - { label: 'Gama', field: gama }
-    fields:
-      - { label: Título, name: titulo, widget: string }
-      - label: Gama
+      # --- Solo para ALQUILER TEMPORAL (dejar vacío para venta / alquiler) ---
+      - label: 'Alquiler temporal: gama'
         name: gama
         widget: select
+        required: false
+        hint: 'Solo si la Operación es "Alquiler temporal".'
         options:
           - { label: 'Residencias Kalypso', value: kalypso }
           - { label: 'Otros departamentos (otros propietarios)', value: otros }
         default: otros
-      - { label: 'Nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Solo para Residencias Kalypso. Ej: Yrupé' }
-      - { label: '¿Mostrar en el sitio?', name: activo, widget: boolean, default: true, hint: 'Desmarcá para ocultarlo sin borrarlo.' }
-      - { label: '⭐ ¿Destacar en el panel lateral?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la columna "Destacados" a la derecha de las páginas de propiedades.' }
-      - { label: 'Orden (1 = primero)', name: orden, widget: number, value_type: int, min: 1, required: false }
-      - { label: Ciudad, name: ciudad, widget: string, default: 'Asunción' }
-      - { label: Barrio, name: barrio, widget: string, required: false }
-      - label: 'Ubicación (hacé clic en el mapa)'
-        name: ubicacion
-        widget: map
-        required: false
-        hint: 'Un punto aproximado alcanza.'
-      - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }
-      - { label: Baños, name: banos, widget: number, value_type: int, min: 0, required: false }
-      - { label: 'Huéspedes (capacidad)', name: huespedes, widget: number, value_type: int, min: 1, required: false }
-      - { label: 'Superficie (m²)', name: superficie, widget: number, value_type: int, min: 0, required: false }
-      - label: Moneda
-        name: moneda
-        widget: select
-        options: [USD, PYG]
-        default: USD
-      - label: 'Tarifas según la duración'
+      - { label: 'Alquiler temporal: nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Ej: Yrupé' }
+      - { label: 'Alquiler temporal: huéspedes (capacidad)', name: huespedes, widget: number, value_type: int, min: 1, required: false }
+      - label: 'Alquiler temporal: tarifas según la duración'
         name: tarifas
         widget: list
         required: false
@@ -318,21 +279,8 @@ collections:
               - { label: 'Total de la estadía', value: total }
               - { label: 'Por semana', value: semana }
               - { label: 'Por mes', value: mes }
-      - { label: 'Incluye (wifi, luz, limpieza…)', name: incluye, widget: list, required: false }
-      - label: '⭐ Foto de portada (opcional)'
-        name: portada_foto
-        widget: image
-        required: false
-      - label: Imágenes
-        name: imagenes
-        widget: image
-        multiple: true
-        required: false
-        media_library: { name: cloudinary }
-        hint: 'Subí las fotos desde la pestaña Cloudinary.'
-      - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases (aparece al compartir por WhatsApp).' }
-      - { label: Descripción completa, name: body, widget: markdown, required: false }
-      - label: 'Reservas (días ocupados)'
+      - { label: 'Alquiler temporal: incluye (ej. wifi)', name: incluye, widget: list, required: false }
+      - label: 'Alquiler temporal: reservas (días ocupados)'
         name: reservas
         widget: list
         required: false
@@ -341,6 +289,9 @@ collections:
         fields:
           - { label: 'Desde (llegada)', name: desde, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
           - { label: 'Hasta (salida)', name: hasta, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
+
+      - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: Descripción completa, name: body, widget: markdown, required: false }
 
   # ─── Avis clients ───
   - name: resenas

@@ -14,7 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 
-const todos = await getCollection('biens', (b) => b.data.en_linea !== false);
+const todos = await getCollection('biens', (b) => b.data.en_linea !== false && b.data.operacion !== 'temporal');
 const activos = todos.filter(
   (b) => b.data.estado === 'disponible' || b.data.estado === 'reservado'
 );

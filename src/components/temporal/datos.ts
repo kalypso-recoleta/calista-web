@@ -2,16 +2,60 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { slugify } from '../../lib/slug';
 
-export type Temporal = CollectionEntry<'temporales'>;
+/**
+ * Un logement en alquiler temporal, quelle que soit sa source :
+ *  - un bien de « Propiedades » avec Operación = Alquiler temporal (méthode actuelle)
+ *  - l'ancienne collection « temporales » (compatibilité)
+ * `entry` sert à afficher la description longue (render).
+ */
+export type Temporal = {
+  id: string;
+  entry: CollectionEntry<'biens'> | CollectionEntry<'temporales'>;
+  orden: number;
+  data: {
+    titulo: string;
+    gama: 'kalypso' | 'otros';
+    residencia?: string;
+    destacado: boolean;
+    ciudad: string;
+    barrio?: string;
+    ubicacion?: string;
+    dormitorios?: number;
+    banos?: number;
+    huespedes?: number;
+    superficie?: number;
+    moneda: 'USD' | 'PYG';
+    tarifas: { duracion: string; precio: number; unidad: 'total' | 'semana' | 'mes' }[];
+    precio_semana?: number;
+    precio_mes?: number;
+    incluye: string[];
+    portada_foto?: string;
+    imagenes: string[];
+    descripcion: string;
+    reservas: { desde: Date; hasta: Date }[];
+  };
+};
 
 /** Logements actifs, triés par « orden » puis par titre */
 export async function temporalesActivos(): Promise<Temporal[]> {
-  return (await getCollection('temporales'))
+  const desdeBienes: Temporal[] = (
+    await getCollection('biens', (b) => b.data.en_linea !== false && b.data.operacion === 'temporal')
+  ).map((b) => ({
+    id: b.id,
+    entry: b,
+    orden: 999,
+    data: {
+      ...b.data,
+      destacado: !!b.data.lateral,
+      superficie: b.data.superficie_construida ?? b.data.superficie_terreno,
+    },
+  }));
+  const antiguos: Temporal[] = (await getCollection('temporales'))
     .filter((t) => t.data.activo)
-    .sort(
-      (a, b) =>
-        (a.data.orden ?? 999) - (b.data.orden ?? 999) || a.data.titulo.localeCompare(b.data.titulo)
-    );
+    .map((t) => ({ id: t.id, entry: t, orden: t.data.orden ?? 999, data: t.data }));
+  return [...desdeBienes, ...antiguos].sort(
+    (a, b) => a.orden - b.orden || a.data.titulo.localeCompare(b.data.titulo)
+  );
 }
 
 export const slugTemporal = (t: Temporal) => slugify(t.id);

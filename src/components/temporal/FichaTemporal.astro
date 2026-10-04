@@ -18,7 +18,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
-const { Content } = await render(item);
+const { Content } = await render(item.entry);
 
 const fotos = d.portada_foto ? [d.portada_foto, ...d.imagenes.filter((f) => f !== d.portada_foto)] : d.imagenes;
 const ogImage = fotos[0] ? img(fotos[0], { w: 1200, h: 630 }) : undefined;
