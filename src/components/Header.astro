@@ -141,8 +141,9 @@ const wa = whatsappLink(
   .brand:hover {
     text-decoration: none;
   }
+  /* Logo : plus grand sur grands écrans et téléphone, 40 px quand le menu est serré */
   .logo {
-    height: 40px;
+    height: 50px;
     width: auto;
     display: block;
   }
@@ -243,7 +244,10 @@ const wa = whatsappLink(
 
   .header-cta { white-space: nowrap; }
   /* Menu compact (9 rubriques) jusqu'aux grands écrans */
-  @media (max-width: 1520px) {
+  @media (max-width: 1580px) {
+    .logo {
+      height: 40px;
+    }
     .nav {
       gap: 0.1rem;
     }
@@ -254,6 +258,9 @@ const wa = whatsappLink(
     }
   }
   @media (max-width: 1299px) {
+    .logo {
+      height: 44px;
+    }
     .nav,
     .header-cta {
       display: none;
