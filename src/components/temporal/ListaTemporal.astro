@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs';
 import Layout from '../../layouts/Layout.astro';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE, hayPanel } from './datos';
+import { temporalesActivos, slugTemporal, reservasJson, precioTxt, LOCALE, hayPanel, tarifasDe } from './datos';
 import PanelDestacados from './PanelDestacados.astro';
 
 const lang = getLangFromUrl(Astro.url);
@@ -63,8 +63,7 @@ const textos = {
                 {g.items.map((it) => {
                   const d = it.data;
                   const foto = d.portada_foto || d.imagenes[0];
-                  const semana = precioTxt(d.precio_semana, d.moneda, loc);
-                  const mes = precioTxt(d.precio_mes, d.moneda, loc);
+                  const r = tarifasDe(it)[0]; // 1re ligne de la grille = « Desde… »
                   return (
                 <a class="tcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>
                   <div class="media">
@@ -88,8 +87,11 @@ const textos = {
                         .join(' · ')}
                     </p>
                     <div class="precios">
-                      {semana && <span><strong>{semana}</strong> {t('temp.semana')}</span>}
-                      {mes && <span><strong>{mes}</strong> {t('temp.mes')}</span>}
+                      {r ? (
+                        <span>{t('tar.desde')} <strong>{precioTxt(r.precio, d.moneda, loc)}</strong> {t(`tar.u_${r.unidad}`)} · {t(`tar.${r.duracion}`)}</span>
+                      ) : (
+                        <span>{t('tar.consultar')}</span>
+                      )}
                     </div>
                     <span class="ver">{t('temp.ver')} →</span>
                   </div>

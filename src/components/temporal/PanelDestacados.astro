@@ -6,7 +6,7 @@
  */
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { slugTemporal, reservasJson, precioTxt, LOCALE, bienesLaterales, temporalesLaterales, type Rubrica } from './datos';
+import { slugTemporal, reservasJson, precioTxt, LOCALE, bienesLaterales, temporalesLaterales, tarifasDe, type Rubrica } from './datos';
 import { slugify } from '../../lib/slug';
 import { formatPrecio, operacionLabel, estadoLabel } from '../../lib/format';
 
@@ -46,8 +46,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
       })}
       {items.map((it) => {
         const d = it.data;
-        const semana = precioTxt(d.precio_semana, d.moneda, loc);
-        const mes = precioTxt(d.precio_mes, d.moneda, loc);
+        const r = tarifasDe(it)[0];
         return (
           <a class="pcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>
             <div class="pmedia">
@@ -60,7 +59,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
               )}
               <p class="ptitulo">{d.titulo}</p>
               <p class="pprecio">
-                {semana ? <><strong>{semana}</strong> {t('temp.semana')}</> : mes && <><strong>{mes}</strong> {t('temp.mes')}</>}
+                {r ? <>{t('tar.desde')} <strong>{precioTxt(r.precio, d.moneda, loc)}</strong> {t(`tar.u_${r.unidad}`)}</> : t('tar.consultar')}
               </p>
             </div>
           </a>

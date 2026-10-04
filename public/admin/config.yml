@@ -291,8 +291,33 @@ collections:
         widget: select
         options: [USD, PYG]
         default: USD
-      - { label: 'Precio por semana', name: precio_semana, widget: number, value_type: int, min: 0, required: false }
-      - { label: 'Precio por mes', name: precio_mes, widget: number, value_type: int, min: 0, required: false }
+      - label: 'Tarifas según la duración'
+        name: tarifas
+        widget: list
+        required: false
+        summary: '{{fields.duracion}} → {{fields.precio}} ({{fields.unidad}})'
+        hint: 'Una línea por duración, de la más corta a la más larga. La primera línea aparece como "Desde…" en la tarjeta.'
+        fields:
+          - label: Duración
+            name: duracion
+            widget: select
+            options:
+              - { label: '1 semana', value: s1 }
+              - { label: '2 semanas', value: s2 }
+              - { label: '3 semanas', value: s3 }
+              - { label: '1 mes', value: m1 }
+              - { label: '2 meses', value: m2 }
+              - { label: '3 meses o más', value: m3 }
+              - { label: '6 meses', value: m6 }
+          - { label: Precio, name: precio, widget: number, value_type: int, min: 0 }
+          - label: 'El precio es…'
+            name: unidad
+            widget: select
+            default: total
+            options:
+              - { label: 'Total de la estadía', value: total }
+              - { label: 'Por semana', value: semana }
+              - { label: 'Por mes', value: mes }
       - { label: 'Incluye (wifi, luz, limpieza…)', name: incluye, widget: list, required: false }
       - label: '⭐ Foto de portada (opcional)'
         name: portada_foto

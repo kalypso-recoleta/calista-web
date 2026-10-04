@@ -8,8 +8,13 @@ banos: 1
 huespedes: 2
 superficie: 45
 moneda: USD
-precio_semana: 250
-precio_mes: 750
+tarifas:
+  - duracion: s1
+    precio: 250
+    unidad: total
+  - duracion: m1
+    precio: 750
+    unidad: mes
 incluye:
   - Wifi
   - Luz y agua

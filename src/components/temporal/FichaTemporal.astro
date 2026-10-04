@@ -7,7 +7,7 @@ import WhatsAppButton from '../WhatsAppButton.astro';
 import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
-import { type Temporal, slugTemporal, reservasJson, precioTxt, LOCALE } from './datos';
+import { type Temporal, slugTemporal, reservasJson, precioTxt, LOCALE, tarifasDe } from './datos';
 
 interface Props {
   item: Temporal;
@@ -28,8 +28,7 @@ const url = new URL(`/alquiler-temporal/${slugTemporal(item)}`, Astro.site).toSt
 const waGeneral = whatsappLink(
   `Hola, me interesa el alquiler temporal "${d.titulo}".\n${url}\n¿Qué fechas tienen disponibles?`
 );
-const semana = precioTxt(d.precio_semana, d.moneda, loc);
-const mes = precioTxt(d.precio_mes, d.moneda, loc);
+const tarifas = tarifasDe(item);
 const specs = [
   d.dormitorios != null && { k: t('temp.dormitorios'), v: d.dormitorios },
   d.banos != null && { k: t('temp.banos'), v: d.banos },
@@ -133,8 +132,25 @@ const textos = {
 
         <aside class="side">
           <div class="cta-card">
-            {semana && <p class="precio">{semana} <small>{t('temp.semana')}</small></p>}
-            {mes && <p class="precio">{mes} <small>{t('temp.mes')}</small></p>}
+            {
+              tarifas.length > 0 ? (
+                <div class="tarifas">
+                  <p class="tar-tit">{t('tar.tarifas')}</p>
+                  <table>
+                    <tbody>
+                      {tarifas.map((r) => (
+                        <tr>
+                          <th scope="row">{t(`tar.${r.duracion}`)}</th>
+                          <td><strong>{precioTxt(r.precio, d.moneda, loc)}</strong> <small>{t(`tar.u_${r.unidad}`)}</small></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <p class="precio">{t('tar.consultar')}</p>
+              )
+            }
             <a href="#disponibilidad" class="btn btn--primary full">{t('temp.ver')}</a>
             <WhatsAppButton href={waGeneral} full />
             <p class="nota">{t('temp.condiciones')}</p>
@@ -365,6 +381,13 @@ const textos = {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
     padding: 1.5rem; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 0.7rem;
   }
+  .tarifas { margin-bottom: 0.3rem; }
+  .tar-tit { margin: 0 0 0.5rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--violet); }
+  .tarifas table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .tarifas th { text-align: left; font-weight: 500; color: var(--muted); padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+  .tarifas td { text-align: right; padding: 0.45rem 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  .tarifas strong { color: var(--brand); font-size: 1.05rem; }
+  .tarifas small { color: var(--muted); }
   .precio { margin: 0; font-size: 1.6rem; font-weight: 700; color: var(--brand); }
   .precio small { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
   .full { width: 100%; justify-content: center; }

@@ -66,3 +66,15 @@ export async function temporalesLaterales(r: Rubrica) {
 export async function hayPanel(r: Rubrica): Promise<boolean> {
   return (await temporalesLaterales(r)).length > 0 || (await bienesLaterales(r)).length > 0;
 }
+
+export type Tarifa = { duracion: string; precio: number; unidad: 'total' | 'semana' | 'mes' };
+
+/** Grille de prix ; à défaut, reconstruite depuis l'ancien format semaine / mois */
+export function tarifasDe(t: Temporal): Tarifa[] {
+  const d = t.data;
+  if (d.tarifas.length) return d.tarifas;
+  const out: Tarifa[] = [];
+  if (d.precio_semana != null) out.push({ duracion: 's1', precio: d.precio_semana, unidad: 'semana' });
+  if (d.precio_mes != null) out.push({ duracion: 'm1', precio: d.precio_mes, unidad: 'mes' });
+  return out;
+}

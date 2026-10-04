@@ -154,8 +154,21 @@ const temporales = defineCollection({
     huespedes: entOpc(),
     superficie: numOpc(),
     moneda: z.enum(['USD', 'PYG']).default('USD'),
-    precio_semana: numOpc(),
+    precio_semana: numOpc(), // ancien format (gardé pour compatibilité)
     precio_mes: numOpc(),
+    // Grille de prix par durée de séjour
+    tarifas: z
+      .preprocess(
+        (v) => (v == null ? [] : v),
+        z.array(
+          z.object({
+            duracion: z.enum(['s1', 's2', 's3', 'm1', 'm2', 'm3', 'm6']),
+            precio: z.coerce.number().nonnegative(),
+            unidad: z.enum(['total', 'semana', 'mes']).default('total'),
+          })
+        )
+      )
+      .default([]),
     incluye: z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]),
     portada_foto: strOpc(),
     imagenes: z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]),
