@@ -97,6 +97,24 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     </div>
   </section>
 
+  <!-- GESTION LOCATIVE mise en avant -->
+  <section class="section adm-section">
+    <div class="container">
+      <a href={L('/administracion')} class="adm-band">
+        <div class="adm-texto">
+          <p class="eyebrow">{t('adm.eyebrow')}</p>
+          <h2>{t('adm.title')}</h2>
+          <p class="adm-lead">{t('adm.lead')}</p>
+          <span class="adm-cta">{t('home.adm_cta')} →</span>
+        </div>
+        <div class="adm-cifra">
+          <span class="adm-val">{t('adm.t1_val')}</span>
+          <span class="adm-d">{t('adm.t1_d')}</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <!-- DESTACADOS -->
   {
     destacados.length > 0 && (
@@ -261,6 +279,68 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
   }
   .cats-section {
     padding-block: 0;
+  }
+  .adm-section {
+    padding-bottom: 0;
+  }
+  .adm-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2.5rem;
+    align-items: center;
+    padding: clamp(1.6rem, 3.5vw, 2.6rem) clamp(1.6rem, 4vw, 3rem);
+    background: var(--card-tint);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--violet);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: var(--ink);
+    transition: box-shadow 0.18s ease;
+  }
+  .adm-band:hover {
+    text-decoration: none;
+    box-shadow: var(--shadow-lg);
+  }
+  .adm-band h2 {
+    margin: 0 0 0.6rem;
+  }
+  .adm-lead {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    max-width: 60ch;
+  }
+  .adm-cta {
+    font-weight: 700;
+    color: var(--violet);
+  }
+  .adm-cifra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    padding: 1.4rem 1.6rem;
+    background: var(--brand);
+    color: #fff;
+    border-radius: var(--radius);
+  }
+  .adm-val {
+    font-family: var(--display);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .adm-d {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: #d5d9de;
+    max-width: 18ch;
+  }
+  @media (max-width: 760px) {
+    .adm-band {
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+    }
   }
   .cats {
     display: grid;
