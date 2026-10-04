@@ -286,12 +286,12 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.cta_wa_msg': 'Hola Calista, me gustaría conocerlos mejor.',
 
     // Propietarios
-    'prop.hero_eyebrow': 'Para propietarios',
-    'prop.hero_title': 'Tenés una propiedad. Nosotros nos ocupamos del resto.',
+    'prop.hero_eyebrow': 'Vender o tasar',
+    'prop.hero_title': 'Vendé tu propiedad al precio justo.',
     'prop.hero_lead':
-      'Sea para venderla, alquilarla o administrarla, te acompañamos con la misma honestidad de siempre: precios realistas, información clara y tu decisión en el centro.',
+      'Te ayudamos a conocer su valor real y a venderla con acompañamiento de principio a fin, con la misma honestidad de siempre: precios realistas, información clara y tu decisión en el centro.',
     'prop.cta_vender': 'Quiero vender',
-    'prop.cta_admin': 'Quiero alquilar / administrar',
+    'prop.cta_admin': 'Pedir una tasación',
     'prop.vender_eyebrow': 'Vender',
     'prop.vender_title': 'Vendé tu propiedad con acompañamiento real.',
     'prop.vender_lead':
@@ -326,7 +326,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'prop.admin_i5': 'Un solo interlocutor: nosotros nos ocupamos',
     'prop.cierre_title': '¿Hablamos de tu propiedad?',
     'prop.cierre_text':
-      'Contanos qué tenés y qué querés hacer. Te respondemos personalmente.',
+      'Contanos qué propiedad tenés y te respondemos personalmente.',
     'prop.cierre_wa': 'Escribir por WhatsApp',
     'prop.cierre_form': 'Ir al formulario',
     'nav.administracion': "Administración",
@@ -726,12 +726,12 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.cta_wa_msg': 'Bonjour Calista, je souhaiterais mieux vous connaître.',
 
     // Propietarios
-    'prop.hero_eyebrow': 'Pour les propriétaires',
-    'prop.hero_title': "Vous avez un bien. Nous nous occupons du reste.",
+    'prop.hero_eyebrow': 'Vendre ou estimer',
+    'prop.hero_title': "Vendez votre bien au juste prix.",
     'prop.hero_lead':
-      "Pour le vendre, le louer ou le gérer, nous vous accompagnons avec la même honnêteté : des prix réalistes, une information claire et votre décision au centre.",
+      "Nous vous aidons à connaître sa valeur réelle et à le vendre, accompagné du début à la fin, avec la même honnêteté : des prix réalistes, une information claire et votre décision au centre.",
     'prop.cta_vender': 'Je veux vendre',
-    'prop.cta_admin': 'Je veux louer / faire gérer',
+    'prop.cta_admin': 'Demander une estimation',
     'prop.vender_eyebrow': 'Vendre',
     'prop.vender_title': 'Vendez votre bien avec un vrai accompagnement.',
     'prop.vender_lead':
@@ -766,7 +766,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'prop.admin_i5': 'Un seul interlocuteur : nous nous occupons de tout',
     'prop.cierre_title': 'On parle de votre bien ?',
     'prop.cierre_text':
-      "Dites-nous ce que vous avez et ce que vous souhaitez faire. Nous vous répondons personnellement.",
+      "Dites-nous quel bien vous avez : nous vous répondons personnellement.",
     'prop.cierre_wa': 'Écrire sur WhatsApp',
     'prop.cierre_form': 'Aller au formulaire',
     'nav.administracion': "Gestion locative",
@@ -1165,12 +1165,12 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.cta_wa_msg': "Hello Calista, I'd like to get to know you better.",
 
     // Propietarios
-    'prop.hero_eyebrow': 'For owners',
-    'prop.hero_title': 'You have a property. We take care of the rest.',
+    'prop.hero_eyebrow': 'Sell or value',
+    'prop.hero_title': 'Sell your property at the right price.',
     'prop.hero_lead':
-      'Whether to sell, rent or manage it, we support you with the same honesty as always: realistic prices, clear information and your decision at the center.',
+      'We help you find out its real value and sell it with support from start to finish, with the same honesty as always: realistic prices, clear information and your decision at the center.',
     'prop.cta_vender': 'I want to sell',
-    'prop.cta_admin': 'I want to rent out / have it managed',
+    'prop.cta_admin': 'Request a valuation',
     'prop.vender_eyebrow': 'Sell',
     'prop.vender_title': 'Sell your property with real support.',
     'prop.vender_lead':
@@ -1205,7 +1205,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'prop.admin_i5': 'One single contact: we take care of it',
     'prop.cierre_title': 'Shall we talk about your property?',
     'prop.cierre_text':
-      'Tell us what you have and what you want to do. We answer personally.',
+      'Tell us what property you have and we will answer personally.',
     'prop.cierre_wa': 'Message on WhatsApp',
     'prop.cierre_form': 'Go to the form',
     'nav.administracion': "Management",

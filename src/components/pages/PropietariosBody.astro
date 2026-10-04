@@ -9,7 +9,6 @@ const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 
 const waVender = whatsappLink('Hola Calista, quiero vender mi propiedad. ¿Cómo es el proceso?');
-const waAdmin = whatsappLink('Hola Calista, quiero que administren el alquiler de mi propiedad.');
 
 const pasosVender = [
   { n: '01', t: t('prop.paso1_t'), d: t('prop.paso1_d') },
@@ -18,13 +17,6 @@ const pasosVender = [
   { n: '04', t: t('prop.paso4_t'), d: t('prop.paso4_d') },
 ];
 
-const incluyeAdmin = [
-  t('prop.admin_i1'),
-  t('prop.admin_i2'),
-  t('prop.admin_i3'),
-  t('prop.admin_i4'),
-  t('prop.admin_i5'),
-];
 ---
 
 <Layout title={t('prop.hero_title')} description={t('prop.hero_lead')}>
@@ -34,27 +26,9 @@ const incluyeAdmin = [
       <h1>{t('prop.hero_title')}</h1>
       <p class="lead">{t('prop.hero_lead')}</p>
       <div class="hero-cta">
-        <a href={L('/administracion')} class="btn btn--primary">{t('prop.cta_admin')}</a>
-        <a href="#vender" class="btn btn--ghost">{t('prop.cta_vender')}</a>
+        <a href="#vender" class="btn btn--primary">{t('prop.cta_vender')}</a>
+        <a href={L('/tasaciones')} class="btn btn--ghost">{t('prop.cta_admin')}</a>
       </div>
-    </div>
-  </section>
-
-  <section id="administracion" class="section bloque alt">
-    <div class="container admin-grid">
-      <div>
-        <p class="eyebrow">{t('prop.admin_eyebrow')}</p>
-        <h2>{t('prop.admin_title')}</h2>
-        <p class="lead">{t('prop.admin_lead')}</p>
-        <div class="cta-linea">
-          <WhatsAppButton href={waAdmin} label={t('prop.admin_wa')} />
-          <a href={L('/administracion')} class="btn btn--ghost">{t('prop.admin_mas')} →</a>
-        </div>
-      </div>
-
-      <ul class="incluye">
-        {incluyeAdmin.map((i) => <li>{i}</li>)}
-      </ul>
     </div>
   </section>
 

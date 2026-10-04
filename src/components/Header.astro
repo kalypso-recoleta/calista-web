@@ -19,7 +19,7 @@ const nav = [
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: t('nav.desarrollos') },
   { href: '/terrenos', label: t('nav.terrenos') },
-  { href: '/administracion', label: t('nav.administracion'), destacado: true },
+  { href: '/administracion', label: t('nav.administracion') },
   { href: '/propietarios', label: t('nav.propietarios'), tambien: ['/tasaciones'] },
   { href: '/resenas', label: t('nav.resenas') },
   { href: '/historia', label: t('nav.historia') },
@@ -52,7 +52,6 @@ const wa = whatsappLink(
                   basePath === item.href ||
                   basePath.startsWith(item.href + '/') ||
                   (item.tambien ?? []).includes(basePath),
-                destacado: item.destacado,
               },
             ]}
           >
@@ -167,11 +166,6 @@ const wa = whatsappLink(
     text-decoration: none;
     background: var(--violet-soft);
     color: var(--violet);
-  }
-  /* Gestion locative mise en avant : liseré violet */
-  .nav-link.destacado {
-    color: var(--violet);
-    box-shadow: inset 0 0 0 1.5px var(--violet);
   }
   /* Onglet actif : fond violet, texte blanc (comme le menu du logiciel) */
   .nav-link.active {
