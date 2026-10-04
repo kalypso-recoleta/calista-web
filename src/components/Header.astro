@@ -23,6 +23,7 @@ const nav = [
   { href: '/propietarios', label: t('nav.propietarios'), tambien: ['/tasaciones'] },
   { href: '/resenas', label: t('nav.resenas') },
   { href: '/historia', label: t('nav.historia') },
+  { href: '/preguntas-frecuentes', label: 'FAQ' },
 ];
 
 // Chemin courant sans préfixe de langue, pour l'état actif et le sélecteur
@@ -244,7 +245,7 @@ const wa = whatsappLink(
 
   .header-cta { white-space: nowrap; }
   /* Menu compact (9 rubriques) jusqu'aux grands écrans */
-  @media (max-width: 1580px) {
+  @media (max-width: 1660px) {
     .logo {
       height: 40px;
     }
@@ -257,7 +258,7 @@ const wa = whatsappLink(
       letter-spacing: 0.05em;
     }
   }
-  @media (max-width: 1299px) {
+  @media (max-width: 1339px) {
     .logo {
       height: 44px;
     }
