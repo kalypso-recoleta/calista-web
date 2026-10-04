@@ -4,6 +4,7 @@ operacion: alquiler
 tipo: departamento
 estado: disponible
 destacado: true
+lateral: true
 portada: false
 exclusivo: true
 desarrollo: false
