@@ -33,8 +33,6 @@ const {
       <slot />
     </header>
 
-    <div class:list={['cuerpo', { 'con-panel': Astro.slots.has('aside') }]}>
-    <div class="principal">
     {
       biens.length === 0 ? (
         <p class="lead">{t('lista.vacia')}</p>
@@ -43,12 +41,11 @@ const {
           biens={biens}
           mostrarDormitorios={mostrarDormitorios}
           mostrarBanos={mostrarBanos}
-        />
+        >
+          <slot name="destacados" slot="destacados" />
+        </BienesFiltrados>
       )
     }
-    </div>
-    <slot name="aside" />
-    </div>
   </div>
 </section>
 
@@ -59,17 +56,5 @@ const {
   }
   .cab h1 {
     margin-bottom: 0.4rem;
-  }
-  /* Avec panneau latéral « Destacados » : liste à gauche, panneau à droite */
-  .con-panel {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 290px;
-    gap: 2rem;
-    align-items: start;
-  }
-  @media (max-width: 1000px) {
-    .con-panel {
-      grid-template-columns: 1fr;
-    }
   }
 </style>

@@ -102,6 +102,8 @@ const tipoLabels: Record<string, string> = {
 
 <script type="application/json" data-barrios set:html={JSON.stringify(barriosPorCiudad)}></script>
 
+<slot name="destacados" />
+
 <p class="contador"><span data-contador>{biens.length}</span> propiedades</p>
 
 <div class="grid-biens" data-grid>

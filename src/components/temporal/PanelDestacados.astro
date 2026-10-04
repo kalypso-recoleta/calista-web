@@ -1,8 +1,8 @@
 ---
 /**
- * Panneau latéral « Destacados » : logements en location temporaire cochés
- * « Destacar » dans l'admin. Affiché à droite des pages Alquilar et
- * Alquiler temporal (sous la liste sur téléphone). Rien si aucun n'est coché.
+ * Bande « Destacados » sous les filtres des pages de listes : annonces cochées
+ * « panel lateral » dans l'admin, de la même rubrique. Une seule ligne : on en
+ * montre autant que la largeur le permet, centrées. Rien si aucune n'est cochée.
  */
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
@@ -18,10 +18,8 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
-// 2 annonces maximum : le panneau tient en entier à l'écran sur un portable
-const MAX = 2;
-const items = (await temporalesLaterales(rubrica)).slice(0, MAX);
-const bienes = (await bienesLaterales(rubrica)).slice(0, MAX);
+const items = await temporalesLaterales(rubrica);
+const bienes = await bienesLaterales(rubrica);
 const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'), libre: t('temp.libre_desde'), locale: loc };
 ---
 
@@ -29,6 +27,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
   (items.length > 0 || bienes.length > 0) && (
     <aside class="panel" data-panel-destacados data-textos={JSON.stringify(textos)}>
       <p class="panel-tit">★ {t('temp.destacados')}</p>
+      <div class="panel-fila">
       {bienes.map((b) => {
         const d = b.data;
         return (
@@ -65,6 +64,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
           </a>
         );
       })}
+      </div>
     </aside>
   )
 }
@@ -87,10 +87,16 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
 <style>
   [hidden] { display: none !important; }
   .panel {
-    position: sticky; top: 96px;
-    display: flex; flex-direction: column; gap: 0.9rem;
-    padding: 1.2rem; background: #fff; border: 1px solid var(--line);
+    margin: 0 0 1.6rem; padding: 1.1rem 1.3rem 1.3rem; background: #fff; border: 1px solid var(--line);
     border-top: 4px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  /* Une seule ligne de vignettes, centrée : les vignettes qui ne tiennent pas
+     passent sur des lignes de hauteur 0, masquées. */
+  .panel-fila {
+    display: grid; margin-top: 0.9rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    grid-template-rows: auto; grid-auto-rows: 0;
+    justify-content: center; column-gap: 1.1rem; row-gap: 0; overflow: hidden;
   }
   .panel-tit { margin: 0; font-weight: 700; color: var(--violet); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem; }
   .panel-sub { margin: -0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
@@ -109,7 +115,4 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
   .pprecio { margin: 0; font-size: 0.85rem; color: var(--muted); }
   .pprecio strong { color: var(--brand); }
   .panel-mas { font-weight: 700; font-size: 0.88rem; color: var(--violet); }
-  @media (max-width: 1000px) {
-    .panel { position: static; }
-  }
 </style>
