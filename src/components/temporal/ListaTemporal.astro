@@ -1,4 +1,5 @@
 ---
+import { existsSync } from 'node:fs';
 import Layout from '../../layouts/Layout.astro';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
@@ -11,6 +12,9 @@ const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
 const items = await temporalesActivos();
 const conPanel = await hayPanel('temporal');
+// Logo Kalypso : affiché au-dessus de « Residencias Kalypso » dès que le fichier
+// public/logo-kalypso.png (ou .svg) est présent dans le dépôt.
+const logoKalypso = ['svg', 'png', 'webp'].map((e) => `/logo-kalypso.${e}`).find((p) => existsSync(`public${p}`));
 // Deux gammes : les résidences de la marque Kalypso d'abord, puis les logements d'autres propriétaires
 const grupos = [
   { key: 'kalypso', titulo: t('temp.kalypso_title'), intro: t('temp.kalypso_intro'), vacio: t('temp.kalypso_vacio'), items: items.filter((i) => i.data.gama === 'kalypso') },
@@ -34,15 +38,19 @@ const textos = {
       </header>
 
       <div class:list={['cuerpo', { 'con-panel': conPanel }]}>
-      <div class="principal">
+      <div class="principal grupos">
       {
         (
           grupos.map((g) => (
             <section class={`grupo grupo--${g.key}`}>
               <header class="grupo-cab">
+                {g.key === 'kalypso' && logoKalypso && (
+                  <img class="grupo-logo" src={logoKalypso} alt="Kalypso" height="44" />
+                )}
                 <h2>{g.titulo}</h2>
                 <p>{g.intro}</p>
               </header>
+              <div class="grupo-cuerpo">
               {g.items.length === 0 && <p class="vacio">{g.vacio}</p>}
               <div class="grid-biens" data-temporales data-textos={JSON.stringify(textos)}>
                 {g.items.map((it) => {
@@ -81,6 +89,7 @@ const textos = {
                 </a>
                   );
                 })}
+              </div>
               </div>
             </section>
           ))
@@ -140,11 +149,20 @@ const textos = {
   .precios { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.4rem; color: var(--muted); font-size: 0.9rem; }
   .precios strong { color: var(--brand); font-size: 1.05rem; }
   .ver { margin-top: auto; padding-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--violet); }
-  .grupo + .grupo { margin-top: 3.5rem; }
+  /* Les deux gammes côte à côte (l'une sous l'autre sur téléphone) */
+  .grupos { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 0 2rem; align-items: start; }
+  /* En-têtes alignés : les cartes des deux colonnes démarrent à la même hauteur */
+  .grupos > .grupo { display: grid; grid-row: span 2; grid-template-rows: subgrid; }
+  .grupos .grid-biens { grid-template-columns: 1fr; }
+  @media (max-width: 760px) {
+    .grupos { grid-template-columns: 1fr; gap: 3rem; }
+    .grupos > .grupo { display: block; }
+  }
+  .grupo-logo { display: block; height: 44px; width: auto; margin-bottom: 0.6rem; }
   .con-panel { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 2rem; align-items: start; }
   @media (max-width: 1000px) { .con-panel { grid-template-columns: 1fr; } }
   .vacio { margin: 0; padding: 1.2rem 1.4rem; background: #fff; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); }
-  .grupo-cab { margin-bottom: 1.3rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
+  .grupo-cab { align-self: end; margin-bottom: 1.3rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
   .grupo-cab h2 { margin: 0 0 0.2rem; }
   .grupo-cab p { margin: 0; color: var(--muted); }
   .gama { margin: 0; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
