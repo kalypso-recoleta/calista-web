@@ -387,6 +387,15 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.despues': "¿Y después? Podemos vender o administrar tu propiedad.",
     'tas.link_vender': "Vender",
     'tas.link_admin': "Administración de alquileres",
+    'tas.suc_eyebrow': "Sucesiones",
+    'tas.suc_t': "Informes de tasación para notarios franceses",
+    'tas.suc_d': "¿Heredaste una propiedad en Paraguay y la sucesión se tramita en Francia? Con nuestra agencia en Francia, CALISTA Immobilier (Martinica), preparamos el informe de tasación en francés para el notario.",
+    'tas.suc_wa': "Consultar por una sucesión",
+    'tas.suc_web': "Nuestra agencia en Francia:",
+    'tas.suc_msg': "Hola Calista, necesito una tasación para una sucesión con notario en Francia.",
+    'adm.soft_eyebrow': "Nuestro software",
+    'adm.soft_t': "Una contabilidad clara, para propietarios e inquilinos",
+    'adm.soft_d': "Con la experiencia de años administrando propiedades, desarrollamos nuestro propio software de gestión. Cada cobro, cada gasto y cada comisión quedan registrados, con guaraníes y dólares por separado, y la comisión se calcula solo sobre lo efectivamente cobrado. Así, tu rendición mensual es precisa y fácil de leer.",
 
     // Contacto
     'cont.eyebrow': 'Contacto',
@@ -828,6 +837,15 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.despues': "Et ensuite ? Nous pouvons vendre ou gérer votre bien.",
     'tas.link_vender': "Vendre",
     'tas.link_admin': "Gestion locative",
+    'tas.suc_eyebrow': "Successions",
+    'tas.suc_t': "Rapports d’estimation pour les notaires français",
+    'tas.suc_d': "Vous héritez d’un bien au Paraguay et la succession est réglée en France ? Avec notre agence en France, CALISTA Immobilier (Martinique), nous préparons le rapport d’estimation en français pour votre notaire.",
+    'tas.suc_wa': "Nous consulter pour une succession",
+    'tas.suc_web': "Notre agence en France :",
+    'tas.suc_msg': "Hola Calista, necesito una tasación para una sucesión con notario en Francia.",
+    'adm.soft_eyebrow': "Notre logiciel",
+    'adm.soft_t': "Une comptabilité claire, pour les propriétaires et les locataires",
+    'adm.soft_d': "Forts de nos années d’expérience en gestion, nous avons développé notre propre logiciel. Chaque encaissement, chaque dépense et chaque commission sont enregistrés, en guaraníes et en dollars séparément, et la commission n’est calculée que sur les sommes réellement encaissées. Votre relevé mensuel est ainsi précis et facile à lire.",
 
     // Contacto
     'cont.eyebrow': 'Contact',
@@ -1268,6 +1286,15 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.despues': "And then? We can sell or manage your property.",
     'tas.link_vender': "Sell",
     'tas.link_admin': "Rental management",
+    'tas.suc_eyebrow': "Estates",
+    'tas.suc_t': "Valuation reports for French notaries",
+    'tas.suc_d': "Did you inherit a property in Paraguay with the estate handled in France? Together with our agency in France, CALISTA Immobilier (Martinique), we prepare the valuation report in French for the notary.",
+    'tas.suc_wa': "Ask about an estate",
+    'tas.suc_web': "Our agency in France:",
+    'tas.suc_msg': "Hola Calista, necesito una tasación para una sucesión con notario en Francia.",
+    'adm.soft_eyebrow': "Our software",
+    'adm.soft_t': "Clear accounting, for owners and tenants",
+    'adm.soft_d': "Drawing on years of property management experience, we built our own management software. Every payment, expense and commission is recorded, with guaraníes and dollars kept separate, and our commission is calculated only on rent actually collected. Your monthly statement is accurate and easy to read.",
 
     // Contacto
     'cont.eyebrow': 'Contact',

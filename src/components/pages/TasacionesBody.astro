@@ -8,6 +8,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const wa = whatsappLink(t('tas.wa_msg'));
+const waSuc = whatsappLink(t('tas.suc_msg'));
 const tipos = [
   { t: t('tas.v_t'), d: t('tas.v_d') },
   { t: t('tas.a_t'), d: t('tas.a_d') },
@@ -37,6 +38,17 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
             <p>{x.d}</p>
           </div>
         ))}
+      </div>
+      <!-- Successions : lien avec l'agence CALISTA en France -->
+      <div class="sucesion">
+        <span class="bandera" aria-hidden="true">🇫🇷</span>
+        <div>
+          <p class="eyebrow">{t('tas.suc_eyebrow')}</p>
+          <h2>{t('tas.suc_t')}</h2>
+          <p>{t('tas.suc_d')}</p>
+          <p class="web">{t('tas.suc_web')} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
+          <WhatsAppButton href={waSuc} label={t('tas.suc_wa')} />
+        </div>
       </div>
     </div>
   </section>
@@ -80,6 +92,12 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
   .tipo { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.8rem 2rem; box-shadow: var(--shadow); }
   .tipo h2 { margin: 0 0 0.5rem; font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
   .tipo p { margin: 0; color: var(--muted); line-height: 1.6; }
+  .sucesion { display: flex; gap: 1.4rem; align-items: flex-start; margin-top: 1.5rem; padding: 1.8rem 2rem; background: var(--card-tint); border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .sucesion .web { margin-top: -0.4rem; color: var(--ink); }
+  .web a { font-weight: 700; }
+  .bandera { font-size: 2.2rem; line-height: 1; }
+  .sucesion h2 { margin: 0 0 0.5rem; font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
+  .sucesion p:not(.eyebrow) { margin: 0 0 1.1rem; color: var(--muted); line-height: 1.6; max-width: 70ch; }
   .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
   .pasos li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
   .pasos .num { font-family: var(--display); font-size: 1.1rem; font-weight: 600; color: var(--violet); letter-spacing: 0.05em; }

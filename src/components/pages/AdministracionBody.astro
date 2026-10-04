@@ -40,6 +40,16 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
     </div>
   </section>
 
+  <section class="section soft-section">
+    <div class="container">
+      <div class="soft">
+        <p class="eyebrow">{t('adm.soft_eyebrow')}</p>
+        <h2>{t('adm.soft_t')}</h2>
+        <p>{t('adm.soft_d')}</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="tarifas">
     <div class="container">
       <h2 class="tit">{t('adm.tarifas_title')}</h2>
@@ -82,6 +92,10 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   }
   .items h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
   .items p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .soft-section { padding-bottom: 0; }
+  .soft { padding: clamp(1.6rem, 3.5vw, 2.4rem) clamp(1.6rem, 4vw, 2.8rem); background: var(--card-tint); border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .soft h2 { margin: 0 0 0.6rem; }
+  .soft p:not(.eyebrow) { margin: 0; color: var(--ink); line-height: 1.7; max-width: 75ch; }
   .tarifas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
   .tarifa { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.6rem 1.5rem; box-shadow: var(--shadow); }
   .tarifa.destacada { background: var(--brand); border-color: var(--brand); color: #fff; }
