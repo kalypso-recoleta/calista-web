@@ -37,6 +37,16 @@ const textos = {
         <p class="lead">{t('temp.intro')}</p>
       </header>
 
+      <!-- Présentation de la gamme Residencias Kalypso -->
+      <section class="kalypso-intro">
+        {logoKalypso && <img class="ki-logo" src={logoKalypso} alt="Kalypso" width="160" />}
+        <div class="ki-texto">
+          <p class="eyebrow">{t('temp.kalypso_title')}</p>
+          <h2>{t('temp.kalypso_tag')}</h2>
+          {[1, 2, 3, 4].map((n) => <p>{t(`temp.kalypso_p${n}`)}</p>)}
+        </div>
+      </section>
+
       <div class:list={['cuerpo', { 'con-panel': conPanel }]}>
       <div class="principal grupos">
       {
@@ -44,9 +54,6 @@ const textos = {
           grupos.map((g) => (
             <section class={`grupo grupo--${g.key}`}>
               <header class="grupo-cab">
-                {g.key === 'kalypso' && logoKalypso && (
-                  <img class="grupo-logo" src={logoKalypso} alt="Kalypso" height="68" />
-                )}
                 <h2>{g.titulo}</h2>
                 <p>{g.intro}</p>
               </header>
@@ -157,6 +164,21 @@ const textos = {
   @media (max-width: 760px) {
     .grupos { grid-template-columns: 1fr; gap: 3rem; }
     .grupos > .grupo { display: block; }
+  }
+  .kalypso-intro {
+    display: grid; grid-template-columns: 170px 1fr; gap: 2rem; align-items: start;
+    margin: 0 0 3rem; padding: 2rem 2.2rem; background: #fff;
+    border: 1px solid var(--line); border-left: 4px solid var(--violet); border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .ki-logo { width: 160px; height: auto; }
+  .ki-texto { max-width: 70ch; }
+  .ki-texto h2 { margin: 0 0 1rem; font-size: clamp(1.35rem, 2.2vw, 1.75rem); }
+  .ki-texto p:not(.eyebrow) { color: var(--ink); line-height: 1.7; margin: 0 0 0.8rem; }
+  .ki-texto p:last-child { margin-bottom: 0; }
+  @media (max-width: 760px) {
+    .kalypso-intro { grid-template-columns: 1fr; padding: 1.4rem; gap: 1rem; }
+    .ki-logo { width: 120px; }
   }
   .grupo-logo { display: block; height: 68px; width: auto; margin-bottom: 0.6rem; }
   .con-panel { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 2rem; align-items: start; }
