@@ -1,0 +1,71 @@
+{
+  "mostrar": true,
+  "nombre": "Kalypso Recoleta",
+  "lema": "Departamentos en pozo en el corazón de Recoleta",
+  "descripcion": "Un edificio de 40 departamentos en 8 niveles, en la esquina de Cruz del Chaco y Alfredo Seiferheld, a pasos del Shopping Mariscal. En la azotea: piscina, quincho climatizado, coworking y terraza panorámica.\n\nCinco modelos, del monoambiente al departamento de 2 dormitorios, con balcón, cocina equipada y baño completo. Reservá con el 10 % y pagá el saldo en 32 cuotas sin intereses durante la obra.",
+  "datos": [
+    "40 departamentos · 8 niveles",
+    "Entrega: mayo 2029",
+    "10 % de entrega + 32 cuotas sin intereses",
+    "Piscina, quincho climatizado, coworking y terraza en la azotea"
+  ],
+  "direccion": "Cruz del Chaco esq. Alfredo Seiferheld, Recoleta, Asunción",
+  "fotos": [
+    {
+      "imagen": "/uploads/kalypso-07.jpg",
+      "leyenda": "Fachada",
+      "leyenda_fr": "Façade",
+      "leyenda_en": "Façade"
+    },
+    {
+      "imagen": "/uploads/kalypso-08.jpg",
+      "leyenda": "Fachada de noche",
+      "leyenda_fr": "Façade de nuit",
+      "leyenda_en": "Façade at night"
+    },
+    {
+      "imagen": "/uploads/kalypso-02.jpg",
+      "leyenda": "Piscina en la azotea",
+      "leyenda_fr": "Piscine sur le toit",
+      "leyenda_en": "Rooftop pool"
+    },
+    {
+      "imagen": "/uploads/kalypso-01.jpg",
+      "leyenda": "Terraza panorámica",
+      "leyenda_fr": "Terrasse panoramique",
+      "leyenda_en": "Panoramic terrace"
+    },
+    {
+      "imagen": "/uploads/kalypso-04.jpg",
+      "leyenda": "Azotea",
+      "leyenda_fr": "Toit-terrasse",
+      "leyenda_en": "Rooftop"
+    },
+    {
+      "imagen": "/uploads/kalypso-05.jpg",
+      "leyenda": "Azotea",
+      "leyenda_fr": "Toit-terrasse",
+      "leyenda_en": "Rooftop"
+    }
+  ],
+  "fr": {
+    "lema": "Appartements sur plan au cœur de Recoleta",
+    "descripcion": "Un immeuble de 40 appartements sur 8 niveaux, à l'angle de Cruz del Chaco et Alfredo Seiferheld, à deux pas du Shopping Mariscal. Sur le toit-terrasse : piscine, quincho climatisé, espace de coworking et terrasse panoramique.\n\nCinq modèles, du studio à l'appartement de 2 chambres, avec balcon, cuisine équipée et salle de bain complète. Réservez avec 10 % et payez le solde en 32 mensualités sans intérêts pendant les travaux.",
+    "datos": [
+      "40 appartements · 8 niveaux",
+      "Livraison : mai 2029",
+      "10 % à la réservation + 32 mensualités sans intérêts",
+      "Piscine, quincho climatisé, coworking et terrasse sur le toit"
+    ]
+  },
+  "en": {
+    "lema": "Off-plan apartments in the heart of Recoleta",
+    "descripcion": "A building of 40 apartments on 8 levels, on the corner of Cruz del Chaco and Alfredo Seiferheld, steps from Shopping Mariscal. On the rooftop: swimming pool, air-conditioned quincho, coworking space and panoramic terrace.\n\nFive models, from studio to 2-bedroom apartment, with balcony, fitted kitchen and full bathroom. Reserve with 10 % and pay the balance in 32 interest-free monthly instalments during construction.",
+    "datos": [
+      "40 apartments · 8 levels",
+      "Delivery: May 2029",
+      "10 % deposit + 32 interest-free instalments",
+      "Pool, air-conditioned quincho, coworking and rooftop terrace"
+    ]
+  }
+}

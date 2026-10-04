@@ -293,6 +293,53 @@ collections:
       - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: Descripción completa, name: body, widget: markdown, required: false }
 
+  # ─── Page Desarrollos Kalypso : présentation de l'immeuble (carrousel + texte) ───
+  - name: paginas
+    label: Página Desarrollos Kalypso
+    files:
+      - name: kalypso-recoleta
+        label: 'Presentación del edificio (fotos y texto)'
+        file: src/data/kalypso-recoleta.json
+        format: json
+        fields:
+          - { label: '¿Mostrar en la página Desarrollos?', name: mostrar, widget: boolean, default: true }
+          - { label: Nombre del edificio, name: nombre, widget: string }
+          - { label: 'Frase corta (debajo del nombre)', name: lema, widget: string, required: false }
+          - { label: Presentación, name: descripcion, widget: text, required: false, hint: 'Dejá una línea vacía para separar los párrafos.' }
+          - { label: 'Datos clave (lista a la derecha)', name: datos, widget: list, required: false }
+          - { label: Dirección, name: direccion, widget: string, required: false }
+          - label: 'Fotos del carrusel (fachada, áreas comunes…)'
+            name: fotos
+            widget: list
+            required: false
+            summary: '{{fields.leyenda}}'
+            hint: 'Arrastrá para cambiar el orden. La primera es la que se ve al llegar. Ideal: fotos horizontales.'
+            fields:
+              - { label: Foto, name: imagen, widget: image, media_library: { name: cloudinary } }
+              - { label: 'Leyenda (opcional)', name: leyenda, widget: string, required: false }
+              - { label: 'Leyenda en francés', name: leyenda_fr, widget: string, required: false }
+              - { label: 'Leyenda en inglés', name: leyenda_en, widget: string, required: false }
+          - label: '🇫🇷 Traducción al francés'
+            name: fr
+            widget: object
+            collapsed: true
+            required: false
+            hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+            fields:
+              - { label: 'Frase corta', name: lema, widget: string, required: false }
+              - { label: 'Presentación', name: descripcion, widget: text, required: false }
+              - { label: 'Datos clave', name: datos, widget: list, required: false }
+          - label: '🇬🇧 Traducción al inglés'
+            name: en
+            widget: object
+            collapsed: true
+            required: false
+            hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+            fields:
+              - { label: 'Frase corta', name: lema, widget: string, required: false }
+              - { label: 'Presentación', name: descripcion, widget: text, required: false }
+              - { label: 'Datos clave', name: datos, widget: list, required: false }
+
   # ─── Avis clients ───
   - name: resenas
     label: Reseñas

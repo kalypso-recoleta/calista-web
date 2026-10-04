@@ -8,11 +8,13 @@ interface Props {
   biens: CollectionEntry<'biens'>[];
   mostrarDormitorios?: boolean;
   mostrarBanos?: boolean;
+  sinFiltros?: boolean; // Desarrollos : quelques modèles, pas besoin de filtres
 }
 const {
   biens,
   mostrarDormitorios = true,
   mostrarBanos = true,
+  sinFiltros = false,
 } = Astro.props;
 
 const tipos = [...new Set(biens.map((b) => b.data.tipo))];
@@ -45,7 +47,7 @@ const tipoLabels: Record<string, string> = {
 };
 ---
 
-<div class="filtros" data-filtros>
+<div class="filtros" data-filtros hidden={sinFiltros}>
   <div class="campo busca">
     <input
       type="search"
@@ -104,7 +106,7 @@ const tipoLabels: Record<string, string> = {
 
 <slot name="destacados" />
 
-<p class="contador"><span data-contador>{biens.length}</span> propiedades</p>
+<p class="contador" hidden={sinFiltros}><span data-contador>{biens.length}</span> propiedades</p>
 
 <div class="grid-biens" data-grid>
   {
@@ -130,6 +132,7 @@ const tipoLabels: Record<string, string> = {
 </p>
 
 <style>
+  [hidden] { display: none !important; }
   .filtros {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,137 @@
+---
+/**
+ * Présentation de l'immeuble Kalypso en tête de la page Desarrollos :
+ * grand carrousel photo (parties communes) + texte de présentation.
+ * Contenu modifiable dans l'admin : « Página Desarrollos Kalypso ».
+ */
+import edificio from '../data/kalypso-recoleta.json';
+import { img } from '../lib/cloudinary';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+type Trad = { lema?: string; descripcion?: string; datos?: string[] };
+const base = edificio as {
+  mostrar?: boolean; nombre: string; lema?: string; descripcion?: string;
+  datos?: string[]; direccion?: string; fr?: Trad; en?: Trad;
+  fotos?: { imagen: string; leyenda?: string; leyenda_fr?: string; leyenda_en?: string }[];
+};
+// Texte dans la langue de la page ; à défaut de traduction, l'espagnol
+const tr: Trad = (lang === 'fr' ? base.fr : lang === 'en' ? base.en : undefined) ?? {};
+const e = {
+  ...base,
+  lema: tr.lema?.trim() || base.lema,
+  descripcion: tr.descripcion?.trim() || base.descripcion,
+  datos: tr.datos && tr.datos.length > 0 ? tr.datos : base.datos,
+};
+const fotos = (base.fotos ?? [])
+  .filter((f) => f && f.imagen)
+  .map((f) => ({
+    imagen: f.imagen,
+    leyenda: (lang === 'fr' ? f.leyenda_fr : lang === 'en' ? f.leyenda_en : '')?.trim() || f.leyenda,
+  }));
+const parrafos = (e.descripcion ?? '').split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+---
+
+{e.mostrar !== false && (
+  <section class="edificio">
+    {fotos.length > 0 && (
+      <div class="carrusel" data-carrusel>
+        <div class="pista" data-pista>
+          {fotos.map((f, i) => (
+            <figure class="diapo">
+              <img src={img(f.imagen, { w: 1600, h: 690 })} alt={f.leyenda || e.nombre}
+                width="1600" height="690" loading={i === 0 ? 'eager' : 'lazy'} />
+              {f.leyenda && <figcaption>{f.leyenda}</figcaption>}
+            </figure>
+          ))}
+        </div>
+        {fotos.length > 1 && (
+          <>
+            <button type="button" class="flecha prev" data-prev aria-label={t('des.anterior')}>‹</button>
+            <button type="button" class="flecha next" data-next aria-label={t('des.siguiente')}>›</button>
+            <div class="puntos">
+              {fotos.map((_, i) => <button type="button" data-punto={i} aria-label={`${i + 1}`} class:list={{ activo: i === 0 }} />)}
+            </div>
+          </>
+        )}
+      </div>
+    )}
+
+    <div class="texto">
+      <div class="desc">
+        <h2>{e.nombre}</h2>
+        {e.lema && <p class="lema">{e.lema}</p>}
+        {parrafos.map((p) => <p>{p}</p>)}
+      </div>
+      <aside class="ficha">
+        {e.datos && e.datos.length > 0 && (
+          <ul>{e.datos.map((d) => <li>{d}</li>)}</ul>
+        )}
+        {e.direccion && <p class="dir">📍 {e.direccion}</p>}
+        <p class="prom">
+          {t('lista.desarrollos_promotor')} <strong>El Solar SRL</strong> ·{' '}
+          <a href="https://www.kalypso.com.py" target="_blank" rel="noopener">www.kalypso.com.py</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+)}
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-carrusel]').forEach((c) => {
+    const pista = c.querySelector<HTMLElement>('[data-pista]')!;
+    const n = pista.children.length;
+    const puntos = [...c.querySelectorAll<HTMLButtonElement>('[data-punto]')];
+    const actual = () => Math.round(pista.scrollLeft / pista.clientWidth);
+    const ir = (i: number) => pista.scrollTo({ left: ((i + n) % n) * pista.clientWidth, behavior: 'smooth' });
+    c.querySelector('[data-prev]')?.addEventListener('click', () => ir(actual() - 1));
+    c.querySelector('[data-next]')?.addEventListener('click', () => ir(actual() + 1));
+    puntos.forEach((p, i) => p.addEventListener('click', () => ir(i)));
+    pista.addEventListener('scroll', () => {
+      const i = actual();
+      puntos.forEach((p, j) => p.classList.toggle('activo', j === i));
+    }, { passive: true });
+  });
+</script>
+
+<style>
+  .edificio { margin: 0 0 3rem; }
+  .carrusel { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--violet-soft); }
+  .pista { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .pista::-webkit-scrollbar { display: none; }
+  .diapo { position: relative; flex: 0 0 100%; margin: 0; aspect-ratio: 21 / 9; scroll-snap-align: start; }
+  .diapo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .diapo figcaption {
+    position: absolute; left: 1.2rem; bottom: 1.1rem; padding: 0.35rem 0.8rem; border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92); font-size: 0.85rem; font-weight: 600; color: var(--ink);
+  }
+  .flecha {
+    position: absolute; top: 50%; transform: translateY(-50%); width: 2.6rem; height: 2.6rem;
+    border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.9); color: var(--brand);
+    font-size: 1.7rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow);
+  }
+  .flecha:hover { background: #fff; }
+  .prev { left: 1rem; }
+  .next { right: 1rem; }
+  .puntos { position: absolute; right: 1.2rem; bottom: 1.2rem; display: flex; gap: 0.4rem; }
+  .puntos button { width: 9px; height: 9px; padding: 0; border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.6); cursor: pointer; }
+  .puntos button.activo { background: #fff; transform: scale(1.25); }
+  .texto { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 2.5rem; margin-top: 2rem; align-items: start; }
+  .desc h2 { margin: 0 0 0.3rem; }
+  .lema { margin: 0 0 1rem; color: var(--violet); font-weight: 600; }
+  .desc p:not(.lema) { line-height: 1.7; margin: 0 0 0.9rem; }
+  .ficha {
+    padding: 1.3rem 1.4rem; background: #fff; border: 1px solid var(--line);
+    border-left: 4px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  .ficha ul { margin: 0 0 1rem; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
+  .dir { margin: 0 0 0.8rem; font-size: 0.95rem; }
+  .prom { margin: 0; font-size: 0.9rem; color: var(--muted); }
+  .prom a { font-weight: 700; }
+  @media (max-width: 760px) {
+    .diapo { aspect-ratio: 4 / 3; }
+    .texto { grid-template-columns: 1fr; gap: 1.5rem; }
+    .flecha { width: 2.2rem; height: 2.2rem; font-size: 1.4rem; }
+  }
+</style>

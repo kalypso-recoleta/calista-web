@@ -71,14 +71,14 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     </h3>
 
     <ul class="specs">
-      {d.dormitorios != null && <li>{d.dormitorios} {t('spec.dorm')}</li>}
+      {d.dormitorios != null && <li>{d.dormitorios === 0 ? t('spec.monoambiente') : `${d.dormitorios} ${t('spec.dorm')}`}</li>}
       {d.banos != null && <li>{d.banos} {t(d.banos === 1 ? 'spec.bano' : 'spec.banos')}</li>}
       {d.cocheras != null && <li>{d.cocheras} {t('spec.coch')}</li>}
       {superficie && <li>{superficie}</li>}
     </ul>
 
     <div class="foot">
-      <span class="precio">{formatPrecio(d, lang)}</span>
+      <span class="precio">{d.desarrollo && <small class="desde">{t('tar.desde')} </small>}{formatPrecio(d, lang)}</span>
       <a href={href} target={target} rel={rel} class="ver">{t('common.ver')}</a>
     </div>
   </div>
@@ -97,8 +97,8 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     box-shadow: var(--shadow);
     transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
+  /* Pas de soulèvement au survol : les cartes d'une rangée restent alignées */
   .card:hover {
-    transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
   }
   .card.inactivo {
@@ -109,9 +109,15 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     position: relative;
     display: block;
     aspect-ratio: 16 / 11;
+    overflow: hidden;
+    flex: none;
     background: var(--violet-soft);
   }
+  /* Image calée dans le cadre : toutes les vignettes ont la même hauteur,
+     quel que soit le format de la photo (portrait, paysage…) */
   .media img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -206,6 +212,12 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--brand);
+  }
+  .desde {
+    font-family: var(--body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--muted);
   }
   .ver {
     font-size: 0.85rem;

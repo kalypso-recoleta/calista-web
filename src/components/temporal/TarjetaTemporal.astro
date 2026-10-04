@@ -53,9 +53,9 @@ const r = tarifasDe(it)[0]; // 1re ligne de la grille = « Desde… »
     overflow: hidden; box-shadow: var(--shadow); color: var(--ink);
     transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
-  .tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-  .media { position: relative; aspect-ratio: 16 / 11; background: var(--violet-soft); }
-  .media img { width: 100%; height: 100%; object-fit: cover; }
+  .tcard:hover { text-decoration: none; box-shadow: var(--shadow-lg); }
+  .media { position: relative; flex: none; overflow: hidden; aspect-ratio: 16 / 11; background: var(--violet-soft); }
+  .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .estado {
     position: absolute; top: 0.8rem; left: 0.8rem; padding: 0.3rem 0.7rem;
     border-radius: 20px; font-size: 0.78rem; font-weight: 700; background: #fff;

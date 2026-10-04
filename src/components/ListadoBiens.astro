@@ -13,6 +13,8 @@ interface Props {
   biens: CollectionEntry<'biens'>[];
   mostrarDormitorios?: boolean;
   mostrarBanos?: boolean;
+  sinFiltros?: boolean;
+  tituloLista?: string;
 }
 const {
   eyebrow,
@@ -21,6 +23,8 @@ const {
   biens,
   mostrarDormitorios = true,
   mostrarBanos = true,
+  sinFiltros = false,
+  tituloLista,
 } = Astro.props;
 ---
 
@@ -33,6 +37,9 @@ const {
       <slot />
     </header>
 
+    <slot name="intro" />
+    {tituloLista && <h2 class="titulo-lista">{tituloLista}</h2>}
+
     {
       biens.length === 0 ? (
         <p class="lead">{t('lista.vacia')}</p>
@@ -41,6 +48,7 @@ const {
           biens={biens}
           mostrarDormitorios={mostrarDormitorios}
           mostrarBanos={mostrarBanos}
+          sinFiltros={sinFiltros}
         >
           <slot name="destacados" slot="destacados" />
         </BienesFiltrados>
@@ -50,6 +58,11 @@ const {
 </section>
 
 <style>
+  .titulo-lista {
+    margin: 0 0 1.3rem;
+    padding-left: 0.9rem;
+    border-left: 4px solid var(--violet);
+  }
   .cab {
     max-width: 62ch;
     margin-bottom: 2rem;
