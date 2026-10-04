@@ -4,8 +4,8 @@ import { site } from './site';
  * Construit un lien wa.me avec un message pré-rempli.
  * WhatsApp est LE canal de contact dominant au Paraguay → présent partout.
  */
-export function whatsappLink(mensaje?: string): string {
-  const base = `https://wa.me/${site.whatsapp}`;
+export function whatsappLink(mensaje?: string, numero: string = site.whatsapp): string {
+  const base = `https://wa.me/${numero}`;
   if (!mensaje) return base;
   return `${base}?text=${encodeURIComponent(mensaje)}`;
 }

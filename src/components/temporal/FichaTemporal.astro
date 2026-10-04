@@ -6,6 +6,7 @@ import PropertyMap from '../PropertyMap.astro';
 import WhatsAppButton from '../WhatsAppButton.astro';
 import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 import { type Temporal, slugTemporal, reservasJson, precioTxt, LOCALE, tarifasDe } from './datos';
 
@@ -26,7 +27,8 @@ const zona = [d.barrio, d.ciudad].filter(Boolean).join(', ');
 const url = new URL(`/alquiler-temporal/${slugTemporal(item)}`, Astro.site).toString();
 // Message WhatsApp en espagnol (l'agence lit en espagnol)
 const waGeneral = whatsappLink(
-  `Hola, me interesa el alquiler temporal "${d.titulo}".\n${url}\n¿Qué fechas tienen disponibles?`
+  `Hola, me interesa el alquiler temporal "${d.titulo}".\n${url}\n¿Qué fechas tienen disponibles?`,
+  site.whatsappTemporal
 );
 const tarifas = tarifasDe(item);
 const specs = [
@@ -104,7 +106,7 @@ const textos = {
             data-textos={JSON.stringify(textos)}
             data-titulo={d.titulo}
             data-url={url}
-            data-wa={whatsappLink()}
+            data-wa={whatsappLink(undefined, site.whatsappTemporal)}
           >
             <h3>{t('temp.calendario')}</h3>
             <p class="ayuda">{t('temp.elegir')}</p>
