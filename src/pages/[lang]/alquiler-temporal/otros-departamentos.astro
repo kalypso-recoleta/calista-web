@@ -1,0 +1,7 @@
+---
+import ListaTemporal from '../../../components/temporal/ListaTemporal.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<ListaTemporal modo="otros" />

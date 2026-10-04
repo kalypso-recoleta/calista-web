@@ -72,7 +72,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
 
     <ul class="specs">
       {d.dormitorios != null && <li>{d.dormitorios} {t('spec.dorm')}</li>}
-      {d.banos != null && <li>{d.banos} {t('spec.banos')}</li>}
+      {d.banos != null && <li>{d.banos} {t(d.banos === 1 ? 'spec.bano' : 'spec.banos')}</li>}
       {d.cocheras != null && <li>{d.cocheras} {t('spec.coch')}</li>}
       {superficie && <li>{superficie}</li>}
     </ul>

@@ -1,0 +1,73 @@
+---
+import { img } from '../../lib/cloudinary';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+import { slugTemporal, reservasJson, precioTxt, LOCALE, tarifasDe, type Temporal } from './datos';
+
+const { it } = Astro.props as { it: Temporal };
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const L = (p: string) => localizePath(p, lang);
+const loc = LOCALE[lang];
+const d = it.data;
+const foto = d.portada_foto || d.imagenes[0];
+const r = tarifasDe(it)[0]; // 1re ligne de la grille = « Desde… »
+---
+<a class="tcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>
+  <div class="media">
+    <img src={img(foto, { w: 640, h: 440 })} alt={d.titulo} width="640" height="440" loading="lazy" />
+    <span class="estado" data-estado hidden />
+  </div>
+  <div class="body">
+    {d.gama === 'kalypso' && (
+      <p class="gama">{t('temp.kalypso_badge')}{d.residencia ? ` · ${d.residencia}` : ''}</p>
+    )}
+    <p class="loc">{[d.barrio, d.ciudad].filter(Boolean).join(', ')}</p>
+    <h3 class="titulo">{d.titulo}</h3>
+    <p class="specs">
+      {[
+        d.dormitorios != null && `${d.dormitorios} ${t('spec.dorm')}`,
+        d.banos != null && `${d.banos} ${t(d.banos === 1 ? 'spec.bano' : 'spec.banos')}`,
+        d.huespedes != null && `${d.huespedes} ${t('temp.huespedes').toLowerCase()}`,
+        d.superficie != null && `${d.superficie} m²`,
+      ]
+        .filter(Boolean)
+        .join(' · ')}
+    </p>
+    <div class="precios">
+      {r ? (
+        <span>{t('tar.desde')} <strong>{precioTxt(r.precio, d.moneda, loc)}</strong> {t(`tar.u_${r.unidad}`)}{r.unidad === 'total' && ` · ${t(`tar.${r.duracion}`)}`}</span>
+      ) : (
+        <span>{t('tar.consultar')}</span>
+      )}
+    </div>
+    <span class="ver">{t('temp.ver')} →</span>
+  </div>
+</a>
+
+<style>
+  [hidden] { display: none !important; }
+  .tcard {
+    display: flex; flex-direction: column; height: 100%;
+    background: var(--surface); border: 1px solid var(--line);
+    border-top: 4px solid var(--violet); border-radius: var(--radius);
+    overflow: hidden; box-shadow: var(--shadow); color: var(--ink);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .tcard:hover { text-decoration: none; transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .media { position: relative; aspect-ratio: 16 / 11; background: var(--violet-soft); }
+  .media img { width: 100%; height: 100%; object-fit: cover; }
+  .estado {
+    position: absolute; top: 0.8rem; left: 0.8rem; padding: 0.3rem 0.7rem;
+    border-radius: 20px; font-size: 0.78rem; font-weight: 700; background: #fff;
+  }
+  .estado.es-libre { color: var(--ok); }
+  .estado.es-alquilado { background: var(--brand); color: #fff; }
+  .body { background: var(--card-tint); padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+  .loc { margin: 0; font-size: 0.82rem; color: var(--muted); }
+  .titulo { margin: 0; font-size: 1.1rem; line-height: 1.3; }
+  .specs { margin: 0; font-size: 0.88rem; color: var(--muted); }
+  .precios { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.4rem; color: var(--muted); font-size: 0.9rem; }
+  .precios strong { color: var(--brand); font-size: 1.05rem; }
+  .ver { margin-top: auto; padding-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--violet); }
+  .gama { margin: 0; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
+</style>

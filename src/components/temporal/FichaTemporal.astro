@@ -59,6 +59,9 @@ const textos = {
       <nav class="crumbs" aria-label="•">
         <a href={L('/')}>{t('det.inicio')}</a><span>/</span>
         <a href={L('/alquiler-temporal')}>{t('temp.title')}</a><span>/</span>
+        {d.gama === 'kalypso'
+          ? <><a href={L('/alquiler-temporal/residencias-kalypso')}>{t('temp.kalypso_title')}</a><span>/</span></>
+          : <><a href={L('/alquiler-temporal/otros-departamentos')}>{t('temp.otros_title')}</a><span>/</span></>}
         <span>{d.titulo}</span>
       </nav>
 

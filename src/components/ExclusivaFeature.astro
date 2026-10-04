@@ -32,7 +32,7 @@ const superficie = formatSuperficie(d, lang);
 
 const specs = [
   d.dormitorios != null && `${d.dormitorios} ${t('spec.dorm')}`,
-  d.banos != null && `${d.banos} ${t('spec.banos')}`,
+  d.banos != null && `${d.banos} ${t(d.banos === 1 ? 'spec.bano' : 'spec.banos')}`,
   d.cocheras != null && `${d.cocheras} ${t('spec.coch')}`,
   superficie,
 ].filter(Boolean) as string[];
