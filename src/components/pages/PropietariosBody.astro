@@ -34,7 +34,7 @@ const incluyeAdmin = [
       <h1>{t('prop.hero_title')}</h1>
       <p class="lead">{t('prop.hero_lead')}</p>
       <div class="hero-cta">
-        <a href="#administracion" class="btn btn--primary">{t('prop.cta_admin')}</a>
+        <a href={L('/administracion')} class="btn btn--primary">{t('prop.cta_admin')}</a>
         <a href="#vender" class="btn btn--ghost">{t('prop.cta_vender')}</a>
       </div>
     </div>
@@ -48,6 +48,7 @@ const incluyeAdmin = [
         <p class="lead">{t('prop.admin_lead')}</p>
         <div class="cta-linea">
           <WhatsAppButton href={waAdmin} label={t('prop.admin_wa')} />
+          <a href={L('/administracion')} class="btn btn--ghost">{t('prop.admin_mas')} →</a>
         </div>
       </div>
 
@@ -76,6 +77,7 @@ const incluyeAdmin = [
           ))
         }
       </ol>
+      <p class="tasar"><a href={L('/tasaciones')}>{t('prop.tasar_mas')} →</a></p>
 
       <div class="cta-linea">
         <WhatsAppButton href={waVender} label={t('prop.vender_wa')} />
@@ -129,6 +131,7 @@ const incluyeAdmin = [
     border-left: 2.5px solid var(--violet); border-bottom: 2.5px solid var(--violet);
     transform: rotate(-45deg);
   }
+  .tasar { margin: 1.4rem 0 0; font-weight: 600; }
   .cta-linea { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
   .cta-linea.center { justify-content: center; }
   .cierre {

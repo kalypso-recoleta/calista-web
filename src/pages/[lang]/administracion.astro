@@ -1,0 +1,7 @@
+---
+import AdministracionBody from '../../components/pages/AdministracionBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<AdministracionBody />

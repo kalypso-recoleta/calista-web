@@ -19,7 +19,8 @@ const nav = [
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: t('nav.desarrollos') },
   { href: '/terrenos', label: t('nav.terrenos') },
-  { href: '/propietarios', label: t('nav.propietarios') },
+  { href: '/administracion', label: t('nav.administracion'), destacado: true },
+  { href: '/propietarios', label: t('nav.propietarios'), tambien: ['/tasaciones'] },
   { href: '/resenas', label: t('nav.resenas') },
   { href: '/historia', label: t('nav.historia') },
 ];
@@ -46,7 +47,13 @@ const wa = whatsappLink(
             href={localizePath(item.href, lang)}
             class:list={[
               'nav-link',
-              { active: basePath === item.href || basePath.startsWith(item.href + '/') },
+              {
+                active:
+                  basePath === item.href ||
+                  basePath.startsWith(item.href + '/') ||
+                  (item.tambien ?? []).includes(basePath),
+                destacado: item.destacado,
+              },
             ]}
           >
             {item.label}
@@ -161,6 +168,11 @@ const wa = whatsappLink(
     background: var(--violet-soft);
     color: var(--violet);
   }
+  /* Gestion locative mise en avant : liseré violet */
+  .nav-link.destacado {
+    color: var(--violet);
+    box-shadow: inset 0 0 0 1.5px var(--violet);
+  }
   /* Onglet actif : fond violet, texte blanc (comme le menu du logiciel) */
   .nav-link.active {
     background: var(--violet);
@@ -235,7 +247,9 @@ const wa = whatsappLink(
     margin-top: 0.9rem;
   }
 
-  @media (max-width: 1320px) {
+  .header-cta { white-space: nowrap; }
+  /* Menu compact (9 rubriques) jusqu'aux grands écrans */
+  @media (max-width: 1520px) {
     .nav {
       gap: 0.1rem;
     }
@@ -245,7 +259,7 @@ const wa = whatsappLink(
       letter-spacing: 0.05em;
     }
   }
-  @media (max-width: 1230px) {
+  @media (max-width: 1299px) {
     .nav,
     .header-cta {
       display: none;

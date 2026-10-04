@@ -1,0 +1,7 @@
+---
+import TasacionesBody from '../../components/pages/TasacionesBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<TasacionesBody />

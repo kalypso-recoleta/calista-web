@@ -100,16 +100,18 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
   }
   .panel-tit { margin: 0; font-weight: 700; color: var(--violet); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem; }
   .panel-sub { margin: -0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
-  .pcard { display: block; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  /* Vignettes de même hauteur ; le fond teinté remplit toute la carte */
+  .pcard { display: flex; flex-direction: column; height: 100%; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
   .pcard:hover { text-decoration: none; border-color: var(--violet); }
-  .pmedia { position: relative; overflow: hidden; aspect-ratio: 16 / 10; background: var(--violet-soft); }
+  .pmedia { position: relative; flex: none; overflow: hidden; aspect-ratio: 16 / 10; background: var(--violet-soft); }
   .pmedia img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .pestado { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.2rem 0.55rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700; background: #fff; }
   .pestado.es-libre { color: var(--ok); }
   .pestado.es-alquilado { background: var(--brand); color: #fff; }
   .pestado.es-op { color: var(--ink); }
   .pgama--temp { color: var(--muted); }
-  .pbody { background: var(--card-tint); padding: 0.7rem 0.8rem 0.8rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .pbody { flex: 1; background: var(--card-tint); padding: 0.7rem 0.8rem 0.8rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .pprecio { margin-top: auto !important; }
   .pgama { margin: 0; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); }
   .ptitulo { margin: 0; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
   .pprecio { margin: 0; font-size: 0.85rem; color: var(--muted); }
