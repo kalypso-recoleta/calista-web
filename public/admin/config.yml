@@ -290,6 +290,27 @@ collections:
           - { label: 'Desde (llegada)', name: desde, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
           - { label: 'Hasta (salida)', name: hasta, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
 
+      # --- Traducciones (versiones francesa e inglesa del sitio) ---
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción completa', name: cuerpo, widget: markdown, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción completa', name: cuerpo, widget: markdown, required: false }
       - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: Descripción completa, name: body, widget: markdown, required: false }
 

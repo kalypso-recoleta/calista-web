@@ -38,6 +38,72 @@ descripcion: |-
 
   Amenities: 🏊 piscina · 🌇 terraza con quincho · 🧺 lavandería · 🛡️ guardia 24 hs
 fecha: 2026-07-12T22:12
+fr:
+  titulo: Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
+  descripcion: |-
+    🏢 À VENDRE – Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
+    💵 USD 129 000
+
+    Appartement neuf dans un immeuble récent (2025) sur Denis Roa. 3e étage avec ascenseur. 2 chambres, 2 salles de bain, séjour avec cuisine intégrée, balcon et place de parking.
+
+    Équipements : 🏊 piscine · 🌇 terrasse avec quincho · 🧺 buanderie · 🛡️ gardiennage 24 h/24
+  cuerpo: |-
+    Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
+
+    💵 USD 129 000
+
+    Appartement moderne neuf dans le Residence ROA, immeuble récent (2025) sur Denis Roa, en plein quartier Herrera. Situé au 3e étage avec ascenseur.
+
+    Détails de l'appartement :
+
+    - 2 chambres
+    - 2 salles de bain
+    - Séjour avec cuisine intégrée, spacieux et très lumineux
+    - Balcon avec une très belle vue
+    - 1 place de parking
+    - Surface : 65 m², très bien distribués
+
+    Équipements de l'immeuble :
+
+    - 🏊 Piscine
+    - 🌇 Terrasse avec quincho
+    - 🧺 Buanderie
+    - 🛡️ Gardiennage / sécurité 24 h/24
+
+    Une excellente opportunité d'investissement ou de résidence principale, dans un quartier en plein essor, facile d'accès et à deux pas des commerces, services et grandes avenues.
+en:
+  titulo: 2-bedroom apartment · 65 m² – Residence ROA, Herrera (Asunción)
+  descripcion: |-
+    🏢 FOR SALE – 2-bed apartment · 65 m² – Residence ROA, Herrera (Asunción)
+    💵 USD 129,000
+
+    Brand-new apartment in a new building (2025) on Denis Roa. 3rd floor with lift. 2 bedrooms, 2 bathrooms, living room with integrated kitchen, balcony and parking space.
+
+    Amenities: 🏊 pool · 🌇 terrace with quincho · 🧺 laundry · 🛡️ 24-hour security
+  cuerpo: |-
+    2-bedroom apartment · 65 m² – Residence ROA, Herrera (Asunción)
+
+    💵 USD 129,000
+
+    Modern, brand-new apartment in the exclusive Residence ROA, a new building (2025) on Denis Roa, in the heart of Herrera. Located on the 3rd floor with lift.
+
+    Apartment details:
+
+    - 2 bedrooms
+    - 2 bathrooms
+    - Spacious, very bright living room with integrated kitchen
+    - Balcony with an excellent view
+    - 1 parking space
+    - Area: 65 m², very well laid out
+
+    Building amenities:
+
+    - 🏊 Pool
+    - 🌇 Terrace with quincho
+    - 🧺 Laundry
+    - 🛡️ 24-hour security
+
+    An excellent opportunity to invest or to live in, in a fast-growing area with easy access, steps from shops, services and main avenues.
 ---
 
 Departamento 2 dormitorios · 65 m² – Residence ROA, Herrera (Asunción)

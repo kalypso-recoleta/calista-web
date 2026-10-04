@@ -35,4 +35,10 @@ imagenes:
   - /uploads/07f10a93-191d-4129-a908-011d66d6c873.JPG
 descripcion: Cuenta en planta alta con 3 dormitorios uno en suite con A.A. y un baño más para compartir En planta baja cuenta con un comedor con A.A., una cocina semi abierta amoblada y semi equipada con un anafe y una campana, tiene un garage para dos coches, un patio con su parilla y una área de servicio (cuarto, lavadero, baño).
 fecha: 2026-07-15T10:37
+fr:
+  titulo: Duplex spacieux et lumineux à Lambaré
+  descripcion: 'À l''étage : 3 chambres, dont une suite climatisée, et une salle de bain partagée. Au rez-de-chaussée : salle à manger climatisée, cuisine semi-ouverte meublée et semi-équipée (plaque de cuisson et hotte), garage pour deux voitures, patio avec barbecue et espace de service (chambre, buanderie, salle de bain).'
+en:
+  titulo: Spacious, bright duplex in Lambaré
+  descripcion: 'Upstairs: 3 bedrooms, one en suite with air conditioning, plus a shared bathroom. Downstairs: air-conditioned dining room, semi-open furnished kitchen, semi-equipped with hob and extractor hood, two-car garage, patio with barbecue and a service area (room, laundry, bathroom).'
 ---

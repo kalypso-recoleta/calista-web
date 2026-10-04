@@ -1,4 +1,5 @@
 ---
+import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 import { slugTemporal, reservasJson, precioTxt, LOCALE, tarifasDe, type Temporal } from './datos';
@@ -8,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 const loc = LOCALE[lang];
-const d = it.data;
+const d = localizar(it.data, lang);
 const foto = d.portada_foto || d.imagenes[0];
 const r = tarifasDe(it)[0]; // 1re ligne de la grille = « Desde… »
 ---

@@ -1,4 +1,5 @@
 ---
+import { localizar, cuerpoTraducido } from '../lib/traduccion';
 import { slugify } from '../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { img } from '../lib/cloudinary';
@@ -16,7 +17,7 @@ interface Props {
   bien: CollectionEntry<'biens'>;
 }
 const { bien } = Astro.props;
-const d = bien.data;
+const d = localizar(bien.data, getLangFromUrl(Astro.url));
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

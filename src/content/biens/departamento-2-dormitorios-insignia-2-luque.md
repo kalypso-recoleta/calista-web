@@ -34,6 +34,48 @@ descripcion: |-
   DISTRIBUCIÓN
   2 dormitorios (1 en suite) · 2 baños (suite + social) ·
   sala-comedor con cocina integrada · 53 m² totales
+fr:
+  titulo: Appartement 2 chambres Insignia 2, Luque
+  descripcion: |-
+    Deux chambres, dont la principale en suite, plus une salle d'eau : deux salles de bain complètes sur 53 m², ce qui est rare pour cette typologie. Séjour avec cuisine intégrée.
+
+    DISTRIBUTION
+    2 chambres (1 suite) · 2 salles de bain (suite + invités) · séjour avec cuisine intégrée · 53 m² au total
+  cuerpo: |-
+    Deux chambres, dont la principale en suite, plus une salle d'eau : deux salles de bain complètes sur 53 m², ce qui est rare pour cette typologie. Séjour avec cuisine intégrée.
+
+    DISTRIBUTION
+
+    2 chambres (1 suite) · 2 salles de bain (suite + invités) · séjour avec cuisine intégrée · 53 m² au total
+
+    LA RÉSIDENCE
+
+    Résidence privée avec quincho.
+
+    EMPLACEMENT
+
+    Luque, l'une des zones à la plus forte croissance de l'agglomération, avec un accès rapide à l'aéroport Silvio Pettirossi et aux grands axes vers Asunción.
+en:
+  titulo: 2-bedroom apartment Insignia 2, Luque
+  descripcion: |-
+    Two bedrooms, the main one en suite, plus a guest bathroom: two full bathrooms in 53 m², rare for this layout. Living-dining room with integrated kitchen.
+
+    LAYOUT
+    2 bedrooms (1 en suite) · 2 bathrooms (en suite + guest) · living-dining room with integrated kitchen · 53 m² in total
+  cuerpo: |-
+    Two bedrooms, the main one en suite, plus a guest bathroom: two full bathrooms in 53 m², rare for this layout. Living-dining room with integrated kitchen.
+
+    LAYOUT
+
+    2 bedrooms (1 en suite) · 2 bathrooms (en suite + guest) · living-dining room with integrated kitchen · 53 m² in total
+
+    THE COMMUNITY
+
+    Private community with quincho.
+
+    LOCATION
+
+    Luque, one of the fastest-growing areas of the metropolitan region, with quick access to Silvio Pettirossi airport and the main roads into Asunción.
 ---
 
 Dos dormitorios, el principal en suite, más un baño social: dos baños completos en 53 m², algo poco frecuente en esta tipología. Sala-comedor con cocina integrada.

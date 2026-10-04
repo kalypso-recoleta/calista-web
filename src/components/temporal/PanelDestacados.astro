@@ -1,4 +1,5 @@
 ---
+import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 /**
  * Bande « Destacados » sous les filtres des pages de listes : annonces cochées
  * « panel lateral » dans l'admin, de la même rubrique. Une seule ligne : on en
@@ -29,7 +30,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
       <p class="panel-tit">★ {t('temp.destacados')}</p>
       <div class="panel-fila">
       {bienes.map((b) => {
-        const d = b.data;
+        const d = localizar(b.data, lang);
         return (
           <a class="pcard" href={L(`/propiedad/${slugify(b.id)}`)}>
             <div class="pmedia">
@@ -44,7 +45,7 @@ const textos = { disponible: t('temp.disponible'), alquilado: t('temp.alquilado'
         );
       })}
       {items.map((it) => {
-        const d = it.data;
+        const d = localizar(it.data, lang);
         const r = tarifasDe(it)[0];
         return (
           <a class="pcard" href={L(`/alquiler-temporal/${slugTemporal(it)}`)} data-reservas={reservasJson(it)}>

@@ -33,6 +33,7 @@ const tarifasSchema = z
 const reservasSchema = z
   .preprocess((v) => (v == null ? [] : v), z.array(z.object({ desde: fechaTemp(), hasta: fechaTemp() })))
   .default([]);
+const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), descripcion: strOpc(), cuerpo: strOpc() }).optional());
 const listaTxt = z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]);
 
 /**
@@ -113,6 +114,10 @@ const biens = defineCollection({
     incluye: listaTxt,
     tarifas: tarifasSchema,
     reservas: reservasSchema,
+
+    // --- Traductions (pages FR / EN) : vide = texte espagnol ---
+    fr: tradSchema,
+    en: tradSchema,
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
     // Photo de couverture explicite ; sinon la 1ère de la liste

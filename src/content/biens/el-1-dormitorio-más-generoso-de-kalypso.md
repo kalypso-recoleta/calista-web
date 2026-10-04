@@ -28,4 +28,16 @@ descripcion: |-
   Desde Gs. 497.250.000 (USD 81 933) · 10 % de entrega + 32 cuotas sin intereses.
   www.kalypso.com.py
 fecha: 2026-07-15T12:17
+fr:
+  titulo: Le 1 chambre le plus généreux de Kalypso
+  descripcion: |-
+    Le 1 chambre le plus généreux : 48,13 m² habitables + balcon de 9,69 m². Grande chambre, séjour indépendant, cuisine avec buanderie et salle de bain complète. Presque le confort d'un 2 chambres, au prix d'un 1 chambre.
+    À partir de Gs. 497 250 000 (USD 81 933) · 10 % à la réservation + 32 mensualités sans intérêts.
+    www.kalypso.com.py
+en:
+  titulo: The most generous 1-bedroom at Kalypso
+  descripcion: |-
+    The most generous 1-bedroom: 48.13 m² of living space + 9.69 m² balcony. Large bedroom, separate living-dining room, kitchen with laundry and full bathroom. Almost the comfort of a 2-bedroom at the price of a 1-bedroom.
+    From Gs. 497,250,000 (USD 81,933) · 10 % deposit + 32 interest-free instalments.
+    www.kalypso.com.py
 ---

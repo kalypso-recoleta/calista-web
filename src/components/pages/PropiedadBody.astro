@@ -1,4 +1,5 @@
 ---
+import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 import { slugify } from '../../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
@@ -23,7 +24,8 @@ interface Props {
   bien: CollectionEntry<'biens'>;
 }
 const { bien } = Astro.props;
-const d = bien.data;
+const d = localizar(bien.data, getLangFromUrl(Astro.url));
+const htmlTraducido = cuerpoTraducido(bien.data, getLangFromUrl(Astro.url));
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -32,7 +34,7 @@ const L = (p: string) => localizePath(p, lang);
 const { Content } = await render(bien);
 
 const url = new URL(`/propiedad/${slugify(bien.id)}`, Astro.site).toString();
-const wa = whatsappBien({ titulo: d.titulo, ref: slugify(bien.id), url });
+const wa = whatsappBien({ titulo: bien.data.titulo, ref: slugify(bien.id), url });
 const superficie = formatSuperficie(d, lang);
 // La portada explicite passe en tête de galerie et sert d'image de partage
 const fotos = d.portada_foto
@@ -140,7 +142,7 @@ const specs = [
           }
 
           <div class="prose">
-            <Content />
+            {htmlTraducido ? <Fragment set:html={htmlTraducido} /> : <Content />}
           </div>
 
           <div class="mapa">

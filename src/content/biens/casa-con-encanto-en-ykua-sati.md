@@ -53,6 +53,44 @@ descripcion: |-
 
   Una propiedad excepcional que combina la calidez de la arquitectura tradicional con una vida orientada al jardín. Construida en 1998 y mantenida en perfecto estado, ofrece 270 m² construidos sobre un terreno de 531 m².
 fecha: 2026-07-09T14:01
+fr:
+  titulo: Maison de charme à Ykua Satí
+  descripcion: 'Une propriété exceptionnelle qui allie la chaleur de l''architecture traditionnelle à une vie tournée vers le jardin. Construite en 1998 et parfaitement entretenue : 270 m² construits sur un terrain de 531 m².'
+  cuerpo: |-
+    Maison de charme à Ycua Satí
+
+    Une propriété exceptionnelle qui allie la chaleur de l'architecture traditionnelle à une vie tournée vers le jardin. Construite en 1998 et parfaitement entretenue, elle offre 270 m² construits sur un terrain de 531 m².
+
+    Séjours spacieux et lumineux avec cheminée, cuisine équipée en bois massif, et un extérieur de rêve : jardin paysager, piscine privée et quincho couvert avec barbecue — pensé pour recevoir toute l'année.
+
+    À l'étage, 3 chambres (dont 1 suite), un salon privé et une grande terrasse avec vue sur la verdure du quartier. À quelques minutes à pied du Paseo La Galería, dans un quartier calme, prête à habiter.
+
+    🏡 270 m² · Terrain 531 m² · 3 chambres · 3 salles de bain · Piscine
+
+    📍 Quartier Ykua Satí, Asunción
+
+    💵 USD 550 000
+
+    📩 Prenez rendez-vous pour une visite.
+en:
+  titulo: Charming house in Ykua Satí
+  descripcion: 'An exceptional property combining the warmth of traditional architecture with garden-oriented living. Built in 1998 and kept in perfect condition: 270 m² built on a 531 m² plot.'
+  cuerpo: |-
+    Charming house in Ycua Satí
+
+    An exceptional property combining the warmth of traditional architecture with garden-oriented living. Built in 1998 and kept in perfect condition, it offers 270 m² built on a 531 m² plot.
+
+    Spacious, bright living rooms with a fireplace, a fitted solid-wood kitchen, and a dream outdoor space: landscaped garden, private pool and covered quincho with barbecue — designed for entertaining all year round.
+
+    Upstairs, 3 bedrooms (1 en suite), a private lounge and a large terrace overlooking the greenery of the neighbourhood. A few minutes' walk from Paseo La Galería, in a quiet area, ready to move in.
+
+    🏡 270 m² · Plot 531 m² · 3 bed · 3 bath · Pool
+
+    📍 Ykua Satí, Asunción
+
+    💵 USD 550,000
+
+    📩 Book your visit.
 ---
 
 Casa con encanto en Ycua Satí 

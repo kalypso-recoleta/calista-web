@@ -32,4 +32,22 @@ descripcion: |-
   - Dormitorio con placard y aire acondicionado
   - Balcón
 fecha: 2026-07-27T11:58
+fr:
+  titulo: 'À louer : appartement 1 chambre à deux rues de Primer Presidente, quartier Mburucuyá'
+  descripcion: |-
+    Appartement neuf et lumineux d'une chambre, idéal pour une personne ou un couple.
+    Il comprend :
+    - Séjour spacieux climatisé
+    - Cuisine meublée et équipée, avec plaque de cuisson et hotte
+    - Chambre avec placard et climatisation
+    - Balcon
+en:
+  titulo: 'For rent: 1-bedroom apartment two blocks from Primer Presidente, Mburucuyá'
+  descripcion: |-
+    Brand-new, bright 1-bedroom apartment, ideal for one person or a couple.
+    It includes:
+    - Spacious air-conditioned living room
+    - Furnished, fitted kitchen with hob and extractor
+    - Bedroom with built-in wardrobe and air conditioning
+    - Balcony
 ---

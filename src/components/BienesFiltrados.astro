@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import PropertyCard from './PropertyCard.astro';
 import { formatUbicacion } from '../lib/format';
 import { ciudades, barriosPorCiudad as barriosMaestros } from '../lib/site';
+import { getLangFromUrl } from '../i18n/utils';
 
 interface Props {
   biens: CollectionEntry<'biens'>[];
@@ -35,41 +36,43 @@ for (const c of Object.keys(barriosPorCiudad)) {
   );
 }
 
-const tipoLabels: Record<string, string> = {
-  casa: 'Casas',
-  departamento: 'Departamentos',
-  duplex: 'Dúplex',
-  terreno: 'Terrenos',
-  oficina: 'Oficinas',
-  local: 'Locales',
-  deposito: 'Depósitos',
-  quinta: 'Quintas',
-};
+const lang = getLangFromUrl(Astro.url);
+// Textes des filtres dans la langue de la page
+const F = {
+  es: { buscar: 'Buscar por título, barrio…', ciudades: 'Todas las ciudades', barrios: 'Todos los barrios', tipo: 'Todo tipo', dorm: 'Dormitorios', banos: 'Baños', limpiar: 'Limpiar', props: 'propiedades', vacio: 'No encontramos propiedades con esos criterios. Probá ampliar la búsqueda o escribinos directamente.',
+        tipos: { casa: 'Casas', departamento: 'Departamentos', duplex: 'Dúplex', terreno: 'Terrenos', oficina: 'Oficinas', local: 'Locales', deposito: 'Depósitos', quinta: 'Quintas' } },
+  fr: { buscar: 'Rechercher par titre, quartier…', ciudades: 'Toutes les villes', barrios: 'Tous les quartiers', tipo: 'Tous types', dorm: 'Chambres', banos: 'Salles de bain', limpiar: 'Effacer', props: 'biens', vacio: 'Aucun bien ne correspond à ces critères. Élargissez la recherche ou écrivez-nous directement.',
+        tipos: { casa: 'Maisons', departamento: 'Appartements', duplex: 'Duplex', terreno: 'Terrains', oficina: 'Bureaux', local: 'Locaux commerciaux', deposito: 'Entrepôts', quinta: 'Maisons de campagne' } },
+  en: { buscar: 'Search by title, area…', ciudades: 'All cities', barrios: 'All neighbourhoods', tipo: 'All types', dorm: 'Bedrooms', banos: 'Bathrooms', limpiar: 'Clear', props: 'properties', vacio: 'No properties match these criteria. Try widening your search or write to us directly.',
+        tipos: { casa: 'Houses', departamento: 'Apartments', duplex: 'Duplexes', terreno: 'Plots', oficina: 'Offices', local: 'Retail units', deposito: 'Warehouses', quinta: 'Country houses' } },
+}[lang] ?? null;
+const tx = F!;
+const tipoLabels: Record<string, string> = tx.tipos;
 ---
 
-<div class="filtros" data-filtros hidden={sinFiltros}>
+<div class="filtros" data-filtros data-todos-barrios={tx.barrios} hidden={sinFiltros}>
   <div class="campo busca">
     <input
       type="search"
-      placeholder="Buscar por título, barrio…"
+      placeholder={tx.buscar}
       data-f="busca"
       aria-label="Buscar"
     />
   </div>
   <div class="campo">
     <select data-f="ciudad" aria-label="Ciudad">
-      <option value="">Todas las ciudades</option>
+      <option value="">{tx.ciudades}</option>
       {ciudades.map((c) => <option value={c}>{c}</option>)}
     </select>
   </div>
   <div class="campo">
     <select data-f="barrio" aria-label="Barrio">
-      <option value="">Todos los barrios</option>
+      <option value="">{tx.barrios}</option>
     </select>
   </div>
   <div class="campo">
     <select data-f="tipo" aria-label="Tipo">
-      <option value="">Todo tipo</option>
+      <option value="">{tx.tipo}</option>
       {tipos.map((t) => <option value={t}>{tipoLabels[t] ?? t}</option>)}
     </select>
   </div>
@@ -77,7 +80,7 @@ const tipoLabels: Record<string, string> = {
     mostrarDormitorios && (
       <div class="campo">
         <select data-f="dorm" aria-label="Dormitorios">
-          <option value="">Dormitorios</option>
+          <option value="">{tx.dorm}</option>
           <option value="1">1+</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -90,7 +93,7 @@ const tipoLabels: Record<string, string> = {
     mostrarBanos && (
       <div class="campo">
         <select data-f="banos" aria-label="Baños">
-          <option value="">Baños</option>
+          <option value="">{tx.banos}</option>
           <option value="1">1+</option>
           <option value="2">2+</option>
           <option value="3">3+</option>
@@ -99,14 +102,14 @@ const tipoLabels: Record<string, string> = {
       </div>
     )
   }
-  <button type="button" class="reset" data-reset hidden>Limpiar</button>
+  <button type="button" class="reset" data-reset hidden>{tx.limpiar}</button>
 </div>
 
 <script type="application/json" data-barrios set:html={JSON.stringify(barriosPorCiudad)}></script>
 
 <slot name="destacados" />
 
-<p class="contador" hidden={sinFiltros}><span data-contador>{biens.length}</span> propiedades</p>
+<p class="contador" hidden={sinFiltros}><span data-contador>{biens.length}</span> {tx.props}</p>
 
 <div class="grid-biens" data-grid>
   {
@@ -127,8 +130,7 @@ const tipoLabels: Record<string, string> = {
 </div>
 
 <p class="vacio" data-vacio hidden>
-  No encontramos propiedades con esos criterios. Probá ampliar la búsqueda o
-  escribinos directamente.
+  {tx.vacio}
 </p>
 
 <style>
@@ -229,7 +231,7 @@ const tipoLabels: Record<string, string> = {
         ciudad && barriosPorCiudad[ciudad] ? barriosPorCiudad[ciudad] : todosBarrios;
       const actual = barrioSel.value;
       barrioSel.innerHTML =
-        '<option value="">Todos los barrios</option>' +
+        `<option value="">${barra.getAttribute('data-todos-barrios') || ''}</option>` +
         lista.map((b) => `<option value="${b}">${b}</option>`).join('');
       barrioSel.value = lista.includes(actual) ? actual : '';
     }

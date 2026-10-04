@@ -42,6 +42,58 @@ descripcion: |-
 
   Lista para convertirse en el hogar de tus sueños.
 fecha: 2026-07-12T22:38
+fr:
+  titulo: Maison à vendre sur Concordia — 250 m² avec piscine, à deux pas du Lycée français
+  descripcion: |-
+    Avenida Concordia | USD 295 000
+
+    250 m² à une minute à pied du Lycée français. 3 chambres (dont 1 suite), séjour spacieux et lumineux, et un extérieur à profiter toute l'année : piscine, barbecue et jardin.
+
+    Prête à devenir la maison de vos rêves.
+  cuerpo: |-
+    🏡 Maison à vendre - Concordia | USD 295 000
+
+    Certains emplacements ne se trouvent pas deux fois. Cette maison est située sur Concordia, à une minute à pied seulement du Lycée français : confort, espace et un quartier imbattable, tout au même endroit.
+
+    250 m² construits, pensés pour bien vivre dès le premier jour :
+
+    🛏️ 3 grandes chambres, dont une suite
+
+    🚿 Salle de bain partagée pour les deux autres chambres
+
+    🛋️ Séjour très spacieux et lumineux
+
+    🏊 Piscine, barbecue et un très beau jardin pour recevoir toute l'année
+
+    Et une opportunité en plus : l'actuelle pièce de réception, un ancien garage transformé, sera entièrement rénovée ; vous pourrez donc personnaliser cet espace à votre goût.
+
+    Une maison prête à devenir la maison de vos rêves, dans l'un des meilleurs quartiers d'Asunción.
+en:
+  titulo: House for sale on Concordia — 250 m² with pool, steps from the French School
+  descripcion: |-
+    Avenida Concordia | USD 295,000
+
+    250 m², one minute's walk from the French School. 3 bedrooms (1 en suite), a spacious, bright living room and outdoor space to enjoy all year: pool, barbecue and garden.
+
+    Ready to become your dream home.
+  cuerpo: |-
+    🏡 House for sale - Concordia | USD 295,000
+
+    Some locations don't come up twice. This house is on Concordia, just one minute's walk from the French School: comfort, space and an unbeatable area, all in one place.
+
+    250 m² built, designed for good living from day one:
+
+    🛏️ 3 large bedrooms, one en suite
+
+    🚿 Shared bathroom for the other two bedrooms
+
+    🛋️ Very spacious, bright living room
+
+    🏊 Pool, barbecue and a lovely garden for entertaining all year round
+
+    And an extra opportunity: the current reception room, a converted former garage, will be fully renovated, so you can customise the space to your taste.
+
+    A house ready to become your dream home, in one of the best areas of Asunción.
 ---
 
 🏡 Casa en venta - Concordia | USD 295.000

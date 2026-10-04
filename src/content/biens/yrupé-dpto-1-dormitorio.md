@@ -58,6 +58,48 @@ reservas:
   - desde: 2026-09-19
     hasta: 2026-12-18
 fecha: 2026-10-04T08:10:00
+fr:
+  titulo: YRUPÉ – Appartement 1 chambre
+  descripcion: 'Appartement meublé d''une chambre à Mburucuyá, première Résidence Kalypso : une grande fresque de yrupés, balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct.'
+  cuerpo: |-
+    **Yrupé, la première Résidence Kalypso**
+
+    En ouvrant la porte, une grande fresque de yrupés vous accueille : le nénuphar des eaux du Paraguay qui donne son nom à l'appartement. Discret de l'extérieur, il est plein de couleur et de calme à l'intérieur.
+
+    **Le séjour** est spacieux et lumineux : canapé avec pouf, table ronde pour quatre, coin bureau pour travailler, Smart TV et climatisation. Une baie vitrée coulissante donne sur un balcon avec deux fauteuils.
+
+    **La chambre** est elle aussi climatisée, avec table de chevet et grand placard.
+
+    **La cuisine est équipée :** plaque de cuisson, hotte, micro-ondes, réfrigérateur-congélateur, air fryer, bouilloire, cafetière italienne et lave-linge.
+
+    **La salle de bain** a une grande douche avec paroi vitrée, et des serviettes sont à disposition.
+
+    **Séjour :** de 7 jours à 6 mois.
+    **Inclus :** wifi. Les autres services dépendent de la durée du séjour.
+    **En direct** avec nous, sans intermédiaire ni plateforme.
+
+    Consultez les disponibilités dans le calendrier et écrivez-nous avec vos dates.
+en:
+  titulo: YRUPÉ – 1-bedroom apartment
+  descripcion: 'Furnished 1-bedroom apartment in Mburucuyá, the first Kalypso Residence: a large water-lily mural, balcony, fitted kitchen and air conditioning. From 7 days to 6 months, booked directly with us.'
+  cuerpo: |-
+    **Yrupé, the first Kalypso Residence**
+
+    As you open the door, a large mural of yrupés greets you: the water lily of the Paraguay River that gives the apartment its name. Discreet on the outside, it is full of colour and calm inside.
+
+    **The living-dining room** is spacious and bright: sofa with ottoman, round table for four, desk corner for working, Smart TV and air conditioning. A sliding glass door opens onto a balcony with two armchairs.
+
+    **The bedroom** is also air-conditioned, with a bedside table and a large wardrobe.
+
+    **The kitchen is fully equipped:** hob, extractor hood, microwave, fridge-freezer, air fryer, kettle, moka pot and washing machine.
+
+    **The bathroom** has a large shower with a glass screen, and towels are provided.
+
+    **Stay:** from 7 days to 6 months.
+    **Included:** wifi. Other services depend on the length of stay.
+    **Book directly** with us, no intermediaries or platforms.
+
+    Check availability in the calendar and send us your dates.
 ---
 
 **Yrupé, la primera Residencia Kalypso**

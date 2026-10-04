@@ -32,4 +32,14 @@ descripcion: |-
   Luminoso monoambiente amplio de 1 dormitorio en edificio nuevo con ascensor, con vista panorámica despejada sobre Asunción y el río Paraguay. Living-comedor amplio, cocina equipada con placa infrarroja, dormitorio con placard y aire acondicionado, lavadero y gran balcón donde disfrutar la puesta de sol sobre el río. Piso porcelanato brillante. Expensas incluidas en el precio.
   1 dormitorio · 1 baño · Balcón · Sin cochera
 fecha: 2026-07-15T11:19
+fr:
+  titulo: 1 chambre 59 m² dans le quartier Jara
+  descripcion: |-
+    Grand appartement lumineux d'une chambre dans un immeuble neuf avec ascenseur, avec une vue panoramique dégagée sur Asunción et le fleuve Paraguay. Séjour spacieux, cuisine équipée avec plaque infrarouge, chambre avec placard et climatisation, buanderie et grand balcon pour profiter du coucher de soleil sur le fleuve. Sol en grès cérame brillant. Charges incluses dans le prix.
+    1 chambre · 1 salle de bain · Balcon · Sans parking
+en:
+  titulo: 1 bedroom, 59 m², in Barrio Jara
+  descripcion: |-
+    Bright, spacious 1-bedroom apartment in a new building with lift, with an open panoramic view over Asunción and the Paraguay River. Large living-dining room, fitted kitchen with infrared hob, bedroom with built-in wardrobe and air conditioning, laundry area and a large balcony to enjoy the sunset over the river. Glossy porcelain tile floors. Building fees included in the price.
+    1 bedroom · 1 bathroom · Balcony · No parking
 ---
