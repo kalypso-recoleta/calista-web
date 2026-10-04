@@ -4,6 +4,7 @@ operacion: venta
 tipo: departamento
 estado: disponible
 destacado: true
+lateral: true
 portada: true
 exclusivo: false
 desarrollo: false
