@@ -18,6 +18,16 @@ banos: 1
 superficie_construida: 49
 financiacion: false
 portada_foto: /uploads/IMG_9700.jpeg
+imagenes:
+  - /uploads/Capture d’écran 2026-10-04 à 7.45.33 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.45.45 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.01 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.12 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.23 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.33 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.43 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.57 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.50.35 AM.png
 descripcion: 'Departamento amoblado de un dormitorio en Mburucuyá, primera Residencia Kalypso: un gran mural de yrupés, balcón, cocina equipada y aire acondicionado. De 7 días a 6 meses, en trato directo.'
 gama: kalypso
 residencia: YRUPÉ
