@@ -27,10 +27,10 @@ const nav = [
 
 // Chemin courant sans préfixe de langue, pour l'état actif et le sélecteur
 const basePath = stripLocale(Astro.url.pathname).replace(/\/$/, '') || '/';
-// Sur les pages Alquiler temporal, le bouton WhatsApp va au numéro dédié
+// Sur les pages Alquiler temporal et Tasaciones, le bouton WhatsApp va au numéro d'Hélène
 const wa = whatsappLink(
   t('nav.wa_consulta'),
-  basePath.startsWith('/alquiler-temporal') ? site.whatsappTemporal : site.whatsapp
+  basePath.startsWith('/alquiler-temporal') || basePath === '/tasaciones' ? site.whatsappTemporal : site.whatsapp
 );
 ---
 
