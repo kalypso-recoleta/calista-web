@@ -45,7 +45,7 @@ const textos = {
             <section class={`grupo grupo--${g.key}`}>
               <header class="grupo-cab">
                 {g.key === 'kalypso' && logoKalypso && (
-                  <img class="grupo-logo" src={logoKalypso} alt="Kalypso" height="44" />
+                  <img class="grupo-logo" src={logoKalypso} alt="Kalypso" height="68" />
                 )}
                 <h2>{g.titulo}</h2>
                 <p>{g.intro}</p>
@@ -158,7 +158,7 @@ const textos = {
     .grupos { grid-template-columns: 1fr; gap: 3rem; }
     .grupos > .grupo { display: block; }
   }
-  .grupo-logo { display: block; height: 44px; width: auto; margin-bottom: 0.6rem; }
+  .grupo-logo { display: block; height: 68px; width: auto; margin-bottom: 0.6rem; }
   .con-panel { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 2rem; align-items: start; }
   @media (max-width: 1000px) { .con-panel { grid-template-columns: 1fr; } }
   .vacio { margin: 0; padding: 1.2rem 1.4rem; background: #fff; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); }
