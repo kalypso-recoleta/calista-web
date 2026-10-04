@@ -32,6 +32,32 @@ descripcion: 'Departamento amoblado de un dormitorio en Mburucuyá, primera Resi
 gama: kalypso
 residencia: YRUPÉ
 huespedes: 4
+tarifas:
+  - duracion: s1
+    precio: 245
+    unidad: semana
+  - duracion: s2
+    precio: 420
+    unidad: total
+  - duracion: s3
+    precio: 630
+    unidad: total
+  - duracion: m1
+    precio: 750
+    unidad: total
+  - duracion: m2
+    precio: 750
+    unidad: total
+  - duracion: m3
+    precio: 680
+    unidad: total
+incluye:
+  - de una semana hasta 1 mes incluye Ande, limpieza semanal y wifi.
+  - A partir de un mes solo incluye wifi.
+reservas:
+  - desde: 2026-09-19
+    hasta: 2026-12-18
+fecha: 2026-10-04T08:10:00
 ---
 
 **Yrupé, la primera Residencia Kalypso**
