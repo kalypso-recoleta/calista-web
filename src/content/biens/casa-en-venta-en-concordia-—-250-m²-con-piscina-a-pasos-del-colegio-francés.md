@@ -1,9 +1,12 @@
 ---
 titulo: Casa en venta en Concordia — 250 m² con piscina, a pasos del Colegio Francés
+en_linea: true
 operacion: venta
 tipo: casa
 estado: disponible
 destacado: true
+lateral: false
+portada: false
 exclusivo: false
 desarrollo: false
 precio: 295000
@@ -11,6 +14,7 @@ moneda: USD
 periodo: total
 ciudad: Asunción
 barrio: Barrio Jara
+ubicacion: '{"type":"Point","coordinates":[-417.601841,-25.2788702]}'
 dormitorios: 3
 banos: 3
 cocheras: 2
@@ -41,7 +45,7 @@ descripcion: |-
   250 m² a un minuto a pie del Colegio Francés. 3 dormitorios (1 en suite), estar amplio y luminoso, y un exterior para disfrutar todo el año: piscina, parrilla y jardín.
 
   Lista para convertirse en el hogar de tus sueños.
-fecha: 2026-07-12T22:38
+gama: otros
 fr:
   titulo: Maison à vendre sur Concordia — 250 m² avec piscine, à deux pas du Lycée français
   descripcion: |-
@@ -94,6 +98,7 @@ en:
     And an extra opportunity: the current reception room, a converted former garage, will be fully renovated, so you can customise the space to your taste.
 
     A house ready to become your dream home, in one of the best areas of Asunción.
+fecha: 2026-07-12T22:38
 ---
 
 🏡 Casa en venta - Concordia | USD 295.000
