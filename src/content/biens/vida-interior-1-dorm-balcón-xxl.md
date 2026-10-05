@@ -1,17 +1,20 @@
 ---
 titulo: Vida interior, 1 dorm, balcón XXL
+en_linea: true
 operacion: venta
 tipo: departamento
 estado: disponible
 destacado: true
+lateral: false
+portada: false
 exclusivo: false
 desarrollo: true
-precio: 419250000
+precio: 429750000
 moneda: PYG
 periodo: total
 ciudad: Asunción
 barrio: Recoleta
-ubicacion: https://maps.app.goo.gl/fm2AC6t15N6iNJbS9
+ubicacion: '{"type":"Point","coordinates":[-57.586133,-25.3065587]}'
 dormitorios: 1
 banos: 1
 superficie_construida: 48
@@ -27,7 +30,7 @@ imagenes:
 descripcion: |-
   El del gran balcón: 37,19 m² internos + 11,22 m² de balcón, el más amplio de todas las tipologías. Dormitorio independiente, sala/comedor amplio, cocina integrada y baño completo. Perfecto para quienes valoran el espacio exterior.
   Desde Gs. 419.250.000 (USD 69.081) · 10 % de entrega + 32 cuotas sin intereses.
-fecha: 2026-07-15T12:04
+gama: otros
 fr:
   titulo: 'Vivre dedans comme dehors : 1 chambre, balcon XXL'
   descripcion: |-
@@ -38,4 +41,5 @@ en:
   descripcion: |-
     The one with the big balcony: 37.19 m² of living space + 11.22 m² of balcony, the largest of all types. Separate bedroom, large living-dining room, integrated kitchen and full bathroom. Perfect for those who value outdoor space.
     From Gs. 419,250,000 (USD 69,081) · 10 % deposit + 32 interest-free instalments.
+fecha: 2026-07-15T12:04
 ---
