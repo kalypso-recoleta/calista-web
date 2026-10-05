@@ -1,18 +1,20 @@
 ---
-titulo: Tu monoambiente a estrenar en Recoleta, desde USD 4.150
+titulo: Tu monoambiente a estrenar en Recoleta
+en_linea: true
 operacion: venta
 tipo: departamento
 estado: disponible
 destacado: false
+lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-precio: 269750000
+precio: 276500000
 moneda: PYG
 periodo: total
 ciudad: Asunción
 barrio: Recoleta
-ubicacion: https://maps.app.goo.gl/fm2AC6t15N6iNJbS9
+ubicacion: '{"type":"Point","coordinates":[-57.5862734,-25.3065503]}'
 dormitorios: 0
 banos: 1
 superficie_construida: 31
@@ -30,7 +32,7 @@ descripcion: |-
   Monoambientes de 31 m² con balcón, cocina equipada y aire acondicionado. Amenities premium en la azotea: piscina, quincho climatizado, coworking y terraza panorámica.
   Renta estimada de hasta 11,75 % bruto anual y valorización proyectada del 25-35 % a la entrega (mayo 2029). Desarrollado por El Solar SRL: 20 edificios entregados, 100 % vendidos.
   📞 Consultá la grilla de precios y tu simulación de cuotas.
-fecha: 2026-07-15T11:42
+gama: otros
 fr:
   titulo: Votre studio neuf à Recoleta, à partir de USD 4 150
   descripcion: |-
@@ -157,6 +159,7 @@ en:
     📞 **Contact us today**
 
     Ask for the **full price list of the 40 apartments** with prices and calculated yield per unit. We will send you plans, renderings and a personalised instalment simulation.
+fecha: 2026-07-15T11:42
 ---
 
 Sí, leíste bien. Con **USD 4.150** reservás hoy tu monoambiente a estrenar en una de las mejores zonas de Asunción.
