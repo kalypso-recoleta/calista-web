@@ -20,13 +20,12 @@ banos: 1
 superficie_construida: 48
 entrega: 31/05/2029
 financiacion: true
+portada_foto: /uploads/PHOTO-2026-07-28-22-39-20 copie.jpg
 imagenes:
-  - /uploads/kalypso-09.jpg
-  - /uploads/kalypso-08.jpg
-  - /uploads/kalypso-07.jpg
-  - /uploads/kalypso-06.jpg
-  - /uploads/kalypso-04.jpg
-  - /uploads/kalypso-03.jpg
+  - /uploads/PHOTO-2026-07-28-22-39-20.jpg
+  - /uploads/SALA 1.jpg
+  - /uploads/SALA 2.jpg
+  - /uploads/DORMITORIO.jpg
 descripcion: |-
   El del gran balcón: 37,19 m² internos + 11,22 m² de balcón, el más amplio de todas las tipologías. Dormitorio independiente, sala/comedor amplio, cocina integrada y baño completo. Perfecto para quienes valoran el espacio exterior.
   Desde Gs. 419.250.000 (USD 69.081) · 10 % de entrega + 32 cuotas sin intereses.
