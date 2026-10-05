@@ -81,7 +81,8 @@ const wa = whatsappLink(
         {t('nav.contactar')}
       </a>
       <button class="menu-toggle" aria-label="Menú" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <i class="burger"><span></span><span></span><span></span></i>
+        <b class="menu-label">Menu</b>
       </button>
     </div>
   </div>
@@ -208,19 +209,33 @@ const wa = whatsappLink(
     color: #fff;
   }
 
+  /* Bouton menu (écrans moyens et téléphones) : icône + mot « Menu » bien visible */
   .menu-toggle {
     display: none;
+    align-items: center;
+    gap: 0.55rem;
+    background: none;
+    border: 1.5px solid var(--violet);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    color: var(--violet);
+  }
+  .menu-toggle .burger {
+    display: flex;
     flex-direction: column;
     gap: 4px;
-    background: none;
-    border: 0;
-    padding: 8px;
-    cursor: pointer;
+  }
+  .menu-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
   .menu-toggle span {
     width: 22px;
     height: 2px;
-    background: var(--ink);
+    background: var(--violet);
     border-radius: 2px;
     transition: transform 0.2s;
   }
