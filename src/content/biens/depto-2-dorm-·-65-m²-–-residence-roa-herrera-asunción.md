@@ -1,5 +1,6 @@
 ---
 titulo: Depto 2 dorm · 65 m² – Residence ROA, Herrera (Asunción)
+en_linea: true
 operacion: venta
 tipo: departamento
 estado: disponible
@@ -13,6 +14,7 @@ moneda: USD
 periodo: total
 ciudad: Asunción
 barrio: Herrera
+ubicacion: '{"type":"Point","coordinates":[-57.5621513,-25.296299]}'
 dormitorios: 2
 banos: 2
 cocheras: 1
@@ -37,7 +39,7 @@ descripcion: |-
   Departamento a estrenar en edificio nuevo (2025) sobre Denis Roa. 3.er piso con ascensor. 2 dormitorios, 2 baños, living con cocina integrada, balcón y cochera.
 
   Amenities: 🏊 piscina · 🌇 terraza con quincho · 🧺 lavandería · 🛡️ guardia 24 hs
-fecha: 2026-07-12T22:12
+gama: otros
 fr:
   titulo: Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
   descripcion: |-
@@ -104,6 +106,7 @@ en:
     - 🛡️ 24-hour security
 
     An excellent opportunity to invest or to live in, in a fast-growing area with easy access, steps from shops, services and main avenues.
+fecha: 2026-07-12T22:12
 ---
 
 Departamento 2 dormitorios · 65 m² – Residence ROA, Herrera (Asunción)
