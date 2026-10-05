@@ -9,7 +9,7 @@ lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-precio: 565500000
+precio: 579750000
 moneda: PYG
 periodo: total
 ciudad: Asunción
@@ -20,10 +20,9 @@ banos: 2
 superficie_construida: 65
 entrega: 31/05/2029
 financiacion: true
-portada_foto: /uploads/27_post5-tipo1_1de8_portada.JPG
+portada_foto: /uploads/BALCON.jpg
 imagenes:
   - /uploads/28_post5-tipo1_2de8_living.JPG
-  - /uploads/29_post5-tipo1_3de8_balcon.JPG
   - /uploads/30_post5-tipo1_4de8_atardecer.JPG
   - /uploads/31_post5-tipo1_5de8_dormitorio.JPG
   - /uploads/32_post5-tipo1_6de8_dormitorio2.JPG
