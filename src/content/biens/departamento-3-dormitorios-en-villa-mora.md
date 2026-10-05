@@ -1,5 +1,6 @@
 ---
 titulo: Departamento 3 Dormitorios en Villa Mora
+en_linea: true
 operacion: alquiler
 tipo: departamento
 estado: disponible
@@ -13,7 +14,7 @@ moneda: PYG
 periodo: total
 ciudad: Asunción
 barrio: Villa Mora
-ubicacion: https://maps.app.goo.gl/N19R3trVwHSLc9Nq8?g_st=ic
+ubicacion: '{"type":"Point","coordinates":[-57.5859473,-25.2972963]}'
 dormitorios: 3
 banos: 4
 cocheras: 1
@@ -35,7 +36,7 @@ descripcion: |-
   3 habitaciones | 120 m² | ₲ 7.500.000
   Hermoso departamento completamente renovado de 120 m² en una de las zonas más convenientes de la ciudad, a pocos minutos del Shopping Mariscal.
   Distribución:
-fecha: 2026-07-09T09:26
+gama: otros
 fr:
   titulo: Appartement 3 chambres à Villa Morra
   descripcion: |-
@@ -154,6 +155,7 @@ en:
     🏢 Floor: 1st
 
     💲 Rent: ₲ 7,500,000 (building fees included)
+fecha: 2026-07-09T09:26
 ---
 
 ALQUILER – VILLA MORRA
