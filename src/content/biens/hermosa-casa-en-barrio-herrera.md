@@ -1,9 +1,12 @@
 ---
 titulo: Hermosa casa en Barrio Herrera
+en_linea: false
 operacion: venta
 tipo: casa
 estado: disponible
 destacado: true
+lateral: false
+portada: false
 exclusivo: true
 desarrollo: false
 precio: 589000
@@ -52,6 +55,7 @@ descripcion: |-
 
   Planta baja: salón-comedor, escritorio, baño social, cocina amoblada estilo europeo, quincho climatizado con parrilla, piscina con zona de estar y área de servicio con dormitorio y baño.
   Planta alta: sala de estar y 3 dormitorios en suite con vestidor.
+gama: otros
 fr:
   titulo: Belle maison dans le quartier Herrera
   descripcion: |-
