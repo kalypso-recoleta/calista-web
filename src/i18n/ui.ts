@@ -109,11 +109,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.hero_eyebrow': 'Inmobiliaria en Asunción',
     'home.hero_title': 'Encontrá tu lugar, con quien conoce el terreno.',
     'home.hero_lead':
-      '11 años de experiencia en el mercado inmobiliario paraguayo, acompañando a familias e inversores en Asunción y alrededores. Asesoramiento honesto, criterio real y cero presión.',
+      '11 años de experiencia en el mercado inmobiliario paraguayo, acompañando a familias e inversores en Asunción y alrededores. Asesoramiento honesto, criterio real y cero presión. Te atendemos en español, francés e inglés.',
     'home.ver_propiedades': 'Ver propiedades',
     'seo.home_title': 'Inmobiliaria en Asunción — Compra, venta y alquiler',
     'seo.home_desc':
-      'Calista Inmobiliaria: 11 años de experiencia en el mercado inmobiliario paraguayo. Casas, departamentos, terrenos y desarrollos en Asunción y alrededores. Asesoramiento honesto y atención personal.',
+      'Calista Inmobiliaria: 11 años de experiencia en el mercado inmobiliario paraguayo. Casas, departamentos, terrenos y desarrollos en Asunción y alrededores. Asesoramiento honesto y atención en español, francés e inglés.',
     'home.hablar_wa': 'Hablar por WhatsApp',
     'home.cat_comprar': 'Comprar',
     'home.cat_comprar_d': 'Casas y departamentos en venta',
@@ -573,11 +573,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.hero_eyebrow': 'Agence immobilière à Asunción',
     'home.hero_title': 'Trouvez votre lieu, avec ceux qui connaissent le terrain.',
     'home.hero_lead':
-      "11 ans d'expérience sur le marché immobilier paraguayen, à accompagner familles et investisseurs à Asunción et ses environs. Un conseil honnête, un vrai discernement et aucune pression.",
+      "11 ans d'expérience sur le marché immobilier paraguayen, à accompagner familles et investisseurs à Asunción et ses environs. Un conseil honnête, un vrai discernement et aucune pression. Agence francophone : nous vous accompagnons en français, en espagnol et en anglais.",
     'home.ver_propiedades': 'Voir les biens',
     'seo.home_title': 'Agence immobilière à Asunción — Achat, vente et location',
     'seo.home_desc':
-      "Calista Inmobiliaria : 11 ans d'expérience sur le marché immobilier paraguayen. Maisons, appartements, terrains et programmes neufs à Asunción et ses environs. Un conseil honnête et un suivi personnel.",
+      "Calista Inmobiliaria : 11 ans d'expérience sur le marché immobilier paraguayen. Maisons, appartements, terrains et programmes neufs à Asunción et ses environs. Agence francophone : conseil honnête et suivi personnel en français.",
     'home.hablar_wa': 'Discuter sur WhatsApp',
     'home.cat_comprar': 'Acheter',
     'home.cat_comprar_d': 'Maisons et appartements à vendre',
@@ -1038,11 +1038,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.hero_eyebrow': 'Real estate in Asunción',
     'home.hero_title': 'Find your place, with people who know the ground.',
     'home.hero_lead':
-      '11 years of experience in the Paraguayan real estate market, guiding families and investors in Asunción and nearby. Honest advice, real judgment and zero pressure.',
+      '11 years of experience in the Paraguayan real estate market, guiding families and investors in Asunción and nearby. Honest advice, real judgment and zero pressure. We work with you in English, Spanish and French.',
     'home.ver_propiedades': 'View properties',
     'seo.home_title': 'Real estate agency in Asunción — Buy, sell and rent',
     'seo.home_desc':
-      'Calista Inmobiliaria: 11 years of experience in the Paraguayan real estate market. Houses, apartments, land and new developments in Asunción and nearby. Honest advice and personal service.',
+      'Calista Inmobiliaria: 11 years of experience in the Paraguayan real estate market. Houses, apartments, land and new developments in Asunción and nearby. Honest advice and personal service in English, Spanish and French.',
     'home.hablar_wa': 'Chat on WhatsApp',
     'home.cat_comprar': 'Buy',
     'home.cat_comprar_d': 'Houses and apartments for sale',

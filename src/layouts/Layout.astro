@@ -65,7 +65,10 @@ const orgSchema = {
   },
   areaServed: ['Asunción', 'Gran Asunción', 'Paraguay'],
   knowsLanguage: ['es', 'fr', 'en'],
-  description: site.lema,
+  // Description dans la langue de la page (mentionne les langues parlées)
+  description: t('seo.home_desc'),
+  // Profils officiels de l'agence (aide les moteurs et les IA à relier les sources)
+  sameAs: [site.googleResenas, site.instagram, site.facebook].filter(Boolean),
 };
 ---
 
