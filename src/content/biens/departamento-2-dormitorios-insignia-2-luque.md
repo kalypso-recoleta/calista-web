@@ -1,9 +1,11 @@
 ---
 titulo: Departamento 2 dormitorios Insignia 2 Luque
+en_linea: true
 operacion: venta
 tipo: departamento
 estado: disponible
 destacado: true
+lateral: true
 portada: false
 exclusivo: false
 desarrollo: false
