@@ -1,8 +1,9 @@
 ---
-titulo: "Comprar un departamento en pozo: qué revisar antes de firmar"
-descripcion: "Precio, fecha de entrega, cláusulas prohibidas, garantías: los puntos a controlar en un contrato de preventa en Paraguay."
+titulo: 'Comprar un departamento en pozo: qué revisar antes de firmar'
+descripcion: 'Precio, fecha de entrega, cláusulas prohibidas, garantías: los puntos a controlar en un contrato de preventa en Paraguay.'
 borrador: true
 fecha: 2026-10-07
+portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.png
 ---
 
 Comprar en pozo permite pagar en cuotas durante la obra y elegir tu unidad entre las primeras. A cambio, firmás un contrato sobre algo que todavía no existe. Estos son los puntos que conviene revisar.
@@ -42,3 +43,5 @@ El edificio debe tener un **reglamento de copropiedad** por escritura pública i
 ## Nuestro desarrollo: Kalypso Recoleta
 
 En Kalypso Recoleta se paga un 10 % de entrega y el saldo en 32 cuotas sin intereses durante la obra, con entrega prevista para mayo de 2029.
+
+Conocé Kalypso Recoleta, las unidades disponibles y las formas de pago en kalypso.com.py.
