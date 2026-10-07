@@ -1,0 +1,126 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const tt = useTranslations(lang);
+// Années calculées automatiquement (pas besoin de mettre le texte à jour chaque année) :
+// promotion immobilière depuis 2001, agence en Martinique depuis 2011, Paraguay depuis 2015.
+const an = new Date().getFullYear();
+const anos = { promo: an - 2001, mq: an - 2011, py: an - 2015 };
+const t = (k: Parameters<typeof tt>[0]) =>
+  tt(k).replace(/\{(promo|mq|py)\}/g, (_, x: keyof typeof anos) => String(anos[x]));
+const cifras = {
+  es: [[anos.promo, 'años de promoción inmobiliaria'], [anos.mq, 'años de agencia en Martinica'], [anos.py, 'años en Paraguay'], ['+100', 'propiedades gestionadas']],
+  fr: [[anos.promo, 'ans de promotion immobilière'], [anos.mq, 'ans d’agence en Martinique'], [anos.py, 'ans au Paraguay'], ['+100', 'biens gérés']],
+  en: [[anos.promo, 'years in real estate development'], [anos.mq, 'years running our agency in Martinique'], [anos.py, 'years in Paraguay'], ['100+', 'properties managed']],
+}[lang as 'es' | 'fr' | 'en']!;
+const fundadora = {
+  es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español y francés' },
+  fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français et en espagnol' },
+  en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
+}[lang as 'es' | 'fr' | 'en']!;
+const persona = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Hélène Montourcy',
+  jobTitle: fundadora.rol,
+  image: new URL('/equipo/helene-montourcy.jpg', Astro.site).toString(),
+  worksFor: { '@type': 'RealEstateAgent', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() },
+  knowsLanguage: ['es', 'fr'],
+};
+---
+
+<Layout title={t('hist.title')} description={t('hist.lead')}>
+  <section class="section">
+    <div class="container narrow">
+      <p class="eyebrow">{t('hist.eyebrow')}</p>
+      <h1>{t('hist.title')}</h1>
+
+      <p class="lead">{t('hist.lead')}</p>
+
+      <div class="fundadora">
+        <img src="/equipo/helene-montourcy.jpg" alt="Hélène Montourcy" width="600" height="600" />
+        <div>
+          <p class="nombre">Hélène Montourcy</p>
+          <p class="rol">{fundadora.rol}</p>
+          <p class="det">{fundadora.detalle}</p>
+          <p class="idiomas">{fundadora.idiomas}</p>
+        </div>
+      </div>
+
+      <ul class="cifras">
+        {cifras.map(([n, l]) => <li><strong>{n}</strong><span>{l}</span></li>)}
+      </ul>
+
+      <div class="prose">
+        <p>
+          {t('hist.p_martinica')}<a
+            href="https://www.calista.immo"
+            target="_blank"
+            rel="noopener">Calista Immobilier</a
+          >{t('hist.p_mq_b')}
+        </p>
+        <p>
+          {t('hist.p_py_a')}<a
+            href="https://elsolar.com.py"
+            target="_blank"
+            rel="noopener">EL SOLAR</a
+          >{t('hist.p_py_b')}
+        </p>
+        <p>{t('hist.p1')}</p>
+
+        <h2>{t('hist.h2_creemos')}</h2>
+        <p>{t('hist.p_creemos')}</p>
+        <p>{t('hist.p_reputacion')}</p>
+
+        <h2>{t('hist.h2_acompanamos')}</h2>
+        <p>{t('hist.p_acompanamos')}</p>
+      </div>
+
+      <div class="cta">
+        <a href={localizePath('/comprar', lang)} class="btn btn--primary">{t('hist.cta_ver')}</a>
+        <WhatsAppButton
+          href={whatsappLink('Hola Calista, me gustaría conocerlos mejor.')}
+          label={t('hist.cta_wa')}
+        />
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json" set:html={JSON.stringify(persona)} />
+</Layout>
+
+<style>
+  .narrow {
+    max-width: 760px;
+  }
+  .fundadora { display: flex; align-items: center; gap: 1.4rem; margin: 2rem 0 0.5rem; padding: 1.2rem; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .fundadora img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex: none; }
+  .fundadora p { margin: 0; }
+  .nombre { font-family: var(--display); font-size: 1.35rem; font-weight: 600; color: var(--brand); }
+  .rol { font-weight: 700; color: var(--violet); font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.15rem !important; }
+  .det { color: var(--ink); margin-top: 0.4rem !important; line-height: 1.45; }
+  .idiomas { color: var(--muted); font-size: 0.92rem; margin-top: 0.3rem !important; }
+  @media (max-width: 520px) { .fundadora { flex-direction: column; text-align: center; } }
+  .cifras { list-style: none; margin: 2rem 0 0.5rem; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem; }
+  .cifras li { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1rem 0.9rem; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 0.2rem; }
+  .cifras strong { font-family: var(--display); font-size: 2rem; line-height: 1.1; color: var(--brand); }
+  .cifras span { font-size: 0.88rem; color: var(--muted); line-height: 1.35; }
+  @media (max-width: 640px) { .cifras { grid-template-columns: 1fr 1fr; } }
+  .prose {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+  }
+  .prose h2 {
+    margin-top: 2.2rem;
+  }
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+  }
+</style>
