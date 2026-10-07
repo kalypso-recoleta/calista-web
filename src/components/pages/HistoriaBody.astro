@@ -18,9 +18,9 @@ const cifras = {
   en: [[anos.promo, 'years in real estate development'], [anos.mq, 'years running our agency in Martinique'], [anos.py, 'years in Paraguay'], ['100+', 'properties managed']],
 }[lang as 'es' | 'fr' | 'en']!;
 const fundadora = {
-  es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español, francés e inglés' },
-  fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français, espagnol et anglais' },
-  en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks English, Spanish and French' },
+  es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español y francés' },
+  fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français et en espagnol' },
+  en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
 }[lang as 'es' | 'fr' | 'en']!;
 const persona = {
   '@context': 'https://schema.org',
@@ -29,7 +29,7 @@ const persona = {
   jobTitle: fundadora.rol,
   image: new URL('/equipo/helene-montourcy.jpg', Astro.site).toString(),
   worksFor: { '@type': 'RealEstateAgent', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() },
-  knowsLanguage: ['es', 'fr', 'en'],
+  knowsLanguage: ['es', 'fr'],
 };
 ---
 
