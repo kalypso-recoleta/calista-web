@@ -266,11 +266,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Quiénes somos',
     'hist.title': 'Una inmobiliaria que se construyó sobre la confianza.',
     'hist.lead':
-      'Más de veinte años de oficio inmobiliario, dos continentes y una misma idea: tratar cada propiedad y cada cliente como si fueran propios.',
+      '{promo} años de promoción inmobiliaria, dos continentes y una misma idea: tratar cada propiedad y cada cliente como si fueran propios.',
     'hist.p1':
       'En todo este tiempo acompañamos a familias que compraron su primera casa, a propietarios que confiaron en nosotros para vender o alquilar, y a inversores que buscaban crecer con criterio. No trabajamos con volumen ni con apuro: trabajamos con personas.',
     'hist.p_martinica':
-      'Nuestra historia empezó del otro lado del Atlántico, en Martinica (Francia): más de veinte años dedicados a la promoción inmobiliaria y a la venta de propiedades. Allí, desde hace una docena de años, Hélène está al frente de nuestra agencia hermana, ',
+      'Nuestra historia empezó del otro lado del Atlántico, en Martinica (Francia): {promo} años dedicados a la promoción inmobiliaria y a la venta de propiedades. Allí, desde hace {mq} años, Hélène dirige nuestra agencia hermana, ',
     'hist.p_mq_b': '.',
     'hist.p_py_a':
       'En 2014 la familia descubrió Paraguay, y en 2015 se instaló definitivamente — con los primeros proyectos en marcha desde el primer día. De ese impulso nacieron la desarrolladora ',
@@ -733,11 +733,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Qui sommes-nous',
     'hist.title': "Une agence bâtie sur la confiance.",
     'hist.lead':
-      "Plus de vingt ans de métier immobilier, deux continents et une même idée : traiter chaque bien et chaque client comme les nôtres.",
+      "{promo} ans de promotion immobilière, deux continents et une même idée : traiter chaque bien et chaque client comme les nôtres.",
     'hist.p1':
       "Pendant toutes ces années, nous avons accompagné des familles qui achetaient leur première maison, des propriétaires qui nous ont confié une vente ou une location, et des investisseurs qui voulaient grandir avec discernement. Nous ne travaillons ni au volume ni dans la précipitation : nous travaillons avec des personnes.",
     'hist.p_martinica':
-      "Notre histoire a commencé de l'autre côté de l'Atlantique, en Martinique : plus de vingt ans consacrés à la promotion immobilière et à la vente de biens. Depuis une douzaine d'années, Hélène y dirige notre agence sœur, ",
+      "Notre histoire a commencé de l'autre côté de l'Atlantique, en Martinique : {promo} ans consacrés à la promotion immobilière et à la vente de biens. Depuis {mq} ans, Hélène y dirige notre agence sœur, ",
     'hist.p_mq_b': '.',
     'hist.p_py_a':
       "En 2014, la famille a découvert le Paraguay ; en 2015, elle s'y est installée — et les premiers projets ont démarré aussitôt. De cet élan sont nés le promoteur ",
@@ -1199,11 +1199,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.eyebrow': 'Who we are',
     'hist.title': 'An agency built on trust.',
     'hist.lead':
-      'More than twenty years in real estate, two continents and one same idea: treating every property and every client as our own.',
+      '{promo} years in real estate development, two continents and one same idea: treating every property and every client as our own.',
     'hist.p1':
       "Over all this time we've guided families buying their first home, owners who trusted us to sell or rent, and investors looking to grow wisely. We don't work by volume or in a rush: we work with people.",
     'hist.p_martinica':
-      'Our story began on the other side of the Atlantic, in Martinique (France): more than twenty years dedicated to real estate development and property sales. For a dozen years now, Hélène has led our sister agency there, ',
+      'Our story began on the other side of the Atlantic, in Martinique (France): {promo} years dedicated to real estate development and property sales. For {mq} years now, Hélène has led our sister agency there, ',
     'hist.p_mq_b': '.',
     'hist.p_py_a':
       'In 2014 the family discovered Paraguay; in 2015 they settled for good — with the first projects underway from day one. From that drive were born the developer ',
