@@ -1,7 +1,0 @@
-# L'ancienne rubrique « Guías » s'appelle maintenant « Blog »
-/guias            /blog            301!
-/guias/*          /blog/:splat     301!
-/fr/guias         /fr/blog         301!
-/fr/guias/*       /fr/blog/:splat  301!
-/en/guias         /en/blog         301!
-/en/guias/*       /en/blog/:splat  301!

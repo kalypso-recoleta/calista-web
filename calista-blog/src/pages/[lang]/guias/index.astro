@@ -1,7 +1,0 @@
----
-// Ancienne adresse : redirigée vers /fr/blog ou /en/blog (voir public/_redirects).
-export function getStaticPaths() {
-  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
-}
-return Astro.redirect(`/${Astro.params.lang}/blog/`, 301);
----
