@@ -382,3 +382,79 @@ collections:
       - { label: '¿Mostrar en la portada?', name: destacada, widget: boolean, default: false }
       - { label: Reseña, name: texto, widget: text }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
+
+  # ─── Guides (articles) ───
+  - name: guias
+    label: Guías
+    label_singular: Guía
+    description: 'Artículos de consejo (comprar, alquilar, invertir). Mientras «Borrador» esté marcado, la guía no aparece en el sitio.'
+    folder: src/content/guias
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: titulo
+    summary: '{{titulo}}'
+    sortable_fields: [fecha, titulo]
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista de guías y en Google.' }
+      - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar la guía en el sitio.' }
+      - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }
+      - { label: Texto, name: body, widget: markdown }
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
+
+  # ─── Barrios (pages par quartier) ───
+  - name: barrios
+    label: Barrios
+    label_singular: Barrio
+    description: 'Una página por barrio o ciudad, con todas las propiedades de la zona. La página aparece sola cuando hay al menos una propiedad en línea en esa zona.'
+    folder: src/content/barrios
+    create: true
+    delete: true
+    slug: '{{nombre}}'
+    extension: md
+    format: frontmatter
+    identifier_field: nombre
+    summary: '{{nombre}} — {{ciudad}}'
+    fields:
+      - { label: Nombre, name: nombre, widget: string, hint: 'Ej. "Villa Morra". Es también la dirección de la página.' }
+      - { label: Ciudad, name: ciudad, widget: string, hint: 'Igual que el campo «Ciudad» de las propiedades, ej. "Asunción".' }
+      - { label: 'Toda la ciudad', name: toda_la_ciudad, widget: boolean, default: false, hint: 'Marcar para una ciudad entera (ej. Luque): incluye todas sus propiedades, sin importar el barrio.' }
+      - { label: 'Otras formas de escribirlo', name: alias, widget: list, required: false, hint: 'Cómo puede aparecer el barrio en las propiedades, ej. "Villa Mora". Mayúsculas, acentos y la palabra «Barrio» no importan.' }
+      - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: 'Texto de presentación', name: intro, widget: text, required: false }
