@@ -1,8 +1,9 @@
 ---
-titulo: "Alquilar tu departamento en Asunción: ¿alquiler tradicional o temporal?"
-descripcion: "Contrato largo o estadías de semanas y meses: cómo funciona cada opción, qué dice la ley y cuánto cuesta la administración."
+titulo: 'Alquilar tu departamento en Asunción: ¿alquiler tradicional o temporal?'
+descripcion: 'Contrato largo o estadías de semanas y meses: cómo funciona cada opción, qué dice la ley y cuánto cuesta la administración.'
 borrador: true
 fecha: 2026-10-07
+portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.png
 ---
 
 Si tenés un departamento en Asunción, podés alquilarlo con un contrato tradicional o en alquiler temporal amoblado. Las dos opciones funcionan bien, pero no implican el mismo trabajo ni las mismas reglas.
