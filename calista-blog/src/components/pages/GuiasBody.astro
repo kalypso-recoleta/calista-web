@@ -1,0 +1,90 @@
+---
+/** Page Blog : guides et actualité, avec filtre par catégorie (admin « Blog »). */
+import Layout from '../../layouts/Layout.astro';
+import { img } from '../../lib/cloudinary';
+import { localizar } from '../../lib/traduccion';
+import { guiasPublicadas, CATEGORIAS } from '../../lib/guias';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+const x = {
+  es: { eyebrow: 'Blog', h1: 'Guías y actualidad inmobiliaria en Paraguay', lead: 'Consejos prácticos, leyes y trámites explicados con claridad, y las novedades del mercado en Asunción.', leer: 'Leer', vacia: 'Pronto vas a encontrar acá nuestros artículos.', todos: 'Todos' },
+  fr: { eyebrow: 'Blog', h1: 'Guides et actualité immobilière au Paraguay', lead: 'Conseils pratiques, lois et démarches expliqués clairement, et les nouvelles du marché à Asunción.', leer: 'Lire', vacia: 'Nos articles arrivent bientôt.', todos: 'Tous' },
+  en: { eyebrow: 'Blog', h1: 'Real estate guides and news in Paraguay', lead: 'Practical advice, laws and procedures explained clearly, plus market news from Asunción.', leer: 'Read', vacia: 'Our articles are coming soon.', todos: 'All' },
+}[lang as 'es' | 'fr' | 'en']!;
+const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
+const guias = (await guiasPublicadas()).map((g) => ({ ...g, d: localizar(g.entry.data, lang) }));
+const cat = CATEGORIAS[lang] ?? CATEGORIAS.es;
+// Filtres seulement s'il y a des articles des deux catégories
+const conFiltro = new Set(guias.map((g) => g.d.categoria)).size > 1;
+---
+
+<Layout title={x.h1} description={x.lead}>
+  <section class="section">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">{x.eyebrow}</p>
+        <h1>{x.h1}</h1>
+        <p class="lead">{x.lead}</p>
+      </header>
+      {guias.length === 0 ? <p class="lead">{x.vacia}</p> : (
+        <>
+        {conFiltro && (
+          <div class="filtros" role="group">
+            <button type="button" data-cat="" aria-pressed="true">{x.todos}</button>
+            <button type="button" data-cat="guia" aria-pressed="false">{cat.guia}</button>
+            <button type="button" data-cat="actualidad" aria-pressed="false">{cat.actualidad}</button>
+          </div>
+        )}
+        <ul class="guias">
+          {guias.map((g) => (
+            <li data-categoria={g.d.categoria}>
+              <a href={L(`/blog/${g.slug}`)}>
+                {g.d.portada_foto && <img src={img(g.d.portada_foto, { w: 640, h: 360 })} alt="" width="640" height="360" loading="lazy" />}
+                <span class="txt">
+                  <span class="meta"><span class:list={['cat', g.d.categoria]}>{cat[g.d.categoria]}</span><time datetime={g.d.fecha.toISOString()}>{g.d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></span>
+                  <strong>{g.d.titulo}</strong>
+                  <span class="desc">{g.d.descripcion}</span>
+                  <span class="mas">{x.leer} →</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        </>
+      )}
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.filtros').forEach((f) => {
+    const items = document.querySelectorAll<HTMLElement>('.guias li');
+    f.querySelectorAll<HTMLButtonElement>('button').forEach((b) => {
+      b.addEventListener('click', () => {
+        const c = b.dataset.cat;
+        f.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        items.forEach((li) => (li.hidden = !!c && li.dataset.categoria !== c));
+      });
+    });
+  });
+</script>
+
+<style>
+  .cab { max-width: 62ch; margin-bottom: 2rem; }
+  .guias { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.4rem; }
+  .guias a { display: flex; flex-direction: column; height: 100%; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; box-shadow: var(--shadow); }
+  .guias img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .txt { display: flex; flex-direction: column; gap: 0.45rem; padding: 1.2rem 1.3rem 1.4rem; flex: 1; }
+  .filtros { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1.6rem; }
+  .filtros button { padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--brand); font: inherit; font-weight: 600; cursor: pointer; }
+  .filtros button[aria-pressed='true'] { background: var(--violet); border-color: var(--violet); color: #fff; }
+  .meta { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+  .cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--violet-soft); color: var(--violet); }
+  .cat.actualidad { background: #e6f4ea; color: #1e7a3c; }
+  time { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  strong { font-size: 1.15rem; color: var(--brand); line-height: 1.3; }
+  .desc { color: var(--muted); font-size: 0.95rem; }
+  .mas { margin-top: auto; padding-top: 0.4rem; font-weight: 600; color: var(--violet); }
+</style>

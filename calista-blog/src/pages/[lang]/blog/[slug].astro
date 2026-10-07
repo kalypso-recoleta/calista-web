@@ -1,0 +1,10 @@
+---
+import GuiaBody from '../../../components/pages/GuiaBody.astro';
+import { guiasPublicadas } from '../../../lib/guias';
+export async function getStaticPaths() {
+  const g = await guiasPublicadas();
+  return ['fr', 'en'].flatMap((lang) => g.map((x) => ({ params: { lang, slug: x.slug }, props: { guia: x.entry, slug: x.slug } })));
+}
+const { guia, slug } = Astro.props;
+---
+<GuiaBody guia={guia} slug={slug} />

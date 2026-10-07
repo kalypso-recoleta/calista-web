@@ -1,0 +1,461 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# ───────────────────────────────────────────────────────────
+# Panneau d'administration de Calista (Sveltia CMS).
+# Ta mère gère TOUS les biens depuis ici. Le schéma correspond
+# exactement à src/content.config.ts.
+# ───────────────────────────────────────────────────────────
+
+# --- Connexion au dépôt (où sont stockés les biens) ---
+# Remplace owner/repo par ton dépôt GitHub (ex. louis/calista-web).
+# Authentification : voir le README (option Netlify OAuth = 1 clic).
+backend:
+  name: github
+  repo: kalypso-recoleta/calista-web
+  branch: main
+
+# Message de commit lisible dans l'historique GitHub
+  commit_messages:
+    create: 'Nuevo: {{collection}} "{{slug}}"'
+    update: 'Editado: {{collection}} "{{slug}}"'
+    delete: 'Eliminado: {{collection}} "{{slug}}"'
+
+# --- Images : Cloudinary (JAMAIS dans Git) ---
+# cloud_name = nom du cloud Cloudinary. api_key = clé PUBLIQUE (sans danger,
+# elle apparaît côté navigateur). On ne met JAMAIS l'API Secret ici.
+# output_filename_only: false → on stocke l'URL complète, que le site
+# optimise ensuite (voir src/lib/cloudinary.ts).
+media_libraries:
+  cloudinary:
+    config:
+      cloud_name: dbsnme7pt
+      api_key: '477574996655192'
+    output_filename_only: false
+    use_transformations: false
+
+# Dossier interne de secours (si jamais une image n'est pas sur Cloudinary).
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+# Interface en espagnol
+locale: es
+
+# À l'enregistrement, ne pas écrire les champs optionnels laissés vides
+# (évite les valeurs "null" qui ne correspondent pas au schéma du site).
+output:
+  omit_empty_optional_fields: true
+
+collections:
+  - name: biens
+    label: Propiedades
+    label_singular: Propiedad
+    description: Todas las propiedades. Las páginas del sitio se arman solas según lo que cargues acá.
+    folder: src/content/biens
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: titulo
+    summary: '{{titulo}} — {{ciudad}}'
+    sortable_fields: [fecha, precio, titulo]
+    # Filtres rapides dans la liste des biens (bouton « Filtrar » de l'admin),
+    # calqués sur les rubriques du site.
+    view_filters:
+      - { label: 'En venta (Comprar)', field: operacion, pattern: venta }
+      - { label: 'En alquiler (Alquilar)', field: operacion, pattern: '^alquiler$' }
+      - { label: 'Alquiler temporal', field: operacion, pattern: temporal }
+      - { label: 'Desarrollos Kalypso', field: desarrollo, pattern: true }
+      - { label: 'Terrenos', field: tipo, pattern: terreno }
+      - { label: 'Exclusivos', field: exclusivo, pattern: true }
+      - { label: 'En la página de inicio', field: destacado, pattern: true }
+      - { label: 'Destacados en su rubro', field: lateral, pattern: true }
+      - { label: 'Disponibles', field: estado, pattern: disponible }
+      - { label: 'Vendidos', field: estado, pattern: vendido }
+      - { label: 'Alquilados', field: estado, pattern: alquilado }
+      - { label: 'Fuera de línea', field: en_linea, pattern: false }
+    # Regroupements (bouton « Agrupar ») : par opération, par type, par état…
+    view_groups:
+      - { label: 'Operación', field: operacion }
+      - { label: '¿Desarrollo Kalypso?', field: desarrollo }
+      - { label: 'Tipo', field: tipo }
+      - { label: 'Estado', field: estado }
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: '🟢 ¿En línea? (visible en el sitio)', name: en_linea, widget: boolean, default: true, hint: 'Desmarcá para sacar la propiedad del sitio SIN borrarla. Podés volver a ponerla en línea cuando quieras.' }
+
+      - label: Operación
+        name: operacion
+        widget: select
+        options:
+          - { label: Venta, value: venta }
+          - { label: Alquiler, value: alquiler }
+          - { label: 'Alquiler temporal (amoblado, 7 días a 6 meses)', value: temporal }
+        default: venta
+
+      - label: Tipo de propiedad
+        name: tipo
+        widget: select
+        options:
+          - { label: Casa, value: casa }
+          - { label: Departamento, value: departamento }
+          - { label: Dúplex, value: duplex }
+          - { label: Terreno, value: terreno }
+          - { label: Oficina, value: oficina }
+          - { label: Local comercial, value: local }
+          - { label: Depósito, value: deposito }
+          - { label: Quinta, value: quinta }
+        default: casa
+
+      - label: Estado
+        name: estado
+        widget: select
+        options:
+          - { label: Disponible, value: disponible }
+          - { label: Reservado, value: reservado }
+          - { label: Vendido, value: vendido }
+          - { label: Alquilado, value: alquilado }
+        default: disponible
+
+      # --- Etiquetas que deciden en qué página aparece ---
+      - { label: '🏠 ¿Mostrar en la PÁGINA DE INICIO?', name: destacado, widget: boolean, default: false, hint: 'Aparece en la sección Destacados de la página de inicio. No aplica al alquiler temporal.' }
+      - { label: '⭐ ¿Destacar en su rubro? (banda Destacados)', name: lateral, widget: boolean, default: false, required: false, hint: 'Aparece en la banda "Destacados" debajo de los filtros de su página: Comprar, Alquilar, Desarrollos, Terrenos o Alquiler temporal.' }
+      - { label: '⭐ ¿Usar como imagen de PORTADA del inicio?', name: portada, widget: boolean, default: false, required: false, hint: 'La propiedad con esta casilla marcada es la foto grande de la página de inicio. Marcá una sola.' }
+      - { label: '¿Cartera Exclusiva?', name: exclusivo, widget: boolean, default: false }
+      - { label: '¿Es un desarrollo / pozo?', name: desarrollo, widget: boolean, default: false }
+
+      # --- Precio ---
+      - { label: Precio, name: precio, widget: number, value_type: int, min: 0, required: false, hint: 'Para alquiler temporal dejalo vacío y completá "Tarifas según la duración" más abajo.' }
+      - label: Moneda
+        name: moneda
+        widget: select
+        options: [USD, PYG]
+        default: USD
+      - label: Período (solo alquiler)
+        name: periodo
+        widget: select
+        options:
+          - { label: Por mes, value: mes }
+          - { label: Por día, value: dia }
+          - { label: Precio total, value: total }
+        default: total
+        required: false
+
+      # --- Ubicación ---
+      - label: Ciudad
+        name: ciudad
+        widget: select
+        options:
+          # Gran Asunción
+          - Asunción
+          - Lambaré
+          - Fernando de la Mora
+          - San Lorenzo
+          - Luque
+          - Mariano Roque Alonso
+          - Ñemby
+          - Villa Elisa
+          - San Antonio
+          - Limpio
+          - Capiatá
+          - Itauguá
+          - Itá
+          - Areguá
+          - Ypané
+          - Guarambaré
+          - J. Augusto Saldívar
+          - Villeta
+          - Nueva Italia
+          - Ypacaraí
+          # Cordillera / quintas
+          - San Bernardino
+          - Altos
+          - Atyrá
+          - Tobatí
+          - Caacupé
+          - Piribebuy
+          - Paraguarí
+          # Alto Paraná
+          - Ciudad del Este
+          - Presidente Franco
+          - Hernandarias
+          - Minga Guazú
+          # Itapúá
+          - Encarnación
+          # Otras ciudades del interior
+          - Coronel Oviedo
+          - Caaguazú
+          - Villarrica
+          - Pedro Juan Caballero
+          - Concepción
+          - Pilar
+          - San Juan Bautista
+          - San Ignacio
+          - Salto del Guairá
+        # Para sumar una ciudad nueva, agregala a esta lista (y a src/lib/site.ts).
+      - { label: Barrio, name: barrio, widget: string, required: false }
+      - label: 'Ubicación (hacé clic en el mapa)'
+        name: ubicacion
+        widget: map
+        required: false
+        hint: 'Hacé zoom y clic en la zona de la propiedad. No hace falta que sea exacto: un punto aproximado alcanza.'
+
+      # --- Características (dejá vacío lo que no aplica) ---
+      - { label: Dormitorios, name: dormitorios, widget: number, value_type: int, min: 0, required: false }
+      - { label: Baños, name: banos, widget: number, value_type: int, min: 0, required: false }
+      - { label: Cocheras, name: cocheras, widget: number, value_type: int, min: 0, required: false }
+      - { label: Superficie del terreno (m²), name: superficie_terreno, widget: number, value_type: int, min: 0, required: false }
+      - { label: Superficie construida (m²), name: superficie_construida, widget: number, value_type: int, min: 0, required: false }
+
+      # --- Solo para desarrollos / pozo ---
+      - { label: Fecha de entrega, name: entrega, widget: string, required: false, hint: 'Solo para pozo. Ej: Marzo 2027' }
+      - { label: '¿Ofrece financiación?', name: financiacion, widget: boolean, default: false, required: false }
+      - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }
+
+      # --- Imágenes (se suben a Cloudinary) ---
+      - label: '⭐ Foto de portada (opcional)'
+        name: portada_foto
+        widget: image
+        required: false
+        hint: 'Si elegís una foto acá, será la imagen principal de la propiedad (tarjeta, inicio y al compartir). Si la dejás vacía, se usa la primera de la lista de abajo.'
+      - label: Imágenes
+        name: imagenes
+        widget: image
+        multiple: true
+        required: false
+        media_library: { name: cloudinary }
+        hint: 'La primera imagen es la portada. Subí las fotos desde la pestaña Cloudinary.'
+
+      # --- Ficha comercial en PDF (opcional) ---
+      # Les PDF sont stockés dans le dépôt (public/uploads/fichas), pas sur
+      # Cloudinary : le site les sert tels quels via un bouton « Descargar ficha ».
+      - label: 'Ficha comercial (PDF, opcional)'
+        name: ficha_pdf
+        widget: file
+        required: false
+        accept: application/pdf
+        media_folder: /public/uploads/fichas
+        public_folder: /uploads/fichas
+        hint: 'Subí la ficha en PDF (ideal: menos de 5 MB). Aparece un botón «Descargar ficha» en la página de la propiedad.'
+
+      # --- Textos ---
+      - { label: Descripción corta, name: descripcion, widget: text, hint: 'Una o dos frases. Aparece en las tarjetas y al compartir por WhatsApp.' }
+
+      # --- Solo para ALQUILER TEMPORAL (dejar vacío para venta / alquiler) ---
+      - label: 'Alquiler temporal: gama'
+        name: gama
+        widget: select
+        required: false
+        hint: 'Solo si la Operación es "Alquiler temporal".'
+        options:
+          - { label: 'Residencias Kalypso', value: kalypso }
+          - { label: 'Otros departamentos (otros propietarios)', value: otros }
+        default: otros
+      - { label: 'Alquiler temporal: nombre de la residencia Kalypso', name: residencia, widget: string, required: false, hint: 'Ej: Yrupé' }
+      - { label: 'Alquiler temporal: huéspedes (capacidad)', name: huespedes, widget: number, value_type: int, min: 1, required: false }
+      - label: 'Alquiler temporal: tarifas según la duración'
+        name: tarifas
+        widget: list
+        required: false
+        summary: '{{fields.duracion}} → {{fields.precio}} ({{fields.unidad}})'
+        hint: 'Una línea por duración, de la más corta a la más larga. La primera línea aparece como "Desde…" en la tarjeta.'
+        fields:
+          - label: Duración
+            name: duracion
+            widget: select
+            options:
+              - { label: '1 semana', value: s1 }
+              - { label: '2 semanas', value: s2 }
+              - { label: '3 semanas', value: s3 }
+              - { label: '1 mes', value: m1 }
+              - { label: '2 meses', value: m2 }
+              - { label: '3 meses o más', value: m3 }
+              - { label: '6 meses', value: m6 }
+          - { label: Precio, name: precio, widget: number, value_type: int, min: 0 }
+          - label: 'El precio es…'
+            name: unidad
+            widget: select
+            default: total
+            options:
+              - { label: 'Total de la estadía', value: total }
+              - { label: 'Por semana', value: semana }
+              - { label: 'Por mes', value: mes }
+      - { label: 'Alquiler temporal: incluye (ej. wifi)', name: incluye, widget: list, required: false }
+      - label: 'Alquiler temporal: reservas (días ocupados)'
+        name: reservas
+        widget: list
+        required: false
+        summary: '{{fields.desde}} → {{fields.hasta}}'
+        hint: 'Una línea por reserva. "Hasta" = día de salida (ese día queda libre). Podés borrar las reservas pasadas cuando quieras.'
+        fields:
+          - { label: 'Desde (llegada)', name: desde, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
+          - { label: 'Hasta (salida)', name: hasta, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
+
+      # --- Traducciones (versiones francesa e inglesa del sitio) ---
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción completa', name: cuerpo, widget: markdown, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción completa', name: cuerpo, widget: markdown, required: false }
+      - { label: Fecha de publicación, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: Descripción completa, name: body, widget: markdown, required: false }
+
+  # ─── Page Desarrollos Kalypso : présentation de l'immeuble (carrousel + texte) ───
+  - name: paginas
+    label: Página Desarrollos Kalypso
+    files:
+      - name: kalypso-recoleta
+        label: 'Presentación del edificio (fotos y texto)'
+        file: src/data/kalypso-recoleta.json
+        format: json
+        fields:
+          - { label: '¿Mostrar en la página Desarrollos?', name: mostrar, widget: boolean, default: true }
+          - { label: Nombre del edificio, name: nombre, widget: string }
+          - { label: 'Frase corta (debajo del nombre)', name: lema, widget: string, required: false }
+          - { label: Presentación, name: descripcion, widget: text, required: false, hint: 'Dejá una línea vacía para separar los párrafos.' }
+          - { label: 'Datos clave (lista a la derecha)', name: datos, widget: list, required: false }
+          - { label: Dirección, name: direccion, widget: string, required: false }
+          - label: 'Fotos del carrusel (fachada, áreas comunes…)'
+            name: fotos
+            widget: list
+            required: false
+            summary: '{{fields.leyenda}}'
+            hint: 'Arrastrá para cambiar el orden. La primera es la que se ve al llegar. Ideal: fotos horizontales.'
+            fields:
+              - { label: Foto, name: imagen, widget: image, media_library: { name: cloudinary } }
+              - { label: 'Leyenda (opcional)', name: leyenda, widget: string, required: false }
+              - { label: 'Leyenda en francés', name: leyenda_fr, widget: string, required: false }
+              - { label: 'Leyenda en inglés', name: leyenda_en, widget: string, required: false }
+          - label: '🇫🇷 Traducción al francés'
+            name: fr
+            widget: object
+            collapsed: true
+            required: false
+            hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+            fields:
+              - { label: 'Frase corta', name: lema, widget: string, required: false }
+              - { label: 'Presentación', name: descripcion, widget: text, required: false }
+              - { label: 'Datos clave', name: datos, widget: list, required: false }
+          - label: '🇬🇧 Traducción al inglés'
+            name: en
+            widget: object
+            collapsed: true
+            required: false
+            hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+            fields:
+              - { label: 'Frase corta', name: lema, widget: string, required: false }
+              - { label: 'Presentación', name: descripcion, widget: text, required: false }
+              - { label: 'Datos clave', name: datos, widget: list, required: false }
+
+  # ─── Avis clients ───
+  - name: resenas
+    label: Reseñas
+    label_singular: Reseña
+    description: Opiniones de clientes. Las marcadas como destacadas aparecen en la portada.
+    folder: src/content/resenas
+    create: true
+    delete: true
+    slug: '{{nombre}}-{{year}}{{month}}'
+    extension: md
+    format: frontmatter
+    identifier_field: nombre
+    summary: '{{nombre}} — {{contexto}}'
+    sortable_fields: [fecha, nombre]
+    fields:
+      - { label: Nombre, name: nombre, widget: string, hint: 'Podés usar solo el nombre y la inicial, ej. "Marta R."' }
+      - { label: Contexto, name: contexto, widget: string, required: false, hint: 'Ej. "Compró una casa en Luque"' }
+      - { label: Estrellas, name: estrellas, widget: number, value_type: int, min: 1, max: 5, default: 5 }
+      - { label: '¿Mostrar en la portada?', name: destacada, widget: boolean, default: false }
+      - { label: Reseña, name: texto, widget: text }
+      - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
+
+  # ─── Blog (guides + actualité) ───
+  - name: guias
+    label: Blog
+    label_singular: Artículo
+    description: 'Guías (consejos, leyes y trámites) y actualidad inmobiliaria. Mientras «Borrador» esté marcado, el artículo no aparece en el sitio.'
+    folder: src/content/guias
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: titulo
+    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{categoria | upper}} · {{titulo}}"
+    sortable_fields: [fecha, titulo]
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
+      - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
+      - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
+      - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }
+      - { label: Texto, name: body, widget: markdown }
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
+
+  # ─── Barrios (pages par quartier) ───
+  - name: barrios
+    label: Barrios
+    label_singular: Barrio
+    description: 'Una página por barrio o ciudad, con todas las propiedades de la zona. La página aparece sola cuando hay al menos una propiedad en línea en esa zona.'
+    folder: src/content/barrios
+    create: true
+    delete: true
+    slug: '{{nombre}}'
+    extension: md
+    format: frontmatter
+    identifier_field: nombre
+    summary: '{{nombre}} — {{ciudad}}'
+    fields:
+      - { label: Nombre, name: nombre, widget: string, hint: 'Ej. "Villa Morra". Es también la dirección de la página.' }
+      - { label: Ciudad, name: ciudad, widget: string, hint: 'Igual que el campo «Ciudad» de las propiedades, ej. "Asunción".' }
+      - { label: 'Toda la ciudad', name: toda_la_ciudad, widget: boolean, default: false, hint: 'Marcar para una ciudad entera (ej. Luque): incluye todas sus propiedades, sin importar el barrio.' }
+      - { label: 'Otras formas de escribirlo', name: alias, widget: list, required: false, hint: 'Cómo puede aparecer el barrio en las propiedades, ej. "Villa Mora". Mayúsculas, acentos y la palabra «Barrio» no importan.' }
+      - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - label: '🇫🇷 Traducción al francés'
+        name: fr
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - label: '🇬🇧 Traducción al inglés'
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: 'Texto de presentación', name: intro, widget: text, required: false }
