@@ -395,7 +395,7 @@ collections:
     extension: md
     format: frontmatter
     identifier_field: titulo
-    summary: '{{titulo}}'
+    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{titulo}}"
     sortable_fields: [fecha, titulo]
     fields:
       - { label: Título, name: titulo, widget: string }
