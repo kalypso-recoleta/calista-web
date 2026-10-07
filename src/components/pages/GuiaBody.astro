@@ -3,6 +3,7 @@
 import { render, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import WhatsAppButton from '../WhatsAppButton.astro';
+import Compartir from '../Compartir.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
@@ -46,11 +47,13 @@ const ld = {
       <h1>{d.titulo}</h1>
       <p class="lead">{d.descripcion}</p>
       <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time>
+      <Compartir titulo={d.titulo} url={url} />
       {d.portada_foto && <img class="portada" src={img(d.portada_foto, { w: 1200, h: 630 })} alt="" width="1200" height="630" />}
       <div class="prose">
         {html ? <Fragment set:html={html} /> : <Content />}
       </div>
       <p class="aviso">{x.aviso}</p>
+      <div class="share-fin"><Compartir titulo={d.titulo} url={url} /></div>
       <div class="cta">
         <h2>{x.cta_t}</h2>
         <p>{x.cta_d}</p>
@@ -79,6 +82,7 @@ const ld = {
   .prose :global(h3) { margin-top: 1.6rem; }
   .prose :global(strong) { color: var(--brand); }
   .prose :global(li) { margin: 0.35rem 0; }
+  .share-fin { margin-top: 1.6rem; }
   .aviso { margin-top: 2rem; font-size: 0.88rem; font-style: italic; color: var(--muted); }
   .cta { margin-top: 2.5rem; padding: 1.8rem; background: var(--card-tint); border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); }
   .cta h2 { margin: 0 0 0.4rem; }
