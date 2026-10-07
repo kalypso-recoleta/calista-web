@@ -1,6 +1,7 @@
 ---
 titulo: 'Comprar un inmueble en Paraguay: del boleto a la escritura'
 descripcion: 'Comprar un inmueble en Paraguay: etapas, gastos y documentos'
+categoria: guia
 borrador: false
 fecha: 2026-10-07T06:07:00
 portada_foto: /uploads/Signature notariale et remise des clés.png

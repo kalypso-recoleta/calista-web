@@ -7,7 +7,7 @@ import Compartir from '../Compartir.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
-import { guiasPublicadas } from '../../lib/guias';
+import { guiasPublicadas, CATEGORIAS } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
 interface Props { guia: CollectionEntry<'guias'>; slug: string }
@@ -18,17 +18,17 @@ const d = localizar(guia.data, lang);
 const html = cuerpoTraducido(guia.data, lang);
 const { Content } = await render(guia);
 const x = {
-  es: { volver: 'Todas las guías', cta_t: '¿Tenés una pregunta sobre este tema?', cta_d: 'Escribinos: te respondemos personalmente, en español, francés o inglés.', wa: 'WhatsApp', f_preg: 'Tu pregunta', f_nombre: 'Nombre', f_email: 'Email', f_tel: 'WhatsApp / teléfono (opcional)', f_enviar: 'Enviar mi pregunta', o: 'o', otras: 'Otras guías', aviso: 'Información general: no reemplaza el asesoramiento de un escribano o un abogado.' },
-  fr: { volver: 'Tous les guides', cta_t: 'Une question sur ce sujet ?', cta_d: 'Écrivez-nous : nous vous répondons personnellement, en français, espagnol ou anglais.', wa: 'WhatsApp', f_preg: 'Votre question', f_nombre: 'Nom', f_email: 'E-mail', f_tel: 'WhatsApp / téléphone (facultatif)', f_enviar: 'Envoyer ma question', o: 'ou', otras: 'Autres guides', aviso: 'Information générale : ne remplace pas le conseil d’un notaire (escribano) ou d’un avocat.' },
-  en: { volver: 'All guides', cta_t: 'Have a question about this topic?', cta_d: 'Write to us: we reply personally, in English, Spanish or French.', wa: 'WhatsApp', f_preg: 'Your question', f_nombre: 'Name', f_email: 'Email', f_tel: 'WhatsApp / phone (optional)', f_enviar: 'Send my question', o: 'or', otras: 'Other guides', aviso: 'General information: not a substitute for advice from a notary (escribano) or a lawyer.' },
+  es: { volver: 'Blog', cta_t: '¿Tenés una pregunta sobre este tema?', cta_d: 'Escribinos: te respondemos personalmente, en español, francés o inglés.', wa: 'WhatsApp', f_preg: 'Tu pregunta', f_nombre: 'Nombre', f_email: 'Email', f_tel: 'WhatsApp / teléfono (opcional)', f_enviar: 'Enviar mi pregunta', o: 'o', otras: 'Otros artículos', aviso: 'Información general: no reemplaza el asesoramiento de un escribano o un abogado.' },
+  fr: { volver: 'Blog', cta_t: 'Une question sur ce sujet ?', cta_d: 'Écrivez-nous : nous vous répondons personnellement, en français, espagnol ou anglais.', wa: 'WhatsApp', f_preg: 'Votre question', f_nombre: 'Nom', f_email: 'E-mail', f_tel: 'WhatsApp / téléphone (facultatif)', f_enviar: 'Envoyer ma question', o: 'ou', otras: 'Autres articles', aviso: 'Information générale : ne remplace pas le conseil d’un notaire (escribano) ou d’un avocat.' },
+  en: { volver: 'Blog', cta_t: 'Have a question about this topic?', cta_d: 'Write to us: we reply personally, in English, Spanish or French.', wa: 'WhatsApp', f_preg: 'Your question', f_nombre: 'Name', f_email: 'Email', f_tel: 'WhatsApp / phone (optional)', f_enviar: 'Send my question', o: 'or', otras: 'Other articles', aviso: 'General information: not a substitute for advice from a notary (escribano) or a lawyer.' },
 }[lang as 'es' | 'fr' | 'en']!;
 const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
-const wa = whatsappLink(`Hola Calista, leí la guía "${guia.data.titulo}" y tengo una consulta.`);
+const wa = whatsappLink(`Hola Calista, leí el artículo "${guia.data.titulo}" y tengo una consulta.`);
 const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
 const url = new URL(Astro.url.pathname, Astro.site).toString();
 const ld = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': d.categoria === 'actualidad' ? 'NewsArticle' : 'Article',
   headline: d.titulo,
   description: d.descripcion,
   datePublished: d.fecha.toISOString(),
@@ -43,7 +43,7 @@ const ld = {
 <Layout title={d.titulo} description={d.descripcion} image={d.portada_foto}>
   <article class="section">
     <div class="container art">
-      <p class="migas"><a href={L('/guias')}>← {x.volver}</a></p>
+      <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span></p>
       <h1>{d.titulo}</h1>
       <p class="lead">{d.descripcion}</p>
       <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time>
@@ -60,7 +60,7 @@ const ld = {
         <!-- Même formulaire Netlify que la page Contacto : arrive dans la même boîte, avec le titre du guide -->
         <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={L('/gracias')} class="form">
           <input type="hidden" name="form-name" value="contacto" />
-          <input type="hidden" name="motivo" value={`Pregunta sobre la guía: ${guia.data.titulo}`} />
+          <input type="hidden" name="motivo" value={`Pregunta sobre el artículo: ${guia.data.titulo}`} />
           <p class="hp" hidden><label>No llenar: <input name="bot-field" /></label></p>
           <label class="campo"><span>{x.f_preg}</span><textarea name="mensaje" rows="4" required></textarea></label>
           <label class="campo"><span>{x.f_nombre}</span><input type="text" name="nombre" required autocomplete="name" /></label>
@@ -78,7 +78,7 @@ const ld = {
       {otras.length > 0 && (
         <nav class="otras">
           <h2>{x.otras}</h2>
-          <ul>{otras.map((o) => <li><a href={L(`/guias/${o.slug}`)}>{o.titulo}</a></li>)}</ul>
+          <ul>{otras.map((o) => <li><a href={L(`/blog/${o.slug}`)}>{o.titulo}</a></li>)}</ul>
         </nav>
       )}
     </div>
@@ -89,6 +89,9 @@ const ld = {
 <style>
   .art { max-width: 760px; }
   .migas { margin: 0 0 1rem; font-size: 0.92rem; }
+  .migas { display: flex; align-items: center; gap: 0.8rem; }
+  .cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--violet-soft); color: var(--violet); }
+  .cat.actualidad { background: #e6f4ea; color: #1e7a3c; }
   .migas a { color: var(--violet); text-decoration: none; font-weight: 600; }
   h1 { margin-bottom: 0.6rem; }
   time { display: block; font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 1.6rem; }

@@ -383,11 +383,11 @@ collections:
       - { label: Reseña, name: texto, widget: text }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
 
-  # ─── Guides (articles) ───
+  # ─── Blog (guides + actualité) ───
   - name: guias
-    label: Guías
-    label_singular: Guía
-    description: 'Artículos de consejo (comprar, alquilar, invertir). Mientras «Borrador» esté marcado, la guía no aparece en el sitio.'
+    label: Blog
+    label_singular: Artículo
+    description: 'Guías (consejos, leyes y trámites) y actualidad inmobiliaria. Mientras «Borrador» esté marcado, el artículo no aparece en el sitio.'
     folder: src/content/guias
     create: true
     delete: true
@@ -395,12 +395,13 @@ collections:
     extension: md
     format: frontmatter
     identifier_field: titulo
-    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{titulo}}"
+    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{categoria | upper}} · {{titulo}}"
     sortable_fields: [fecha, titulo]
     fields:
       - { label: Título, name: titulo, widget: string }
-      - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista de guías y en Google.' }
-      - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar la guía en el sitio.' }
+      - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
+      - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
+      - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }
       - { label: Texto, name: body, widget: markdown }

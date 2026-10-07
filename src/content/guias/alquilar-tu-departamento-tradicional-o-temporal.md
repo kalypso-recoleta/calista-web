@@ -1,6 +1,7 @@
 ---
 titulo: 'Alquilar tu departamento en Asunción: ¿alquiler tradicional o temporal?'
 descripcion: 'Contrato largo o estadías de semanas y meses: cómo funciona cada opción, qué dice la ley y cuánto cuesta la administración.'
+categoria: guia
 borrador: true
 fecha: 2026-10-07
 portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.png

@@ -240,7 +240,7 @@ const barrios = defineCollection({
 });
 
 /**
- * Guías : articles de conseil (acheter, louer, investir…).
+ * Blog : guides (conseils pratiques et juridiques) et actualité immobilière.
  * « borrador » coché = non publié (visible seulement dans l'admin).
  */
 const guias = defineCollection({
@@ -249,6 +249,8 @@ const guias = defineCollection({
     titulo: z.string(),
     descripcion: z.string(),
     borrador: z.boolean().default(true),
+    // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes…
+    categoria: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.enum(['guia', 'actualidad']).default('guia')),
     portada_foto: strOpc(),
     fecha: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date()).default(() => new Date()),
     fr: tradSchema,

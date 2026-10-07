@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { slugify } from '../../lib/slug';
 import { formatPrecio, tipoLabel, operacionLabel, formatUbicacion, estaActivo } from '../../lib/format';
 import { tarifasDe, precioTxt, temporalesActivos } from '../../components/temporal/datos';
+import { guiasPublicadas } from '../../lib/guias';
 
 /**
  * Flux RSS de toutes les annonces en ligne (https://calista.com.py/feed/propiedades.xml).
@@ -50,6 +51,20 @@ export const GET: APIRoute = async ({ site }) => {
     });
   }
 
+  // Articles du blog (guides et actualité) : publiés aussi sur Facebook via Make
+  for (const { entry, slug } of await guiasPublicadas()) {
+    const d = entry.data;
+    items.push({
+      titulo: d.titulo,
+      link: `${base}/blog/${slug}/`,
+      desc: d.descripcion,
+      precio: '',
+      foto: abs(d.portada_foto),
+      fecha: d.fecha,
+      categoria: d.categoria === 'actualidad' ? 'Blog · Actualidad' : 'Blog · Guía',
+    });
+  }
+
   items.sort((a, b) => +b.fecha - +a.fecha);
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -57,7 +72,7 @@ export const GET: APIRoute = async ({ site }) => {
 <channel>
 <title>CALISTA Inmobiliaria — Propiedades</title>
 <link>${base}/</link>
-<description>Propiedades en venta, alquiler, alquiler temporal y desarrollos Kalypso en Asunción.</description>
+<description>Propiedades en venta, alquiler, alquiler temporal y desarrollos Kalypso en Asunción, y artículos del blog.</description>
 <language>es-PY</language>
 ${items
   .map(
@@ -67,8 +82,8 @@ ${items
 <guid isPermaLink="true">${esc(i.link)}</guid>
 <pubDate>${i.fecha.toUTCString()}</pubDate>
 <category>${esc(i.categoria)}</category>
-<description>${esc(`${i.precio} — ${i.desc}`)}</description>
-${i.foto ? `<enclosure url="${esc(i.foto)}" type="image/jpeg" length="0" />\n<media:content url="${esc(i.foto)}" medium="image" />` : ''}
+<description>${esc(i.precio ? `${i.precio} — ${i.desc}` : i.desc)}</description>
+${i.foto ? `<enclosure url="${esc(i.foto)}" type="${/\.png$/i.test(i.foto) ? 'image/png' : 'image/jpeg'}" length="0" />\n<media:content url="${esc(i.foto)}" medium="image" />` : ''}
 </item>`
   )
   .join('\n')}

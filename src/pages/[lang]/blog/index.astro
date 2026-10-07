@@ -1,0 +1,7 @@
+---
+import GuiasBody from '../../../components/pages/GuiasBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<GuiasBody />

@@ -11,6 +11,8 @@ export default defineConfig({
   site: SITE,
   integrations: [
     sitemap({
+      // Anciennes adresses « /guias » (redirigées vers /blog) : hors sitemap
+      filter: (page) => !/\/guias\//.test(page),
       // Sitemap multilingue : chaque URL liste ses variantes es / fr / en.
       i18n: {
         defaultLocale: 'es',
