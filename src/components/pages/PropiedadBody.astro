@@ -3,6 +3,7 @@ import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 import { slugify } from '../../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
+import { zonaDeBien } from '../../lib/barrios';
 import Layout from '../../layouts/Layout.astro';
 import PropertyGallery from '../PropertyGallery.astro';
 import PropertyMap from '../PropertyMap.astro';
@@ -32,6 +33,8 @@ const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 
 const { Content } = await render(bien);
+const zona = await zonaDeBien(bien);
+const masEn = { es: 'Ver más propiedades en', fr: 'Voir plus de biens à', en: 'See more properties in' }[getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en'];
 
 const url = new URL(`/propiedad/${slugify(bien.id)}`, Astro.site).toString();
 const wa = whatsappBien({ titulo: bien.data.titulo, ref: slugify(bien.id), url });
@@ -148,6 +151,7 @@ const specs = [
           <div class="mapa">
             <h3>{t('det.ubicacion')}</h3>
             <PropertyMap ubicacion={d.ubicacion} zona={formatUbicacion(d)} ciudad={d.ciudad} />
+            {zona && <a class="mas-zona" href={localizePath(`/barrios/${zona.slug}`, getLangFromUrl(Astro.url))}>{masEn} {zona.nombre} →</a>}
           </div>
         </div>
 
@@ -236,6 +240,7 @@ const specs = [
   .prose :global(strong) { color: var(--brand); }
   .mapa { margin-top: 2.5rem; }
   .mapa h3 { margin-bottom: 0.8rem; }
+  .mas-zona { display: inline-block; margin-top: 0.9rem; font-weight: 600; color: var(--violet); }
   .side { position: sticky; top: 92px; }
   .cta-card {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);

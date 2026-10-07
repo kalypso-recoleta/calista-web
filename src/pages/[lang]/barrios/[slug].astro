@@ -1,0 +1,10 @@
+---
+import BarrioBody from '../../../components/pages/BarrioBody.astro';
+import { zonasConBienes } from '../../../lib/barrios';
+export async function getStaticPaths() {
+  const zonas = await zonasConBienes();
+  return ['fr', 'en'].flatMap((lang) => zonas.map((zona) => ({ params: { lang, slug: zona.slug }, props: { zona } })));
+}
+const { zona } = Astro.props;
+---
+<BarrioBody zona={zona} />

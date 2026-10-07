@@ -9,6 +9,7 @@ import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
 import { formatPrecio, formatUbicacion } from '../../lib/format';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
+import { zonasConBienes } from '../../lib/barrios';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -43,6 +44,8 @@ const categorias = [
 ];
 
 // Messages WhatsApp : volontairement en espagnol (l'agence les lit en espagnol).
+const zonas = await zonasConBienes();
+const zTxt = { es: ['Barrios', 'Buscá por barrio', 'Ver todos'], fr: ['Quartiers', 'Chercher par quartier', 'Voir tout'], en: ['Neighbourhoods', 'Search by neighbourhood', 'See all'] }[lang as 'es' | 'fr' | 'en'];
 const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
 const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad.');
 ---
@@ -137,6 +140,26 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     )
   }
 
+  <!-- BARRIOS -->
+  {
+    zonas.length > 0 && (
+      <section class="section zonas-section">
+        <div class="container">
+          <header class="row-head">
+            <div>
+              <p class="eyebrow">{zTxt[0]}</p>
+              <h2>{zTxt[1]}</h2>
+            </div>
+            <a href={L('/barrios')} class="ver-todo">{zTxt[2]}</a>
+          </header>
+          <ul class="zonas-chips">
+            {zonas.map((z) => <li><a href={L(`/barrios/${z.slug}`)}>{z.nombre} <span>{z.bienes.length}</span></a></li>)}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
   <!-- POR QUÉ CALISTA -->
   <section class="section porque">
     <div class="container porque-grid">
@@ -223,6 +246,11 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
 </Layout>
 
 <style>
+  .zonas-section { padding-top: 0; }
+  .zonas-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .zonas-chips a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--brand); font-weight: 600; text-decoration: none; }
+  .zonas-chips a:hover { border-color: var(--violet); color: var(--violet); }
+  .zonas-chips span { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
   .hero {
     padding-top: clamp(2.5rem, 6vw, 4.5rem);
     padding-bottom: clamp(2rem, 5vw, 3.5rem);

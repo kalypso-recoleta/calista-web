@@ -1,0 +1,58 @@
+---
+/** Page « Barrios » : toutes les zones ayant des annonces en ligne. */
+import Layout from '../../layouts/Layout.astro';
+import { img } from '../../lib/cloudinary';
+import { estaActivo } from '../../lib/format';
+import { zonasConBienes } from '../../lib/barrios';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+const x = {
+  es: { eyebrow: 'Barrios', h1: 'Propiedades por barrio', lead: 'Elegí un barrio de Asunción o una ciudad de Gran Asunción y mirá todas nuestras propiedades en esa zona.', n: (k: number) => `${k} ${k === 1 ? 'propiedad' : 'propiedades'}` },
+  fr: { eyebrow: 'Quartiers', h1: 'Nos biens par quartier', lead: 'Choisissez un quartier d’Asunción ou une ville du Grand Asunción pour voir tous nos biens dans ce secteur.', n: (k: number) => `${k} ${k === 1 ? 'bien' : 'biens'}` },
+  en: { eyebrow: 'Neighbourhoods', h1: 'Properties by neighbourhood', lead: 'Choose a neighbourhood of Asunción or a city of Greater Asunción to see all our properties there.', n: (k: number) => `${k} ${k === 1 ? 'property' : 'properties'}` },
+}[lang as 'es' | 'fr' | 'en']!;
+
+const zonas = (await zonasConBienes()).map((z) => {
+  const conFoto = [...z.bienes].sort((a, b) => Number(estaActivo(b.data)) - Number(estaActivo(a.data)))
+    .find((b) => b.data.portada_foto || b.data.imagenes[0]);
+  return { ...z, foto: conFoto ? conFoto.data.portada_foto || conFoto.data.imagenes[0] : undefined };
+});
+---
+
+<Layout title={x.h1} description={x.lead}>
+  <section class="section">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">{x.eyebrow}</p>
+        <h1>{x.h1}</h1>
+        <p class="lead">{x.lead}</p>
+      </header>
+      <ul class="zonas">
+        {zonas.map((z) => (
+          <li>
+            <a href={L(`/barrios/${z.slug}`)}>
+              {z.foto && <img src={img(z.foto, { w: 600, h: 400 })} alt={z.nombre} width="600" height="400" loading="lazy" />}
+              <span class="txt">
+                <strong>{z.nombre}</strong>
+                <span>{z.nombre !== z.ciudad ? `${z.ciudad} · ` : ''}{x.n(z.bienes.length)}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cab { max-width: 62ch; margin-bottom: 2rem; }
+  .zonas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.2rem; }
+  .zonas a { position: relative; display: block; aspect-ratio: 3 / 2; border-radius: var(--radius); overflow: hidden; background: var(--brand); text-decoration: none; box-shadow: var(--shadow); }
+  .zonas img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.75; transition: opacity 0.2s; }
+  .zonas a:hover img { opacity: 0.6; }
+  .txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.1rem; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: #fff; display: flex; flex-direction: column; }
+  .txt strong { font-size: 1.25rem; }
+  .txt span { font-size: 0.9rem; opacity: 0.9; }
+</style>

@@ -1,0 +1,59 @@
+---
+/** Liste des guides (admin « Guías »). */
+import Layout from '../../layouts/Layout.astro';
+import { img } from '../../lib/cloudinary';
+import { localizar } from '../../lib/traduccion';
+import { guiasPublicadas } from '../../lib/guias';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+const x = {
+  es: { eyebrow: 'Guías', h1: 'Guías para comprar, vender y alquilar en Paraguay', lead: 'Lo que aprendimos en años de trabajo en Asunción, explicado con claridad.', leer: 'Leer la guía', vacia: 'Pronto vas a encontrar acá nuestras guías.' },
+  fr: { eyebrow: 'Guides', h1: 'Guides pour acheter, vendre et louer au Paraguay', lead: 'Ce que nous avons appris en années de travail à Asunción, expliqué clairement.', leer: 'Lire le guide', vacia: 'Nos guides arrivent bientôt.' },
+  en: { eyebrow: 'Guides', h1: 'Guides to buying, selling and renting in Paraguay', lead: 'What we have learned from years of work in Asunción, explained clearly.', leer: 'Read the guide', vacia: 'Our guides are coming soon.' },
+}[lang as 'es' | 'fr' | 'en']!;
+const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
+const guias = (await guiasPublicadas()).map((g) => ({ ...g, d: localizar(g.entry.data, lang) }));
+---
+
+<Layout title={x.h1} description={x.lead}>
+  <section class="section">
+    <div class="container">
+      <header class="cab">
+        <p class="eyebrow">{x.eyebrow}</p>
+        <h1>{x.h1}</h1>
+        <p class="lead">{x.lead}</p>
+      </header>
+      {guias.length === 0 ? <p class="lead">{x.vacia}</p> : (
+        <ul class="guias">
+          {guias.map((g) => (
+            <li>
+              <a href={L(`/guias/${g.slug}`)}>
+                {g.d.portada_foto && <img src={img(g.d.portada_foto, { w: 640, h: 360 })} alt="" width="640" height="360" loading="lazy" />}
+                <span class="txt">
+                  <time datetime={g.d.fecha.toISOString()}>{g.d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time>
+                  <strong>{g.d.titulo}</strong>
+                  <span class="desc">{g.d.descripcion}</span>
+                  <span class="mas">{x.leer} →</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cab { max-width: 62ch; margin-bottom: 2rem; }
+  .guias { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.4rem; }
+  .guias a { display: flex; flex-direction: column; height: 100%; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; box-shadow: var(--shadow); }
+  .guias img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .txt { display: flex; flex-direction: column; gap: 0.45rem; padding: 1.2rem 1.3rem 1.4rem; flex: 1; }
+  time { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  strong { font-size: 1.15rem; color: var(--brand); line-height: 1.3; }
+  .desc { color: var(--muted); font-size: 0.95rem; }
+  .mas { margin-top: auto; padding-top: 0.4rem; font-weight: 600; color: var(--violet); }
+</style>

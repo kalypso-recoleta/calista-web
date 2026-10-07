@@ -1,0 +1,7 @@
+---
+import BarriosBody from '../../../components/pages/BarriosBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }];
+}
+---
+<BarriosBody />

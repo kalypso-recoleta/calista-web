@@ -217,4 +217,43 @@ const temporales = defineCollection({
   }),
 });
 
-export const collections = { biens, resenas, temporales };
+/**
+ * Barrios / ciudades : une page par zone (calista.com.py/barrios/villa-morra)
+ * avec un court texte et toutes les annonces de la zone, mises à jour seules.
+ * Une annonce appartient à la zone si sa « Ciudad » correspond et si son
+ * « Barrio » correspond au nom ou à une « Otra forma de escribirlo »
+ * (ou si « Toda la ciudad » est coché, ex. Luque). La page n'existe que s'il y a
+ * au moins une annonce en ligne.
+ */
+const textoTrad = z.preprocess((v) => (v == null ? undefined : v), z.object({ intro: strOpc() }).optional());
+const barrios = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/barrios' }),
+  schema: z.object({
+    nombre: z.string(),
+    ciudad: z.string(),
+    toda_la_ciudad: z.boolean().default(false),
+    alias: listaTxt,
+    intro: strOpc(),
+    fr: textoTrad,
+    en: textoTrad,
+  }),
+});
+
+/**
+ * Guías : articles de conseil (acheter, louer, investir…).
+ * « borrador » coché = non publié (visible seulement dans l'admin).
+ */
+const guias = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guias' }),
+  schema: z.object({
+    titulo: z.string(),
+    descripcion: z.string(),
+    borrador: z.boolean().default(true),
+    portada_foto: strOpc(),
+    fecha: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date()).default(() => new Date()),
+    fr: tradSchema,
+    en: tradSchema,
+  }),
+});
+
+export const collections = { biens, resenas, temporales, barrios, guias };

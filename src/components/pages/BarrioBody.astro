@@ -1,0 +1,59 @@
+---
+/**
+ * Page d'un barrio / d'une ville : texte court (admin « Barrios ») + annonces
+ * de la zone, mises à jour automatiquement à chaque publication.
+ */
+import Layout from '../../layouts/Layout.astro';
+import ListadoBiens from '../ListadoBiens.astro';
+import { estaActivo } from '../../lib/format';
+import { zonasConBienes, type Zona } from '../../lib/barrios';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+interface Props { zona: Zona }
+const { zona } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+
+const lugar = zona.nombre === zona.ciudad ? zona.nombre : `${zona.nombre}, ${zona.ciudad}`;
+const TXT = {
+  es: { eyebrow: 'Barrios', h1: `Propiedades en ${zona.nombre}`, meta: `Propiedades en venta y alquiler en ${lugar}`, otros: 'Otros barrios', todos: 'Ver todos los barrios' },
+  fr: { eyebrow: 'Quartiers', h1: `Biens à ${zona.nombre}`, meta: `Biens à vendre et à louer à ${lugar}`, otros: 'Autres quartiers', todos: 'Voir tous les quartiers' },
+  en: { eyebrow: 'Neighbourhoods', h1: `Properties in ${zona.nombre}`, meta: `Properties for sale and rent in ${lugar}`, otros: 'Other neighbourhoods', todos: 'See all neighbourhoods' },
+}[lang as 'es' | 'fr' | 'en'] ?? null;
+const x = TXT!;
+
+const d = zona.entry.data;
+const intro = ((lang === 'fr' || lang === 'en') ? d[lang]?.intro : undefined)?.trim() || d.intro || '';
+
+// Disponibles d'abord, puis les plus récents
+const biens = [...zona.bienes].sort(
+  (a, b) => Number(estaActivo(b.data)) - Number(estaActivo(a.data)) || +b.data.fecha - +a.data.fecha
+);
+const otras = (await zonasConBienes()).filter((z) => z.slug !== zona.slug);
+const description = `${x.meta}. ${intro}`.trim();
+---
+
+<Layout title={x.meta} description={description}>
+  <ListadoBiens eyebrow={`${x.eyebrow} · ${zona.ciudad}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros />
+  {otras.length > 0 && (
+    <section class="section otras">
+      <div class="container">
+        <h2>{x.otros}</h2>
+        <ul class="chips">
+          {otras.map((z) => <li><a href={L(`/barrios/${z.slug}`)}>{z.nombre} <span>{z.bienes.length}</span></a></li>)}
+        </ul>
+        <p><a class="todos" href={L('/barrios')}>{x.todos} →</a></p>
+      </div>
+    </section>
+  )}
+</Layout>
+
+<style>
+  .otras { padding-top: 0; }
+  .otras h2 { margin: 0 0 1rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); font-size: 1.3rem; }
+  .chips { list-style: none; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chips a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.95rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--brand); font-weight: 600; text-decoration: none; }
+  .chips a:hover { border-color: var(--violet); color: var(--violet); }
+  .chips span { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .todos { font-weight: 600; color: var(--violet); }
+</style>
