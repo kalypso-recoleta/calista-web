@@ -9,70 +9,104 @@ fr:
   titulo: 'Location classique ou temporaire à Asunción : quelle option choisir ?'
   descripcion: Si vous possédez un appartement à Asunción, vous pouvez le louer avec un bail classique ou le proposer en location temporaire meublée. Les deux options peuvent fonctionner, mais elles nécessitent une gestion différente.
   cuerpo: |-
-    Le choix dépend de votre appartement, de vos objectifs et de la souplesse que vous souhaitez conserver pour l’utiliser vous-même.
+    Et 780 AM / Mega TV a publié : **« Baja del dólar desafía al sector inmobiliario »** (« La baisse du dollar met au défi le secteur immobilier »). Dans cette note, Raúl Constantino, président de la Chambre paraguayenne des promoteurs immobiliers (CAPADEI), explique que près de **90 % des coûts de construction sont libellés en guaraníes**. Selon lui, les coûts de chantier ont **augmenté d'environ 20 % en dollars** par rapport à l'an dernier.
 
-    ## La location classique
+    En tant qu'agence immobilière et que promoteurs (Kalypso), nous le vivons au quotidien. Voici ce que nous observons.
 
-    Les contrats de location sont principalement régis par le Code civil paraguayen. Voici quelques points à connaître :
+    #### Les chiffres officiels
 
-    - **Durée du contrat :** pour la location habituelle d’un appartement, la durée maximale est de cinq ans (art. 807).
-    - **Loyers impayés :** deux mensualités échues et impayées permettent au propriétaire de demander en justice la résiliation du contrat (art. 837). La résiliation n’est pas automatique.
-    - **État du logement :** si son état n’a pas été documenté lors de la remise des clés, le locataire est présumé l’avoir reçu en bon état, sauf preuve contraire (art. 840). Un état des lieux signé, accompagné d’un inventaire et de photographies, aide à prévenir les désaccords à la fin de la location.
-    - **Sous-location :** si le contrat ne l’interdit pas, le locataire peut sous-louer le logement (art. 830). Il est donc préférable de préciser expressément si la sous-location est autorisée ou non.
-    - **TVA :** la location destinée exclusivement à l’habitation est soumise à une TVA de 5 %. Pour les autres usages, le régime applicable doit être vérifié. Le taux général est de 10 % (loi 6380/19, art. 90).
+    Selon le cours de référence de la Banque centrale du Paraguay (BCP) :
 
-    ## La location temporaire meublée
+    | Date | Guaraníes pour 1 dollar |
+    | 2 janvier 2026 | 6 627,60 |
+    | 4 mai 2026 | 6 047,81 |
+    | 1er septembre 2026 | 5 914,97 |
+    | 7 octobre 2026 | **5 751,99** (plus bas de l'année) |
 
-    Louer à la semaine ou au mois peut générer des revenus bruts plus élevés, mais demande davantage de gestion : réservations, accueil et assistance des voyageurs, arrivées et départs, ménage et lavage du linge de lit entre chaque séjour.
+    Entre le 2 janvier et le 7 octobre, un dollar vaut désormais **13,2 % de guaraníes en moins**. Vu dans l'autre sens, le guaraní s'est apprécié de **15,2 %** face au dollar.
 
-    Pour comparer les deux options, il faut regarder **ce qu’il vous reste après les dépenses**, en tenant également compte des périodes sans occupation, des charges et de l’entretien.
+    #### Le promoteur : des coûts en guaraníes, des prix en dollars
 
-    Avant de commencer, vérifiez deux points :
+    Au Paraguay, les logements se vendent presque toujours en dollars, mais le ciment, l'acier, les salaires et les charges sociales se paient en guaraníes. Le taux de change seul, sans compter l'inflation locale, renchérit donc le chantier.
 
-    - **Formalités touristiques :** si vous proposez l’appartement comme hébergement touristique, renseignez-vous auprès de la SENATUR sur la catégorie applicable et les conditions d’inscription et d’autorisation d’exploitation au REGISTUR.
-    - **Règlement de l’immeuble :** consultez le règlement de copropriété et les restrictions concernant l’usage de l’appartement. Ne présumez pas que la location temporaire est autorisée.
+    - **Exemple :** une tranche de travaux de **1 000 millions de guaraníes** coûtait **150 884 USD** en janvier. Elle coûte aujourd'hui **173 853 USD**, soit **+15,2 %**, uniquement à cause du taux de change.
 
-    ## Combien coûte la gestion avec CALISTA ?
+    Si l'on ajoute la hausse des coûts locaux en guaraníes, les +20 % évoqués par la CAPADEI sont cohérents avec ces chiffres.
 
-    **Location classique :** nos honoraires s’élèvent à **5 % des loyers effectivement encaissés, hors TVA**. Les honoraires de mise en location correspondent à un mois de loyer, répartis à parts égales entre le propriétaire et le locataire. Ils comprennent l’état des lieux et l’inventaire d’entrée.
+    C'est pourquoi les nouveaux projets sortent avec des prix en dollars plus élevés. Et les contrats signés en prévente à prix fixe en dollars restent sous pression pendant toute la durée du chantier.
 
-    **Location temporaire meublée :** nos honoraires s’élèvent à **20 % des revenus locatifs, TVA comprise**. Ce pourcentage comprend le ménage et le lavage du linge de lit entre chaque séjour.
+    #### L'acheteur qui gagne en guaraníes : une fenêtre favorable
+
+    Pour qui est payé en guaraníes, un bien affiché en dollars coûte aujourd'hui moins cher.
+
+    - **Exemple :** un appartement à **100 000 USD** coûtait **662,8 millions de guaraníes** le 2 janvier et **575,2 millions** le 7 octobre, soit **87,6 millions de moins**, du seul fait du taux de change.
+
+    L'effet est plus net sur les projets **déjà lancés ou achevés**, dont le prix en dollars a été fixé avant la hausse des coûts. Les nouveaux lancements, eux, intègrent déjà des prix plus élevés.
+
+    #### Le propriétaire qui loue en dollars
+
+    Un loyer encaissé en dollars rapporte aujourd'hui moins de guaraníes pour payer les charges, l'entretien et les impôts, qui sont en monnaie locale. Il est utile de revoir les comptes de chaque bien, et pas seulement le revenu en dollars.
+
+    #### Notre lecture chez CALISTA
+
+    1. **Calculer dans les deux monnaies.** Une décision d'achat, de vente ou de location s'analyse en guaraníes et en dollars, selon la monnaie de vos revenus et de vos dettes.
+    2. **Bien lire les contrats de prévente.** Prix fixe ou révisable, échéancier des paiements, monnaie de chaque versement : ces clauses pèsent aujourd'hui plus que jamais.
+    3. **Ne pas parier sur le taux de change.** Personne ne peut garantir que le dollar continuera de baisser ou qu'il remontera. Un bon investissement immobilier repose sur son emplacement, sa qualité et son rendement, pas sur un pari de change.
+
+    Vous voulez savoir combien vaut votre bien aujourd'hui, en guaraníes et en dollars ? Demandez une **estimation (tasación)**à notre équipe.
+
+    _Cet article est informatif et ne constitue pas un conseil financier._
 en:
   titulo: 'Traditional or short-term rentals in Asunción: which option is right for you?'
   descripcion: If you own an apartment in Asunción, you can rent it out under a traditional lease or offer it as a furnished short-term rental. Both options can work well, but they require different approaches to management.
   cuerpo: |-
-    The right choice depends on your apartment, your goals, and how much flexibility you want to retain for your own use.
+    ("deepens its fall, reaching 5,725 guaraníes on the interbank market"). And 780 AM / Mega TV published: **"Baja del dólar desafía al sector inmobiliario"** ("Falling dollar challenges the real estate sector"). In that piece, Raúl Constantino, president of the Paraguayan Chamber of Real Estate Developers (CAPADEI), explains that about **90% of construction costs are in guaraníes**. According to him, building costs have **risen by around 20% in dollar terms** compared with last year.
 
-    ## Traditional rentals
+    As a real estate agency and as developers (Kalypso), we see this every day. Here is what we observe.
 
-    Rental agreements are governed primarily by the Paraguayan Civil Code. Here are some key points to keep in mind:
+    #### The official figures
 
-    - **Contract duration:** for a standard apartment rental, the maximum term is five years (Article 807).
-    - **Non-payment:** two overdue and unpaid monthly rent payments allow the landlord to seek termination of the agreement through the courts (Article 837). Termination is not automatic.
-    - **Property condition:** if the apartment’s condition was not documented when the keys were handed over, the tenant is presumed to have received it in good condition, unless there is evidence to the contrary (Article 840). A signed inventory and condition report, supported by photographs, helps prevent disputes at the end of the tenancy.
-    - **Subletting:** if the agreement does not prohibit it, the tenant may sublet the property (Article 830). The contract should therefore explicitly state whether subletting is permitted.
-    - **VAT:** rentals exclusively for residential use are subject to 5% VAT. For other uses, the applicable tax treatment should be checked. The standard VAT rate is 10% (Law 6380/19, Article 90).
+    According to the reference exchange rate of the Central Bank of Paraguay (BCP):
 
-    ## Furnished short-term rentals
+    | Date | Guaraníes per dollar |
+    | January 2, 2026 | 6,627.60 |
+    | May 4, 2026 | 6,047.81 |
+    | September 1, 2026 | 5,914.97 |
+    | October 7, 2026 | **5,751.99** (lowest of the year) |
 
-    Renting by the week or month can generate higher gross income, but requires more management: bookings, guest assistance, check-ins and check-outs, cleaning, and laundering bed linen between stays.
+    Between January 2 and October 7, one dollar came to be worth **13.2% fewer guaraníes**. Put the other way round, the guaraní gained **15.2%** against the dollar.
 
-    To compare the two options, consider **how much you keep after expenses**, taking into account vacancy periods, utilities, and maintenance.
+    #### Developers: costs in guaraníes, prices in dollars
 
-    Before getting started, check two things:
+    In Paraguay, homes are almost always sold in dollars, but cement, steel, wages and social security contributions are paid in guaraníes. The exchange rate alone, before any local inflation, makes construction more expensive.
 
-    - **Tourism requirements:** if you offer the apartment as tourist accommodation, consult SENATUR about the applicable category and the registration and operating authorization requirements under REGISTUR.
-    - **Building rules:** review the condominium regulations and any restrictions on how the apartment may be used. Do not assume that short-term rentals are permitted.
+    - **Example:** a construction phase costing **1,000 million guaraníes** was worth **USD 150,884** in January. Today it costs **USD 173,853**, i.e. **+15.2%**, purely because of the exchange rate.
 
-    ## How much does property management with CALISTA cost?
+    Add the rise in local costs in guaraníes, and the +20% mentioned by CAPADEI is consistent with these numbers.
 
-    **Traditional rentals:** we charge **5% of the rent actually collected, plus VAT**. The tenant placement fee is equivalent to one month’s rent, split equally between the landlord and the tenant, and includes the move-in inventory and condition report.
+    This is why new projects are coming to market with higher dollar prices. And off-plan contracts signed at a fixed dollar price remain under pressure throughout construction.
 
-    **Furnished short-term rentals:** we charge **20% of rental income, including VAT**. This fee includes cleaning and laundering bed linen between stays.
+    #### Buyers earning in guaraníes: a favorable window
 
-    ## Let’s find the right option for your apartment
+    For anyone paid in guaraníes, a property priced in dollars is cheaper today.
 
-    Not sure which option suits you? Tell us where your apartment is located, how it is equipped, and what you want to achieve by renting it out. At **CALISTA Inmobiliaria**, we help you compare the options and take care of the management.
+    - **Example:** a **USD 100,000** apartment cost **662.8 million guaraníes** on January 2 and **575.2 million** on October 7, i.e. **87.6 million less**, from the exchange rate alone.
+
+    The effect is strongest on projects **already launched or completed**, whose dollar price was set before costs went up. New launches, on the other hand, already reflect higher prices.
+
+    #### Landlords renting in dollars
+
+    Rent collected in dollars now brings in fewer guaraníes to pay building fees, maintenance and taxes, which are in local currency. It is worth reviewing the figures for each property, not just the dollar income.
+
+    #### Our view at CALISTA
+
+    1. **Run the numbers in both currencies.** A decision to buy, sell or rent should be analyzed in guaraníes and in dollars, depending on the currency of your income and your debts.
+    2. **Read off-plan contracts carefully.** Fixed or adjustable price, payment schedule, currency of each installment: these clauses matter more than ever.
+    3. **Don't bet on the exchange rate.** No one can guarantee whether the dollar will keep falling or bounce back. A good real estate investment rests on location, quality and rental yield, not on a currency bet.
+
+    Want to know what your property is worth today, in guaraníes and in dollars? Ask our team for a **valuation (tasación)**.
+
+    _This article is for information only and does not constitute financial advice._
 ---
 
 La elección depende de tu departamento, de tus objetivos y de la disponibilidad que querés conservar para usarlo.
@@ -107,3 +141,9 @@ Antes de empezar, verificá dos aspectos:
 ## Veamos qué opción se adapta a tu departamento
 
 ¿No sabés cuál te conviene? Contanos dónde está tu departamento, cómo está equipado y qué buscás con el alquiler. En **CALISTA Inmobiliaria** te ayudamos a comparar las opciones y nos ocupamos de la gestión.
+
+¿Querés saber cuánto vale hoy tu inmueble, en guaraníes y en dólares? Pedí una **tasación** a nuestro equipo.
+
+***
+
+_Este artículo es informativo y no constituye asesoramiento financiero._
