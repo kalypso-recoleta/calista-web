@@ -2,7 +2,7 @@
 titulo: 'Alquiler tradicional o temporal en Asunción: ¿qué te conviene?'
 descripcion: Si tenés un departamento en Asunción, podés alquilarlo con un contrato tradicional o en alquiler temporal amoblado. Las dos opciones pueden funcionar bien, pero requieren una gestión diferente.
 categoria: guia
-borrador: true
+borrador: false
 fecha: 2026-10-07
 portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.png
 fr:
