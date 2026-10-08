@@ -1,8 +1,8 @@
 ---
 titulo: 'El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?'
 descripcion: En las últimas semanas, dos titulares resumieron la situación. Según 5Días, el dólar «profundiza su caída y llega hasta G. 5.725 en el mercado interbancario».
-categoria: guia
-borrador: true
+categoria: actualidad
+borrador: false
 fecha: 2026-10-08T06:27:00
 portada_foto: /uploads/Dollar en chute, construction en essor.png
 fr:
