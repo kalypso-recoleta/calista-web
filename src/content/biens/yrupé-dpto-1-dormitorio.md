@@ -10,6 +10,7 @@ portada: false
 exclusivo: false
 desarrollo: false
 moneda: USD
+periodo: total
 ciudad: Asunción
 barrio: Mburucuya
 ubicacion: '{"type":"Point","coordinates":[-57.5648687,-25.2626762]}'
@@ -47,20 +48,19 @@ tarifas:
     unidad: total
   - duracion: m2
     precio: 750
-    unidad: total
+    unidad: mes
   - duracion: m3
     precio: 680
-    unidad: total
+    unidad: mes
 incluye:
   - de una semana hasta 1 mes incluye Ande, limpieza semanal y wifi.
   - A partir de un mes solo incluye wifi.
 reservas:
   - desde: 2026-09-19
     hasta: 2026-12-18
-fecha: 2026-10-04T08:10:00
 fr:
   titulo: YRUPÉ – Appartement 1 chambre
-  descripcion: 'Appartement meublé d''une chambre à Mburucuyá, première Résidence Kalypso : une grande fresque de yrupés, balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct.'
+  descripcion: "Appartement meublé d'une chambre à Mburucuyá, première Résidence Kalypso : une grande fresque de yrupés, balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct."
   cuerpo: |-
     **Yrupé, la première Résidence Kalypso**
 
@@ -100,6 +100,7 @@ en:
     **Book directly** with us, no intermediaries or platforms.
 
     Check availability in the calendar and send us your dates.
+fecha: 2026-10-04T08:10:00
 ---
 
 **Yrupé, la primera Residencia Kalypso**
