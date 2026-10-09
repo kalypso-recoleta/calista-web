@@ -45,7 +45,7 @@ tarifas:
     unidad: total
   - duracion: m1
     precio: 750
-    unidad: total
+    unidad: mes
   - duracion: m2
     precio: 750
     unidad: mes
