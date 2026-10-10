@@ -2,7 +2,7 @@
 titulo: ¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario
 descripcion: Conseguir un crédito y poder comprar una vivienda son dos pasos distintos. Entender esa diferencia permite preparar mejor un proyecto de compra.
 categoria: actualidad
-borrador: true
+borrador: false
 fecha: 2026-10-10T06:59:00
 portada_foto: /uploads/Crédit approuvé, épargne à compléter.png
 fr:
