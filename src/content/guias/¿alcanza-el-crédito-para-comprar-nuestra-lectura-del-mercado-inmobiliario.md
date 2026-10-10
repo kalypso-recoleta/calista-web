@@ -2,7 +2,7 @@
 titulo: ¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario
 descripcion: Conseguir un crédito es un paso importante para comprar una vivienda. Pero que el banco apruebe el préstamo no significa que la compra esté al alcance de tu presupuesto.
 categoria: actualidad
-borrador: false
+borrador: true
 fecha: 2026-10-07T06:52:00
 portada_foto: /uploads/À deux, préparer l’achat immobilier.png
 fr:
