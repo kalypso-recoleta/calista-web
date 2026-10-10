@@ -5,7 +5,8 @@ import { site } from './site';
  * redimensionne, compresse et sert en WebP/AVIF automatiquement.
  * Les images restent sur Cloudinary — jamais dans Git.
  *
- * Accepte aussi une URL externe ou un chemin local (renvoyé tel quel).
+ * Les chemins locaux (/uploads/…) passent par le Netlify Image CDN en production.
+ * Les URLs externes sont renvoyées telles quelles.
  */
 export function img(
   url: string | undefined,
@@ -14,6 +15,19 @@ export function img(
   if (!url) return '/placeholder.svg';
 
   const { w = 800, h, crop = 'fill' } = opts;
+
+  // Images locales (ex. /uploads/… ajoutées depuis le CMS) : en production,
+  // on les fait passer par le Netlify Image CDN, qui les redimensionne et
+  // les sert en WebP compressé. En local (astro dev), on garde le fichier brut.
+  if (url.startsWith('/') && !url.startsWith('//') && !/\.svg$/i.test(url)) {
+    if (!import.meta.env.PROD) return url;
+    const params = new URLSearchParams({ url, w: String(w), fm: 'webp', q: '75' });
+    if (h) {
+      params.set('h', String(h));
+      params.set('fit', crop === 'fit' ? 'contain' : 'cover');
+    }
+    return `/.netlify/images?${params.toString()}`;
+  }
 
   // N'optimise que les URLs Cloudinary "/upload/"
   const marker = '/upload/';
