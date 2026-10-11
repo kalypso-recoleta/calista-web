@@ -15,6 +15,22 @@ import { guiasPublicadas } from './guias';
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+/**
+ * Version carrée JPEG 1080×1080 d'une photo, pour Instagram (qui n'accepte que le JPEG
+ * et un format entre 4:5 et 1,91:1). Images locales : Netlify Image CDN.
+ * Images Cloudinary : transformation Cloudinary. Autres URLs : renvoyées telles quelles.
+ */
+function fotoInstagram(base: string, u: string): string {
+  if (!u) return '';
+  if (u.includes('res.cloudinary.com') && u.includes('/upload/')) {
+    return u.replace('/upload/', '/upload/c_fill,w_1080,h_1080,f_jpg,q_85/');
+  }
+  const path = u.startsWith(base) ? u.slice(base.length) : u;
+  if (!path.startsWith('/')) return u;
+  const q = new URLSearchParams({ url: decodeURI(path), w: '1080', h: '1080', fit: 'cover', fm: 'jpg', q: '85' });
+  return `${base}/.netlify/images?${q.toString()}`;
+}
+
 type Item = { titulo: string; link: string; desc: string; precio: string; foto: string; fecha: Date; categoria: string };
 
 export async function rssResponse(
@@ -91,7 +107,7 @@ ${items
 <pubDate>${i.fecha.toUTCString()}</pubDate>
 <category>${esc(i.categoria)}</category>
 <description>${esc(i.precio ? `${i.precio} — ${i.desc}` : i.desc)}</description>
-${i.foto ? `<enclosure url="${esc(i.foto)}" type="${/\.png$/i.test(i.foto) ? 'image/png' : 'image/jpeg'}" length="0" />\n<media:content url="${esc(i.foto)}" medium="image" />` : ''}
+${i.foto ? `<enclosure url="${esc(i.foto)}" type="${/\.png$/i.test(i.foto) ? 'image/png' : 'image/jpeg'}" length="0" />\n<enclosure url="${esc(fotoInstagram(base, i.foto))}" type="image/jpeg" length="0" />\n<media:content url="${esc(i.foto)}" medium="image" />` : ''}
 </item>`
   )
   .join('\n')}
