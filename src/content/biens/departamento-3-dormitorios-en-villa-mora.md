@@ -9,7 +9,7 @@ lateral: true
 portada: false
 exclusivo: true
 desarrollo: false
-precio: 5000000
+precio: 4800000
 moneda: PYG
 periodo: total
 ciudad: Asunción
