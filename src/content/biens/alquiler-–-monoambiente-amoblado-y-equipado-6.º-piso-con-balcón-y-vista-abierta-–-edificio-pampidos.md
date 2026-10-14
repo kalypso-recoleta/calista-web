@@ -5,7 +5,7 @@ operacion: temporal
 tipo: departamento
 estado: disponible
 destacado: false
-lateral: false
+lateral: true
 portada: true
 exclusivo: false
 desarrollo: false
