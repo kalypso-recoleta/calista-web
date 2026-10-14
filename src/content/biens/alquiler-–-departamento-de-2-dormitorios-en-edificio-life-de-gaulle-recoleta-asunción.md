@@ -37,6 +37,51 @@ imagenes:
   - /uploads/IMG_0063M2c9By.avif
   - /uploads/IMG_0064W3lDAM.avif
 descripcion: A pasos de la cuadrilla, departamento a estrenar, luminoso y con vista abierta, de 81,5 m² con cochera n.º 7.
+fr:
+  titulo: À LOUER – Appartement de 2 chambres dans la résidence Life De Gaulle (Recoleta, Asunción)
+  descripcion: À quelques pas de La Cuadrilla, appartement neuf et lumineux de 81,5 m², avec vue dégagée et place de parking n° 7.
+  cuerpo: |-
+    **Agencement :**
+
+    - Grand séjour avec salle à manger et comptoir pour le petit-déjeuner
+    - Cuisine avec plan de travail en granit, four encastré, plaque de cuisson et meubles hauts et bas
+    - Balcon-terrasse avec filet de protection et barbecue [à confirmer]
+    - Chambre principale avec placards intégrés et salle d’eau privative
+    - Deuxième chambre avec placards
+    - Deux salles d’eau complètes avec plans de toilette en marbre
+    - Buanderie indépendante avec étagères
+
+    **Finitions et équipements :**
+
+    - Revêtement de sol imitation bois dans tout l’appartement
+    - Climatisation split dans le séjour et les chambres
+    - Éclairage par spots LED encastrés
+    - Grandes baies vitrées
+
+    **Équipements de la résidence :** piscine, salle de sport et espace couvert pour les barbecues et les repas.
+en:
+  titulo: FOR RENT – Two-bedroom apartment in the Life De Gaulle building (Recoleta, Asunción)
+  descripcion: Just steps from La Cuadrilla, this bright, brand-new 81.5 m² apartment offers unobstructed views and comes with parking space No. 7.
+  cuerpo: |-
+    **Layout:**
+
+    - Spacious living and dining area with a breakfast bar
+    - Kitchen with granite countertops, a built-in oven, a cooktop, and upper and lower cabinets
+    - Balcony terrace with safety netting and a barbecue [to be confirmed]
+    - Main bedroom with built-in wardrobes and an en-suite bathroom
+    - Second bedroom with built-in wardrobes
+    - Two full bathrooms with marble vanity countertops
+    - Separate laundry room with shelving
+
+    **Finishes and features:**
+
+    - Wood-effect flooring throughout the apartment
+    - Split air conditioning in the living room and bedrooms
+    - Recessed LED spotlights
+    - Large windows
+
+    **Building amenities:** swimming pool, gym, and a covered barbecue and dining area.
+fecha: 2026-10-13T21:59:00
 ---
 
 A pasos de la cuadrilla, departamento a estrenar, luminoso y con vista abierta, de 81,5 m² con cochera n.º 7.
