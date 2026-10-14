@@ -11,7 +11,7 @@ exclusivo: true
 desarrollo: false
 precio: 4800000
 moneda: PYG
-periodo: total
+periodo: mes
 ciudad: Asunción
 barrio: Villa Mora
 ubicacion: '{"type":"Point","coordinates":[-57.5859473,-25.2972963]}'
