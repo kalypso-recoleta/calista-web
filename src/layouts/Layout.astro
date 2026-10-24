@@ -113,6 +113,13 @@ const orgSchema = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
+    <!-- Statistiques Plausible (sans cookies, donc sans bandeau d'accord) -->
+    <script is:inline async src="https://plausible.io/js/pa-8tCHVoGD4U5b-mNJN2K22.js"></script>
+    <script is:inline>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+
     <!-- Données structurées : agence immobilière (toutes les pages) -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 
@@ -148,10 +155,19 @@ const orgSchema = {
         document.querySelectorAll<HTMLAnchorElement>('a[href^="https://wa.me/"]').forEach((a) => {
           const u = new URL(a.href);
           if (u.pathname === '/' || u.pathname === '') return;
+          // Statistiques : chaque clic WhatsApp est compté (objectif « WhatsApp » dans Plausible)
+          a.addEventListener('click', () => {
+            const numero = u.pathname.replace('/', '');
+            (window as any).plausible?.('WhatsApp', { props: { pagina: codigo, numero: numero.endsWith('333003') ? 'Hélène' : 'general' } });
+          });
           const texto = u.searchParams.get('text') ?? '';
           if (texto.startsWith('[WEB-')) return;
           // encodeURIComponent (et non searchParams) : WhatsApp lit « %20 », pas toujours « + »
           a.href = `https://wa.me${u.pathname}?text=${encodeURIComponent(`${codigo} ${texto}`.trim())}`;
+        });
+        // Statistiques : clics vers la fiche / les avis Google (objectif « Reseñas Google »)
+        document.querySelectorAll<HTMLAnchorElement>('a[href*="maps.app.goo.gl"], a[href*="g.page/"]').forEach((a) => {
+          a.addEventListener('click', () => (window as any).plausible?.('Reseñas Google', { props: { pagina: codigo } }));
         });
       } catch {
         // En cas de souci, les liens restent tels quels.
