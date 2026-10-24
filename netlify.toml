@@ -10,3 +10,20 @@
   for = "/admin/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
+
+# Article supprimé puis republié avec « -1 » : l'ancienne adresse (déjà partagée) renvoie vers la nouvelle
+[[redirects]]
+  from = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
+  to = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  status = 301
+
+[[redirects]]
+  from = "/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
+  to = "/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
+  to = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  status = 301
+

@@ -24,8 +24,13 @@ const x = {
 }[lang as 'es' | 'fr' | 'en']!;
 const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
 const wa = whatsappLink(`Hola Calista, leí el artículo "${guia.data.titulo}" y tengo una consulta.`);
-const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
+// Autres articles : d'abord ceux de la même catégorie (guide / actualité), puis les plus récents
+const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, b) => Number(b.entry.data.categoria === guia.data.categoria) - Number(a.entry.data.categoria === guia.data.categoria)).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
 const url = new URL(Astro.url.pathname, Astro.site).toString();
+// Auteure des articles (signature visible + données structurées)
+const AUTORA = 'Hélène Montourcy';
+const rol = { es: 'Fundadora de CALISTA', fr: 'Fondatrice de CALISTA', en: 'Founder of CALISTA' }[lang as 'es' | 'fr' | 'en'];
+const por = { es: 'Por', fr: 'Par', en: 'By' }[lang as 'es' | 'fr' | 'en'];
 const ld = {
   '@context': 'https://schema.org',
   '@type': d.categoria === 'actualidad' ? 'NewsArticle' : 'Article',
@@ -35,20 +40,20 @@ const ld = {
   inLanguage: html || lang === 'es' ? lang : 'es',
   mainEntityOfPage: url,
   ...(d.portada_foto ? { image: new URL(d.portada_foto, Astro.site).toString() } : {}),
-  author: { '@type': 'Organization', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() },
+  author: { '@type': 'Person', name: AUTORA, jobTitle: rol, url: new URL(L('/historia'), Astro.site).toString(), worksFor: { '@type': 'Organization', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() } },
   publisher: { '@type': 'Organization', name: 'CALISTA Inmobiliaria', logo: { '@type': 'ImageObject', url: new URL('/logo-calista.png', Astro.site).toString() } },
 };
 ---
 
-<Layout title={d.titulo} description={d.descripcion} image={d.portada_foto}>
+<Layout title={d.titulo} description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha}>
   <article class="section">
     <div class="container art">
       <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span></p>
       <h1>{d.titulo}</h1>
       <p class="lead">{d.descripcion}</p>
-      <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time>
+      <p class="firma">{por} <a href={L('/historia')}>{AUTORA}</a>, {rol} · <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></p>
       <Compartir titulo={d.titulo} url={url} />
-      {d.portada_foto && <img class="portada" src={img(d.portada_foto, { w: 1200, h: 630 })} alt="" width="1200" height="630" />}
+      {d.portada_foto && <img class="portada" src={img(d.portada_foto, { w: 1200, h: 630 })} alt={d.titulo} width="1200" height="630" />}
       <div class="prose">
         {html ? <Fragment set:html={html} /> : <Content />}
       </div>
@@ -94,7 +99,8 @@ const ld = {
   .cat.actualidad { background: #e6f4ea; color: #1e7a3c; }
   .migas a { color: var(--violet); text-decoration: none; font-weight: 600; }
   h1 { margin-bottom: 0.6rem; }
-  time { display: block; font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 1.6rem; }
+  .firma { font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 1.6rem; }
+  .firma a { color: var(--violet); font-weight: 600; text-decoration: none; }
   .portada { width: 100%; height: auto; border-radius: var(--radius); margin-bottom: 1.8rem; }
   .prose { font-size: 1.06rem; line-height: 1.75; }
   .prose :global(h2) { margin-top: 2.2rem; padding-left: 0.8rem; border-left: 4px solid var(--violet); font-size: 1.4rem; }
