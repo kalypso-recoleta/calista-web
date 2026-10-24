@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const L = (p: string) => localizePath(p, lang);
 // Message en espagnol : c'est l'agence qui le lit
-const wa = whatsappLink(t('adm.wa_msg'));
+const wa = whatsappLink(t('adm.wa_msg'), site.whatsappTemporal);
 const items = [1, 2, 3, 4, 5, 6].map((n) => ({ t: t(`adm.i${n}_t`), d: t(`adm.i${n}_d`) }));
 const waTemp = whatsappLink(t('adm.temp_wa'), site.whatsappTemporal);
 const tempItems = [1, 2, 3, 5, 4].map((n) => t(`adm.temp_i${n}`));

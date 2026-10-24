@@ -2,6 +2,7 @@
 import { site } from '../lib/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BarraMovil from '../components/BarraMovil.astro';
 import {
   getLangFromUrl,
   useTranslations,
@@ -132,6 +133,29 @@ const orgSchema = {
       <slot />
     </main>
     <Footer />
+    <BarraMovil />
+
+    <script>
+      // Code de page au début des messages WhatsApp pré-remplis : la personne qui répond
+      // sait d'où vient le contact (ex. « [WEB-ADMINISTRACION] » ou « [WEB-BLOG-FR] »).
+      // Les liens de partage (wa.me/?text=…, sans numéro) ne sont pas modifiés.
+      try {
+        const partes = location.pathname.split('/').filter(Boolean);
+        const lang = ['fr', 'en'].includes(partes[0]) ? partes.shift()!.toUpperCase() : '';
+        const seccion = (partes[0] || 'inicio').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+        const codigo = `[WEB-${seccion}${lang ? '-' + lang : ''}]`;
+        document.querySelectorAll<HTMLAnchorElement>('a[href^="https://wa.me/"]').forEach((a) => {
+          const u = new URL(a.href);
+          if (u.pathname === '/' || u.pathname === '') return;
+          const texto = u.searchParams.get('text') ?? '';
+          if (texto.startsWith('[WEB-')) return;
+          // encodeURIComponent (et non searchParams) : WhatsApp lit « %20 », pas toujours « + »
+          a.href = `https://wa.me${u.pathname}?text=${encodeURIComponent(`${codigo} ${texto}`.trim())}`;
+        });
+      } catch {
+        // En cas de souci, les liens restent tels quels.
+      }
+    </script>
 
     <script>
       // Révélation au scroll

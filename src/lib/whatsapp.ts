@@ -23,3 +23,15 @@ export function whatsappBien(opts: {
   ];
   return whatsappLink(partes.join(''));
 }
+
+/**
+ * Pages « propriétaires » (et Historia / Alquiler temporal) : numéro d'Hélène.
+ * Toutes les autres pages : numéro général. `basePath` = chemin sans langue (ex. "/administracion").
+ */
+const RUTAS_HELENE = ['/administracion', '/propietarios', '/tasaciones', '/historia', '/alquiler-temporal'];
+export function esRutaPropietario(basePath: string): boolean {
+  return RUTAS_HELENE.some((r) => basePath === r || basePath.startsWith(r + '/'));
+}
+export function numeroPorRuta(basePath: string): string {
+  return esRutaPropietario(basePath) ? site.whatsappTemporal : site.whatsapp;
+}

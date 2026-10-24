@@ -21,6 +21,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.contactar': 'Contactar',
     'nav.skip': 'Saltar al contenido',
     'nav.wa_consulta': 'Hola Calista, quisiera hacer una consulta.',
+    'barra.propietarios': 'Soy propietario',
 
     // Footer
     'footer.propiedades': 'Propiedades',
@@ -489,6 +490,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.contactar': 'Nous contacter',
     'nav.skip': 'Aller au contenu',
     'nav.wa_consulta': 'Bonjour Calista, je souhaiterais un renseignement.',
+    'barra.propietarios': 'Je suis propriétaire',
 
     // Footer
     'footer.propiedades': 'Propriétés',
@@ -810,7 +812,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'adm.title': "Louez votre bien sans vous occuper de rien.",
     'adm.lead': "Nous trouvons le locataire, préparons le contrat, encaissons le loyer et vous rendons compte chaque mois. Vous recevez simplement vos revenus.",
     'adm.cta_wa': "Je veux faire gérer ma location",
-    'adm.wa_msg': "Hola Calista, quiero que administren el alquiler de mi propiedad.",
+    'adm.wa_msg': "Bonjour Calista, je souhaite vous confier la gestion locative de mon bien.",
     'adm.cta_tarifas': "Voir les tarifs",
     'adm.incluye_title': "Ce que nous faisons pour vous",
     'adm.i1_t': "Recherche et sélection du locataire",
@@ -841,7 +843,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.title': "Combien vaut votre bien ?",
     'tas.lead': "Nous vous donnons une valeur réaliste, fondée sur le marché de votre quartier, pour vendre ou louer au juste prix.",
     'tas.cta_wa': "Je veux une estimation",
-    'tas.wa_msg': "Hola Calista, quisiera una tasación de mi propiedad.",
+    'tas.wa_msg': "Bonjour Calista, je souhaiterais une estimation de mon bien.",
     'tas.v_t': "Estimation pour vendre",
     'tas.v_d': "Pour fixer un prix de vente réaliste : ni trop haut pour ne pas faire fuir les acheteurs, ni trop bas pour ne pas perdre d’argent.",
     'tas.a_t': "Estimation pour louer",
@@ -862,7 +864,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.suc_d': "Vous héritez d’un bien au Paraguay et la succession est réglée en France ? Avec notre agence en France, CALISTA Immobilier (Martinique), nous préparons le rapport d’estimation en français pour votre notaire.",
     'tas.suc_wa': "Nous consulter pour une succession",
     'tas.suc_web': "Notre agence en France :",
-    'tas.suc_msg': "Hola Calista, necesito una tasación para una sucesión con notario en Francia.",
+    'tas.suc_msg': "Bonjour Calista, j’ai besoin d’une estimation pour une succession avec un notaire en France.",
     'adm.soft_eyebrow': "Notre logiciel",
     'adm.soft_t': "Une comptabilité claire, pour les propriétaires et les locataires",
     'adm.soft_d': "Forts de nos années d’expérience en gestion, nous avons développé notre propre logiciel. Chaque encaissement, chaque dépense et chaque commission sont enregistrés, en guaraníes et en dollars séparément, et la commission n’est calculée que sur les sommes réellement encaissées. Votre relevé mensuel est ainsi précis et facile à lire.",
@@ -878,7 +880,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'adm.temp_i4': "Coordination de l'entretien (le coût des réparations reste à la charge du propriétaire)",
     'adm.temp_i5': "Ménage du logement et lavage du linge entre chaque séjour",
     'adm.temp_cta': "Voir les appartements que nous gérons",
-    'adm.temp_wa': "Hola Calista, quiero que gestionen mi departamento en alquiler temporal.",
+    'adm.temp_wa': "Bonjour Calista, je souhaite vous confier mon appartement en location meublée temporaire.",
     'adm.temp_btn': "Confier mon appartement meublé",
 
     // Contacto
@@ -957,6 +959,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'nav.contactar': 'Contact us',
     'nav.skip': 'Skip to content',
     'nav.wa_consulta': 'Hello Calista, I would like some information.',
+    'barra.propietarios': 'I own a property',
 
     // Footer
     'footer.propiedades': 'Properties',
@@ -1276,7 +1279,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'adm.title': "Rent out your property without lifting a finger.",
     'adm.lead': "We find the tenant, prepare the contract, collect the rent and report to you every month. You simply receive your income.",
     'adm.cta_wa': "I want my rental managed",
-    'adm.wa_msg': "Hola Calista, quiero que administren el alquiler de mi propiedad.",
+    'adm.wa_msg': "Hello Calista, I would like you to manage the rental of my property.",
     'adm.cta_tarifas': "See the fees",
     'adm.incluye_title': "What we do for you",
     'adm.i1_t': "Tenant search and selection",
@@ -1307,7 +1310,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.title': "What is your property worth?",
     'tas.lead': "We give you a realistic value, based on the market in your area, so you can sell or rent at the right price.",
     'tas.cta_wa': "I want a valuation",
-    'tas.wa_msg': "Hola Calista, quisiera una tasación de mi propiedad.",
+    'tas.wa_msg': "Hello Calista, I would like a valuation of my property.",
     'tas.v_t': "Sale valuation",
     'tas.v_d': "To set a realistic asking price: not so high that buyers stay away, not so low that you lose money.",
     'tas.a_t': "Rental valuation",
@@ -1328,7 +1331,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'tas.suc_d': "Did you inherit a property in Paraguay with the estate handled in France? Together with our agency in France, CALISTA Immobilier (Martinique), we prepare the valuation report in French for the notary.",
     'tas.suc_wa': "Ask about an estate",
     'tas.suc_web': "Our agency in France:",
-    'tas.suc_msg': "Hola Calista, necesito una tasación para una sucesión con notario en Francia.",
+    'tas.suc_msg': "Hello Calista, I need a valuation for an estate settlement with a notary in France.",
     'adm.soft_eyebrow': "Our software",
     'adm.soft_t': "Clear accounting, for owners and tenants",
     'adm.soft_d': "Drawing on years of property management experience, we built our own management software. Every payment, expense and commission is recorded, with guaraníes and dollars kept separate, and our commission is calculated only on rent actually collected. Your monthly statement is accurate and easy to read.",
@@ -1344,7 +1347,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'adm.temp_i4': "Maintenance coordination (repair costs are paid by the owner)",
     'adm.temp_i5': "Apartment cleaning and linen laundering between stays",
     'adm.temp_cta': "See the apartments we manage",
-    'adm.temp_wa': "Hola Calista, quiero que gestionen mi departamento en alquiler temporal.",
+    'adm.temp_wa': "Hello Calista, I would like you to manage my apartment as a short-term furnished rental.",
     'adm.temp_btn': "Let us manage my furnished apartment",
 
     // Contacto

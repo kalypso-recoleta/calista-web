@@ -12,7 +12,8 @@ export const site = {
   // ⚠️ Numéro WhatsApp au format international SANS "+", ni espaces, ni "0".
   // Paraguay = 595. Ex. pour 0981 123 456 → "595981123456"
   whatsapp: '595994385487',
-  // Numéro d'Hélène : pages Alquiler temporal et Tasaciones
+  // Numéro d'Hélène : propriétaires (Administración, Vender/Tasar, Tasaciones),
+  // Alquiler temporal et Historia — voir numeroPorRuta() dans src/lib/whatsapp.ts
   whatsappTemporal: '595984333003',
 
   email: 'contacto@calista.com.py',

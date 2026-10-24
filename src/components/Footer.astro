@@ -1,7 +1,7 @@
 ---
 import { site } from '../lib/site';
-import { whatsappLink } from '../lib/whatsapp';
-import { getLangFromUrl, useTranslations, localizePath } from '../i18n/utils';
+import { whatsappLink, numeroPorRuta } from '../lib/whatsapp';
+import { getLangFromUrl, useTranslations, localizePath, stripLocale } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
       <a href={L('/blog')}>{t('nav.guias')}</a>
       <a href={L('/preguntas-frecuentes')}>{t('footer.faq')}</a>
       <a href={L('/contacto')}>{t('footer.contacto')}</a>
-      <a href={whatsappLink()} target="_blank" rel="noopener">WhatsApp</a>
+      <a href={whatsappLink(undefined, numeroPorRuta(stripLocale(Astro.url.pathname).replace(/\/$/, '') || '/'))} target="_blank" rel="noopener">WhatsApp</a>
     </div>
 
     <div class="col">

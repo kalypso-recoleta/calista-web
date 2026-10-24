@@ -7,6 +7,7 @@ import WhatsAppButton from '../WhatsAppButton.astro';
 import Testimonios from '../Testimonios.astro';
 import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
 import { formatPrecio, formatUbicacion } from '../../lib/format';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 import { zonasConBienes } from '../../lib/barrios';
@@ -47,7 +48,7 @@ const categorias = [
 const zonas = await zonasConBienes();
 const zTxt = { es: ['Barrios', 'Buscá por barrio', 'Ver todos'], fr: ['Quartiers', 'Chercher par quartier', 'Voir tout'], en: ['Neighbourhoods', 'Search by neighbourhood', 'See all'] }[lang as 'es' | 'fr' | 'en'];
 const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
-const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad.');
+const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad.', site.whatsappTemporal);
 ---
 
 <Layout title={t('seo.home_title')} description={t('seo.home_desc')}>

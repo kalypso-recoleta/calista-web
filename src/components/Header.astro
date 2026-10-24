@@ -1,6 +1,6 @@
 ---
 import { site } from '../lib/site';
-import { whatsappLink } from '../lib/whatsapp';
+import { whatsappLink, numeroPorRuta } from '../lib/whatsapp';
 import {
   getLangFromUrl,
   useTranslations,
@@ -29,11 +29,8 @@ const nav = [
 
 // Chemin courant sans préfixe de langue, pour l'état actif et le sélecteur
 const basePath = stripLocale(Astro.url.pathname).replace(/\/$/, '') || '/';
-// Sur les pages Alquiler temporal, Tasaciones et Historia, le bouton WhatsApp va au numéro d'Hélène
-const wa = whatsappLink(
-  t('nav.wa_consulta'),
-  basePath.startsWith('/alquiler-temporal') || basePath === '/tasaciones' || basePath === '/historia' ? site.whatsappTemporal : site.whatsapp
-);
+// Sur les pages propriétaires, Alquiler temporal et Historia, le bouton WhatsApp va au numéro d'Hélène
+const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
 ---
 
 <header class="site-header">
