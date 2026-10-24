@@ -23,7 +23,7 @@ const activos = todos.filter(
 const destacados = activos
   .filter((b) => b.data.destacado)
   .sort((a, b) => +b.data.fecha - +a.data.fecha)
-  .slice(0, 6);
+  .slice(0, 3);
 // L'annonce cochée "⭐ Portada" dans l'admin gagne toujours ; sinon la
 // destacada la plus récente ; sinon la première annonce active.
 const conPortada = activos
@@ -48,21 +48,170 @@ const categorias = [
 const zonas = await zonasConBienes();
 const zTxt = { es: ['Barrios', 'Buscá por barrio', 'Ver todos'], fr: ['Quartiers', 'Chercher par quartier', 'Voir tout'], en: ['Neighbourhoods', 'Search by neighbourhood', 'See all'] }[lang as 'es' | 'fr' | 'en'];
 const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
-const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad.', site.whatsappTemporal);
+
+// Textes de l'accueil (version « deux portes » : chercheurs de biens / propriétaires).
+// Chiffres donnés par Hélène (oct. 2026) : location en général en moins de 15 jours,
+// virement aux propriétaires le 10 de chaque mois.
+const anosPy = new Date().getFullYear() - 2015;
+const H = {
+  es: {
+    eyebrow: 'Inmobiliaria en Asunción',
+    h1: 'Encontrá tu lugar en Asunción. O alquilá el tuyo sin estar acá.',
+    lead: `${anosPy} años en el mercado paraguayo. Te atendemos en español, francés e inglés, y administramos tu alquiler por el 5 % de lo cobrado, más IVA.`,
+    busco: 'Busco una propiedad',
+    tengo: 'Tengo una propiedad para alquilar',
+    g_en: 'en Google', g_resenas: 'reseñas',
+    tira: [`${anosPy} años en Paraguay`, '+100 propiedades gestionadas', 'Español · Français · English'],
+    p_eyebrow: 'Para propietarios',
+    p_h2: '¿Vivís lejos de tu departamento? Lo alquilamos y lo administramos por vos.',
+    p_lead: 'Buscamos al inquilino, verificamos sus garantías, cobramos el alquiler y te lo transferimos el día 10 de cada mes, con una rendición de cuentas clara en guaraníes y en dólares.',
+    stats: [['< 15 días', 'para alquilar, en general'], ['Día 10', 'transferencia de tu alquiler, cada mes'], ['5 %', 'de lo cobrado, más IVA. Si no cobrás, no cobramos.']],
+    p_nota: 'Puesta en alquiler: un mes de alquiler, compartido 50/50 con el inquilino. Sin cargo para tu primer inquilino si compraste con CALISTA.',
+    p_link: 'Ver cómo trabajamos y todas las tarifas',
+    f_t: '¿Cuánto puede rendir tu propiedad?',
+    f_d: 'Te enviamos un rango de alquiler y tu ingreso neto después de la administración. Gratis y sin compromiso.',
+    f_barrio: 'Barrio o ciudad', f_barrio_ph: 'Ej. Recoleta',
+    f_tipo: 'Tipo', tipos: ['Departamento', 'Monoambiente', 'Casa', 'Dúplex', 'Otro'],
+    f_dorm: 'Dormitorios', f_sup: 'Superficie (m²)', f_amob: '¿Amoblado?', si: 'Sí', no: 'No',
+    f_nombre: 'Nombre', f_contacto: 'WhatsApp o email',
+    f_acepto: 'Acepto que CALISTA me contacte sobre mi propiedad.',
+    f_enviar: 'Quiero mi estimación',
+    res_t: 'Lo que dicen nuestros clientes',
+    dest_t: 'Propiedades destacadas',
+    pasos_t: 'Cómo administramos tu propiedad',
+    pasos_d: 'Con nuestro propio software: cada cobro y cada gasto queda registrado, guaraníes y dólares por separado.',
+    pasos: [['Precio y publicación', 'Te damos el precio real de mercado y publicamos tu propiedad en nuestros canales.'], ['Inquilino y contrato', 'Visitas, selección, garantías verificadas e inventario con fotos.'], ['Cobro y transferencia', 'Cobramos el alquiler y te lo transferimos el día 10 de cada mes.'], ['Rendición mensual', 'Recibís el detalle de lo cobrado y lo pagado, sin tener que pedirlo.']],
+    hel_t: 'Hélène Montourcy, fundadora',
+    hel_d: 'Dirijo CALISTA en Asunción y CALISTA Immobilier en Martinica. Te atiendo personalmente, en español, francés o inglés.',
+    hel_link: 'Nuestra historia',
+    suc_d: '¿Heredaste un inmueble en Paraguay y la sucesión se tramita en Francia? Preparamos la tasación en francés para tu notario, junto a CALISTA Immobilier en Martinica.',
+    suc_btn: 'Consultar por una sucesión',
+    faq_t: 'Lo que nos preguntan los propietarios',
+    faq: [
+      ['¿Cuánto cobran por administrar mi alquiler?', 'El 5 % de los alquileres efectivamente cobrados, cada mes, más IVA (10 %). Si el alquiler no se cobra, no cobramos comisión.'],
+      ['¿Cuánto cuesta poner mi propiedad en alquiler?', 'Un mes de alquiler, repartido 50 % a cargo del propietario y 50 % a cargo del inquilino. Si compraste tu propiedad con CALISTA, la puesta en alquiler de tu primer inquilino es sin cargo.'],
+      ['¿En cuánto tiempo se alquila mi departamento?', 'En general, en menos de 15 días: lo publicamos en todos nuestros canales y en los portales.'],
+      ['¿Cuándo recibo mi alquiler?', 'Te lo transferimos el día 10 de cada mes, con la rendición de cuentas del mes.'],
+    ],
+    faq_todas: 'Todas las preguntas frecuentes',
+    fin_t: '¿Cuánto puede rendir tu propiedad?',
+    fin_d: 'Pedí tu estimación gratis o escribinos ahora por WhatsApp.',
+    fin_btn: 'Estimar mi alquiler gratis',
+    wa_prop: 'Hola Calista, tengo una propiedad para alquilar.',
+  },
+  fr: {
+    eyebrow: 'Agence immobilière à Asunción',
+    h1: 'Trouvez votre lieu à Asunción. Ou louez le vôtre sans être sur place.',
+    lead: `${anosPy} ans sur le marché paraguayen. Nous vous accompagnons en français, espagnol et anglais, et gérons votre location pour 5 % des loyers encaissés, plus TVA.`,
+    busco: 'Je cherche un bien',
+    tengo: 'J’ai un bien à louer',
+    g_en: 'sur Google', g_resenas: 'avis',
+    tira: [`${anosPy} ans au Paraguay`, '+100 biens gérés', 'Español · Français · English'],
+    p_eyebrow: 'Pour les propriétaires',
+    p_h2: 'Vous vivez loin de votre appartement ? Nous le louons et le gérons pour vous.',
+    p_lead: 'Nous trouvons le locataire, vérifions ses garanties, encaissons le loyer et vous le virons le 10 de chaque mois, avec un relevé clair en guaraníes et en dollars.',
+    stats: [['< 15 jours', 'pour louer, en général'], ['Le 10', 'virement de votre loyer, chaque mois'], ['5 %', 'des loyers encaissés, plus TVA. Pas de loyer encaissé, pas de commission.']],
+    p_nota: 'Mise en location : un mois de loyer, partagé 50/50 avec le locataire. Offerte pour votre premier locataire si vous avez acheté avec CALISTA.',
+    p_link: 'Voir comment nous travaillons et tous nos tarifs',
+    f_t: 'Combien peut rapporter votre bien ?',
+    f_d: 'Nous vous envoyons une fourchette de loyer et votre revenu net après gestion. Gratuit et sans engagement.',
+    f_barrio: 'Quartier ou ville', f_barrio_ph: 'Ex. Recoleta',
+    f_tipo: 'Type', tipos: ['Appartement', 'Studio', 'Maison', 'Duplex', 'Autre'],
+    f_dorm: 'Chambres', f_sup: 'Surface (m²)', f_amob: 'Meublé ?', si: 'Oui', no: 'Non',
+    f_nombre: 'Nom', f_contacto: 'WhatsApp ou e-mail',
+    f_acepto: 'J’accepte que CALISTA me contacte au sujet de mon bien.',
+    f_enviar: 'Recevoir mon estimation',
+    res_t: 'Ce que disent nos clients',
+    dest_t: 'Biens à la une',
+    pasos_t: 'Comment nous gérons votre bien',
+    pasos_d: 'Avec notre propre logiciel : chaque encaissement et chaque dépense sont enregistrés, guaraníes et dollars séparés.',
+    pasos: [['Prix et annonce', 'Nous vous donnons le vrai prix du marché et publions votre bien sur nos canaux.'], ['Locataire et bail', 'Visites, sélection, garanties vérifiées et état des lieux avec photos.'], ['Encaissement et virement', 'Nous encaissons le loyer et vous le virons le 10 de chaque mois.'], ['Relevé mensuel', 'Vous recevez le détail de ce qui a été encaissé et payé, sans avoir à le demander.']],
+    hel_t: 'Hélène Montourcy, fondatrice',
+    hel_d: 'Je dirige CALISTA à Asunción et CALISTA Immobilier en Martinique. Je vous réponds personnellement, en français, espagnol ou anglais.',
+    hel_link: 'Notre histoire',
+    suc_d: 'Vous héritez d’un bien au Paraguay et la succession est réglée en France ? Nous préparons l’estimation en français pour votre notaire, avec CALISTA Immobilier en Martinique.',
+    suc_btn: 'Nous consulter pour une succession',
+    faq_t: 'Les questions des propriétaires',
+    faq: [
+      ['Combien coûte la gestion de ma location ?', '5 % des loyers réellement encaissés, chaque mois, plus TVA (IVA 10 %). Si le loyer n’est pas encaissé, nous ne prenons pas de commission.'],
+      ['Combien coûte la mise en location ?', 'Un mois de loyer, partagé à 50 % pour le propriétaire et 50 % pour le locataire. Si vous avez acheté votre bien avec CALISTA, la mise en location de votre premier locataire est offerte.'],
+      ['En combien de temps mon appartement est-il loué ?', 'En général, en moins de 15 jours : nous le publions sur tous nos canaux et sur les portails.'],
+      ['Quand est-ce que je reçois mon loyer ?', 'Nous vous le virons le 10 de chaque mois, avec le relevé du mois.'],
+    ],
+    faq_todas: 'Toutes les questions fréquentes',
+    fin_t: 'Combien peut rapporter votre bien ?',
+    fin_d: 'Demandez votre estimation gratuite ou écrivez-nous maintenant sur WhatsApp.',
+    fin_btn: 'Estimer mon loyer gratuitement',
+    wa_prop: 'Bonjour Calista, j’ai un bien à louer.',
+  },
+  en: {
+    eyebrow: 'Real estate agency in Asunción',
+    h1: 'Find your place in Asunción. Or rent out yours without being here.',
+    lead: `${anosPy} years in the Paraguayan market. We work in English, Spanish and French, and manage your rental for 5 % of the rent collected, plus VAT.`,
+    busco: 'I’m looking for a property',
+    tengo: 'I have a property to rent out',
+    g_en: 'on Google', g_resenas: 'reviews',
+    tira: [`${anosPy} years in Paraguay`, '+100 properties managed', 'Español · Français · English'],
+    p_eyebrow: 'For owners',
+    p_h2: 'Live far from your apartment? We rent it out and manage it for you.',
+    p_lead: 'We find the tenant, check their guarantees, collect the rent and transfer it to you on the 10th of every month, with a clear statement in guaraníes and dollars.',
+    stats: [['< 15 days', 'to rent out, as a rule'], ['10th', 'of the month: your rent transferred'], ['5 %', 'of the rent collected, plus VAT. No rent collected, no fee.']],
+    p_nota: 'Letting fee: one month’s rent, split 50/50 with the tenant. Free for your first tenant if you bought with CALISTA.',
+    p_link: 'See how we work and all our fees',
+    f_t: 'How much could your property earn?',
+    f_d: 'We send you a rent range and your net income after management. Free, no obligation.',
+    f_barrio: 'Neighbourhood or city', f_barrio_ph: 'E.g. Recoleta',
+    f_tipo: 'Type', tipos: ['Apartment', 'Studio', 'House', 'Duplex', 'Other'],
+    f_dorm: 'Bedrooms', f_sup: 'Floor area (m²)', f_amob: 'Furnished?', si: 'Yes', no: 'No',
+    f_nombre: 'Name', f_contacto: 'WhatsApp or email',
+    f_acepto: 'I agree that CALISTA may contact me about my property.',
+    f_enviar: 'Get my estimate',
+    res_t: 'What our clients say',
+    dest_t: 'Featured properties',
+    pasos_t: 'How we manage your property',
+    pasos_d: 'With our own software: every payment and every expense is recorded, guaraníes and dollars kept separate.',
+    pasos: [['Price and listing', 'We give you the real market price and list your property on our channels.'], ['Tenant and lease', 'Viewings, screening, verified guarantees and a photo inventory.'], ['Collection and transfer', 'We collect the rent and transfer it to you on the 10th of every month.'], ['Monthly statement', 'You receive the detail of what was collected and paid, without having to ask.']],
+    hel_t: 'Hélène Montourcy, founder',
+    hel_d: 'I run CALISTA in Asunción and CALISTA Immobilier in Martinique. I answer you personally, in English, Spanish or French.',
+    hel_link: 'Our story',
+    suc_d: 'Inherited a property in Paraguay with the estate handled in France? We prepare the valuation in French for your notary, with CALISTA Immobilier in Martinique.',
+    suc_btn: 'Ask about an estate',
+    faq_t: 'What owners ask us',
+    faq: [
+      ['How much does managing my rental cost?', '5 % of the rent actually collected, every month, plus VAT (IVA 10 %). If the rent is not collected, we charge no fee.'],
+      ['How much does it cost to let my property?', 'One month’s rent, split 50 % owner and 50 % tenant. If you bought your property with CALISTA, letting to your first tenant is free.'],
+      ['How long does it take to rent out my apartment?', 'As a rule, less than 15 days: we list it on all our channels and on the property portals.'],
+      ['When do I receive my rent?', 'We transfer it to you on the 10th of every month, with the monthly statement.'],
+    ],
+    faq_todas: 'All frequently asked questions',
+    fin_t: 'How much could your property earn?',
+    fin_d: 'Ask for your free estimate or message us now on WhatsApp.',
+    fin_btn: 'Estimate my rent for free',
+    wa_prop: 'Hello Calista, I have a property to rent out.',
+  },
+};
+const x = H[lang as 'es' | 'fr' | 'en'];
+const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
 ---
 
 <Layout title={t('seo.home_title')} description={t('seo.home_desc')}>
-  <!-- HERO -->
+  <!-- HERO : deux portes (chercheurs de biens / propriétaires) -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
-        <p class="eyebrow">{t('home.hero_eyebrow')}</p>
-        <h1>{t('home.hero_title')}</h1>
-        <p class="lead">{t('home.hero_lead')}</p>
+        <p class="eyebrow">{x.eyebrow}</p>
+        <h1>{x.h1}</h1>
+        <p class="lead">{x.lead}</p>
         <div class="hero-cta">
-          <a href={L('/comprar')} class="btn btn--primary">{t('home.ver_propiedades')}</a>
-          <WhatsAppButton href={wa} label={t('home.hablar_wa')} />
+          <a href={L('/comprar')} class="btn btn--primary">{x.busco}</a>
+          <a href="#propietarios" class="btn btn--ghost">{x.tengo}</a>
         </div>
+        {site.googleNota && (
+          <a class="g-nota" href={site.googleResenas} target="_blank" rel="noopener">
+            <span class="g-est" aria-hidden="true">★★★★★</span>
+            <strong>{site.googleNota}</strong> {x.g_en} · {site.googleCantidad} {x.g_resenas}
+          </a>
+        )}
       </div>
 
       {
@@ -84,9 +233,76 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     </div>
   </section>
 
-  <!-- CATEGORÍAS -->
+  <!-- BANDE DE PREUVES -->
+  <div class="tira">
+    <div class="container"><ul>{x.tira.map((v) => <li>{v}</li>)}</ul></div>
+  </div>
+
+  <!-- PROPRIÉTAIRES + ESTIMATION DE LOYER -->
+  <section class="section prop-sec" id="propietarios">
+    <div class="container prop-grid">
+      <div class="prop-txt">
+        <p class="eyebrow">{x.p_eyebrow}</p>
+        <h2>{x.p_h2}</h2>
+        <p class="lead">{x.p_lead}</p>
+        <ul class="stats">
+          {x.stats.map(([v, l]) => <li><span class="sv">{v}</span><span class="sl">{l}</span></li>)}
+        </ul>
+        <p class="nota">{x.p_nota}</p>
+        <a class="link" href={L('/administracion')}>{x.p_link} →</a>
+      </div>
+      <!-- Formulaire Netlify « estimacion » : arrive dans Netlify → Forms (comme Contacto) -->
+      <form name="estimacion" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={L('/gracias')} class="est">
+        <h3>{x.f_t}</h3>
+        <p class="est-d">{x.f_d}</p>
+        <input type="hidden" name="form-name" value="estimacion" />
+        <input type="hidden" name="idioma" value={lang} />
+        <p class="hp" hidden><label>No llenar: <input name="bot-field" /></label></p>
+        <div class="fila">
+          <label class="campo"><span>{x.f_barrio}</span><input type="text" name="barrio" required placeholder={x.f_barrio_ph} /></label>
+          <label class="campo"><span>{x.f_tipo}</span><select name="tipo">{x.tipos.map((o) => <option>{o}</option>)}</select></label>
+        </div>
+        <div class="fila">
+          <label class="campo"><span>{x.f_dorm}</span><input type="number" name="dormitorios" min="0" max="20" inputmode="numeric" /></label>
+          <label class="campo"><span>{x.f_sup}</span><input type="number" name="superficie" min="0" inputmode="numeric" /></label>
+        </div>
+        <fieldset class="campo radios">
+          <legend>{x.f_amob}</legend>
+          <label><input type="radio" name="amoblado" value={x.si} /> {x.si}</label>
+          <label><input type="radio" name="amoblado" value={x.no} /> {x.no}</label>
+        </fieldset>
+        <label class="campo"><span>{x.f_nombre}</span><input type="text" name="nombre" required autocomplete="name" /></label>
+        <label class="campo"><span>{x.f_contacto}</span><input type="text" name="contacto" required autocomplete="tel" /></label>
+        <label class="acepto"><input type="checkbox" name="acepto" value="si" required /> {x.f_acepto}</label>
+        <button type="submit" class="btn btn--primary">{x.f_enviar}</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- AVIS (Google en direct, sinon avis saisis dans l'admin) -->
+  <section class="section resenas-section">
+    <div class="container">
+      <header class="row-head">
+        <div>
+          <p class="eyebrow">{t('home.resenas_eyebrow')}</p>
+          <h2>{x.res_t}</h2>
+        </div>
+        <a href={L('/resenas')} class="ver-todo">{t('common.ver_todas')}</a>
+      </header>
+      <Testimonios resenas={resenas} reemplazar />
+    </div>
+  </section>
+
+  <!-- CATÉGORIES + BIENS À LA UNE -->
   <section class="section cats-section">
     <div class="container">
+      <header class="row-head">
+        <div>
+          <p class="eyebrow">{t('home.destacados_eyebrow')}</p>
+          <h2>{x.dest_t}</h2>
+        </div>
+        <a href={L('/comprar')} class="ver-todo">{t('common.ver_todas')}</a>
+      </header>
       <div class="cats">
         {
           categorias.map((c) => (
@@ -98,48 +314,13 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
           ))
         }
       </div>
+      {destacados.length > 0 && (
+        <div class="grid-biens dest">
+          {destacados.map((bien) => <PropertyCard bien={bien} />)}
+        </div>
+      )}
     </div>
   </section>
-
-  <!-- GESTION LOCATIVE mise en avant -->
-  <section class="section adm-section">
-    <div class="container">
-      <a href={L('/administracion')} class="adm-band">
-        <div class="adm-texto">
-          <p class="eyebrow">{t('adm.eyebrow')}</p>
-          <h2>{t('adm.title')}</h2>
-          <p class="adm-lead">{t('adm.lead')}</p>
-          <span class="adm-cta">{t('home.adm_cta')} →</span>
-        </div>
-        <div class="adm-cifra">
-          <span class="adm-val">{t('adm.t1_val')}</span>
-          <span class="adm-d">{t('adm.t1_d')}</span>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- DESTACADOS -->
-  {
-    destacados.length > 0 && (
-      <section class="section">
-        <div class="container">
-          <header class="row-head">
-            <div>
-              <p class="eyebrow">{t('home.destacados_eyebrow')}</p>
-              <h2>{t('home.destacados_title')}</h2>
-            </div>
-            <a href={L('/comprar')} class="ver-todo">{t('common.ver_todas')}</a>
-          </header>
-          <div class="grid-biens">
-            {destacados.map((bien) => (
-              <PropertyCard bien={bien} />
-            ))}
-          </div>
-        </div>
-      </section>
-    )
-  }
 
   <!-- BARRIOS -->
   {
@@ -161,86 +342,60 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     )
   }
 
-  <!-- POR QUÉ CALISTA -->
-  <section class="section porque">
-    <div class="container porque-grid">
-      <div class="porque-intro">
-        <p class="eyebrow">{t('home.porque_eyebrow')}</p>
-        <h2>{t('home.porque_title')}</h2>
-        <p class="lead">{t('home.porque_lead')}</p>
-      </div>
-      <ul class="valores">
-        <li>
-          <h3>{t('home.valor1_t')}</h3>
-          <p>{t('home.valor1_d')}</p>
-        </li>
-        <li>
-          <h3>{t('home.valor2_t')}</h3>
-          <p>{t('home.valor2_d')}</p>
-        </li>
-        <li>
-          <h3>{t('home.valor3_t')}</h3>
-          <p>{t('home.valor3_d')}</p>
-        </li>
-      </ul>
+  <!-- COMMENT NOUS GÉRONS -->
+  <section class="section pasos-sec">
+    <div class="container">
+      <h2>{x.pasos_t}</h2>
+      <p class="lead">{x.pasos_d}</p>
+      <ol class="pasos4">
+        {x.pasos.map(([tt, d], i) => <li><h3>{i + 1}. {tt}</h3><p>{d}</p></li>)}
+      </ol>
     </div>
   </section>
 
-  <!-- CIFRAS : dos continentes -->
-  <section class="section cifras-section">
-    <div class="container">
-      <div class="cifras">
-        <div class="cifras-grid">
-          <div class="cifra">
-            <span class="v">{t('home.cifra1_v')}</span>
-            <span class="l">{t('home.cifra1_l')}</span>
-          </div>
-          <div class="cifra">
-            <span class="v">{t('home.cifra2_v')}</span>
-            <span class="l">{t('home.cifra2_l')}</span>
-          </div>
-          <div class="cifra">
-            <span class="v">{t('home.cifra3_v')}</span>
-            <span class="l">{t('home.cifra3_l')}</span>
-          </div>
-        </div>
-        <p class="cifras-nota">{t('home.cifras_nota')}</p>
+  <!-- HÉLÈNE -->
+  <section class="section hel-sec">
+    <div class="container hel">
+      <img src="/equipo/helene-montourcy.jpg" alt="Hélène Montourcy" width="160" height="160" loading="lazy" />
+      <div>
+        <h2>{x.hel_t}</h2>
+        <p>{x.hel_d}</p>
+        <a class="link" href={L('/historia')}>{x.hel_link} →</a>
       </div>
     </div>
   </section>
 
-  <!-- RESEÑAS -->
-  {
-    resenas.length > 0 && (
-      <section class="section resenas-section">
-        <div class="container">
-          <header class="row-head">
-            <div>
-              <p class="eyebrow">{t('home.resenas_eyebrow')}</p>
-              <h2>{t('home.resenas_title')}</h2>
-            </div>
-            <a href={L('/resenas')} class="ver-todo">{t('common.ver_todas')}</a>
-          </header>
-          <Testimonios resenas={resenas} reemplazar />
-        </div>
-      </section>
-    )
-  }
-
-  <!-- PROPIETARIOS -->
-  <section class="section">
+  <!-- SUCCESSIONS -->
+  <section class="section suc-sec">
     <div class="container">
-      <div class="prop-band">
-        <div>
-          <p class="eyebrow on-dark">{t('home.prop_eyebrow')}</p>
-          <h2>{t('home.prop_title')}</h2>
-          <p class="band-lead">{t('home.prop_lead')}</p>
-        </div>
-        <div class="band-cta">
-          <a href={L('/administracion')} class="btn btn--primary">{t('home.prop_admin')}</a>
-          <a href={L('/tasaciones')} class="btn btn--ghost">{t('home.prop_tasar')}</a>
-          <WhatsAppButton href={waProp} label={t('home.prop_wa')} />
-        </div>
+      <div class="suc">
+        <p>{x.suc_d}</p>
+        <a href={L('/tasaciones')} class="btn btn--ghost">{x.suc_btn}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUESTIONS DE PROPRIÉTAIRES -->
+  <section class="section faq-sec">
+    <div class="container faq-c">
+      <h2>{x.faq_t}</h2>
+      <div class="faq">
+        {x.faq.map(([q, a]) => <details><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+      <a class="link" href={L('/preguntas-frecuentes')}>{x.faq_todas} →</a>
+    </div>
+  </section>
+
+  <!-- APPEL FINAL -->
+  <section class="fin">
+    <div class="container fin-c">
+      <div>
+        <h2>{x.fin_t}</h2>
+        <p>{x.fin_d}</p>
+      </div>
+      <div class="fin-btns">
+        <a href="#propietarios" class="btn fin-est">{x.fin_btn}</a>
+        <WhatsAppButton href={waProp} label="WhatsApp" />
       </div>
     </div>
   </section>
@@ -534,8 +689,9 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     .prop-band {
       grid-template-columns: 1fr;
     }
+    /* Tablette / téléphone : le texte et les deux boutons d'abord, la photo ensuite */
     .hero-media {
-      order: -1;
+      order: 2;
     }
     .cats {
       grid-template-columns: 1fr 1fr;
@@ -545,5 +701,71 @@ const waProp = whatsappLink('Hola Calista, quiero vender / alquilar mi propiedad
     .cats {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* ——— Accueil « deux portes » ——— */
+  .g-nota { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 1.1rem; font-size: 0.92rem; color: var(--muted); text-decoration: none; }
+  .g-nota strong { color: var(--ink); }
+  .g-est { color: #e8a317; letter-spacing: 0.08em; }
+  .tira { background: var(--violet); color: #fff; }
+  .tira ul { list-style: none; margin: 0; padding: 0.9rem 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 2.2rem; font-weight: 600; font-size: 0.95rem; }
+  .prop-sec { background: var(--violet-soft); }
+  .prop-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(1.8rem, 4vw, 3.5rem); align-items: start; }
+  .prop-txt h2 { margin-bottom: 0.8rem; }
+  .stats { list-style: none; margin: 1.6rem 0 1.2rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+  .stats li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; display: flex; flex-direction: column; gap: 0.3rem; }
+  .sv { font-size: 1.5rem; font-weight: 700; color: var(--violet); line-height: 1.1; }
+  .sl { font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
+  .nota { font-size: 0.92rem; color: var(--muted); margin: 0 0 0.6rem; }
+  .link { color: var(--violet); font-weight: 600; text-decoration: none; }
+  .est { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .est h3 { margin: 0; font-size: 1.35rem; color: var(--brand); }
+  .est-d { margin: -0.3rem 0 0.2rem; color: var(--muted); font-size: 0.92rem; }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .campo { display: flex; flex-direction: column; gap: 0.3rem; border: 0; padding: 0; margin: 0; min-width: 0; }
+  .campo > span, .campo legend { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .est input[type='text'], .est input[type='number'], .est select { font: inherit; font-size: 1rem; color: var(--ink); padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; width: 100%; }
+  .est input:focus, .est select:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px var(--violet-soft); }
+  .radios { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.2rem; }
+  .radios legend { width: 100%; margin-bottom: 0.3rem; }
+  .radios label, .acepto { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.95rem; }
+  .acepto { font-size: 0.85rem; color: var(--muted); align-items: flex-start; }
+  .acepto input { margin-top: 0.2rem; }
+  .cats-section .cats { margin-bottom: 1.6rem; }
+  .cats-section { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+  .suc-sec { padding-block: clamp(1.5rem, 3vw, 2.5rem); }
+  .pasos-sec h2 { margin-bottom: 0.4rem; }
+  .pasos4 { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+  .pasos4 li { border-top: 3px solid var(--violet); padding-top: 0.9rem; }
+  .pasos4 h3 { font-size: 1.05rem; margin: 0 0 0.35rem; }
+  .pasos4 p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .hel-sec { background: var(--violet-soft); }
+  .hel { display: flex; align-items: center; gap: 1.8rem; }
+  .hel img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow); }
+  .hel h2 { margin: 0 0 0.4rem; font-size: 1.5rem; }
+  .hel p { margin: 0 0 0.5rem; max-width: 60ch; }
+  .suc { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+  .suc p { margin: 0; max-width: 70ch; }
+  .faq-c { max-width: 760px; }
+  .faq { display: grid; gap: 0.6rem; margin: 1.2rem 0 1rem; }
+  .faq details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; padding: 0.9rem 1.1rem; }
+  .faq summary { cursor: pointer; font-weight: 600; color: var(--brand); }
+  .faq p { margin: 0.6rem 0 0; color: var(--muted); }
+  .fin { background: var(--violet); color: #fff; padding: clamp(2rem, 5vw, 3rem) 0; margin-bottom: -4rem; /* colle au pied de page */ }
+  .fin-c { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+  .fin h2 { color: #fff; margin: 0 0 0.3rem; }
+  .fin p { margin: 0; opacity: 0.85; }
+  .fin-btns { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+  .fin-est { background: #fff; color: var(--violet); font-weight: 700; }
+  @media (max-width: 920px) {
+    .prop-grid { grid-template-columns: 1fr; }
+    .pasos4 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .stats { grid-template-columns: 1fr; }
+    .fila { grid-template-columns: 1fr; }
+    .pasos4 { grid-template-columns: 1fr; }
+    .hel { flex-direction: column; text-align: center; }
+    .suc { flex-direction: column; align-items: flex-start; }
   }
 </style>

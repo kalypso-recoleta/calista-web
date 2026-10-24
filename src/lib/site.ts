@@ -30,6 +30,10 @@ export const site = {
   // googleEscribir : lien « Demander des avis » de Google Business Profile
   googleResenas: 'https://maps.app.goo.gl/PYZGG6qqeB1Kstwt5',
   googleEscribir: 'https://g.page/r/CaA9unLyN1e6EBM/review',
+  // Note Google affichée en haut de l'accueil (écrite dans la page pour Google et les IA).
+  // ⚠️ À METTRE À JOUR à la main quand la note ou le nombre d'avis change. Vide = masqué.
+  googleNota: '5,0',
+  googleCantidad: 16,
 
   // Réseaux (laisse vide pour masquer)
   instagram: '',
