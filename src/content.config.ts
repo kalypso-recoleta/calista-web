@@ -251,6 +251,8 @@ const guias = defineCollection({
     borrador: z.boolean().default(true),
     // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes…
     categoria: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.enum(['guia', 'actualidad']).default('guia')),
+    // Thème (page /blog/tema/…) : voir TEMAS dans src/lib/guias.ts
+    tema: z.preprocess(vacio, z.enum(['comprar', 'alquilar', 'invertir', 'propietarios', 'vivir', 'mercado']).optional()),
     portada_foto: strOpc(),
     fecha: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date()).default(() => new Date()),
     fr: tradSchema,

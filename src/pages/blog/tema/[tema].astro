@@ -1,0 +1,9 @@
+---
+import GuiasBody from '../../../components/pages/GuiasBody.astro';
+import { temasConArticulos } from '../../../lib/guias';
+export async function getStaticPaths() {
+  return (await temasConArticulos()).map((tema) => ({ params: { tema }, props: { tema } }));
+}
+const { tema } = Astro.props;
+---
+<GuiasBody tema={tema} />

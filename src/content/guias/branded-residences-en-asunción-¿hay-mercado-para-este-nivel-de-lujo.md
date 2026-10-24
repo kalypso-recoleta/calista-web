@@ -2,6 +2,7 @@
 titulo: 'Branded residences en Asunción: ¿hay mercado para este nivel de lujo?'
 descripcion: Royale by Pininfarina introduce una nueva propuesta residencial en la capital. Más allá de la firma internacional, cabe preguntarse si existe una demanda capaz de sostenerla en el tiempo.
 categoria: actualidad
+tema: mercado
 borrador: false
 fecha: 2026-10-19T14:13:00
 portada_foto: /uploads/Le joyau résidentiel sous verre.png

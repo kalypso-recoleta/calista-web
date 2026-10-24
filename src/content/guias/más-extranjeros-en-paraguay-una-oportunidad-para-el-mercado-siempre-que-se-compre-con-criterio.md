@@ -2,6 +2,7 @@
 titulo: 'Más extranjeros en Paraguay: una oportunidad para el mercado, siempre que se compre con criterio'
 descripcion: 'Paraguay atrae a cada vez más extranjeros. Para el mercado inmobiliario, esta dinámica representa una oportunidad. Pero también plantea dos preguntas: ¿cómo preservar el acceso a la vivienda para los habitantes y cómo evitar que los nuevos inversores paguen de más basándose en rendimientos inciertos?'
 categoria: actualidad
+tema: vivir
 borrador: false
 fecha: 2026-10-13T18:30:00
 portada_foto: /uploads/Clé et loupe sur l’immobilier paraguayen.png

@@ -2,6 +2,7 @@
 titulo: 'Comprar para alquilar: de la rentabilidad bruta a lo que realmente te queda'
 descripcion: Cuando un departamento se anuncia «con renta», el número que aparece primero suele ser la rentabilidad bruta. Es útil, pero no representa lo que queda en el bolsillo del propietario.
 categoria: guia
+tema: invertir
 borrador: false
 fecha: 2026-10-08T06:38:00
 portada_foto: /uploads/Le panier des loyers face aux charges.png

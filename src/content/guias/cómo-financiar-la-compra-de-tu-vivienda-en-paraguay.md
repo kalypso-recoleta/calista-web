@@ -2,6 +2,7 @@
 titulo: Cómo financiar la compra de tu vivienda en Paraguay
 descripcion: 'No existe «el mejor banco» para un crédito de vivienda en Paraguay: la mejor oferta depende de tus ingresos, de la moneda en que cobrás, del inmueble y de si es tu primera vivienda.'
 categoria: guia
+tema: comprar
 borrador: false
 fecha: 2026-10-08T09:25:00
 portada_foto: /uploads/La clé dorée vers la propriété.png

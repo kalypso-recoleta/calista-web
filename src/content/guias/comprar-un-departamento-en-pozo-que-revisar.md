@@ -2,6 +2,7 @@
 titulo: 'Comprar un departamento en pozo: qué revisar antes de firmar'
 descripcion: 'Precio, fecha de entrega, cláusulas prohibidas, garantías: los puntos a controlar en un contrato de preventa en Paraguay.'
 categoria: guia
+tema: comprar
 borrador: false
 fecha: 2026-10-07
 portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.png

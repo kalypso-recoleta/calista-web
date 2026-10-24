@@ -395,12 +395,13 @@ collections:
     extension: md
     format: frontmatter
     identifier_field: titulo
-    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{categoria | upper}} · {{titulo}}"
+    summary: "{{borrador | ternary('🟠 Borrador ·', '🟢 En línea ·')}} {{categoria | upper}} · {{tema}} · {{titulo}}"
     sortable_fields: [fecha, titulo]
     fields:
       - { label: Título, name: titulo, widget: string }
       - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
       - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
+      - { label: Tema, name: tema, widget: select, required: false, hint: 'Agrupa el artículo en una página por tema (ej. calista.com.py/blog/tema/alquilar).', options: [{ label: 'Comprar', value: comprar }, { label: 'Alquilar (tradicional o temporal)', value: alquilar }, { label: 'Invertir (rentabilidad, renta)', value: invertir }, { label: 'Propietarios (vender, tasar, administrar)', value: propietarios }, { label: 'Vivir en Paraguay (extranjeros)', value: vivir }, { label: 'Mercado (precios, tendencias, economía)', value: mercado }] }
       - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }

@@ -7,7 +7,7 @@ import Compartir from '../Compartir.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
-import { guiasPublicadas, CATEGORIAS } from '../../lib/guias';
+import { guiasPublicadas, CATEGORIAS, TEMA_TXT } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
 interface Props { guia: CollectionEntry<'guias'>; slug: string }
@@ -24,8 +24,9 @@ const x = {
 }[lang as 'es' | 'fr' | 'en']!;
 const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
 const wa = whatsappLink(`Hola Calista, leí el artículo "${guia.data.titulo}" y tengo una consulta.`);
-// Autres articles : d'abord ceux de la même catégorie (guide / actualité), puis les plus récents
-const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, b) => Number(b.entry.data.categoria === guia.data.categoria) - Number(a.entry.data.categoria === guia.data.categoria)).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
+// Autres articles : d'abord ceux du même thème, puis de la même catégorie (guide / actualité), puis les plus récents
+const proximidad = (g: { entry: CollectionEntry<'guias'> }) => (guia.data.tema && g.entry.data.tema === guia.data.tema ? 2 : 0) + (g.entry.data.categoria === guia.data.categoria ? 1 : 0);
+const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, b) => proximidad(b) - proximidad(a)).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
 const url = new URL(Astro.url.pathname, Astro.site).toString();
 // Auteure des articles (signature visible + données structurées)
 const AUTORA = 'Hélène Montourcy';
@@ -48,7 +49,7 @@ const ld = {
 <Layout title={d.titulo} description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha}>
   <article class="section">
     <div class="container art">
-      <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span></p>
+      <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span>{guia.data.tema && <a class="tema" href={L(`/blog/tema/${guia.data.tema}`)}>{(TEMA_TXT[lang] ?? TEMA_TXT.es)[guia.data.tema].n}</a>}</p>
       <h1>{d.titulo}</h1>
       <p class="lead">{d.descripcion}</p>
       <p class="firma">{por} <a href={L('/historia')}>{AUTORA}</a>, {rol} · <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></p>
@@ -97,6 +98,7 @@ const ld = {
   .migas { display: flex; align-items: center; gap: 0.8rem; }
   .cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--violet-soft); color: var(--violet); }
   .cat.actualidad { background: #e6f4ea; color: #1e7a3c; }
+  .migas a.tema { font-weight: 600; font-size: 0.85rem; color: var(--muted); }
   .migas a { color: var(--violet); text-decoration: none; font-weight: 600; }
   h1 { margin-bottom: 0.6rem; }
   .firma { font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 1.6rem; }

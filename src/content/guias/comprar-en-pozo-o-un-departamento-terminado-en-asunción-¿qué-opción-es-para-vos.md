@@ -2,6 +2,7 @@
 titulo: 'Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?'
 descripcion: 'Precio, plazos, forma de pago y alquiler: las diferencias que conviene conocer para elegir un departamento acorde a tu proyecto.'
 categoria: guia
+tema: comprar
 borrador: false
 portada_foto: /uploads/Du plan à l’appartement d’Asunción.png
 fr:

@@ -2,6 +2,7 @@
 titulo: ¿Cuánto cobra una inmobiliaria en Paraguay?
 descripcion: 'Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar.'
 categoria: guia
+tema: propietarios
 borrador: false
 fecha: 2026-10-19T13:21:00
 portada_foto: /uploads/La clé d’une transaction réussie.png

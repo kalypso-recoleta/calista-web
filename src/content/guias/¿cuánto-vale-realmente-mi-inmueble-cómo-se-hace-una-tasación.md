@@ -2,6 +2,7 @@
 titulo: ¿Cuánto vale realmente mi inmueble? Cómo se hace una tasación
 descripcion: «¿A qué precio lo publico?» Es la primera pregunta de casi todos los propietarios. Lo habitual es mirar los anuncios del barrio. Pero un anuncio muestra lo que alguien pide, no necesariamente lo que un comprador o un inquilino paga.
 categoria: guia
+tema: propietarios
 borrador: false
 portada_foto: /uploads/La valeur immobilière à la loupe.png
 fr:
