@@ -3,6 +3,7 @@ import { site } from '../lib/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BarraMovil from '../components/BarraMovil.astro';
+import { numeroPorRuta } from '../lib/whatsapp';
 import {
   getLangFromUrl,
   useTranslations,
@@ -134,7 +135,7 @@ const orgSchema = {
       }
     </script>
   </head>
-  <body>
+  <body data-wa={numeroPorRuta(basePath.replace(/\/$/, '') || '/')}>
     <a href="#contenido" class="skip-link">{t('nav.skip')}</a>
     <Header />
     <main id="contenido">
@@ -169,8 +170,52 @@ const orgSchema = {
         document.querySelectorAll<HTMLAnchorElement>('a[href*="maps.app.goo.gl"], a[href*="g.page/"]').forEach((a) => {
           a.addEventListener('click', () => (window as any).plausible?.('Reseñas Google', { props: { pagina: codigo } }));
         });
+
+        // ─── Formulaires → WhatsApp ───
+        // Tant que la détection des formulaires Netlify n'est pas active, les envois Netlify
+        // se perdent. À l'envoi, on ouvre donc WhatsApp avec la demande déjà rédigée
+        // (numéro : data-wa-numero du formulaire, sinon celui de la page),
+        // et on envoie aussi une copie à Netlify (sera reçue dès que la détection sera activée).
+        const AVISO: Record<string, string> = {
+          '': 'Al enviar, se abre WhatsApp con tu mensaje listo: solo tenés que tocar «Enviar».',
+          FR: 'En validant, WhatsApp s’ouvre avec votre message déjà rédigé : il suffit d’appuyer sur « Envoyer ».',
+          EN: 'When you submit, WhatsApp opens with your message ready: just tap “Send”.',
+        };
+        const OMITIR = ['form-name', 'bot-field', 'idioma', 'acepto'];
+        document.querySelectorAll<HTMLFormElement>('form[data-netlify]').forEach((form) => {
+          const boton = form.querySelector('button[type="submit"]');
+          if (boton) {
+            const aviso = document.createElement('p');
+            aviso.className = 'aviso-wa';
+            aviso.textContent = AVISO[lang] ?? AVISO[''];
+            aviso.style.cssText = 'margin:0;font-size:.85rem;color:var(--muted)';
+            boton.insertAdjacentElement('beforebegin', aviso);
+          }
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const datos = new FormData(form);
+            const lineas: string[] = [];
+            let titulo = form.dataset.waTitulo ?? '';
+            for (const [nombre, valor] of datos.entries()) {
+              const v = String(valor).trim();
+              if (!v || OMITIR.includes(nombre)) continue;
+              const campo = form.querySelector<HTMLElement>(`[name="${nombre}"]`);
+              if (campo instanceof HTMLInputElement && campo.type === 'hidden') { titulo = titulo || v; continue; }
+              const etiqueta = campo?.closest('label')?.querySelector('span')?.textContent?.trim()
+                ?? campo?.closest('fieldset')?.querySelector('legend')?.textContent?.trim()
+                ?? nombre;
+              lineas.push(`${etiqueta}: ${v}`);
+            }
+            const mensaje = [`${codigo} ${titulo}`.trim(), '', ...lineas].join('\n');
+            const numero = form.dataset.waNumero || document.body.dataset.wa || '';
+            // Copie à Netlify (sans attendre ; ignorée tant que la détection est désactivée)
+            try { navigator.sendBeacon('/', new URLSearchParams(datos as any)); } catch {}
+            (window as any).plausible?.('Formulario', { props: { pagina: codigo, formulario: form.getAttribute('name') ?? '' } });
+            location.href = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+          });
+        });
       } catch {
-        // En cas de souci, les liens restent tels quels.
+        // En cas de souci, les liens et formulaires restent tels quels.
       }
     </script>
 

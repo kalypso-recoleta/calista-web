@@ -252,7 +252,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
         <a class="link" href={L('/administracion')}>{x.p_link} →</a>
       </div>
       <!-- Formulaire Netlify « estimacion » : arrive dans Netlify → Forms (comme Contacto) -->
-      <form name="estimacion" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={L('/gracias')} class="est">
+      <form name="estimacion" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={L('/gracias')} class="est" data-wa-numero={site.whatsappTemporal} data-wa-titulo={x.f_t}>
         <h3>{x.f_t}</h3>
         <p class="est-d">{x.f_d}</p>
         <input type="hidden" name="form-name" value="estimacion" />
