@@ -45,7 +45,7 @@ fr:
 
     **Espaces**
 
-    - Coin nuit avec lit [double / queen size], tête de lit capitonnée et placard intégré, séparé du séjour par une claustra en lattes de bois
+    - Coin nuit avec lit double, tête de lit capitonnée et placard intégré, séparé du séjour par une claustra en lattes de bois
     - Bureau et bar avec tabourets
     - Meuble bas avec TV
     - Balcon avec chaises, idéal pour le café du matin
@@ -58,7 +58,7 @@ en:
 
     **Spaces**
 
-    - Sleeping area with [double / queen-size] bed, upholstered headboard and built-in closet, separated from the living area by a wooden slat partition
+    - Sleeping area with double bed, upholstered headboard and built-in closet, separated from the living area by a wooden slat partition
     - Desk and breakfast bar with stools
     - Low TV unit
     - Balcony with chairs, perfect for your morning coffee
@@ -70,7 +70,7 @@ Monoambiente de 34,38 m² propios (47,19 m² en total), totalmente amoblado y eq
 
 Espacios:
 
-Dormitorio con cama [matrimonial / queen], cabecera tapizada y placar empotrado, separado del living por un panel de listones de madera
+Dormitorio con cama matrimonial, cabecera tapizada y placar empotrado, separado del living por un panel de listones de madera
 
 Escritorio y barra de comedor con banquetas
 

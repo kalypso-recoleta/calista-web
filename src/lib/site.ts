@@ -18,7 +18,8 @@ export const site = {
 
   email: 'contacto@calista.com.py',
   telefono: '+595 994 385487',
-  direccion: 'Asunción, Paraguay',
+  direccion: 'Auditores de la Guerra del Chaco esq. Tte. 2do Rufino Cañete, Barrio Mburucuyá, Asunción',
+  ruc: '80109137-3',
 
   // Cloudinary : nom du "cloud" (visible dans ton dashboard Cloudinary).
   // Sert à optimiser les images à la volée.

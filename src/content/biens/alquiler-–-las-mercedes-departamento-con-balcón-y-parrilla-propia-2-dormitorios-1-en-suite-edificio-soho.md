@@ -51,14 +51,14 @@ fr:
     - Balcon avec barbecue privatif habillé de pierre et garde-corps en verre
     - 2 chambres avec placards intégrés :
         - chambre principale avec salle de bain privative (suite)
-        - deuxième chambre avec baie vitrée du sol au plafond [à confirmer]
+        - deuxième chambre avec baie vitrée du sol au plafond
     - 2 salles de bain avec paroi de douche vitrée (une dans la suite, l’autre pour la deuxième chambre et les invités)
     - Placard supplémentaire dans le couloir
 
     **Finitions**
 
     - Carrelage grand format dans tout l’appartement
-    - Climatisation split dans le séjour et les chambres [à confirmer : toutes les chambres ?]
+    - Climatisation split dans le séjour et toutes les chambres
     - Suspensions dans le séjour et éclairage LED
 
     **Espaces communs sur le toit**
@@ -79,14 +79,14 @@ en:
     - Balcony with a private stone-clad grill and glass railing
     - 2 bedrooms with built-in closets:
         - en-suite master bedroom
-        - second bedroom with floor-to-ceiling window [to be confirmed]
+        - second bedroom with floor-to-ceiling window
     - 2 bathrooms with glass shower screens (one en suite, the other for the second bedroom and guests)
     - Extra closet in the hallway
 
     **Finishes**
 
     - Large-format porcelain tiles throughout
-    - Split air conditioning in the living room and bedrooms [to be confirmed: all bedrooms?]
+    - Split air conditioning in the living room and all bedrooms
     - Pendant lights in the living room and LED lighting
 
     **Rooftop amenities**
@@ -106,14 +106,14 @@ Departamento de **72 m² propios** (76,42 m² en total) en un edificio con pis
 - Balcón con parrilla propia revestida en piedra y baranda de vidrio
 - 2 dormitorios con placares empotrados:
     - dormitorio principal en suite
-    - segundo dormitorio con ventanal de piso a techo [à confirmer : je l’ai attribué à cette chambre d’après les photos]
+    - segundo dormitorio con ventanal de piso a techo
 - 2 baños con mampara de vidrio (uno en suite y otro para el segundo dormitorio y las visitas)
 - Placar adicional en el pasillo
 
 **Terminaciones**
 
 - Porcelanato de gran formato en todo el departamento
-- Aire acondicionado split en el living y en los dormitorios [à confirmer : toutes les chambres ?]
+- Aire acondicionado split en el living y en todos los dormitorios
 - Lámparas colgantes en el living y luminarias LED
 
 **Amenities en la azotea**
