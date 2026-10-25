@@ -11,7 +11,7 @@
   --surface: #ffffff;
   --tint: #faf7fb;
   --ink: #212b35; /* --antracita */
-  --muted: #6b7280; /* --gris */
+  --muted: #555e6b; /* gris plus foncé que le --gris du logiciel (#6b7280) : meilleure lisibilité */
   --line: #e6e6ea; /* --linea */
 
   --brand: #212b35; /* anthracite (pied de page, fonds sombres) */
@@ -58,13 +58,7 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background-color: var(--paper);
-  /* Losanges en filigrane, estompés vers le bas à gauche (repris du logiciel) */
-  background-image:
-    linear-gradient(212deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.58) 40%,
-      rgba(255, 255, 255, 0.95) 70%, #fff 100%),
-    repeating-linear-gradient(45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px),
-    repeating-linear-gradient(-45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px);
-  background-attachment: fixed;
+  /* Fond uni : les losanges (repris du logiciel) ne restent qu'en haut de l'accueil (.motivo) */
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -136,7 +130,16 @@ img {
 }
 
 .section {
-  padding-block: clamp(3rem, 7vw, 5.5rem);
+  padding-block: clamp(2.25rem, 5vw, 4rem);
+}
+
+/* Losanges en filigrane (repris du logiciel), réservés au haut de l'accueil */
+.motivo {
+  background-image:
+    linear-gradient(212deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.58) 40%,
+      rgba(255, 255, 255, 0.95) 70%, #fff 100%),
+    repeating-linear-gradient(45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px),
+    repeating-linear-gradient(-45deg, rgba(62, 0, 85, 0.045) 0 96px, transparent 96px 192px);
 }
 
 .eyebrow {

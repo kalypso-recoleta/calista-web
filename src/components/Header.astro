@@ -13,17 +13,29 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+// Menu principal (ordinateur) : 6 rubriques. Terrenos, Reseñas, Historia et FAQ sont
+// dans le menu mobile et le pied de page.
+const PROPIETARIOS = { es: 'Propietarios', fr: 'Propriétaires', en: 'Owners' }[lang as 'es' | 'fr' | 'en'];
 const nav = [
+  { href: '/comprar', label: t('nav.comprar') },
+  { href: '/alquilar', label: t('nav.alquilar') },
+  { href: '/alquiler-temporal', label: t('nav.temporal') },
+  { href: '/desarrollos', label: 'Kalypso' },
+  { href: '/administracion', label: PROPIETARIOS, tambien: ['/propietarios', '/tasaciones'] },
+  { href: '/blog', label: t('nav.guias') },
+];
+// Menu mobile : toutes les rubriques
+const navMovil = [
   { href: '/comprar', label: t('nav.comprar') },
   { href: '/alquilar', label: t('nav.alquilar') },
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: t('nav.desarrollos') },
   { href: '/terrenos', label: t('nav.terrenos') },
   { href: '/administracion', label: t('nav.administracion') },
-  { href: '/propietarios', label: t('nav.propietarios'), tambien: ['/tasaciones'] },
+  { href: '/propietarios', label: t('nav.propietarios') },
+  { href: '/blog', label: t('nav.guias') },
   { href: '/resenas', label: t('nav.resenas') },
   { href: '/historia', label: t('nav.historia') },
-  { href: '/blog', label: t('nav.guias') },
   { href: '/preguntas-frecuentes', label: 'FAQ' },
 ];
 
@@ -86,7 +98,7 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
   </div>
 
   <nav class="mobile-nav" aria-label="Móvil" hidden>
-    {nav.map((item) => <a href={localizePath(item.href, lang)}>{item.label}</a>)}
+    {navMovil.map((item) => <a href={localizePath(item.href, lang)}>{item.label}</a>)}
     <a href={localizePath('/contacto', lang)}>{t('nav.contacto')}</a>
     <div class="lang-switch mobile">
       {
@@ -155,10 +167,10 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
   .nav-link {
     color: var(--muted);
     font-weight: 700;
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 0.55rem 0.5rem;
+    padding: 0.55rem 0.7rem;
     border-radius: var(--radius);
     position: relative;
     white-space: nowrap; /* jamais de libellé coupé sur deux lignes */
@@ -257,8 +269,8 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
   }
 
   .header-cta { white-space: nowrap; }
-  /* Menu compact (9 rubriques) jusqu'aux grands écrans */
-  @media (max-width: 1790px) {
+  /* Menu compact sur les écrans moyens */
+  @media (max-width: 1279px) {
     .logo {
       height: 40px;
     }
@@ -266,12 +278,12 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
       gap: 0.1rem;
     }
     .nav-link {
-      padding: 0.5rem 0.38rem;
-      font-size: 0.68rem;
-      letter-spacing: 0.05em;
+      padding: 0.5rem 0.45rem;
+      font-size: 0.74rem;
+      letter-spacing: 0.06em;
     }
   }
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     .logo {
       height: 44px;
     }

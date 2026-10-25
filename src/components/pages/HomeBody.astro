@@ -200,7 +200,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
 
 <Layout title={t('seo.home_title')} description={t('seo.home_desc')}>
   <!-- HERO : deux portes (chercheurs de biens / propriétaires) -->
-  <section class="hero">
+  <section class="hero motivo">
     <div class="container hero-grid">
       <div class="hero-text">
         <p class="eyebrow">{x.eyebrow}</p>
@@ -323,7 +323,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   }
 
   <!-- COMMENT NOUS GÉRONS -->
-  <section class="section pasos-sec">
+  <section class="section pasos-sec oscuro">
     <div class="container">
       <h2>{x.pasos_t}</h2>
       <p class="lead">{x.pasos_d}</p>
@@ -706,6 +706,11 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .pasos4 li { border-top: 3px solid var(--violet); padding-top: 0.9rem; }
   .pasos4 h3 { font-size: 1.05rem; margin: 0 0 0.35rem; }
   .pasos4 p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  /* Section sombre pour rompre la suite de cartes blanches */
+  .oscuro { background: var(--brand); color: #e4e7eb; }
+  .oscuro h2, .oscuro h3 { color: #fff; }
+  .oscuro .lead, .oscuro .pasos4 p { color: #c9ced6; }
+  .oscuro .pasos4 li { border-top-color: #b98ad0; }
   .hel-sec { background: var(--violet-soft); }
   .hel { display: flex; align-items: center; gap: 1.8rem; }
   .hel img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow); }

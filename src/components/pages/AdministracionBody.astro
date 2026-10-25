@@ -258,8 +258,6 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   .preocupaciones { margin: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem 1.2rem; }
   .preocupaciones > div { grid-column: span 2; }
   .preocupaciones > div:nth-child(n + 4) { grid-column: span 3; }
-  /* Espacement vertical plus serré que le reste du site : page longue */
-  section.section { padding-block: clamp(2rem, 4vw, 3.25rem); }
   section.hero { padding-bottom: 0; }
   section.pre-sec { padding-top: clamp(2.5rem, 4vw, 3.25rem); }
   .preocupaciones div { padding: 1.1rem 1.2rem; border-left: 3px solid var(--violet); background: #fff; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }

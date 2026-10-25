@@ -86,7 +86,7 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
 </Layout>
 
 <style>
-  .narrow { max-width: 760px; }
+  .narrow > * { max-width: 820px; } /* colonne de lecture alignée à gauche, comme le reste du site */
   .hero { padding-bottom: 1rem; }
   .alt { background: var(--surface); border-block: 1px solid var(--line); }
   .tit { margin: 0 0 1.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
