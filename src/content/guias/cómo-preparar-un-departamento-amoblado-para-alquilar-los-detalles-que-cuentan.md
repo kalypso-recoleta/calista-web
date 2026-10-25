@@ -1,13 +1,13 @@
 ---
-titulo: 'Cómo preparar un departamento amoblado para alquilar'
+titulo: Cómo preparar un departamento amoblado para alquilar
 descripcion: 'Muebles, ropa de cama, equipamiento, inventario y limpieza: cómo preparar un departamento amoblado para alquilar y mantener su nivel.'
 categoria: guia
 tema: alquilar
 borrador: false
-fecha: 2026-10-25T10:00:00
+fecha: 2026-10-26T10:00:00
 portada_foto: /uploads/departamento-amoblado-silla.jpg
 fr:
-  titulo: 'Préparer un appartement meublé pour la location'
+  titulo: Préparer un appartement meublé pour la location
   descripcion: 'Meubles, literie, équipement, inventaire et ménage : comment préparer un appartement meublé à louer et maintenir son niveau.'
   cuerpo: |-
     Il n’est pas nécessaire que tous les meubles soient neufs ni que la décoration soit coûteuse. De notre côté, nous avons récupéré des meubles et les avons fait restaurer avant de les installer. L’essentiel est qu’ils soient en bon état et forment un ensemble soigné et cohérent.
@@ -105,7 +105,7 @@ fr:
 
     Vous avez un appartement meublé à louer à Asunción ? Chez **CALISTA**, nous pouvons vous accompagner dans sa préparation, sa mise en location, classique ou [temporaire](/fr/alquiler-temporal), et sa [gestion](/fr/administracion).
 en:
-  titulo: 'How to prepare a furnished apartment for rent'
+  titulo: How to prepare a furnished apartment for rent
   descripcion: 'Furniture, bedding, equipment, inventory and cleaning: how to prepare a furnished apartment for rent and keep it up to standard.'
   cuerpo: |-
     Not every piece of furniture needs to be new, and the decoration does not have to be expensive. In our experience, we have salvaged furniture and had it restored before putting it in. What matters is that everything is in good condition and forms a coherent, well-kept whole.
@@ -203,6 +203,7 @@ en:
 
     Do you have a furnished apartment to rent out in Asunción? At **CALISTA**, we can help you prepare it, let it on a long-term or [short-term](/en/alquiler-temporal) basis, and [manage it](/en/administracion).
 ---
+
 No hace falta que todos los muebles sean nuevos ni que la decoración sea costosa. En nuestra experiencia, hemos recuperado muebles y los hemos hecho restaurar antes de instalarlos. Lo importante es que estén en buen estado y formen un conjunto cuidado y coherente.
 
 Ese cuidado también debe mantenerse entre una ocupación y la siguiente. Las sábanas, el colchón, la base de la cama, las sillas, la vajilla y el interior de los placares merecen tanta atención como los pisos y los baños. Un departamento puede verse atractivo en las fotos y decepcionar cuando se lo mira de cerca.
