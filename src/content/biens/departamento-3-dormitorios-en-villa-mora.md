@@ -91,7 +91,7 @@ fr:
 
     🛏 Chambres : 3
 
-    🚿 Salles de bain : 2 complètes + 1 WC invités
+    🚿 Salles de bain : 4
 
     🏢 Étage : 1er
 
@@ -150,7 +150,7 @@ en:
 
     🛏 Bedrooms: 3
 
-    🚿 Bathrooms: 2 full + 1 guest toilet
+    🚿 Bathrooms: 4
 
     🏢 Floor: 1st
 
@@ -204,7 +204,7 @@ Características:
 
 🛏 Dormitorios: 3
 
-🚿 Baños: 2 completos + 1 social
+🚿 Baños: 4
 
 🏢 Piso: 1°
 
