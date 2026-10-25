@@ -1,5 +1,5 @@
 ---
-titulo: Departamento 3 Dormitorios en Villa Mora
+titulo: Departamento 3 Dormitorios en Villa Morra
 en_linea: true
 operacion: alquiler
 tipo: departamento
@@ -9,11 +9,11 @@ lateral: true
 portada: false
 exclusivo: true
 desarrollo: false
-precio: 4800000
+precio: 4700000
 moneda: PYG
 periodo: mes
 ciudad: Asunción
-barrio: Villa Mora
+barrio: Villa Morra
 ubicacion: '{"type":"Point","coordinates":[-57.5859473,-25.2972963]}'
 dormitorios: 3
 banos: 4
@@ -33,7 +33,7 @@ imagenes:
 descripcion: |-
   ALQUILER – VILLA MORRA
 
-  3 habitaciones | 120 m² | ₲ 7.500.000
+  3 habitaciones | 120 m² | ₲ 4.700.000
   Hermoso departamento completamente renovado de 120 m² en una de las zonas más convenientes de la ciudad, a pocos minutos del Shopping Mariscal.
   Distribución:
 gama: otros
@@ -42,12 +42,12 @@ fr:
   descripcion: |-
     LOCATION – VILLA MORRA
 
-    3 chambres | 120 m² | ₲ 7 500 000
+    3 chambres | 120 m² | ₲ 4 700 000
     Bel appartement entièrement rénové de 120 m², dans l'un des quartiers les plus pratiques de la ville, à quelques minutes du Shopping Mariscal.
   cuerpo: |-
     LOCATION – VILLA MORRA
 
-    3 chambres | 120 m² | ₲ 7 500 000
+    3 chambres | 120 m² | ₲ 4 700 000
 
     Bel appartement entièrement rénové de 120 m², dans l'un des quartiers les plus pratiques de la ville, à quelques minutes du Shopping Mariscal.
 
@@ -95,18 +95,18 @@ fr:
 
     🏢 Étage : 1er
 
-    💲 Loyer : ₲ 7 500 000 (charges incluses)
+    💲 Loyer : ₲ 4 700 000 (charges incluses)
 en:
   titulo: 3-bedroom apartment in Villa Morra
   descripcion: |-
     FOR RENT – VILLA MORRA
 
-    3 bedrooms | 120 m² | ₲ 7,500,000
+    3 bedrooms | 120 m² | ₲ 4,700,000
     Beautiful, fully renovated 120 m² apartment in one of the most convenient areas of the city, a few minutes from Shopping Mariscal.
   cuerpo: |-
     FOR RENT – VILLA MORRA
 
-    3 bedrooms | 120 m² | ₲ 7,500,000
+    3 bedrooms | 120 m² | ₲ 4,700,000
 
     Beautiful, fully renovated 120 m² apartment in one of the most convenient areas of the city, a few minutes from Shopping Mariscal.
 
@@ -154,13 +154,13 @@ en:
 
     🏢 Floor: 1st
 
-    💲 Rent: ₲ 7,500,000 (building fees included)
+    💲 Rent: ₲ 4,700,000 (building fees included)
 fecha: 2026-07-09T09:26
 ---
 
 ALQUILER – VILLA MORRA
 
-3 habitaciones | 120 m² | ₲ 7.500.000
+3 habitaciones | 120 m² | ₲ 4.700.000
 
 Hermoso departamento completamente renovado de 120 m² en una de las zonas más convenientes de la ciudad, a pocos minutos del Shopping Mariscal.
 
@@ -208,4 +208,4 @@ Características:
 
 🏢 Piso: 1°
 
-💲 Precio: ₲ 7.500.000 (expensas incluidas)
+💲 Precio: ₲ 4.700.000 (expensas incluidas)
