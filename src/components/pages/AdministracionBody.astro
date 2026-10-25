@@ -23,7 +23,7 @@ const y = {
     pre_t: '¿Vivís lejos? Esto es lo que te preocupa, y cómo lo resolvemos.',
     pre: [
       ['¿Va a quedar vacía?', 'En general la alquilamos en menos de 15 días: la publicamos en todos nuestros canales y en los portales.'],
-      ['¿Y si el inquilino no paga?', 'Controlamos las garantías antes de firmar y cobramos el alquiler cada mes. Si hay un atraso, nos ocupamos del seguimiento con el inquilino y te mantenemos informado. Y podés asegurar tus alquileres contra el impago (ver más abajo).'],
+      ['¿Y si el inquilino no paga?', 'Controlamos las garantías antes de firmar y seguimos cualquier atraso con el inquilino. Además, podés asegurar tus alquileres contra el impago (ver más abajo).'],
       ['¿Cuándo y cómo cobro?', 'Te transferimos el alquiler el día 10 de cada mes, con la rendición de cuentas: lo cobrado, lo pagado y nuestra comisión, en guaraníes y en dólares por separado.'],
       ['¿Quién se ocupa de los arreglos?', 'Nosotros: coordinamos el mantenimiento y las reparaciones. Tu inquilino tiene un solo interlocutor, y vos también.'],
       ['¿Cómo sé lo que pasa con mi propiedad?', 'Recibís cada mes el detalle de todo, sin tener que pedirlo, y nos podés escribir en español, francés o inglés.'],
@@ -42,7 +42,7 @@ const y = {
     pre_t: 'Vous vivez loin ? Voici ce qui vous inquiète, et comment nous le réglons.',
     pre: [
       ['Mon bien va-t-il rester vide ?', 'En général, nous le louons en moins de 15 jours : nous le publions sur tous nos canaux et sur les portails.'],
-      ['Et si le locataire ne paie pas ?', 'Nous contrôlons les garanties avant la signature et encaissons le loyer chaque mois. En cas de retard, nous assurons le suivi avec le locataire et vous tenons informé. Et vous pouvez assurer vos loyers contre les impayés (voir plus bas).'],
+      ['Et si le locataire ne paie pas ?', 'Nous contrôlons les garanties avant la signature et suivons tout retard avec le locataire. Vous pouvez aussi assurer vos loyers contre les impayés (voir plus bas).'],
       ['Quand et comment suis-je payé ?', 'Nous vous virons le loyer le 10 de chaque mois, avec le relevé : ce qui a été encaissé, payé, et notre commission, en guaraníes et en dollars séparément.'],
       ['Qui s’occupe des réparations ?', 'Nous : nous coordonnons l’entretien et les réparations. Votre locataire a un seul interlocuteur, et vous aussi.'],
       ['Comment savoir ce qui se passe chez moi ?', 'Vous recevez chaque mois le détail de tout, sans avoir à le demander, et vous pouvez nous écrire en français, espagnol ou anglais.'],
@@ -61,7 +61,7 @@ const y = {
     pre_t: 'Live far away? Here is what worries you, and how we handle it.',
     pre: [
       ['Will it stay empty?', 'As a rule, we rent it out in less than 15 days: we list it on all our channels and on the property portals.'],
-      ['What if the tenant doesn’t pay?', 'We check the guarantees before signing and collect the rent every month. If a payment is late, we follow up with the tenant and keep you informed. You can also insure your rent against non-payment (see below).'],
+      ['What if the tenant doesn’t pay?', 'We check the guarantees before signing and follow up any late payment with the tenant. You can also insure your rent against non-payment (see below).'],
       ['When and how do I get paid?', 'We transfer the rent on the 10th of every month, with the statement: what was collected, what was paid and our fee, in guaraníes and dollars separately.'],
       ['Who handles repairs?', 'We do: we coordinate maintenance and repairs. Your tenant has a single point of contact, and so do you.'],
       ['How do I know what’s going on?', 'Every month you receive the full detail, without having to ask, and you can write to us in English, Spanish or French.'],
@@ -94,7 +94,7 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
     </div>
   </section>
 
-  <section class="section">
+  <section class="section pre-sec">
     <div class="container">
       <p class="eyebrow">{y.pre_eyebrow}</p>
       <h2 class="tit">{y.pre_t}</h2>
@@ -211,8 +211,6 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
 
 <style>
   .hero-c > h1, .hero-c > .lead { max-width: 820px; }
-  .hero-c .stats { max-width: 980px; }
-  .hero { padding-bottom: 1rem; }
   .alt { background: var(--surface); border-block: 1px solid var(--line); }
   .tit { margin: 0 0 1.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
   .items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
@@ -253,10 +251,17 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   .temp-list li { margin: 0.3rem 0; }
   .temp .cta-linea { margin-top: 1.4rem; }
   .stats { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
-  .stats li { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1rem; display: flex; flex-direction: column; gap: 0.3rem; box-shadow: var(--shadow); }
+  .stats li { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 0.9rem 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; box-shadow: var(--shadow); }
   .sv { font-size: 1.5rem; font-weight: 700; color: var(--violet); line-height: 1.1; }
   .sl { font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
-  .preocupaciones { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem 1.6rem; }
+  /* 5 encadrés sans trou : 3 en haut, 2 en bas (grille de 6 colonnes) */
+  .preocupaciones { margin: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem 1.2rem; }
+  .preocupaciones > div { grid-column: span 2; }
+  .preocupaciones > div:nth-child(n + 4) { grid-column: span 3; }
+  /* Espacement vertical plus serré que le reste du site : page longue */
+  section.section { padding-block: clamp(2rem, 4vw, 3.25rem); }
+  section.hero { padding-bottom: 0; }
+  section.pre-sec { padding-top: clamp(2.5rem, 4vw, 3.25rem); }
   .preocupaciones div { padding: 1.1rem 1.2rem; border-left: 3px solid var(--violet); background: #fff; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
   .preocupaciones dt { font-weight: 700; color: var(--brand); margin-bottom: 0.35rem; }
   .preocupaciones dd { margin: 0; color: var(--muted); }
@@ -271,5 +276,6 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   .est-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
   .est-grid h2 { margin: 0 0 0.6rem; }
   @media (max-width: 820px) { .tarifas, .temp, .est-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 820px) { .preocupaciones { grid-template-columns: 1fr; } .preocupaciones > div, .preocupaciones > div:nth-child(n + 4) { grid-column: auto; } }
   @media (max-width: 600px) { .stats { grid-template-columns: 1fr; } }
 </style>
