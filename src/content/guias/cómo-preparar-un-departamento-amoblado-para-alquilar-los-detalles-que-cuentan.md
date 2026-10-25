@@ -5,6 +5,7 @@ categoria: guia
 tema: alquilar
 borrador: false
 fecha: 2026-10-25T10:00:00
+portada_foto: /uploads/departamento-amoblado-silla.jpg
 fr:
   titulo: 'Préparer un appartement meublé pour la location'
   descripcion: 'Meubles, literie, équipement, inventaire et ménage : comment préparer un appartement meublé à louer et maintenir son niveau.'
