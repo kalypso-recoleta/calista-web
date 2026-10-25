@@ -21,7 +21,15 @@ const nav = [
   { href: '/alquilar', label: t('nav.alquilar') },
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: 'Kalypso' },
-  { href: '/administracion', label: PROPIETARIOS, tambien: ['/propietarios', '/tasaciones'] },
+  {
+    href: '/administracion', label: PROPIETARIOS, tambien: ['/propietarios', '/tasaciones'],
+    // Sous-menu déroulant (au survol ou au clavier)
+    sub: [
+      { href: '/administracion', label: t('footer.administracion') },
+      { href: '/propietarios', label: t('footer.vender') },
+      { href: '/tasaciones', label: t('footer.tasaciones') },
+    ],
+  },
   { href: '/blog', label: t('nav.guias') },
 ];
 // Menu mobile : toutes les rubriques
@@ -53,22 +61,33 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
 
     <nav class="nav" aria-label="Principal">
       {
-        nav.map((item) => (
-          <a
-            href={localizePath(item.href, lang)}
-            class:list={[
-              'nav-link',
-              {
-                active:
-                  basePath === item.href ||
-                  basePath.startsWith(item.href + '/') ||
-                  (item.tambien ?? []).includes(basePath),
-              },
-            ]}
-          >
-            {item.label}
-          </a>
-        ))
+        nav.map((item) => {
+          const enlace = (
+            <a
+              href={localizePath(item.href, lang)}
+              class:list={[
+                'nav-link',
+                {
+                  active:
+                    basePath === item.href ||
+                    basePath.startsWith(item.href + '/') ||
+                    (item.tambien ?? []).includes(basePath),
+                  'con-sub': !!item.sub,
+                },
+              ]}
+            >
+              {item.label}
+            </a>
+          );
+          return item.sub ? (
+            <div class="nav-grupo">
+              {enlace}
+              <div class="nav-sub">
+                {item.sub.map((s) => <a href={localizePath(s.href, lang)} class:list={{ activo: basePath === s.href }}>{s.label}</a>)}
+              </div>
+            </div>
+          ) : enlace;
+        })
       }
     </nav>
 
@@ -298,6 +317,22 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
       display: flex;
     }
   }
+  /* Sous-menu « Propietarios » */
+  .nav-grupo { position: relative; display: flex; }
+  .con-sub::after { content: '▾'; margin-left: 0.3rem; font-size: 0.7em; }
+  .nav-sub {
+    position: absolute; top: 100%; left: 0; z-index: 50;
+    display: none; flex-direction: column; min-width: 240px;
+    padding: 0.4rem; margin-top: 0.2rem;
+    background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--violet);
+    border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  }
+  /* Zone tampon pour ne pas perdre le survol entre le lien et le sous-menu */
+  .nav-sub::before { content: ''; position: absolute; left: 0; right: 0; top: -0.6rem; height: 0.6rem; }
+  .nav-grupo:hover .nav-sub,
+  .nav-grupo:focus-within .nav-sub { display: flex; }
+  .nav-sub a { padding: 0.55rem 0.8rem; border-radius: var(--radius-sm); color: var(--ink); font-size: 0.9rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .nav-sub a:hover, .nav-sub a.activo { background: var(--violet-soft); color: var(--violet); }
 </style>
 
 <script>
