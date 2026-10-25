@@ -55,7 +55,11 @@ const year = new Date().getFullYear();
 
   <div class="container legal">
     <span>© {year} {site.nombre}</span>
-    <span>Asunción · Paraguay</span>
+    <span class="legal-links">
+      <a href={L('/aviso-legal')}>{({ es: 'Aviso legal', fr: 'Mentions légales', en: 'Legal notice' } as Record<string, string>)[lang] ?? 'Aviso legal'}</a>
+      <a href={L('/politica-de-privacidad')}>{({ es: 'Política de privacidad', fr: 'Confidentialité', en: 'Privacy policy' } as Record<string, string>)[lang] ?? 'Política de privacidad'}</a>
+      <span>Asunción · Paraguay</span>
+    </span>
   </div>
 </footer>
 
@@ -138,4 +142,6 @@ const year = new Date().getFullYear();
       gap: 0.3rem;
     }
   }
+  .legal-links { display: inline-flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+  .legal-links a { color: inherit; }
 </style>

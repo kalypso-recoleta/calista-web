@@ -1,0 +1,187 @@
+---
+/**
+ * Pages légales : « Aviso legal » et « Política de privacidad » (ES, FR, EN).
+ * ⚠️ Textes rédigés à partir des informations connues du site (oct. 2026) :
+ * à faire relire par l'avocat avant de les considérer définitifs.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { site } from '../../lib/site';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+interface Props { doc: 'aviso' | 'privacidad' }
+const { doc } = Astro.props;
+const lang = getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en';
+const L = (p: string) => localizePath(p, lang);
+
+const ACTUALIZADO = { es: 'Última actualización: 25 de octubre de 2026', fr: 'Dernière mise à jour : 25 octobre 2026', en: 'Last updated: 25 October 2026' }[lang];
+const telefonos = '+595 994 385487 · +595 984 333 003';
+
+type Sec = { h: string; p: string[] };
+const T: Record<'es' | 'fr' | 'en', Record<'aviso' | 'privacidad', { title: string; lead: string; secs: Sec[] }>> = {
+  es: {
+    aviso: {
+      title: 'Aviso legal',
+      lead: 'Información sobre el titular del sitio calista.com.py y las condiciones de uso.',
+      secs: [
+        { h: 'Titular del sitio', p: [
+          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `Domicilio: ${site.direccion}, Paraguay.`,
+          `Contacto: ${site.email} · ${telefonos}.`,
+          'Responsable del contenido: Hélène Montourcy, fundadora.' ] },
+        { h: 'Alojamiento', p: ['El sitio está alojado por Netlify, Inc. (Estados Unidos).'] },
+        { h: 'Información publicada', p: [
+          'Las fichas de propiedades tienen carácter informativo y no constituyen una oferta contractual. Precios, superficies y disponibilidad pueden cambiar sin aviso previo; confirmalos con nosotros antes de tomar una decisión.',
+          'Los artículos del blog son información general: no reemplazan el asesoramiento de un escribano, un abogado o un contador.' ] },
+        { h: 'Propiedad intelectual', p: ['Los textos, el logotipo, el diseño y, salvo indicación contraria, las fotografías del sitio pertenecen a CALISTA. No pueden reproducirse sin autorización escrita.'] },
+        { h: 'Enlaces externos', p: ['El sitio contiene enlaces hacia otros sitios (WhatsApp, Google, portales inmobiliarios, CALISTA Immobilier en Martinica). No somos responsables de su contenido.'] },
+        { h: 'Legislación aplicable', p: ['El presente aviso se rige por las leyes de la República del Paraguay.'] },
+      ],
+    },
+    privacidad: {
+      title: 'Política de privacidad',
+      lead: 'Qué datos recogemos en este sitio, para qué los usamos y cómo podés ejercer tus derechos.',
+      secs: [
+        { h: 'Responsable', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contacto: ${site.email}.`] },
+        { h: 'Datos que recogemos', p: [
+          'Formularios del sitio (contacto, estimación de alquiler, preguntas del blog): nombre, email, teléfono o WhatsApp, tu mensaje y, en su caso, los datos de tu propiedad (barrio, tipo, dormitorios, superficie, amoblado).',
+          'Mensajes de WhatsApp que nos envíes desde el sitio.',
+          'Estadísticas de visitas anónimas (páginas vistas, país, tipo de dispositivo), sin cookies y sin datos que te identifiquen.' ] },
+        { h: 'Para qué los usamos', p: [
+          'Para responderte, preparar la estimación o el servicio que nos pedís y hacer el seguimiento de tu consulta.',
+          'No vendemos ni cedemos tus datos a terceros con fines comerciales, y no te enviamos publicidad sin tu consentimiento.' ] },
+        { h: 'Base', p: ['Tu consentimiento, al enviar un formulario o escribirnos, y en su caso la ejecución del servicio que contratás con nosotros.'] },
+        { h: 'Proveedores que tratan datos por nuestra cuenta', p: [
+          'Netlify (Estados Unidos): alojamiento del sitio y recepción de los formularios.',
+          'WhatsApp (Meta): si elegís escribirnos por WhatsApp.',
+          'Plausible Analytics: estadísticas de visitas, sin cookies.',
+          'Google: las reseñas de Google que mostramos se cargan desde sus servidores.',
+          'Cloudinary: alojamiento de las fotos de las propiedades.',
+          'Algunos de estos proveedores están fuera del Paraguay: tus datos pueden ser tratados en otros países.' ] },
+        { h: 'Cookies', p: ['El sitio no utiliza cookies de publicidad ni de seguimiento.'] },
+        { h: 'Conservación', p: ['Conservamos tus datos el tiempo necesario para atender tu consulta. Si te convertís en cliente, los conservamos durante la relación y el tiempo que exijan nuestras obligaciones legales (contables, tributarias y de prevención del lavado de dinero).'] },
+        { h: 'Tus derechos', p: [`Podés pedir en cualquier momento el acceso, la rectificación, la actualización o la supresión de tus datos escribiendo a ${site.email}.`] },
+        { h: 'Cambios', p: ['Podemos actualizar esta política; la fecha de la última versión figura al pie de esta página.'] },
+      ],
+    },
+  },
+  fr: {
+    aviso: {
+      title: 'Mentions légales',
+      lead: 'Informations sur l’éditeur du site calista.com.py et conditions d’utilisation.',
+      secs: [
+        { h: 'Éditeur du site', p: [
+          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `Adresse : ${site.direccion}, Paraguay.`,
+          `Contact : ${site.email} · ${telefonos}.`,
+          'Responsable de la publication : Hélène Montourcy, fondatrice.' ] },
+        { h: 'Hébergement', p: ['Le site est hébergé par Netlify, Inc. (États-Unis).'] },
+        { h: 'Informations publiées', p: [
+          'Les fiches des biens sont fournies à titre indicatif et ne constituent pas une offre contractuelle. Prix, surfaces et disponibilité peuvent changer sans préavis ; confirmez-les avec nous avant toute décision.',
+          'Les articles du blog sont une information générale : ils ne remplacent pas le conseil d’un notaire (escribano), d’un avocat ou d’un comptable.' ] },
+        { h: 'Propriété intellectuelle', p: ['Les textes, le logo, la mise en page et, sauf mention contraire, les photographies du site appartiennent à CALISTA. Toute reproduction sans autorisation écrite est interdite.'] },
+        { h: 'Liens externes', p: ['Le site contient des liens vers d’autres sites (WhatsApp, Google, portails immobiliers, CALISTA Immobilier en Martinique). Nous ne sommes pas responsables de leur contenu.'] },
+        { h: 'Droit applicable', p: ['Les présentes mentions sont régies par le droit de la République du Paraguay.'] },
+      ],
+    },
+    privacidad: {
+      title: 'Politique de confidentialité',
+      lead: 'Les données que nous recueillons sur ce site, ce que nous en faisons et comment exercer vos droits.',
+      secs: [
+        { h: 'Responsable', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact : ${site.email}.`] },
+        { h: 'Données recueillies', p: [
+          'Formulaires du site (contact, estimation de loyer, questions du blog) : nom, e-mail, téléphone ou WhatsApp, votre message et, le cas échéant, les caractéristiques de votre bien (quartier, type, chambres, surface, meublé).',
+          'Les messages WhatsApp que vous nous envoyez depuis le site.',
+          'Des statistiques de visite anonymes (pages vues, pays, type d’appareil), sans cookies ni donnée permettant de vous identifier.' ] },
+        { h: 'Utilisation', p: [
+          'Vous répondre, préparer l’estimation ou le service demandé et assurer le suivi de votre demande.',
+          'Nous ne vendons ni ne cédons vos données à des fins commerciales, et ne vous envoyons pas de publicité sans votre accord.' ] },
+        { h: 'Fondement', p: ['Votre consentement, lorsque vous envoyez un formulaire ou nous écrivez, et le cas échéant l’exécution du service que vous nous confiez.'] },
+        { h: 'Prestataires traitant des données pour notre compte', p: [
+          'Netlify (États-Unis) : hébergement du site et réception des formulaires.',
+          'WhatsApp (Meta) : si vous choisissez de nous écrire par WhatsApp.',
+          'Plausible Analytics : statistiques de visite, sans cookies.',
+          'Google : les avis Google affichés sont chargés depuis ses serveurs.',
+          'Cloudinary : hébergement des photos des biens.',
+          'Certains de ces prestataires sont situés hors du Paraguay : vos données peuvent être traitées dans d’autres pays.' ] },
+        { h: 'Cookies', p: ['Le site n’utilise pas de cookies publicitaires ni de suivi.'] },
+        { h: 'Durée de conservation', p: ['Nous conservons vos données le temps nécessaire pour traiter votre demande. Si vous devenez client, pendant la durée de la relation et celle qu’imposent nos obligations légales (comptables, fiscales et de lutte contre le blanchiment).'] },
+        { h: 'Vos droits', p: [`Vous pouvez à tout moment demander l’accès, la rectification, la mise à jour ou la suppression de vos données en écrivant à ${site.email}.`] },
+        { h: 'Modifications', p: ['Cette politique peut être mise à jour ; la date de la dernière version figure au bas de la page.'] },
+      ],
+    },
+  },
+  en: {
+    aviso: {
+      title: 'Legal notice',
+      lead: 'Information about the owner of calista.com.py and terms of use.',
+      secs: [
+        { h: 'Site owner', p: [
+          `CALISTA Inmobiliaria EIRL — RUC (tax ID) ${site.ruc}.`,
+          `Address: ${site.direccion}, Paraguay.`,
+          `Contact: ${site.email} · ${telefonos}.`,
+          'Responsible for content: Hélène Montourcy, founder.' ] },
+        { h: 'Hosting', p: ['The site is hosted by Netlify, Inc. (United States).'] },
+        { h: 'Published information', p: [
+          'Property listings are for information only and do not constitute a contractual offer. Prices, floor areas and availability may change without notice; please confirm them with us before making any decision.',
+          'Blog articles are general information: they are not a substitute for advice from a notary (escribano), a lawyer or an accountant.' ] },
+        { h: 'Intellectual property', p: ['The texts, logo, design and, unless stated otherwise, photographs on this site belong to CALISTA. They may not be reproduced without written permission.'] },
+        { h: 'External links', p: ['The site links to other sites (WhatsApp, Google, property portals, CALISTA Immobilier in Martinique). We are not responsible for their content.'] },
+        { h: 'Governing law', p: ['This notice is governed by the laws of the Republic of Paraguay.'] },
+      ],
+    },
+    privacidad: {
+      title: 'Privacy policy',
+      lead: 'What data we collect on this site, what we use it for and how to exercise your rights.',
+      secs: [
+        { h: 'Controller', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact: ${site.email}.`] },
+        { h: 'Data we collect', p: [
+          'Site forms (contact, rent estimate, blog questions): name, email, phone or WhatsApp, your message and, where relevant, details of your property (neighbourhood, type, bedrooms, floor area, furnished).',
+          'WhatsApp messages you send us from the site.',
+          'Anonymous visit statistics (pages viewed, country, device type), without cookies or data that identifies you.' ] },
+        { h: 'How we use it', p: [
+          'To reply to you, prepare the estimate or service you request and follow up on your enquiry.',
+          'We do not sell or share your data for commercial purposes, and we do not send you advertising without your consent.' ] },
+        { h: 'Legal basis', p: ['Your consent, when you submit a form or write to us, and where relevant the performance of the service you entrust to us.'] },
+        { h: 'Providers processing data on our behalf', p: [
+          'Netlify (United States): site hosting and form handling.',
+          'WhatsApp (Meta): if you choose to message us on WhatsApp.',
+          'Plausible Analytics: visit statistics, without cookies.',
+          'Google: the Google reviews shown on the site are loaded from its servers.',
+          'Cloudinary: hosting of property photos.',
+          'Some of these providers are located outside Paraguay: your data may be processed in other countries.' ] },
+        { h: 'Cookies', p: ['The site does not use advertising or tracking cookies.'] },
+        { h: 'Retention', p: ['We keep your data for as long as needed to handle your enquiry. If you become a client, for the duration of the relationship and as long as our legal obligations require (accounting, tax and anti-money-laundering).'] },
+        { h: 'Your rights', p: [`You may at any time request access to, correction, update or deletion of your data by writing to ${site.email}.`] },
+        { h: 'Changes', p: ['We may update this policy; the date of the latest version is shown at the bottom of this page.'] },
+      ],
+    },
+  },
+};
+const d = T[lang][doc];
+const otro = doc === 'aviso' ? { href: '/politica-de-privacidad', label: T[lang].privacidad.title } : { href: '/aviso-legal', label: T[lang].aviso.title };
+---
+
+<Layout title={d.title} description={d.lead}>
+  <section class="section">
+    <div class="container legal">
+      <h1>{d.title}</h1>
+      <p class="lead">{d.lead}</p>
+      {d.secs.map((s) => (
+        <section>
+          <h2>{s.h}</h2>
+          {s.p.map((p) => <p>{p}</p>)}
+        </section>
+      ))}
+      <p class="act">{ACTUALIZADO} · <a href={L(otro.href)}>{otro.label}</a></p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal { max-width: 780px; }
+  .legal h1 { margin-bottom: 0.5rem; }
+  .legal h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; padding-left: 0.8rem; border-left: 4px solid var(--violet); }
+  .legal p { margin: 0 0 0.6rem; line-height: 1.7; }
+  .act { margin-top: 2.5rem !important; font-size: 0.88rem; color: var(--muted); }
+  .act a { color: var(--violet); font-weight: 600; }
+</style>
