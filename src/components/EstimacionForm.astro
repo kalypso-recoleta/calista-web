@@ -1,0 +1,59 @@
+---
+/**
+ * Formulaire « ¿Cuánto puede rendir tu propiedad? » (estimation de loyer gratuite).
+ * Utilisé sur l'accueil et sur la page Administración.
+ * À l'envoi : WhatsApp s'ouvre vers le numéro d'Hélène (script du Layout)
+ * et une copie arrive dans Netlify → Forms → « estimacion » (+ e-mail).
+ */
+import { site } from '../lib/site';
+import { getLangFromUrl, localizePath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const x = {
+  es: { t: '¿Cuánto puede rendir tu propiedad?', d: 'Te enviamos un rango de alquiler y tu ingreso neto después de la administración. Gratis y sin compromiso.', barrio: 'Barrio o ciudad', barrio_ph: 'Ej. Recoleta', tipo: 'Tipo', tipos: ['Departamento', 'Monoambiente', 'Casa', 'Dúplex', 'Otro'], dorm: 'Dormitorios', sup: 'Superficie (m²)', amob: '¿Amoblado?', si: 'Sí', no: 'No', nombre: 'Nombre', contacto: 'WhatsApp o email', acepto: 'Acepto que CALISTA me contacte sobre mi propiedad.', enviar: 'Quiero mi estimación' },
+  fr: { t: 'Combien peut rapporter votre bien ?', d: 'Nous vous envoyons une fourchette de loyer et votre revenu net après gestion. Gratuit et sans engagement.', barrio: 'Quartier ou ville', barrio_ph: 'Ex. Recoleta', tipo: 'Type', tipos: ['Appartement', 'Studio', 'Maison', 'Duplex', 'Autre'], dorm: 'Chambres', sup: 'Surface (m²)', amob: 'Meublé ?', si: 'Oui', no: 'Non', nombre: 'Nom', contacto: 'WhatsApp ou e-mail', acepto: 'J’accepte que CALISTA me contacte au sujet de mon bien.', enviar: 'Recevoir mon estimation' },
+  en: { t: 'How much could your property earn?', d: 'We send you a rent range and your net income after management. Free, no obligation.', barrio: 'Neighbourhood or city', barrio_ph: 'E.g. Recoleta', tipo: 'Type', tipos: ['Apartment', 'Studio', 'House', 'Duplex', 'Other'], dorm: 'Bedrooms', sup: 'Floor area (m²)', amob: 'Furnished?', si: 'Yes', no: 'No', nombre: 'Name', contacto: 'WhatsApp or email', acepto: 'I agree that CALISTA may contact me about my property.', enviar: 'Get my estimate' },
+}[lang as 'es' | 'fr' | 'en']!;
+---
+
+<form name="estimacion" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={localizePath('/gracias', lang)} class="est" data-wa-numero={site.whatsappTemporal} data-wa-titulo={x.t}>
+  <h3>{x.t}</h3>
+  <p class="est-d">{x.d}</p>
+  <input type="hidden" name="form-name" value="estimacion" />
+  <input type="hidden" name="idioma" value={lang} />
+  <p class="hp" hidden><label>No llenar: <input name="bot-field" /></label></p>
+  <div class="fila">
+    <label class="campo"><span>{x.barrio}</span><input type="text" name="barrio" required placeholder={x.barrio_ph} /></label>
+    <label class="campo"><span>{x.tipo}</span><select name="tipo">{x.tipos.map((o) => <option>{o}</option>)}</select></label>
+  </div>
+  <div class="fila">
+    <label class="campo"><span>{x.dorm}</span><input type="number" name="dormitorios" min="0" max="20" inputmode="numeric" /></label>
+    <label class="campo"><span>{x.sup}</span><input type="number" name="superficie" min="0" inputmode="numeric" /></label>
+  </div>
+  <fieldset class="campo radios">
+    <legend>{x.amob}</legend>
+    <label><input type="radio" name="amoblado" value={x.si} /> {x.si}</label>
+    <label><input type="radio" name="amoblado" value={x.no} /> {x.no}</label>
+  </fieldset>
+  <label class="campo"><span>{x.nombre}</span><input type="text" name="nombre" required autocomplete="name" /></label>
+  <label class="campo"><span>{x.contacto}</span><input type="text" name="contacto" required autocomplete="tel" /></label>
+  <label class="acepto"><input type="checkbox" name="acepto" value="si" required /> {x.acepto}</label>
+  <button type="submit" class="btn btn--primary">{x.enviar}</button>
+</form>
+
+<style>
+  .est { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .est h3 { margin: 0; font-size: 1.35rem; color: var(--brand); }
+  .est-d { margin: -0.3rem 0 0.2rem; color: var(--muted); font-size: 0.92rem; }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .campo { display: flex; flex-direction: column; gap: 0.3rem; border: 0; padding: 0; margin: 0; min-width: 0; }
+  .campo > span, .campo legend { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .est input[type='text'], .est input[type='number'], .est select { font: inherit; font-size: 1rem; color: var(--ink); padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; width: 100%; }
+  .est input:focus, .est select:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px var(--violet-soft); }
+  .radios { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.2rem; }
+  .radios legend { width: 100%; margin-bottom: 0.3rem; }
+  .radios label, .acepto { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.95rem; }
+  .acepto { font-size: 0.85rem; color: var(--muted); align-items: flex-start; }
+  .acepto input { margin-top: 0.2rem; }
+  @media (max-width: 600px) { .fila { grid-template-columns: 1fr; } }
+</style>

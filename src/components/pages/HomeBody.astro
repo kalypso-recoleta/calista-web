@@ -5,6 +5,7 @@ import Layout from '../../layouts/Layout.astro';
 import PropertyCard from '../PropertyCard.astro';
 import WhatsAppButton from '../WhatsAppButton.astro';
 import Testimonios from '../Testimonios.astro';
+import EstimacionForm from '../EstimacionForm.astro';
 import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
 import { site } from '../../lib/site';
@@ -251,31 +252,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
         <p class="nota">{x.p_nota}</p>
         <a class="link" href={L('/administracion')}>{x.p_link} →</a>
       </div>
-      <!-- Formulaire Netlify « estimacion » : arrive dans Netlify → Forms (comme Contacto) -->
-      <form name="estimacion" method="POST" data-netlify="true" netlify-honeypot="bot-field" action={L('/gracias')} class="est" data-wa-numero={site.whatsappTemporal} data-wa-titulo={x.f_t}>
-        <h3>{x.f_t}</h3>
-        <p class="est-d">{x.f_d}</p>
-        <input type="hidden" name="form-name" value="estimacion" />
-        <input type="hidden" name="idioma" value={lang} />
-        <p class="hp" hidden><label>No llenar: <input name="bot-field" /></label></p>
-        <div class="fila">
-          <label class="campo"><span>{x.f_barrio}</span><input type="text" name="barrio" required placeholder={x.f_barrio_ph} /></label>
-          <label class="campo"><span>{x.f_tipo}</span><select name="tipo">{x.tipos.map((o) => <option>{o}</option>)}</select></label>
-        </div>
-        <div class="fila">
-          <label class="campo"><span>{x.f_dorm}</span><input type="number" name="dormitorios" min="0" max="20" inputmode="numeric" /></label>
-          <label class="campo"><span>{x.f_sup}</span><input type="number" name="superficie" min="0" inputmode="numeric" /></label>
-        </div>
-        <fieldset class="campo radios">
-          <legend>{x.f_amob}</legend>
-          <label><input type="radio" name="amoblado" value={x.si} /> {x.si}</label>
-          <label><input type="radio" name="amoblado" value={x.no} /> {x.no}</label>
-        </fieldset>
-        <label class="campo"><span>{x.f_nombre}</span><input type="text" name="nombre" required autocomplete="name" /></label>
-        <label class="campo"><span>{x.f_contacto}</span><input type="text" name="contacto" required autocomplete="tel" /></label>
-        <label class="acepto"><input type="checkbox" name="acepto" value="si" required /> {x.f_acepto}</label>
-        <button type="submit" class="btn btn--primary">{x.f_enviar}</button>
-      </form>
+      <EstimacionForm />
     </div>
   </section>
 
@@ -718,19 +695,6 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .sl { font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
   .nota { font-size: 0.92rem; color: var(--muted); margin: 0 0 0.6rem; }
   .link { color: var(--violet); font-weight: 600; text-decoration: none; }
-  .est { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem; }
-  .est h3 { margin: 0; font-size: 1.35rem; color: var(--brand); }
-  .est-d { margin: -0.3rem 0 0.2rem; color: var(--muted); font-size: 0.92rem; }
-  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-  .campo { display: flex; flex-direction: column; gap: 0.3rem; border: 0; padding: 0; margin: 0; min-width: 0; }
-  .campo > span, .campo legend { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
-  .est input[type='text'], .est input[type='number'], .est select { font: inherit; font-size: 1rem; color: var(--ink); padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; width: 100%; }
-  .est input:focus, .est select:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px var(--violet-soft); }
-  .radios { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.2rem; }
-  .radios legend { width: 100%; margin-bottom: 0.3rem; }
-  .radios label, .acepto { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.95rem; }
-  .acepto { font-size: 0.85rem; color: var(--muted); align-items: flex-start; }
-  .acepto input { margin-top: 0.2rem; }
   .cats-section .cats { margin-bottom: 1.6rem; }
   .cats-section { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
   .suc-sec { padding-block: clamp(1.5rem, 3vw, 2.5rem); }
@@ -763,7 +727,6 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   }
   @media (max-width: 600px) {
     .stats { grid-template-columns: 1fr; }
-    .fila { grid-template-columns: 1fr; }
     .pasos4 { grid-template-columns: 1fr; }
     .hel { flex-direction: column; text-align: center; }
     .suc { flex-direction: column; align-items: flex-start; }
