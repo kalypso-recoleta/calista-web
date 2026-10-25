@@ -48,8 +48,6 @@ fr:
 
     Le solde de USD 37 350 se paie en **32 mensualités sans intérêts** pendant les travaux. Prix total : **USD 41 500**.
 
-    Et pendant que vous payez vos mensualités, votre investissement travaille pour vous : à la livraison, votre appartement vaut déjà entre **25 % et 35 % de plus** que ce que vous avez payé.
-
     **Pourquoi Kalypso Recoleta ?**
 
     📍 **Emplacement imbattable** À l'angle de Cruz del Chaco et Alfredo Seiferheld. À deux pas du Shopping Mariscal, entouré des meilleurs restaurants d'Asunción et relié à tous les pôles d'affaires de la ville.
@@ -106,8 +104,6 @@ en:
 
     The balance of USD 37,350 is paid in **32 interest-free monthly instalments** during construction. Total price: **USD 41,500**.
 
-    And while you pay your instalments, your investment works for you: on delivery, your apartment is already worth **25 % to 35 % more** than you paid.
-
     **Why Kalypso Recoleta?**
 
     📍 **Unbeatable location** Corner of Cruz del Chaco and Alfredo Seiferheld. Steps from Shopping Mariscal, surrounded by the best restaurants in Asunción and connected to all the city's business hubs.
@@ -157,8 +153,6 @@ Sí, leíste bien. Con **USD 4.150** reservás hoy tu monoambiente a estrenar en
 👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
 
 El saldo de USD 37.350 lo pagás en **32 cuotas mensuales sin intereses** durante la construcción. Precio total: **USD 41.500**.
-
-Y mientras pagás tus cuotas, tu inversión trabaja para vos: al momento de la entrega, tu departamento ya vale entre un **25 % y 35 % más** de lo que pagaste.
 
 **¿Por qué Kalypso Recoleta?**
 
