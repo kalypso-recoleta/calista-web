@@ -49,7 +49,8 @@ const ogImage = image
 const basePath = stripLocale(Astro.url.pathname);
 const alternates = LOCALES.map((l) => ({
   lang: l,
-  href: new URL(localizePath(basePath, l), Astro.site).toString(),
+  // « / » final : c'est l'adresse servie par Netlify (sans, elle redirige) et celle du canonical
+  href: new URL(localizePath(basePath, l).replace(/\/?$/, '/'), Astro.site).toString(),
 }));
 
 // og:locale (langue de la page + langues alternatives)
@@ -205,7 +206,11 @@ const orgSchema = {
               const v = String(valor).trim();
               if (!v || OMITIR.includes(nombre)) continue;
               const campo = form.querySelector<HTMLElement>(`[name="${nombre}"]`);
-              if (campo instanceof HTMLInputElement && campo.type === 'hidden') { titulo = titulo || v; continue; }
+              if (campo instanceof HTMLInputElement && campo.type === 'hidden') {
+                if (campo.dataset.etiqueta) lineas.unshift(`${campo.dataset.etiqueta}: ${v}`);
+                else titulo = titulo || v;
+                continue;
+              }
               const etiqueta = campo?.closest('label')?.querySelector('span')?.textContent?.trim()
                 ?? campo?.closest('fieldset')?.querySelector('legend')?.textContent?.trim()
                 ?? nombre;

@@ -29,7 +29,6 @@ imagenes:
   - /uploads/IMG_6987.jpeg
   - /uploads/IMG_6986.jpeg
   - /uploads/b3f6ead8-3e7c-4682-a96c-7f6e69257828.JPG
-  - blob:https://calista.com.py/4597d07c-2ca1-4406-af77-53e8c6dadfc5
 descripcion: |-
   Dos dormitorios, el principal en suite, más un baño social: dos baños completos en 53 m², algo poco frecuente en esta tipología. Sala-comedor con cocina integrada.
 

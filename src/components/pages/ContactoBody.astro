@@ -48,6 +48,8 @@ const t = useTranslations(lang);
           data-wa-titulo="Contacto"
         >
           <input type="hidden" name="form-name" value="contacto" />
+          <!-- Rempli quand on arrive depuis « Enviar consulta » d'une fiche (référence du bien) -->
+          <input type="hidden" name="propiedad" value="" data-etiqueta="Propiedad" />
           <p class="hp" hidden>
             <label>No llenar: <input name="bot-field" /></label>
           </p>
@@ -121,3 +123,21 @@ const t = useTranslations(lang);
   .full { width: 100%; justify-content: center; }
   @media (max-width: 760px) { .contacto, .fila { grid-template-columns: 1fr; } }
 </style>
+
+<script>
+  // Arrivée depuis une fiche (« Enviar consulta ») : on garde la référence du bien
+  // et on pré-remplit le message.
+  try {
+    const q = new URLSearchParams(location.search);
+    const ref = q.get('propiedad');
+    const titulo = q.get('titulo');
+    if (ref) {
+      const campo = document.querySelector<HTMLInputElement>('form[name="contacto"] input[name="propiedad"]');
+      if (campo) campo.value = titulo ? `${titulo} (ref. ${ref})` : ref;
+      const msg = document.querySelector<HTMLTextAreaElement>('form[name="contacto"] textarea[name="mensaje"]');
+      const lang = document.documentElement.lang;
+      const intro = { fr: 'Bonjour, ce bien m’intéresse : ', en: 'Hello, I am interested in this property: ' }[lang] ?? 'Hola, me interesa esta propiedad: ';
+      if (msg && !msg.value) msg.value = `${intro}${titulo ?? ref}.\n`;
+    }
+  } catch {}
+</script>

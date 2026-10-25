@@ -36,7 +36,6 @@ imagenes:
   - /uploads/PHOTO-2026-10-13-15-39-51 4.jpg
   - /uploads/PHOTO-2026-10-13-15-39-51 12.jpg
   - /uploads/PHOTO-2026-10-13-15-39-51 16.jpg
-  - blob:https://calista.com.py/bea83051-195f-44eb-91dd-efd8e004d7f2
 descripcion: Departamento de 72 m² propios (76,42 m² en total) en un edificio con piscina en la azotea y vista abierta a la ciudad. Incluye cochera y baulera.
 fr:
   titulo: 'À LOUER – Las Mercedes : appartement avec balcon et barbecue privatif, 2 chambres (dont 1 suite), Edificio SOHO'

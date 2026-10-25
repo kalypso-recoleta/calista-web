@@ -181,7 +181,7 @@ const specs = [
                 </div>
               )
             }
-            <a href={L('/contacto')} class="btn btn--ghost full-ghost">
+            <a href={`${L('/contacto')}?propiedad=${encodeURIComponent(slugify(bien.id))}&titulo=${encodeURIComponent(d.titulo)}`} class="btn btn--ghost full-ghost">
               {t('det.enviar_consulta')}
             </a>
             <button

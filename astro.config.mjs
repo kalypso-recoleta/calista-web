@@ -16,7 +16,8 @@ export default defineConfig({
       // Sitemap multilingue : chaque URL liste ses variantes es / fr / en.
       i18n: {
         defaultLocale: 'es',
-        locales: { es: 'es-PY', fr: 'fr-FR', en: 'en-US' },
+        // Mêmes codes que les balises hreflang des pages (langue seule)
+        locales: { es: 'es', fr: 'fr', en: 'en' },
       },
     }),
   ],
