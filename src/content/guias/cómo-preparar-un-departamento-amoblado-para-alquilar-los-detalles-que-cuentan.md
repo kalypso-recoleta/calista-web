@@ -45,7 +45,7 @@ fr:
 
     Une fois l’appartement équipé, il est utile de noter ce qu’il contient : meubles, électroménager, vaisselle et linge de lit, avec leur état et des photos.
 
-    Pour une location de plusieurs mois, l’idéal est que les deux parties signent l’inventaire à l’entrée et le vérifient ensemble à la sortie. On sait ainsi ce qui manque ou a été abîmé pendant l’occupation, et on limite les discussions.
+    Qu’il s’agisse d’une location de plusieurs mois ou d’un séjour court, l’idéal est que les deux parties signent l’inventaire à l’entrée et le vérifient à la sortie. On sait ainsi ce qui manque ou a été abîmé pendant l’occupation, et on limite les discussions.
 
     L’inventaire sert aussi de référence pour la préparation : ce qui y figure est ce que le prochain occupant doit trouver, dans le même état.
 
@@ -143,7 +143,7 @@ en:
 
     Once the apartment is equipped, it is worth recording what it contains: furniture, appliances, crockery and bed linen, with their condition and photos.
 
-    For a stay of several months, ideally both parties sign the inventory at check-in and go through it together at check-out. That way you know what went missing or was damaged during the stay, and there is less room for disagreement.
+    Whether it is a rental of several months or a short stay, ideally both parties sign the inventory at check-in and check it again at check-out. That way you know what went missing or was damaged during the stay, and there is less room for disagreement.
 
     The inventory is also a reference for preparation: what it lists is what the next occupant should find, in the same condition.
 
@@ -238,7 +238,7 @@ No se trata de acumular. Un placard lleno de ropa de cama o una cocina saturada 
 
 Una vez equipado el departamento, conviene dejar constancia de lo que contiene: muebles, electrodomésticos, vajilla y ropa de cama, con su estado y fotos.
 
-En un alquiler de varios meses, lo ideal es que ambas partes firmen el inventario a la entrada y lo revisen juntas a la salida. Así se sabe qué faltó o se dañó durante la ocupación, y se reducen las discusiones.
+Sea un alquiler de varios meses o una estadía corta, lo ideal es que ambas partes firmen el inventario a la entrada y lo revisen a la salida. Así se sabe qué faltó o se dañó durante la ocupación, y se reducen las discusiones.
 
 El inventario también sirve de referencia para la preparación: lo que figura en él es lo que el próximo ocupante debe encontrar, en el mismo estado.
 
