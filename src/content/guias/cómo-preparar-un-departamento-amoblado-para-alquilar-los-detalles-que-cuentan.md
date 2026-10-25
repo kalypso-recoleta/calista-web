@@ -1,13 +1,13 @@
 ---
-titulo: 'Cómo preparar un departamento amoblado para alquilar: los detalles que cuentan'
-descripcion: 'Muebles, ropa de cama, equipamiento y limpieza: cómo preparar un departamento amoblado para alquilar y mantener el mismo nivel de cuidado.'
+titulo: 'Cómo preparar un departamento amoblado para alquilar'
+descripcion: 'Muebles, ropa de cama, equipamiento, inventario y limpieza: cómo preparar un departamento amoblado para alquilar y mantener su nivel.'
 categoria: guia
 tema: alquilar
 borrador: false
 fecha: 2026-10-25T10:00:00
 fr:
-  titulo: 'Comment préparer un appartement meublé pour la location : les détails qui comptent'
-  descripcion: 'Meubles, literie, équipement et ménage : comment préparer un appartement meublé à louer et garder le même niveau de soin.'
+  titulo: 'Préparer un appartement meublé pour la location'
+  descripcion: 'Meubles, literie, équipement, inventaire et ménage : comment préparer un appartement meublé à louer et maintenir son niveau.'
   cuerpo: |-
     Il n’est pas nécessaire que tous les meubles soient neufs ni que la décoration soit coûteuse. De notre côté, nous avons récupéré des meubles et les avons fait restaurer avant de les installer. L’essentiel est qu’ils soient en bon état et forment un ensemble soigné et cohérent.
 
@@ -29,7 +29,7 @@ fr:
 
     La quantité de meubles et d’ustensiles doit correspondre à la capacité de l’appartement et à l’usage prévu.
 
-    Pour un séjour court, l’occupant doit trouver l’essentiel dès son arrivée. Pour y vivre plusieurs mois, il aura aussi besoin de place pour ranger ses vêtements, ses provisions et ses affaires.
+    Pour un séjour court, l’occupant doit trouver l’essentiel dès son arrivée. Pour y vivre plusieurs mois, il aura aussi besoin de place pour ranger ses vêtements, ses provisions et ses affaires. Si vous hésitez encore entre les deux formules, nous les comparons dans [Location classique ou temporaire à Asunción : quelle option choisir ?](/fr/blog/alquilar-tu-departamento-tradicional-o-temporal).
 
     Dans les deux cas, quelques points pratiques sont à vérifier :
 
@@ -41,6 +41,14 @@ fr:
 
     Il ne s’agit pas d’accumuler. Un placard rempli de linge de lit ou une cuisine saturée d’ustensiles laisse peu de place au locataire. Chaque élément devrait avoir une fonction.
 
+    ## Tout consigner dans un inventaire avec photos
+
+    Une fois l’appartement équipé, il est utile de noter ce qu’il contient : meubles, électroménager, vaisselle et linge de lit, avec leur état et des photos.
+
+    Pour une location de plusieurs mois, l’idéal est que les deux parties signent l’inventaire à l’entrée et le vérifient ensemble à la sortie. On sait ainsi ce qui manque ou a été abîmé pendant l’occupation, et on limite les discussions.
+
+    L’inventaire sert aussi de référence pour la préparation : ce qui y figure est ce que le prochain occupant doit trouver, dans le même état.
+
     ## Accorder une attention particulière au lit et au linge de lit
 
     La préparation du lit ne s’arrête pas à la pose de draps propres.
@@ -50,8 +58,6 @@ fr:
     Des protections adaptées et lavables aident à préserver la literie, mais elles doivent elles aussi être vérifiées et nettoyées. Couvrir une tache ne règle pas le problème.
 
     Les draps et les serviettes doivent être en bon état, sans taches, odeurs ni usure excessive. Ils n’ont pas besoin d’être luxueux : ils doivent être agréables et soignés.
-
-    Ce sont des détails à vérifier entre chaque occupation.
 
     ## Nettoyer aussi ce qui n’apparaît pas sur les photos
 
@@ -68,7 +74,7 @@ fr:
     - Matelas, sommier, oreillers et leurs protections.
     - Salles de bain, robinetterie et évacuations.
 
-    La vaisselle rangée ne doit pas être considérée comme propre sans l’avoir vérifiée. Et mieux vaut ne pas attendre que le prochain occupant découvre ce qui a été oublié.
+    Mieux vaut ne pas attendre que le prochain occupant découvre ce qui a été oublié.
 
     ## Choisir la personne chargée du ménage et définir le travail
 
@@ -96,10 +102,10 @@ fr:
 
     L’idée est que chacun trouve un logement où il fait bon séjourner. Les bons avis sont un résultat que nous attendons de ce travail, mais le soin commence bien avant que l’occupant ne donne son opinion.
 
-    Vous avez un appartement meublé à louer à Asunción ? Chez **CALISTA**, nous pouvons vous accompagner dans sa préparation, sa mise en location et sa gestion.
+    Vous avez un appartement meublé à louer à Asunción ? Chez **CALISTA**, nous pouvons vous accompagner dans sa préparation, sa mise en location, classique ou [temporaire](/fr/alquiler-temporal), et sa [gestion](/fr/administracion).
 en:
-  titulo: 'How to prepare a furnished apartment for rent: the details that matter'
-  descripcion: 'Furniture, bedding, equipment and cleaning: how to prepare a furnished apartment for rent and keep the same standard of care.'
+  titulo: 'How to prepare a furnished apartment for rent'
+  descripcion: 'Furniture, bedding, equipment, inventory and cleaning: how to prepare a furnished apartment for rent and keep it up to standard.'
   cuerpo: |-
     Not every piece of furniture needs to be new, and the decoration does not have to be expensive. In our experience, we have salvaged furniture and had it restored before putting it in. What matters is that everything is in good condition and forms a coherent, well-kept whole.
 
@@ -121,7 +127,7 @@ en:
 
     The amount of furniture and utensils should match the apartment’s capacity and its intended use.
 
-    For a short stay, the occupant needs to find the essentials on arrival. To live there for several months, they will also need space to store clothes, food and belongings.
+    For a short stay, the occupant needs to find the essentials on arrival. To live there for several months, they will also need space to store clothes, food and belongings. If you have not yet decided which option suits you, we compare both in [Traditional or short-term rentals in Asunción: which option is right for you?](/en/blog/alquilar-tu-departamento-tradicional-o-temporal).
 
     In both cases, check a few practical points:
 
@@ -133,6 +139,14 @@ en:
 
     It is not about accumulating. A wardrobe full of bed linen or a kitchen crammed with utensils leaves little room for the tenant. Every item should have a purpose.
 
+    ## Record everything in an inventory with photos
+
+    Once the apartment is equipped, it is worth recording what it contains: furniture, appliances, crockery and bed linen, with their condition and photos.
+
+    For a stay of several months, ideally both parties sign the inventory at check-in and go through it together at check-out. That way you know what went missing or was damaged during the stay, and there is less room for disagreement.
+
+    The inventory is also a reference for preparation: what it lists is what the next occupant should find, in the same condition.
+
     ## Pay special attention to the bed and bed linen
 
     Preparing the bed does not end with putting on clean sheets.
@@ -142,8 +156,6 @@ en:
     Suitable, washable protectors help look after the bed, but they too need checking and cleaning. Covering a stain does not solve the problem.
 
     Sheets and towels should be in good condition, with no stains, odours or excessive wear. They do not need to be luxurious: they should be pleasant and well looked after.
-
-    These are details worth checking between every occupancy.
 
     ## Clean what doesn’t show in the photos too
 
@@ -160,7 +172,7 @@ en:
     - Mattress, bed base, pillows and their protectors.
     - Bathrooms, taps and drains.
 
-    Crockery that has been put away should not be assumed to be clean without checking it. Nor is it a good idea to wait for the next occupant to find what was left undone.
+    It is not a good idea to wait for the next occupant to find what was left undone.
 
     ## Choose your cleaner and define the job
 
@@ -188,7 +200,7 @@ en:
 
     The aim is for everyone to find a place where they enjoy staying. Good reviews are a result we expect from this work, but the care starts long before the guest leaves their opinion.
 
-    Do you have a furnished apartment to rent out in Asunción? At **CALISTA**, we can help you prepare it, let it and manage it.
+    Do you have a furnished apartment to rent out in Asunción? At **CALISTA**, we can help you prepare it, let it on a long-term or [short-term](/en/alquiler-temporal) basis, and [manage it](/en/administracion).
 ---
 No hace falta que todos los muebles sean nuevos ni que la decoración sea costosa. En nuestra experiencia, hemos recuperado muebles y los hemos hecho restaurar antes de instalarlos. Lo importante es que estén en buen estado y formen un conjunto cuidado y coherente.
 
@@ -210,7 +222,7 @@ Un ambiente cuidado puede tener personalidad sin estar lleno de objetos. Tambié
 
 La cantidad de muebles y utensilios debe corresponder a la capacidad del departamento y al uso previsto.
 
-Para una estadía corta, el ocupante necesita encontrar lo esencial desde su llegada. Para vivir varios meses, también necesitará espacio para guardar ropa, alimentos y pertenencias.
+Para una estadía corta, el ocupante necesita encontrar lo esencial desde su llegada. Para vivir varios meses, también necesitará espacio para guardar ropa, alimentos y pertenencias. Si todavía no decidiste qué modalidad te conviene, comparamos ambas en [Alquiler tradicional o temporal en Asunción: ¿qué te conviene?](/blog/alquilar-tu-departamento-tradicional-o-temporal).
 
 En ambos casos, conviene revisar aspectos prácticos:
 
@@ -222,6 +234,14 @@ En ambos casos, conviene revisar aspectos prácticos:
 
 No se trata de acumular. Un placard lleno de ropa de cama o una cocina saturada de utensilios deja poco espacio para el inquilino. Cada elemento debería tener una función.
 
+## Registrar todo en un inventario con fotos
+
+Una vez equipado el departamento, conviene dejar constancia de lo que contiene: muebles, electrodomésticos, vajilla y ropa de cama, con su estado y fotos.
+
+En un alquiler de varios meses, lo ideal es que ambas partes firmen el inventario a la entrada y lo revisen juntas a la salida. Así se sabe qué faltó o se dañó durante la ocupación, y se reducen las discusiones.
+
+El inventario también sirve de referencia para la preparación: lo que figura en él es lo que el próximo ocupante debe encontrar, en el mismo estado.
+
 ## Prestar especial atención a la cama y a la ropa de cama
 
 La preparación de la cama no termina al colocar sábanas limpias.
@@ -231,8 +251,6 @@ Hay que revisar el colchón, las almohadas y la base de la cama o sommier. Su es
 Las protecciones adecuadas y lavables ayudan a cuidar la cama, pero también necesitan revisarse y limpiarse. Cubrir una mancha no resuelve el problema.
 
 Las sábanas y las toallas deben estar en buen estado, sin manchas, olores ni desgaste excesivo. No necesitan ser de lujo: deben resultar agradables y estar cuidadas.
-
-Son detalles que merecen una verificación entre cada ocupación.
 
 ## Limpiar también lo que no aparece en las fotos
 
@@ -249,7 +267,7 @@ Entre una ocupación y la siguiente, la revisión debe incluir:
 - Colchón, base de cama, almohadas y sus protecciones.
 - Baños, griferías y desagües.
 
-La vajilla guardada no debe darse por limpia sin revisarla. Tampoco conviene esperar a que el próximo ocupante descubra lo que quedó pendiente.
+No conviene esperar a que el próximo ocupante descubra lo que quedó pendiente.
 
 ## Elegir a la persona de limpieza y definir el trabajo
 
@@ -277,4 +295,4 @@ Eso supone elegir muebles adecuados, restaurar lo que puede recuperarse, equipar
 
 La idea es que cada persona encuentre un alojamiento donde dé gusto quedarse. Las buenas reseñas son un resultado que esperamos de ese trabajo, pero el cuidado empieza mucho antes de que el huésped deje su opinión.
 
-¿Tenés un departamento amoblado para alquilar en Asunción? En **CALISTA** podemos acompañarte en su preparación, puesta en alquiler y administración.
+¿Tenés un departamento amoblado para alquilar en Asunción? En **CALISTA** podemos acompañarte en su preparación, su puesta en alquiler, tradicional o [temporal](/alquiler-temporal), y su [administración](/administracion).
