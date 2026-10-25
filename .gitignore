@@ -1,0 +1,5 @@
+# Fichiers locaux (captures envoyées par Claude, dépendances, build)
+Claude outputs/
+node_modules/
+dist/
+.astro/

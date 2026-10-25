@@ -28,6 +28,8 @@ const y = {
       ['¿Quién se ocupa de los arreglos?', 'Nosotros: coordinamos el mantenimiento y las reparaciones. Tu inquilino tiene un solo interlocutor, y vos también.'],
       ['¿Cómo sé lo que pasa con mi propiedad?', 'Recibís cada mes el detalle de todo, sin tener que pedirlo, y nos podés escribir en español, francés o inglés.'],
     ],
+    liq_alt: "Ejemplo de liquidación mensual al propietario generada por el software de CALISTA, con los nombres ocultos",
+    liq_cap: 'Una liquidación real de octubre de 2026 (nombres ocultos): lo cobrado, nuestra comisión y lo que te transferimos.',
     est_eyebrow: 'Estimación gratis',
     est_t: '¿Cuánto podrías cobrar de alquiler?',
     est_d: 'Contanos cómo es tu propiedad: te enviamos un rango de alquiler y lo que te quedaría después de la administración.',
@@ -44,6 +46,8 @@ const y = {
       ['Qui s’occupe des réparations ?', 'Nous : nous coordonnons l’entretien et les réparations. Votre locataire a un seul interlocuteur, et vous aussi.'],
       ['Comment savoir ce qui se passe chez moi ?', 'Vous recevez chaque mois le détail de tout, sans avoir à le demander, et vous pouvez nous écrire en français, espagnol ou anglais.'],
     ],
+    liq_alt: "Exemple de relevé mensuel au propriétaire produit par le logiciel de CALISTA, noms masqués",
+    liq_cap: 'Un vrai relevé d’octobre 2026 (noms masqués) : ce qui a été encaissé, notre commission et ce que nous vous virons.',
     est_eyebrow: 'Estimation gratuite',
     est_t: 'Quel loyer pourriez-vous obtenir ?',
     est_d: 'Décrivez-nous votre bien : nous vous envoyons une fourchette de loyer et ce qu’il vous resterait après gestion.',
@@ -60,6 +64,8 @@ const y = {
       ['Who handles repairs?', 'We do: we coordinate maintenance and repairs. Your tenant has a single point of contact, and so do you.'],
       ['How do I know what’s going on?', 'Every month you receive the full detail, without having to ask, and you can write to us in English, Spanish or French.'],
     ],
+    liq_alt: "Example of a monthly owner statement produced by CALISTA's software, with names hidden",
+    liq_cap: 'A real statement from October 2026 (names hidden): what was collected, our fee and what we transfer to you.',
     est_eyebrow: 'Free estimate',
     est_t: 'How much rent could you get?',
     est_d: 'Tell us about your property: we send you a rent range and what you would keep after management.',
@@ -115,6 +121,10 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
         <p class="eyebrow">{t('adm.soft_eyebrow')}</p>
         <h2>{t('adm.soft_t')}</h2>
         <p>{t('adm.soft_d')}</p>
+        <figure class="liq">
+          <img src="/img/liquidacion-ejemplo.webp" alt={y.liq_alt} width="1100" height="795" loading="lazy" />
+          <figcaption>{y.liq_cap}</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -199,6 +209,9 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   .soft-section { padding-bottom: 0; }
   .soft { padding: clamp(1.6rem, 3.5vw, 2.4rem) clamp(1.6rem, 4vw, 2.8rem); background: var(--card-tint); border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow); }
   .soft h2 { margin: 0 0 0.6rem; }
+  .liq { margin: 1.6rem 0 0; }
+  .liq img { width: 100%; max-width: 760px; height: auto; display: block; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); border: 1px solid var(--line); }
+  .liq figcaption { margin-top: 0.7rem; font-size: 0.88rem; color: var(--muted); }
   .soft p:not(.eyebrow) { margin: 0; color: var(--ink); line-height: 1.7; max-width: 75ch; }
   .tarifas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
   .tarifa { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.6rem 1.5rem; box-shadow: var(--shadow); }
