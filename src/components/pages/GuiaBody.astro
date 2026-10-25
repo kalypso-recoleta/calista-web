@@ -46,7 +46,7 @@ const ld = {
 };
 ---
 
-<Layout title={d.titulo} description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha}>
+<Layout title={d.titulo} tituloCompleto description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha}>
   <article class="section">
     <div class="container art">
       <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span>{guia.data.tema && <a class="tema" href={L(`/blog/tema/${guia.data.tema}`)}>{(TEMA_TXT[lang] ?? TEMA_TXT.es)[guia.data.tema].n}</a>}</p>

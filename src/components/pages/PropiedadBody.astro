@@ -1,4 +1,5 @@
 ---
+import { tituloBien } from '../../lib/seo';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 import { slugify } from '../../lib/slug';
 import type { CollectionEntry } from 'astro:content';
@@ -99,7 +100,7 @@ const specs = [
 ].filter(Boolean) as { label: string; value: string | number }[];
 ---
 
-<Layout title={d.titulo} description={d.descripcion} image={ogImage}>
+<Layout title={tituloBien(bien.data, getLangFromUrl(Astro.url))} tituloCompleto description={d.descripcion} image={ogImage}>
   <article class="section detalle">
     <script type="application/ld+json" set:html={JSON.stringify(listingSchema)} />
     <div class="container">

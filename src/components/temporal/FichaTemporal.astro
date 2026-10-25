@@ -7,6 +7,7 @@ import PropertyMap from '../PropertyMap.astro';
 import WhatsAppButton from '../WhatsAppButton.astro';
 import { img } from '../../lib/cloudinary';
 import { whatsappLink } from '../../lib/whatsapp';
+import { tituloTemporal } from '../../lib/seo';
 import { site } from '../../lib/site';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 import { type Temporal, slugTemporal, reservasJson, precioTxt, LOCALE, tarifasDe } from './datos';
@@ -57,7 +58,7 @@ const textos = {
 };
 ---
 
-<Layout title={`${d.titulo} — ${t('temp.title')}`} description={d.descripcion} image={ogImage}>
+<Layout title={tituloTemporal(d, lang)} tituloCompleto description={d.descripcion} image={ogImage}>
   <article class="section">
     <div class="container">
       <nav class="crumbs" aria-label="•">
