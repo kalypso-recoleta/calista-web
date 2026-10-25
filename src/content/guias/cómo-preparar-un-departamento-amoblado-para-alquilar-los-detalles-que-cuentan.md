@@ -3,7 +3,7 @@ titulo: Cómo preparar un departamento amoblado para alquilar
 descripcion: 'Muebles, ropa de cama, equipamiento, inventario y limpieza: cómo preparar un departamento amoblado para alquilar y mantener su nivel.'
 categoria: guia
 tema: alquilar
-borrador: true
+borrador: false
 fecha: 2026-10-26T10:00:00
 portada_foto: /uploads/departamento-amoblado-silla.jpg
 fr:
