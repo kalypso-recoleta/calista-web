@@ -24,9 +24,9 @@ const fundadora = {
   en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
 }[lang as 'es' | 'fr' | 'en']!;
 const louis = {
-  es: { rol: 'Responsable de ventas', detalle: 'Compra y venta de propiedades y desarrollos Kalypso' },
-  fr: { rol: 'Responsable des ventes', detalle: 'Achat et vente de biens, et programmes Kalypso' },
-  en: { rol: 'Head of sales', detalle: 'Buying and selling property, and the Kalypso developments' },
+  es: { rol: 'Responsable de ventas', detalle: 'Compra y venta de propiedades y desarrollos Kalypso', idiomas: 'Atiende en español, francés e inglés' },
+  fr: { rol: 'Responsable des ventes', detalle: 'Achat et vente de biens, et programmes Kalypso', idiomas: 'Vous reçoit en français, en espagnol et en anglais' },
+  en: { rol: 'Head of sales', detalle: 'Buying and selling property, and the Kalypso developments', idiomas: 'Speaks Spanish, French and English' },
 }[lang as 'es' | 'fr' | 'en']!;
 const persona = {
   '@context': 'https://schema.org',
@@ -63,6 +63,7 @@ const persona = {
           <p class="nombre">Louis Thomassin-Montourcy</p>
           <p class="rol">{louis.rol}</p>
           <p class="det">{louis.detalle}</p>
+          <p class="idiomas">{louis.idiomas}</p>
         </div>
       </div>
 
