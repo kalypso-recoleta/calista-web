@@ -4,6 +4,7 @@ descripcion: «¿A qué precio lo publico?» Es la primera pregunta de casi todo
 categoria: guia
 tema: propietarios
 borrador: false
+fecha: 2026-10-08T07:47:00
 portada_foto: /uploads/La valeur immobilière à la loupe.png
 fr:
   titulo: Combien vaut vraiment mon bien ? Comment se fait une estimation
