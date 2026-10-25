@@ -5,6 +5,7 @@ categoria: guia
 tema: invertir
 borrador: false
 fecha: 2026-10-25T18:00:00
+portada_foto: /uploads/asuncion-crece-en-altura.jpg
 fr:
   titulo: 'Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?'
   descripcion: 'Nouveaux immeubles, loyers et charges comprises : pourquoi vendre un appartement ne garantit pas de le louer au prix attendu par l’investisseur.'
