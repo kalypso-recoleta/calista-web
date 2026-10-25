@@ -85,6 +85,8 @@ const H = {
     hel_t: 'Hélène Montourcy, fundadora',
     hel_d: 'Dirijo CALISTA en Asunción y CALISTA Immobilier en Martinica. Te atiendo personalmente, en español, francés o inglés.',
     hel_link: 'Nuestra historia',
+    louis_t: 'Louis Thomassin-Montourcy, ventas',
+    louis_d: 'Te acompaño en la compra o la venta de tu propiedad y en los desarrollos Kalypso.',
     suc_d: '¿Heredaste un inmueble en Paraguay y la sucesión se tramita en Francia? Preparamos la tasación en francés para tu notario, junto a CALISTA Immobilier en Martinica.',
     suc_btn: 'Consultar por una sucesión',
     faq_t: 'Lo que nos preguntan los propietarios',
@@ -131,6 +133,8 @@ const H = {
     hel_t: 'Hélène Montourcy, fondatrice',
     hel_d: 'Je dirige CALISTA à Asunción et CALISTA Immobilier en Martinique. Je vous réponds personnellement, en français, espagnol ou anglais.',
     hel_link: 'Notre histoire',
+    louis_t: 'Louis Thomassin-Montourcy, ventes',
+    louis_d: 'Je vous accompagne pour acheter ou vendre votre bien, et sur les programmes Kalypso.',
     suc_d: 'Vous héritez d’un bien au Paraguay et la succession est réglée en France ? Nous préparons l’estimation en français pour votre notaire, avec CALISTA Immobilier en Martinique.',
     suc_btn: 'Nous consulter pour une succession',
     faq_t: 'Les questions des propriétaires',
@@ -177,6 +181,8 @@ const H = {
     hel_t: 'Hélène Montourcy, founder',
     hel_d: 'I run CALISTA in Asunción and CALISTA Immobilier in Martinique. I answer you personally, in English, Spanish or French.',
     hel_link: 'Our story',
+    louis_t: 'Louis Thomassin-Montourcy, sales',
+    louis_d: 'I help you buy or sell your property and guide you through the Kalypso developments.',
     suc_d: 'Inherited a property in Paraguay with the estate handled in France? We prepare the valuation in French for your notary, with CALISTA Immobilier in Martinique.',
     suc_btn: 'Ask about an estate',
     faq_t: 'What owners ask us',
@@ -335,12 +341,21 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
 
   <!-- HÉLÈNE -->
   <section class="section hel-sec">
-    <div class="container hel">
-      <img src="/equipo/helene-montourcy.jpg" alt="Hélène Montourcy" width="160" height="160" loading="lazy" />
-      <div>
-        <h2>{x.hel_t}</h2>
-        <p>{x.hel_d}</p>
-        <a class="link" href={L('/historia')}>{x.hel_link} →</a>
+    <div class="container equipo">
+      <div class="hel">
+        <img src="/equipo/helene-montourcy.jpg" alt="Hélène Montourcy" width="160" height="160" loading="lazy" />
+        <div>
+          <h2>{x.hel_t}</h2>
+          <p>{x.hel_d}</p>
+          <a class="link" href={L('/historia')}>{x.hel_link} →</a>
+        </div>
+      </div>
+      <div class="hel">
+        <img src="/equipo/louis-thomassin-montourcy.jpg" alt="Louis Thomassin-Montourcy" width="160" height="160" loading="lazy" />
+        <div>
+          <h2>{x.louis_t}</h2>
+          <p>{x.louis_d}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -712,9 +727,10 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .oscuro .lead, .oscuro .pasos4 p { color: #c9ced6; }
   .oscuro .pasos4 li { border-top-color: #b98ad0; }
   .hel-sec { background: var(--violet-soft); }
-  .hel { display: flex; align-items: center; gap: 1.8rem; }
-  .hel img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow); }
-  .hel h2 { margin: 0 0 0.4rem; font-size: 1.5rem; }
+  .equipo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2.5rem; }
+  .hel { display: flex; align-items: center; gap: 1.5rem; }
+  .hel img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow); }
+  .hel h2 { margin: 0 0 0.4rem; font-size: 1.25rem; }
   .hel p { margin: 0 0 0.5rem; max-width: 60ch; }
   .suc { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
   .suc p { margin: 0; max-width: 70ch; }
@@ -730,6 +746,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .fin-btns { display: flex; gap: 0.7rem; flex-wrap: wrap; }
   .fin-est { background: #fff; color: var(--violet); font-weight: 700; }
   @media (max-width: 920px) {
+    .equipo { grid-template-columns: 1fr; }
     .prop-grid { grid-template-columns: 1fr; }
     .pasos4 { grid-template-columns: 1fr 1fr; }
   }
