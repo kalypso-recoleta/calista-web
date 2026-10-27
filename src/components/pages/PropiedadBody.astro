@@ -66,28 +66,60 @@ const atributos = [
   },
 ].filter(Boolean);
 
+// Données structurées : annonce immobilière (RealEstateListing) et non « Product ».
+// Le type Product déclenchait les contrôles « Fiches de marchand » de Google
+// (livraison, politique de retour, brand…), qui n'ont pas de sens pour un bien.
+const TIPO_SCHEMA: Record<string, string> = {
+  departamento: 'Apartment',
+  casa: 'House',
+  duplex: 'House',
+  quinta: 'House',
+};
+const tipoSchema = TIPO_SCHEMA[d.tipo] ?? 'Place';
+const esVivienda = tipoSchema !== 'Place';
+const superficieM2 = d.superficie_construida || d.superficie_terreno;
+const agencia = { '@type': 'RealEstateAgent', name: site.nombre, url: new URL('/', Astro.site).toString() };
+
 const listingSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
+  '@type': 'RealEstateListing',
   name: d.titulo,
   description: d.descripcion,
-  image: ogImage ? [new URL(ogImage, Astro.site).toString()] : undefined,
   url: canonical,
-  category: tipoLabel(d.tipo, 'es'),
-  brand: { '@type': 'Organization', name: site.nombre },
-  additionalProperty: atributos,
-  offers: {
-    '@type': 'Offer',
-    price: d.precio,
-    priceCurrency: d.moneda,
-    availability: DISPONIBILIDAD[d.estado] ?? 'https://schema.org/InStock',
-    businessFunction:
-      d.operacion === 'alquiler'
-        ? 'http://purl.org/goodrelations/v1#LeaseOut'
-        : 'http://purl.org/goodrelations/v1#Sell',
-    url: canonical,
-    seller: { '@type': 'Organization', name: site.nombre },
+  image: ogImage ? [new URL(ogImage, Astro.site).toString()] : undefined,
+  datePosted: d.fecha instanceof Date ? d.fecha.toISOString().slice(0, 10) : undefined,
+  provider: agencia,
+  about: {
+    '@type': tipoSchema,
+    name: d.titulo,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: d.barrio ? `${d.barrio}, ${d.ciudad}` : d.ciudad,
+      addressCountry: 'PY',
+    },
+    ...(esVivienda && d.dormitorios != null ? { numberOfBedrooms: d.dormitorios } : {}),
+    ...(esVivienda && d.banos != null ? { numberOfBathroomsTotal: d.banos } : {}),
+    ...(esVivienda && superficieM2
+      ? { floorSize: { '@type': 'QuantitativeValue', value: superficieM2, unitCode: 'MTK' } }
+      : {}),
+    additionalProperty: atributos,
   },
+  ...(d.precio > 0
+    ? {
+        offers: {
+          '@type': 'Offer',
+          price: d.precio,
+          priceCurrency: d.moneda,
+          availability: DISPONIBILIDAD[d.estado] ?? 'https://schema.org/InStock',
+          businessFunction:
+            d.operacion === 'venta'
+              ? 'http://purl.org/goodrelations/v1#Sell'
+              : 'http://purl.org/goodrelations/v1#LeaseOut',
+          url: canonical,
+          seller: agencia,
+        },
+      }
+    : {}),
 };
 
 const specs = [
