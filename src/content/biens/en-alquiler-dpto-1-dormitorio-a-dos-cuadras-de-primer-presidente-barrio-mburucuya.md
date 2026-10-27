@@ -1,9 +1,11 @@
 ---
 titulo: En Alquiler dpto 1 dormitorio a dos cuadras de Primer presidente Barrio Mburucuya
+en_linea: false
 operacion: alquiler
 tipo: departamento
 estado: disponible
 destacado: true
+lateral: false
 portada: false
 exclusivo: false
 desarrollo: false
@@ -31,7 +33,7 @@ descripcion: |-
   - Cocina amoblada y equipada, con anafe y extractor
   - Dormitorio con placard y aire acondicionado
   - Balcón
-fecha: 2026-07-27T11:58
+gama: otros
 fr:
   titulo: 'À louer : appartement 1 chambre à deux rues de Primer Presidente, quartier Mburucuyá'
   descripcion: |-
@@ -50,4 +52,5 @@ en:
     - Furnished, fitted kitchen with hob and extractor
     - Bedroom with built-in wardrobe and air conditioning
     - Balcony
+fecha: 2026-07-27T11:58
 ---
