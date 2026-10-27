@@ -21,6 +21,7 @@ interface Props {
   noindex?: boolean; // pages sans intérêt SEO (ex. page de remerciement)
   ogType?: 'website' | 'article'; // « article » pour les articles du blog
   publishedTime?: Date; // date de publication (articles)
+  zona?: boolean; // true = ajoute « en Asunción » au <title> (pages commerciales : comprar, alquilar, terrenos…)
   tituloCompleto?: boolean; // true = titre déjà complet (fiches de biens) : pas de « · Calista Inmobiliaria »
 }
 
@@ -35,9 +36,17 @@ const {
   ogType = 'website',
   publishedTime,
   tituloCompleto = false,
+  zona = false,
 } = Astro.props;
 
-const pageTitle = title ? (tituloCompleto ? title : `${title} · CALISTA`) /* suffixe court : Google coupe vers 60 caractères */ : site.nombre;
+// « en Asunción » si zona ; suffixe « · CALISTA » seulement si le titre reste ≤ 60 caractères (Google coupe au-delà)
+const EN_ZONA = { es: ' en Asunción', fr: ' à Asunción', en: ' in Asunción' }[lang] ?? ' en Asunción';
+const tituloSeo = title && zona && !title.includes('Asunción') ? `${title}${EN_ZONA}` : title;
+const pageTitle = tituloSeo
+  ? tituloCompleto || `${tituloSeo} · CALISTA`.length > 60
+    ? tituloSeo
+    : `${tituloSeo} · CALISTA`
+  : site.nombre;
 // Description coupée à ~155 caractères (au-delà, Google la tronque)
 const description = recortar(descriptionBruta);
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();

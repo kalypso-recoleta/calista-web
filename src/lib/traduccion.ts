@@ -22,5 +22,8 @@ export function localizar<T extends { titulo: string; descripcion: string }>(dat
 export function cuerpoTraducido(data: object, lang: string): string | null {
   if (lang !== 'fr' && lang !== 'en') return null;
   const c = (data as Record<string, Trad>)[lang]?.cuerpo?.trim();
-  return c ? (marked.parse(c, { async: false }) as string) : null;
+  if (!c) return null;
+  // La page a déjà son H1 (le titre) : un « # Titre » dans le texte devient un H2, pour ne jamais avoir deux H1.
+  const sinH1 = c.replace(/^# (?=\S)/gm, '## ');
+  return marked.parse(sinH1, { async: false }) as string;
 }

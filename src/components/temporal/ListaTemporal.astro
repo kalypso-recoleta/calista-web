@@ -31,7 +31,7 @@ const textos = {
 };
 ---
 
-<Layout title={tituloPagina ? `${tituloPagina} — ${t('temp.title')}` : t('temp.title')} description={esKalypso ? t('temp.kalypso_intro') : modo === 'otros' ? t('temp.otros_intro') : t('temp.intro')}>
+<Layout zona title={tituloPagina ? `${tituloPagina} — ${t('temp.title')}` : t('temp.title')} description={esKalypso ? t('temp.kalypso_intro') : modo === 'otros' ? t('temp.otros_intro') : t('temp.intro')}>
   <section class="section">
     <div class="container">
       {!esInicio && (
@@ -71,7 +71,7 @@ const textos = {
           <!-- Les deux expériences -->
           <div class="experiencias">
             <a class="exp exp--kalypso" href={L('/alquiler-temporal/residencias-kalypso')}>
-              {logoKalypso && <img class="exp-logo" src={logoKalypso} alt="" width="110" />}
+              {logoKalypso && <img class="exp-logo" src={logoKalypso} alt="Residencias Kalypso" width="110" />}
               <div>
                 <h2>{t('temp.kalypso_title')}</h2>
                 <p>{t('temp.kalypso_intro')}</p>

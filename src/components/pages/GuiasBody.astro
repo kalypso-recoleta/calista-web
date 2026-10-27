@@ -31,7 +31,8 @@ const POR_PAGINA = 12;
 // En-tête : celui du blog, ou celui du thème
 const h1 = tema ? TT[tema].n : x.h1;
 const lead = tema ? TT[tema].d : x.lead;
-const titulo = tema ? `${TT[tema].n} · Blog` : x.h1;
+const BLOG_SEO = { es: 'Blog inmobiliario Paraguay', fr: 'Blog immobilier Paraguay', en: 'Paraguay real estate blog' }[lang] ?? 'Blog inmobiliario Paraguay';
+const titulo = tema ? `${TT[tema].n} · ${BLOG_SEO}` : x.h1;
 // Filtres seulement s'il y a des articles des deux catégories
 const conFiltro = new Set(guias.map((g) => g.d.categoria)).size > 1;
 ---
@@ -63,7 +64,7 @@ const conFiltro = new Set(guias.map((g) => g.d.categoria)).size > 1;
           {guias.map((g) => (
             <li data-categoria={g.d.categoria}>
               <a href={L(`/blog/${g.slug}`)}>
-                {g.d.portada_foto && <img src={img(g.d.portada_foto, { w: 640, h: 360 })} alt="" width="640" height="360" loading="lazy" />}
+                {g.d.portada_foto && <img src={img(g.d.portada_foto, { w: 640, h: 360 })} alt={g.d.titulo} width="640" height="360" loading="lazy" />}
                 <span class="txt">
                   <span class="meta"><span class:list={['cat', g.d.categoria]}>{cat[g.d.categoria]}</span>{!tema && g.entry.data.tema && <span class="tema">{TT[g.entry.data.tema].n}</span>}<time datetime={g.d.fecha.toISOString()}>{g.d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></span>
                   <strong>{g.d.titulo}</strong>

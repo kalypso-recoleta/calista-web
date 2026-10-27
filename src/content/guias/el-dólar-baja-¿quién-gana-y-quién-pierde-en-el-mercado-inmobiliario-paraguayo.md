@@ -10,8 +10,6 @@ fr:
   titulo: 'Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?'
   descripcion: Ces dernières semaines, deux titres de presse ont résumé la situation. Selon 5Días, le dollar « profundiza su caída y llega hasta G. 5.725 en el mercado interbancario » (« accentue sa chute et descend jusqu’à 5 725 guaraníes sur le marché interbancaire »).
   cuerpo: |-
-    # Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?
-
     780 AM / Mega TV a publié : **« Baja del dólar desafía al sector inmobiliario »** (« La baisse du dollar met au défi le secteur immobilier »). Dans cet article, Raúl Constantino, président de la Chambre paraguayenne des promoteurs immobiliers (CAPADEI), explique que près de **90 % des coûts de construction sont libellés en guaraníes**. Selon lui, les coûts de chantier ont **augmenté d’environ 20 % en dollars** par rapport à l’an dernier.
 
     En tant qu’agence immobilière et promoteurs du programme Kalypso, nous le vivons au quotidien. Voici ce que nous observons.

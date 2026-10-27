@@ -37,11 +37,18 @@ export function tituloTemporal(d: { dormitorios?: number; barrio?: string; ciuda
   return titulo;
 }
 
-/** Coupe un texte à `max` caractères sur une fin de mot, avec « … ». Retire le markdown simple. */
+/**
+ * Raccourcit un texte pour la meta description (max ~155 caractères).
+ * Priorité : couper après une phrase complète (pas de « … » au milieu d'une phrase).
+ * Sinon seulement : coupe sur une fin de mot, avec « … ». Retire le markdown simple.
+ */
 export function recortar(texto: string, max = 155): string {
   const limpio = texto.replace(/[*_#>`]/g, '').replace(/\s+/g, ' ').trim();
   if (limpio.length <= max) return limpio;
-  const corte = limpio.slice(0, max - 1);
-  const espacio = corte.lastIndexOf(' ');
-  return (espacio > max * 0.6 ? corte.slice(0, espacio) : corte).replace(/[\s,;:.–-]+$/, '') + '…';
+  const corte = limpio.slice(0, max);
+  const finFrase = Math.max(corte.lastIndexOf('. '), corte.lastIndexOf('! '), corte.lastIndexOf('? '), /[.!?]$/.test(corte) ? corte.length - 1 : -1);
+  if (finFrase >= 70) return corte.slice(0, finFrase + 1);
+  const corteMot = limpio.slice(0, max - 1);
+  const espacio = corteMot.lastIndexOf(' ');
+  return (espacio > max * 0.6 ? corteMot.slice(0, espacio) : corteMot).replace(/[\s,;:.–-]+$/, '') + '…';
 }

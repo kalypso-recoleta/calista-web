@@ -116,7 +116,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.ver_propiedades': 'Ver propiedades',
     'seo.home_title': 'Inmobiliaria en Asunción — Compra, venta y alquiler',
     'seo.home_desc':
-      'Calista Inmobiliaria: 11 años de experiencia en el mercado inmobiliario paraguayo. Casas, departamentos, terrenos y desarrollos en Asunción y alrededores. Asesoramiento honesto y atención en español, francés e inglés.',
+      'Inmobiliaria en Asunción con 11 años de experiencia: compra, venta, alquiler y administración de propiedades. Atención en español, francés e inglés.',
     'home.hablar_wa': 'Hablar por WhatsApp',
     'home.cat_comprar': 'Comprar',
     'home.cat_comprar_d': 'Casas y departamentos en venta',
@@ -418,6 +418,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Contacto
     'cont.eyebrow': 'Contacto',
     'cont.title': 'Hablemos.',
+    'cont.seo_title': 'Contacto — Inmobiliaria en Asunción',
     'cont.lead':
       'La forma más rápida es WhatsApp. También podés escribirnos por email o dejar tus datos en el formulario y te contactamos a la brevedad.',
     'cont.email': 'Email',
@@ -583,7 +584,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.ver_propiedades': 'Voir les biens',
     'seo.home_title': 'Agence immobilière à Asunción — Achat, vente et location',
     'seo.home_desc':
-      "Calista Inmobiliaria : 11 ans d'expérience sur le marché immobilier paraguayen. Maisons, appartements, terrains et programmes neufs à Asunción et ses environs. Agence francophone : conseil honnête et suivi personnel en français.",
+      "Agence immobilière à Asunción, 11 ans d'expérience : achat, vente, location et gestion de biens. Agence francophone, suivi personnel en français.",
     'home.hablar_wa': 'Discuter sur WhatsApp',
     'home.cat_comprar': 'Acheter',
     'home.cat_comprar_d': 'Maisons et appartements à vendre',
@@ -886,6 +887,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Contacto
     'cont.eyebrow': 'Contact',
     'cont.title': 'Parlons-en.',
+    'cont.seo_title': 'Contact — Agence immobilière à Asunción',
     'cont.lead':
       "Le plus rapide, c'est WhatsApp. Vous pouvez aussi nous écrire par email ou laisser vos coordonnées dans le formulaire, nous vous recontactons rapidement.",
     'cont.email': 'Email',
@@ -1051,7 +1053,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.ver_propiedades': 'View properties',
     'seo.home_title': 'Real estate agency in Asunción — Buy, sell and rent',
     'seo.home_desc':
-      'Calista Inmobiliaria: 11 years of experience in the Paraguayan real estate market. Houses, apartments, land and new developments in Asunción and nearby. Honest advice and personal service in English, Spanish and French.',
+      'Real estate agency in Asunción with 11 years of experience: buying, selling, renting and property management. Service in English, Spanish and French.',
     'home.hablar_wa': 'Chat on WhatsApp',
     'home.cat_comprar': 'Buy',
     'home.cat_comprar_d': 'Houses and apartments for sale',
@@ -1353,6 +1355,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     // Contacto
     'cont.eyebrow': 'Contact',
     'cont.title': "Let's talk.",
+    'cont.seo_title': 'Contact — Real estate agency in Asunción',
     'cont.lead':
       'The fastest way is WhatsApp. You can also email us or leave your details in the form and we will get back to you shortly.',
     'cont.email': 'Email',

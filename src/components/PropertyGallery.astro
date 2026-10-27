@@ -51,7 +51,7 @@ const varias = fotos.length > 1;
             data-index={i}
             aria-label={`Imagen ${i + 1}`}
           >
-            <img src={img(f, { w: 180, h: 130 })} alt="" width="180" height="130" loading="lazy" />
+            <img src={img(f, { w: 180, h: 130 })} alt={`${titulo} – ${i + 1}`} width="180" height="130" loading="lazy" />
           </button>
         ))}
       </div>
