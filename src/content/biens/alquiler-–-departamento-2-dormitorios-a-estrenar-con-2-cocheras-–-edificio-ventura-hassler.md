@@ -14,6 +14,7 @@ moneda: PYG
 periodo: mes
 ciudad: Asunción
 barrio: Herrera
+ubicacion: '{"type":"Point","coordinates":[-57.5722295,-25.2999455]}'
 dormitorios: 2
 banos: 2
 cocheras: 2
