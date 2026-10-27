@@ -27,3 +27,19 @@
   to = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
   status = 301
 
+
+# Ficha Jara pasada de alquiler a venta: la antigua URL (compartida en WhatsApp) redirige a la nueva
+[[redirects]]
+from = "/propiedad/en-alquiler-1-dormitorio59-m2-en-barrio-jara"
+to = "/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
+status = 301
+
+[[redirects]]
+from = "/fr/propiedad/en-alquiler-1-dormitorio59-m2-en-barrio-jara"
+to = "/fr/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
+status = 301
+
+[[redirects]]
+from = "/en/propiedad/en-alquiler-1-dormitorio59-m2-en-barrio-jara"
+to = "/en/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
+status = 301
