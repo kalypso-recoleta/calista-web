@@ -13,6 +13,8 @@ precio: 850
 moneda: USD
 periodo: mes
 ciudad: Asunción
+barrio: Las Lomas - Carmelitas
+ubicacion: '{"type":"Point","coordinates":[-57.5714252,-25.2824664]}'
 dormitorios: 1
 banos: 1
 cocheras: 1
