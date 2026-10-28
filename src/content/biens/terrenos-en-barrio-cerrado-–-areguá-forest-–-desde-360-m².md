@@ -44,4 +44,9 @@ en:
   descripcion: |-
     Plots at Areguá Forest – Country Residences
     Plots from 360 m² in a 39-hectare, fully wooded gated community in Areguá. A natural, safe and planned setting, with 24/7 security, club house, beach-style pool, restaurant, sports facilities (football, tennis, padel, gym), playgrounds and an on-site shopping centre. Plots delivered fenced, with water and electricity connection. Ideal for building a home or as an investment.
+pt:
+  titulo: 'Terrenos em condomínio fechado – Areguá Forest – a partir de 360 m²'
+  descripcion: |-
+    Terrenos no Areguá Forest – Country Residences
+    Lotes a partir de 360 m² em um condomínio fechado de 39 hectares totalmente arborizados em Areguá. Um ambiente natural, seguro e planejado, com segurança 24 h, club house, piscina estilo praia, restaurante, áreas esportivas (futebol, tênis, padel, academia), playground e centro comercial interno. Lotes entregues com cerca perimetral, água e ligação de energia elétrica. Ideal para construir a sua casa ou como investimento.
 ---

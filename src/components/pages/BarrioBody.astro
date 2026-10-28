@@ -19,11 +19,12 @@ const TXT = {
   es: { eyebrow: 'Barrios', h1: `Propiedades en ${zona.nombre}`, meta: `Propiedades en venta y alquiler en ${lugar}`, otros: 'Otros barrios', todos: 'Ver todos los barrios' },
   fr: { eyebrow: 'Quartiers', h1: `Biens à ${zona.nombre}`, meta: `Biens à vendre et à louer à ${lugar}`, otros: 'Autres quartiers', todos: 'Voir tous les quartiers' },
   en: { eyebrow: 'Neighbourhoods', h1: `Properties in ${zona.nombre}`, meta: `Properties for sale and rent in ${lugar}`, otros: 'Other neighbourhoods', todos: 'See all neighbourhoods' },
-}[lang as 'es' | 'fr' | 'en'] ?? null;
+  pt: { eyebrow: 'Bairros', h1: `Imóveis em ${zona.nombre}`, meta: `Imóveis à venda e para alugar em ${lugar}`, otros: 'Outros bairros', todos: 'Ver todos os bairros' },
+}[lang as 'es' | 'fr' | 'en' | 'pt'] ?? null;
 const x = TXT!;
 
 const d = zona.entry.data;
-const intro = ((lang === 'fr' || lang === 'en') ? d[lang]?.intro : undefined)?.trim() || d.intro || '';
+const intro = (lang !== 'es' ? d[lang]?.intro : undefined)?.trim() || d.intro || '';
 
 // Disponibles d'abord, puis les plus récents
 const biens = [...zona.bienes].sort(

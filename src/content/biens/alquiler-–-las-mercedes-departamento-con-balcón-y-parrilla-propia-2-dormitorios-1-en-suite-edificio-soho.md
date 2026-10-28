@@ -93,6 +93,34 @@ en:
     - Swimming pool with panoramic views
     - Covered barbecue area (quincho) with countertop, sink and large dining table
     - Sun deck with loungers and views over the city and the bay
+pt:
+  titulo: 'PARA ALUGAR – Las Mercedes: apartamento com sacada e churrasqueira própria, 2 quartos (1 suíte), Edificio SOHO'
+  descripcion: 'Apartamento de 72 m² privativos (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui vaga de garagem e depósito.'
+  cuerpo: |-
+    **72 m² privativos** (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui **vaga de garagem** e **depósito**.
+
+    **Distribuição**
+
+    - Sala de estar e jantar iluminada, com janelas do piso ao teto e persianas de rolo
+    - Cozinha aberta com balcão de refeições, bancadas de granito preto, cooktop vitrocerâmico, coifa de aço inox e cuba dupla
+    - Sacada com churrasqueira própria revestida de pedra e guarda-corpo de vidro
+    - 2 quartos com armários embutidos:
+        - quarto principal com suíte
+        - segundo quarto com janela do piso ao teto
+    - 2 banheiros com box de vidro (um na suíte, o outro para o segundo quarto e visitas)
+    - Armário extra no corredor
+
+    **Acabamentos**
+
+    - Porcelanato de grande formato em todo o apartamento
+    - Ar-condicionado split na sala e em todos os quartos
+    - Luminárias pendentes na sala e iluminação de LED
+
+    **Áreas comuns na cobertura**
+
+    - Piscina com vista panorâmica
+    - Área coberta com churrasqueira (quincho), bancada, pia e mesa grande
+    - Solário com espreguiçadeiras e vista para a cidade e a baía
 fecha: 2026-10-13T22:20:00
 ---
 

@@ -8,4 +8,6 @@ fr:
   intro: "Herrera est un quartier résidentiel d'Asunción."
 en:
   intro: "Herrera is a residential neighbourhood of Asunción."
+pt:
+  intro: "Herrera é um bairro residencial de Assunção."
 ---

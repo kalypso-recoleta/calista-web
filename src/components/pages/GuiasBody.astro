@@ -19,8 +19,9 @@ const x = {
   es: { eyebrow: 'Blog', h1: 'Guías y actualidad inmobiliaria en Paraguay', lead: 'Consejos prácticos, leyes y trámites explicados con claridad, y las novedades del mercado en Asunción.', leer: 'Leer', vacia: 'Pronto vas a encontrar acá nuestros artículos.', todos: 'Todos', temas: 'Temas', todos_temas: 'Todos los temas', mas: 'Ver más artículos' },
   fr: { eyebrow: 'Blog', h1: 'Guides et actualité immobilière au Paraguay', lead: 'Conseils pratiques, lois et démarches expliqués clairement, et les nouvelles du marché à Asunción.', leer: 'Lire', vacia: 'Nos articles arrivent bientôt.', todos: 'Tous', temas: 'Thèmes', todos_temas: 'Tous les thèmes', mas: 'Voir plus d’articles' },
   en: { eyebrow: 'Blog', h1: 'Real estate guides and news in Paraguay', lead: 'Practical advice, laws and procedures explained clearly, plus market news from Asunción.', leer: 'Read', vacia: 'Our articles are coming soon.', todos: 'All', temas: 'Topics', todos_temas: 'All topics', mas: 'See more articles' },
-}[lang as 'es' | 'fr' | 'en']!;
-const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
+  pt: { eyebrow: 'Blog', h1: 'Guias e notícias do mercado imobiliário no Paraguai', lead: 'Dicas práticas, leis e trâmites explicados com clareza, e as novidades do mercado em Assunção.', leer: 'Ler', vacia: 'Em breve você vai encontrar aqui os nossos artigos.', todos: 'Todos', temas: 'Temas', todos_temas: 'Todos os temas', mas: 'Ver mais artigos' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
+const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const guias = (await guiasPublicadas())
   .filter((g) => !tema || g.entry.data.tema === tema)
   .map((g) => ({ ...g, d: localizar(g.entry.data, lang) }));
@@ -31,7 +32,7 @@ const POR_PAGINA = 12;
 // En-tête : celui du blog, ou celui du thème
 const h1 = tema ? TT[tema].n : x.h1;
 const lead = tema ? TT[tema].d : x.lead;
-const BLOG_SEO = { es: 'Blog inmobiliario Paraguay', fr: 'Blog immobilier Paraguay', en: 'Paraguay real estate blog' }[lang] ?? 'Blog inmobiliario Paraguay';
+const BLOG_SEO = { es: 'Blog inmobiliario Paraguay', fr: 'Blog immobilier Paraguay', en: 'Paraguay real estate blog', pt: 'Blog imobiliário Paraguai' }[lang] ?? 'Blog inmobiliario Paraguay';
 const titulo = tema ? `${TT[tema].n} · ${BLOG_SEO}` : x.h1;
 // Filtres seulement s'il y a des articles des deux catégories
 const conFiltro = new Set(guias.map((g) => g.d.categoria)).size > 1;

@@ -3,7 +3,7 @@ import GuiasBody from '../../../../components/pages/GuiasBody.astro';
 import { temasConArticulos } from '../../../../lib/guias';
 export async function getStaticPaths() {
   const t = await temasConArticulos();
-  return ['fr', 'en'].flatMap((lang) => t.map((tema) => ({ params: { lang, tema }, props: { tema } })));
+  return ['fr', 'en', 'pt'].flatMap((lang) => t.map((tema) => ({ params: { lang, tema }, props: { tema } })));
 }
 const { tema } = Astro.props;
 ---

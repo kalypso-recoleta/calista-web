@@ -73,7 +73,26 @@ const y = {
     est_t: 'How much rent could you get?',
     est_d: 'Tell us about your property: we send you a rent range and what you would keep after management.',
   },
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: {
+    stats: [['< 15 dias', 'para alugar o seu imóvel, em geral'], ['Dia 10', 'transferência do seu aluguel, todo mês (segunda-feira, dia 11, se o dia 10 cair num domingo)'], ['5 %', 'dos aluguéis recebidos, mais IVA. Se você não recebe, nós não cobramos.']],
+    estimar: 'Estimar o meu aluguel grátis',
+    pre_eyebrow: 'Proprietários à distância',
+    pre_t: 'Mora longe? Veja o que preocupa você e como resolvemos.',
+    pre: [
+      ['O meu imóvel vai ficar vazio?', 'Em geral, alugamos em menos de 15 dias: anunciamos em todos os nossos canais e nos portais.'],
+      ['E se o inquilino não pagar?', 'Verificamos as garantias antes da assinatura e acompanhamos qualquer atraso com o inquilino. Você também pode segurar os seus aluguéis contra inadimplência (veja abaixo).'],
+      ['Quando e como eu recebo?', 'Transferimos o aluguel no dia 10 de cada mês, com a prestação de contas: o que foi recebido, o que foi pago e a nossa comissão, em guaranis e em dólares separadamente.'],
+      ['Quem cuida dos reparos?', 'Nós: coordenamos a manutenção e os reparos. O seu inquilino tem um único interlocutor, e você também.'],
+      ['Como sei o que acontece no meu imóvel?', 'Todo mês você recebe o detalhe de tudo, sem precisar pedir, e pode nos escrever em espanhol, francês ou inglês.'],
+    ],
+    liq_alt: "Exemplo de prestação de contas mensal ao proprietário gerada pelo software da CALISTA, com os nomes ocultos",
+    liq_cap: 'Uma prestação de contas real de outubro de 2026 (nomes ocultos): o que foi recebido, a nossa comissão e o que transferimos para você.',
+    seg: {"eyebrow": "Opcional · Seguro contra inadimplência", "t": "Segure os seus aluguéis contra inadimplência", "d": "Para mais tranquilidade, contratamos para você um seguro-fiança de aluguel com uma seguradora do Paraguai, com você como segurado.", "items": ["Cobre os aluguéis que o inquilino não pagar, até o limite fixado na apólice (ampliável até 12 meses, com aprovação da seguradora).", "Coberturas opcionais, se contratadas: danos ao imóvel, despesas ordinárias de condomínio, água e luz.", "O custo do seguro fica por sua conta: 3 % do aluguel mensal, descontado todo mês dos seus aluguéis.", "Se houver atraso, nós comunicamos o sinistro à seguradora e acompanhamos o processo."], "nota": "Sujeito à aprovação do inquilino pela seguradora e às condições, limites e exclusões da apólice emitida. Não cobre honorários de advogados nem custas da ação de despejo, despesas extraordinárias de condomínio, multas nem juros. Não se aplica ao aluguel temporário.", "btn": "Consultar sobre o seguro de aluguel", "wa": "Olá Calista, gostaria de informações sobre o seguro contra inadimplência para o meu imóvel."},
+    est_eyebrow: 'Estimativa grátis',
+    est_t: 'Quanto você poderia receber de aluguel?',
+    est_d: 'Conte como é o seu imóvel: enviamos uma faixa de aluguel e quanto sobraria para você depois da administração.',
+  },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm.t${n}_val`), d: t(`adm.t${n}_d`) }));
 ---
 

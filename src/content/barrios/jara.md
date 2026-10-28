@@ -8,4 +8,6 @@ fr:
   intro: "Jara est un quartier d'Asunción."
 en:
   intro: "Jara is a neighbourhood of Asunción."
+pt:
+  intro: "Jara é um bairro de Assunção."
 ---

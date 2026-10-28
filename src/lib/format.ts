@@ -7,6 +7,7 @@ const LOCALE_NUM: Record<Lang, string> = {
   es: 'es-PY',
   fr: 'fr-FR',
   en: 'en-US',
+  pt: 'pt-BR',
 };
 
 /** Prix formaté avec devise. */

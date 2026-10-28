@@ -11,7 +11,8 @@ const x = {
   es: { t: 'Compartir', copiar: 'Copiar enlace', ok: '¡Enlace copiado!', mas: 'Más opciones' },
   fr: { t: 'Partager', copiar: 'Copier le lien', ok: 'Lien copié !', mas: 'Plus d’options' },
   en: { t: 'Share', copiar: 'Copy link', ok: 'Link copied!', mas: 'More options' },
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: { t: 'Compartilhar', copiar: 'Copiar link', ok: 'Link copiado!', mas: 'Mais opções' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const u = encodeURIComponent(url);
 const tt = encodeURIComponent(titulo);
 const redes = [

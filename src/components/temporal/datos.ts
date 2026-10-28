@@ -75,7 +75,7 @@ export function precioTxt(n: number | undefined, moneda: 'USD' | 'PYG', locale: 
   return `${moneda === 'USD' ? 'USD' : 'Gs.'} ${num}`;
 }
 
-export const LOCALE: Record<string, string> = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' };
+export const LOCALE: Record<string, string> = { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' };
 
 export type Rubrica = 'comprar' | 'alquilar' | 'desarrollos' | 'terrenos' | 'temporal';
 

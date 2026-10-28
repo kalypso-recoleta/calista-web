@@ -12,7 +12,8 @@ const x = {
   es: { eyebrow: 'Barrios', h1: 'Propiedades por barrio', lead: 'Elegí un barrio de Asunción o una ciudad de Gran Asunción y mirá todas nuestras propiedades en esa zona.', n: (k: number) => `${k} ${k === 1 ? 'propiedad' : 'propiedades'}` },
   fr: { eyebrow: 'Quartiers', h1: 'Nos biens par quartier', lead: 'Choisissez un quartier d’Asunción ou une ville du Grand Asunción pour voir tous nos biens dans ce secteur.', n: (k: number) => `${k} ${k === 1 ? 'bien' : 'biens'}` },
   en: { eyebrow: 'Neighbourhoods', h1: 'Properties by neighbourhood', lead: 'Choose a neighbourhood of Asunción or a city of Greater Asunción to see all our properties there.', n: (k: number) => `${k} ${k === 1 ? 'property' : 'properties'}` },
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: { eyebrow: 'Bairros', h1: 'Imóveis por bairro', lead: 'Escolha um bairro de Assunção ou uma cidade da Grande Assunção e veja todos os nossos imóveis nessa região.', n: (k: number) => `${k} ${k === 1 ? 'imóvel' : 'imóveis'}` },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 
 const zonas = (await zonasConBienes()).map((z) => {
   const conFoto = [...z.bienes].sort((a, b) => Number(estaActivo(b.data)) - Number(estaActivo(a.data)))

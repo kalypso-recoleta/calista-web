@@ -12,6 +12,7 @@ export const CATEGORIAS: Record<string, Record<'guia' | 'actualidad', string>> =
   es: { guia: 'Guías', actualidad: 'Actualidad' },
   fr: { guia: 'Guides', actualidad: 'Actualité' },
   en: { guia: 'Guides', actualidad: 'News' },
+  pt: { guia: 'Guias', actualidad: 'Notícias' },
 };
 
 /** Thèmes du blog (une page par thème : /blog/tema/<clé>). L'ordre = ordre d'affichage. */
@@ -43,6 +44,14 @@ export const TEMA_TXT: Record<string, Record<Tema, { n: string; d: string }>> = 
     propietarios: { n: 'Owners', d: 'Selling, valuing and managing your property: what you should know.' },
     vivir: { n: 'Living in Paraguay', d: 'For foreigners settling or investing in Paraguay.' },
     mercado: { n: 'Market', d: 'Prices, trends, the dollar and credit: our reading of the real estate market.' },
+  },
+  pt: {
+    comprar: { n: 'Comprar', d: 'Etapas, contratos, financiamento e pontos a verificar para comprar um imóvel no Paraguai.' },
+    alquilar: { n: 'Alugar', d: 'Aluguel tradicional ou temporário: contratos, garantias e gestão, do lado do inquilino e do proprietário.' },
+    invertir: { n: 'Investir', d: 'Rentabilidade real, comprar para alugar e como avaliar um investimento imobiliário.' },
+    propietarios: { n: 'Proprietários', d: 'Vender, avaliar e administrar o seu imóvel: o que é bom saber.' },
+    vivir: { n: 'Morar no Paraguai', d: 'Para estrangeiros que se mudam ou investem no Paraguai.' },
+    mercado: { n: 'Mercado', d: 'Preços, tendências, dólar e crédito: a nossa leitura do mercado imobiliário.' },
   },
 };
 

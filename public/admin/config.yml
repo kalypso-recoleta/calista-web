@@ -290,7 +290,7 @@ collections:
           - { label: 'Desde (llegada)', name: desde, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
           - { label: 'Hasta (salida)', name: hasta, widget: datetime, time_format: false, date_format: 'DD/MM/YYYY', format: 'YYYY-MM-DD' }
 
-      # --- Traducciones (versiones francesa e inglesa del sitio) ---
+      # --- Traducciones (versiones francesa, inglesa y portuguesa del sitio) ---
       - label: '🇫🇷 Traducción al francés'
         name: fr
         widget: object
@@ -307,6 +307,16 @@ collections:
         collapsed: true
         required: false
         hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción completa', name: cuerpo, widget: markdown, required: false }
+      - label: '🇧🇷 Traducción al portugués (Brasil)'
+        name: pt
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión portuguesa del sitio. Si un campo queda vacío, se muestra el español.'
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
           - { label: 'Descripción corta', name: descripcion, widget: text, required: false }
@@ -340,6 +350,7 @@ collections:
               - { label: 'Leyenda (opcional)', name: leyenda, widget: string, required: false }
               - { label: 'Leyenda en francés', name: leyenda_fr, widget: string, required: false }
               - { label: 'Leyenda en inglés', name: leyenda_en, widget: string, required: false }
+              - { label: 'Leyenda en portugués', name: leyenda_pt, widget: string, required: false }
           - label: '🇫🇷 Traducción al francés'
             name: fr
             widget: object
@@ -356,6 +367,16 @@ collections:
             collapsed: true
             required: false
             hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
+            fields:
+              - { label: 'Frase corta', name: lema, widget: string, required: false }
+              - { label: 'Presentación', name: descripcion, widget: text, required: false }
+              - { label: 'Datos clave', name: datos, widget: list, required: false }
+          - label: '🇧🇷 Traducción al portugués (Brasil)'
+            name: pt
+            widget: object
+            collapsed: true
+            required: false
+            hint: 'Lo que se ve en la versión portuguesa del sitio. Si un campo queda vacío, se muestra el español.'
             fields:
               - { label: 'Frase corta', name: lema, widget: string, required: false }
               - { label: 'Presentación', name: descripcion, widget: text, required: false }
@@ -426,6 +447,16 @@ collections:
           - { label: 'Título', name: titulo, widget: string, required: false }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
+      - label: '🇧🇷 Traducción al portugués (Brasil)'
+        name: pt
+        widget: object
+        collapsed: true
+        required: false
+        hint: 'Lo que se ve en la versión portuguesa del sitio. Si un campo queda vacío, se muestra el español.'
+        fields:
+          - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
 
   # ─── Barrios (pages par quartier) ───
   - name: barrios
@@ -455,6 +486,13 @@ collections:
           - { label: 'Texto de presentación', name: intro, widget: text, required: false }
       - label: '🇬🇧 Traducción al inglés'
         name: en
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - label: '🇧🇷 Traducción al portugués (Brasil)'
+        name: pt
         widget: object
         collapsed: true
         required: false

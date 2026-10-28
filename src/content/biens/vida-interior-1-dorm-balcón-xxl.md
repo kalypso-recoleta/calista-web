@@ -40,5 +40,10 @@ en:
   descripcion: |-
     The one with the big balcony: 37.19 m² of living space + 11.22 m² of balcony, the largest of all types. Separate bedroom, large living-dining room, integrated kitchen and full bathroom. Perfect for those who value outdoor space.
     From Gs. 419,250,000 (USD 69,081) · 10 % deposit + 32 interest-free instalments.
+pt:
+  titulo: 'Viver dentro e fora: 1 quarto, sacada XXL'
+  descripcion: |-
+    O da sacada grande: 37,19 m² internos + 11,22 m² de sacada, a maior de todas as tipologias. Quarto independente, sala de estar e jantar ampla, cozinha integrada e banheiro completo. Perfeito para quem valoriza o espaço ao ar livre.
+    A partir de Gs. 419.250.000 (USD 69.081) · 10 % de entrada + 32 parcelas sem juros.
 fecha: 2026-07-15T12:04
 ---

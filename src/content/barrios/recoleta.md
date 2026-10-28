@@ -8,4 +8,6 @@ fr:
   intro: "Recoleta est un quartier résidentiel d'Asunción, voisin de Villa Morra. C'est là que nous construisons Kalypso Recoleta."
 en:
   intro: "Recoleta is a residential neighbourhood of Asunción, next to Villa Morra. It is where we are building Kalypso Recoleta."
+pt:
+  intro: "Recoleta é um bairro residencial de Assunção, vizinho de Villa Morra. É lá que estamos construindo o Kalypso Recoleta."
 ---

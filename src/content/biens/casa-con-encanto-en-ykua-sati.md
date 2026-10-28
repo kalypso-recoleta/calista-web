@@ -91,6 +91,25 @@ en:
     💵 USD 550,000
 
     📩 Book your visit.
+pt:
+  titulo: 'Casa charmosa em Ykua Satí'
+  descripcion: 'Um imóvel excepcional que une o aconchego da arquitetura tradicional a uma vida voltada para o jardim. Construída em 1998 e em perfeito estado: 270 m² construídos em um terreno de 531 m².'
+  cuerpo: |-
+    Casa charmosa em Ycua Satí
+
+    Um imóvel excepcional que une o aconchego da arquitetura tradicional a uma vida voltada para o jardim. Construída em 1998 e mantida em perfeito estado, oferece 270 m² construídos em um terreno de 531 m².
+
+    Salas amplas e iluminadas com lareira, cozinha equipada em madeira maciça e uma área externa dos sonhos: jardim paisagístico, piscina privativa e quincho coberto com churrasqueira — pensado para receber o ano todo.
+
+    No andar de cima, 3 quartos (1 suíte), sala íntima e um amplo terraço com vista para o verde do bairro. A poucos minutos a pé do Paseo La Galería, em uma região tranquila, pronta para morar.
+
+    🏡 270 m² · Terreno 531 m² · 3 quartos · 3 banheiros · Piscina
+
+    📍 Bairro Ykua Satí, Assunção
+
+    💵 USD 550.000
+
+    📩 Agende a sua visita.
 ---
 
 Casa con encanto en Ycua Satí 

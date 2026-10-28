@@ -15,7 +15,7 @@ const t = useTranslations(lang);
 
 // Menu principal (ordinateur) : 6 rubriques. Terrenos, Reseñas, Historia et FAQ sont
 // dans le menu mobile et le pied de page.
-const PROPIETARIOS = { es: 'Propietarios', fr: 'Propriétaires', en: 'Owners' }[lang as 'es' | 'fr' | 'en'];
+const PROPIETARIOS = { es: 'Propietarios', fr: 'Propriétaires', en: 'Owners', pt: 'Proprietários' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const nav = [
   { href: '/comprar', label: t('nav.comprar') },
   { href: '/alquilar', label: t('nav.alquilar') },
@@ -316,6 +316,17 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
     .mobile-nav:not([hidden]) {
       display: flex;
     }
+  }
+  /* Téléphones : 4 langues + bouton Menu doivent tenir sans défilement horizontal */
+  @media (max-width: 420px) {
+    .logo { height: 36px; }
+    .bar { gap: 0.5rem; }
+    .actions { gap: 0.35rem; }
+    .lang-switch .lang { padding: 0.28rem 0.36rem; }
+    .menu-toggle { padding: 0.5rem 0.5rem; gap: 0.4rem; }
+  }
+  @media (max-width: 345px) {
+    .menu-label { display: none; }
   }
   /* Sous-menu « Propietarios » */
   .nav-grupo { position: relative; display: flex; }

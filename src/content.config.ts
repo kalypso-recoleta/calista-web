@@ -118,6 +118,7 @@ const biens = defineCollection({
     // --- Traductions (pages FR / EN) : vide = texte espagnol ---
     fr: tradSchema,
     en: tradSchema,
+    pt: tradSchema,
 
     // --- Médias (URLs Cloudinary — JAMAIS dans Git) ---
     // Photo de couverture explicite ; sinon la 1ère de la liste
@@ -236,6 +237,7 @@ const barrios = defineCollection({
     intro: strOpc(),
     fr: textoTrad,
     en: textoTrad,
+    pt: textoTrad,
   }),
 });
 
@@ -257,6 +259,7 @@ const guias = defineCollection({
     fecha: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date()).default(() => new Date()),
     fr: tradSchema,
     en: tradSchema,
+    pt: tradSchema,
   }),
 });
 

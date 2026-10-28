@@ -77,6 +77,27 @@ en:
     LOCATION
 
     Luque, one of the fastest-growing areas of the metropolitan region, with quick access to Silvio Pettirossi airport and the main roads into Asunción.
+pt:
+  titulo: 'Apartamento de 2 quartos Insignia 2, Luque'
+  descripcion: |-
+    Dois quartos, o principal com suíte, mais um banheiro social: dois banheiros completos em 53 m², algo pouco comum nesta tipologia. Sala de estar e jantar com cozinha integrada.
+
+    DISTRIBUIÇÃO
+    2 quartos (1 suíte) · 2 banheiros (suíte + social) · sala de estar e jantar com cozinha integrada · 53 m² no total
+  cuerpo: |-
+    Dois quartos, o principal com suíte, mais um banheiro social: dois banheiros completos em 53 m², algo pouco comum nesta tipologia. Sala de estar e jantar com cozinha integrada.
+
+    DISTRIBUIÇÃO
+
+    2 quartos (1 suíte) · 2 banheiros (suíte + social) · sala de estar e jantar com cozinha integrada · 53 m² no total
+
+    O CONDOMÍNIO
+
+    Condomínio fechado com quincho.
+
+    LOCALIZAÇÃO
+
+    Luque, uma das regiões que mais crescem na área metropolitana, com acesso rápido ao aeroporto Silvio Pettirossi e às principais vias de acesso a Assunção.
 ---
 
 Dos dormitorios, el principal en suite, más un baño social: dos baños completos en 53 m², algo poco frecuente en esta tipología. Sala-comedor con cocina integrada.

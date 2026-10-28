@@ -41,5 +41,10 @@ en:
   descripcion: |-
     The largest in the building. 55.02 m² of living space + 10.48 m² balcony, with 2 separate bedrooms, 2 full bathrooms, a large living-dining room, kitchen with laundry and private balcony. Ideal for families or couples looking for space in the heart of Recoleta.
     From Gs. 565,500,000 (USD 93,178) · 10 % deposit + 32 interest-free instalments.
+pt:
+  titulo: 'Espaço para toda a família: apartamento de 2 quartos no coração de Recoleta'
+  descripcion: |-
+    O maior do edifício. 55,02 m² internos + sacada de 10,48 m², com 2 quartos independentes, 2 banheiros completos, sala de estar e jantar ampla, cozinha com área de serviço e sacada privativa. Ideal para famílias ou casais que procuram espaço em plena Recoleta.
+    A partir de Gs. 565.500.000 (USD 93.178) · 10 % de entrada + 32 parcelas sem juros.
 fecha: 2026-07-15T11:51
 ---

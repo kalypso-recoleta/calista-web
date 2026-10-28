@@ -15,37 +15,43 @@
       "imagen": "/uploads/kalypso-07.jpg",
       "leyenda": "Fachada",
       "leyenda_fr": "Façade",
-      "leyenda_en": "Façade"
+      "leyenda_en": "Façade",
+      "leyenda_pt": "Fachada"
     },
     {
       "imagen": "/uploads/kalypso-08.jpg",
       "leyenda": "Fachada de noche",
       "leyenda_fr": "Façade de nuit",
-      "leyenda_en": "Façade at night"
+      "leyenda_en": "Façade at night",
+      "leyenda_pt": "Fachada à noite"
     },
     {
       "imagen": "/uploads/kalypso-02.jpg",
       "leyenda": "Piscina en la azotea",
       "leyenda_fr": "Piscine sur le toit",
-      "leyenda_en": "Rooftop pool"
+      "leyenda_en": "Rooftop pool",
+      "leyenda_pt": "Piscina na cobertura"
     },
     {
       "imagen": "/uploads/kalypso-01.jpg",
       "leyenda": "Terraza panorámica",
       "leyenda_fr": "Terrasse panoramique",
-      "leyenda_en": "Panoramic terrace"
+      "leyenda_en": "Panoramic terrace",
+      "leyenda_pt": "Terraço panorâmico"
     },
     {
       "imagen": "/uploads/kalypso-04.jpg",
       "leyenda": "Azotea",
       "leyenda_fr": "Toit-terrasse",
-      "leyenda_en": "Rooftop"
+      "leyenda_en": "Rooftop",
+      "leyenda_pt": "Cobertura"
     },
     {
       "imagen": "/uploads/kalypso-05.jpg",
       "leyenda": "Azotea",
       "leyenda_fr": "Toit-terrasse",
-      "leyenda_en": "Rooftop"
+      "leyenda_en": "Rooftop",
+      "leyenda_pt": "Cobertura"
     }
   ],
   "fr": {
@@ -66,6 +72,16 @@
       "Delivery: May 2029",
       "10 % deposit + 32 interest-free instalments",
       "Pool, air-conditioned quincho, coworking and rooftop terrace"
+    ]
+  },
+  "pt": {
+    "lema": "Apartamentos na planta no coração de Recoleta",
+    "descripcion": "Um edifício de 40 apartamentos em 8 andares, na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal. Na cobertura: piscina, quincho climatizado, coworking e terraço panorâmico.\n\nCinco modelos, do studio ao apartamento de 2 quartos, com sacada, cozinha equipada e banheiro completo. Reserve com 10 % e pague o saldo em 32 parcelas sem juros durante a obra.",
+    "datos": [
+      "40 apartamentos · 8 andares",
+      "Entrega: maio de 2029",
+      "10 % de entrada + 32 parcelas sem juros",
+      "Piscina, quincho climatizado, coworking e terraço na cobertura"
     ]
   }
 }

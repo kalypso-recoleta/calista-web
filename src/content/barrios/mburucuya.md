@@ -9,4 +9,6 @@ fr:
   intro: "Mburucuyá est un quartier résidentiel d'Asunción, près de l'avenue Primer Presidente."
 en:
   intro: "Mburucuyá is a residential neighbourhood of Asunción, close to Primer Presidente Avenue."
+pt:
+  intro: "Mburucuyá é um bairro residencial de Assunção, perto da avenida Primer Presidente."
 ---

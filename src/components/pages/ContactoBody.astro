@@ -136,7 +136,7 @@ const t = useTranslations(lang);
       if (campo) campo.value = titulo ? `${titulo} (ref. ${ref})` : ref;
       const msg = document.querySelector<HTMLTextAreaElement>('form[name="contacto"] textarea[name="mensaje"]');
       const lang = document.documentElement.lang;
-      const intro = { fr: 'Bonjour, ce bien m’intéresse : ', en: 'Hello, I am interested in this property: ' }[lang] ?? 'Hola, me interesa esta propiedad: ';
+      const intro = { fr: 'Bonjour, ce bien m’intéresse : ', en: 'Hello, I am interested in this property: ', pt: 'Olá, tenho interesse neste imóvel: ' }[lang] ?? 'Hola, me interesa esta propiedad: ';
       if (msg && !msg.value) msg.value = `${intro}${titulo ?? ref}.\n`;
     }
   } catch {}

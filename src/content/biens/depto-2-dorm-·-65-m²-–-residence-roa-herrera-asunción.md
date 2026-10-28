@@ -106,6 +106,39 @@ en:
     - 🛡️ 24-hour security
 
     An excellent opportunity to invest or to live in, in a fast-growing area with easy access, steps from shops, services and main avenues.
+pt:
+  titulo: 'Apartamento de 2 quartos · 65 m² – Residence ROA, Herrera (Assunção)'
+  descripcion: |-
+    🏢 À VENDA – Apartamento de 2 quartos · 65 m² – Residence ROA, Herrera (Assunção)
+    💵 USD 129.000
+
+    Apartamento novo em edifício novo (2025) na Denis Roa. 3º andar com elevador. 2 quartos, 2 banheiros, sala com cozinha integrada, sacada e vaga de garagem.
+
+    Áreas comuns: 🏊 piscina · 🌇 terraço com quincho · 🧺 lavanderia · 🛡️ segurança 24 h
+  cuerpo: |-
+    Apartamento de 2 quartos · 65 m² – Residence ROA, Herrera (Assunção)
+
+    💵 USD 129.000
+
+    Apartamento moderno e novo no exclusivo Residence ROA, edifício novo (2025) na Denis Roa, no coração do bairro Herrera. Fica no 3º andar, com elevador.
+
+    Detalhes do apartamento:
+
+    - 2 quartos
+    - 2 banheiros
+    - Sala ampla e muito iluminada com cozinha integrada
+    - Sacada com excelente vista
+    - 1 vaga de garagem
+    - Área: 65 m², muito bem distribuídos
+
+    Áreas comuns do edifício:
+
+    - 🏊 Piscina
+    - 🌇 Terraço com quincho
+    - 🧺 Lavanderia
+    - 🛡️ Segurança 24 h
+
+    Uma excelente oportunidade para investir ou morar, em uma região em pleno crescimento, com fácil acesso, a poucos passos de comércios, serviços e avenidas principais.
 fecha: 2026-07-12T22:12
 ---
 

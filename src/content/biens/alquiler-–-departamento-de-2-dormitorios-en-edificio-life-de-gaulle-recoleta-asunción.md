@@ -81,6 +81,28 @@ en:
     - Large windows
 
     **Building amenities:** swimming pool, gym, and a covered barbecue and dining area.
+pt:
+  titulo: 'PARA ALUGAR – Apartamento de 2 quartos no Edificio Life De Gaulle (Recoleta, Assunção)'
+  descripcion: 'A poucos passos da La Cuadrita, apartamento novo, iluminado e com vista aberta, de 81,5 m², com a vaga de garagem nº 7.'
+  cuerpo: |-
+    **Distribuição:**
+
+    - Ampla sala de estar e jantar com balcão de refeições
+    - Cozinha com bancadas de granito, forno embutido, cooktop e armários superiores e inferiores
+    - Sacada com tela de proteção e churrasqueira
+    - Quarto principal com armários embutidos e banheiro privativo (suíte)
+    - Segundo quarto com armários embutidos
+    - Dois banheiros completos com bancadas de mármore
+    - Área de serviço independente com prateleiras
+
+    **Acabamentos e características:**
+
+    - Piso imitação de madeira em todo o apartamento
+    - Ar-condicionado split na sala e nos quartos
+    - Spots de LED embutidos
+    - Janelas amplas
+
+    **Áreas comuns do edifício:** piscina, academia e área coberta com churrasqueira e refeitório.
 fecha: 2026-10-13T21:59:00
 ---
 

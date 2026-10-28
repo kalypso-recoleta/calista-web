@@ -155,6 +155,65 @@ en:
     🏢 Floor: 1st
 
     💲 Rent: ₲ 4,700,000 (building fees included)
+pt:
+  titulo: 'Apartamento de 3 quartos em Villa Morra'
+  descripcion: |-
+    PARA ALUGAR – VILLA MORRA
+
+    3 quartos | 120 m² | ₲ 4.700.000
+    Lindo apartamento totalmente reformado de 120 m² em uma das regiões mais práticas da cidade, a poucos minutos do Shopping Mariscal.
+  cuerpo: |-
+    PARA ALUGAR – VILLA MORRA
+
+    3 quartos | 120 m² | ₲ 4.700.000
+
+    Lindo apartamento totalmente reformado de 120 m² em uma das regiões mais práticas da cidade, a poucos minutos do Shopping Mariscal.
+
+    Distribuição:
+
+    🛏 3 quartos com armário embutido, ar-condicionado e piso de lapacho
+
+    　- 1 suíte com banheiro privativo
+
+    　- 2 quartos com banheiro compartilhado
+
+    🚽 Lavabo independente para visitas
+
+    🛋 Sala de estar e jantar ampla e iluminada
+
+    🍽 Cozinha com armários
+
+    🧺 Área de serviço totalmente reformada
+
+    🌿 Sacada
+
+    Características:
+
+    ✔ Piso de lapacho restaurado
+
+    ✔ Paredes recém-pintadas
+
+    ✔ Banheiros reformados com acabamentos de qualidade
+
+    ✔ Suíte com banheiro amplo
+
+    ✔ Ar-condicionado nos quartos
+
+    ✔ Ventilador de teto na sala
+
+    ✔ Condomínio (expensas) incluído no preço
+
+    ✔ Excelente localização – perto do Shopping
+
+    📐 Área: 120 m² aprox.
+
+    🛏 Quartos: 3
+
+    🚿 Banheiros: 4 (2 completos, 1 lavabo e 1 de serviço)
+
+    🏢 Andar: 1º
+
+    💲 Preço: ₲ 4.700.000 (condomínio incluído)
 fecha: 2026-07-09T09:26
 ---
 

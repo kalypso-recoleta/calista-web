@@ -40,5 +40,10 @@ en:
   descripcion: |-
     Compact and functional: 31.13 m² of living space + 7.45 m² balcony. Separate bedroom, living-dining room, fitted kitchen and full bathroom. The perfect balance between price and comfort — in high demand for rentals.
     From Gs. 347,750,000 (USD 57,299) · 10 % deposit + 32 interest-free instalments.
+pt:
+  titulo: 'O equilíbrio perfeito: conforto, preço e localização — apartamento de 1 quarto'
+  descripcion: |-
+    Compacto e funcional: 31,13 m² internos + sacada de 7,45 m². Quarto independente, sala de estar e jantar, cozinha equipada e banheiro completo. O equilíbrio perfeito entre preço e conforto — muito procurado para aluguel.
+    A partir de Gs. 347.750.000 (USD 57.299) · 10 % de entrada + 32 parcelas sem juros.
 fecha: 2026-07-15T12:01
 ---

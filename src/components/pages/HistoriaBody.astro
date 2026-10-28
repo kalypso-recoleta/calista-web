@@ -17,17 +17,20 @@ const cifras = {
   es: [[anos.promo, 'años de promoción inmobiliaria'], [anos.mq, 'años de agencia en Martinica'], [anos.py, 'años en Paraguay'], ['+100', 'propiedades gestionadas']],
   fr: [[anos.promo, 'ans de promotion immobilière'], [anos.mq, 'ans d’agence en Martinique'], [anos.py, 'ans au Paraguay'], ['+100', 'biens gérés']],
   en: [[anos.promo, 'years in real estate development'], [anos.mq, 'years running our agency in Martinique'], [anos.py, 'years in Paraguay'], ['100+', 'properties managed']],
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: [[anos.promo, 'anos de incorporação imobiliária'], [anos.mq, 'anos de imobiliária na Martinica'], [anos.py, 'anos no Paraguai'], ['+100', 'imóveis administrados']],
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const fundadora = {
   es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español y francés' },
   fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français et en espagnol' },
   en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: { rol: 'Fundadora e diretora', detalle: 'CALISTA Inmobiliaria (Paraguai), Calista Immobilier (Martinica) e a incorporadora EL SOLAR', idiomas: 'Atende em espanhol e francês' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const louis = {
   es: { rol: 'Responsable de ventas', detalle: 'Compra y venta de propiedades y desarrollos Kalypso', idiomas: 'Atiende en español, francés e inglés' },
   fr: { rol: 'Responsable des ventes', detalle: 'Achat et vente de biens, et programmes Kalypso', idiomas: 'Vous reçoit en français, en espagnol et en anglais' },
   en: { rol: 'Head of sales', detalle: 'Buying and selling property, and the Kalypso developments', idiomas: 'Speaks Spanish, French and English' },
-}[lang as 'es' | 'fr' | 'en']!;
+  pt: { rol: 'Responsável de vendas', detalle: 'Compra e venda de imóveis e empreendimentos Kalypso', idiomas: 'Atende em espanhol, francês e inglês' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const persona = {
   '@context': 'https://schema.org',
   '@type': 'Person',

@@ -38,7 +38,7 @@ async function cupoDisponible() {
   }
 }
 
-const LANGS = ['es', 'fr', 'en'];
+const LANGS = ['es', 'fr', 'en', 'pt'];
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -62,7 +62,7 @@ export default async (req) => {
   let res;
   try {
     res = await fetch(
-      `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=${lang}`,
+      `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=${lang === 'pt' ? 'pt-BR' : lang}`,
       {
         headers: {
           'X-Goog-Api-Key': key,

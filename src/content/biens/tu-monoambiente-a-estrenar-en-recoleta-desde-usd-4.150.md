@@ -145,6 +145,62 @@ en:
     📞 **Contact us today**
 
     Ask for the **full price list of the 40 apartments** with prices per unit. We will send you plans, renderings and a personalised instalment simulation.
+pt:
+  titulo: 'O seu studio novo em Recoleta, a partir de USD 4.150'
+  descripcion: |-
+    Kalypso Recoleta — Studios novos a partir de USD 41.500
+    Reserve hoje com apenas USD 4.150 e pague o saldo em 32 parcelas sem juros durante a obra. Localização imbatível na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal.
+    Studios de 31 m² com sacada, cozinha equipada e ar-condicionado. Áreas comuns premium na cobertura: piscina, quincho climatizado, coworking e terraço panorâmico.
+    Entrega prevista para maio de 2029. Incorporadora: El Solar SRL, 20 edifícios entregues, 100 % vendidos.
+    📞 Peça a tabela de preços e a sua simulação de parcelas.
+  cuerpo: |-
+    Sim, você leu certo. Com **USD 4.150** você reserva hoje o seu studio novo em uma das melhores regiões de Assunção.
+
+    👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
+
+    O saldo de USD 37.350 é pago em **32 parcelas mensais sem juros** durante a obra. Preço total: **USD 41.500**.
+
+    **Por que o Kalypso Recoleta?**
+
+    📍 **Localização imbatível** Esquina da Cruz del Chaco com a Alfredo Seiferheld. A poucos passos do Shopping Mariscal, cercado pelos melhores restaurantes de Assunção e conectado a todos os polos empresariais da cidade.
+
+    🏗️ **Uma incorporadora de confiança** El Solar SRL: 20 edifícios entregues (3 no Paraguai, 17 na França), 338 apartamentos e mais de 52.000 m² construídos. **100 % vendidos em todos os projetos anteriores.**
+
+    **O apartamento — 31 m² no total**
+
+    - ✓ Quarto e sala integrados, muito iluminados
+    - ✓ Cozinha equipada (armários, cooktop, coifa)
+    - ✓ Banheiro completo
+    - ✓ Sacada de 5 m² com vista aberta
+    - ✓ Ar-condicionado incluído
+    - ✓ Armário embutido
+    - ✓ Novo — **Entrega: maio de 2029**
+
+    **Áreas comuns premium na cobertura**
+
+    - 🏊 Piscina
+    - ☀️ Solário
+    - 🔥 Churrasqueira
+    - 🏡 Quincho climatizado
+    - 💻 Coworking
+    - 🌆 Terraço panorâmico com vista para a cidade
+
+    **Um plano de pagamento simples e acessível**
+
+    | **Entrada** | USD 4.150 (10 %) na assinatura |
+    | **Saldo** | 32 parcelas mensais sem juros |
+    | **Vaga de garagem opcional** | USD 15.000 |
+    | **Início da obra** | Setembro de 2026 |
+    | **Entrega** | Maio de 2029 |
+
+    **Por que agir agora?**
+
+    - ⏳ Os preços de pré-venda são **os mais baixos de todo o ciclo do projeto**
+    - 🔑 **Unidades limitadas** em cada tipologia
+
+    📞 **Fale conosco hoje**
+
+    Peça a **tabela completa dos 40 apartamentos** com os preços por unidade. Enviamos plantas, imagens e uma simulação de parcelas personalizada.
 fecha: 2026-07-15T11:42
 ---
 

@@ -10,7 +10,7 @@ import { formatPrecio } from './format';
 
 type Bien = CollectionEntry<'biens'>['data'];
 
-const DORM: Record<Lang, string> = { es: 'dorm.', fr: 'ch.', en: 'bed' };
+const DORM: Record<Lang, string> = { es: 'dorm.', fr: 'ch.', en: 'bed', pt: 'quartos' };
 const minuscula = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
 
 /** Ex. « Departamento 2 dorm. en alquiler, Recoleta – Gs. 5.500.000 /mes » */
@@ -29,7 +29,7 @@ export function tituloBien(b: Bien, lang: Lang): string {
 
 /** Ex. « Alquiler temporal amoblado 1 dorm., Mburucuyá » */
 export function tituloTemporal(d: { dormitorios?: number; barrio?: string; ciudad: string }, lang: Lang): string {
-  const base = { es: 'Alquiler temporal amoblado', fr: 'Location meublée temporaire', en: 'Furnished short-term rental' }[lang];
+  const base = { es: 'Alquiler temporal amoblado', fr: 'Location meublée temporaire', en: 'Furnished short-term rental', pt: 'Aluguel temporário mobiliado' }[lang];
   let titulo = base;
   if (d.dormitorios) titulo += ` ${d.dormitorios} ${DORM[lang]}`;
   const zona = d.barrio || d.ciudad;

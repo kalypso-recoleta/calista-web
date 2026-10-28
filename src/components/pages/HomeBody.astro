@@ -12,6 +12,7 @@ import { site } from '../../lib/site';
 import { formatPrecio, formatUbicacion } from '../../lib/format';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 import { zonasConBienes } from '../../lib/barrios';
+import { localizar } from '../../lib/traduccion';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -47,7 +48,7 @@ const categorias = [
 
 // Messages WhatsApp : volontairement en espagnol (l'agence les lit en espagnol).
 const zonas = await zonasConBienes();
-const zTxt = { es: ['Barrios', 'Buscá por barrio', 'Ver todos'], fr: ['Quartiers', 'Chercher par quartier', 'Voir tout'], en: ['Neighbourhoods', 'Search by neighbourhood', 'See all'] }[lang as 'es' | 'fr' | 'en'];
+const zTxt = { es: ['Barrios', 'Buscá por barrio', 'Ver todos'], fr: ['Quartiers', 'Chercher par quartier', 'Voir tout'], en: ['Neighbourhoods', 'Search by neighbourhood', 'See all'], pt: ['Bairros', 'Buscar por bairro', 'Ver todos'] }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const wa = whatsappLink('Hola Calista, quisiera hacer una consulta.');
 
 // Textes de l'accueil (version « deux portes » : chercheurs de biens / propriétaires).
@@ -199,8 +200,56 @@ const H = {
     fin_btn: 'Estimate my rent for free',
     wa_prop: 'Hello Calista, I have a property to rent out.',
   },
+  pt: {
+    eyebrow: 'Imobiliária em Assunção',
+    h1: 'Encontre o seu lugar em Assunção. Ou alugue o seu sem estar aqui.',
+    lead: `${anosPy} anos no mercado paraguaio. Atendemos em espanhol, francês e inglês, e administramos o seu aluguel por 5 % do valor recebido, mais IVA.`,
+    busco: 'Procuro um imóvel',
+    tengo: 'Tenho um imóvel para alugar',
+    g_en: 'no Google', g_resenas: 'avaliações',
+    tira: [`${anosPy} anos no Paraguai`, '+100 imóveis administrados', 'Español · Français · English'],
+    p_eyebrow: 'Para proprietários',
+    p_h2: 'Mora longe do seu apartamento? Nós o alugamos e administramos por você.',
+    p_lead: 'Encontramos o inquilino, verificamos as garantias, cobramos o aluguel e transferimos para você no dia 10 de cada mês, com uma prestação de contas clara em guaranis e em dólares.',
+    stats: [['< 15 dias', 'para alugar, em geral'], ['Dia 10', 'transferência do seu aluguel, todo mês'], ['5 %', 'do valor recebido, mais IVA. Se você não recebe, nós não cobramos.']],
+    p_nota: 'Locação do imóvel: um mês de aluguel, dividido 50/50 com o inquilino. Sem custo para o seu primeiro inquilino se você comprou com a CALISTA.',
+    p_link: 'Ver como trabalhamos e todos os valores',
+    f_t: 'Quanto o seu imóvel pode render?',
+    f_d: 'Enviamos uma faixa de aluguel e a sua renda líquida depois da administração. Grátis e sem compromisso.',
+    f_barrio: 'Bairro ou cidade', f_barrio_ph: 'Ex.: Recoleta',
+    f_tipo: 'Tipo', tipos: ['Apartamento', 'Studio', 'Casa', 'Duplex', 'Outro'],
+    f_dorm: 'Quartos', f_sup: 'Área (m²)', f_amob: 'Mobiliado?', si: 'Sim', no: 'Não',
+    f_nombre: 'Nome', f_contacto: 'WhatsApp ou e-mail',
+    f_acepto: 'Aceito que a CALISTA entre em contato comigo sobre o meu imóvel.',
+    f_enviar: 'Quero a minha estimativa',
+    res_t: 'O que dizem os nossos clientes',
+    dest_t: 'Imóveis em destaque',
+    pasos_t: 'Como administramos o seu imóvel',
+    pasos_d: 'Com o nosso próprio software: cada recebimento e cada despesa ficam registrados, com guaranis e dólares separados.',
+    pasos: [['Preço e anúncio', 'Indicamos o preço real de mercado e anunciamos o seu imóvel nos nossos canais.'], ['Inquilino e contrato', 'Visitas, seleção, garantias verificadas e vistoria com fotos.'], ['Cobrança e transferência', 'Cobramos o aluguel e transferimos para você no dia 10 de cada mês.'], ['Prestação de contas mensal', 'Você recebe o detalhe do que foi recebido e pago, sem precisar pedir.']],
+    hel_t: 'Hélène Montourcy, fundadora',
+    hel_d: 'Dirijo a CALISTA em Assunção e a CALISTA Immobilier na Martinica. Atendo você pessoalmente, em espanhol ou em francês.',
+    hel_link: 'Nossa história',
+    louis_t: 'Louis Thomassin-Montourcy, responsável de vendas',
+    louis_d: 'Acompanho você na compra ou na venda do seu imóvel e nos empreendimentos Kalypso, em espanhol, francês ou inglês.',
+    suc_d: 'Herdou um imóvel no Paraguai e o inventário corre na França? Preparamos a avaliação em francês para o seu tabelião, junto com a CALISTA Immobilier na Martinica.',
+    suc_btn: 'Consultar sobre um inventário',
+    faq_t: 'O que os proprietários nos perguntam',
+    faq: [
+      ['Quanto vocês cobram para administrar o meu aluguel?', '5 % dos aluguéis efetivamente recebidos, todo mês, mais IVA (10 %). Se o aluguel não for recebido, não cobramos comissão.'],
+      ['Quanto custa colocar o meu imóvel para alugar?', 'Um mês de aluguel, dividido 50 % por conta do proprietário e 50 % por conta do inquilino. Se você comprou o seu imóvel com a CALISTA, a locação para o seu primeiro inquilino não tem custo.'],
+      ['Em quanto tempo o meu apartamento é alugado?', 'Em geral, em menos de 15 dias: anunciamos em todos os nossos canais e nos portais.'],
+      ['E se o inquilino não pagar?', 'Verificamos as garantias antes da assinatura e acompanhamos qualquer atraso. Além disso, você pode segurar os seus aluguéis contra inadimplência (3 % do aluguel mensal), conforme as condições da apólice.'],
+      ['Quando recebo o meu aluguel?', 'Transferimos no dia 10 de cada mês (se cair num domingo, na segunda-feira, dia 11), com a prestação de contas do mês.'],
+    ],
+    faq_todas: 'Todas as perguntas frequentes',
+    fin_t: 'Quanto o seu imóvel pode render?',
+    fin_d: 'Peça a sua estimativa grátis ou escreva agora pelo WhatsApp.',
+    fin_btn: 'Estimar o meu aluguel grátis',
+    wa_prop: 'Olá Calista, tenho um imóvel para alugar.',
+  },
 };
-const x = H[lang as 'es' | 'fr' | 'en'];
+const x = H[lang as 'es' | 'fr' | 'en' | 'pt'];
 const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
 ---
 
@@ -226,10 +275,10 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
 
       {
         hero && (
-          <a class="hero-media" href={L(`/propiedad/${slugify(hero.id)}`)} aria-label={hero.data.titulo}>
+          <a class="hero-media" href={L(`/propiedad/${slugify(hero.id)}`)} aria-label={localizar(hero.data, lang).titulo}>
             <img
               src={img(hero.data.portada_foto || hero.data.imagenes[0], { w: 760, h: 620 })}
-              alt={hero.data.titulo}
+              alt={localizar(hero.data, lang).titulo}
               width="760"
               height="620"
             />

@@ -13,7 +13,7 @@ const year = new Date().getFullYear();
   <div class="container grid">
     <div class="col">
       <img src="/logo-calista-oscuro.png" alt={site.nombre} class="logo" width="180" height="76" />
-      <p class="lema">{site.lema}</p>
+      <p class="lema">{({ pt: 'Assessoria imobiliária em Assunção, com critério e honestidade.' } as Record<string, string>)[lang] ?? site.lema}</p>
     </div>
 
     <div class="col">
@@ -56,8 +56,8 @@ const year = new Date().getFullYear();
   <div class="container legal">
     <span>© {year} {site.nombre}</span>
     <span class="legal-links">
-      <a href={L('/aviso-legal')}>{({ es: 'Aviso legal', fr: 'Mentions légales', en: 'Legal notice' } as Record<string, string>)[lang] ?? 'Aviso legal'}</a>
-      <a href={L('/politica-de-privacidad')}>{({ es: 'Política de privacidad', fr: 'Confidentialité', en: 'Privacy policy' } as Record<string, string>)[lang] ?? 'Política de privacidad'}</a>
+      <a href={L('/aviso-legal')}>{({ es: 'Aviso legal', fr: 'Mentions légales', en: 'Legal notice', pt: 'Aviso legal' } as Record<string, string>)[lang] ?? 'Aviso legal'}</a>
+      <a href={L('/politica-de-privacidad')}>{({ es: 'Política de privacidad', fr: 'Confidentialité', en: 'Privacy policy', pt: 'Privacidade' } as Record<string, string>)[lang] ?? 'Política de privacidad'}</a>
       <span>Asunción · Paraguay</span>
     </span>
   </div>

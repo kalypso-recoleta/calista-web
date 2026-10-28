@@ -8,4 +8,6 @@ fr:
   intro: "Lambaré est une ville voisine d'Asunción, dans le département Central."
 en:
   intro: "Lambaré is a city next to Asunción, in the Central department."
+pt:
+  intro: "Lambaré é uma cidade vizinha de Assunção, no departamento Central."
 ---

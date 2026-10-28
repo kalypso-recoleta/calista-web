@@ -5,7 +5,7 @@ import { temporalesActivos, slugTemporal } from '../../../components/temporal/da
 export async function getStaticPaths() {
   const items = await temporalesActivos();
   return items.flatMap((item) =>
-    ['fr', 'en'].map((lang) => ({ params: { lang, slug: slugTemporal(item) }, props: { item } }))
+    ['fr', 'en', 'pt'].map((lang) => ({ params: { lang, slug: slugTemporal(item) }, props: { item } }))
   );
 }
 const { item } = Astro.props;

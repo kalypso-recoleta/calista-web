@@ -21,8 +21,9 @@ const x = {
   es: { volver: 'Blog', cta_t: '¿Tenés una pregunta sobre este tema?', cta_d: 'Escribinos: te respondemos personalmente, en español, francés o inglés.', wa: 'WhatsApp', f_preg: 'Tu pregunta', f_nombre: 'Nombre', f_email: 'Email', f_tel: 'WhatsApp / teléfono (opcional)', f_enviar: 'Enviar mi pregunta', o: 'o', otras: 'Otros artículos', aviso: 'Información general: no reemplaza el asesoramiento de un escribano o un abogado.' },
   fr: { volver: 'Blog', cta_t: 'Une question sur ce sujet ?', cta_d: 'Écrivez-nous : nous vous répondons personnellement, en français, espagnol ou anglais.', wa: 'WhatsApp', f_preg: 'Votre question', f_nombre: 'Nom', f_email: 'E-mail', f_tel: 'WhatsApp / téléphone (facultatif)', f_enviar: 'Envoyer ma question', o: 'ou', otras: 'Autres articles', aviso: 'Information générale : ne remplace pas le conseil d’un notaire (escribano) ou d’un avocat.' },
   en: { volver: 'Blog', cta_t: 'Have a question about this topic?', cta_d: 'Write to us: we reply personally, in English, Spanish or French.', wa: 'WhatsApp', f_preg: 'Your question', f_nombre: 'Name', f_email: 'Email', f_tel: 'WhatsApp / phone (optional)', f_enviar: 'Send my question', o: 'or', otras: 'Other articles', aviso: 'General information: not a substitute for advice from a notary (escribano) or a lawyer.' },
-}[lang as 'es' | 'fr' | 'en']!;
-const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US' }[lang as 'es' | 'fr' | 'en'];
+  pt: { volver: 'Blog', cta_t: 'Tem alguma dúvida sobre este tema?', cta_d: 'Escreva para nós: respondemos pessoalmente, em espanhol, francês ou inglês.', wa: 'WhatsApp', f_preg: 'Sua pergunta', f_nombre: 'Nome', f_email: 'E-mail', f_tel: 'WhatsApp / telefone (opcional)', f_enviar: 'Enviar minha pergunta', o: 'ou', otras: 'Outros artigos', aviso: 'Informação geral: não substitui a orientação de um tabelião (escribano) ou de um advogado.' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
+const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const wa = whatsappLink(`Hola Calista, leí el artículo "${guia.data.titulo}" y tengo una consulta.`);
 // Autres articles : d'abord ceux du même thème, puis de la même catégorie (guide / actualité), puis les plus récents
 const proximidad = (g: { entry: CollectionEntry<'guias'> }) => (guia.data.tema && g.entry.data.tema === guia.data.tema ? 2 : 0) + (g.entry.data.categoria === guia.data.categoria ? 1 : 0);
@@ -30,8 +31,8 @@ const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, 
 const url = new URL(Astro.url.pathname, Astro.site).toString();
 // Auteure des articles (signature visible + données structurées)
 const AUTORA = 'Hélène Montourcy';
-const rol = { es: 'Fundadora de CALISTA', fr: 'Fondatrice de CALISTA', en: 'Founder of CALISTA' }[lang as 'es' | 'fr' | 'en'];
-const por = { es: 'Por', fr: 'Par', en: 'By' }[lang as 'es' | 'fr' | 'en'];
+const rol = { es: 'Fundadora de CALISTA', fr: 'Fondatrice de CALISTA', en: 'Founder of CALISTA', pt: 'Fundadora da CALISTA' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const por = { es: 'Por', fr: 'Par', en: 'By', pt: 'Por' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const ld = {
   '@context': 'https://schema.org',
   '@type': d.categoria === 'actualidad' ? 'NewsArticle' : 'Article',
@@ -46,7 +47,7 @@ const ld = {
 };
 ---
 
-<Layout title={d.titulo} tituloCompleto description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha}>
+<Layout title={d.titulo} tituloCompleto description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha} noindex={lang === 'pt' && !html}>
   <article class="section">
     <div class="container art">
       <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span>{guia.data.tema && <a class="tema" href={L(`/blog/tema/${guia.data.tema}`)}>{(TEMA_TXT[lang] ?? TEMA_TXT.es)[guia.data.tema].n}</a>}</p>

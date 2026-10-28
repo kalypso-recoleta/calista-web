@@ -35,7 +35,7 @@ const L = (p: string) => localizePath(p, lang);
 
 const { Content } = await render(bien);
 const zona = await zonaDeBien(bien);
-const masEn = { es: 'Ver más propiedades en', fr: 'Voir plus de biens à', en: 'See more properties in' }[getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en'];
+const masEn = { es: 'Ver más propiedades en', fr: 'Voir plus de biens à', en: 'See more properties in', pt: 'Ver mais imóveis em' }[getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en' | 'pt'];
 
 const url = new URL(`/propiedad/${slugify(bien.id)}`, Astro.site).toString();
 const wa = whatsappBien({ titulo: bien.data.titulo, ref: slugify(bien.id), url });

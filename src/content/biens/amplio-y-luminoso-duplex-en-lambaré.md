@@ -41,4 +41,7 @@ fr:
 en:
   titulo: Spacious, bright duplex in Lambaré
   descripcion: 'Upstairs: 3 bedrooms, one en suite with air conditioning, plus a shared bathroom. Downstairs: air-conditioned dining room, semi-open furnished kitchen, semi-equipped with hob and extractor hood, two-car garage, patio with barbecue and a service area (room, laundry, bathroom).'
+pt:
+  titulo: 'Duplex amplo e iluminado em Lambaré'
+  descripcion: 'No andar de cima: 3 quartos, um deles suíte, com ar-condicionado, e mais um banheiro compartilhado. No térreo: sala de jantar com ar-condicionado, cozinha semiaberta mobiliada e semiequipada com cooktop e coifa, garagem para dois carros, pátio com churrasqueira e área de serviço (quarto, lavanderia, banheiro).'
 ---

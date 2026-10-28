@@ -1,6 +1,6 @@
 ---
 /**
- * Pages légales : « Aviso legal » et « Política de privacidad » (ES, FR, EN).
+ * Pages légales : « Aviso legal » et « Política de privacidad » (ES, FR, EN, PT).
  * ⚠️ Textes rédigés à partir des informations connues du site (oct. 2026) :
  * à faire relire par l'avocat avant de les considérer définitifs.
  */
@@ -10,14 +10,14 @@ import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
 interface Props { doc: 'aviso' | 'privacidad' }
 const { doc } = Astro.props;
-const lang = getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en';
+const lang = getLangFromUrl(Astro.url) as 'es' | 'fr' | 'en' | 'pt';
 const L = (p: string) => localizePath(p, lang);
 
-const ACTUALIZADO = { es: 'Última actualización: 25 de octubre de 2026', fr: 'Dernière mise à jour : 25 octobre 2026', en: 'Last updated: 25 October 2026' }[lang];
+const ACTUALIZADO = { es: 'Última actualización: 25 de octubre de 2026', fr: 'Dernière mise à jour : 25 octobre 2026', en: 'Last updated: 25 October 2026', pt: 'Última atualização: 25 de outubro de 2026' }[lang];
 const telefonos = '+595 994 385487 · +595 984 333 003';
 
 type Sec = { h: string; p: string[] };
-const T: Record<'es' | 'fr' | 'en', Record<'aviso' | 'privacidad', { title: string; lead: string; secs: Sec[] }>> = {
+const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { title: string; lead: string; secs: Sec[] }>> = {
   es: {
     aviso: {
       title: 'Aviso legal',
@@ -153,6 +153,52 @@ const T: Record<'es' | 'fr' | 'en', Record<'aviso' | 'privacidad', { title: stri
         { h: 'Retention', p: ['We keep your data for as long as needed to handle your enquiry. If you become a client, for the duration of the relationship and as long as our legal obligations require (accounting, tax and anti-money-laundering).'] },
         { h: 'Your rights', p: [`You may at any time request access to, correction, update or deletion of your data by writing to ${site.email}.`] },
         { h: 'Changes', p: ['We may update this policy; the date of the latest version is shown at the bottom of this page.'] },
+      ],
+    },
+  },
+  pt: {
+    aviso: {
+      title: 'Aviso legal',
+      lead: 'Informações sobre o titular do site calista.com.py e as condições de uso.',
+      secs: [
+        { h: 'Titular do site', p: [
+          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `Endereço: ${site.direccion}, Paraguai.`,
+          `Contato: ${site.email} · ${telefonos}.`,
+          'Responsável pelo conteúdo: Hélène Montourcy, fundadora.' ] },
+        { h: 'Hospedagem', p: ['O site é hospedado pela Netlify, Inc. (Estados Unidos).'] },
+        { h: 'Informações publicadas', p: [
+          'As fichas de imóveis têm caráter informativo e não constituem uma oferta contratual. Preços, áreas e disponibilidade podem mudar sem aviso prévio; confirme conosco antes de tomar uma decisão.',
+          'Os artigos do blog são informações gerais: não substituem a orientação de um tabelião (escribano), de um advogado ou de um contador.' ] },
+        { h: 'Propriedade intelectual', p: ['Os textos, o logotipo, o design e, salvo indicação em contrário, as fotografias do site pertencem à CALISTA. Não podem ser reproduzidos sem autorização por escrito.'] },
+        { h: 'Links externos', p: ['O site contém links para outros sites (WhatsApp, Google, portais imobiliários, CALISTA Immobilier na Martinica). Não somos responsáveis pelo conteúdo deles.'] },
+        { h: 'Legislação aplicável', p: ['Este aviso é regido pelas leis da República do Paraguai.'] },
+      ],
+    },
+    privacidad: {
+      title: 'Política de privacidade',
+      lead: 'Quais dados coletamos neste site, para que os usamos e como você pode exercer os seus direitos.',
+      secs: [
+        { h: 'Responsável', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguai. Contato: ${site.email}.`] },
+        { h: 'Dados que coletamos', p: [
+          'Formulários do site (contato, estimativa de aluguel, perguntas do blog): nome, e-mail, telefone ou WhatsApp, a sua mensagem e, se for o caso, os dados do seu imóvel (bairro, tipo, quartos, área, mobiliado).',
+          'Mensagens de WhatsApp que você nos enviar a partir do site.',
+          'Estatísticas de visitas anônimas (páginas vistas, país, tipo de dispositivo), sem cookies e sem dados que identifiquem você.' ] },
+        { h: 'Para que os usamos', p: [
+          'Para responder a você, preparar a estimativa ou o serviço que você pedir e acompanhar a sua consulta.',
+          'Não vendemos nem cedemos os seus dados a terceiros para fins comerciais, e não enviamos publicidade sem o seu consentimento.' ] },
+        { h: 'Base legal', p: ['O seu consentimento, ao enviar um formulário ou nos escrever, e, se for o caso, a execução do serviço que você contratar conosco.'] },
+        { h: 'Fornecedores que tratam dados em nosso nome', p: [
+          'Netlify (Estados Unidos): hospedagem do site e recebimento dos formulários.',
+          'WhatsApp (Meta): se você escolher nos escrever pelo WhatsApp.',
+          'Plausible Analytics: estatísticas de visitas, sem cookies.',
+          'Google: as avaliações do Google que exibimos são carregadas dos servidores dele.',
+          'Cloudinary: hospedagem das fotos dos imóveis.',
+          'Alguns desses fornecedores estão fora do Paraguai: os seus dados podem ser tratados em outros países.' ] },
+        { h: 'Cookies', p: ['O site não usa cookies de publicidade nem de rastreamento.'] },
+        { h: 'Conservação', p: ['Guardamos os seus dados pelo tempo necessário para atender à sua consulta. Se você se tornar cliente, nós os guardamos durante a relação e pelo tempo exigido pelas nossas obrigações legais (contábeis, tributárias e de prevenção à lavagem de dinheiro).'] },
+        { h: 'Os seus direitos', p: [`Você pode pedir a qualquer momento o acesso, a retificação, a atualização ou a exclusão dos seus dados escrevendo para ${site.email}.`] },
+        { h: 'Alterações', p: ['Podemos atualizar esta política; a data da última versão aparece no final desta página.'] },
       ],
     },
   },

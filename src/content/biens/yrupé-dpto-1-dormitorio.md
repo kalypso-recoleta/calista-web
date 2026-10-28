@@ -100,6 +100,27 @@ en:
     **Book directly** with us, no intermediaries or platforms.
 
     Check availability in the calendar and send us your dates.
+pt:
+  titulo: 'YRUPÉ – Apartamento de 1 quarto'
+  descripcion: 'Apartamento mobiliado de 1 quarto em Mburucuyá, a primeira Residência Kalypso: um grande mural de vitórias-régias, sacada, cozinha equipada e ar-condicionado. De 7 dias a 6 meses, reservado diretamente conosco.'
+  cuerpo: |-
+    **Yrupé, a primeira Residência Kalypso**
+
+    Ao abrir a porta, você é recebido por um grande mural de yrupés: a vitória-régia do rio Paraguai, que dá nome ao apartamento. Discreto por fora, cheio de cor e de calma por dentro.
+
+    **A sala de estar e jantar** é ampla e iluminada: sofá com pufe, mesa redonda para quatro pessoas, cantinho com escrivaninha para trabalhar, Smart TV e ar-condicionado. Uma porta de vidro de correr dá para uma sacada com duas poltronas.
+
+    **O quarto** também tem ar-condicionado, com mesa de cabeceira e um amplo armário.
+
+    **A cozinha é totalmente equipada:** cooktop, coifa, micro-ondas, geladeira com freezer, air fryer, chaleira elétrica, cafeteira italiana e máquina de lavar roupa.
+
+    **O banheiro** tem um amplo box com porta de vidro, e as toalhas estão incluídas.
+
+    **Estadia:** de 7 dias a 6 meses.
+    **Incluído:** Wi-Fi. Os demais serviços dependem da duração da estadia.
+    **Reserve diretamente** conosco, sem intermediários nem plataformas.
+
+    Veja a disponibilidade no calendário e envie as suas datas.
 fecha: 2026-10-04T08:10:00
 ---
 

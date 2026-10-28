@@ -13,11 +13,11 @@ const t = useTranslations(lang);
 type Trad = { lema?: string; descripcion?: string; datos?: string[] };
 const base = edificio as {
   mostrar?: boolean; nombre: string; lema?: string; descripcion?: string;
-  datos?: string[]; direccion?: string; fr?: Trad; en?: Trad;
-  fotos?: { imagen: string; leyenda?: string; leyenda_fr?: string; leyenda_en?: string }[];
+  datos?: string[]; direccion?: string; fr?: Trad; en?: Trad; pt?: Trad;
+  fotos?: { imagen: string; leyenda?: string; leyenda_fr?: string; leyenda_en?: string; leyenda_pt?: string }[];
 };
 // Texte dans la langue de la page ; à défaut de traduction, l'espagnol
-const tr: Trad = (lang === 'fr' ? base.fr : lang === 'en' ? base.en : undefined) ?? {};
+const tr: Trad = (lang === 'fr' ? base.fr : lang === 'en' ? base.en : lang === 'pt' ? base.pt : undefined) ?? {};
 const e = {
   ...base,
   lema: tr.lema?.trim() || base.lema,
@@ -28,7 +28,7 @@ const fotos = (base.fotos ?? [])
   .filter((f) => f && f.imagen)
   .map((f) => ({
     imagen: f.imagen,
-    leyenda: (lang === 'fr' ? f.leyenda_fr : lang === 'en' ? f.leyenda_en : '')?.trim() || f.leyenda,
+    leyenda: (lang === 'fr' ? f.leyenda_fr : lang === 'en' ? f.leyenda_en : lang === 'pt' ? f.leyenda_pt : '')?.trim() || f.leyenda,
   }));
 const parrafos = (e.descripcion ?? '').split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 ---

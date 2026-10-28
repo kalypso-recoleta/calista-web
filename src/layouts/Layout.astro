@@ -40,7 +40,7 @@ const {
 } = Astro.props;
 
 // « en Asunción » si zona ; suffixe « · CALISTA » seulement si le titre reste ≤ 60 caractères (Google coupe au-delà)
-const EN_ZONA = { es: ' en Asunción', fr: ' à Asunción', en: ' in Asunción' }[lang] ?? ' en Asunción';
+const EN_ZONA = { es: ' en Asunción', fr: ' à Asunción', en: ' in Asunción', pt: ' em Assunção' }[lang] ?? ' en Asunción';
 const tituloSeo = title && zona && !title.includes('Asunción') ? `${title}${EN_ZONA}` : title;
 const pageTitle = tituloSeo
   ? tituloCompleto || `${tituloSeo} · CALISTA`.length > 60
@@ -63,7 +63,7 @@ const alternates = LOCALES.map((l) => ({
 }));
 
 // og:locale (langue de la page + langues alternatives)
-const OG_LOCALE: Record<string, string> = { es: 'es_ES', fr: 'fr_FR', en: 'en_US' };
+const OG_LOCALE: Record<string, string> = { es: 'es_ES', fr: 'fr_FR', en: 'en_US', pt: 'pt_BR' };
 const ogLocale = OG_LOCALE[lang];
 const ogLocaleAlt = LOCALES.filter((l) => l !== lang).map((l) => OG_LOCALE[l]);
 
@@ -165,7 +165,7 @@ const orgSchema = {
       // Les liens de partage (wa.me/?text=…, sans numéro) ne sont pas modifiés.
       try {
         const partes = location.pathname.split('/').filter(Boolean);
-        const lang = ['fr', 'en'].includes(partes[0]) ? partes.shift()!.toUpperCase() : '';
+        const lang = ['fr', 'en', 'pt'].includes(partes[0]) ? partes.shift()!.toUpperCase() : '';
         const seccion = (partes[0] || 'inicio').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
         const codigo = `[WEB-${seccion}${lang ? '-' + lang : ''}]`;
         document.querySelectorAll<HTMLAnchorElement>('a[href^="https://wa.me/"]').forEach((a) => {
@@ -195,6 +195,7 @@ const orgSchema = {
           '': 'Al enviar, se abre WhatsApp con tu mensaje listo: solo tenés que tocar «Enviar».',
           FR: 'En validant, WhatsApp s’ouvre avec votre message déjà rédigé : il suffit d’appuyer sur « Envoyer ».',
           EN: 'When you submit, WhatsApp opens with your message ready: just tap “Send”.',
+          PT: 'Ao enviar, o WhatsApp abre com a sua mensagem pronta: é só tocar em «Enviar».',
         };
         const OMITIR = ['form-name', 'bot-field', 'idioma', 'acepto'];
         document.querySelectorAll<HTMLFormElement>('form[data-netlify]').forEach((form) => {

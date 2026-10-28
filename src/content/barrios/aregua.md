@@ -8,4 +8,6 @@ fr:
   intro: "Areguá est une ville du département Central, au bord du lac Ypacaraí."
 en:
   intro: "Areguá is a city in the Central department, on the shores of Lake Ypacaraí."
+pt:
+  intro: "Areguá é uma cidade do departamento Central, às margens do lago Ypacaraí."
 ---

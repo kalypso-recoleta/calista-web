@@ -11,4 +11,6 @@ fr:
   intro: "Ycuá Satí est un quartier résidentiel d'Asunción, près de l'avenue Santa Teresa."
 en:
   intro: "Ycuá Satí is a residential neighbourhood of Asunción, close to Santa Teresa Avenue."
+pt:
+  intro: "Ycuá Satí é um bairro residencial de Assunção, perto da avenida Santa Teresa."
 ---

@@ -12,18 +12,20 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Anciennes adresses « /guias » (redirigées vers /blog) : hors sitemap
-      filter: (page) => !/\/guias\//.test(page),
+      // Articles du blog en portugais pas encore traduits (texte espagnol, noindex) : hors sitemap.
+      // À retirer quand les articles auront leur traduction « pt ».
+      filter: (page) => !/\/guias\//.test(page) && !/\/pt\/blog\/(?!tema\/)[^/]+\/?$/.test(page),
       // Sitemap multilingue : chaque URL liste ses variantes es / fr / en.
       i18n: {
         defaultLocale: 'es',
         // Mêmes codes que les balises hreflang des pages (langue seule)
-        locales: { es: 'es', fr: 'fr', en: 'en' },
+        locales: { es: 'es', fr: 'fr', en: 'en', pt: 'pt' },
       },
     }),
   ],
-  // Site trilingue : espagnol par défaut (sans préfixe), /fr/ et /en/
+  // Site en 4 langues : espagnol par défaut (sans préfixe), /fr/, /en/ et /pt/ (portugais du Brésil)
   i18n: {
-    locales: ['es', 'fr', 'en'],
+    locales: ['es', 'fr', 'en', 'pt'],
     defaultLocale: 'es',
     routing: {
       prefixDefaultLocale: false,

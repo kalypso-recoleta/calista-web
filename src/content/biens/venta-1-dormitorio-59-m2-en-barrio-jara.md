@@ -43,5 +43,10 @@ en:
   descripcion: |-
     Bright, spacious 1-bedroom apartment in a new building with lift, with an open panoramic view over Asunción and the Paraguay River. Large living-dining room, fitted kitchen with infrared hob, bedroom with built-in wardrobe and air conditioning, laundry area and a large balcony to enjoy the sunset over the river. Glossy porcelain tile floors. Ideal investment: sold with a sitting tenant, currently let at Gs. 3,400,000 per month.
     1 bedroom · 1 bathroom · Balcony · No parking · Let
+pt:
+  titulo: '1 quarto, 59 m², no bairro Jara'
+  descripcion: |-
+    Apartamento de 1 quarto, amplo e iluminado, em edifício novo com elevador, com vista panorâmica aberta sobre Assunção e o rio Paraguai. Ampla sala de estar e jantar, cozinha equipada com cooktop infravermelho, quarto com armário embutido e ar-condicionado, área de serviço e uma grande sacada para curtir o pôr do sol sobre o rio. Piso de porcelanato brilhante. Investimento ideal: vendido com inquilino, alugado atualmente por Gs. 3.400.000 por mês.
+    1 quarto · 1 banheiro · Sacada · Sem garagem · Alugado
 fecha: 2026-07-15T11:19
 ---

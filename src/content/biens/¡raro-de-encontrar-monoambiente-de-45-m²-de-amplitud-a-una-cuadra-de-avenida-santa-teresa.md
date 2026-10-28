@@ -44,4 +44,10 @@ en:
     Bright 45 m² studio on the 6th floor, on Concejal Vargas.
     Generous spaces, balcony, excellent ventilation and great natural light.
     The building offers premium amenities: pool, gym, quincho, bar, lounge area, meeting room and lift.
+pt:
+  titulo: 'Raro de encontrar! Studio amplo de 45 m² a uma quadra da avenida Santa Teresa'
+  descripcion: |-
+    Studio iluminado de 45 m² no 6º andar, na rua Concejal Vargas.
+    Espaços generosos, sacada, excelente ventilação e muita luz natural.
+    O edifício oferece áreas comuns premium: piscina, academia, quincho, bar, lounge, sala de reuniões e elevador.
 ---

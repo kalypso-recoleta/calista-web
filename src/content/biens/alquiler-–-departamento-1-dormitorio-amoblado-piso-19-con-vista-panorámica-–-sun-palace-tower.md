@@ -103,6 +103,40 @@ en:
     *Photos were taken before the apartment was furnished.*
 
     **Rent: USD 850 per month.** Contact us for terms and a viewing.
+pt:
+  titulo: 'PARA ALUGAR – Apartamento mobiliado de 1 quarto, 19º andar com vista panorâmica – Sun Palace Tower'
+  descripcion: 'Apartamento mobiliado de 1 quarto no 19º andar do Sun Palace Tower (Avda. San Martín). 42,7 m² + sacada, iluminado, silencioso e com vista para o pôr do sol.'
+  cuerpo: |-
+    **Apartamento de 1 quarto, mobiliado e equipado**, no **19º andar** do Sun Palace Tower, edifício novo na esquina da Avda. San Martín com a calle Dr. Migone.
+
+    Graças à altura, o apartamento é **silencioso**, apesar da avenida. Muito iluminado, com **vista aberta sobre a cidade** até o centro histórico e lindos **pores do sol** da sacada.
+
+    **Área**
+
+    - 42,7 m² privativos + sacada de 4,3 m²
+
+    **Ambientes e equipamentos**
+
+    - Sala de estar e jantar com saída para a sacada
+    - Cozinha equipada: forno, cooktop e coifa
+    - Quarto com armário embutido
+    - Banheiro com box de vidro
+    - Piso imitação de madeira
+    - Ar-condicionado na sala e no quarto
+
+    **Edifício**
+
+    - Piscina
+    - Academia
+    - Sala de ioga
+
+    **Garagem**
+
+    - Vaga de garagem XXL (bem larga)
+
+    *As fotos foram tiradas antes de o apartamento ser mobiliado.*
+
+    **Aluguel: USD 850 por mês.** Fale conosco para saber as condições e agendar uma visita.
 fecha: 2026-10-27T09:00:00
 ---
 

@@ -100,6 +100,37 @@ en:
     Unfurnished.
 
     **Rent: 6,500,000 Gs per month, building fees (expensas) and VAT included.** Contact us to arrange a viewing.
+pt:
+  titulo: 'PARA ALUGAR – Apartamento novo de 2 quartos, 87,5 m² com 2 vagas de garagem – Edificio Ventura Hassler'
+  descripcion: 'Apartamento novo de 2 quartos e 2 banheiros no 6º andar do Ventura Hassler. 87,5 m², sacada com churrasqueira, 2 vagas, piscina e academia. Condomínio incluído.'
+  cuerpo: |-
+    Apartamento **novo, nunca habitado**, de **2 quartos e 2 banheiros** no **6º andar** do Edificio Ventura Hassler, edifício novo na esquina da RI 6 Boquerón com a calle Dr. Hassler, no bairro Herrera, na divisa com Villa Morra.
+
+    **Área**
+
+    - 87,5 m² privativos, incluindo uma sacada de 14,30 m² com churrasqueira e vista aberta sobre a cidade
+    - **2 vagas de garagem cobertas** (térreo)
+
+    **Ambientes e equipamentos**
+
+    - Ampla sala de estar e jantar, iluminada, com saída para a sacada
+    - Cozinha equipada: forno elétrico, cooktop, coifa, bancada de granito e cuba dupla
+    - Área de serviço independente
+    - 2 quartos com armários embutidos
+    - 2 banheiros com box de vidro
+    - Ar-condicionado split na sala e nos quartos
+    - Pisos de porcelanato
+
+    **Edifício**
+
+    - Piscina, solário e terraço na cobertura
+    - Espaço gourmet climatizado com churrasqueira e churrasqueira ao ar livre
+    - Academia
+    - 2 elevadores, gerador e circuito fechado de câmeras
+
+    Aluguel sem móveis.
+
+    **Aluguel: Gs. 6.500.000 por mês, condomínio (expensas) e IVA incluídos.** Fale conosco para agendar uma visita.
 fecha: 2026-10-27T10:00:00
 ---
 

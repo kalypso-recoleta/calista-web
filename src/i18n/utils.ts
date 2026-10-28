@@ -1,6 +1,6 @@
 import { ui } from './ui';
 
-export const LOCALES = ['es', 'fr', 'en'] as const;
+export const LOCALES = ['es', 'fr', 'en', 'pt'] as const;
 export type Lang = (typeof LOCALES)[number];
 export const DEFAULT_LANG: Lang = 'es';
 
@@ -8,12 +8,13 @@ export const LANG_LABEL: Record<Lang, string> = {
   es: 'ES',
   fr: 'FR',
   en: 'EN',
+  pt: 'PT',
 };
 
 /** Détecte la langue à partir de l'URL (/fr/…, /en/…, sinon es). */
 export function getLangFromUrl(url: URL): Lang {
   const seg = url.pathname.split('/')[1];
-  if (seg === 'fr' || seg === 'en') return seg;
+  if (seg === 'fr' || seg === 'en' || seg === 'pt') return seg;
   return 'es';
 }
 
@@ -36,7 +37,7 @@ export function localizePath(path: string, lang: Lang): string {
 /** Enlève le préfixe de langue d'un pathname pour retrouver le chemin "es". */
 export function stripLocale(pathname: string): string {
   const parts = pathname.split('/');
-  if (parts[1] === 'fr' || parts[1] === 'en') {
+  if (parts[1] === 'fr' || parts[1] === 'en' || parts[1] === 'pt') {
     parts.splice(1, 1);
     const p = parts.join('/');
     return p === '' ? '/' : p;
