@@ -1518,11 +1518,11 @@ export const ui: Record<Lang, Record<string, string>> = {
     'home.hero_eyebrow': 'Imobiliária em Assunção',
     'home.hero_title': 'Encontre o seu lugar, com quem conhece o terreno.',
     'home.hero_lead':
-      '11 anos de experiência no mercado imobiliário paraguaio, acompanhando famílias e investidores em Assunção e região. Orientação honesta, critério real e zero pressão. Atendemos em espanhol, francês e inglês.',
+      '11 anos de experiência no mercado imobiliário paraguaio, acompanhando famílias e investidores em Assunção e região. Orientação honesta, critério real e zero pressão. Atendemos em português, espanhol, francês e inglês.',
     'home.ver_propiedades': 'Ver imóveis',
     'seo.home_title': 'Imobiliária em Assunção — Compra, venda e aluguel',
     'seo.home_desc':
-      'Imobiliária em Assunção com 11 anos de experiência: compra, venda, aluguel e administração de imóveis no Paraguai. Atendimento em espanhol, francês e inglês.',
+      'Imobiliária em Assunção há 11 anos: compra, venda, aluguel e administração de imóveis. Atendimento em português, espanhol, francês e inglês.',
     'home.hablar_wa': 'Falar pelo WhatsApp',
     'home.cat_comprar': 'Comprar',
     'home.cat_comprar_d': 'Casas e apartamentos à venda',
