@@ -1,6 +1,6 @@
 ---
 titulo: ALQUILER – Monoambiente amoblado y equipado, 6.º piso con balcón y vista abierta – Edificio Pampidos
-en_linea: true
+en_linea: false
 operacion: temporal
 tipo: departamento
 estado: disponible
