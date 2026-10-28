@@ -264,6 +264,135 @@ en:
 
 
     _This guide is for information purposes only. It does not constitute financial advice or a recommendation of any particular institution. Rates and conditions may change and are subject to credit assessment: confirm them with each lender before signing._
+pt:
+  titulo: 'Como financiar a compra da sua moradia no Paraguai'
+  descripcion: 'Não existe «o melhor banco» para um financiamento habitacional no Paraguai: a melhor oferta depende da sua renda, da moeda em que você recebe, do imóvel e de se é a sua primeira moradia.'
+  cuerpo: |-
+    Por isso, em vez de um ranking, explicamos as principais opções de financiamento, o que comparar entre as instituições e quais documentos preparar.
+
+    As condições citadas provêm de páginas oficiais consultadas em outubro de 2026 e podem mudar. Confirme sempre a oferta vigente com cada instituição.
+
+    ## As principais opções de financiamento
+
+    Uma das principais vias de financiamento habitacional são os créditos com recursos da **Agencia Financiera de Desarrollo (AFD)** (agência pública de fomento), canalizados por bancos, financeiras e cooperativas. Também existem empréstimos com recursos próprios das instituições.
+
+    | Programa ou modalidade | Para quem | Taxa | Prazo e valor |
+    | --- | --- | --- | --- |
+    | **Che Róga Porã** | Primeira moradia, com renda familiar entre 1 e 9 salários mínimos e sujeita aos requisitos do programa | O site oficial publica 6,5 % para renda de 1 a 6 salários mínimos e 9,9 % para mais de 6 até 9 | Prazos de até 30 anos segundo a oferta do Banco Familiar. Os valores dependem da localização e das condições do programa |
+    | **Mi Casa AFD** | Assalariados, profissionais autônomos, comerciantes e trabalhadores por conta própria que se qualifiquem para o crédito | Taxa AFD mais a margem da instituição financeira | Até 20 anos com hipoteca ou 30 anos com garantia fiduciária. Financiamento de até Gs. 1.500 milhões com essas garantias |
+    | **Recursos próprios da instituição** | Clientes que cumpram seus requisitos de avaliação de crédito | Definida por cada instituição | Valores, prazos e garantias segundo a oferta do banco ou financeira |
+
+    ## Che Róga Porã: para a primeira moradia
+
+    [Che Róga Porã](https://www.cherogapora.gov.py/) é um programa do MUVH (Ministério de Urbanismo, Vivenda e Hábitat) com apoio da AFD. É voltado à primeira moradia e estabelece limites de renda, financiamento e valor do imóvel.
+
+    O site oficial publica valores diferenciados para **Assunção, Central e os distritos de Nueva Asunción, Benjamín Aceval e Villa Hayes, em Presidente Hayes**:
+
+    - **Financiamento máximo:** Gs. 837.100.000.
+    - **Valor máximo do imóvel:** Gs. 1.156.720.000.
+
+    Para outras localidades, os limites publicados variam conforme a faixa de renda. Antes de escolher um imóvel, verifique quais condições correspondem à sua localização e ao seu grupo familiar.
+
+    O programa também contempla imóveis na planta e novos de incorporadoras registradas, com projetos avaliados e aprovados pelo MUVH. Você pode consultar os [projetos aprovados](https://www.cherogapora.gov.py/seleccionar-proyecto).
+
+    Além disso, permite solicitar à instituição financeira que a primeira parcela seja paga quando você se mudar. Essa possibilidade deve ser confirmada para a operação concreta.
+
+    ## Mi Casa AFD: uma alternativa mais ampla
+
+    [Mi Casa AFD](https://www.afd.gov.py/producto/mi-casa) permite financiar a compra de imóveis prontos, em fase de conclusão ou em pré-venda, além de construção, reforma, ampliação e acabamento.
+
+    Entre suas condições publicadas:
+
+    - Pode financiar **até 100 %**, sujeito à avaliação e aprovação do crédito.
+    - A parcela não pode superar **40 % da renda familiar total**.
+    - O prazo pode chegar a **20 anos com garantia hipotecária** ou **30 anos com garantia fiduciária**.
+    - A moeda do crédito é definida conforme a renda do solicitante: guaranis e/ou dólares.
+    - São admitidos pagamentos extraordinários de capital.
+    - A taxa final resulta da soma da **taxa AFD e da margem da instituição financeira**.
+
+    A solicitação é feita junto a uma instituição intermediária, não diretamente à AFD. Consulte também as [taxas publicadas pela AFD](https://www.afd.gov.py/tasas-de-interes) e peça ao banco a taxa final aplicável ao seu caso.
+
+    ## Recursos próprios do banco
+
+    Os empréstimos com recursos próprios têm condições definidas por cada instituição. Podem ser uma alternativa quando o imóvel ou o solicitante não se enquadram nos programas anteriores.
+
+    Como referência, o [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda) publica taxas de **12 % até seis anos com garantia fiduciária** e de **18 % até cinco anos sem essa garantia** para essa modalidade.
+
+    São condições de uma instituição específica, não uma regra geral do mercado. Compare sempre a parcela total, as despesas e o prazo.
+
+    ## É possível financiar um apartamento ainda em construção?
+
+    Em determinadas operações, uma instituição pode financiar um apartamento antes que ele tenha sua cuenta corriente catastral (inscrição cadastral) individual, por meio de um contrato entre o banco, a incorporadora e o comprador.
+
+    **Na El Solar realizamos uma operação desse tipo em 2025 com um banco local.** O banco desembolsou 100 % do preço e a incorporadora se comprometeu a obter a cuenta catastral e transferir o imóvel a um fideicomiso de garantía (garantia fiduciária) em um prazo de 18 meses, prorrogável por seis meses.
+
+    Nessa operação concreta, o contrato estabelecia:
+
+    - Antes da escritura, o respaldo contratual era feito por meio do boleto de compraventa (compromisso de compra e venda).
+    - Se a cuenta catastral não fosse obtida dentro do prazo, o banco podia exigir da incorporadora que quitasse a dívida ou cedesse o boleto, segundo as condições pactuadas.
+    - Se o comprador não formalizasse a garantia ou descumprisse determinadas obrigações tributárias, podia ser aplicada a taxa prevista para um empréstimo sem garantia real.
+    - Com recursos AFD, a taxa podia ser ajustada segundo as condições previstas no contrato.
+
+    Essas cláusulas correspondem àquela operação. **Nem todos os bancos oferecem o mesmo mecanismo nem as mesmas condições.** Se você comprar na planta, peça que lhe expliquem as garantias, os prazos e as consequências de um atraso antes de assinar.
+
+    ## O que comparar entre bancos
+
+    Peça uma simulação por escrito com **o mesmo valor, prazo e moeda** em cada instituição. Compare:
+
+    - **Taxa e forma de reajuste:** fixa ou variável, quando pode mudar e com qual referência.
+    - **Parcela total:** capital, juros, IVA e seguros aplicáveis.
+    - **Prazo e garantia:** hipoteca, fideicomiso ou outra modalidade.
+    - **Moeda:** endividar-se em dólares quando você recebe em guaranis o expõe às variações da taxa de câmbio.
+    - **Despesas iniciais:** avaliação, escribanía (cartório), registro, constituição da garantia e comissões.
+    - **Requisitos próprios:** idade, tempo de emprego e renda exigidos.
+    - **Pagamentos extraordinários e quitação antecipada:** procedimento, custos e efeito sobre o prazo ou a parcela.
+    - **Custo total do crédito:** quanto você acabaria pagando nas condições da simulação.
+
+    Os requisitos de uma instituição podem ser mais rígidos que os do programa. Por exemplo, o Che Róga Porã publica idades de **18 a 75 anos**, enquanto o Banco Familiar indica **25 a 60 anos** e dois anos de tempo de emprego.
+
+    ## Documentos que costumam ser pedidos
+
+    Como referência, o Banco Familiar publica os seguintes requisitos documentais; outras instituições podem solicitar informações adicionais:
+
+    - **Assalariados:** declaração de trabalho e os últimos seis holerites.
+    - **Autônomos e comerciantes:** os últimos seis pagamentos de IVA, conforme a modalidade.
+    - Extratos de conta poupança ou conta corrente dos últimos seis meses.
+    - **Para comprar:** oferta de venda assinada pelo vendedor e cópia da sua cédula (documento de identidade).
+    - **Para construir ou reformar:** orçamento e plantas assinados por um profissional.
+    - Cópia do título do imóvel.
+    - Comprovante do impuesto inmobiliario (imposto predial) do ano em curso.
+    - Avaliação realizada por um profissional autorizado pela instituição.
+
+    Antes de encomendar uma avaliação, confirme se o banco exige o uso da sua própria lista de avaliadores.
+
+    ## Onde consultar
+
+    A AFD publica as [instituições habilitadas para o Mi Casa](https://www.afd.gov.py/producto/mi-casa). A lista consultada inclui bancos como Atlas, BASA, Bancop, BNF, Continental, Familiar, GNB, Interfisa, Itaú, Solar, Sudameris, ueno e Zeta, além de financeiras e cooperativas.
+
+    A página mostra uma data de atualização de 1º de agosto de 2024, por isso convém confirmar quais instituições estão operando atualmente o produto.
+
+    | Instituição | Onde consultar |
+    | --- | --- |
+    | [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda) | Condições publicadas, requisitos e simulador |
+    | [Itaú](https://www.micasa.itau.com.py/) | Simulador e consulta das opções disponíveis |
+    | [Sudameris](https://www.sudameris.com.py/prestamos-personas) | Informações sobre empréstimos e consulta de condições |
+
+    O [Banco Central del Paraguay](https://www.bcp.gov.py/web/institucional/tasas-de-interes) publica estatísticas de taxas de juros. Servem como referência geral; para decidir, você precisa da oferta específica que cada instituição lhe fizer.
+
+    ## Como a CALISTA acompanha você
+
+    Na CALISTA ajudamos você a encontrar um imóvel compatível com o seu financiamento e a preparar a documentação da compra.
+
+    Se você precisar de uma avaliação para solicitar o crédito, verificamos primeiro os requisitos do banco e se ele exige um avaliador autorizado pela instituição.
+
+    **A aprovação e as condições do empréstimo dependem da instituição financeira.** Nosso trabalho é ajudar você a coordenar a compra e a entender qual documentação o imóvel precisa.
+
+    Escreva para nós e vemos isso juntos.
+
+
+
+
+    _Este guia é informativo. Não constitui assessoria financeira nem recomendação de uma instituição em particular. As taxas e condições podem mudar e estão sujeitas à análise de crédito: verifique-as com cada instituição antes de assinar._
 ---
 
 Por eso, en lugar de un ranking, te explicamos las principales opciones de financiación, qué comparar entre entidades y qué documentos preparar.

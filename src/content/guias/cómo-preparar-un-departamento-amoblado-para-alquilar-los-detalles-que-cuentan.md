@@ -202,6 +202,104 @@ en:
     The aim is for everyone to find a place where they enjoy staying. Good reviews are a result we expect from this work, but the care starts long before the guest leaves their opinion.
 
     Do you have a furnished apartment to rent out in Asunción? At **CALISTA**, we can help you prepare it, let it on a long-term or [short-term](/en/alquiler-temporal) basis, and [manage it](/en/administracion).
+pt:
+  titulo: 'Como preparar um apartamento mobiliado para alugar'
+  descripcion: 'Móveis, roupa de cama, equipamentos, inventário e limpeza: como preparar um apartamento mobiliado para alugar e manter seu padrão.'
+  cuerpo: |-
+    Não é preciso que todos os móveis sejam novos nem que a decoração seja cara. Em nossa experiência, já recuperamos móveis e mandamos restaurá-los antes de instalá-los. O importante é que estejam em bom estado e formem um conjunto cuidado e coerente.
+
+    Esse cuidado também deve ser mantido entre uma ocupação e a seguinte. Os lençóis, o colchão, a base da cama, as cadeiras, a louça e o interior dos armários merecem tanta atenção quanto os pisos e os banheiros. Um apartamento pode parecer atraente nas fotos e decepcionar quando visto de perto.
+
+    Prepará-lo bem é encontrar um equilíbrio: equipá-lo o suficiente para viver com conforto, deixar espaço para os pertences do inquilino e manter uma limpeza rigorosa.
+
+    ## Dar uma identidade sem sobrecarregar
+
+    Um apartamento mobiliado deve transmitir uma sensação de conjunto. Os móveis, as cores, as cortinas e a iluminação podem ser simples, mas convém escolhê-los com uma mesma intenção.
+
+    Recuperar móveis pode ser uma boa opção. No entanto, reunir peças que sobraram em casas diferentes, sem verificar seu estado nem como combinam, pode dar uma impressão de improviso.
+
+    Antes de incluir um móvel, convém se perguntar se ele é útil, se é confortável e se se integra ao espaço. Se precisar de restauração, limpeza profunda ou reparo, esse trabalho deve ser feito antes de oferecer o apartamento.
+
+    Um ambiente cuidado pode ter personalidade sem estar cheio de objetos. Também deve deixar espaço para que quem chega possa torná-lo seu durante a estadia.
+
+    ## Equipar o suficiente, sem encher por encher
+
+    A quantidade de móveis e utensílios deve corresponder à capacidade do apartamento e ao uso previsto.
+
+    Para uma estadia curta, o ocupante precisa encontrar o essencial desde a chegada. Para morar vários meses, também vai precisar de espaço para guardar roupas, alimentos e pertences. Se você ainda não decidiu qual modalidade lhe convém, comparamos as duas em [Aluguel tradicional ou por temporada em Assunção: o que convém a você?](/pt/blog/alquilar-tu-departamento-tradicional-o-temporal).
+
+    Em ambos os casos, convém verificar aspectos práticos:
+
+    - Assentos e louça suficientes para a quantidade de ocupantes prevista.
+    - Utensílios de cozinha em bom estado e adequados para preparar refeições.
+    - Espaço disponível nos armários.
+    - Cabides, iluminação e superfícies de apoio úteis.
+    - Eletrodomésticos limpos e com o funcionamento verificado.
+
+    Não se trata de acumular. Um armário cheio de roupa de cama ou uma cozinha saturada de utensílios deixa pouco espaço para o inquilino. Cada item deveria ter uma função.
+
+    ## Registrar tudo em um inventário com fotos
+
+    Depois de equipar o apartamento, convém registrar o que ele contém: móveis, eletrodomésticos, louça e roupa de cama, com seu estado e fotos.
+
+    Seja um aluguel de vários meses ou uma estadia curta, o ideal é que ambas as partes assinem o inventário na entrada e o revisem na saída. Assim se sabe o que faltou ou foi danificado durante a ocupação, e as discussões diminuem.
+
+    O inventário também serve de referência para a preparação: o que consta nele é o que o próximo ocupante deve encontrar, no mesmo estado.
+
+    ## Prestar atenção especial à cama e à roupa de cama
+
+    A preparação da cama não termina ao colocar lençóis limpos.
+
+    É preciso verificar o colchão, os travesseiros e a base da cama ou box. Seu estado de limpeza, conservação e conforto faz parte do que se oferece ao alugar.
+
+    As proteções adequadas e laváveis ajudam a conservar a cama, mas também precisam ser verificadas e limpas. Cobrir uma mancha não resolve o problema.
+
+    Os lençóis e as toalhas devem estar em bom estado, sem manchas, odores nem desgaste excessivo. Não precisam ser de luxo: devem ser agradáveis e bem cuidados.
+
+    ## Limpar também o que não aparece nas fotos
+
+    Em nossa experiência, a limpeza e a manutenção são aspectos que alguns proprietários subestimam ao preparar um apartamento.
+
+    Um piso limpo não compensa cadeiras manchadas, um box sujo ou restos de comida dentro de uma gaveta. Quem aluga vai usar o imóvel, abrir os móveis e tirar a louça.
+
+    Entre uma ocupação e a seguinte, a verificação deve incluir:
+
+    - Pratos, copos, talheres e utensílios, mesmo que estejam guardados.
+    - Interior de armários, armários de cozinha e gavetas.
+    - Geladeira, forno, micro-ondas e outros equipamentos disponíveis.
+    - Cadeiras, poltronas, almofadas e cortinas, conforme o estado.
+    - Colchão, base da cama, travesseiros e suas proteções.
+    - Banheiros, torneiras e ralos.
+
+    Não convém esperar que o próximo ocupante descubra o que ficou pendente.
+
+    ## Escolher a pessoa da limpeza e definir o trabalho
+
+    Encontrar uma pessoa de confiança é fundamental. Também é explicar com precisão o que se espera da preparação entre duas ocupações.
+
+    «Limpar o apartamento» pode ser interpretado de muitas maneiras. Uma lista de tarefas permite deixar claro que o trabalho inclui verificar a louça, limpar o interior dos móveis e conferir o estado da roupa de cama.
+
+    Há tarefas que devem ser feitas a cada troca de ocupante e outras que exigem uma programação periódica ou uma intervenção específica. O importante é que nenhuma seja esquecida.
+
+    Além disso, convém fazer uma checagem final antes de entregar as chaves: conferir a limpeza, os odores, a apresentação da cama e o funcionamento dos equipamentos.
+
+    ## Manter o padrão de cuidado ao longo do tempo
+
+    Preparar corretamente o apartamento pela primeira vez é só o começo.
+
+    Com o uso surgem manchas, peças soltas, utensílios danificados e tecidos desgastados. Algumas coisas se limpam, outras se consertam e outras precisam ser substituídas.
+
+    Revisá-las regularmente permite preservar a qualidade da hospedagem. O próximo inquilino deveria encontrar o mesmo nível de atenção que o primeiro.
+
+    ## Nosso olhar na CALISTA
+
+    Para nós, um apartamento mobiliado deve ser pensado para receber alguém e mantido com esse mesmo critério.
+
+    Isso significa escolher móveis adequados, restaurar o que pode ser recuperado, equipar sem saturar e cuidar da limpeza até nos lugares menos visíveis.
+
+    A ideia é que cada pessoa encontre uma hospedagem onde dê gosto ficar. As boas avaliações são um resultado que esperamos desse trabalho, mas o cuidado começa muito antes de o hóspede deixar sua opinião.
+
+    Você tem um apartamento mobiliado para alugar em Assunção? Na **CALISTA** podemos acompanhar você na preparação, na colocação para aluguel, tradicional ou [por temporada](/pt/alquiler-temporal), e na [administração](/pt/administracion).
 ---
 
 No hace falta que todos los muebles sean nuevos ni que la decoración sea costosa. En nuestra experiencia, hemos recuperado muebles y los hemos hecho restaurar antes de instalarlos. Lo importante es que estén en buen estado y formen un conjunto cuidado y coherente.

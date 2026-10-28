@@ -90,6 +90,48 @@ en:
     ***
 
     _This article is for information only and does not constitute financial advice._
+pt:
+  titulo: 'Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?'
+  descripcion: 'Se você tem um apartamento em Assunção, pode alugá-lo com um contrato tradicional ou como aluguel de temporada mobiliado. As duas opções podem funcionar bem, mas exigem uma gestão diferente.'
+  cuerpo: |-
+    A escolha depende do seu apartamento, dos seus objetivos e da disponibilidade que você quer manter para usá-lo.
+
+    ## O aluguel tradicional
+
+    Os contratos de aluguel são regidos principalmente pelo Código Civil paraguaio. Alguns pontos que vale a pena conhecer:
+
+    - **Prazo do contrato:** para o aluguel habitual de um apartamento, o prazo máximo é de cinco anos (art. 807).
+    - **Falta de pagamento:** dois aluguéis vencidos e não pagos permitem ao proprietário pedir judicialmente a rescisão do contrato (art. 837). A rescisão não é automática.
+    - **Estado do imóvel:** se o estado não foi documentado na entrega das chaves, presume-se que o inquilino o recebeu em bom estado, salvo prova em contrário (art. 840). Um inventário assinado, acompanhado de fotografias, ajuda a evitar divergências ao final do aluguel.
+    - **Sublocação:** se o contrato não a proíbe, o inquilino pode sublocar o imóvel (art. 830). Por isso, convém deixar expressamente estabelecido se ela é permitida ou não.
+    - **IVA:** a locação destinada exclusivamente à moradia é tributada em 5 %; para outras finalidades, é preciso verificar o tratamento aplicável. A alíquota geral é de 10 % (Ley 6380/19, art. 90).
+
+    ## O aluguel de temporada mobiliado
+
+    Alugar por semanas ou por meses pode gerar uma receita bruta maior, mas exige mais gestão: reservas, atendimento aos hóspedes, check-ins e check-outs, limpeza e lavagem da roupa de cama entre cada estadia.
+
+    Para comparar as duas opções, convém olhar **quanto sobra para você depois das despesas**, considerando também os períodos sem ocupação, os serviços e a manutenção.
+
+    Antes de começar, verifique dois aspectos:
+
+    - **Requisitos turísticos:** se você oferece o apartamento como hospedagem turística, consulte a SENATUR (Secretaría Nacional de Turismo) sobre a categoria aplicável e os requisitos de inscrição e habilitação no REGISTUR.
+    - **Regulamento do edifício:** revise o reglamento de copropiedad (convenção de condomínio) e as restrições sobre o uso do apartamento. Não presuma que o aluguel de temporada é permitido.
+
+    ## Quanto custa a administração com a CALISTA?
+
+    **Aluguel tradicional:** cobramos **5 % dos aluguéis efetivamente recebidos, mais IVA**. A colocação para aluguel custa o equivalente a um mês de aluguel, dividido em 50 % a cargo do proprietário e 50 % a cargo do inquilino, e inclui o inventário de entrada.
+
+    **Aluguel de temporada mobiliado:** cobramos **20 % das receitas de aluguel, IVA incluído**. Esse percentual inclui a limpeza e a lavagem da roupa de cama entre cada estadia.
+
+    ## Vamos ver qual opção se adapta ao seu apartamento
+
+    Não sabe qual vale mais a pena? Conte para nós onde fica o seu apartamento, como está equipado e o que você busca com o aluguel. Na **CALISTA Inmobiliaria**, ajudamos você a comparar as opções e cuidamos da gestão.
+
+    Quer saber quanto vale hoje o seu imóvel, em guaranis e em dólares? Peça uma **avaliação** à nossa equipe.
+
+    ***
+
+    _Este artigo é informativo e não constitui consultoria financeira._
 ---
 
 La elección depende de tu departamento, de tus objetivos y de la disponibilidad que querés conservar para usarlo.

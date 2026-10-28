@@ -138,6 +138,72 @@ en:
 
 
     _Reference: Marcelo Wagner, “La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento,” Forbes Paraguay, October 3, 2026. This article presents CALISTA Inmobiliaria’s perspective and recommendations._
+pt:
+  titulo: 'O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário'
+  descripcion: 'Conseguir um crédito e poder comprar um imóvel são duas etapas distintas. Entender essa diferença permite preparar melhor um projeto de compra.'
+  cuerpo: |-
+    _Por Hélène Montourcy — CALISTA Inmobiliaria_
+
+    A análise de Marcelo Wagner publicada pela Forbes Paraguay em 3 de outubro de 2026 coloca em pauta uma dificuldade importante: o acesso ao crédito não garante que uma família consiga reunir a diferença entre o empréstimo e o preço do apartamento. Seu estudo trata da primeira moradia nova na região metropolitana de Assunção.
+
+    Na CALISTA Inmobiliaria, acreditamos que esse debate merece atenção. Também acreditamos que ele deve ajudar o comprador a fazer as perguntas certas e a avaliar sua situação com clareza.
+
+    ## O orçamento começa antes da busca
+
+    Antes de visitar apartamentos, convém determinar quanto dinheiro pode ser destinado à compra sem comprometer o equilíbrio econômico da família.
+
+    Esse cálculo exige olhar além de uma parcela anunciada: renda comprovável, obrigações existentes, poupança disponível e despesas da operação. Também deve deixar margem para imprevistos e para os custos de morar no imóvel.
+
+    **O valor que uma instituição está disposta a emprestar nem sempre coincide com o orçamento que uma família pode assumir com tranquilidade.**
+
+    ## A diferença entre o preço e o crédito
+
+    Uma confusão frequente é pensar que basta reunir a entrada mínima exigida pelo banco.
+
+    No entanto, se o empréstimo aprovado for menor que o saldo esperado, o comprador terá de aportar mais recursos próprios. Por isso, antes de reservar uma unidade, é fundamental conhecer o valor de financiamento ao qual realmente poderia ter acesso e as condições aplicáveis ao imóvel escolhido.
+
+    Uma simulação indicativa ajuda a começar. A análise da instituição financeira permite avançar com uma base mais concreta.
+
+    ## Ampliar a busca pode abrir opções
+
+    Um projeto de compra tem várias dimensões: localização, área, estado do imóvel, serviços e data de entrega.
+
+    Comparar um imóvel novo com um usado, ou explorar outras regiões, pode revelar alternativas que merecem ser consideradas. Mas um preço menor também deve ser avaliado junto com possíveis reformas, despesas de manutenção, transporte e tempo de deslocamento.
+
+    A pergunta útil é: **qual imóvel atende às minhas necessidades e cabe no meu orçamento total?**
+
+    ## Comprar na planta: organizar os pagamentos com cuidado
+
+    A compra na planta pode permitir distribuir parte dos pagamentos durante a construção. Para alguns compradores, esse cronograma facilita a organização da poupança.
+
+    No entanto, dividir os pagamentos não reduz por si só o esforço financeiro. É preciso verificar quanto se paga durante a obra, qual saldo resta na entrega e como ele será financiado.
+
+    Também convém revisar a documentação do projeto, as obrigações contratuais, os prazos e as consequências de um atraso. Se a compra depende de um crédito futuro, essa dependência deve ficar claramente identificada desde o início.
+
+    ## Para o investidor, a conta é diferente
+
+    Quem compra para alugar deve analisar o preço de aquisição junto com as receitas e despesas previsíveis do imóvel.
+
+    A avaliação deve contemplar períodos sem inquilino, manutenção, administração e outros custos a cargo do proprietário. Também exige verificar qual aluguel o mercado pode sustentar para essa unidade e essa localização.
+
+    **A necessidade de moradia não garante, por si só, a rentabilidade de qualquer apartamento.** Cada investimento merece sua própria conta.
+
+    ## Nossa posição
+
+    O debate sobre o acesso à moradia é necessário. Para compradores, incorporadoras e instituições financeiras, ele levanta uma pergunta que merece respostas concretas: como aproximar a oferta da capacidade econômica de quem precisa morar?
+
+    Na CALISTA, nosso trabalho consiste em acompanhar o cliente para definir seu orçamento, comparar imóveis e entender as condições de cada operação.
+
+    Comprar exige informação, preparação e uma escolha ajustada à realidade de cada pessoa. Esse é o ponto de partida para tomar uma decisão com confiança.
+
+    **Está pensando em comprar ou investir? Na CALISTA Inmobiliaria, ajudamos você a avaliar as opções de acordo com o seu orçamento e o seu objetivo.**
+
+    [www.calista.com.py](https://www.calista.com.py/)
+
+
+
+
+    _Fonte de referência: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», Forbes Paraguay, 3 de outubro de 2026. Este artigo apresenta a leitura e as recomendações da CALISTA Inmobiliaria._
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_

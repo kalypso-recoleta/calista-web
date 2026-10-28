@@ -92,6 +92,49 @@ en:
     At Kalypso Recoleta, you pay a 10% down payment, then the balance in 32 interest-free installments during construction. Delivery is scheduled for May 2029.
 
     Discover Kalypso Recoleta, the available units and payment options at kalypso.com.py.
+pt:
+  titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
+  descripcion: 'Preço, data de entrega, cláusulas proibidas, garantias: os pontos a verificar em um contrato de pré-venda no Paraguai.'
+  cuerpo: |-
+    Comprar na planta permite pagar em parcelas durante a obra e escolher sua unidade entre as primeiras. Em troca, você assina um contrato sobre algo que ainda não existe. Estes são os pontos que vale a pena verificar.
+
+    ## 1. Preço e data de entrega, por escrito
+
+    A venda de imóveis é protegida pela lei de defesa do consumidor (Ley 1334/98, art. 4). O contrato deve indicar o **preço com os impostos incluídos** e uma **data de entrega** (arts. 10 e 14).
+
+    ## 2. Cláusulas que a lei proíbe
+
+    Segundo o artigo 28 da Ley 1334/98, são nulas, entre outras, as cláusulas que permitem:
+
+    - reajustar o preço de forma unilateral;
+    - prorrogar ou rescindir o contrato de forma unilateral;
+    - impor uma arbitragem obrigatória ao comprador;
+    - isentar o vendedor de responsabilidade;
+    - considerar o silêncio do comprador como aceitação.
+
+    Mesmo que estejam assinadas, não têm valor.
+
+    ## 3. O que você já pagou está protegido
+
+    Quando o comprador já pagou **25 % do preço** em parcelas, o vendedor não pode mais resolver o contrato, diga o que disser uma cláusula (Código Civil, art. 782).
+
+    ## 4. A garantia de dez anos
+
+    O construtor, o diretor da obra e o projetista respondem durante **dez anos** pela ruína do edifício (Código Civil, art. 860). Essa responsabilidade não pode ser excluída por contrato.
+
+    ## 5. Do boleto à escritura
+
+    O boleto de compraventa (contrato de promessa de compra e venda) obriga a assinar a escritura, mas não transfere a propriedade (Código Civil, arts. 700 a 702). Pergunte quando e como a escritura da sua unidade será lavrada.
+
+    ## 6. O reglamento de copropiedad
+
+    O edifício deve ter um **reglamento de copropiedad** (convenção de condomínio) por escritura pública registrada, com o conteúdo mínimo fixado pelo Código Civil (art. 2147) e uma tabela de valores por unidade. Essa tabela define suas expensas (taxa de condomínio) e seu peso nas assembleias. Peça para lê-lo antes de assinar.
+
+    ## Nosso empreendimento: Kalypso Recoleta
+
+    No Kalypso Recoleta, paga-se 10 % de entrada e o saldo em 32 parcelas sem juros durante a obra, com entrega prevista para maio de 2029.
+
+    Conheça o Kalypso Recoleta, as unidades disponíveis e as formas de pagamento em kalypso.com.py.
 ---
 
 Comprar en pozo permite pagar en cuotas durante la obra y elegir tu unidad entre las primeras. A cambio, firmás un contrato sobre algo que todavía no existe. Estos son los puntos que conviene revisar.

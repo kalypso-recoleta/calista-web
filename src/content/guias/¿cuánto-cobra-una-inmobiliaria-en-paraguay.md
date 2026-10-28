@@ -234,6 +234,122 @@ en:
     Choosing a real estate agency also means understanding how it works and what it commits to doing. Compare **the total cost, included services and terms of engagement**, as well as the percentage.
 
     **Looking to sell, rent out or delegate the management of your property? Contact CALISTA Inmobiliaria for a tailored proposal, with clearly defined services and fees from the outset.**
+pt:
+  titulo: 'Quanto cobra uma imobiliária no Paraguai?'
+  descripcion: 'Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar.'
+  cuerpo: |-
+    _Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar._
+
+    Quanto custa vender ou alugar um imóvel com uma imobiliária? No Paraguai, as referências publicadas situam a comissão de venda em torno de **5 % a 5,5 % do preço**. Para a busca de um inquilino, a prática habitual é **um mês de aluguel, dividido em partes iguais entre proprietário e inquilino**.
+
+    Esses valores são referências de mercado, não uma tarifa legal única. Antes de contratar, convém deixar por escrito quanto será cobrado, quem paga, o que o serviço inclui e quando os honorários devem ser pagos.
+
+    ## As comissões em resumo
+
+    | Operação | Honorários de referência | Quem paga? |
+    | --- | --- | --- |
+    | Venda | Em torno de 5 % a 5,5 % do preço, negociável | Geralmente o vendedor |
+    | Busca de inquilino | Um mês de aluguel, uma única vez | Habitualmente 50 % o proprietário e 50 % o inquilino |
+    | Prorrogação ou renovação | Em geral, sem nova comissão de intermediação; algumas agências cobram pelo trâmite | Consultar as condições da agência |
+    | Administração do aluguel | Honorários independentes da busca de inquilino | O proprietário, conforme o contrato de administração |
+
+    Como referências publicadas, o ABC Color indica uma comissão de venda de 5,5 %, enquanto o TuLugar menciona 5 %. Para aluguéis, a Marilú Alsina & Asociados publica a divisão de um mês entre as duas partes e a ausência de comissão de gestão por renovação. Essas condições devem ser confirmadas com a agência escolhida.
+
+    ## Quanto se paga para vender um imóvel?
+
+    A comissão costuma ser calculada como uma porcentagem do preço de venda. O valor pode ser negociado conforme o imóvel, o escopo do serviço e as condições do mandato.
+
+    **Por exemplo:** para uma venda de **USD 150.000**, com uma comissão acordada de **5 %**, os honorários são de **USD 7.500**, antes do IVA (imposto sobre o valor agregado) se este tiver sido orçado à parte.
+
+    A comissão está sujeita ao IVA. Por isso, antes de comparar propostas, pergunte se a porcentagem anunciada **já o inclui ou se ele é acrescentado**.
+
+    Também convém esclarecer quando deve ser paga: não presuma que será necessariamente na assinatura da escritura (escritura pública). O acordo deve especificar qual fato gera a cobrança e qual é a data de pagamento.
+
+    ## Quanto se paga para conseguir um inquilino?
+
+    Para a busca de um inquilino, a prática habitual é uma comissão equivalente a **um mês de aluguel**, dividida da seguinte forma:
+
+    - **50 % por conta do proprietário.**
+    - **50 % por conta do inquilino.**
+
+    É paga uma única vez, na assinatura do contrato. Esse esquema consta, por exemplo, nas tarifas publicadas pela Marilú Alsina & Asociados.
+
+    Para um aluguel de **Gs. 3.500.000 mensais**, a comissão total seria de **Gs. 3.500.000** e cada parte pagaria **Gs. 1.750.000**, com o tratamento do IVA indicado no orçamento.
+
+    **A comissão, o aluguel antecipado e o depósito de garantia são conceitos diferentes.** Peça um detalhamento para saber quanto você precisa desembolsar na entrada e a que corresponde cada valor.
+
+    ## Cobra-se para prorrogar ou renovar o contrato?
+
+    **Em geral, não se cobra uma nova comissão de intermediação** quando o mesmo inquilino continua no imóvel por meio de uma prorrogação ou renovação.
+
+    No entanto, algumas agências aplicam honorários por esse trâmite. Por isso, convém perguntar desde o início:
+
+    **“Se o mesmo inquilino continuar, a prorrogação ou renovação tem algum custo?”**
+
+    Peça que a resposta conste nas condições do serviço. A política de uma agência não deve ser presumida em outra.
+
+    ## Conseguir um inquilino e administrar o aluguel são serviços diferentes
+
+    A comissão de intermediação corresponde ao trabalho para concretizar o aluguel: divulgar o imóvel, atender consultas, organizar visitas, avaliar candidatos e acompanhar a contratação, conforme o serviço acordado.
+
+    A **administração do aluguel** continua depois e pode incluir:
+
+    - Cobrança e acompanhamento dos aluguéis.
+    - Prestações de contas ao proprietário.
+    - Atendimento ao inquilino.
+    - Coordenação de reparos.
+    - Acompanhamento das obrigações do contrato.
+
+    Esses serviços têm honorários próprios. Se você quiser delegar a gestão do imóvel, peça uma proposta que distinga claramente **o custo de conseguir o inquilino do custo de administrar o aluguel**.
+
+    ## O que estabelece o Código Civil?
+
+    Os artigos 951 a 958 regulam o contrato de corretagem. Entre suas principais regras:
+
+    - O corretor tem direito a remuneração se o negócio for concluído graças à sua intervenção.
+    - Na falta de acordo, tarifas ou tabelas profissionais, o juiz determina o valor e sua divisão segundo os usos e, na falta destes, a equidade.
+    - Uma remuneração excessiva pode ser reduzida judicialmente a pedido do obrigado.
+    - As despesas do corretor não são reembolsáveis sem acordo expresso. Se tiverem sido acordadas, podem ser devidas mesmo que a operação não se concretize.
+    - O corretor deve comunicar as circunstâncias conhecidas que possam influir na avaliação e na segurança do negócio.
+
+    ### O que acontece se duas imobiliárias intervierem?
+
+    O artigo 955 reconhece a cada corretor interveniente uma parte da remuneração. Convém esclarecer a comissão total e como ela é distribuída, além de qualquer serviço contratado separadamente.
+
+    **A intervenção de outra agência não deveria se transformar em uma cobrança inesperada para o cliente.**
+
+    ## O que o serviço deveria incluir?
+
+    A porcentagem, por si só, não permite comparar duas propostas. Peça que a imobiliária detalhe o trabalho que realizará:
+
+    | Etapa | Serviço que convém esclarecer |
+    | --- | --- |
+    | Preparação | Análise do preço e reunião de documentos |
+    | Divulgação | Fotografias, anúncios e canais de divulgação |
+    | Visitas | Atendimento de consultas e coordenação dos interessados |
+    | Negociação | Apresentação de ofertas e acordo de condições |
+    | Documentação | Preparação e coordenação com escribano (tabelião) ou advogado, conforme o caso |
+    | Fechamento | Acompanhamento até a assinatura e a entrega acordada |
+
+    Esclarecer quem realiza cada tarefa evita confusões. O acompanhamento da imobiliária deve ser coordenado com as verificações jurídicas, notariais e técnicas que a operação exigir.
+
+    ## Antes de contratar, faça estas sete perguntas
+
+    1. **Qual é a comissão e sobre qual valor ela é calculada?**
+    2. **Quem a paga e em que proporção?**
+    3. **O IVA está incluído ou é acrescentado?**
+    4. **Quais serviços ela cobre e quais despesas são cobradas à parte?**
+    5. **Quando surge o direito à cobrança e quando ela deve ser paga?**
+    6. **A prorrogação ou renovação do aluguel tem algum custo?**
+    7. **Quais condições se aplicam se houver exclusividade ou se outra agência intervier?**
+
+    As respostas deveriam constar na autorização ou no contrato de serviços, antes do início do trabalho.
+
+    ## Nossa recomendação
+
+    Escolher uma imobiliária também implica entender como ela trabalha e quais compromissos assume. Compare **o custo total, os serviços incluídos e as condições do mandato**, além da porcentagem.
+
+    **Você quer vender, alugar ou delegar a administração do seu imóvel? Entre em contato com a CALISTA Inmobiliaria para receber uma proposta adaptada ao seu imóvel, com os serviços e honorários detalhados desde o início.**
 ---
 
 _Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar._

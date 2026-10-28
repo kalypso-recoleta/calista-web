@@ -218,6 +218,112 @@ en:
     - **Ministry of Labour, Employment and Social Security, July 10, 2026:** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371) (in Spanish).
 
     _CALISTA’s observations reflect its professional experience and do not constitute a statistical market index. The example is illustrative. The scenarios described are risks to assess, not forecasts of a general fall in prices or guarantees of returns._
+pt:
+  titulo: 'Assunção cresce na vertical: estamos construindo o que as pessoas precisam?'
+  descripcion: 'Novos edifícios, aluguéis e condomínio incluído: por que vender um apartamento não garante alugá-lo pelo preço que o investidor espera.'
+  cuerpo: |-
+    **Os edifícios são vendidos a compradores e investidores. Mas seu funcionamento a longo prazo depende também de quem vai morar neles: suas necessidades, sua renda e o orçamento que estão dispostos a destinar à moradia.**
+
+    Em uma publicação do [ABC Color de 19 de outubro de 2026](https://www.abc.com.py/edicion-impresa/suplementos/comercial/dia-de-la-construccion-2026/2026/10/19/viviendas-que-respondan-a-la-demanda-de-las-familias/), Raúl Constantino, presidente da Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), aponta um desafio central: fazer com que a capacidade de construir se encontre com a capacidade de compra das famílias. O artigo também observa que parte dos projetos dos últimos anos foi orientada a compradores investidores, enquanto persistem necessidades habitacionais não atendidas.
+
+    Na CALISTA, acreditamos que essa reflexão também deve se estender ao aluguel. O fato de um apartamento encontrar comprador não demonstra, por si só, que encontrará um inquilino pelo preço previsto nem que gerará a renda esperada pelo seu proprietário.
+
+    ## Os aluguéis de hoje e a oferta de amanhã
+
+    Em nossa atividade, observamos aumentos nos aluguéis pedidos de alguns apartamentos de um quarto. É uma observação dos imóveis e das operações que acompanhamos, não uma medição de todo o mercado de Assunção.
+
+    Ao mesmo tempo, os projetos atualmente em construção irão incorporando novas unidades. A questão é quantas serão oferecidas para aluguel, a que preços e que demanda encontrarão quando estiverem disponíveis.
+
+    As duas situações podem coexistir: aluguéis que sobem em determinados segmentos hoje e uma concorrência maior entre proprietários mais adiante. O efeito dependerá da localização, do tipo de imóvel, da quantidade de unidades entregues e da sua relação com as necessidades dos ocupantes. Nem todos os bairros nem todos os edifícios evoluirão da mesma maneira.
+
+    ## Precisar de moradia não significa poder pagar qualquer aluguel
+
+    Existe uma diferença entre precisar de um lar, poder pagar um apartamento específico e estar disposto a destinar esse valor todo mês.
+
+    O salário mínimo para atividades diversas não especificadas foi fixado em **Gs. 3.044.000 mensais a partir de julho de 2026**, segundo o [Ministerio de Trabajo, Empleo y Seguridad Social](https://www.mtess.gov.py/?p=36371). É inferior aos Gs. 4.000.000 do exemplo que apresentamos mais abaixo para um apartamento de um quarto. Essa referência ajuda a dimensionar a distância entre determinadas rendas e o custo de ocupar uma moradia. Não representa, porém, a renda de todos os trabalhadores nem o orçamento de todos os lares.
+
+    Também há pessoas e casais com renda maior que poderiam ter acesso a um aluguel mais alto, mas preferem gastar menos, poupar para comprar ou destinar seus recursos a outras prioridades. A capacidade de pagamento não equivale automaticamente à disposição de pagar.
+
+    Para avaliar um investimento, não basta identificar pessoas que poderiam pagar o aluguel. É preciso se perguntar quantas escolheriam esse apartamento, por esse preço e diante das alternativas disponíveis.
+
+    ## Mais amenities, mais valor para quem?
+
+    Piscina, academia, terraços, espaços de trabalho e salões de festas podem trazer conforto e ser decisivos para certos ocupantes.
+
+    Mas exigem limpeza, manutenção, energia, reparos e, eventualmente, renovação de equipamentos. A questão é se o uso e o valor que o futuro morador lhes dará justificam seu custo.
+
+    Não se trata de rejeitar os espaços comuns, mas de avaliar sua utilidade, sua dimensão e seu funcionamento dentro de cada projeto. Um equipamento pode ajudar a vender um apartamento sem gerar necessariamente um aumento equivalente no aluguel que alguém aceitará pagar.
+
+    Essa diferença entre a atratividade comercial e a demanda dos futuros ocupantes também aparece em nossa análise sobre as [branded residences em Assunção e o mercado para esse nível de luxo](/pt/blog/branded-residences-en-asuncion-hay-mercado-para-este-nivel-de-lujo).
+
+    Acreditamos que também há espaço para propostas que priorizem uma boa distribuição, qualidade construtiva, conforto e custos de funcionamento contidos. Uma moradia bem pensada deve resolver a vida cotidiana dos seus ocupantes.
+
+    ## Um aluguel com condomínio incluído: quanto sobra para o proprietário?
+
+    Nas operações que acompanhamos, é comum oferecer um aluguel com as expensas (condomínio) incluídas. O interessado avalia um valor mensal e o compara com outras opções.
+
+    Para o proprietário, esse valor deve ser decomposto: uma parte é destinada às expensas e o restante constitui sua renda antes de descontar as demais despesas e impostos aplicáveis.
+
+    Vejamos um exemplo ilustrativo, que não representa uma média do mercado: um apartamento de um quarto é alugado por **Gs. 4.000.000 mensais, com expensas incluídas**.
+
+    | Conceito | Com expensas de Gs. 500.000 | Com expensas de Gs. 900.000 |
+    | --- | ---: | ---: |
+    | Aluguel mensal cobrado | Gs. 4.000.000 | Gs. 4.000.000 |
+    | Expensas por conta do proprietário | Gs. 500.000 | Gs. 900.000 |
+    | Saldo antes de outras despesas e impostos | Gs. 3.500.000 | Gs. 3.100.000 |
+
+    O inquilino paga o mesmo nos dois casos. O proprietário recebe **Gs. 400.000 a menos por mês**, equivalentes a **Gs. 4.800.000 por ano**, supondo doze meses recebidos e expensas constantes.
+
+    Esses saldos ainda não representam uma rentabilidade líquida: faltaria considerar as demais despesas e impostos cabíveis, além de possíveis períodos sem ocupação. Em nosso artigo [Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda), desenvolvemos essa diferença com um caso concreto.
+
+    ## O custo do edifício não determina o aluguel que o mercado aceita
+
+    Um proprietário pode calcular quanto precisa cobrar para alcançar determinada rentabilidade. Mas esse cálculo deve ser confrontado com o que os interessados aceitam pagar.
+
+    Se eles encontram alternativas que consideram equivalentes por Gs. 4.000.000 com expensas incluídas, expensas mais elevadas não permitem, por si só, superar esse orçamento. Se as expensas aumentam e o aluguel não pode ser reajustado na mesma proporção, a renda do proprietário diminui. Se, além disso, a chegada de novas unidades obriga a negociar o aluguel, a pressão pode ser maior.
+
+    **O risco é que os custos do edifício correspondam à proposta concebida para vendê-lo, enquanto o aluguel acabe se ajustando ao orçamento de quem vai morar ali.**
+
+    Por isso as expensas devem ser avaliadas desde o momento da compra.
+
+    ## Mais oferta não significa necessariamente uma queda generalizada
+
+    Não dispomos de informações suficientes para indicar quando poderia ocorrer um ajuste nem para afirmar que haverá uma queda generalizada dos aluguéis.
+
+    A chegada de novos apartamentos poderia ser absorvida se encontrar demanda suficiente. Também poderia gerar maior concorrência em determinadas localizações ou tipologias.
+
+    Essa mudança nem sempre aparece primeiro nos preços anunciados. Pode se manifestar em prazos mais longos para alugar, negociações, descontos ou melhorias que o proprietário aceita realizar para conseguir um ocupante.
+
+    Para avaliar a evolução, seria preciso acompanhar as entregas efetivas, o tempo que as unidades levam para ser alugadas e os valores finalmente acordados. Contar edifícios não basta: importa quantos apartamentos chegam ao mercado, onde estão, quanto custa mantê-los e a que público se destinam.
+
+    A relação entre novas entregas e demanda de aluguel também faz parte da nossa reflexão em [Mais estrangeiros no Paraguai: uma oportunidade para o mercado, desde que se compre com critério](/pt/blog/mas-extranjeros-en-paraguay-una-oportunidad-para-el-mercado-siempre-que-se-compre-con-criterio).
+
+    ## O que observar antes de investir
+
+    Antes de comprar para alugar, recomendamos analisar:
+
+    - **O aluguel total que o ocupante aceitaria**, comparando alternativas concretas e distinguindo os preços anunciados dos efetivamente acordados.
+    - **As expensas previstas e o que incluem**, esclarecendo se se trata de uma estimativa comercial ou de um orçamento de funcionamento.
+    - **As despesas extraordinárias e a conservação do edifício**, que podem exigir desembolsos adicionais.
+    - **A oferta que poderia concorrer com a unidade**, tanto a existente quanto a que está para ser entregue.
+    - **O resultado em cenários menos favoráveis**, com um aluguel menor que o esperado, expensas mais altas ou períodos sem inquilino.
+
+    A pergunta não deveria ser apenas por quanto o apartamento poderá ser alugado, mas quanto sobrará depois de pagar suas despesas.
+
+    ## Nosso olhar na CALISTA
+
+    Assunção pode incorporar edifícios com propostas diversas. Mas uma oferta atraente para o investidor também precisa encontrar seu lugar na vida e no orçamento de quem vai habitá-la.
+
+    Um apartamento pode ser bem vendido e, ainda assim, ser difícil de alugar pelo preço necessário para atender às expectativas do seu proprietário. Além da quantidade de torres ou dos amenities anunciados, a pergunta central é esta: os aluguéis esperados pelos investidores coincidirão com os que os futuros ocupantes poderão e quererão pagar?
+
+    Você está avaliando uma compra para alugar em Assunção? Na **CALISTA** acompanhamos você para comparar imóveis, analisar suas despesas e estimar diferentes cenários antes de decidir.
+
+    ### Fontes consultadas
+
+    - **ABC Color, 19 de outubro de 2026:** [Viviendas que respondan a la demanda de las familias](https://www.abc.com.py/edicion-impresa/suplementos/comercial/dia-de-la-construccion-2026/2026/10/19/viviendas-que-respondan-a-la-demanda-de-las-familias/).
+    - **Ministerio de Trabajo, Empleo y Seguridad Social, 10 de julho de 2026:** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371).
+
+    _As observações da CALISTA correspondem à sua experiência profissional e não constituem um índice estatístico do mercado. O exemplo é ilustrativo. Os cenários apresentados são riscos a avaliar, não previsões de uma queda generalizada de preços nem garantias de rentabilidade._
 ---
 **Los edificios se venden a compradores e inversores. Pero su funcionamiento a largo plazo depende también de quienes van a vivir en ellos: sus necesidades, sus ingresos y el presupuesto que están dispuestos a destinar a la vivienda.**
 

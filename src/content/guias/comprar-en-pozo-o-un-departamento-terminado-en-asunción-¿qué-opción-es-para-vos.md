@@ -182,6 +182,94 @@ en:
     At the corner of **Cruz del Chaco and Alfredo Seiferheld**, Kalypso Recoleta offers payment terms of **10% upfront, followed by the balance in 32 interest-free monthly instalments during construction**. Handover is **scheduled for May 2029**. www.kalypso.com.py
 
     **Interested in exploring this option? Contact CALISTA Inmobiliaria for floor plans, prices and availability, along with the development’s detailed terms.**
+pt:
+  titulo: 'Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?'
+  descripcion: 'Preço, prazos, forma de pagamento e aluguel: as diferenças que vale a pena conhecer para escolher um apartamento de acordo com o seu projeto.'
+  cuerpo: |-
+    Você quer comprar um apartamento em Assunção e está em dúvida entre um projeto em construção — conhecido como **na planta** (em espanhol, *en pozo*) — e uma unidade já pronta?
+
+    A escolha depende de três fatores: **quando você precisa dispor do imóvel, como quer financiar a compra e o que espera do seu investimento.** Comprar na planta costuma permitir distribuir os pagamentos. Comprar uma unidade pronta permite visitá-la e considerar mais rapidamente seu uso ou aluguel.
+
+    ## As duas opções em resumo
+
+    | Sua prioridade | Comprar na planta | Comprar uma unidade pronta |
+    | --- | --- | --- |
+    | Preço de compra | O preço de lançamento pode ser atraente | O preço reflete um imóvel pronto que você pode visitar |
+    | Pagamento | Parcelas durante a obra, conforme o projeto | Financiamento conforme as condições do vendedor e do banco |
+    | Disponibilidade | Na entrega, conforme o cronograma contratual | Após a operação e os preparativos necessários |
+    | Renda de aluguel | Nenhuma antes da entrega e da colocação para alugar | Possível mais rapidamente, assim que se encontrar um inquilino |
+    | Escolha da unidade | Geralmente mais ampla no lançamento | Limitada aos apartamentos disponíveis |
+    | Verificações | Incorporadora, documentos, contrato e andamento da obra | Estado real do imóvel, documentos e expensas (condomínio) |
+
+    ## Comprar na planta: planejar e distribuir o esforço financeiro
+
+    ### As vantagens
+
+    **Um preço de lançamento potencialmente atraente.** As primeiras unidades podem ser oferecidas a um preço inferior ao das últimas etapas de comercialização. Compare imóveis equivalentes: localização, área, características e custos incluídos.
+
+    **Pagamentos escalonados.** Alguns projetos permitem pagar uma entrada e completar o saldo durante a obra. Confira o valor das parcelas, a moeda de pagamento e se resta algum saldo pendente na entrega.
+
+    **Mais opções no início.** Andar, orientação, distribuição, sacada ou vaga de garagem: comprar cedo pode ajudar você a escolher a unidade que melhor se adapta ao seu projeto.
+
+    **Potencial de valorização.** O imóvel pode se valorizar entre o lançamento e a entrega. Essa evolução é incerta e depende, entre outros fatores, do preço de compra, da qualidade do projeto e do mercado.
+
+    ### O que você precisa considerar
+
+    **Você precisa poder esperar.** O apartamento não pode ser ocupado nem alugado antes da sua entrega e preparação. Seu orçamento também deve contemplar um possível atraso.
+
+    **Você escolhe com base em documentos.** As plantas e as imagens ilustrativas ajudam a imaginar o resultado, mas as áreas, os materiais, os equipamentos e os acabamentos devem constar na documentação contratual.
+
+    **A execução depende da incorporadora.** Os projetos já entregues por ela são um indicador útil de confiabilidade, que deve ser complementado com a revisão de documentos e compromissos por escrito.
+
+    ## Comprar uma unidade pronta: ver, verificar e avançar mais rápido
+
+    ### As vantagens
+
+    **Você visita o imóvel real.** Luminosidade, ruído, espaços, acabamentos e áreas comuns: você pode avaliar concretamente o que está comprando.
+
+    **Você pode utilizá-lo mais rapidamente.** Após a operação e as obras ou o mobiliário que forem necessários, o apartamento pode se tornar sua moradia ou ser colocado para alugar. A renda dependerá do tempo necessário para encontrar um inquilino e das condições de aluguel.
+
+    **Você evita a espera até a conclusão da obra.** O resultado está à vista, o que reduz as incertezas da construção. Ainda assim, é preciso verificar possíveis defeitos.
+
+    **A operação pode ser mais rápida.** Se a documentação do imóvel estiver em ordem, você pode avançar para a assinatura da escritura (escritura pública) sem esperar o fim da obra.
+
+    ### O que você precisa considerar
+
+    **O preço pode ser mais alto.** Um apartamento pronto pode custar mais do que uma unidade comprada no lançamento. Nem sempre é assim: compare as ofertas e o custo total da compra.
+
+    **O pagamento pode ser menos flexível.** O vendedor pode solicitar um pagamento rápido. Um financiamento ou um plano de parcelas pode ser possível conforme a sua situação e as condições oferecidas.
+
+    **A escolha pode ser mais limitada.** Em um projeto novo, alguns andares ou orientações podem ter sido vendidos durante a construção.
+
+    ## Qual opção se adapta ao seu projeto?
+
+    **Comprar na planta pode ser adequado para você** se você pode esperar, quer distribuir os pagamentos e aceita as incertezas de uma obra. O cronograma e os compromissos da incorporadora devem ser compatíveis com o seu orçamento.
+
+    **Uma unidade pronta pode ser adequada para você** se você quer se mudar ou alugar rapidamente, prefere visitar antes de decidir e conta com o capital ou o financiamento necessário.
+
+    Em ambos os casos, compare **o custo total**, incluindo os custos de compra, a vaga de garagem se for vendida separadamente, o mobiliário, as expensas e, quando for o caso, os juros do financiamento.
+
+    ## Antes de assinar: o que verificar
+
+    ### Para uma compra na planta
+
+    1. **A incorporadora e seu histórico.** Visite seus projetos concluídos e, se possível, converse com proprietários.
+    2. **Os documentos do projeto.** Peça para verificar a situação do terreno, as licenças municipais e a identidade do vendedor.
+    3. **O que o preço inclui.** A área anunciada, seu método de cálculo, os acabamentos, os equipamentos, a vaga de garagem e os custos adicionais devem ficar claros.
+    4. **O cronograma e os pagamentos.** Peça uma data contratual de entrega, um cronograma preciso de pagamentos e as condições aplicáveis em caso de atraso ou de o projeto não se concretizar.
+    5. **O contrato antes de qualquer pagamento.** Peça que seja revisado por um escribano (tabelião) e, se necessário, por um advogado independente, especialmente para entender o que acontece com os valores pagos e quais são as possibilidades de rescisão.
+
+    ### Para uma unidade pronta
+
+    Verifique também os títulos e a possibilidade de lavrar a escritura, o estado do apartamento e das áreas comuns, as expensas e as possíveis dívidas pendentes. Uma visita detalhada e uma revisão documental se complementam.
+
+    Para se aprofundar nas cláusulas do contrato e nas precauções necessárias, consulte nosso guia: _Comprar um apartamento na planta: o que verificar antes de assinar_.
+
+    ## Kalypso Recoleta: uma opção na planta em Assunção
+
+    Na esquina da **Cruz del Chaco com a Alfredo Seiferheld**, o Kalypso Recoleta oferece uma forma de pagamento com **10 % de entrada e o saldo em 32 parcelas mensais sem juros durante a obra**. A entrega está **prevista para maio de 2029**. www.kalypso.com.py
+
+    **Quer avaliar esta opção? Entre em contato com a CALISTA Inmobiliaria para receber as plantas, os preços e a disponibilidade, junto com as condições detalhadas do projeto.**
 ---
 
 ¿Querés comprar un departamento en Asunción y dudás entre un proyecto en construcción — conocido como **en pozo** — y una unidad ya terminada?

@@ -176,6 +176,91 @@ en:
     _Thinking of investing in Asunción? CALISTA helps you compare properties, assess their prices and develop an investment plan suited to your goals._
 
     _Source for the introduction: MarketData, “Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario”, published on 7 October 2026. The market observations and outlook presented in this article reflect CALISTA Inmobiliaria’s analysis._
+pt:
+  titulo: 'Mais estrangeiros no Paraguai: uma oportunidade para o mercado, desde que se compre com critério'
+  descripcion: 'O Paraguai atrai cada vez mais estrangeiros. Para o mercado imobiliário, essa dinâmica representa uma oportunidade. Mas também levanta duas perguntas: como preservar o acesso à moradia para os habitantes e como evitar que os novos investidores paguem caro demais com base em rendimentos incertos?'
+  cuerpo: |-
+    _Por Hélène Montourcy — CALISTA Inmobiliaria_
+
+    O Paraguai atrai cada vez mais estrangeiros. Para o mercado imobiliário, essa dinâmica representa uma oportunidade. Mas também levanta duas perguntas: como preservar o acesso à moradia para os habitantes e como evitar que os novos investidores paguem caro demais com base em rendimentos incertos?
+
+    Segundo Emmanuel Castel, presidente e fundador da Paraguay Resident, citado pelo _MarketData_, o fluxo de estrangeiros que chegam ao Paraguai para solicitar a residência mais que dobrou desde 2023. Ele também estima que, em 2026, o nível registrado no ano anterior será superado.
+
+    Os brasileiros e os argentinos continuam entre os grupos mais numerosos, enquanto os perfis se diversificam: europeus, norte-americanos, asiáticos e pessoas do Oriente Médio, famílias, aposentados, empreendedores ou trabalhadores remotos.
+
+    Solicitar a residência não implica necessariamente se estabelecer de forma permanente nem comprar um imóvel. No entanto, em nosso trabalho diário, observamos que essas chegadas geram necessidades de moradia e contribuem para a evolução do mercado.
+
+    ## Motivações diferentes, às vezes decisões apressadas
+
+    Entre os clientes que acompanhamos, as motivações variam.
+
+    Para alguns compradores argentinos e brasileiros, o sistema tributário paraguaio e a busca por estabilidade ocupam um lugar importante, especialmente em comparação com seus países de origem.
+
+    Entre alguns europeus, observamos um desejo maior de mudar de ambiente e de estilo de vida, às vezes ligado à sua percepção do clima político e social na Europa. A decisão de partir pode ser tomada rapidamente, com uma sensação de urgência.
+
+    Essa urgência é compreensível. Mas pode levar a comprar antes de ter estudado suficientemente os bairros, os preços, os aluguéis e as condições de revenda.
+
+    ## Um mercado em alta, um acesso à moradia que se complica
+
+    Em alguns bairros, observamos uma pressão sobre os preços que dificulta o acesso à moradia para muitos paraguaios, tanto para comprar quanto para alugar.
+
+    A chegada de investidores estrangeiros pode contribuir para essa pressão, embora não seja sua única causa. Também importam o tipo de moradias que são construídas, seus preços e sua adequação à renda local.
+
+    Vale a pena levantar a pergunta: estão sendo construídas moradias para responder às necessidades dos habitantes ou, principalmente, produtos de investimento destinados a uma clientela com maior poder aquisitivo?
+
+    Que o Paraguai seja atraente é uma boa notícia. Essa atratividade também deveria beneficiar quem já vive aqui.
+
+    ## A armadilha: comprar sem conhecer o mercado local
+
+    Vemos compradores estrangeiros assinarem sem dispor de referências de comparação suficientes. Alguns aceitam preços que, segundo a nossa análise, não se justificam pela localização, pelas características do imóvel ou pelos aluguéis que poderiam ser obtidos.
+
+    O projeto costuma se basear no aluguel mobiliado de curta duração, com projeções de renda atraentes.
+
+    Mas uma diária não equivale a uma rentabilidade. É preciso levar em conta a taxa de ocupação, as comissões das plataformas, os honorários de gestão, a limpeza, a eletricidade, as expensas (condomínio), a manutenção e a renovação do mobiliário.
+
+    Um apartamento pode gerar reservas sem produzir a renda líquida esperada.
+
+    ## Aluguéis de curta duração: as entregas de hoje podem afetar os rendimentos de amanhã
+
+    Em nosso trabalho diário, observamos que muitos investidores estrangeiros compram para oferecer aluguéis mobiliados de curta duração. Parte dessas compras foi realizada na planta há aproximadamente dois anos: os edifícios estão chegando agora ao fim da construção e os apartamentos serão incorporados progressivamente ao mercado de aluguel.
+
+    É esse descompasso que nos preocupa. As decisões de investimento tomadas ontem alimentam a oferta de hoje, enquanto nada garante um crescimento equivalente da demanda.
+
+    As diárias já mostram sinais de pressão. Segundo os dados públicos da AirDNA consultados em outubro de 2026, a diária média dos aluguéis de curta duração em Assunção está em aproximadamente **42 dólares por noite**, com uma queda de **20,9 % em relação ao ano anterior**. Essa média abrange acomodações de diferentes categorias no Airbnb, Vrbo e Booking.com; não corresponde necessariamente ao preço final pago pelo hóspede.
+
+    Esses números, por si sós, não permitem atribuir a queda às novas entregas. No entanto, mostram por que seria imprudente presumir que as diárias atuais se manterão nos próximos anos.
+
+    Segundo a nossa experiência, as viagens de trabalho constituem um motor essencial dos aluguéis de curta duração em Assunção. Não acreditamos que seja prudente contar com um turismo de férias massivo para absorver os novos apartamentos.
+
+    Se as entregas aumentarem a oferta mais rápido do que cresce a demanda, os proprietários terão de competir pelos mesmos viajantes. Nesse caso, prevemos uma pressão maior sobre as diárias, com o risco de uma queda significativa da renda de aluguel.
+
+    Para quem comprou a preços elevados com base em projeções otimistas, essa evolução pode comprometer a rentabilidade esperada.
+
+    ## Nosso conselho: adotar o aluguel de longa duração como cenário de referência
+
+    **Antes de comprar para alugar por diária, verifique se o imóvel também faz sentido econômico como aluguel de longa duração.**
+
+    Isso significa escolher:
+
+    - uma moradia adaptada à demanda local real;
+    - uma localização prática para o dia a dia, perto dos locais de trabalho, dos serviços e do comércio;
+    - um preço de compra coerente com os aluguéis efetivamente cobrados por imóveis comparáveis;
+    - custos compatíveis com a renda de aluguel esperada;
+    - um imóvel que também possa interessar a inquilinos e compradores paraguaios.
+
+    O aluguel de longa duração também apresenta riscos, especialmente de vacância e inadimplência. No entanto, permite construir um projeto menos dependente da chegada constante de novas reservas.
+
+    Um imóvel capaz de funcionar em vários cenários oferece mais alternativas se o mercado mudar.
+
+    ## Comprar com método, em vez de comprar com urgência
+
+    A chegada de estrangeiros gera necessidades, investimentos e novas atividades. É uma oportunidade para o Paraguai, desde que não se confunda a atratividade do país com a rentabilidade automática de cada compra.
+
+    Nossa convicção é simples: um investimento sustentável deve se apoiar na realidade do bairro, nas necessidades dos ocupantes e em um cálculo prudente de receitas e despesas.
+
+    _Está pensando em investir em Assunção? A CALISTA acompanha você para comparar imóveis, avaliar seus preços e construir um projeto adaptado ao seu objetivo._
+
+    _Fonte da introdução: MarketData, «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario» (Mais estrangeiros escolhem o Paraguai para residir e sua chegada começa a movimentar o mercado imobiliário), publicação de 7 de outubro de 2026. As observações e perspectivas de mercado apresentadas neste artigo expressam a análise da CALISTA Inmobiliaria._
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_

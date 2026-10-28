@@ -200,6 +200,103 @@ en:
     The arrival of branded residences opens an interesting discussion. Their success as investments will depend on finding demand that values the offering and can afford it over time.
 
     **The question is not simply whether Asunción can build this type of residence, but whether there is a lasting market to live in it, rent it and buy it again.**
+pt:
+  titulo: 'Branded residences em Assunção: existe mercado para este nível de luxo?'
+  descripcion: 'O Royale by Pininfarina apresenta uma nova proposta residencial na capital. Para além da grife internacional, cabe perguntar se existe uma demanda capaz de sustentá-la ao longo do tempo.'
+  cuerpo: |-
+    Assunção ganha uma nova proposta no segmento residencial de luxo. O Grupo Petra apresentou o **Royale by Pininfarina**, anunciado como a primeira _branded residence_ do Paraguai e o primeiro projeto da casa italiana de design no país. A apresentação foi realizada em Miami e divulgada em setembro de 2026.
+
+    A notícia desperta interesse, mas também uma pergunta: **existe em Assunção um mercado suficientemente amplo e solvente para este tipo de residência, ao preço e com os custos de funcionamento que ela terá?**
+
+    Uma grife reconhecida pode atrair atenção. Determinar se o produto responde a uma demanda duradoura exige uma análise diferente.
+
+    ## O que foi anunciado?
+
+    O Royale by Pininfarina ficará localizado no bairro Mariscal, em Assunção. Estas são as características divulgadas:
+
+    | Característica | Informação anunciada |
+    | --- | --- |
+    | Incorporadora | Grupo Petra |
+    | Grife de design | Pininfarina |
+    | Dimensões | Aproximadamente 112 metros e 32 níveis |
+    | Tipologias | Apartamentos de 1, 2 e 3 quartos, duplex e coberturas (penthouses) de 4 quartos |
+    | Espaços comuns | Terraços paisagísticos, piscina, wellness, lounges e áreas sociais |
+
+    A proposta arquitetônica se inspira no **ñandutí** (renda tradicional paraguaia) e no uso da sombra e da circulação do ar para responder ao clima de Assunção.
+
+    As publicações consultadas não detalham preços nem data de entrega. Sem esses dados, também não é possível avaliar seu posicionamento econômico em relação a outras opções.
+
+    ## O que é uma branded residence?
+
+    É uma proposta residencial vinculada a uma marca reconhecida. Conforme o modelo, essa associação pode trazer design, identidade, serviços ou padrões de operação.
+
+    O ABC Color situa o lançamento dentro de uma categoria que combina design autoral e serviços de tipo hoteleiro, presente em cidades como Miami, São Paulo e Panamá.
+
+    No entanto, o comprador deve conhecer o alcance concreto desse vínculo. **Projetar um edifício, supervisionar seus acabamentos e gerir seus serviços após a entrega são funções diferentes.** É preciso perguntar quais delas a marca assume, por quanto tempo e em que condições.
+
+    ## A pergunta central: quem vai morar lá?
+
+    Para avaliar o lugar deste produto em Assunção, convém distinguir três públicos:
+
+    - **Quem compra durante o lançamento**, por interesse patrimonial, expectativa de valorização ou afinidade com a proposta.
+    - **Quem ocupará as unidades**, como proprietários ou inquilinos.
+    - **Quem poderia comprá-las depois**, no mercado de revenda.
+
+    Esses públicos podem coincidir, mas não necessariamente têm as mesmas motivações nem aceitam o mesmo preço.
+
+    Uma comercialização bem-sucedida no início demonstraria interesse comprador em determinadas condições. **Isso não bastaria, por si só, para demonstrar quanto poderá ser obtido com o aluguel ou com que facilidade uma unidade poderá ser revendida.**
+
+    A demanda que importa para o investimento também deve existir depois do lançamento.
+
+    ## Quanto valor a marca agrega e quem está disposto a pagar por isso?
+
+    Uma grife internacional pode diferenciar um imóvel. Para determinados compradores, o design, a identidade e a exclusividade podem justificar um preço superior.
+
+    A questão é quanto desse valor será reconhecido pelo próximo ocupante ou comprador.
+
+    Para quem adquire uma moradia por gosto pessoal, a decisão pode se apoiar na experiência que deseja desfrutar. Para quem compra em busca de renda, é preciso verificar se o aluguel esperado guarda relação com **o preço de aquisição, o mobiliário, as expensas (condomínio), a manutenção e os períodos sem ocupação**.
+
+    Um aluguel elevado não garante uma boa rentabilidade líquida. Tampouco uma marca reconhecida garante uma revenda rápida ou uma valorização.
+
+    ## O luxo também precisa funcionar fora do edifício
+
+    A experiência residencial depende do apartamento e de seus espaços comuns, mas também do entorno: acessos, trânsito, calçadas, ruído e serviços.
+
+    O ABC Color identifica a mobilidade, a atualização das normas municipais e o fornecimento de serviços básicos entre os desafios do crescimento vertical de Assunção.
+
+    Isso levanta uma questão para qualquer proposta de alto padrão: **em que medida a experiência do bairro acompanhará a que o edifício promete?**
+
+    A arquitetura pode resolver muitas necessidades dentro do projeto. O comprador deveria avaliar também como será entrar, sair e viver ali todos os dias.
+
+    ## Antes de investir, o que vale a pena perguntar
+
+    | Pergunta | Por que importa |
+    | --- | --- |
+    | Qual é o preço total de compra e o que ele inclui? | Permite comparar com alternativas equivalentes |
+    | Que papel a marca terá após a entrega? | Esclarece que parte da proposta permanecerá ao longo do tempo |
+    | Quem administrará o edifício? | A gestão influenciará a qualidade do dia a dia e a conservação |
+    | Quais são as expensas estimadas? | Ajuda a medir o custo de ocupação e a rentabilidade líquida |
+    | Quais serviços serão obrigatórios e quais serão cobrados à parte? | Evita subestimar os custos |
+    | Quais modalidades de aluguel serão permitidas? | Determina se o imóvel se encaixa na estratégia do investidor |
+    | Quais comparáveis sustentam o aluguel e a revenda esperados? | Permite confrontar as projeções comerciais com referências verificáveis |
+
+    Convém solicitar respostas documentadas e distinguir as estimativas dos compromissos contratuais.
+
+    ## Nossa leitura na CALISTA
+
+    Vemos com interesse que Assunção incorpore propostas arquitetônicas diferentes. O design e uma execução de qualidade podem enriquecer a oferta residencial da cidade.
+
+    Mas acreditamos que vale a pena fazer uma pergunta antes de celebrar a chegada de uma nova categoria: **que lugar este produto ocupa no mercado real de Assunção?**
+
+    Isso implica perguntar quantas pessoas podem e querem pagar por ele, o que buscam e que alternativas têm. E também se essa demanda será suficiente para sustentar aluguéis, custos de funcionamento e futuras revendas.
+
+    Não descartamos que exista um público para esta proposta. **Perguntamo-nos qual é o seu tamanho e que nível de preço ele pode sustentar.** A notoriedade do lançamento não permite responder a isso.
+
+    Para o comprador que busca morar lá, o design e os serviços podem justificar uma escolha pessoal. Para o investidor, recomendamos trabalhar com cenários prudentes: um aluguel menor que o previsto, mais tempo sem ocupação e uma revenda que não seja imediata.
+
+    A chegada das _branded residences_ abre uma conversa interessante. Seu sucesso como investimento dependerá de a proposta encontrar uma demanda que a valorize e possa pagar por ela ao longo do tempo.
+
+    **A pergunta não é apenas se Assunção pode construir este tipo de residência, mas se existe um mercado duradouro para habitá-la, alugá-la e voltar a comprá-la.**
 ---
 
 Asunción suma una nueva propuesta al segmento residencial de lujo. Grupo Petra presentó **Royale by Pininfarina**, anunciado como la primera _branded residence_ de Paraguay y el primer proyecto de la casa italiana de diseño en el país. La presentación se realizó en Miami y fue difundida en septiembre de 2026.

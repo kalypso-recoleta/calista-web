@@ -224,6 +224,118 @@ en:
     Would you like to see the full listing for apartment 304 in Zandoli, or calculate the yield of your own property? Write to us.
 
     _This article is for information only and does not constitute financial or tax advice. The calculations use the data and exchange rates stated. Condominium fees are projected from the September 2026 statement and may vary. The percentages shown do not represent a guaranteed return._
+pt:
+  titulo: 'Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você'
+  descripcion: 'Quando um apartamento é anunciado «com renda», o número que aparece primeiro costuma ser a rentabilidade bruta. Ela é útil, mas não representa o que fica no bolso do proprietário.'
+  cuerpo: |-
+    Para ver isso com um caso real, usamos um apartamento que temos à venda: o **304 do edifício Zandoli**, no Barrio Jara, em Assunção. Tem um quarto e vaga de garagem, e está alugado até **23 de junho de 2027**.
+
+    ## O que é a rentabilidade de um aluguel?
+
+    A rentabilidade indica **quanto o seu investimento gera em aluguéis durante um ano, em relação ao que você investiu**. É expressa como uma porcentagem anual.
+
+    Por exemplo, se você compra um apartamento por USD 100.000 e recebe USD 7.000 de aluguel por ano, a rentabilidade bruta é de **7 % ao ano**: para cada USD 100 do preço de compra, você recebe USD 7 por ano, antes de descontar despesas.
+
+    A diferença está no que descontamos:
+
+    - **Rentabilidade bruta:** considera os aluguéis antes de descontar despesas.
+    - **Rentabilidade líquida:** considera o que sobra depois de descontar as despesas e os impostos que cabem ao proprietário, tomando como base o custo total de aquisição.
+
+    A fórmula é:
+
+    **Rentabilidade anual (%) = receita anual considerada ÷ capital investido × 100**
+
+    Essa porcentagem mede o rendimento do aluguel. Não inclui um eventual ganho ou perda com a venda do imóvel.
+
+    Vejamos como ela é calculada com o apartamento 304 do Zandoli.
+
+    ## Os dados de partida
+
+    | Dado | Valor |
+    | --- | --- |
+    | Preço de venda | USD 89.000 |
+    | Taxa de câmbio do BCP (Banco Central del Paraguay) de 8 de setembro de 2026 | Gs 5.899,02 por dólar |
+    | Preço convertido em guaranis | Gs 525.012.780 |
+    | Aluguel mensal informado | Gs 3.400.000 |
+    | Impuesto inmobiliario (imposto imobiliário) 2026, apartamento e vaga de garagem | Gs 834.700 por ano |
+    | Tasas especiales (taxas especiais) 2026, apartamento e vaga de garagem | Gs 945.600 por ano |
+    | Expensas (condomínio) conforme a liquidação de setembro de 2026 | Gs 419.951 por mês |
+
+    Para este exemplo, usamos o preço de venda como base, sem somar custos de aquisição. Também consideramos o aluguel informado, sem descontar um eventual IVA incluído nesse valor. Ambos os pontos devem ser verificados antes de fechar o cálculo de um investimento.
+
+    ## Passo 1: calcular a rentabilidade bruta
+
+    É o aluguel de um ano dividido pelo preço de venda, multiplicado por 100.
+
+    - Aluguel anual: 12 × 3.400.000 = **Gs 40.800.000**
+    - Rentabilidade bruta: 40.800.000 ÷ 525.012.780 × 100 = **7,77 %**
+
+    Essa porcentagem supõe doze meses de aluguel recebidos e ainda não desconta as despesas do proprietário.
+
+    ## Passo 2: subtrair os impostos municipais
+
+    O impuesto inmobiliario e as tasas especiales somam **Gs 1.780.300 por ano**.
+
+    - 40.800.000 − 1.780.300 = **Gs 39.019.700**
+    - 39.019.700 ÷ 525.012.780 × 100 = **7,43 %**
+
+    ## Passo 3: subtrair as expensas
+
+    Neste caso, as expensas são pagas pelo proprietário. O valor mensal foi de **Gs 419.951 tanto em maio quanto em setembro de 2026**. Para estimar a despesa anual, tomamos o último valor disponível e o projetamos por doze meses:
+
+    12 × 419.951 = **Gs 5.039.412 por ano**.
+
+    As liquidações futuras podem variar e pode haver despesas extraordinárias.
+
+    - 39.019.700 − 5.039.412 = **Gs 33.980.288**
+    - 33.980.288 ÷ 525.012.780 × 100 = **6,47 %**
+
+    Esses **6,47 % são a rentabilidade depois dos impostos municipais e das expensas**, antes das demais despesas e impostos aplicáveis.
+
+    A diferença em relação à rentabilidade bruta é de aproximadamente **1,3 ponto percentual**, o equivalente a **Gs 6.819.712 por ano**.
+
+    ## O que ainda falta descontar
+
+    Para se aproximar da rentabilidade líquida final, é preciso considerar também:
+
+    - **Os períodos sem inquilino.** Em um cenário com um mês sem aluguel e mantendo as despesas municipais e as expensas, a receita anual depois dessas despesas cai para **Gs 30.580.288**, o equivalente a **5,82 %**.
+    - **A manutenção e os reparos** que cabem ao proprietário.
+    - **Os honorários de administração**, se a gestão for delegada, e os de colocação para aluguel, quando for o caso.
+    - **Os seguros e as despesas extraordinárias** a cargo do proprietário, se houver.
+    - **O tratamento do IVA e do imposto de renda**, conforme o contrato e a situação fiscal do comprador.
+
+    Além disso, para calcular o rendimento sobre o capital total investido, devem ser somados ao preço de compra os custos de aquisição aplicáveis, como os de escritura e registro.
+
+    ## O efeito da taxa de câmbio
+
+    Este apartamento é vendido em dólares, mas alugado em guaranis. Para um comprador que avalia adquiri-lo por **USD 89.000**, a taxa de câmbio utilizada altera a relação entre o preço de compra e o aluguel.
+
+    Com a cotação do BCP de **7 de outubro de 2026, de Gs 5.751,99 por dólar**, o preço equivale a aproximadamente **Gs 511,9 milhões**.
+
+    A essa taxa de câmbio:
+
+    - O aluguel anual de Gs 40.800.000 equivale a aproximadamente **USD 7.093**.
+    - A rentabilidade bruta sobre o preço de venda é de **7,97 %**.
+    - A rentabilidade depois dos impostos municipais e das expensas é de **6,64 %**, sob as mesmas hipóteses do exemplo.
+
+    Essas porcentagens correspondem a um **novo comprador pelo preço indicado**. Para quem já adquiriu o imóvel, o custo histórico de compra não muda; o que varia é o valor em dólares das receitas e despesas em guaranis.
+
+    Um dólar mais baixo pode melhorar essa relação para quem compra, desde que o preço em dólares se mantenha. Se o dólar voltar a subir, o efeito se inverte.
+
+    ## O que verificar antes de comprar
+
+    1. **Peça o detalhamento das despesas.** A rentabilidade bruta é um ponto de partida, não o resultado final.
+    2. **Revise o contrato de aluguel vigente.** Valor do aluguel, prazo, depósito, tratamento do IVA e divisão das despesas.
+    3. **Calcule nas duas moedas.** Especialmente quando o preço de compra e o aluguel estão expressos em moedas diferentes.
+    4. **Inclua uma previsão de vacância e manutenção.** Mesmo que o apartamento esteja alugado atualmente.
+    5. **Leve em conta o custo total de aquisição.** O capital investido pode ser maior que o preço anunciado.
+
+    Quer ver a ficha completa do apartamento 304 do Zandoli ou calcular a rentabilidade do seu próprio imóvel? Escreva para nós.
+
+
+
+
+    _Este artigo é informativo e não constitui assessoria financeira nem fiscal. Os cálculos utilizam os dados e as taxas de câmbio indicados. As expensas são projetadas a partir da liquidação de setembro de 2026 e podem variar. As porcentagens apresentadas não representam uma rentabilidade garantida._
 ---
 
 Para verlo con un caso real, tomamos un departamento que tenemos en venta: el **304 del edificio Zandoli**, en Barrio Jara, Asunción. Tiene un dormitorio y cochera, y está alquilado hasta el **23 de junio de 2027**.

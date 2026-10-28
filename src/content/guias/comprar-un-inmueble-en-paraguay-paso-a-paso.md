@@ -158,6 +158,82 @@ en:
     We support you in **Spanish, French and English** throughout the process, from the first viewing to signing before the notary and following up on registration.
 
     **Thinking about buying in Paraguay? Tell us what you are looking for, and we will help you plan your purchase, understand the costs and move forward with clarity at every stage.**
+pt:
+  titulo: 'Comprar um imóvel no Paraguai: do boleto à escritura'
+  descripcion: 'Comprar um imóvel no Paraguai: etapas, custos e documentos'
+  cuerpo: |-
+    Comprar uma casa ou um apartamento no Paraguai segue um caminho claro. Conhecer cada etapa evita surpresas e permite que você saiba, a cada momento, o que está assinando e quais custos precisa prever.
+
+    ## 1. Verificar o imóvel antes de se comprometer
+
+    Antes de pagar qualquer valor, é preciso confirmar que quem vende é o verdadeiro proprietário e verificar se o imóvel tem hipotecas, penhoras, restrições ou dívidas pendentes.
+
+    Desde 14 de janeiro de 2026, o Registro Unificado Nacional (RUN), criado pela Ley 7424/2025, integra as informações registrais e cadastrais. O escribano (tabelião) solicita as certidões necessárias e revisa a documentação do imóvel.
+
+    As certidões têm validade limitada. Por isso, a verificação deve ser feita antes de você se comprometer e atualizada para a escritura quando for o caso.
+
+    ## 2. A seña e o boleto de compraventa
+
+    Quando comprador e vendedor chegam a um acordo, assina-se um boleto de compraventa (compromisso de compra e venda), geralmente com uma seña (sinal). O boleto fixa o preço, a forma de pagamento, a data prevista para a escritura e as obrigações de cada parte.
+
+    **O boleto não transfere a propriedade:** ele obriga as partes a formalizar a operação por meio de escritura pública (Código Civil, arts. 701 e 702).
+
+    Antes de assinar, leve em conta o seguinte:
+
+    - **Não conte com um período automático para desistir sem consequências.**
+    - O boleto deve indicar quem recebe a seña, como o pagamento é documentado e o que acontece se a operação não se concretizar.
+    - Segundo o artigo 723 do Código Civil, se o comprador desistir, perde a seña; se quem a recebeu desistir, deve devolvê-la em dobro.
+
+    **Antes de entregar dinheiro, certifique-se de que o contrato esclareça a natureza do pagamento e as condições de desistência.** Desistir não é o mesmo que não conseguir concretizar a operação por um problema do imóvel.
+
+    Por isso, convém verificar tudo antes de assinar o boleto, e não depois.
+
+    ## 3. A escritura pública perante o escribano
+
+    A compra e venda do imóvel é formalizada por meio de escritura pública (Código Civil, art. 700).
+
+    O escribano revisa os documentos das partes e as certidões do imóvel, redige a escritura e autoriza o ato. Antes de assinar, confirme que o preço, os pagamentos, a entrega da posse e as demais condições coincidem com o que foi acordado.
+
+    ## 4. O registro
+
+    Após a assinatura, o escribano providencia o registro da escritura no RUN.
+
+    A Ley 7424/2025 estabelece uma taxa de **0,85 % sobre a base de cálculo correspondente** para a transmissão. Essa taxa faz parte dos custos da operação: não representa a totalidade dos custos de transferência.
+
+    Peça ao escribano que informe você sobre o andamento do trâmite e lhe entregue a documentação depois de registrada.
+
+    ## 5. Os custos de transferência: quanto e quem paga?
+
+    Os custos incluem os honorários do escribano, as taxas, as certidões e os impostos aplicáveis.
+
+    **Peça um orçamento detalhado antes de assinar.** O valor depende da operação; uma estimativa percentual não deve ser tomada como um máximo garantido.
+
+    Nas operações que acompanhamos, a divisão habitual é:
+
+    - **Compra na planta:** o comprador paga, conforme estabelecido no contrato.
+    - **Venda tradicional:** geralmente são divididos 50 % e 50 % entre comprador e vendedor.
+
+    Essa divisão pode ser negociada. Uma das partes pode aceitar pagar 100 % como parte do acordo. O importante é deixar isso por escrito.
+
+    ## 6. A origem dos recursos
+
+    As imobiliárias e quem vende imóveis de forma habitual têm obrigações de prevenção à lavagem de dinheiro perante a SEPRELAD (Resolución 201/2020).
+
+    Por isso, vamos pedir a você documentos que permitam justificar a origem dos recursos. **Isso faz parte do procedimento legal da operação.**
+
+    Indicaremos que documentação preparar para que essa etapa fique clara desde o início.
+
+    ## 7. E a comissão da imobiliária?
+
+    Na **CALISTA**, a comissão de venda é de **5 % do preço, IVA incluído**, paga pelo vendedor.
+
+    **O comprador não paga comissão à CALISTA.** Os custos de transferência que couberem a ele são orçados separadamente.
+
+    ## Se você vem do exterior
+
+    Acompanhamos você em **português, espanhol, francês e inglês** durante todo o processo, desde a primeira visita até a assinatura perante o escribano e o acompanhamento do registro.
+
+    **Está pensando em comprar no Paraguai? Conte-nos o que você procura e ajudamos a preparar seu projeto, conhecer os custos e avançar com clareza em cada etapa.**
 ---
 
 Comprar una casa o un departamento en Paraguay sigue un camino claro. Conocer cada etapa evita sorpresas y te permite saber, en cada momento, qué estás firmando y qué gastos tenés que prever.

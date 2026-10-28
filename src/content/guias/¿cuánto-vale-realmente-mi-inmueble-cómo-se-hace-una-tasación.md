@@ -120,6 +120,63 @@ en:
 
 
     _This article is for information purposes only. The calculation uses illustrative figures and does not relate to an actual property._
+pt:
+  titulo: 'Quanto vale realmente o meu imóvel? Como é feita uma avaliação'
+  descripcion: '«Por qual preço eu anuncio?» É a primeira pergunta de quase todos os proprietários. O habitual é olhar os anúncios do bairro. Mas um anúncio mostra o que alguém pede, não necessariamente o que um comprador ou um inquilino paga.'
+  cuerpo: |-
+    Uma avaliação serve para determinar **uma faixa de valor coerente com o mercado e com o seu projeto**.
+
+    ## Avaliar para vender ou estimar para alugar
+
+    Não é a mesma pergunta.
+
+    - **Para vender**, busca-se estimar o preço pelo qual o imóvel poderia ser vendido em um prazo razoável, levando em conta as condições do mercado.
+    - **Para alugar**, busca-se o aluguel mensal que o mercado aceita hoje e as condições que o acompanham: mobiliado ou sem móveis, expensas (condomínio) incluídas ou não, e duração do contrato.
+
+    Um mesmo apartamento pode ser muito atraente para alugar e menos para vender, ou o contrário. Por isso, convém pedir a estimativa que corresponde ao seu projeto.
+
+    ## Os três métodos de avaliação
+
+    **1. A comparação com o mercado.** Buscam-se imóveis semelhantes —localização, área, idade, estado e vaga de garagem— vendidos ou alugados recentemente, e ajustam-se os valores de acordo com as diferenças. Quando não se dispõe dos preços das transações concluídas, os anúncios oferecem referências, mas devem ser analisados com cuidado. É o método mais habitual para apartamentos e casas.
+
+    **2. O método da renda.** Para um imóvel de investimento, as receitas de aluguel ajudam a determinar o seu valor. Parte-se da receita líquida anual estimada e divide-se por uma taxa de rentabilidade adequada ao mercado e ao risco do imóvel.
+
+    - _Exemplo ilustrativo:_ um imóvel que gera **Gs 30.000.000 líquidos por ano**, com uma taxa de rentabilidade de **6 %**, corresponde a um valor aproximado de 30.000.000 ÷ 0,06 = **Gs 500.000.000**. Com uma taxa de **7 %**, o valor calculado é de aproximadamente **Gs 428.600.000**. Um ponto percentual de diferença muda consideravelmente o resultado.
+
+    A taxa utilizada deve ser justificada: ela não depende unicamente da rentabilidade que um investidor queira obter.
+
+    **3. O método do custo.** Estima-se o valor do terreno e o custo atual de uma construção equivalente, considerando seu estado, sua depreciação e as características que tenham ficado desatualizadas ou sejam pouco funcionais. Esse método pode ser útil para algumas casas, construções novas ou imóveis atípicos com poucas referências comparáveis.
+
+    Uma boa avaliação utiliza os métodos adequados ao imóvel e explica as hipóteses adotadas. Quando vários métodos são pertinentes, seus resultados são comparados.
+
+    ## O que mais influencia o valor
+
+    - **A localização**, no nível da rua e não apenas do bairro.
+    - **A área verificada nos documentos do imóvel**, distinguindo área privativa, áreas comuns e vaga de garagem.
+    - **O estado do imóvel** e as obras necessárias.
+    - **A vaga de garagem**, que pode influenciar muito o interesse dos compradores em Assunção.
+    - **A situação jurídica e administrativa:** título de propriedade, dados cadastrais, possíveis dívidas de impostos ou de expensas e reglamento de copropiedad (convenção de condomínio).
+    - **Um contrato de aluguel vigente**, que pode ser uma vantagem para um investidor e uma limitação para quem quer se mudar em breve.
+
+    ## Os erros frequentes
+
+    - **Anunciar caro demais «para deixar margem».** O imóvel pode passar muito tempo nos portais, perder atratividade e exigir depois uma redução de preço.
+    - **Copiar o preço de um anúncio próximo** sem verificar se os imóveis são realmente comparáveis nem saber se foi vendido e por qual preço.
+    - **Descuidar dos documentos.** Um problema no título ou nos dados cadastrais pode atrasar ou impedir a venda, mesmo quando o preço é coerente com o mercado.
+
+    ## Como trabalhamos na CALISTA
+
+    Realizamos avaliações para vender e estimativas para alugar. Visitamos o imóvel, revisamos os documentos e explicamos a você o valor estimado e os elementos em que ele se baseia.
+
+    - **Para alugar**, a estimativa do aluguel é **gratuita**.
+    - **Para vender**, a avaliação é realizada **mediante orçamento prévio**, porque seu custo depende do tipo de imóvel.
+
+    Quer saber quanto vale o seu imóvel ou qual aluguel você poderia obter? Escreva para nós.
+
+
+
+
+    _Este artigo é informativo. O exemplo de cálculo utiliza números ilustrativos e não corresponde a um imóvel real._
 ---
 
 Una tasación sirve para determinar **un rango de valor coherente con el mercado y con tu proyecto**.

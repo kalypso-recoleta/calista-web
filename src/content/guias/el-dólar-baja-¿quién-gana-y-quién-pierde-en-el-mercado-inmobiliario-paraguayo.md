@@ -116,6 +116,61 @@ en:
 
 
     _This article is for information purposes only and does not constitute financial advice._
+pt:
+  titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
+  descripcion: 'Nas últimas semanas, duas manchetes resumiram a situação. Segundo o 5Días, o dólar «aprofunda sua queda e chega a G. 5.725 no mercado interbancário».'
+  cuerpo: |-
+    A 780 AM / Mega TV publicou: **«Queda do dólar desafia o setor imobiliário»**. Nessa matéria, Raúl Constantino, presidente da Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca de **90 % dos custos de construção estão em guaranis**. Segundo ele, os custos de obra **subiram cerca de 20 % em dólares** em relação ao ano passado.
+
+    Como imobiliária e como incorporadores do projeto Kalypso, vivemos isso todos os dias. Isto é o que observamos.
+
+    ## Os números oficiais
+
+    Segundo a cotação de referência do Banco Central del Paraguay (BCP):
+
+    | Data | Guaranis por dólar |
+    | --- | --- |
+    | 2 de janeiro de 2026 | 6.627,60 |
+    | 4 de maio de 2026 | 6.047,81 |
+    | 1º de setembro de 2026 | 5.914,97 |
+    | 7 de outubro de 2026 | **5.751,99** |
+
+    Entre 2 de janeiro e 7 de outubro, a quantidade de guaranis obtida por um dólar diminuiu **13,2 %**. Visto ao contrário, o guarani se valorizou **15,2 %** frente ao dólar.
+
+    ## O incorporador: custos em guaranis, preços em dólares
+
+    No mercado imobiliário paraguaio, os imóveis residenciais costumam ser oferecidos em dólares, enquanto grande parte das despesas de construção —materiais, salários e contribuições previdenciárias— é paga em guaranis. A queda do dólar aumenta o custo em dólares dessas despesas, mesmo sem alta dos preços locais.
+
+    - **Exemplo:** uma etapa de obra de **1.000 milhões de guaranis** representava aproximadamente **USD 150.884** em janeiro. À cotação de 7 de outubro, representa cerca de **USD 173.853**, ou seja, **15,2 % a mais**, unicamente pela taxa de câmbio.
+
+    Uma alta adicional dos custos locais em guaranis poderia levar esse aumento para perto dos 20 % mencionados pela CAPADEI. Nosso exemplo ilustra o mecanismo, mas não mede por si só a evolução real dos custos de construção.
+
+    Esse aumento de custos pode levar os incorporadores a subir os preços em dólares dos novos projetos. Também pressiona as margens dos projetos vendidos em pré-venda a preço fixo em dólares, quando ainda restam despesas de obra a pagar em guaranis.
+
+    ## O comprador que ganha em guaranis: uma janela favorável
+
+    **Se o preço em dólares se mantiver**, um imóvel hoje custa menos guaranis para um comprador que recebe nessa moeda.
+
+    - **Exemplo:** um apartamento de **USD 100.000** representava **662,8 milhões de guaranis** em 2 de janeiro, contra **575,2 milhões** em 7 de outubro: aproximadamente **87,6 milhões a menos**, apenas pela variação da taxa de câmbio.
+
+    Essa vantagem pode ocorrer especialmente em projetos já lançados ou concluídos cujos preços em dólares se mantêm. Nos novos lançamentos, uma alta do preço de venda pode reduzir, ou até anular, o benefício cambial.
+
+    ## O proprietário que aluga em dólares
+
+    Se o valor não muda, um aluguel recebido em dólares hoje rende menos guaranis para pagar as expensas (condomínio), a manutenção e os impostos em moeda local. Por isso, convém revisar os números de cada imóvel, comparando receitas e despesas nas duas moedas.
+
+    ## Nossa leitura na CALISTA
+
+    1. **Calcular nas duas moedas.** Uma decisão de compra, de venda ou de aluguel deve ser analisada em guaranis e em dólares, de acordo com a moeda das suas receitas e das suas dívidas.
+    2. **Ler com atenção os contratos de pré-venda.** Preço fixo ou reajustável, cronograma de pagamentos, moeda de cada parcela: essas cláusulas têm efeito direto sobre o custo final e sobre como o risco cambial é distribuído.
+    3. **Não apostar na taxa de câmbio.** Ninguém pode garantir se o dólar continuará caindo ou voltará a subir. Para avaliar um investimento imobiliário, convém analisar sua localização, sua qualidade, sua rentabilidade e suas condições de financiamento.
+
+    Quer saber quanto vale hoje o seu imóvel, em guaranis e em dólares? Peça uma **avaliação** à nossa equipe.
+
+
+
+
+    _Este artigo é informativo e não constitui consultoria financeira._
 ---
 
 780 AM / Mega TV publicó: **«Baja del dólar desafía al sector inmobiliario»**. En esa nota, Raúl Constantino, presidente de la Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca del **90 % de los costos de construcción están en guaraníes**. Según él, los costos de obra **subieron alrededor de un 20 % en dólares** respecto al año pasado.
