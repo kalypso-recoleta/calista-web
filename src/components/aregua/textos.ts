@@ -14,7 +14,7 @@ export const textos = {
     wa_btn: 'Consultar disponibilidad',
     ficha_btn: 'Ver fotos y ficha',
     wa_msg: 'Hola Calista, me interesan los lotes de Areguá Forest. ¿Me pueden enviar disponibilidad, precios y condiciones?',
-    stats: [['39 ha', 'de bosque nativo y arroyos'], ['360 m²', 'superficie mínima de los lotes'], ['USD 23.000', 'precio desde, lotes de la etapa 5'], ['32 km', 'de Asunción por la Ruta 2']],
+    stats: [['39 ha', 'de bosque nativo y arroyos'], ['360 m²', 'superficie mínima de los lotes'], ['USD 68/m²', 'al contado, desde (etapa 5)'], ['32 km', 'de Asunción por la Ruta 2']],
     vivir_eyebrow: 'Vivir en el bosque',
     vivir_t: 'Naturaleza, seguridad y comunidad',
     vivir_p: [
@@ -55,7 +55,7 @@ export const textos = {
     ],
     faq_t: 'Preguntas frecuentes',
     faq: [
-      ['¿Cuánto cuesta un lote?', 'Desde USD 23.000 en lotes seleccionados de la etapa 5. El precio depende de la etapa, de la ubicación (central o esquina) y de la superficie: mirá la tabla de precios más arriba. Te enviamos la lista actualizada de lotes disponibles.'],
+      ['¿Cuánto cuesta un lote?', 'Al contado, desde USD 68/m² en la etapa 5: unos USD 25.100 por un lote de unos 370 m². El precio depende de la etapa, de la ubicación (central o esquina) y de la superficie: mirá la tabla de precios más arriba. Te enviamos la lista actualizada de lotes disponibles.'],
       ['¿Cómo se paga?', 'Al contado, con el mejor precio, o financiado: 20 % de entrega y el saldo en 36 cuotas sin intereses, directamente con el desarrollador y sin crédito bancario.'],
       ['¿Qué es la reserva de dominio?', 'Es una cláusula por la que el vendedor conserva la propiedad del lote hasta que se cumplan las condiciones del contrato; después se firma la escritura a tu nombre. Te explicamos qué condiciones aplican antes de firmar.'],
       ['¿Qué incluye el lote?', 'Los lotes se entregan con cierre perimetral, agua y bajada eléctrica, dentro de un barrio con acceso controlado.'],
@@ -71,7 +71,6 @@ export const textos = {
     tabla_d: 'Precio por m², lotes centrales / esquina. Financiado: 20 % de entrega y 36 cuotas sin intereses.',
     tabla_cols: ['Etapa', 'Entrega', 'Contado', 'Financiado', 'Disponibles'],
     tabla_m2: '/m²',
-    tabla_promo: 'Con CALISTA: lotes seleccionados de la etapa 5 desde USD 23.000.',
     tabla_nota: 'Grilla publicada por el desarrollador en areguaforest.com (29/10/2026). Precio de cada lote = superficie × precio por m². Sujeto a confirmación.',
     sim_t: 'Simulá tu lote',
     sim_d: 'Elegí la etapa, la ubicación y la superficie: calculamos el precio al contado y las cuotas.',
@@ -94,7 +93,7 @@ export const textos = {
     wa_btn: 'Demander les disponibilités',
     ficha_btn: 'Voir photos et fiche',
     wa_msg: 'Bonjour Calista, les terrains d’Areguá Forest m’intéressent. Pouvez-vous m’envoyer les disponibilités, les prix et les conditions ?',
-    stats: [['39 ha', 'de forêt naturelle et de ruisseaux'], ['360 m²', 'surface minimale des lots'], ['23 000 USD', 'prix à partir de, lots de l’étape 5'], ['32 km', 'd’Asunción par la Ruta 2']],
+    stats: [['39 ha', 'de forêt naturelle et de ruisseaux'], ['360 m²', 'surface minimale des lots'], ['68 USD/m²', 'au comptant, à partir de (étape 5)'], ['32 km', 'd’Asunción par la Ruta 2']],
     vivir_eyebrow: 'Vivre dans la forêt',
     vivir_t: 'Nature, sécurité et vie de quartier',
     vivir_p: [
@@ -135,7 +134,7 @@ export const textos = {
     ],
     faq_t: 'Questions fréquentes',
     faq: [
-      ['Combien coûte un lot ?', 'À partir de 23 000 USD sur une sélection de lots de l’étape 5. Le prix dépend de l’étape, de l’emplacement (central ou d’angle) et de la surface : voir la grille de prix plus haut. Nous vous envoyons la liste à jour des lots disponibles.'],
+      ['Combien coûte un lot ?', 'Au comptant, à partir de 68 USD/m² sur l’étape 5 : environ 25 100 USD pour un lot d’environ 370 m². Le prix dépend de l’étape, de l’emplacement (central ou d’angle) et de la surface : voir la grille de prix plus haut. Nous vous envoyons la liste à jour des lots disponibles.'],
       ['Comment paie-t-on ?', 'Au comptant, au meilleur prix, ou en financement : 20 % d’apport et le solde en 36 mensualités sans intérêts, directement avec le développeur et sans crédit bancaire.'],
       ['Qu’est-ce que la réserve de propriété (reserva de dominio) ?', 'C’est une clause par laquelle le vendeur reste propriétaire du lot jusqu’à ce que les conditions du contrat soient remplies ; l’acte est ensuite signé à votre nom. Nous vous expliquons les conditions applicables avant la signature.'],
       ['Que comprend le lot ?', 'Les lots sont livrés avec clôture d’enceinte, eau et raccordement électrique, dans une résidence à accès contrôlé.'],
@@ -151,7 +150,6 @@ export const textos = {
     tabla_d: 'Prix au m², lots centraux / d’angle. En financement : 20 % d’apport et 36 mensualités sans intérêts.',
     tabla_cols: ['Étape', 'Livraison', 'Comptant', 'Financé', 'Disponibles'],
     tabla_m2: '/m²',
-    tabla_promo: 'Avec CALISTA : une sélection de lots de l’étape 5 à partir de 23 000 USD.',
     tabla_nota: 'Grille publiée par le développeur sur areguaforest.com (29/10/2026). Prix d’un lot = surface × prix au m². Sous réserve de confirmation.',
     sim_t: 'Simulez votre lot',
     sim_d: 'Choisissez l’étape, l’emplacement et la surface : nous calculons le prix au comptant et les mensualités.',
@@ -174,7 +172,7 @@ export const textos = {
     wa_btn: 'Check availability',
     ficha_btn: 'See photos and listing',
     wa_msg: 'Hello Calista, I am interested in the Areguá Forest plots. Could you send me availability, prices and terms?',
-    stats: [['39 ha', 'of native forest and streams'], ['360 m²', 'minimum plot size'], ['USD 23,000', 'from, stage 5 plots'], ['32 km', 'from Asunción via Ruta 2']],
+    stats: [['39 ha', 'of native forest and streams'], ['360 m²', 'minimum plot size'], ['USD 68/m²', 'cash, from (stage 5)'], ['32 km', 'from Asunción via Ruta 2']],
     vivir_eyebrow: 'Living in the forest',
     vivir_t: 'Nature, security and community',
     vivir_p: [
@@ -215,7 +213,7 @@ export const textos = {
     ],
     faq_t: 'Frequently asked questions',
     faq: [
-      ['How much is a plot?', 'From USD 23,000 for selected stage 5 plots. Prices depend on the stage, location (inner or corner) and size: see the price table above. We will send you the updated list of available plots.'],
+      ['How much is a plot?', 'Cash prices from USD 68/m² in stage 5: about USD 25,100 for a plot of about 370 m². Prices depend on the stage, location (inner or corner) and size: see the price table above. We will send you the updated list of available plots.'],
       ['How do I pay?', 'Cash, at the best price, or financed: 20 % down and the balance in 36 interest-free instalments, directly with the developer and with no bank loan.'],
       ['What is retention of title (reserva de dominio)?', 'A clause by which the seller keeps ownership of the plot until the contract conditions are met; the deed is then signed in your name. We explain which conditions apply before you sign.'],
       ['What does the plot include?', 'Plots are delivered with perimeter fencing, water and electricity connection, inside a community with controlled access.'],
@@ -231,7 +229,6 @@ export const textos = {
     tabla_d: 'Price per m², inner / corner plots. Financed: 20 % down and 36 interest-free instalments.',
     tabla_cols: ['Stage', 'Delivery', 'Cash', 'Financed', 'Available'],
     tabla_m2: '/m²',
-    tabla_promo: 'With CALISTA: selected stage 5 plots from USD 23,000.',
     tabla_nota: 'Price list published by the developer on areguaforest.com (29/10/2026). Plot price = area × price per m². Subject to confirmation.',
     sim_t: 'Simulate your plot',
     sim_d: 'Choose the stage, location and size: we calculate the cash price and the instalments.',
@@ -254,7 +251,7 @@ export const textos = {
     wa_btn: 'Consultar disponibilidade',
     ficha_btn: 'Ver fotos e ficha',
     wa_msg: 'Olá Calista, tenho interesse nos lotes do Areguá Forest. Podem me enviar disponibilidade, preços e condições?',
-    stats: [['39 ha', 'de mata nativa e riachos'], ['360 m²', 'área mínima dos lotes'], ['USD 23.000', 'a partir de, lotes da etapa 5'], ['32 km', 'de Assunção pela Ruta 2']],
+    stats: [['39 ha', 'de mata nativa e riachos'], ['360 m²', 'área mínima dos lotes'], ['USD 68/m²', 'à vista, a partir de (etapa 5)'], ['32 km', 'de Assunção pela Ruta 2']],
     vivir_eyebrow: 'Viver na mata',
     vivir_t: 'Natureza, segurança e comunidade',
     vivir_p: [
@@ -295,7 +292,7 @@ export const textos = {
     ],
     faq_t: 'Perguntas frequentes',
     faq: [
-      ['Quanto custa um lote?', 'A partir de USD 23.000 em lotes selecionados da etapa 5. O preço depende da etapa, da localização (central ou esquina) e da área: veja a tabela de preços acima. Enviamos a lista atualizada de lotes disponíveis.'],
+      ['Quanto custa um lote?', 'À vista, a partir de USD 68/m² na etapa 5: cerca de USD 25.100 por um lote de cerca de 370 m². O preço depende da etapa, da localização (central ou esquina) e da área: veja a tabela de preços acima. Enviamos a lista atualizada de lotes disponíveis.'],
       ['Como se paga?', 'À vista, com o melhor preço, ou financiado: 20 % de entrada e o saldo em 36 parcelas sem juros, diretamente com o desenvolvedor e sem financiamento bancário.'],
       ['O que é a reserva de domínio?', 'É uma cláusula pela qual o vendedor mantém a propriedade do lote até que as condições do contrato sejam cumpridas; depois a escritura é assinada em seu nome. Explicamos quais condições se aplicam antes de assinar.'],
       ['O que o lote inclui?', 'Os lotes são entregues com cerca perimetral, água e ligação de energia elétrica, em um condomínio com acesso controlado.'],
@@ -311,7 +308,6 @@ export const textos = {
     tabla_d: 'Preço por m², lotes centrais / de esquina. Financiado: 20 % de entrada e 36 parcelas sem juros.',
     tabla_cols: ['Etapa', 'Entrega', 'À vista', 'Financiado', 'Disponíveis'],
     tabla_m2: '/m²',
-    tabla_promo: 'Com a CALISTA: lotes selecionados da etapa 5 a partir de USD 23.000.',
     tabla_nota: 'Tabela publicada pelo desenvolvedor em areguaforest.com (29/10/2026). Preço do lote = área × preço por m². Sujeito a confirmação.',
     sim_t: 'Simule seu lote',
     sim_d: 'Escolha a etapa, a localização e a área: calculamos o preço à vista e as parcelas.',

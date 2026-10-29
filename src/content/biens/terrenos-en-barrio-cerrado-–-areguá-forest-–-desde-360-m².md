@@ -6,7 +6,7 @@ estado: disponible
 destacado: false
 exclusivo: false
 desarrollo: false
-precio: 21660
+precio: 25133
 moneda: USD
 periodo: total
 ciudad: Areguá
