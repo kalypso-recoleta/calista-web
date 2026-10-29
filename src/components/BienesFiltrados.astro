@@ -39,13 +39,13 @@ for (const c of Object.keys(barriosPorCiudad)) {
 const lang = getLangFromUrl(Astro.url);
 // Textes des filtres dans la langue de la page
 const F = {
-  es: { buscar: 'Buscar por título, barrio…', ciudades: 'Todas las ciudades', barrios: 'Todos los barrios', tipo: 'Todo tipo', dorm: 'Dormitorios', banos: 'Baños', limpiar: 'Limpiar', props: 'propiedades', vacio: 'No encontramos propiedades con esos criterios. Probá ampliar la búsqueda o escribinos directamente.',
+  es: { buscar: 'Buscar por título, barrio…', ciudades: 'Ciudad', barrios: 'Barrio', tipo: 'Tipo', dorm: 'Dormitorios', banos: 'Baños', limpiar: 'Limpiar', props: 'propiedades', vacio: 'No encontramos propiedades con esos criterios. Probá ampliar la búsqueda o escribinos directamente.',
         tipos: { casa: 'Casas', departamento: 'Departamentos', duplex: 'Dúplex', terreno: 'Terrenos', oficina: 'Oficinas', local: 'Locales', deposito: 'Depósitos', quinta: 'Quintas' } },
-  fr: { buscar: 'Rechercher par titre, quartier…', ciudades: 'Toutes les villes', barrios: 'Tous les quartiers', tipo: 'Tous types', dorm: 'Chambres', banos: 'Salles de bain', limpiar: 'Effacer', props: 'biens', vacio: 'Aucun bien ne correspond à ces critères. Élargissez la recherche ou écrivez-nous directement.',
+  fr: { buscar: 'Rechercher par titre, quartier…', ciudades: 'Ville', barrios: 'Quartier', tipo: 'Type', dorm: 'Chambres', banos: 'Salles de bain', limpiar: 'Effacer', props: 'biens', vacio: 'Aucun bien ne correspond à ces critères. Élargissez la recherche ou écrivez-nous directement.',
         tipos: { casa: 'Maisons', departamento: 'Appartements', duplex: 'Duplex', terreno: 'Terrains', oficina: 'Bureaux', local: 'Locaux commerciaux', deposito: 'Entrepôts', quinta: 'Maisons de campagne' } },
-  en: { buscar: 'Search by title, area…', ciudades: 'All cities', barrios: 'All neighbourhoods', tipo: 'All types', dorm: 'Bedrooms', banos: 'Bathrooms', limpiar: 'Clear', props: 'properties', vacio: 'No properties match these criteria. Try widening your search or write to us directly.',
+  en: { buscar: 'Search by title, area…', ciudades: 'City', barrios: 'Neighbourhood', tipo: 'Type', dorm: 'Bedrooms', banos: 'Bathrooms', limpiar: 'Clear', props: 'properties', vacio: 'No properties match these criteria. Try widening your search or write to us directly.',
         tipos: { casa: 'Houses', departamento: 'Apartments', duplex: 'Duplexes', terreno: 'Plots', oficina: 'Offices', local: 'Retail units', deposito: 'Warehouses', quinta: 'Country houses' } },
-  pt: { buscar: 'Buscar por título, bairro…', ciudades: 'Todas as cidades', barrios: 'Todos os bairros', tipo: 'Todos os tipos', dorm: 'Quartos', banos: 'Banheiros', limpiar: 'Limpar', props: 'imóveis', vacio: 'Não encontramos imóveis com esses critérios. Tente ampliar a busca ou fale diretamente conosco.',
+  pt: { buscar: 'Buscar por título, bairro…', ciudades: 'Cidade', barrios: 'Bairro', tipo: 'Tipo', dorm: 'Quartos', banos: 'Banheiros', limpiar: 'Limpar', props: 'imóveis', vacio: 'Não encontramos imóveis com esses critérios. Tente ampliar a busca ou fale diretamente conosco.',
         tipos: { casa: 'Casas', departamento: 'Apartamentos', duplex: 'Duplex', terreno: 'Terrenos', oficina: 'Escritórios', local: 'Pontos comerciais', deposito: 'Galpões', quinta: 'Chácaras' } },
 }[lang] ?? null;
 const tx = F!;
@@ -149,10 +149,16 @@ const tipoLabels: Record<string, string> = tx.tipos;
     box-shadow: var(--shadow);
   }
   .campo {
-    flex: 1 1 140px;
+    flex: 1 1 165px;
   }
   .campo.busca {
     flex: 2 1 200px;
+  }
+  /* Ordinateur : tous les filtres sur une seule ligne, mêmes largeurs */
+  @media (min-width: 1000px) {
+    .filtros { flex-wrap: nowrap; }
+    .campo { flex: 1 1 0; min-width: 0; }
+    .campo.busca { flex: 1.6 1 0; }
   }
   .filtros input,
   .filtros select {
@@ -160,10 +166,29 @@ const tipoLabels: Record<string, string> = tx.tipos;
     font-family: var(--body);
     font-size: 0.95rem;
     color: var(--ink);
-    padding: 0.7rem 0.85rem;
+    /* Même hauteur et même fond pour la recherche et les listes (Safari compris) */
+    box-sizing: border-box;
+    height: 2.9rem;
+    padding: 0 0.9rem;
+    line-height: 1.2;
     border: 1px solid var(--line);
     border-radius: var(--radius-sm);
-    background: var(--paper);
+    background-color: var(--surface);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .filtros select {
+    padding-right: 2.3rem;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    /* Flèche dessinée (la flèche native de Safari ne suit pas le style du site) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%233e0055' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    background-size: 11px 8px;
+  }
+  .filtros input::placeholder {
+    color: var(--muted);
   }
   .filtros input:focus,
   .filtros select:focus {
