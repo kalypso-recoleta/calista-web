@@ -55,7 +55,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
 
   <!-- Vivre dans la forêt -->
   <section class="section">
-    <div class="container dos">
+    <div class="container dos vivir">
       <div>
         <p class="eyebrow">{c.vivir_eyebrow}</p>
         <h2>{c.vivir_t}</h2>
@@ -64,7 +64,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
       <div class="fotos-reales">
         {['/uploads/aregua-forest-11.jpg', '/uploads/aregua-forest-12.jpg'].map((f) => (
           <figure>
-            <img src={img(f, { w: 800, h: 533 })} alt={c.real} width="800" height="533" loading="lazy" />
+            <img src={img(f, { w: 600, h: 750 })} alt={c.real} width="600" height="750" loading="lazy" />
             <figcaption>{c.real}</figcaption>
           </figure>
         ))}
@@ -293,10 +293,11 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .sim-out .big strong { font-size: 1.6rem; }
   .sim-out .btn { justify-content: center; margin-top: 0.4rem; }
   .sim-out small { opacity: 0.75; font-size: 0.78rem; }
-  .promo-txt { font-weight: 700; color: var(--violet); margin: 0 0 0.4rem; }
+  .vivir { align-items: center; }
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
   .fondo { background: var(--violet-soft); }
-  .fotos-reales { display: grid; gap: 1rem; }
+  .fotos-reales { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; align-self: center; }
+  .fotos-reales img { aspect-ratio: 4 / 5; }
   figure { margin: 0; position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #fff; }
   figure img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
   .fotos-reales figcaption { position: absolute; left: 0.6rem; bottom: 0.6rem; font-size: 0.78rem; background: rgba(255, 255, 255, 0.92); padding: 0.15rem 0.5rem; border-radius: var(--radius); }
