@@ -9,7 +9,7 @@ lateral: true
 portada: false
 exclusivo: false
 desarrollo: false
-precio: 5500000
+precio: 5000000
 moneda: PYG
 periodo: mes
 ciudad: Asunción
@@ -37,6 +37,7 @@ imagenes:
   - /uploads/PHOTO-2026-10-13-15-39-51 12.jpg
   - /uploads/PHOTO-2026-10-13-15-39-51 16.jpg
 descripcion: Departamento de 72 m² propios (76,42 m² en total) en un edificio con piscina en la azotea y vista abierta a la ciudad. Incluye cochera y baulera.
+gama: otros
 fr:
   titulo: 'À LOUER – Las Mercedes : appartement avec balcon et barbecue privatif, 2 chambres (dont 1 suite), Edificio SOHO'
   descripcion: Appartement de 72 m² privatifs (76,42 m² au total) dans un immeuble avec piscine sur le toit et vue dégagée sur la ville. Place de parking et cave incluses.
@@ -95,7 +96,7 @@ en:
     - Sun deck with loungers and views over the city and the bay
 pt:
   titulo: 'PARA ALUGAR – Las Mercedes: apartamento com sacada e churrasqueira própria, 2 quartos (1 suíte), Edificio SOHO'
-  descripcion: 'Apartamento de 72 m² privativos (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui vaga de garagem e depósito.'
+  descripcion: Apartamento de 72 m² privativos (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui vaga de garagem e depósito.
   cuerpo: |-
     **72 m² privativos** (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui **vaga de garagem** e **depósito**.
 
