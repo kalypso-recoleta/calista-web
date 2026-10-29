@@ -3,7 +3,7 @@ titulo: 'Comprar un lote en un barrio cerrado: ventajas y puntos de atención'
 descripcion: 'Naturaleza, espacios comunes y el encanto de una ciudad de artistas: comprar un lote en Areguá tiene con qué seducir. Pero también hay que mirar el calendario de obras, las reglas de construcción y la administración del barrio.'
 categoria: guia
 tema: comprar
-borrador: true
+borrador: false
 fecha: 2026-10-29
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
