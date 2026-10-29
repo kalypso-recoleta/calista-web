@@ -323,10 +323,10 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .galeria img { aspect-ratio: 7 / 5; }
   .galeria figcaption { padding: 0.7rem 0.8rem; display: grid; }
   .galeria small { color: var(--muted); font-size: 0.75rem; }
-  /* Équipements en pastilles : une ligne chacune, pas de retour à la ligne disgracieux */
-  .amen { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.55rem; }
-  .amen li { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.45rem 0.9rem; background: #fff; border: 1px solid var(--line); border-radius: 999px; font-size: 0.95rem; white-space: nowrap; }
-  .amen li::before { content: '✓'; color: var(--violet); font-weight: 700; }
+  /* Équipements : grille régulière de 12 cases (4 × 3), sans élément orphelin */
+  .amen { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+  .amen li { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 0.9rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); font-size: 0.95rem; line-height: 1.3; }
+  .amen li::before { content: '✓'; flex: 0 0 1.5rem; height: 1.5rem; display: grid; place-items: center; border-radius: 50%; background: var(--violet-soft); color: var(--violet); font-weight: 700; font-size: 0.8rem; }
 
   .dist { list-style: none; padding: 0; margin: 0 0 1.3rem; }
   .dist li { display: flex; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
@@ -368,9 +368,12 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
     .stats li:nth-child(n + 3) { border-top: 1px solid var(--line); }
     .galeria, .cal { grid-template-columns: repeat(2, 1fr); }
     .sim { grid-template-columns: 1fr; }
+    .amen { grid-template-columns: repeat(3, 1fr); }
     .dos { grid-template-columns: 1fr; }
   }
   @media (max-width: 520px) {
+    .amen { grid-template-columns: repeat(2, 1fr); }
+    .amen li { padding: 0.6rem 0.65rem; font-size: 0.9rem; gap: 0.45rem; }
     .galeria, .cal { grid-template-columns: 1fr; }
     .acciones .btn { width: 100%; justify-content: center; }
   }
