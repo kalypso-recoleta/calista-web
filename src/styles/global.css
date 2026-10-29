@@ -133,6 +133,11 @@ img {
   padding-block: clamp(2.25rem, 5vw, 4rem);
 }
 
+/* Section qui suit une autre section sur le même fond : pas de double espace */
+.section.pegada {
+  padding-top: 0;
+}
+
 /* Haut de l'accueil : dégradé violet très clair en diagonale, qui s'efface vers le blanc */
 .motivo {
   background-image: linear-gradient(135deg, #efe4f4 0%, #f7f2f9 35%, #ffffff 75%);
