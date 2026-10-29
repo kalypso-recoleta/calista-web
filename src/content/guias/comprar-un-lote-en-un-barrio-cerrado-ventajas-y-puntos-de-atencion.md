@@ -1,12 +1,12 @@
 ---
-titulo: 'Comprar un lote en un barrio cerrado en Areguá: ventajas y puntos de atención'
+titulo: 'Comprar un lote en un barrio cerrado: ventajas y puntos de atención'
 descripcion: 'Naturaleza, servicios y una ciudad de artistas, pero también obras largas y un desarrollador que administra: lo que hay que saber antes de comprar un lote en Areguá.'
 categoria: guia
 tema: comprar
 borrador: true
 fecha: 2026-10-29
 fr:
-  titulo: "Acheter un terrain dans une résidence fermée à Areguá : les atouts et les points de vigilance"
+  titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
   descripcion: "Nature, réseaux et une ville d'artistes, mais aussi des travaux longs et un promoteur qui administre : ce qu'il faut savoir avant d'acheter un lot à Areguá."
   cuerpo: |-
     Les lots en résidence fermée (barrio cerrado) se multiplient autour d'Asunción, et Areguá en fait partie. C'est un achat que je recommande volontiers, à condition de savoir à quoi s'attendre. Voici les points positifs, et ceux qui demandent de l'attention.
@@ -39,7 +39,7 @@ fr:
 
     Nous commercialisons les lots d'[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l'acte, en français, en espagnol et en anglais.
 en:
-  titulo: 'Buying a plot in a gated community in Areguá: the upsides and what to watch'
+  titulo: 'Buying a plot in a gated community: the upsides and what to watch'
   descripcion: 'Nature, utilities and a town of artists, but also long building works and a developer who runs the community: what to know before buying a plot in Areguá.'
   cuerpo: |-
     Plots in gated communities (barrios cerrados) are multiplying around Asunción, and Areguá is one of the places where this is happening. It is a purchase I gladly recommend, as long as you know what to expect. Here are the upsides, and the points that need attention.
@@ -72,7 +72,7 @@ en:
 
     We sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish.
 pt:
-  titulo: 'Comprar um lote em condomínio fechado em Areguá: vantagens e pontos de atenção'
+  titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
   descripcion: 'Natureza, infraestrutura e uma cidade de artistas, mas também obras longas e um desenvolvedor que administra: o que saber antes de comprar um lote em Areguá.'
   cuerpo: |-
     Os lotes em condomínio fechado (barrio cerrado) se multiplicam ao redor de Assunção, e Areguá é um desses lugares. É uma compra que recomendo, desde que se saiba o que esperar. Aqui estão as vantagens e os pontos que pedem atenção.
