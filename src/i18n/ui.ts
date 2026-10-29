@@ -115,6 +115,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       '11 años de experiencia en el mercado inmobiliario paraguayo, acompañando a familias e inversores en Asunción y alrededores. Asesoramiento honesto, criterio real y cero presión. Te atendemos en español, francés e inglés.',
     'home.ver_propiedades': 'Ver propiedades',
     'seo.home_title': 'Inmobiliaria en Asunción — Compra, venta y alquiler',
+    'seo.prop_title': "Vender tu propiedad en Asunción",
+    'seo.tas_title': "Tasación de inmuebles en Asunción",
     'seo.home_desc':
       'Inmobiliaria en Asunción con 11 años de experiencia: compra, venta, alquiler y administración de propiedades. Atención en español, francés e inglés.',
     'home.hablar_wa': 'Hablar por WhatsApp',
@@ -583,6 +585,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       "11 ans d'expérience sur le marché immobilier paraguayen, à accompagner familles et investisseurs à Asunción et ses environs. Un conseil honnête, un vrai discernement et aucune pression. Agence francophone : nous vous accompagnons en français, en espagnol et en anglais.",
     'home.ver_propiedades': 'Voir les biens',
     'seo.home_title': 'Agence immobilière à Asunción — Achat, vente et location',
+    'seo.prop_title': "Vendre votre bien à Asunción",
+    'seo.tas_title': "Estimation immobilière à Asunción",
     'seo.home_desc':
       "Agence immobilière à Asunción, 11 ans d'expérience : achat, vente, location et gestion de biens. Agence francophone, suivi personnel en français.",
     'home.hablar_wa': 'Discuter sur WhatsApp',
@@ -1052,6 +1056,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       '11 years of experience in the Paraguayan real estate market, guiding families and investors in Asunción and nearby. Honest advice, real judgment and zero pressure. We work with you in English, Spanish and French.',
     'home.ver_propiedades': 'View properties',
     'seo.home_title': 'Real estate agency in Asunción — Buy, sell and rent',
+    'seo.prop_title': "Sell your property in Asunción",
+    'seo.tas_title': "Property valuation in Asunción",
     'seo.home_desc':
       'Real estate agency in Asunción with 11 years of experience: buying, selling, renting and property management. Service in English, Spanish and French.',
     'home.hablar_wa': 'Chat on WhatsApp',
@@ -1521,6 +1527,8 @@ export const ui: Record<Lang, Record<string, string>> = {
       '11 anos de experiência no mercado imobiliário paraguaio, acompanhando famílias e investidores em Assunção e região. Orientação honesta, critério real e zero pressão. Atendemos em português, espanhol, francês e inglês.',
     'home.ver_propiedades': 'Ver imóveis',
     'seo.home_title': 'Imobiliária em Assunção — Compra, venda e aluguel',
+    'seo.prop_title': "Vender o seu imóvel em Assunção",
+    'seo.tas_title': "Avaliação de imóveis em Assunção",
     'seo.home_desc':
       'Imobiliária em Assunção há 11 anos: compra, venda, aluguel e administração de imóveis. Atendimento em português, espanhol, francês e inglês.',
     'home.hablar_wa': 'Falar pelo WhatsApp',

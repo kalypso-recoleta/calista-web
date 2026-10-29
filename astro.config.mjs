@@ -33,6 +33,8 @@ export default defineConfig({
       // + articles en portugais pas encore traduits (voir guiasSinPt)
       filter: (page) => {
         if (/\/guias\//.test(page)) return false;
+        // Page de remerciement (noindex) : hors sitemap
+        if (/\/gracias\/?$/.test(page)) return false;
         const m = page.match(/\/pt\/blog\/(?!tema\/)([^/]+)\/?$/);
         return !(m && guiasSinPt.has(m[1]));
       },
