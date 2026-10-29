@@ -4,10 +4,11 @@ descripcion: 'Naturaleza, espacios comunes y el encanto de una ciudad de artista
 categoria: guia
 tema: comprar
 borrador: false
-fecha: 2026-10-29
+fecha: 2026-10-29T20:20:00
+portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.png
 fr:
-  titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
-  descripcion: "Nature, équipements communs et charme d’une ville d’artistes : acheter un lot à Areguá a de quoi séduire. Mais il faut aussi regarder le calendrier des travaux, les règles de construction et la gestion de la résidence."
+  titulo: 'Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance'
+  descripcion: 'Nature, équipements communs et charme d’une ville d’artistes : acheter un lot à Areguá a de quoi séduire. Mais il faut aussi regarder le calendrier des travaux, les règles de construction et la gestion de la résidence.'
   cuerpo: |-
     Acheter un terrain dans une résidence fermée, ou barrio cerrado, permet d’envisager sa maison dans un ensemble aménagé, avec des espaces communs et un accès contrôlé. À Areguá, le cadre naturel et l’identité culturelle de la ville ajoutent un attrait particulier.
 
@@ -279,6 +280,7 @@ pt:
 
     Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês. Lá você encontra a tabela de preços por etapa e um simulador de parcelas.
 ---
+
 Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. En Areguá, el entorno natural y la identidad cultural de la ciudad suman un atractivo particular.
 
 Es una compra que recomiendo, siempre que se sepa qué esperar. Estas son las ventajas que veo y los puntos a verificar antes de comprometerse.
