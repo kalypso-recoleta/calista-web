@@ -6,7 +6,7 @@
  * les autres des images de synthèse du développeur (signalées « ilustrativa »).
  */
 import Layout from '../../layouts/Layout.astro';
-import { textos } from '../aregua/textos';
+import { textos, grilla } from '../aregua/textos';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
@@ -20,6 +20,7 @@ const waCasa = whatsappLink(c.casa_msg);
 const ficha = L('/propiedad/terrenos-en-barrio-cerrado-aregua-forest-desde-360-m');
 const mapa = 'https://maps.app.goo.gl/jKm8qMHhwfoQW7U79';
 const hero = '/uploads/aregua-forest-02.jpg';
+const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
 ---
 
 <Layout title={c.seo_t} description={c.seo_d} image={hero} tituloCompleto>
@@ -45,6 +46,10 @@ const hero = '/uploads/aregua-forest-02.jpg';
     <ul class="stats">
       {c.stats.map(([n, d]) => (<li><strong>{n}</strong><span>{d}</span></li>))}
     </ul>
+    <a class="unesco" href={unescoUrl} target="_blank" rel="noopener">
+      <span class="sello">UNESCO</span>
+      <span><strong>{c.unesco}</strong><small>{c.unesco_d}</small></span>
+    </a>
   </section>
 
   <!-- Vivre dans la forêt -->
@@ -102,8 +107,35 @@ const hero = '/uploads/aregua-forest-02.jpg';
     </div>
   </section>
 
-  <!-- Investissement + maison -->
+  <!-- Grille de prix -->
   <section class="section fondo">
+    <div class="container">
+      <p class="eyebrow">{c.tabla_eyebrow}</p>
+      <h2>{c.tabla_t}</h2>
+      <p>{c.tabla_d}</p>
+      <div class="tabla-wrap">
+        <table class="tabla">
+          <thead><tr>{c.tabla_cols.map((h) => <th>{h}</th>)}</tr></thead>
+          <tbody>
+            {grilla.map((g) => (
+              <tr class:list={{ promo: g.etapa === 5 }}>
+                <td><strong>{c.tabla_cols[0]} {g.etapa}</strong></td>
+                <td>{g.entrega[lang] ?? g.entrega.es}</td>
+                <td>USD {g.contado[0]} / {g.contado[1]}{c.tabla_m2}</td>
+                <td>USD {g.financiado[0]} / {g.financiado[1]}{c.tabla_m2}</td>
+                <td>{g.disponibles}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="promo-txt">★ {c.tabla_promo}</p>
+      <p class="nota">{c.tabla_nota}</p>
+    </div>
+  </section>
+
+  <!-- Investissement + maison -->
+  <section class="section">
     <div class="container dos">
       <div class="tarjeta">
         <p class="eyebrow">{c.inv_eyebrow}</p>
@@ -176,6 +208,17 @@ const hero = '/uploads/aregua-forest-02.jpg';
   .stats strong { font-size: clamp(1.4rem, 2.6vw, 1.9rem); color: var(--violet); line-height: 1.1; }
   .stats span { font-size: 0.9rem; color: var(--muted); }
 
+  .unesco { display: flex; gap: 1rem; align-items: center; margin-top: 1.2rem; padding: 0.9rem 1.2rem; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--violet-vivo); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
+  .unesco:hover { background: var(--violet-soft); text-decoration: none; }
+  .unesco strong { display: block; }
+  .unesco small { color: var(--muted); font-size: 0.9rem; }
+  .sello { flex: 0 0 auto; font-weight: 800; letter-spacing: 0.08em; font-size: 0.8rem; color: #fff; background: var(--violet); padding: 0.45rem 0.6rem; border-radius: var(--radius); }
+  .tabla-wrap { overflow-x: auto; margin: 1.2rem 0 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+  .tabla { width: 100%; border-collapse: collapse; font-size: 0.97rem; min-width: 560px; }
+  .tabla th { text-align: left; background: var(--violet); color: #fff; font-weight: 600; padding: 0.75rem 1rem; }
+  .tabla td { padding: 0.75rem 1rem; border-top: 1px solid var(--line); }
+  .tabla tr.promo td { background: #fbf6fd; }
+  .promo-txt { font-weight: 700; color: var(--violet); margin: 0 0 0.4rem; }
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
   .fondo { background: var(--violet-soft); }
   .fotos-reales { display: grid; gap: 1rem; }
