@@ -26,7 +26,7 @@ export const textos = {
     amen_eyebrow: 'Amenities',
     amen_t: 'Todo lo que necesitás, dentro del barrio',
     amen_fotos: [['/uploads/aregua-forest-08.jpg', 'Piscina tipo playa'], ['/uploads/aregua-forest-05.jpg', 'Canchas de pádel y tenis'], ['/uploads/aregua-forest-06.jpg', 'Forest House'], ['/uploads/aregua-forest-04.jpg', 'Acceso y centro comercial']],
-    amen: ['Club House con salones', 'Restaurante y bar', 'Salón de eventos', 'Piscina tipo playa', 'Canchas de tenis, pádel y fútbol', 'Gimnasio', 'Arroyos naturales', 'Parques y senderos', 'Juegos infantiles', 'Área para mascotas', 'Centro comercial en el acceso', 'Seguridad 24/7'],
+    amen: ['Club House con salones', 'Restaurante y bar', 'Salón de eventos', 'Piscina tipo playa', 'Tenis, pádel y fútbol', 'Gimnasio', 'Arroyos naturales', 'Parques y senderos', 'Juegos infantiles', 'Área para mascotas', 'Centro comercial en el acceso', 'Seguridad 24/7'],
     ubi_eyebrow: 'Ubicación',
     ubi_t: 'Cerca de todo, lejos del ruido',
     ubi: [['Asunción (centro)', '32 km'], ['Aeropuerto Silvio Pettirossi', '28 km'], ['San Bernardino', '15 km'], ['Lago Ypacaraí', '8 km']],
@@ -323,11 +323,12 @@ export const textos = {
   },
 } as const;
 
-/** Grille du développeur (areguaforest.com/mapa, 29/10/2026) : USD/m² [central, angle]. */
+/** Grille du développeur (areguaforest.com/mapa, 29/10/2026) : USD/m² [central, angle] ;
+ *  sup = surfaces min–max des lots DISPONIBLES [central, angle], pour borner le simulateur. */
 export const grilla = [
-  { etapa: 1, entrega: { es: 'Inmediata', fr: 'Immédiate', en: 'Immediate', pt: 'Imediata' }, contado: [100, 135], financiado: [130, 165], disponibles: 92 },
-  { etapa: 2, entrega: { es: 'Inmediata', fr: 'Immédiate', en: 'Immediate', pt: 'Imediata' }, contado: [90, 135], financiado: [130, 165], disponibles: 106 },
-  { etapa: 3, entrega: { es: 'Dic. 2026', fr: 'Déc. 2026', en: 'Dec 2026', pt: 'Dez. 2026' }, contado: [90, 125], financiado: [120, 155], disponibles: 111 },
-  { etapa: 4, entrega: { es: 'Dic. 2027', fr: 'Déc. 2027', en: 'Dec 2027', pt: 'Dez. 2027' }, contado: [80, 110], financiado: [110, 155], disponibles: 65 },
-  { etapa: 5, entrega: { es: 'Dic. 2028', fr: 'Déc. 2028', en: 'Dec 2028', pt: 'Dez. 2028' }, contado: [68, 90], financiado: [100, 145], disponibles: 48 },
+  { etapa: 1, entrega: { es: 'Inmediata', fr: 'Immédiate', en: 'Immediate', pt: 'Imediata' }, contado: [100, 135], financiado: [130, 165], sup: [[375.74, 849.12], [396.39, 627.21]], disponibles: 92 },
+  { etapa: 2, entrega: { es: 'Inmediata', fr: 'Immédiate', en: 'Immediate', pt: 'Imediata' }, contado: [90, 135], financiado: [130, 165], sup: [[400.09, 437.22], [398.24, 437.3]], disponibles: 106 },
+  { etapa: 3, entrega: { es: 'Dic. 2026', fr: 'Déc. 2026', en: 'Dec 2026', pt: 'Dez. 2026' }, contado: [90, 125], financiado: [120, 155], sup: [[360.85, 365.82], [360.85, 365.92]], disponibles: 111 },
+  { etapa: 4, entrega: { es: 'Dic. 2027', fr: 'Déc. 2027', en: 'Dec 2027', pt: 'Dez. 2027' }, contado: [80, 110], financiado: [110, 155], sup: [[360.85, 369.05], [367.71, 369.14]], disponibles: 65 },
+  { etapa: 5, entrega: { es: 'Dic. 2028', fr: 'Déc. 2028', en: 'Dec 2028', pt: 'Dez. 2028' }, contado: [68, 90], financiado: [100, 145], sup: [[369.6, 372.07], [369.32, 370.93]], disponibles: 48 },
 ] as const;

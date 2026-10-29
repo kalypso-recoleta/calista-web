@@ -97,13 +97,13 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
         <h2>{c.ubi_t}</h2>
         <ul class="dist">{c.ubi.map(([l, d]) => <li><span>{l}</span><strong>{d}</strong></li>)}</ul>
         <a class="btn btn--ghost" href={mapa} target="_blank" rel="noopener">📍 {c.mapa}</a>
+        <p class="tip">{c.etapas_tip}</p>
       </div>
       <div>
         <p class="eyebrow">{c.etapas_eyebrow}</p>
         <h2>{c.etapas_t}</h2>
         <p>{c.etapas_d}</p>
         <ol class="etapas">{c.etapas.map(([e, f]) => <li><strong>{e}</strong><span>{f}</span></li>)}</ol>
-        <p class="tip">{c.etapas_tip}</p>
       </div>
     </div>
   </section>
@@ -145,7 +145,8 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
             <label class="radio"><input type="radio" name="ubic" value="1" /> {c.sim_esquina}</label>
           </fieldset>
           <label>{c.sim_sup}: <strong data-sup-txt>370 m²</strong>
-            <input type="range" min="360" max="850" step="1" value="370" data-sup />
+            <input type="range" min="369.6" max="372.07" step="0.01" value="369.6" data-sup />
+            <small class="rango" data-sup-rango></small>
           </label>
         </div>
         <div class="sim-out" aria-live="polite">
@@ -221,7 +222,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
 <script
   is:inline
   define:vars={{
-    G: grilla.map((g) => ({ etapa: g.etapa, contado: g.contado, fin: g.financiado, entrega: g.entrega[lang] ?? g.entrega.es })),
+    G: grilla.map((g) => ({ etapa: g.etapa, contado: g.contado, fin: g.financiado, sup: g.sup, entrega: g.entrega[lang] ?? g.entrega.es })),
     T: { etapa: c.sim_etapa, ubic: [c.sim_central, c.sim_esquina], wa: c.sim_wa, num: site.whatsapp },
     LOC: { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' }[lang],
   }}
@@ -229,19 +230,29 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   document.querySelectorAll('[data-sim]').forEach((el) => {
     const $ = (s) => el.querySelector(s);
     const usd = (n) => 'USD ' + Math.round(n).toLocaleString(LOC);
+    const m2 = (n) => n.toLocaleString(LOC, { maximumFractionDigits: 2 });
+    let clave = '';
     const calc = () => {
       const g = G.find((x) => x.etapa === +$('[data-etapa]').value);
       const u = +el.querySelector('input[name="ubic"]:checked').value;
-      const sup = +$('[data-sup]').value;
+      const r = $('[data-sup]');
+      // Curseur borné aux surfaces des lots disponibles de l'étape et de l'emplacement choisis
+      if (clave !== g.etapa + '-' + u) {
+        clave = g.etapa + '-' + u;
+        r.min = g.sup[u][0]; r.max = g.sup[u][1];
+        r.value = g.sup[u][0];
+        $('[data-sup-rango]').textContent = m2(g.sup[u][0]) + ' – ' + m2(g.sup[u][1]) + ' m²';
+      }
+      const sup = +r.value;
       const contado = sup * g.contado[u];
       const fin = sup * g.fin[u];
-      $('[data-sup-txt]').textContent = sup + ' m²';
+      $('[data-sup-txt]').textContent = m2(sup) + ' m²';
       $('[data-contado]').textContent = usd(contado);
       $('[data-fin]').textContent = usd(fin);
       $('[data-entrega]').textContent = usd(fin * 0.2);
       $('[data-cuota]').textContent = usd((fin * 0.8) / 36);
       $('[data-entr]').textContent = g.entrega;
-      const msg = T.wa.replace('{etapa}', T.etapa + ' ' + g.etapa).replace('{ubic}', T.ubic[u]).replace('{sup}', sup).replace('{contado}', usd(contado));
+      const msg = T.wa.replace('{etapa}', T.etapa + ' ' + g.etapa).replace('{ubic}', T.ubic[u]).replace('{sup}', m2(sup)).replace('{contado}', usd(contado));
       $('[data-wa]').href = 'https://wa.me/' + T.num + '?text=' + encodeURIComponent(msg);
     };
     el.addEventListener('input', calc);
@@ -286,6 +297,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .sim-in input[type='range'] { width: 100%; accent-color: var(--violet); }
   .sim-in fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 1.2rem; flex-wrap: wrap; }
   .sim-in legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .sim-in .rango { font-weight: 400; color: var(--muted); font-size: 0.82rem; }
   .sim-in .radio { display: flex; align-items: center; gap: 0.4rem; font-weight: 400; }
   .sim-out { background: var(--violet); color: #fff; padding: 1.5rem; display: grid; gap: 0.7rem; align-content: start; }
   .sim-out div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 0.55rem; }
@@ -293,6 +305,8 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .sim-out .big strong { font-size: 1.6rem; }
   .sim-out .btn { justify-content: center; margin-top: 0.4rem; }
   .sim-out small { opacity: 0.75; font-size: 0.78rem; }
+  /* Sections plus serrées sur cette page longue */
+  .section { padding-block: clamp(1.75rem, 3.5vw, 2.75rem); }
   .vivir { align-items: center; }
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
   .fondo { background: var(--violet-soft); }
@@ -306,8 +320,10 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .galeria img { aspect-ratio: 7 / 5; }
   .galeria figcaption { padding: 0.7rem 0.8rem; display: grid; }
   .galeria small { color: var(--muted); font-size: 0.75rem; }
-  .amen { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.5rem 1.5rem; }
-  .amen li::before { content: '✓'; color: var(--violet); font-weight: 700; margin-right: 0.5rem; }
+  /* Équipements en pastilles : une ligne chacune, pas de retour à la ligne disgracieux */
+  .amen { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.55rem; }
+  .amen li { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.45rem 0.9rem; background: #fff; border: 1px solid var(--line); border-radius: 999px; font-size: 0.95rem; white-space: nowrap; }
+  .amen li::before { content: '✓'; color: var(--violet); font-weight: 700; }
 
   .dist { list-style: none; padding: 0; margin: 0 0 1.3rem; }
   .dist li { display: flex; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
@@ -316,7 +332,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .etapas li { padding: 0.45rem 0 0.45rem 1rem; position: relative; display: grid; }
   .etapas li::before { content: ''; position: absolute; left: -8px; top: 0.85rem; width: 13px; height: 13px; border-radius: 50%; background: #fff; border: 3px solid var(--violet); }
   .etapas span { color: var(--muted); font-size: 0.95rem; }
-  .tip { background: var(--violet-soft); padding: 0.8rem 1rem; border-radius: var(--radius); font-size: 0.95rem; }
+  .tip { margin: 1.3rem 0 0; background: var(--violet-soft); padding: 0.8rem 1rem; border-radius: var(--radius); font-size: 0.95rem; }
 
   .tarjeta { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); height: 100%; }
   .casa { border-top-color: var(--violet-vivo); }
