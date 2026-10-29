@@ -202,7 +202,7 @@ const ld = {
     </div>
   </section>
 
-  <section class="section">
+  <section class="section tight">
     <div class="container">
       <h2 class="tit">{x.pasos_t}</h2>
       <ol class="pasos">
@@ -232,8 +232,8 @@ const ld = {
         </div>
         <div class="bloque">
           <h2>{x.fr_t}</h2>
-          <p>{x.fr_d} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
-          <p class="cpi">{x.cpi.replace('{cpi}', site.cpiFrancia)}</p>
+          <p>{x.cpi.replace('{cpi}', site.cpiFrancia)}</p>
+          <p class="web"><a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
         </div>
       </div>
     </div>
@@ -255,16 +255,17 @@ const ld = {
 
 <style>
   .narrow > * { max-width: 820px; }
-  .hero { padding-bottom: 0.5rem; }
-  .tight { padding-block: clamp(1.5rem, 3vw, 2.25rem); }
+  .hero { padding-bottom: 0.75rem; }
+  /* Sections rapprochées : la page se lit d'un bloc */
+  .tight { padding-block: clamp(0.75rem, 1.5vw, 1.25rem); }
   .migas { margin: 0 0 1rem; font-size: 0.9rem; }
   .migas a { color: var(--violet); font-weight: 600; }
   .bandera { font-size: 1.05rem; margin-right: 0.2rem; letter-spacing: 0; }
-  .tit { margin: 0 0 1.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
-  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: stretch; }
+  .tit { margin: 0.5rem 0 1.2rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
   .col { display: grid; gap: 1.5rem; }
   /* Cartes : même style que les cartes de la page Tasaciones */
-  .bloque { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.8rem 2rem; box-shadow: var(--shadow); }
+  .bloque { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.5rem 1.8rem; box-shadow: var(--shadow); }
   .bloque.tinte { background: var(--card-tint); }
   .bloque h2 { margin: 0 0 1rem; font-size: clamp(1.25rem, 2vw, 1.5rem); }
   .bloque ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.65rem; }
@@ -273,7 +274,7 @@ const ld = {
   .bloque p { margin: 0; color: var(--muted); line-height: 1.7; }
   .bloque p.sub { margin: 1.3rem 0 0.7rem; color: var(--ink); font-weight: 600; }
   .bloque a { color: var(--violet); font-weight: 700; }
-  .bloque p.cpi { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
+  .bloque p.web { margin-top: 0.6rem; }
   .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; counter-reset: paso; }
   .pasos li { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
   .pasos .num { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--violet); color: #fff; font-family: var(--display); font-size: 0.95rem; font-weight: 600; }
