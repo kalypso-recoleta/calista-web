@@ -13,11 +13,19 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Menu principal (ordinateur) : 6 rubriques. Terrenos, Reseñas, Historia et FAQ sont
-// dans le menu mobile et le pied de page.
+// Menu principal (ordinateur) : 6 rubriques. Terrenos et Areguá Forest sont sous « Comprar » ;
+// Reseñas, Historia et FAQ sont dans le menu mobile et le pied de page.
 const PROPIETARIOS = { es: 'Propietarios', fr: 'Propriétaires', en: 'Owners', pt: 'Proprietários' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const CASAS = { es: 'Casas y departamentos', fr: 'Maisons et appartements', en: 'Houses and apartments', pt: 'Casas e apartamentos' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const nav = [
-  { href: '/comprar', label: t('nav.comprar') },
+  {
+    href: '/comprar', label: t('nav.comprar'), tambien: ['/terrenos', '/terrenos/aregua-forest'],
+    sub: [
+      { href: '/comprar', label: CASAS },
+      { href: '/terrenos', label: t('nav.terrenos') },
+      { href: '/terrenos/aregua-forest', label: 'Areguá Forest' },
+    ],
+  },
   { href: '/alquilar', label: t('nav.alquilar') },
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: 'Kalypso' },
@@ -39,6 +47,7 @@ const navMovil = [
   { href: '/alquiler-temporal', label: t('nav.temporal') },
   { href: '/desarrollos', label: t('nav.desarrollos') },
   { href: '/terrenos', label: t('nav.terrenos') },
+  { href: '/terrenos/aregua-forest', label: '— Areguá Forest' },
   { href: '/administracion', label: t('nav.administracion') },
   { href: '/propietarios', label: t('nav.propietarios') },
   { href: '/blog', label: t('nav.guias') },

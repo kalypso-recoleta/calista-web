@@ -8,6 +8,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { textos, grilla } from '../aregua/textos';
 import { whatsappLink } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
 import { img } from '../../lib/cloudinary';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
@@ -129,6 +130,34 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
           </tbody>
         </table>
       </div>
+      <div class="sim" data-sim>
+        <div class="sim-in">
+          <h3>{c.sim_t}</h3>
+          <p>{c.sim_d}</p>
+          <label>{c.sim_etapa}
+            <select data-etapa>
+              {grilla.map((g) => <option value={g.etapa} selected={g.etapa === 5}>{c.sim_etapa} {g.etapa} · {g.entrega[lang] ?? g.entrega.es}</option>)}
+            </select>
+          </label>
+          <fieldset>
+            <legend>{c.sim_ubic}</legend>
+            <label class="radio"><input type="radio" name="ubic" value="0" checked /> {c.sim_central}</label>
+            <label class="radio"><input type="radio" name="ubic" value="1" /> {c.sim_esquina}</label>
+          </fieldset>
+          <label>{c.sim_sup}: <strong data-sup-txt>370 m²</strong>
+            <input type="range" min="360" max="850" step="1" value="370" data-sup />
+          </label>
+        </div>
+        <div class="sim-out" aria-live="polite">
+          <div class="big"><span>{c.sim_contado}</span><strong data-contado>—</strong></div>
+          <div><span>{c.sim_fin}</span><strong data-fin>—</strong></div>
+          <div><span>{c.sim_entrega}</span><strong data-entrega>—</strong></div>
+          <div><span>{c.sim_cuota}</span><strong data-cuota>—</strong></div>
+          <div><span>{c.sim_entr}</span><strong data-entr>—</strong></div>
+          <a class="btn btn--wa" data-wa href={wa} target="_blank" rel="noopener">{c.sim_btn}</a>
+          <small>{c.sim_aviso}</small>
+        </div>
+      </div>
       <p class="promo-txt">★ {c.tabla_promo}</p>
       <p class="nota">{c.tabla_nota}</p>
     </div>
@@ -190,6 +219,38 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   </section>
 </Layout>
 
+<script
+  is:inline
+  define:vars={{
+    G: grilla.map((g) => ({ etapa: g.etapa, contado: g.contado, fin: g.financiado, entrega: g.entrega[lang] ?? g.entrega.es })),
+    T: { etapa: c.sim_etapa, ubic: [c.sim_central, c.sim_esquina], wa: c.sim_wa, num: site.whatsapp },
+    LOC: { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' }[lang],
+  }}
+>
+  document.querySelectorAll('[data-sim]').forEach((el) => {
+    const $ = (s) => el.querySelector(s);
+    const usd = (n) => 'USD ' + Math.round(n).toLocaleString(LOC);
+    const calc = () => {
+      const g = G.find((x) => x.etapa === +$('[data-etapa]').value);
+      const u = +el.querySelector('input[name="ubic"]:checked').value;
+      const sup = +$('[data-sup]').value;
+      const contado = sup * g.contado[u];
+      const fin = sup * g.fin[u];
+      $('[data-sup-txt]').textContent = sup + ' m²';
+      $('[data-contado]').textContent = usd(contado);
+      $('[data-fin]').textContent = usd(fin);
+      $('[data-entrega]').textContent = usd(fin * 0.2);
+      $('[data-cuota]').textContent = usd((fin * 0.8) / 36);
+      $('[data-entr]').textContent = g.entrega;
+      const msg = T.wa.replace('{etapa}', T.etapa + ' ' + g.etapa).replace('{ubic}', T.ubic[u]).replace('{sup}', sup).replace('{contado}', usd(contado));
+      $('[data-wa]').href = 'https://wa.me/' + T.num + '?text=' + encodeURIComponent(msg);
+    };
+    el.addEventListener('input', calc);
+    el.addEventListener('change', calc);
+    calc();
+  });
+</script>
+
 <style>
   .hero { position: relative; min-height: min(78vh, 640px); display: flex; align-items: flex-end; overflow: hidden; color: #fff; }
   .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -218,6 +279,21 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .tabla th { text-align: left; background: var(--violet); color: #fff; font-weight: 600; padding: 0.75rem 1rem; }
   .tabla td { padding: 0.75rem 1rem; border-top: 1px solid var(--line); }
   .tabla tr.promo td { background: #fbf6fd; }
+  .sim { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1.5rem 0 1rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-lg); overflow: hidden; }
+  .sim-in { padding: 1.5rem; display: grid; gap: 0.9rem; align-content: start; }
+  .sim-in h3, .sim-in p { margin: 0; }
+  .sim-in label { display: grid; gap: 0.35rem; font-weight: 600; font-size: 0.95rem; }
+  .sim-in select { font: inherit; padding: 0.6rem 0.7rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+  .sim-in input[type='range'] { width: 100%; accent-color: var(--violet); }
+  .sim-in fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+  .sim-in legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .sim-in .radio { display: flex; align-items: center; gap: 0.4rem; font-weight: 400; }
+  .sim-out { background: var(--violet); color: #fff; padding: 1.5rem; display: grid; gap: 0.7rem; align-content: start; }
+  .sim-out div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 0.55rem; }
+  .sim-out span { opacity: 0.85; }
+  .sim-out .big strong { font-size: 1.6rem; }
+  .sim-out .btn { justify-content: center; margin-top: 0.4rem; }
+  .sim-out small { opacity: 0.75; font-size: 0.78rem; }
   .promo-txt { font-weight: 700; color: var(--violet); margin: 0 0 0.4rem; }
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
   .fondo { background: var(--violet-soft); }
@@ -269,6 +345,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
     .stats li:nth-child(3) { border-left: 0; }
     .stats li:nth-child(n + 3) { border-top: 1px solid var(--line); }
     .galeria, .cal { grid-template-columns: repeat(2, 1fr); }
+    .sim { grid-template-columns: 1fr; }
     .dos { grid-template-columns: 1fr; }
   }
   @media (max-width: 520px) {
