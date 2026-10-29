@@ -13,7 +13,7 @@ ciudad: Areguá
 barrio: Aregua
 ubicacion: https://maps.app.goo.gl/jKm8qMHhwfoQW7U79
 superficie_terreno: 360
-entrega: 31/12/2027
+entrega: Inmediata a dic. 2028 (según etapa)
 financiacion: true
 imagenes:
   - /uploads/aregua-forest-01.jpg
