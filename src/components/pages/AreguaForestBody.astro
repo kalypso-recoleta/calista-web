@@ -159,7 +159,6 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
           <small>{c.sim_aviso}</small>
         </div>
       </div>
-      <p class="nota">{c.tabla_nota}</p>
     </div>
   </section>
 
@@ -181,6 +180,10 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
         <h3>{c.casa_t}</h3>
         <p>{c.casa_d}</p>
         <a class="btn btn--primary" href={waCasa} target="_blank" rel="noopener">{c.casa_btn}</a>
+        <figure class="casa-img">
+          <img src={img('/uploads/aregua-forest-01.jpg', { w: 900, h: 560 })} alt={c.ilus} width="900" height="560" loading="lazy" />
+          <figcaption>{c.ilus}</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -335,7 +338,10 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .tip { margin: 1.3rem 0 0; background: var(--violet-soft); padding: 0.8rem 1rem; border-radius: var(--radius); font-size: 0.95rem; }
 
   .tarjeta { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); height: 100%; }
-  .casa { border-top-color: var(--violet-vivo); }
+  .casa { border-top-color: var(--violet-vivo); display: flex; flex-direction: column; align-items: flex-start; }
+  .casa-img { margin-top: 1.4rem; width: 100%; flex: 1; min-height: 200px; box-shadow: none; }
+  .casa-img img { height: 100%; aspect-ratio: auto; }
+  .casa-img figcaption { position: absolute; left: 0.6rem; bottom: 0.6rem; font-size: 0.75rem; background: rgba(255, 255, 255, 0.92); padding: 0.15rem 0.5rem; border-radius: var(--radius); }
   .barras { display: flex; gap: 1.2rem; align-items: flex-end; height: 120px; margin: 1rem 0 1.2rem; }
   .barras div { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; width: 90px; }
   .barras span { width: 100%; background: linear-gradient(180deg, var(--violet-700), var(--violet)); border-radius: var(--radius) var(--radius) 0 0; }
