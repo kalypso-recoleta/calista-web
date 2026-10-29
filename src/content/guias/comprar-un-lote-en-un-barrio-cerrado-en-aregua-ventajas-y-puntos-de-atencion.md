@@ -5,7 +5,6 @@ categoria: guia
 tema: comprar
 borrador: true
 fecha: 2026-10-29
-portada_foto: /uploads/aregua-forest-11.jpg
 fr:
   titulo: "Acheter un terrain dans une résidence fermée à Areguá : les atouts et les points de vigilance"
   descripcion: "Nature, réseaux et une ville d'artistes, mais aussi des travaux longs et un promoteur qui administre : ce qu'il faut savoir avant d'acheter un lot à Areguá."
@@ -25,6 +24,8 @@ fr:
     ## Les points de vigilance
 
     **Beaucoup d'acheteurs sont des investisseurs.** Une partie des lots est achetée pour placer de l'argent, puis laissée en attente. Résultat : pendant plusieurs années, vous pouvez avoir peu de voisins, des terrains vides autour de vous et une vie de quartier qui démarre lentement.
+
+    Ce frein a cependant ses limites dans une résidence fermée comme Areguá Forest. Les charges communes sont dues pour chaque lot, construit ou non. Un terrain vide coûte donc de l'argent tous les mois, ce qui pousse les propriétaires à construire pour en tirer un revenu, ou à revendre à quelqu'un qui viendra y habiter. Le quartier a ainsi tendance à se remplir plus vite que sur des terrains isolés.
 
     **Les travaux peuvent durer.** Les infrastructures sont livrées étape par étape, puis chaque propriétaire construit à son rythme. Si vous vous installez tôt, vous vivrez probablement plusieurs années au milieu des chantiers : camions, bruit, poussière.
 
@@ -57,6 +58,8 @@ en:
 
     **Many buyers are investors.** Some plots are bought as an investment and then left as they are. As a result, for several years you may have few neighbours, empty plots around you and a community life that starts slowly.
 
+    In a gated community like Areguá Forest, however, this effect has its limits. Common charges are due on every plot, built on or not. An empty plot therefore costs money every month, which pushes owners to build and earn an income from it, or to resell to someone who will live there. The community thus tends to fill up faster than isolated plots do.
+
     **Building works can last a long time.** Infrastructure is delivered stage by stage, and then each owner builds at their own pace. If you move in early, you will probably live among building sites for several years: trucks, noise, dust.
 
     **The developer often remains the administrator.** Until it has finished selling, the developer often keeps running the community, and at that point it still owns a large share of the plots. Check that it actually pays the common charges on the plots it owns, not just the buyers. Ask for the community rules and how charges are shared before you sign.
@@ -88,6 +91,8 @@ pt:
 
     **Muitos compradores são investidores.** Parte dos lotes é comprada como investimento e fica parada. Por isso, durante alguns anos você pode ter poucos vizinhos, terrenos vazios ao redor e uma vida de bairro que começa devagar.
 
+    Num condomínio fechado como o Areguá Forest, porém, esse efeito tem limites. As despesas comuns são devidas por cada lote, construído ou não. Um terreno vazio custa dinheiro todo mês, o que leva os proprietários a construir para obter uma renda, ou a revender para alguém que vai morar ali. Assim, o bairro tende a se preencher mais rápido do que em terrenos isolados.
+
     **As obras podem durar.** A infraestrutura é entregue por etapas, e depois cada proprietário constrói no seu ritmo. Se você se mudar cedo, provavelmente vai conviver vários anos com obras: caminhões, barulho, poeira.
 
     **O desenvolvedor costuma continuar como administrador.** Enquanto não termina de vender, o desenvolvedor costuma administrar o condomínio, e nesse momento ainda é dono de boa parte dos lotes. Verifique se ele realmente paga as despesas comuns dos lotes que são dele, e não só os compradores. Peça o regulamento e a forma de divisão das despesas antes de assinar.
@@ -115,6 +120,8 @@ Los lotes en barrio cerrado se multiplican alrededor de Asunción, y Areguá es 
 ## Los puntos de atención
 
 **Muchos compradores son inversores.** Una parte de los lotes se compra como inversión y queda sin construir. Por eso, durante varios años podés tener pocos vecinos, lotes vacíos alrededor y una vida de barrio que arranca despacio.
+
+En un barrio cerrado como Areguá Forest, sin embargo, este efecto tiene sus límites. Las expensas comunes se pagan por cada lote, esté construido o no. Un lote vacío cuesta plata todos los meses, lo que empuja a los propietarios a construir para sacarle una renta, o a revender a alguien que va a vivir ahí. Por eso el barrio tiende a llenarse más rápido que en terrenos aislados.
 
 **Las obras pueden durar.** La infraestructura se entrega por etapas y después cada propietario construye a su ritmo. Si te mudás temprano, probablemente convivas varios años con obras: camiones, ruido, polvo.
 
