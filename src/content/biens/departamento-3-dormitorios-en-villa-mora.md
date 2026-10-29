@@ -1,6 +1,6 @@
 ---
 titulo: Departamento 3 Dormitorios en Villa Morra
-en_linea: true
+en_linea: false
 operacion: alquiler
 tipo: departamento
 estado: disponible
@@ -156,7 +156,7 @@ en:
 
     💲 Rent: ₲ 4,700,000 (building fees included)
 pt:
-  titulo: 'Apartamento de 3 quartos em Villa Morra'
+  titulo: Apartamento de 3 quartos em Villa Morra
   descripcion: |-
     PARA ALUGAR – VILLA MORRA
 
