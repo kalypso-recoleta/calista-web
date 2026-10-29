@@ -5,6 +5,7 @@ import { slugify } from '../../lib/slug';
 import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
 import { zonaDeBien } from '../../lib/barrios';
+import BannerAregua from '../aregua/BannerAregua.astro';
 import Layout from '../../layouts/Layout.astro';
 import PropertyGallery from '../PropertyGallery.astro';
 import PropertyMap from '../PropertyMap.astro';
@@ -147,6 +148,8 @@ const specs = [
       </nav>
 
       <PropertyGallery imagenes={fotos} titulo={d.titulo} />
+      {/* Fiche Areguá Forest : lien vers la page dédiée */}
+      {slugify(bien.id).includes('aregua-forest') && <div class="banner-af"><BannerAregua /></div>}
 
       <div class="layout">
         <div class="main">
@@ -239,6 +242,7 @@ const specs = [
 </Layout>
 
 <style>
+  .banner-af { margin-top: 1.5rem; }
   .crumbs {
     display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.85rem;
     color: var(--muted); margin-bottom: 1.2rem;

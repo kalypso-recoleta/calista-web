@@ -21,17 +21,36 @@ const waCasa = whatsappLink(c.casa_msg);
 const ficha = L('/propiedad/terrenos-en-barrio-cerrado-aregua-forest-desde-360-m');
 const mapa = 'https://maps.app.goo.gl/jKm8qMHhwfoQW7U79';
 const hero = '/uploads/aregua-forest-02.jpg';
+// Données structurées : fil d'Ariane + FAQ (aide Google et les moteurs IA à comprendre la page)
+const base = new URL('/', Astro.site).toString().replace(/\/$/, '');
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'CALISTA', item: base + L('/') },
+      { '@type': 'ListItem', position: 2, name: 'Terrenos', item: base + L('/terrenos') + '/' },
+      { '@type': 'ListItem', position: 3, name: 'Areguá Forest', item: base + L('/terrenos/aregua-forest') + '/' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: c.faq.map(([q, r]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: r } })),
+  },
+];
 const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
 ---
 
 <Layout title={c.seo_t} description={c.seo_d} image={hero} tituloCompleto>
+  {schemas.map((sch) => <script type="application/ld+json" set:html={JSON.stringify(sch)} />)}
   <!-- Hero -->
   <section class="hero">
     <img class="hero-img" src={img(hero, { w: 1800, h: 900 })} alt={c.ilus} width="1800" height="900" loading="eager" />
     <div class="hero-velo"></div>
     <div class="container hero-txt">
       <p class="eyebrow claro">{c.eyebrow}</p>
-      <h1>Areguá Forest</h1>
+      <h1>{c.h1}</h1>
       <p class="hero-lema">{c.lema}</p>
       <p class="hero-d">{c.hero_d}</p>
       <div class="acciones">

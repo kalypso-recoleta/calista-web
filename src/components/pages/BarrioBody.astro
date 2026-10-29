@@ -3,6 +3,7 @@
  * Page d'un barrio / d'une ville : texte court (admin « Barrios ») + annonces
  * de la zone, mises à jour automatiquement à chaque publication.
  */
+import BannerAregua from '../aregua/BannerAregua.astro';
 import Layout from '../../layouts/Layout.astro';
 import ListadoBiens from '../ListadoBiens.astro';
 import { estaActivo } from '../../lib/format';
@@ -35,7 +36,9 @@ const description = `${x.meta}. ${intro}`.trim();
 ---
 
 <Layout title={x.meta} description={description}>
-  <ListadoBiens eyebrow={`${x.eyebrow} · ${zona.ciudad}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros />
+  <ListadoBiens eyebrow={`${x.eyebrow} · ${zona.ciudad}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros>
+    {zona.slug === 'aregua' && <BannerAregua slot="intro" />}
+  </ListadoBiens>
   {otras.length > 0 && (
     <section class="section otras">
       <div class="container">
