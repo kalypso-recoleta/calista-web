@@ -119,7 +119,7 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
           <thead><tr>{c.tabla_cols.map((h) => <th>{h}</th>)}</tr></thead>
           <tbody>
             {grilla.map((g) => (
-              <tr class:list={{ promo: g.etapa === 5 }}>
+              <tr>
                 <td><strong>{c.tabla_cols[0]} {g.etapa}</strong></td>
                 <td>{g.entrega[lang] ?? g.entrega.es}</td>
                 <td>USD {g.contado[0]} / {g.contado[1]}{c.tabla_m2}</td>
@@ -291,7 +291,6 @@ const unescoUrl = 'https://www.unesco.org/en/creative-cities/aregua';
   .tabla { width: 100%; border-collapse: collapse; font-size: 0.97rem; min-width: 560px; }
   .tabla th { text-align: left; background: var(--violet); color: #fff; font-weight: 600; padding: 0.75rem 1rem; }
   .tabla td { padding: 0.75rem 1rem; border-top: 1px solid var(--line); }
-  .tabla tr.promo td { background: #fbf6fd; }
   .sim { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1.5rem 0 1rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-lg); overflow: hidden; }
   .sim-in { padding: 1.5rem; display: grid; gap: 0.9rem; align-content: start; }
   .sim-in h3, .sim-in p { margin: 0; }
