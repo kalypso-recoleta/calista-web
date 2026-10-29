@@ -23,7 +23,7 @@ fr:
 
     ### Un cadre très beau et très vert
 
-    La végétation, les espaces ouverts et les aménagements paysagers font partie des attraits de ce type de résidence. À Areguá Forest, le projet met notamment en avant un environnement boisé, des ruisseaux et des espaces verts communs.
+    La végétation, les espaces ouverts et les aménagements paysagers font partie des attraits de ce type de résidence. À [Areguá Forest](/fr/terrenos/aregua-forest/), le projet met notamment en avant un environnement boisé, des ruisseaux et des espaces verts communs.
 
     Lors de la visite, regardez aussi le terrain lui-même : sa pente, l’écoulement de l’eau et l’emplacement des arbres peuvent influencer l’implantation de votre future maison.
 
@@ -45,7 +45,7 @@ fr:
 
     Areguá est une ville que j’adore. Son artisanat, ses poteries utilitaires et décoratives, ses ateliers et ses lieux culturels lui donnent une identité particulière.
 
-    Elle fait partie du Réseau des villes créatives de l’UNESCO dans la catégorie « Artisanat et arts populaires » depuis 2019.
+    Elle fait partie du [Réseau des villes créatives de l’UNESCO](https://www.unesco.org/en/creative-cities/aregua) dans la catégorie « Artisanat et arts populaires » depuis 2019.
 
     Avec le lac Ypacaraí et son atmosphère artistique, elle offre un cadre qui compte beaucoup dans l’envie de s’y installer. Pour moi, cela fait pleinement partie de l’intérêt d’un achat dans cette ville.
 
@@ -95,7 +95,7 @@ fr:
 
     Il faut néanmoins accepter que la vie de quartier se développe progressivement et intégrer à son budget les charges, les raccordements éventuels et les coûts de construction. Pour un investissement, la facilité de revente et la valorisation future restent à apprécier au cas par cas.
 
-    Chez CALISTA Inmobiliaria, nous commercialisons les lots d’[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais.
+    Chez CALISTA Inmobiliaria, nous commercialisons les lots d’[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais. Vous y trouverez la grille de prix par étape et un simulateur de mensualités.
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
   descripcion: 'Nature, shared amenities and the charm of a town of artists: buying a plot in Areguá has a lot going for it. But you also need to look at the works schedule, the building rules and how the community is run.'
@@ -114,7 +114,7 @@ en:
 
     ### A beautiful, green setting
 
-    Vegetation, open spaces and landscaping are among the attractions of this type of community. At Areguá Forest, the project highlights in particular a wooded environment, streams and shared green spaces.
+    Vegetation, open spaces and landscaping are among the attractions of this type of community. At [Areguá Forest](/en/terrenos/aregua-forest/), the project highlights in particular a wooded environment, streams and shared green spaces.
 
     During the visit, also look at the plot itself: its slope, water drainage and the position of the trees can influence where your future house will sit.
 
@@ -136,7 +136,7 @@ en:
 
     Areguá is a town I love. Its crafts, its everyday and decorative pottery, its workshops and cultural venues give it a distinctive identity.
 
-    It has been part of the UNESCO Creative Cities Network for Crafts and Folk Art since 2019.
+    It has been part of the [UNESCO Creative Cities Network](https://www.unesco.org/en/creative-cities/aregua) for Crafts and Folk Art since 2019.
 
     With Lake Ypacaraí and its artistic atmosphere, it offers a setting that weighs heavily in the wish to settle there. For me, this is fully part of the appeal of buying in this town.
 
@@ -186,7 +186,7 @@ en:
 
     You do, however, need to accept that community life develops gradually, and to budget for the charges, any connections and the building costs. As an investment, ease of resale and future value should be assessed case by case.
 
-    At CALISTA Inmobiliaria, we sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish.
+    At CALISTA Inmobiliaria, we sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish. You will find the price list by stage and an instalment simulator there.
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
   descripcion: 'Natureza, áreas comuns e o charme de uma cidade de artistas: comprar um lote em Areguá tem muito a oferecer. Mas também é preciso olhar o cronograma das obras, as regras de construção e a administração do condomínio.'
@@ -205,7 +205,7 @@ pt:
 
     ### Um ambiente muito bonito e verde
 
-    A vegetação, os espaços abertos e o paisagismo estão entre os atrativos desse tipo de condomínio. No Areguá Forest, o projeto destaca em especial um ambiente arborizado, riachos e áreas verdes comuns.
+    A vegetação, os espaços abertos e o paisagismo estão entre os atrativos desse tipo de condomínio. No [Areguá Forest](/pt/terrenos/aregua-forest/), o projeto destaca em especial um ambiente arborizado, riachos e áreas verdes comuns.
 
     Na visita, observe também o próprio terreno: a inclinação, o escoamento da água e a posição das árvores podem influenciar a implantação da sua futura casa.
 
@@ -227,7 +227,7 @@ pt:
 
     Areguá é uma cidade que eu adoro. O artesanato, a cerâmica utilitária e decorativa, os ateliês e os espaços culturais lhe dão uma identidade própria.
 
-    Faz parte da Rede de Cidades Criativas da UNESCO na categoria Artesanato e Arte Popular desde 2019.
+    Faz parte da [Rede de Cidades Criativas da UNESCO](https://www.unesco.org/en/creative-cities/aregua) na categoria Artesanato e Arte Popular desde 2019.
 
     Com o lago Ypacaraí e sua atmosfera artística, oferece um ambiente que pesa muito na vontade de morar ali. Para mim, isso faz parte do interesse de comprar nesta cidade.
 
@@ -277,7 +277,7 @@ pt:
 
     Ainda assim, é preciso aceitar que a vida de bairro se desenvolve aos poucos e incluir no orçamento as despesas, as eventuais ligações e os custos de construção. Como investimento, a facilidade de revenda e a valorização futura devem ser avaliadas caso a caso.
 
-    Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês.
+    Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês. Lá você encontra a tabela de preços por etapa e um simulador de parcelas.
 ---
 Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. En Areguá, el entorno natural y la identidad cultural de la ciudad suman un atractivo particular.
 
@@ -293,7 +293,7 @@ Aun así, conviene verificar qué se entregará al pie del lote, en qué fecha y
 
 ### Un entorno muy lindo y muy verde
 
-La vegetación, los espacios abiertos y el paisajismo son parte del atractivo de este tipo de barrio. En Areguá Forest, el proyecto destaca en particular un entorno arbolado, arroyos y espacios verdes comunes.
+La vegetación, los espacios abiertos y el paisajismo son parte del atractivo de este tipo de barrio. En [Areguá Forest](/terrenos/aregua-forest/), el proyecto destaca en particular un entorno arbolado, arroyos y espacios verdes comunes.
 
 En la visita, mirá también el lote en sí: la pendiente, el escurrimiento del agua y la ubicación de los árboles pueden influir en la implantación de tu futura casa.
 
@@ -315,7 +315,7 @@ Como contrapartida, tu libertad de construir se ejerce dentro de ese marco. Ped�
 
 Areguá es una ciudad que me encanta. Su artesanía, su cerámica utilitaria y decorativa, sus talleres y sus espacios culturales le dan una identidad propia.
 
-Forma parte de la Red de Ciudades Creativas de la UNESCO en la categoría Artesanía y Arte Popular desde 2019.
+Forma parte de la [Red de Ciudades Creativas de la UNESCO](https://www.unesco.org/en/creative-cities/aregua) en la categoría Artesanía y Arte Popular desde 2019.
 
 Con el lago Ypacaraí y su ambiente artístico, ofrece un entorno que pesa mucho en las ganas de vivir ahí. Para mí, eso es parte plena del interés de comprar en esta ciudad.
 
@@ -365,4 +365,4 @@ Un lote en un barrio cerrado en Areguá puede ser una muy buena elección para c
 
 Aun así, hay que aceptar que la vida de barrio se desarrolla de a poco e incluir en el presupuesto las expensas, las eventuales conexiones y los costos de construcción. Como inversión, la facilidad de reventa y la valorización futura se evalúan caso por caso.
 
-En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/) y te acompañamos de la visita a la escritura, en español, francés e inglés.
+En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/) y te acompañamos de la visita a la escritura, en español, francés e inglés. Ahí vas a encontrar la grilla de precios por etapa y un simulador de cuotas.
