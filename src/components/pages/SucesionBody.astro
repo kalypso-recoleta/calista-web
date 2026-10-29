@@ -1,0 +1,284 @@
+---
+/**
+ * Page « Tasación para sucesiones » : estimation d'un bien au Paraguay pour une
+ * succession réglée par un notaire en France (avec CALISTA Immobilier, Martinique).
+ * ⚠️ Ne mettre ici que des informations confirmées par Hélène (prix : sur devis ;
+ * pas de délai annoncé tant qu'elle ne l'a pas donné).
+ */
+import Layout from '../../layouts/Layout.astro';
+import WhatsAppButton from '../WhatsAppButton.astro';
+import { whatsappLink } from '../../lib/whatsapp';
+import { site } from '../../lib/site';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+
+type Txt = {
+  seo: string; desc: string; eyebrow: string; h1: string; lead: string; cta: string; form: string;
+  para_t: string; para: string[];
+  incl_t: string; incl: string[];
+  pasos_t: string; pasos: [string, string][];
+  docs_t: string; docs: string[]; docs_opc_t: string; docs_opc: string[];
+  precio_t: string; precio: string;
+  fr_t: string; fr_d: string;
+  despues: string; vender: string; admin: string;
+  volver: string; wa: string;
+};
+
+const T: Record<'es' | 'fr' | 'en' | 'pt', Txt> = {
+  es: {
+    seo: 'Tasación para sucesiones con notario en Francia',
+    desc: '¿Heredaste un inmueble en Paraguay y la sucesión se tramita en Francia? Preparamos el informe de tasación en francés para el notario.',
+    eyebrow: 'Tasaciones · Sucesiones',
+    h1: 'Tasación de un inmueble en Paraguay para una sucesión en Francia',
+    lead: '¿Heredaste un departamento, una casa o un terreno en Paraguay y la sucesión se tramita ante un notario en Francia? Junto a nuestra agencia en Francia, CALISTA Immobilier (Martinica), preparamos el informe de tasación en francés para el notario.',
+    cta: 'Consultar por una sucesión',
+    form: 'Escribirnos por formulario',
+    para_t: 'Para quién',
+    para: ['Herederos que viven en Francia o en otro país y tienen un inmueble en Paraguay.', 'Notarios franceses que necesitan el valor de un bien situado en Paraguay.'],
+    incl_t: 'Qué hacemos',
+    incl: ['Departamentos, casas y terrenos.', 'Una o varias propiedades en la misma sucesión.', 'Un informe en francés, con el valor recomendado y su justificación.'],
+    pasos_t: 'Cómo trabajamos',
+    pasos: [
+      ['Nos enviás el título de propiedad', 'Con la escritura sabemos qué propiedad es y dónde está.'],
+      ['Visitamos la propiedad', 'Vemos su estado y sus puntos fuertes en el lugar.'],
+      ['La comparamos con el mercado', 'La comparamos con propiedades similares de la zona.'],
+      ['Te entregamos el informe en francés', 'Con el valor recomendado y la explicación, listo para el notario.'],
+    ],
+    docs_t: 'Lo que necesitamos',
+    docs: ['El título de propiedad (escritura).', 'La posibilidad de visitar la propiedad.'],
+    docs_opc_t: 'Si es posible, también:',
+    docs_opc: ['El contacto del escribano en Paraguay.', 'El contacto del notario en Francia.'],
+    precio_t: 'Precio',
+    precio: 'Presupuesto sin compromiso: depende del número de propiedades y de su tipo (departamento, casa o terreno). Escribinos y te respondemos.',
+    fr_t: 'Nuestra agencia en Francia',
+    fr_d: 'CALISTA Immobilier, en Martinica, trabaja con notarios franceses.',
+    despues: '¿Y después? Si los herederos deciden vender o alquilar, podemos acompañarlos.',
+    vender: 'Vender', admin: 'Administración de alquileres',
+    volver: 'Todas las tasaciones',
+    wa: 'Hola Calista, necesito una tasación para una sucesión con notario en Francia.',
+  },
+  fr: {
+    seo: 'Estimation au Paraguay pour une succession en France',
+    desc: 'Vous héritez d’un bien au Paraguay et la succession est réglée en France ? Nous préparons le rapport d’estimation en français pour le notaire.',
+    eyebrow: 'Estimations · Successions',
+    h1: 'Estimation d’un bien au Paraguay pour une succession en France',
+    lead: 'Vous héritez d’un appartement, d’une maison ou d’un terrain au Paraguay et la succession est réglée par un notaire en France ? Avec notre agence en France, CALISTA Immobilier (Martinique), nous préparons le rapport d’estimation en français pour le notaire.',
+    cta: 'Nous consulter pour une succession',
+    form: 'Nous écrire par formulaire',
+    para_t: 'Pour qui',
+    para: ['Les héritiers qui vivent en France ou ailleurs et ont un bien au Paraguay.', 'Les notaires français qui ont besoin de la valeur d’un bien situé au Paraguay.'],
+    incl_t: 'Ce que nous faisons',
+    incl: ['Appartements, maisons et terrains.', 'Un ou plusieurs biens dans la même succession.', 'Un rapport en français, avec la valeur recommandée et sa justification.'],
+    pasos_t: 'Comment nous travaillons',
+    pasos: [
+      ['Vous nous envoyez l’acte de propriété', 'Avec l’acte (escritura), nous savons de quel bien il s’agit et où il se trouve.'],
+      ['Nous visitons le bien', 'Nous voyons sur place son état et ses points forts.'],
+      ['Nous le comparons au marché', 'Nous le comparons à des biens similaires du secteur.'],
+      ['Nous vous remettons le rapport en français', 'Avec la valeur recommandée et son explication, prêt pour le notaire.'],
+    ],
+    docs_t: 'Ce dont nous avons besoin',
+    docs: ['L’acte de propriété (escritura).', 'La possibilité de visiter le bien.'],
+    docs_opc_t: 'Si possible, également :',
+    docs_opc: ['Le contact du notaire au Paraguay (escribano).', 'Le contact du notaire en France.'],
+    precio_t: 'Prix',
+    precio: 'Sur devis, sans engagement : il dépend du nombre de biens et de leur type (appartement, maison ou terrain). Écrivez-nous et nous vous répondons.',
+    fr_t: 'Notre agence en France',
+    fr_d: 'CALISTA Immobilier, en Martinique, travaille avec les notaires français.',
+    despues: 'Et ensuite ? Si les héritiers décident de vendre ou de louer, nous pouvons les accompagner.',
+    vender: 'Vendre', admin: 'Gestion locative',
+    volver: 'Toutes les estimations',
+    wa: 'Bonjour Calista, j’ai besoin d’une estimation pour une succession avec un notaire en France.',
+  },
+  en: {
+    seo: 'Paraguay property valuation for a French estate',
+    desc: 'Inherited a property in Paraguay and the estate is handled in France? We prepare the valuation report in French for the notary.',
+    eyebrow: 'Valuations · Estates',
+    h1: 'Valuing a property in Paraguay for an estate settled in France',
+    lead: 'Have you inherited an apartment, a house or a plot in Paraguay, with the estate handled by a notary in France? Together with our agency in France, CALISTA Immobilier (Martinique), we prepare the valuation report in French for the notary.',
+    cta: 'Ask about an estate',
+    form: 'Write to us via the form',
+    para_t: 'Who it is for',
+    para: ['Heirs living in France or elsewhere who own a property in Paraguay.', 'French notaries who need the value of a property located in Paraguay.'],
+    incl_t: 'What we do',
+    incl: ['Apartments, houses and plots.', 'One or several properties in the same estate.', 'A report in French, with the recommended value and its justification.'],
+    pasos_t: 'How we work',
+    pasos: [
+      ['You send us the title deed', 'With the deed (escritura), we know which property it is and where it is.'],
+      ['We visit the property', 'We see its condition and strengths on site.'],
+      ['We compare it with the market', 'We compare it with similar properties in the area.'],
+      ['We deliver the report in French', 'With the recommended value and the explanation, ready for the notary.'],
+    ],
+    docs_t: 'What we need',
+    docs: ['The title deed (escritura).', 'The possibility to visit the property.'],
+    docs_opc_t: 'If possible, also:',
+    docs_opc: ['The contact of the notary in Paraguay (escribano).', 'The contact of the notary in France.'],
+    precio_t: 'Price',
+    precio: 'No-obligation quote: it depends on the number of properties and their type (apartment, house or plot). Write to us and we will reply.',
+    fr_t: 'Our agency in France',
+    fr_d: 'CALISTA Immobilier, in Martinique, works with French notaries.',
+    despues: 'And then? If the heirs decide to sell or rent out, we can help them.',
+    vender: 'Sell', admin: 'Rental management',
+    volver: 'All valuations',
+    wa: 'Hello Calista, I need a valuation for an estate handled by a notary in France.',
+  },
+  pt: {
+    seo: 'Avaliação no Paraguai para inventário na França',
+    desc: 'Herdou um imóvel no Paraguai e o inventário corre na França? Preparamos o laudo de avaliação em francês para o tabelião.',
+    eyebrow: 'Avaliações · Inventários',
+    h1: 'Avaliação de um imóvel no Paraguai para um inventário na França',
+    lead: 'Herdou um apartamento, uma casa ou um terreno no Paraguai e o inventário corre com um tabelião na França? Com a nossa agência na França, a CALISTA Immobilier (Martinica), preparamos o laudo de avaliação em francês para o tabelião.',
+    cta: 'Consultar sobre um inventário',
+    form: 'Escrever pelo formulário',
+    para_t: 'Para quem',
+    para: ['Herdeiros que moram na França ou em outro país e têm um imóvel no Paraguai.', 'Tabeliães franceses que precisam do valor de um imóvel situado no Paraguai.'],
+    incl_t: 'O que fazemos',
+    incl: ['Apartamentos, casas e terrenos.', 'Um ou vários imóveis no mesmo inventário.', 'Um laudo em francês, com o valor recomendado e a sua justificativa.'],
+    pasos_t: 'Como trabalhamos',
+    pasos: [
+      ['Você nos envia o título de propriedade', 'Com a escritura, sabemos de qual imóvel se trata e onde fica.'],
+      ['Visitamos o imóvel', 'Vemos no local o seu estado e os seus pontos fortes.'],
+      ['Comparamos com o mercado', 'Comparamos com imóveis semelhantes da região.'],
+      ['Entregamos o laudo em francês', 'Com o valor recomendado e a explicação, pronto para o tabelião.'],
+    ],
+    docs_t: 'Do que precisamos',
+    docs: ['O título de propriedade (escritura).', 'A possibilidade de visitar o imóvel.'],
+    docs_opc_t: 'Se possível, também:',
+    docs_opc: ['O contato do tabelião no Paraguai (escribano).', 'O contato do tabelião na França.'],
+    precio_t: 'Preço',
+    precio: 'Orçamento sem compromisso: depende do número de imóveis e do tipo (apartamento, casa ou terreno). Fale conosco e respondemos.',
+    fr_t: 'Nossa agência na França',
+    fr_d: 'A CALISTA Immobilier, na Martinica, trabalha com tabeliães franceses.',
+    despues: 'E depois? Se os herdeiros decidirem vender ou alugar, podemos acompanhá-los.',
+    vender: 'Vender', admin: 'Administração de aluguéis',
+    volver: 'Todas as avaliações',
+    wa: 'Olá Calista, preciso de uma avaliação para um inventário com tabelião na França.',
+  },
+};
+const x = T[lang as 'es' | 'fr' | 'en' | 'pt'] ?? T.es;
+// Même numéro que la page Tasaciones (WhatsApp d'Hélène)
+const wa = whatsappLink(x.wa, site.whatsappTemporal);
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: x.h1,
+  description: x.desc,
+  serviceType: x.seo,
+  areaServed: 'Paraguay',
+  provider: { '@type': 'RealEstateAgent', name: site.nombre, url: new URL('/', Astro.site).toString() },
+};
+---
+
+<Layout title={x.seo} description={x.desc}>
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+  <section class="section hero">
+    <div class="container narrow">
+      <p class="migas"><a href={L('/tasaciones')}>← {x.volver}</a></p>
+      <p class="eyebrow"><span class="bandera" aria-hidden="true">🇫🇷</span> {x.eyebrow}</p>
+      <h1>{x.h1}</h1>
+      <p class="lead">{x.lead}</p>
+      <div class="cta-linea">
+        <WhatsAppButton href={wa} label={x.cta} />
+        <a href={L('/contacto')} class="btn btn--ghost">{x.form}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container dos">
+      <div class="bloque">
+        <h2>{x.para_t}</h2>
+        <ul>{x.para.map((p) => <li>{p}</li>)}</ul>
+      </div>
+      <div class="bloque">
+        <h2>{x.incl_t}</h2>
+        <ul>{x.incl.map((p) => <li>{p}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="tit">{x.pasos_t}</h2>
+      <ol class="pasos">
+        {x.pasos.map(([t, d], i) => (
+          <li>
+            <span class="num">0{i + 1}</span>
+            <h3>{t}</h3>
+            <p>{d}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container dos">
+      <div class="bloque">
+        <h2>{x.docs_t}</h2>
+        <ul>{x.docs.map((p) => <li>{p}</li>)}</ul>
+        <p class="sub">{x.docs_opc_t}</p>
+        <ul>{x.docs_opc.map((p) => <li>{p}</li>)}</ul>
+      </div>
+      <div class="col">
+        <div class="bloque tinte">
+          <h2>{x.precio_t}</h2>
+          <p>{x.precio}</p>
+        </div>
+        <div class="bloque">
+          <h2>{x.fr_t}</h2>
+          <p>{x.fr_d} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cierre">
+        <h2>{x.despues}</h2>
+        <div class="cta-linea center">
+          <WhatsAppButton href={wa} label={x.cta} />
+          <a href={L('/propietarios') + '#vender'} class="btn btn--ghost on-dark">{x.vender}</a>
+          <a href={L('/administracion')} class="btn btn--ghost on-dark">{x.admin}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .narrow > * { max-width: 820px; }
+  .hero { padding-bottom: 0.5rem; }
+  .tight { padding-block: clamp(1.5rem, 3vw, 2.25rem); }
+  .migas { margin: 0 0 1rem; font-size: 0.9rem; }
+  .migas a { color: var(--violet); font-weight: 600; }
+  .bandera { font-size: 1.05rem; margin-right: 0.2rem; letter-spacing: 0; }
+  .tit { margin: 0 0 1.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: stretch; }
+  .col { display: grid; gap: 1.5rem; }
+  /* Cartes : même style que les cartes de la page Tasaciones */
+  .bloque { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--violet); border-radius: var(--radius); padding: 1.8rem 2rem; box-shadow: var(--shadow); }
+  .bloque.tinte { background: var(--card-tint); }
+  .bloque h2 { margin: 0 0 1rem; font-size: clamp(1.25rem, 2vw, 1.5rem); }
+  .bloque ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.65rem; }
+  .bloque li { position: relative; padding-left: 1.9rem; color: var(--muted); line-height: 1.6; }
+  .bloque li::before { content: '✓'; position: absolute; left: 0; top: 0.05rem; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--violet-soft); color: var(--violet); font-size: 0.75rem; font-weight: 700; display: grid; place-items: center; }
+  .bloque p { margin: 0; color: var(--muted); line-height: 1.7; }
+  .bloque p.sub { margin: 1.3rem 0 0.7rem; color: var(--ink); font-weight: 600; }
+  .bloque a { color: var(--violet); font-weight: 700; }
+  .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; counter-reset: paso; }
+  .pasos li { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
+  .pasos .num { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--violet); color: #fff; font-family: var(--display); font-size: 0.95rem; font-weight: 600; }
+  .pasos h3 { margin: 0.9rem 0 0.4rem; font-size: 1.05rem; }
+  .pasos p { margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+  .cta-linea { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
+  .cta-linea.center { justify-content: center; }
+  .cierre { background: var(--brand); color: #fff; border-radius: var(--radius); padding: clamp(2rem, 5vw, 3.5rem); text-align: center; }
+  .cierre h2 { color: #fff; margin: 0 auto; max-width: 34ch; }
+  .btn.on-dark { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.6); }
+  .btn.on-dark:hover { background: rgba(255, 255, 255, 0.12); }
+  @media (max-width: 1000px) { .pasos { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 820px) { .dos, .pasos { grid-template-columns: 1fr; } .bloque { padding: 1.5rem; } }
+</style>

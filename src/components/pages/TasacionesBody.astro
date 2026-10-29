@@ -49,7 +49,10 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
           <h2>{t('tas.suc_t')}</h2>
           <p>{t('tas.suc_d')}</p>
           <p class="web">{t('tas.suc_web')} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
-          <WhatsAppButton href={waSuc} label={t('tas.suc_wa')} />
+          <div class="suc-ctas">
+            <WhatsAppButton href={waSuc} label={t('tas.suc_wa')} />
+            <a href={L('/tasaciones/sucesiones')} class="btn btn--ghost">{t('tas.suc_mas')}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +101,7 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
   .sucesion .web { margin-top: -0.4rem; color: var(--ink); }
   .web a { font-weight: 700; }
   .bandera { font-size: 2.2rem; line-height: 1; }
+  .suc-ctas { display: flex; flex-wrap: wrap; gap: 0.8rem; }
   .sucesion h2 { margin: 0 0 0.5rem; font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
   .sucesion p:not(.eyebrow) { margin: 0 0 1.1rem; color: var(--muted); line-height: 1.6; max-width: 70ch; }
   .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
