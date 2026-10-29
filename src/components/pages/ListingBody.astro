@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import ListadoBiens from '../ListadoBiens.astro';
 import PresentacionEdificio from '../PresentacionEdificio.astro';
+import BannerAregua from '../aregua/BannerAregua.astro';
 import PanelDestacados from '../temporal/PanelDestacados.astro';
 import { hayPanel } from '../temporal/datos';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
@@ -58,6 +59,7 @@ const intro = t(`lista.${kind}_intro`);
   >
     {conPanel && <PanelDestacados slot="destacados" rubrica={kind} />}
     {kind === 'desarrollos' && <PresentacionEdificio slot="intro" />}
+    {kind === 'terrenos' && <BannerAregua slot="intro" />}
   </ListadoBiens>
 </Layout>
 
