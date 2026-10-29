@@ -9,7 +9,7 @@ lateral: true
 portada: true
 exclusivo: false
 desarrollo: false
-precio: 5500000
+precio: 5000000
 moneda: PYG
 periodo: mes
 ciudad: Asunción
@@ -37,6 +37,7 @@ imagenes:
   - /uploads/IMG_0063M2c9By.avif
   - /uploads/IMG_0064W3lDAM.avif
 descripcion: A pasos de La Cuadrita, departamento a estrenar, luminoso y con vista abierta, de 81,5 m² con cochera n.º 7.
+gama: otros
 fr:
   titulo: À LOUER – Appartement de 2 chambres dans la résidence Life De Gaulle (Recoleta, Asunción)
   descripcion: À quelques pas de La Cuadrita, appartement neuf et lumineux de 81,5 m², avec vue dégagée et place de parking n° 7.
@@ -82,8 +83,8 @@ en:
 
     **Building amenities:** swimming pool, gym, and a covered barbecue and dining area.
 pt:
-  titulo: 'PARA ALUGAR – Apartamento de 2 quartos no Edificio Life De Gaulle (Recoleta, Assunção)'
-  descripcion: 'A poucos passos da La Cuadrita, apartamento novo, iluminado e com vista aberta, de 81,5 m², com a vaga de garagem nº 7.'
+  titulo: PARA ALUGAR – Apartamento de 2 quartos no Edificio Life De Gaulle (Recoleta, Assunção)
+  descripcion: A poucos passos da La Cuadrita, apartamento novo, iluminado e com vista aberta, de 81,5 m², com a vaga de garagem nº 7.
   cuerpo: |-
     **Distribuição:**
 
@@ -103,7 +104,7 @@ pt:
     - Janelas amplas
 
     **Áreas comuns do edifício:** piscina, academia e área coberta com churrasqueira e refeitório.
-fecha: 2026-10-13T21:59:00
+fecha: 2026-10-29T14:01:00
 ---
 
 A pasos de La Cuadrita, departamento a estrenar, luminoso y con vista abierta, de 81,5 m² con cochera n.º 7.
