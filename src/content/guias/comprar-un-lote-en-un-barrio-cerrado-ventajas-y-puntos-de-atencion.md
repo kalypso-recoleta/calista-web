@@ -1,136 +1,368 @@
 ---
 titulo: 'Comprar un lote en un barrio cerrado: ventajas y puntos de atención'
-descripcion: 'Naturaleza, servicios y una ciudad de artistas, pero también obras largas y un desarrollador que administra: lo que hay que saber antes de comprar un lote en Areguá.'
+descripcion: 'Naturaleza, espacios comunes y el encanto de una ciudad de artistas: comprar un lote en Areguá tiene con qué seducir. Pero también hay que mirar el calendario de obras, las reglas de construcción y la administración del barrio.'
 categoria: guia
 tema: comprar
 borrador: true
 fecha: 2026-10-29
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
-  descripcion: "Nature, réseaux et une ville d'artistes, mais aussi des travaux longs et un promoteur qui administre : ce qu'il faut savoir avant d'acheter un lot à Areguá."
+  descripcion: "Nature, équipements communs et charme d’une ville d’artistes : acheter un lot à Areguá a de quoi séduire. Mais il faut aussi regarder le calendrier des travaux, les règles de construction et la gestion de la résidence."
   cuerpo: |-
-    Les lots en résidence fermée (barrio cerrado) se multiplient autour d'Asunción, et Areguá en fait partie. C'est un achat que je recommande volontiers, à condition de savoir à quoi s'attendre. Voici les points positifs, et ceux qui demandent de l'attention.
+    Acheter un terrain dans une résidence fermée, ou barrio cerrado, permet d’envisager sa maison dans un ensemble aménagé, avec des espaces communs et un accès contrôlé. À Areguá, le cadre naturel et l’identité culturelle de la ville ajoutent un attrait particulier.
+
+    C’est un achat que je recommande volontiers, à condition de savoir à quoi s’attendre. Voici les avantages que j’y vois et les points à vérifier avant de s’engager.
 
     ## Les points positifs
 
-    **Les réseaux arrivent au pied du terrain.** Dans un barrio cerrado, l'eau et l'électricité sont amenées jusqu'au lot, avec une clôture d'enceinte et un accès contrôlé. Vous n'avez pas à négocier vous-même les raccordements, comme c'est souvent le cas sur un terrain isolé.
+    ### Des réseaux prévus dans le projet
 
-    **Un cadre très beau et très vert.** Ces projets sont souvent dessinés dans des zones boisées, avec des arbres conservés, des parcs et parfois des ruisseaux.
+    Dans une résidence fermée aménagée, les réseaux d’eau et d’électricité font partie des infrastructures prévues par le promoteur. Cela facilite le projet de construction par rapport à un terrain pour lequel il faudrait organiser soi-même leur extension.
 
-    **De vrais équipements.** Club house, piscine, terrains de sport, aires de jeux, sécurité : on profite d'équipements qu'on ne pourrait pas s'offrir seul.
+    Il faut toutefois vérifier ce qui sera livré au pied du lot, à quelle date, et quels frais resteront à votre charge : branchements individuels, compteurs et mise en service éventuelle.
 
-    **Areguá, une ville à part.** C'est une ville que j'adore. Elle est connue pour son artisanat : de la poterie pour la table comme de la poterie décorative, et des artisans qui sculptent le bois. Elle fait partie du Réseau des villes créatives de l'UNESCO dans la catégorie « Artisanat et arts populaires » depuis 2019. Il y a le lac Ypacaraí, une vraie vie touristique, et il n'existe pas beaucoup de villes comme celle-là au Paraguay.
+    ### Un cadre très beau et très vert
+
+    La végétation, les espaces ouverts et les aménagements paysagers font partie des attraits de ce type de résidence. À Areguá Forest, le projet met notamment en avant un environnement boisé, des ruisseaux et des espaces verts communs.
+
+    Lors de la visite, regardez aussi le terrain lui-même : sa pente, l’écoulement de l’eau et l’emplacement des arbres peuvent influencer l’implantation de votre future maison.
+
+    ### Des équipements partagés
+
+    Club house, piscine, terrains de sport, aires de jeux : les équipements communs permettent de profiter d’installations qu’il serait difficile de financer et d’entretenir seul.
+
+    Avant d’acheter, distinguez les équipements déjà utilisables de ceux qui sont encore en construction ou prévus pour une étape ultérieure. Demandez également leurs conditions d’accès et ce que leur entretien représente dans les charges.
+
+    ### Une harmonie architecturale encadrée
+
+    Un autre avantage d’Areguá Forest est l’encadrement des constructions. Les projets de maison sont soumis au contrôle du promoteur au regard des règles de la résidence, ainsi qu’aux autorisations de la municipalité.
+
+    Ce cadre contribue à préserver une cohérence d’ensemble : implantation des maisons, volumes, retraits et traitement des clôtures, selon les dispositions applicables. Il ne s’agit pas nécessairement d’avoir des maisons identiques, mais de permettre des projets différents dans un environnement harmonieux.
+
+    En contrepartie, votre liberté de construction s’exerce dans ce cadre. Demandez le règlement avant d’acheter, pour vérifier que la maison que vous imaginez pourra y trouver sa place.
+
+    ### Areguá, une ville à part
+
+    Areguá est une ville que j’adore. Son artisanat, ses poteries utilitaires et décoratives, ses ateliers et ses lieux culturels lui donnent une identité particulière.
+
+    Elle fait partie du Réseau des villes créatives de l’UNESCO dans la catégorie « Artisanat et arts populaires » depuis 2019.
+
+    Avec le lac Ypacaraí et son atmosphère artistique, elle offre un cadre qui compte beaucoup dans l’envie de s’y installer. Pour moi, cela fait pleinement partie de l’intérêt d’un achat dans cette ville.
 
     ## Les points de vigilance
 
-    **Beaucoup d'acheteurs sont des investisseurs.** Une partie des lots est achetée pour placer de l'argent, puis laissée en attente. Résultat : pendant plusieurs années, vous pouvez avoir peu de voisins, des terrains vides autour de vous et une vie de quartier qui démarre lentement.
+    ### Un quartier qui peut mettre du temps à se remplir
 
-    Ce frein a cependant ses limites dans une résidence fermée comme Areguá Forest. Les charges communes sont dues pour chaque lot, construit ou non. Un terrain vide coûte donc de l'argent tous les mois, ce qui pousse les propriétaires à construire pour en tirer un revenu, ou à revendre à quelqu'un qui viendra y habiter. Le quartier a ainsi tendance à se remplir plus vite que sur des terrains isolés.
+    Tous les acheteurs ne construisent pas immédiatement. Certains préparent leur future résidence, d’autres conservent le terrain comme placement ou envisagent une revente.
 
-    **Les travaux peuvent durer.** Les infrastructures sont livrées étape par étape, puis chaque propriétaire construit à son rythme. Si vous vous installez tôt, vous vivrez probablement plusieurs années au milieu des chantiers : camions, bruit, poussière.
+    Si vous vous installez parmi les premiers, vous pouvez donc avoir peu de voisins et des terrains encore vides autour de vous. Le nombre de lots vendus ne correspond pas nécessairement au nombre de maisons habitées.
 
-    **Le promoteur reste souvent administrateur.** Tant qu'il n'a pas fini de vendre, le promoteur garde souvent l'administration de la copropriété. Il possède aussi, à ce moment-là, une bonne partie des lots. Vérifiez donc qu'il participe bien aux charges communes pour les lots qui lui appartiennent, et pas seulement les acheteurs. Demandez le règlement de copropriété et la façon dont les charges sont réparties avant de signer.
+    Lorsque les charges communes sont dues sur les lots non construits, conserver un terrain vide représente un coût mensuel. Cela peut inciter un propriétaire à construire ou à revendre, mais cela ne garantit pas que le quartier se remplira rapidement. Vérifiez dans les documents de la résidence à partir de quand ces charges sont exigibles et comment elles sont calculées.
 
-    **Lisez le contrat.** Date de livraison de votre étape, conditions de paiement, réserve de propriété (reserva de dominio) et date de l'acte notarié (escritura) : ce sont les points à vérifier noir sur blanc.
+    ### Des travaux qui peuvent durer
 
-    ## En résumé
+    Il faut distinguer deux calendriers : celui des infrastructures réalisées par le promoteur et celui des maisons construites par les propriétaires.
 
-    Un lot en barrio cerrado à Areguá peut être un très bon choix, pour y vivre comme pour investir. Il faut simplement accepter que le quartier mette du temps à se remplir, et contrôler la manière dont le promoteur administre la résidence et participe aux charges.
+    Même après la livraison de votre étape, des travaux peuvent se poursuivre ailleurs dans la résidence. Si vous vous installez tôt, il faut donc envisager une période avec des camions, du bruit et de la poussière.
 
-    Nous commercialisons les lots d'[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l'acte, en français, en espagnol et en anglais.
+    Demandez le calendrier de livraison correspondant à votre lot, ainsi que les règles imposées aux chantiers : horaires, circulation, propreté et remise en état des espaces communs.
+
+    ### Une administration à examiner dès le départ
+
+    Pendant la commercialisation et le développement du projet, le promoteur peut aussi assurer l’administration de la résidence.
+
+    Il est alors essentiel de comprendre comment les décisions sont prises et comment les dépenses sont réparties. Vérifiez notamment la contribution prévue pour les lots encore détenus par le promoteur, les éventuelles dispositions particulières et leur incidence sur le budget payé par les acquéreurs.
+
+    Demandez également qui approuve les charges, comment consulter les comptes et dans quelles conditions l’administration pourra être transférée aux propriétaires.
+
+    ### Un contrat à lire dans le détail
+
+    Avant de signer, faites préciser par écrit :
+
+    - la date de livraison de votre lot et des infrastructures de votre étape ;
+    - les équipements compris et leur calendrier de mise à disposition ;
+    - les conditions de paiement et les conséquences d’un retard ;
+    - le montant annoncé des charges, leur date de démarrage et leurs modalités de révision ;
+    - les règles de construction et les éventuels délais imposés pour bâtir ;
+    - les clauses de réserve de propriété (reserva de dominio), si le contrat en prévoit ;
+    - les conditions et le calendrier de signature de l’acte notarié (escritura).
+
+    Les engagements importants doivent figurer dans les documents contractuels, avec une formulation suffisamment précise pour comprendre ce qui est promis.
+
+    ## Mon avis
+
+    Un lot en résidence fermée à Areguá peut être un très bon choix pour construire sa maison ou préparer un projet à plus long terme. Le cadre naturel, les équipements communs et l’harmonie des constructions sont de vrais atouts.
+
+    Il faut néanmoins accepter que la vie de quartier se développe progressivement et intégrer à son budget les charges, les raccordements éventuels et les coûts de construction. Pour un investissement, la facilité de revente et la valorisation future restent à apprécier au cas par cas.
+
+    Chez CALISTA Inmobiliaria, nous commercialisons les lots d’[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais.
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
-  descripcion: 'Nature, utilities and a town of artists, but also long building works and a developer who runs the community: what to know before buying a plot in Areguá.'
+  descripcion: 'Nature, shared amenities and the charm of a town of artists: buying a plot in Areguá has a lot going for it. But you also need to look at the works schedule, the building rules and how the community is run.'
   cuerpo: |-
-    Plots in gated communities (barrios cerrados) are multiplying around Asunción, and Areguá is one of the places where this is happening. It is a purchase I gladly recommend, as long as you know what to expect. Here are the upsides, and the points that need attention.
+    Buying a plot in a gated community, or barrio cerrado, lets you plan your home within a developed estate, with shared spaces and controlled access. In Areguá, the natural setting and the town’s cultural identity add a particular appeal.
+
+    It is a purchase I gladly recommend, as long as you know what to expect. Here are the advantages I see and the points to check before committing.
 
     ## The upsides
 
-    **Utilities reach your plot.** In a barrio cerrado, water and electricity are brought to the plot, with perimeter fencing and controlled access. You don't have to arrange the connections yourself, as is often the case with an isolated plot.
+    ### Utilities planned in the project
 
-    **A beautiful, green setting.** These projects are often laid out in wooded areas, with trees kept in place, parks and sometimes streams.
+    In a developed gated community, water and electricity networks are part of the infrastructure planned by the developer. This makes the building project easier than on a plot where you would have to arrange their extension yourself.
 
-    **Real amenities.** Club house, pool, sports courts, playgrounds, security: you enjoy facilities you could not afford on your own.
+    You should still check what will be delivered to the plot, when, and which costs will remain yours: individual connections, meters and any activation.
 
-    **Areguá, a town like no other.** It is a town I love. It is known for its crafts: pottery for the table as well as decorative pottery, and craftspeople who carve wood. It has been part of the UNESCO Creative Cities Network for Crafts and Folk Art since 2019. There is Lake Ypacaraí, a real tourist life, and there are not many towns like it in Paraguay.
+    ### A beautiful, green setting
+
+    Vegetation, open spaces and landscaping are among the attractions of this type of community. At Areguá Forest, the project highlights in particular a wooded environment, streams and shared green spaces.
+
+    During the visit, also look at the plot itself: its slope, water drainage and the position of the trees can influence where your future house will sit.
+
+    ### Shared amenities
+
+    Club house, pool, sports courts, playgrounds: shared amenities let you enjoy facilities that would be hard to fund and maintain on your own.
+
+    Before buying, distinguish the amenities already in use from those still under construction or planned for a later stage. Also ask about access conditions and how much their upkeep adds to the charges.
+
+    ### Guided architectural harmony
+
+    Another advantage of Areguá Forest is that construction is supervised. House projects are reviewed by the developer against the community rules, and also need the municipality’s approval.
+
+    This framework helps keep the whole consistent: position of the houses, volumes, setbacks and fencing, according to the applicable rules. It does not necessarily mean identical houses, but different projects within a harmonious environment.
+
+    In return, your freedom to build works within this framework. Ask for the rules before buying, to check that the house you have in mind will fit.
+
+    ### Areguá, a town like no other
+
+    Areguá is a town I love. Its crafts, its everyday and decorative pottery, its workshops and cultural venues give it a distinctive identity.
+
+    It has been part of the UNESCO Creative Cities Network for Crafts and Folk Art since 2019.
+
+    With Lake Ypacaraí and its artistic atmosphere, it offers a setting that weighs heavily in the wish to settle there. For me, this is fully part of the appeal of buying in this town.
 
     ## What to watch
 
-    **Many buyers are investors.** Some plots are bought as an investment and then left as they are. As a result, for several years you may have few neighbours, empty plots around you and a community life that starts slowly.
+    ### A community that may take time to fill up
 
-    In a gated community like Areguá Forest, however, this effect has its limits. Common charges are due on every plot, built on or not. An empty plot therefore costs money every month, which pushes owners to build and earn an income from it, or to resell to someone who will live there. The community thus tends to fill up faster than isolated plots do.
+    Not all buyers build straight away. Some are preparing their future home, others keep the plot as an investment or plan to resell.
 
-    **Building works can last a long time.** Infrastructure is delivered stage by stage, and then each owner builds at their own pace. If you move in early, you will probably live among building sites for several years: trucks, noise, dust.
+    If you move in among the first, you may have few neighbours and empty plots around you. The number of plots sold does not necessarily match the number of homes lived in.
 
-    **The developer often remains the administrator.** Until it has finished selling, the developer often keeps running the community, and at that point it still owns a large share of the plots. Check that it actually pays the common charges on the plots it owns, not just the buyers. Ask for the community rules and how charges are shared before you sign.
+    When common charges are due on unbuilt plots, keeping a plot empty is a monthly cost. This can encourage an owner to build or resell, but it does not guarantee that the community will fill up quickly. Check in the community’s documents when these charges start and how they are calculated.
 
-    **Read the contract.** Delivery date for your stage, payment terms, retention of title (reserva de dominio) and the date of the notarial deed (escritura): these are the points to check in writing.
+    ### Works that can last
 
-    ## In short
+    There are two schedules to distinguish: the infrastructure built by the developer, and the houses built by the owners.
 
-    A plot in a barrio cerrado in Areguá can be a very good choice, to live in or to invest. You just need to accept that the community will take time to fill up, and check how the developer runs it and contributes to the charges.
+    Even after your stage is delivered, works may continue elsewhere in the community. If you move in early, expect a period with trucks, noise and dust.
 
-    We sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish.
+    Ask for the delivery schedule for your plot, as well as the rules imposed on building sites: hours, traffic, cleanliness and restoration of shared spaces.
+
+    ### Look at how the community is run from day one
+
+    While the project is being sold and developed, the developer may also run the community.
+
+    It is then essential to understand how decisions are made and how expenses are shared. Check in particular the contribution planned for the plots still held by the developer, any special provisions and their effect on the budget paid by buyers.
+
+    Also ask who approves the charges, how to consult the accounts and under what conditions the administration can be handed over to the owners.
+
+    ### A contract to read in detail
+
+    Before signing, get the following in writing:
+
+    - the delivery date of your plot and of the infrastructure for your stage;
+    - the amenities included and when they will be available;
+    - the payment terms and the consequences of a delay;
+    - the announced amount of the charges, when they start and how they are revised;
+    - the building rules and any deadlines for building;
+    - the retention of title clauses (reserva de dominio), if the contract has them;
+    - the conditions and schedule for signing the notarial deed (escritura).
+
+    Important commitments must appear in the contract documents, worded precisely enough to understand what is promised.
+
+    ## My view
+
+    A plot in a gated community in Areguá can be a very good choice to build your home or prepare a longer-term project. The natural setting, the shared amenities and the harmony of the buildings are real assets.
+
+    You do, however, need to accept that community life develops gradually, and to budget for the charges, any connections and the building costs. As an investment, ease of resale and future value should be assessed case by case.
+
+    At CALISTA Inmobiliaria, we sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish.
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
-  descripcion: 'Natureza, infraestrutura e uma cidade de artistas, mas também obras longas e um desenvolvedor que administra: o que saber antes de comprar um lote em Areguá.'
+  descripcion: 'Natureza, áreas comuns e o charme de uma cidade de artistas: comprar um lote em Areguá tem muito a oferecer. Mas também é preciso olhar o cronograma das obras, as regras de construção e a administração do condomínio.'
   cuerpo: |-
-    Os lotes em condomínio fechado (barrio cerrado) se multiplicam ao redor de Assunção, e Areguá é um desses lugares. É uma compra que recomendo, desde que se saiba o que esperar. Aqui estão as vantagens e os pontos que pedem atenção.
+    Comprar um lote em condomínio fechado, ou barrio cerrado, permite planejar a sua casa num conjunto urbanizado, com áreas comuns e acesso controlado. Em Areguá, o ambiente natural e a identidade cultural da cidade acrescentam um atrativo especial.
+
+    É uma compra que recomendo, desde que se saiba o que esperar. Aqui estão as vantagens que vejo e os pontos a verificar antes de se comprometer.
 
     ## As vantagens
 
-    **A infraestrutura chega até o lote.** Num barrio cerrado, água e energia elétrica chegam até o lote, com cerca perimetral e acesso controlado. Você não precisa providenciar as ligações sozinho, como acontece muitas vezes num terreno isolado.
+    ### Infraestrutura prevista no projeto
 
-    **Um ambiente muito bonito e verde.** Esses projetos costumam ser desenhados em áreas arborizadas, com árvores preservadas, parques e às vezes riachos.
+    Num condomínio fechado urbanizado, as redes de água e energia fazem parte da infraestrutura prevista pelo desenvolvedor. Isso facilita o projeto de construção em comparação com um terreno em que você teria de providenciar a extensão das redes sozinho.
 
-    **Áreas de lazer de verdade.** Club house, piscina, quadras, playground, segurança: você aproveita estruturas que não teria sozinho.
+    Ainda assim, verifique o que será entregue até o lote, em que data, e quais custos ficarão por sua conta: ligações individuais, medidores e eventual ativação.
 
-    **Areguá, uma cidade especial.** É uma cidade que eu adoro. É conhecida pelo artesanato: cerâmica para a mesa e cerâmica decorativa, e artesãos que esculpem madeira. Faz parte da Rede de Cidades Criativas da UNESCO em Artesanato e Arte Popular desde 2019. Tem o lago Ypacaraí, uma vida turística de verdade, e não há muitas cidades assim no Paraguai.
+    ### Um ambiente muito bonito e verde
+
+    A vegetação, os espaços abertos e o paisagismo estão entre os atrativos desse tipo de condomínio. No Areguá Forest, o projeto destaca em especial um ambiente arborizado, riachos e áreas verdes comuns.
+
+    Na visita, observe também o próprio terreno: a inclinação, o escoamento da água e a posição das árvores podem influenciar a implantação da sua futura casa.
+
+    ### Áreas de lazer compartilhadas
+
+    Club house, piscina, quadras, playground: as áreas comuns permitem aproveitar estruturas que seriam difíceis de financiar e manter sozinho.
+
+    Antes de comprar, diferencie as estruturas já em uso daquelas ainda em construção ou previstas para uma etapa posterior. Pergunte também as condições de acesso e quanto a manutenção representa nas despesas.
+
+    ### Harmonia arquitetônica orientada
+
+    Outra vantagem do Areguá Forest é o acompanhamento das construções. Os projetos de casa passam pelo controle do desenvolvedor segundo as regras do condomínio, além das autorizações da prefeitura.
+
+    Esse enquadramento ajuda a manter a coerência do conjunto: implantação das casas, volumes, recuos e tratamento das cercas, conforme as normas aplicáveis. Não se trata necessariamente de casas idênticas, mas de permitir projetos diferentes num ambiente harmonioso.
+
+    Em contrapartida, a sua liberdade de construir se exerce dentro desse enquadramento. Peça o regulamento antes de comprar, para verificar se a casa que você imagina vai caber nele.
+
+    ### Areguá, uma cidade especial
+
+    Areguá é uma cidade que eu adoro. O artesanato, a cerâmica utilitária e decorativa, os ateliês e os espaços culturais lhe dão uma identidade própria.
+
+    Faz parte da Rede de Cidades Criativas da UNESCO na categoria Artesanato e Arte Popular desde 2019.
+
+    Com o lago Ypacaraí e sua atmosfera artística, oferece um ambiente que pesa muito na vontade de morar ali. Para mim, isso faz parte do interesse de comprar nesta cidade.
 
     ## Os pontos de atenção
 
-    **Muitos compradores são investidores.** Parte dos lotes é comprada como investimento e fica parada. Por isso, durante alguns anos você pode ter poucos vizinhos, terrenos vazios ao redor e uma vida de bairro que começa devagar.
+    ### Um bairro que pode demorar a se preencher
 
-    Num condomínio fechado como o Areguá Forest, porém, esse efeito tem limites. As despesas comuns são devidas por cada lote, construído ou não. Um terreno vazio custa dinheiro todo mês, o que leva os proprietários a construir para obter uma renda, ou a revender para alguém que vai morar ali. Assim, o bairro tende a se preencher mais rápido do que em terrenos isolados.
+    Nem todos os compradores constroem de imediato. Alguns preparam a futura moradia, outros mantêm o terreno como investimento ou pensam em revender.
 
-    **As obras podem durar.** A infraestrutura é entregue por etapas, e depois cada proprietário constrói no seu ritmo. Se você se mudar cedo, provavelmente vai conviver vários anos com obras: caminhões, barulho, poeira.
+    Se você se mudar entre os primeiros, pode ter poucos vizinhos e terrenos ainda vazios ao redor. O número de lotes vendidos não corresponde necessariamente ao número de casas habitadas.
 
-    **O desenvolvedor costuma continuar como administrador.** Enquanto não termina de vender, o desenvolvedor costuma administrar o condomínio, e nesse momento ainda é dono de boa parte dos lotes. Verifique se ele realmente paga as despesas comuns dos lotes que são dele, e não só os compradores. Peça o regulamento e a forma de divisão das despesas antes de assinar.
+    Quando as despesas comuns são cobradas também dos lotes não construídos, manter um terreno vazio representa um custo mensal. Isso pode incentivar o proprietário a construir ou revender, mas não garante que o bairro se preencha rápido. Verifique nos documentos do condomínio a partir de quando essas despesas são devidas e como são calculadas.
 
-    **Leia o contrato.** Data de entrega da sua etapa, condições de pagamento, reserva de domínio e data da escritura: são os pontos a verificar por escrito.
+    ### Obras que podem durar
 
-    ## Em resumo
+    É preciso distinguir dois cronogramas: o da infraestrutura feita pelo desenvolvedor e o das casas construídas pelos proprietários.
 
-    Um lote em barrio cerrado em Areguá pode ser uma ótima escolha, para morar ou investir. Basta aceitar que o bairro vai demorar a se preencher e verificar como o desenvolvedor administra o condomínio e participa das despesas.
+    Mesmo depois da entrega da sua etapa, pode haver obras em outras partes do condomínio. Se você se mudar cedo, conte com um período de caminhões, barulho e poeira.
 
-    Comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês.
+    Peça o cronograma de entrega do seu lote e as regras impostas às obras: horários, circulação, limpeza e recuperação das áreas comuns.
+
+    ### Uma administração a examinar desde o início
+
+    Durante a comercialização e o desenvolvimento do projeto, o desenvolvedor também pode administrar o condomínio.
+
+    É essencial entender como as decisões são tomadas e como as despesas são divididas. Verifique em especial a contribuição prevista para os lotes que ainda pertencem ao desenvolvedor, eventuais disposições especiais e o impacto delas no orçamento pago pelos compradores.
+
+    Pergunte também quem aprova as despesas, como consultar as contas e em que condições a administração poderá ser transferida aos proprietários.
+
+    ### Um contrato para ler em detalhe
+
+    Antes de assinar, peça por escrito:
+
+    - a data de entrega do seu lote e da infraestrutura da sua etapa;
+    - as áreas de lazer incluídas e o cronograma de disponibilização;
+    - as condições de pagamento e as consequências de um atraso;
+    - o valor anunciado das despesas, a data de início e a forma de reajuste;
+    - as regras de construção e eventuais prazos para construir;
+    - as cláusulas de reserva de domínio, se o contrato as prever;
+    - as condições e o cronograma de assinatura da escritura.
+
+    Os compromissos importantes devem constar nos documentos contratuais, com uma redação precisa o bastante para entender o que está prometido.
+
+    ## Minha opinião
+
+    Um lote em condomínio fechado em Areguá pode ser uma ótima escolha para construir a sua casa ou preparar um projeto de longo prazo. O ambiente natural, as áreas comuns e a harmonia das construções são verdadeiros atrativos.
+
+    Ainda assim, é preciso aceitar que a vida de bairro se desenvolve aos poucos e incluir no orçamento as despesas, as eventuais ligações e os custos de construção. Como investimento, a facilidade de revenda e a valorização futura devem ser avaliadas caso a caso.
+
+    Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês.
 ---
-Los lotes en barrio cerrado se multiplican alrededor de Asunción, y Areguá es uno de esos lugares. Es una compra que recomiendo, siempre que se sepa qué esperar. Estas son las ventajas, y los puntos que piden atención.
+Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. En Areguá, el entorno natural y la identidad cultural de la ciudad suman un atractivo particular.
+
+Es una compra que recomiendo, siempre que se sepa qué esperar. Estas son las ventajas que veo y los puntos a verificar antes de comprometerse.
 
 ## Las ventajas
 
-**Los servicios llegan al pie del lote.** En un barrio cerrado, el agua y la electricidad llegan hasta el lote, con cierre perimetral y acceso controlado. No tenés que gestionar vos mismo las conexiones, como pasa muchas veces con un terreno aislado.
+### Servicios previstos en el proyecto
 
-**Un entorno muy lindo y muy verde.** Estos proyectos suelen trazarse en zonas arboladas, con árboles conservados, parques y a veces arroyos.
+En un barrio cerrado urbanizado, las redes de agua y electricidad forman parte de la infraestructura prevista por el desarrollador. Eso facilita el proyecto de construcción frente a un terreno en el que tendrías que gestionar vos mismo la extensión de las redes.
 
-**Amenities de verdad.** Club house, piscina, canchas, juegos infantiles, seguridad: disfrutás de instalaciones que no podrías tener solo.
+Aun así, conviene verificar qué se entregará al pie del lote, en qué fecha y qué gastos quedarán a tu cargo: conexiones individuales, medidores y eventual habilitación.
 
-**Areguá, una ciudad distinta.** Es una ciudad que me encanta. Es conocida por su artesanía: cerámica para la mesa y cerámica decorativa, y artesanos que tallan la madera. Forma parte de la Red de Ciudades Creativas de la UNESCO en Artesanía y Arte Popular desde 2019. Tiene el lago Ypacaraí, una verdadera vida turística, y no hay muchas ciudades así en el Paraguay.
+### Un entorno muy lindo y muy verde
+
+La vegetación, los espacios abiertos y el paisajismo son parte del atractivo de este tipo de barrio. En Areguá Forest, el proyecto destaca en particular un entorno arbolado, arroyos y espacios verdes comunes.
+
+En la visita, mirá también el lote en sí: la pendiente, el escurrimiento del agua y la ubicación de los árboles pueden influir en la implantación de tu futura casa.
+
+### Amenities compartidos
+
+Club house, piscina, canchas, juegos infantiles: los espacios comunes permiten disfrutar de instalaciones que sería difícil financiar y mantener solo.
+
+Antes de comprar, distinguí los amenities que ya se pueden usar de los que todavía están en construcción o previstos para una etapa posterior. Preguntá también las condiciones de acceso y cuánto pesa su mantenimiento en las expensas.
+
+### Una armonía arquitectónica encuadrada
+
+Otra ventaja de Areguá Forest es que las construcciones están encuadradas. Los proyectos de casa pasan por el control del desarrollador según las reglas del barrio, además de las autorizaciones de la municipalidad.
+
+Este marco ayuda a mantener la coherencia del conjunto: implantación de las casas, volúmenes, retiros y tratamiento de los cercos, según las disposiciones aplicables. No se trata necesariamente de tener casas idénticas, sino de permitir proyectos distintos en un entorno armonioso.
+
+Como contrapartida, tu libertad de construir se ejerce dentro de ese marco. Pedí el reglamento antes de comprar, para verificar que la casa que imaginás tenga su lugar.
+
+### Areguá, una ciudad distinta
+
+Areguá es una ciudad que me encanta. Su artesanía, su cerámica utilitaria y decorativa, sus talleres y sus espacios culturales le dan una identidad propia.
+
+Forma parte de la Red de Ciudades Creativas de la UNESCO en la categoría Artesanía y Arte Popular desde 2019.
+
+Con el lago Ypacaraí y su ambiente artístico, ofrece un entorno que pesa mucho en las ganas de vivir ahí. Para mí, eso es parte plena del interés de comprar en esta ciudad.
 
 ## Los puntos de atención
 
-**Muchos compradores son inversores.** Una parte de los lotes se compra como inversión y queda sin construir. Por eso, durante varios años podés tener pocos vecinos, lotes vacíos alrededor y una vida de barrio que arranca despacio.
+### Un barrio que puede tardar en llenarse
 
-En un barrio cerrado como Areguá Forest, sin embargo, este efecto tiene sus límites. Las expensas comunes se pagan por cada lote, esté construido o no. Un lote vacío cuesta plata todos los meses, lo que empuja a los propietarios a construir para sacarle una renta, o a revender a alguien que va a vivir ahí. Por eso el barrio tiende a llenarse más rápido que en terrenos aislados.
+No todos los compradores construyen enseguida. Algunos preparan su futura vivienda, otros guardan el lote como inversión o piensan revenderlo.
 
-**Las obras pueden durar.** La infraestructura se entrega por etapas y después cada propietario construye a su ritmo. Si te mudás temprano, probablemente convivas varios años con obras: camiones, ruido, polvo.
+Si te mudás entre los primeros, podés tener pocos vecinos y lotes todavía vacíos alrededor. La cantidad de lotes vendidos no corresponde necesariamente a la cantidad de casas habitadas.
 
-**El desarrollador suele seguir como administrador.** Mientras no termina de vender, el desarrollador suele administrar el barrio, y en ese momento todavía es dueño de buena parte de los lotes. Verificá que efectivamente pague las expensas comunes de los lotes que son suyos, y no solo los compradores. Pedí el reglamento y la forma de reparto de las expensas antes de firmar.
+Cuando las expensas comunes se cobran también a los lotes sin construir, mantener un lote vacío representa un costo mensual. Eso puede incentivar al propietario a construir o a revender, pero no garantiza que el barrio se llene rápido. Verificá en los documentos del barrio desde cuándo se pagan esas expensas y cómo se calculan.
 
-**Leé el contrato.** Fecha de entrega de tu etapa, condiciones de pago, reserva de dominio y fecha de la escritura: son los puntos a verificar por escrito.
+### Obras que pueden durar
 
-## En resumen
+Hay que distinguir dos calendarios: el de la infraestructura que hace el desarrollador y el de las casas que construyen los propietarios.
 
-Un lote en barrio cerrado en Areguá puede ser una muy buena elección, para vivir o para invertir. Solo hay que aceptar que el barrio va a tardar en llenarse, y controlar cómo el desarrollador administra y participa en las expensas.
+Incluso después de la entrega de tu etapa, puede haber obras en otras partes del barrio. Si te mudás temprano, contá con un período de camiones, ruido y polvo.
 
-Comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/) y te acompañamos de la visita a la escritura, en español, francés e inglés.
+Pedí el calendario de entrega de tu lote y las reglas impuestas a las obras: horarios, circulación, limpieza y reparación de los espacios comunes.
+
+### Una administración a revisar desde el principio
+
+Durante la comercialización y el desarrollo del proyecto, el desarrollador también puede administrar el barrio.
+
+Es fundamental entender cómo se toman las decisiones y cómo se reparten los gastos. Verificá en particular la contribución prevista para los lotes que todavía son del desarrollador, las eventuales disposiciones especiales y su impacto en el presupuesto que pagan los compradores.
+
+Preguntá también quién aprueba las expensas, cómo consultar las cuentas y en qué condiciones la administración podrá pasar a manos de los propietarios.
+
+### Un contrato para leer en detalle
+
+Antes de firmar, pedí que se precise por escrito:
+
+- la fecha de entrega de tu lote y de la infraestructura de tu etapa;
+- los amenities incluidos y su calendario de habilitación;
+- las condiciones de pago y las consecuencias de un atraso;
+- el monto anunciado de las expensas, desde cuándo se pagan y cómo se reajustan;
+- las reglas de construcción y los eventuales plazos para construir;
+- las cláusulas de reserva de dominio, si el contrato las prevé;
+- las condiciones y el calendario de firma de la escritura.
+
+Los compromisos importantes tienen que figurar en los documentos del contrato, con una redacción lo bastante precisa para entender qué se promete.
+
+## Mi opinión
+
+Un lote en un barrio cerrado en Areguá puede ser una muy buena elección para construir tu casa o preparar un proyecto a más largo plazo. El entorno natural, los espacios comunes y la armonía de las construcciones son verdaderas ventajas.
+
+Aun así, hay que aceptar que la vida de barrio se desarrolla de a poco e incluir en el presupuesto las expensas, las eventuales conexiones y los costos de construcción. Como inversión, la facilidad de reventa y la valorización futura se evalúan caso por caso.
+
+En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/) y te acompañamos de la visita a la escritura, en español, francés e inglés.
