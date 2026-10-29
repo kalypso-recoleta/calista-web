@@ -49,6 +49,7 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
           <h2>{t('tas.suc_t')}</h2>
           <p>{t('tas.suc_d')}</p>
           <p class="web">{t('tas.suc_web')} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
+          <p class="cpi">{t('tas.suc_cpi').replace('{cpi}', site.cpiFrancia)}</p>
           <div class="suc-ctas">
             <WhatsAppButton href={waSuc} label={t('tas.suc_wa')} />
             <a href={L('/tasaciones/sucesiones')} class="btn btn--ghost">{t('tas.suc_mas')}</a>
@@ -99,6 +100,7 @@ const pasos = [1, 2, 3].map((n) => ({ n: `0${n}`, t: t(`tas.p${n}_t`), d: t(`tas
   .tipo p { margin: 0; color: var(--muted); line-height: 1.6; }
   .sucesion { display: flex; gap: 1.4rem; align-items: flex-start; margin-top: 1.5rem; padding: 1.8rem 2rem; background: var(--card-tint); border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); box-shadow: var(--shadow); }
   .sucesion .web { margin-top: -0.4rem; color: var(--ink); }
+  .sucesion p.cpi { margin-top: -0.5rem; font-size: 0.88rem; }
   .web a { font-weight: 700; }
   .bandera { font-size: 2.2rem; line-height: 1; }
   .suc-ctas { display: flex; flex-wrap: wrap; gap: 0.8rem; }

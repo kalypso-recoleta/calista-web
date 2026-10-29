@@ -413,8 +413,9 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   <section class="section suc-sec">
     <div class="container">
       <div class="suc">
+        <span class="suc-flag" aria-hidden="true">🇫🇷</span>
         <p>{x.suc_d}</p>
-        <a href={L('/tasaciones')} class="btn btn--ghost">{x.suc_btn}</a>
+        <a href={L('/tasaciones/sucesiones')} class="btn btn--ghost">{x.suc_btn}</a>
       </div>
     </div>
   </section>
@@ -422,11 +423,13 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   <!-- QUESTIONS DE PROPRIÉTAIRES -->
   <section class="section faq-sec">
     <div class="container faq-c">
-      <h2>{x.faq_t}</h2>
+      <div class="faq-cab">
+        <h2>{x.faq_t}</h2>
+        <a class="link" href={L('/preguntas-frecuentes')}>{x.faq_todas} →</a>
+      </div>
       <div class="faq">
         {x.faq.map(([q, a]) => <details><summary>{q}</summary><p>{a}</p></details>)}
       </div>
-      <a class="link" href={L('/preguntas-frecuentes')}>{x.faq_todas} →</a>
     </div>
   </section>
 
@@ -764,7 +767,9 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .link { color: var(--violet); font-weight: 600; text-decoration: none; }
   .cats-section .cats { margin-bottom: 1.6rem; }
   .cats-section { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
-  .suc-sec { padding-block: clamp(1.5rem, 3vw, 2.5rem); }
+  .suc-sec { padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(0.75rem, 1.5vw, 1.25rem); }
+  /* La FAQ suit directement l'encadré Successions : écart réduit */
+  .faq-sec { padding-top: clamp(1.25rem, 2.5vw, 2rem); }
   .pasos-sec h2 { margin-bottom: 0.4rem; }
   .pasos4 { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
   .pasos4 li { border-top: 3px solid var(--violet); padding-top: 0.9rem; }
@@ -781,13 +786,22 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .hel img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow); }
   .hel h2 { margin: 0 0 0.4rem; font-size: 1.25rem; }
   .hel p { margin: 0 0 0.5rem; max-width: 60ch; }
-  .suc { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
-  .suc p { margin: 0; max-width: 70ch; }
-  .faq-c { max-width: 760px; }
-  .faq { display: grid; gap: 0.6rem; margin: 1.2rem 0 1rem; }
-  .faq details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; padding: 0.9rem 1.1rem; }
-  .faq summary { cursor: pointer; font-weight: 600; color: var(--brand); }
-  .faq p { margin: 0.6rem 0 0; color: var(--muted); }
+  /* Successions : même encadré que sur la page Tasaciones */
+  .suc { display: flex; align-items: center; gap: 1.2rem; padding: 1.4rem 1.8rem; border: 1px solid var(--line); border-left: 5px solid var(--violet); border-radius: var(--radius); background: var(--card-tint); box-shadow: var(--shadow); }
+  .suc-flag { font-size: 1.8rem; line-height: 1; }
+  .suc p { margin: 0; max-width: 70ch; flex: 1; color: var(--ink); }
+  .suc .btn { flex-shrink: 0; }
+  /* Questions des propriétaires : titre à gauche, questions à droite */
+  .faq-c { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1.5rem 3rem; align-items: start; }
+  .faq-cab h2 { margin: 0 0 0.9rem; }
+  .faq { display: grid; gap: 0.6rem; margin: 0; }
+  .faq details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; transition: border-color 0.2s; }
+  .faq details[open] { border-color: var(--violet); box-shadow: var(--shadow); }
+  .faq summary { list-style: none; cursor: pointer; font-weight: 600; color: var(--brand); padding: 1rem 3.2rem 1rem 1.2rem; position: relative; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--violet-soft); color: var(--violet); font-size: 1.15rem; font-weight: 600; display: grid; place-items: center; line-height: 1; }
+  .faq details[open] summary::after { content: '−'; background: var(--violet); color: #fff; }
+  .faq p { margin: 0; padding: 0 1.2rem 1.1rem; color: var(--muted); line-height: 1.6; }
   .fin { background: var(--violet); color: #fff; padding: clamp(2rem, 5vw, 3rem) 0; margin-bottom: -4rem; /* colle au pied de page */ }
   .fin-c { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
   .fin h2 { color: #fff; margin: 0 0 0.3rem; }
@@ -795,6 +809,7 @@ const waProp = whatsappLink(x.wa_prop, site.whatsappTemporal);
   .fin-btns { display: flex; gap: 0.7rem; flex-wrap: wrap; }
   .fin-est { background: #fff; color: var(--violet); font-weight: 700; }
   @media (max-width: 920px) {
+    .faq-c { grid-template-columns: 1fr; }
     .equipo { grid-template-columns: 1fr; }
     .prop-grid { grid-template-columns: 1fr; }
     .pasos4 { grid-template-columns: 1fr 1fr; }

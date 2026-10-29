@@ -21,7 +21,7 @@ type Txt = {
   pasos_t: string; pasos: [string, string][];
   docs_t: string; docs: string[]; docs_opc_t: string; docs_opc: string[];
   precio_t: string; precio: string;
-  fr_t: string; fr_d: string;
+  fr_t: string; fr_d: string; cpi: string;
   despues: string; vender: string; admin: string;
   volver: string; wa: string;
 };
@@ -54,6 +54,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Txt> = {
     precio: 'Presupuesto sin compromiso: depende del número de propiedades y de su tipo (departamento, casa o terreno). Escribinos y te respondemos.',
     fr_t: 'Nuestra agencia en Francia',
     fr_d: 'CALISTA Immobilier, en Martinica, trabaja con notarios franceses.',
+    cpi: "Nuestra agencia en Francia, CALISTA Immobilier (Martinica), cuya representante legal es Hélène Montourcy, es titular de la tarjeta profesional {cpi}, expedida por la CCI de Martinica (transacciones inmobiliarias y administración de propiedades).",
     despues: '¿Y después? Si los herederos deciden vender o alquilar, podemos acompañarlos.',
     vender: 'Vender', admin: 'Administración de alquileres',
     volver: 'Todas las tasaciones',
@@ -86,6 +87,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Txt> = {
     precio: 'Sur devis, sans engagement : il dépend du nombre de biens et de leur type (appartement, maison ou terrain). Écrivez-nous et nous vous répondons.',
     fr_t: 'Notre agence en France',
     fr_d: 'CALISTA Immobilier, en Martinique, travaille avec les notaires français.',
+    cpi: "Notre agence en France, CALISTA Immobilier (Martinique), dont la représentante légale est Hélène Montourcy, est titulaire de la carte professionnelle {cpi}, délivrée par la CCI de la Martinique (transactions sur immeubles et fonds de commerce, gestion immobilière).",
     despues: 'Et ensuite ? Si les héritiers décident de vendre ou de louer, nous pouvons les accompagner.',
     vender: 'Vendre', admin: 'Gestion locative',
     volver: 'Toutes les estimations',
@@ -118,6 +120,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Txt> = {
     precio: 'No-obligation quote: it depends on the number of properties and their type (apartment, house or plot). Write to us and we will reply.',
     fr_t: 'Our agency in France',
     fr_d: 'CALISTA Immobilier, in Martinique, works with French notaries.',
+    cpi: "Our agency in France, CALISTA Immobilier (Martinique), whose legal representative is Hélène Montourcy, holds the French real estate professional card (carte professionnelle) {cpi}, issued by the CCI of Martinique (property transactions and property management).",
     despues: 'And then? If the heirs decide to sell or rent out, we can help them.',
     vender: 'Sell', admin: 'Rental management',
     volver: 'All valuations',
@@ -150,6 +153,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Txt> = {
     precio: 'Orçamento sem compromisso: depende do número de imóveis e do tipo (apartamento, casa ou terreno). Fale conosco e respondemos.',
     fr_t: 'Nossa agência na França',
     fr_d: 'A CALISTA Immobilier, na Martinica, trabalha com tabeliães franceses.',
+    cpi: "A nossa agência na França, CALISTA Immobilier (Martinica), cuja representante legal é Hélène Montourcy, é titular da carteira profissional {cpi}, emitida pela CCI da Martinica (transações imobiliárias e administração de imóveis).",
     despues: 'E depois? Se os herdeiros decidirem vender ou alugar, podemos acompanhá-los.',
     vender: 'Vender', admin: 'Administração de aluguéis',
     volver: 'Todas as avaliações',
@@ -229,6 +233,7 @@ const ld = {
         <div class="bloque">
           <h2>{x.fr_t}</h2>
           <p>{x.fr_d} <a href="https://www.calista.immo" target="_blank" rel="noopener">www.calista.immo</a></p>
+          <p class="cpi">{x.cpi.replace('{cpi}', site.cpiFrancia)}</p>
         </div>
       </div>
     </div>
@@ -268,6 +273,7 @@ const ld = {
   .bloque p { margin: 0; color: var(--muted); line-height: 1.7; }
   .bloque p.sub { margin: 1.3rem 0 0.7rem; color: var(--ink); font-weight: 600; }
   .bloque a { color: var(--violet); font-weight: 700; }
+  .bloque p.cpi { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
   .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; counter-reset: paso; }
   .pasos li { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
   .pasos .num { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--violet); color: #fff; font-family: var(--display); font-size: 0.95rem; font-weight: 600; }

@@ -20,6 +20,9 @@ export const site = {
   telefono: '+595 994 385487',
   direccion: 'Auditores de la Guerra del Chaco esq. Tte. 2do Rufino Cañete, Barrio Mburucuyá, Asunción',
   ruc: '80109137-3',
+  // Carte professionnelle de l'agence en France (CALISTA IMMOBILIER SARL, Martinique).
+  // ⚠️ Valable jusqu'au 16/12/2027 : mettre à jour au renouvellement.
+  cpiFrancia: 'CPI 9721 2018 000 024 298',
 
   // Cloudinary : nom du "cloud" (visible dans ton dashboard Cloudinary).
   // Sert à optimiser les images à la volée.
