@@ -1,15 +1,15 @@
 ---
 titulo: 'Comprar un lote en un barrio cerrado: ventajas y puntos de atención'
-descripcion: 'Naturaleza, espacios comunes y el encanto de una ciudad de artistas: comprar un lote en Areguá tiene con qué seducir. Pero también hay que mirar el calendario de obras, las reglas de construcción y la administración del barrio.'
+descripcion: 'Servicios, amenities y entorno natural, pero también obras largas, reglas de construcción y un desarrollador que administra: lo que hay que saber antes de comprar un lote en un barrio cerrado en Paraguay.'
 categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-29
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
-  descripcion: "Nature, équipements communs et charme d’une ville d’artistes : acheter un lot à Areguá a de quoi séduire. Mais il faut aussi regarder le calendrier des travaux, les règles de construction et la gestion de la résidence."
+  descripcion: "Réseaux, équipements et cadre naturel, mais aussi travaux longs, règles de construction et promoteur administrateur : ce qu’il faut savoir avant d’acheter un lot en résidence fermée au Paraguay."
   cuerpo: |-
-    Acheter un terrain dans une résidence fermée, ou barrio cerrado, permet d’envisager sa maison dans un ensemble aménagé, avec des espaces communs et un accès contrôlé. À Areguá, le cadre naturel et l’identité culturelle de la ville ajoutent un attrait particulier.
+    Acheter un terrain dans une résidence fermée, ou barrio cerrado, permet d’envisager sa maison dans un ensemble aménagé, avec des espaces communs et un accès contrôlé. Ces projets se multiplient autour d’Asunción : à Luque, à Areguá et un peu partout dans le département Central.
 
     C’est un achat que je recommande volontiers, à condition de savoir à quoi s’attendre. Voici les avantages que j’y vois et les points à vérifier avant de s’engager.
 
@@ -23,7 +23,7 @@ fr:
 
     ### Un cadre très beau et très vert
 
-    La végétation, les espaces ouverts et les aménagements paysagers font partie des attraits de ce type de résidence. À [Areguá Forest](/fr/terrenos/aregua-forest/), le projet met notamment en avant un environnement boisé, des ruisseaux et des espaces verts communs.
+    La végétation, les espaces ouverts et les aménagements paysagers font partie des attraits de ce type de résidence.
 
     Lors de la visite, regardez aussi le terrain lui-même : sa pente, l’écoulement de l’eau et l’emplacement des arbres peuvent influencer l’implantation de votre future maison.
 
@@ -35,19 +35,11 @@ fr:
 
     ### Une harmonie architecturale encadrée
 
-    Un autre avantage d’Areguá Forest est l’encadrement des constructions. Les projets de maison sont soumis au contrôle du promoteur au regard des règles de la résidence, ainsi qu’aux autorisations de la municipalité.
+    Dans beaucoup de résidences fermées, les projets de maison sont soumis au contrôle du promoteur au regard des règles de la résidence, en plus des autorisations de la municipalité.
 
     Ce cadre contribue à préserver une cohérence d’ensemble : implantation des maisons, volumes, retraits et traitement des clôtures, selon les dispositions applicables. Il ne s’agit pas nécessairement d’avoir des maisons identiques, mais de permettre des projets différents dans un environnement harmonieux.
 
     En contrepartie, votre liberté de construction s’exerce dans ce cadre. Demandez le règlement avant d’acheter, pour vérifier que la maison que vous imaginez pourra y trouver sa place.
-
-    ### Areguá, une ville à part
-
-    Areguá est une ville que j’adore. Son artisanat, ses poteries utilitaires et décoratives, ses ateliers et ses lieux culturels lui donnent une identité particulière.
-
-    Elle fait partie du [Réseau des villes créatives de l’UNESCO](https://www.unesco.org/en/creative-cities/aregua) dans la catégorie « Artisanat et arts populaires » depuis 2019.
-
-    Avec le lac Ypacaraí et son atmosphère artistique, elle offre un cadre qui compte beaucoup dans l’envie de s’y installer. Pour moi, cela fait pleinement partie de l’intérêt d’un achat dans cette ville.
 
     ## Les points de vigilance
 
@@ -89,18 +81,24 @@ fr:
 
     Les engagements importants doivent figurer dans les documents contractuels, avec une formulation suffisamment précise pour comprendre ce qui est promis.
 
-    ## Mon avis
+    ## Mon avis, et ce que nous proposons
 
-    Un lot en résidence fermée à Areguá peut être un très bon choix pour construire sa maison ou préparer un projet à plus long terme. Le cadre naturel, les équipements communs et l’harmonie des constructions sont de vrais atouts.
+    Un lot en résidence fermée peut être un très bon choix pour construire sa maison ou préparer un projet à plus long terme. Le cadre naturel, les équipements communs et l’harmonie des constructions sont de vrais atouts.
 
     Il faut néanmoins accepter que la vie de quartier se développe progressivement et intégrer à son budget les charges, les raccordements éventuels et les coûts de construction. Pour un investissement, la facilité de revente et la valorisation future restent à apprécier au cas par cas.
 
-    Chez CALISTA Inmobiliaria, nous commercialisons les lots d’[Areguá Forest](/fr/terrenos/aregua-forest/) et nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais. Vous y trouverez la grille de prix par étape et un simulateur de mensualités.
+    ### Notre sélection : Areguá Forest
+
+    Chez CALISTA Inmobiliaria, nous commercialisons les lots d’[Areguá Forest](/fr/terrenos/aregua-forest/). Le projet met en avant un environnement boisé, des ruisseaux et des espaces verts communs, et les projets de maison y sont soumis au contrôle du promoteur au regard des règles de la résidence.
+
+    Areguá est aussi une ville que j’adore. Son artisanat, ses poteries utilitaires et décoratives, ses ateliers et ses lieux culturels lui donnent une identité particulière. Elle fait partie du [Réseau des villes créatives de l’UNESCO](https://www.unesco.org/en/creative-cities/aregua) dans la catégorie « Artisanat et arts populaires » depuis 2019. Avec le lac Ypacaraí et son atmosphère artistique, elle offre un cadre qui compte beaucoup dans l’envie de s’y installer.
+
+    Sur la [page Areguá Forest](/fr/terrenos/aregua-forest/), vous trouverez la grille de prix par étape et un simulateur de mensualités. Nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais.
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
-  descripcion: 'Nature, shared amenities and the charm of a town of artists: buying a plot in Areguá has a lot going for it. But you also need to look at the works schedule, the building rules and how the community is run.'
+  descripcion: 'Utilities, amenities and a natural setting, but also long works, building rules and a developer who runs the community: what to know before buying a plot in a gated community in Paraguay.'
   cuerpo: |-
-    Buying a plot in a gated community, or barrio cerrado, lets you plan your home within a developed estate, with shared spaces and controlled access. In Areguá, the natural setting and the town’s cultural identity add a particular appeal.
+    Buying a plot in a gated community, or barrio cerrado, lets you plan your home within a developed estate, with shared spaces and controlled access. These projects are multiplying around Asunción: in Luque, in Areguá and across the Central department.
 
     It is a purchase I gladly recommend, as long as you know what to expect. Here are the advantages I see and the points to check before committing.
 
@@ -114,7 +112,7 @@ en:
 
     ### A beautiful, green setting
 
-    Vegetation, open spaces and landscaping are among the attractions of this type of community. At [Areguá Forest](/en/terrenos/aregua-forest/), the project highlights in particular a wooded environment, streams and shared green spaces.
+    Vegetation, open spaces and landscaping are among the attractions of this type of community.
 
     During the visit, also look at the plot itself: its slope, water drainage and the position of the trees can influence where your future house will sit.
 
@@ -126,19 +124,11 @@ en:
 
     ### Guided architectural harmony
 
-    Another advantage of Areguá Forest is that construction is supervised. House projects are reviewed by the developer against the community rules, and also need the municipality’s approval.
+    In many gated communities, house projects are reviewed by the developer against the community rules, in addition to the municipality’s approval.
 
     This framework helps keep the whole consistent: position of the houses, volumes, setbacks and fencing, according to the applicable rules. It does not necessarily mean identical houses, but different projects within a harmonious environment.
 
     In return, your freedom to build works within this framework. Ask for the rules before buying, to check that the house you have in mind will fit.
-
-    ### Areguá, a town like no other
-
-    Areguá is a town I love. Its crafts, its everyday and decorative pottery, its workshops and cultural venues give it a distinctive identity.
-
-    It has been part of the [UNESCO Creative Cities Network](https://www.unesco.org/en/creative-cities/aregua) for Crafts and Folk Art since 2019.
-
-    With Lake Ypacaraí and its artistic atmosphere, it offers a setting that weighs heavily in the wish to settle there. For me, this is fully part of the appeal of buying in this town.
 
     ## What to watch
 
@@ -180,18 +170,24 @@ en:
 
     Important commitments must appear in the contract documents, worded precisely enough to understand what is promised.
 
-    ## My view
+    ## My view, and what we offer
 
-    A plot in a gated community in Areguá can be a very good choice to build your home or prepare a longer-term project. The natural setting, the shared amenities and the harmony of the buildings are real assets.
+    A plot in a gated community can be a very good choice to build your home or prepare a longer-term project. The natural setting, the shared amenities and the harmony of the buildings are real assets.
 
     You do, however, need to accept that community life develops gradually, and to budget for the charges, any connections and the building costs. As an investment, ease of resale and future value should be assessed case by case.
 
-    At CALISTA Inmobiliaria, we sell plots at [Areguá Forest](/en/terrenos/aregua-forest/) and support you from the visit to the deed, in English, French and Spanish. You will find the price list by stage and an instalment simulator there.
+    ### Our pick: Areguá Forest
+
+    At CALISTA Inmobiliaria, we sell plots at [Areguá Forest](/en/terrenos/aregua-forest/). The project highlights a wooded environment, streams and shared green spaces, and house projects there are reviewed by the developer against the community rules.
+
+    Areguá is also a town I love. Its crafts, its everyday and decorative pottery, its workshops and cultural venues give it a distinctive identity. It has been part of the [UNESCO Creative Cities Network](https://www.unesco.org/en/creative-cities/aregua) for Crafts and Folk Art since 2019. With Lake Ypacaraí and its artistic atmosphere, it offers a setting that weighs heavily in the wish to settle there.
+
+    On the [Areguá Forest page](/en/terrenos/aregua-forest/) you will find the price list by stage and an instalment simulator. We support you from the visit to the deed, in English, French and Spanish.
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
-  descripcion: 'Natureza, áreas comuns e o charme de uma cidade de artistas: comprar um lote em Areguá tem muito a oferecer. Mas também é preciso olhar o cronograma das obras, as regras de construção e a administração do condomínio.'
+  descripcion: 'Infraestrutura, áreas de lazer e natureza, mas também obras longas, regras de construção e um desenvolvedor que administra: o que saber antes de comprar um lote em condomínio fechado no Paraguai.'
   cuerpo: |-
-    Comprar um lote em condomínio fechado, ou barrio cerrado, permite planejar a sua casa num conjunto urbanizado, com áreas comuns e acesso controlado. Em Areguá, o ambiente natural e a identidade cultural da cidade acrescentam um atrativo especial.
+    Comprar um lote em condomínio fechado, ou barrio cerrado, permite planejar a sua casa num conjunto urbanizado, com áreas comuns e acesso controlado. Esses projetos se multiplicam ao redor de Assunção: em Luque, em Areguá e em todo o departamento Central.
 
     É uma compra que recomendo, desde que se saiba o que esperar. Aqui estão as vantagens que vejo e os pontos a verificar antes de se comprometer.
 
@@ -205,7 +201,7 @@ pt:
 
     ### Um ambiente muito bonito e verde
 
-    A vegetação, os espaços abertos e o paisagismo estão entre os atrativos desse tipo de condomínio. No [Areguá Forest](/pt/terrenos/aregua-forest/), o projeto destaca em especial um ambiente arborizado, riachos e áreas verdes comuns.
+    A vegetação, os espaços abertos e o paisagismo estão entre os atrativos desse tipo de condomínio.
 
     Na visita, observe também o próprio terreno: a inclinação, o escoamento da água e a posição das árvores podem influenciar a implantação da sua futura casa.
 
@@ -217,19 +213,11 @@ pt:
 
     ### Harmonia arquitetônica orientada
 
-    Outra vantagem do Areguá Forest é o acompanhamento das construções. Os projetos de casa passam pelo controle do desenvolvedor segundo as regras do condomínio, além das autorizações da prefeitura.
+    Em muitos condomínios fechados, os projetos de casa passam pelo controle do desenvolvedor segundo as regras do condomínio, além das autorizações da prefeitura.
 
     Esse enquadramento ajuda a manter a coerência do conjunto: implantação das casas, volumes, recuos e tratamento das cercas, conforme as normas aplicáveis. Não se trata necessariamente de casas idênticas, mas de permitir projetos diferentes num ambiente harmonioso.
 
     Em contrapartida, a sua liberdade de construir se exerce dentro desse enquadramento. Peça o regulamento antes de comprar, para verificar se a casa que você imagina vai caber nele.
-
-    ### Areguá, uma cidade especial
-
-    Areguá é uma cidade que eu adoro. O artesanato, a cerâmica utilitária e decorativa, os ateliês e os espaços culturais lhe dão uma identidade própria.
-
-    Faz parte da [Rede de Cidades Criativas da UNESCO](https://www.unesco.org/en/creative-cities/aregua) na categoria Artesanato e Arte Popular desde 2019.
-
-    Com o lago Ypacaraí e sua atmosfera artística, oferece um ambiente que pesa muito na vontade de morar ali. Para mim, isso faz parte do interesse de comprar nesta cidade.
 
     ## Os pontos de atenção
 
@@ -271,15 +259,21 @@ pt:
 
     Os compromissos importantes devem constar nos documentos contratuais, com uma redação precisa o bastante para entender o que está prometido.
 
-    ## Minha opinião
+    ## Minha opinião, e o que propomos
 
-    Um lote em condomínio fechado em Areguá pode ser uma ótima escolha para construir a sua casa ou preparar um projeto de longo prazo. O ambiente natural, as áreas comuns e a harmonia das construções são verdadeiros atrativos.
+    Um lote em condomínio fechado pode ser uma ótima escolha para construir a sua casa ou preparar um projeto de longo prazo. O ambiente natural, as áreas comuns e a harmonia das construções são verdadeiros atrativos.
 
     Ainda assim, é preciso aceitar que a vida de bairro se desenvolve aos poucos e incluir no orçamento as despesas, as eventuais ligações e os custos de construção. Como investimento, a facilidade de revenda e a valorização futura devem ser avaliadas caso a caso.
 
-    Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/) e acompanhamos você da visita à escritura, em espanhol, francês e inglês. Lá você encontra a tabela de preços por etapa e um simulador de parcelas.
+    ### Nossa seleção: Areguá Forest
+
+    Na CALISTA Inmobiliaria, comercializamos os lotes do [Areguá Forest](/pt/terrenos/aregua-forest/). O projeto destaca um ambiente arborizado, riachos e áreas verdes comuns, e os projetos de casa passam pelo controle do desenvolvedor segundo as regras do condomínio.
+
+    Areguá também é uma cidade que eu adoro. O artesanato, a cerâmica utilitária e decorativa, os ateliês e os espaços culturais lhe dão uma identidade própria. Faz parte da [Rede de Cidades Criativas da UNESCO](https://www.unesco.org/en/creative-cities/aregua) na categoria Artesanato e Arte Popular desde 2019. Com o lago Ypacaraí e sua atmosfera artística, oferece um ambiente que pesa muito na vontade de morar ali.
+
+    Na [página do Areguá Forest](/pt/terrenos/aregua-forest/) você encontra a tabela de preços por etapa e um simulador de parcelas. Acompanhamos você da visita à escritura, em espanhol, francês e inglês.
 ---
-Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. En Areguá, el entorno natural y la identidad cultural de la ciudad suman un atractivo particular.
+Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. Estos proyectos se multiplican alrededor de Asunción: en Luque, en Areguá y en todo el departamento Central.
 
 Es una compra que recomiendo, siempre que se sepa qué esperar. Estas son las ventajas que veo y los puntos a verificar antes de comprometerse.
 
@@ -293,7 +287,7 @@ Aun así, conviene verificar qué se entregará al pie del lote, en qué fecha y
 
 ### Un entorno muy lindo y muy verde
 
-La vegetación, los espacios abiertos y el paisajismo son parte del atractivo de este tipo de barrio. En [Areguá Forest](/terrenos/aregua-forest/), el proyecto destaca en particular un entorno arbolado, arroyos y espacios verdes comunes.
+La vegetación, los espacios abiertos y el paisajismo son parte del atractivo de este tipo de barrio.
 
 En la visita, mirá también el lote en sí: la pendiente, el escurrimiento del agua y la ubicación de los árboles pueden influir en la implantación de tu futura casa.
 
@@ -305,19 +299,11 @@ Antes de comprar, distinguí los amenities que ya se pueden usar de los que toda
 
 ### Una armonía arquitectónica encuadrada
 
-Otra ventaja de Areguá Forest es que las construcciones están encuadradas. Los proyectos de casa pasan por el control del desarrollador según las reglas del barrio, además de las autorizaciones de la municipalidad.
+En muchos barrios cerrados, los proyectos de casa pasan por el control del desarrollador según las reglas del barrio, además de las autorizaciones de la municipalidad.
 
 Este marco ayuda a mantener la coherencia del conjunto: implantación de las casas, volúmenes, retiros y tratamiento de los cercos, según las disposiciones aplicables. No se trata necesariamente de tener casas idénticas, sino de permitir proyectos distintos en un entorno armonioso.
 
 Como contrapartida, tu libertad de construir se ejerce dentro de ese marco. Pedí el reglamento antes de comprar, para verificar que la casa que imaginás tenga su lugar.
-
-### Areguá, una ciudad distinta
-
-Areguá es una ciudad que me encanta. Su artesanía, su cerámica utilitaria y decorativa, sus talleres y sus espacios culturales le dan una identidad propia.
-
-Forma parte de la [Red de Ciudades Creativas de la UNESCO](https://www.unesco.org/en/creative-cities/aregua) en la categoría Artesanía y Arte Popular desde 2019.
-
-Con el lago Ypacaraí y su ambiente artístico, ofrece un entorno que pesa mucho en las ganas de vivir ahí. Para mí, eso es parte plena del interés de comprar en esta ciudad.
 
 ## Los puntos de atención
 
@@ -359,10 +345,16 @@ Antes de firmar, pedí que se precise por escrito:
 
 Los compromisos importantes tienen que figurar en los documentos del contrato, con una redacción lo bastante precisa para entender qué se promete.
 
-## Mi opinión
+## Mi opinión, y lo que proponemos
 
-Un lote en un barrio cerrado en Areguá puede ser una muy buena elección para construir tu casa o preparar un proyecto a más largo plazo. El entorno natural, los espacios comunes y la armonía de las construcciones son verdaderas ventajas.
+Un lote en un barrio cerrado puede ser una muy buena elección para construir tu casa o preparar un proyecto a más largo plazo. El entorno natural, los espacios comunes y la armonía de las construcciones son verdaderas ventajas.
 
 Aun así, hay que aceptar que la vida de barrio se desarrolla de a poco e incluir en el presupuesto las expensas, las eventuales conexiones y los costos de construcción. Como inversión, la facilidad de reventa y la valorización futura se evalúan caso por caso.
 
-En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/) y te acompañamos de la visita a la escritura, en español, francés e inglés. Ahí vas a encontrar la grilla de precios por etapa y un simulador de cuotas.
+### Nuestra selección: Areguá Forest
+
+En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/aregua-forest/). El proyecto destaca un entorno arbolado, arroyos y espacios verdes comunes, y los proyectos de casa pasan por el control del desarrollador según las reglas del barrio.
+
+Areguá es además una ciudad que me encanta. Su artesanía, su cerámica utilitaria y decorativa, sus talleres y sus espacios culturales le dan una identidad propia. Forma parte de la [Red de Ciudades Creativas de la UNESCO](https://www.unesco.org/en/creative-cities/aregua) en la categoría Artesanía y Arte Popular desde 2019. Con el lago Ypacaraí y su ambiente artístico, ofrece un entorno que pesa mucho en las ganas de vivir ahí.
+
+En la [página de Areguá Forest](/terrenos/aregua-forest/) vas a encontrar la grilla de precios por etapa y un simulador de cuotas. Te acompañamos de la visita a la escritura, en español, francés e inglés.
