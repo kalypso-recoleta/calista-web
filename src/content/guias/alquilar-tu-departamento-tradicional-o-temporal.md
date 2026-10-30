@@ -48,7 +48,15 @@ fr:
     | Charges (électricité, eau, internet) | À la charge du locataire, selon le bail | À votre charge |
     | Occupation | Continue pendant la durée du bail | Variable selon la saison |
 
-    L'écart existe, mais il est plus faible qu'il n'y paraît : en location temporaire, il faut encore déduire les charges, le mobilier et son renouvellement, ainsi que les commissions des plateformes. De plus, la moyenne d'AirDNA mélange tous les types de logements ; votre appartement peut se situer au-dessus ou en dessous.
+    L'écart existe, mais il est plus faible qu'il n'y paraît. Un appartement en location temporaire a beaucoup de frais propres. Chez CALISTA, le ménage et le lavage du linge entre chaque séjour sont compris dans les 20 %, mais restent à votre charge :
+
+    - l'électricité, l'eau, internet et, le cas échéant, le câble ou le streaming ;
+    - les consommables pour les voyageurs : papier toilette, savon, produits d'entretien, café ;
+    - le renouvellement des draps, serviettes, de la vaisselle et du petit électroménager, qui s'usent vite ;
+    - l'entretien et les réparations, plus fréquents avec des occupants qui changent ;
+    - les commissions des plateformes de réservation.
+
+    Avant de choisir, mieux vaut estimer ces frais pour votre appartement. De plus, la moyenne d'AirDNA mélange tous les types de logements ; votre appartement peut se situer au-dessus ou en dessous.
 
     ## Quel appartement pour quelle formule ?
 
@@ -118,7 +126,15 @@ en:
     | Utilities (power, water, internet) | Paid by the tenant, per the lease | Paid by you |
     | Occupancy | Continuous for the term of the lease | Varies with the season |
 
-    The gap is real, but smaller than it first looks: with short-term rentals you still need to deduct utilities, furniture and its replacement, and platform fees. AirDNA's average also mixes all kinds of properties; yours may sit above or below it.
+    The gap is real, but smaller than it first looks. A short-term rental apartment has many costs of its own. With CALISTA, cleaning and laundering the linen between stays are included in the 20%, but these remain yours:
+
+    - electricity, water, internet and, where relevant, cable or streaming;
+    - guest consumables: toilet paper, soap, cleaning products, coffee;
+    - replacing sheets, towels, tableware and small appliances, which wear out quickly;
+    - maintenance and repairs, more frequent with changing guests;
+    - booking platform fees.
+
+    Before deciding, it is worth estimating these costs for your apartment. AirDNA's average also mixes all kinds of properties; yours may sit above or below it.
 
     ## Which apartment suits which option?
 
@@ -188,7 +204,15 @@ pt:
     | Contas (luz, água, internet) | Por conta do inquilino, conforme o contrato | Por sua conta |
     | Ocupação | Contínua durante o contrato | Variável conforme a temporada |
 
-    A diferença existe, mas é menor do que parece: na temporada, ainda é preciso descontar as contas, a mobília e sua reposição, e as comissões das plataformas. Além disso, a média da AirDNA mistura todo tipo de acomodação; o seu apartamento pode ficar acima ou abaixo dela.
+    A diferença existe, mas é menor do que parece. Um apartamento de temporada tem muitos custos próprios. Na CALISTA, a limpeza e a lavagem da roupa de cama entre cada estadia estão incluídas nos 20 %, mas ficam por sua conta:
+
+    - luz, água, internet e, se for o caso, TV a cabo ou streaming;
+    - os consumíveis para os hóspedes: papel higiênico, sabonete, produtos de limpeza, café;
+    - a reposição de lençóis, toalhas, louça e pequenos eletrodomésticos, que se desgastam rápido;
+    - a manutenção e os reparos, mais frequentes com hóspedes que mudam;
+    - as comissões das plataformas de reserva.
+
+    Antes de decidir, vale estimar esses custos para o seu apartamento. Além disso, a média da AirDNA mistura todo tipo de acomodação; o seu apartamento pode ficar acima ou abaixo dela.
 
     ## Que apartamento funciona melhor em cada caso?
 
@@ -256,7 +280,15 @@ Para tener un orden de magnitud, comparemos dos referencias reales:
 | Servicios (luz, agua, internet) | A cargo del inquilino, según el contrato | A tu cargo |
 | Ocupación | Continua mientras dure el contrato | Variable según la temporada |
 
-La diferencia existe, pero es menor de lo que parece a primera vista: en temporal, todavía tenés que restar los servicios, el mobiliario y su reposición, y las comisiones de las plataformas. Además, el promedio de AirDNA mezcla todo tipo de alojamientos; tu departamento puede estar por encima o por debajo.
+La diferencia existe, pero es menor de lo que parece a primera vista. Un departamento en alquiler temporal tiene muchos gastos propios. En CALISTA, la limpieza y el lavado de la ropa de cama entre cada estadía están incluidos en el 20 %, pero quedan a tu cargo:
+
+- la luz, el agua, internet y, en su caso, el cable o el streaming;
+- los consumibles para los huéspedes: papel higiénico, jabón, productos de limpieza, café;
+- la reposición de sábanas, toallas, vajilla y pequeños electrodomésticos, que se gastan rápido;
+- el mantenimiento y las reparaciones, más frecuentes con huéspedes que cambian;
+- las comisiones de las plataformas de reserva.
+
+Antes de decidir, conviene estimar estos gastos para tu departamento. Además, el promedio de AirDNA mezcla todo tipo de alojamientos; tu departamento puede estar por encima o por debajo.
 
 ## ¿Qué departamento funciona mejor en cada caso?
 
