@@ -33,6 +33,28 @@ fr:
     - **Obligations touristiques :** si vous proposez l’appartement comme hébergement touristique, renseignez-vous auprès du SENATUR sur la catégorie applicable et sur les conditions d’inscription et d’habilitation au REGISTUR.
     - **Règlement de l’immeuble :** lisez le règlement de copropriété et les restrictions d’usage des appartements. Ne partez pas du principe que la location temporaire est autorisée.
 
+    ## Une comparaison chiffrée
+
+    Pour avoir un ordre de grandeur, comparons deux références réelles :
+
+    - **Location classique :** un appartement d'une chambre avec parking à Barrio Jara, loué **3 400 000 Gs par mois** ([voir le calcul complet](/fr/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)). Au cours du BCP du 7 octobre 2026 (5 751,99 Gs), cela fait environ **591 USD par mois**.
+    - **Location temporaire :** selon [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview), la location de courte durée à Asunción a affiché sur les douze derniers mois (à septembre 2026) un tarif moyen de **42 USD par nuit** et un taux d'occupation de **66 %**. Sur 30 nuits, cela représente environ **832 USD par mois** de revenu brut.
+
+    | | Classique | Temporaire |
+    | --- | --- | --- |
+    | Revenu brut mensuel | ≈ 591 USD | ≈ 832 USD |
+    | Gestion CALISTA | 5 % + TVA | 20 %, TVA comprise |
+    | Après gestion | ≈ 559 USD | ≈ 665 USD |
+    | Charges (électricité, eau, internet) | À la charge du locataire, selon le bail | À votre charge |
+    | Occupation | Continue pendant la durée du bail | Variable selon la saison |
+
+    L'écart existe, mais il est plus faible qu'il n'y paraît : en location temporaire, il faut encore déduire les charges, le mobilier et son renouvellement, ainsi que les commissions des plateformes. De plus, la moyenne d'AirDNA mélange tous les types de logements ; votre appartement peut se situer au-dessus ou en dessous.
+
+    ## Quel appartement pour quelle formule ?
+
+    - **La location temporaire** fonctionne surtout avec des appartements bien situés, près des bureaux, des commerces ou des ambassades, bien meublés et bien photographiés. Elle vous permet aussi d'occuper l'appartement quelques semaines par an.
+    - **La location classique** convient si vous cherchez un revenu stable, peu de gestion et moins d'usure, ou si le règlement de l'immeuble n'autorise pas la location temporaire.
+
     ## Combien coûte la gestion avec CALISTA ?
 
     **Location classique :** nous facturons **5 % des loyers réellement encaissés, plus TVA**. La mise en location coûte l’équivalent d’un mois de loyer, réparti à 50 % pour le propriétaire et 50 % pour le locataire, et comprend l’état des lieux d’entrée.
@@ -80,6 +102,28 @@ en:
 
     - **Tourism requirements:** if you offer the apartment as tourist accommodation, ask SENATUR about the applicable category and the registration and licensing requirements in REGISTUR.
     - **Building rules:** read the condominium regulations and any restrictions on how apartments may be used. Do not assume short-term rentals are allowed.
+
+    ## A comparison in numbers
+
+    To get an order of magnitude, let's compare two real references:
+
+    - **Traditional rental:** a one-bedroom apartment with parking in Barrio Jara, rented at **Gs 3,400,000 per month** ([see the full calculation](/en/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)). At the BCP rate of October 7, 2026 (Gs 5,751.99), that is about **US$591 per month**.
+    - **Short-term rental:** according to [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview), short-term rentals in Asunción had, over the last twelve months (to September 2026), an average rate of **US$42 per night** and **66%** occupancy. Over 30 nights, that is about **US$832 per month** in gross income.
+
+    | | Traditional | Short-term |
+    | --- | --- | --- |
+    | Gross monthly income | ≈ US$591 | ≈ US$832 |
+    | CALISTA management | 5% + VAT | 20%, VAT included |
+    | After management | ≈ US$559 | ≈ US$665 |
+    | Utilities (power, water, internet) | Paid by the tenant, per the lease | Paid by you |
+    | Occupancy | Continuous for the term of the lease | Varies with the season |
+
+    The gap is real, but smaller than it first looks: with short-term rentals you still need to deduct utilities, furniture and its replacement, and platform fees. AirDNA's average also mixes all kinds of properties; yours may sit above or below it.
+
+    ## Which apartment suits which option?
+
+    - **Short-term rental** works best for well-located apartments, near offices, shops or embassies, well furnished and well photographed. It also lets you use the apartment for a few weeks a year.
+    - **Traditional rental** suits you if you want steady income, little management and less wear, or if the building rules do not allow short-term rentals.
 
     ## How much does management with CALISTA cost?
 
@@ -129,6 +173,28 @@ pt:
     - **Requisitos turísticos:** se você oferece o apartamento como hospedagem turística, consulte a SENATUR (Secretaría Nacional de Turismo) sobre a categoria aplicável e os requisitos de inscrição e habilitação no REGISTUR.
     - **Regulamento do edifício:** revise o reglamento de copropiedad (convenção de condomínio) e as restrições sobre o uso do apartamento. Não presuma que o aluguel de temporada é permitido.
 
+    ## Uma comparação em números
+
+    Para ter uma ordem de grandeza, vamos comparar duas referências reais:
+
+    - **Aluguel tradicional:** um apartamento de 1 quarto com garagem no Barrio Jara, alugado por **Gs 3.400.000 por mês** ([ver o cálculo completo](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)). Pela cotação do BCP de 7 de outubro de 2026 (Gs 5.751,99), são cerca de **USD 591 por mês**.
+    - **Aluguel de temporada:** segundo a [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview), o aluguel de curta duração em Assunção teve, nos últimos doze meses (até setembro de 2026), uma diária média de **USD 42** e uma ocupação de **66 %**. Em 30 noites, isso dá cerca de **USD 832 por mês** de receita bruta.
+
+    | | Tradicional | Temporada |
+    | --- | --- | --- |
+    | Receita bruta mensal | ≈ USD 591 | ≈ USD 832 |
+    | Administração CALISTA | 5 % + IVA | 20 %, IVA incluído |
+    | Depois da administração | ≈ USD 559 | ≈ USD 665 |
+    | Contas (luz, água, internet) | Por conta do inquilino, conforme o contrato | Por sua conta |
+    | Ocupação | Contínua durante o contrato | Variável conforme a temporada |
+
+    A diferença existe, mas é menor do que parece: na temporada, ainda é preciso descontar as contas, a mobília e sua reposição, e as comissões das plataformas. Além disso, a média da AirDNA mistura todo tipo de acomodação; o seu apartamento pode ficar acima ou abaixo dela.
+
+    ## Que apartamento funciona melhor em cada caso?
+
+    - **A temporada** costuma funcionar melhor com apartamentos bem localizados, perto de escritórios, comércio ou embaixadas, bem mobiliados e com boas fotos. Também permite usar o apartamento algumas semanas por ano.
+    - **O tradicional** é indicado se você busca uma renda estável, pouca gestão e menos desgaste, ou se o regulamento do prédio não permite o aluguel de temporada.
+
     ## Quanto custa a administração com a CALISTA?
 
     **Aluguel tradicional:** cobramos **5 % dos aluguéis efetivamente recebidos, mais IVA**. A colocação para aluguel custa o equivalente a um mês de aluguel, dividido em 50 % a cargo do proprietário e 50 % a cargo do inquilino, e inclui o inventário de entrada.
@@ -174,6 +240,28 @@ Antes de empezar, verificá dos aspectos:
 
 - **Requisitos turísticos:** si ofrecés el departamento como alojamiento turístico, consultá con SENATUR la categoría aplicable y los requisitos de inscripción y habilitación en REGISTUR.
 - **Reglamento del edificio:** revisá el reglamento de copropiedad y las restricciones sobre el uso del departamento. No des por hecho que el alquiler temporal está permitido.
+
+## Una comparación en números
+
+Para tener un orden de magnitud, comparemos dos referencias reales:
+
+- **Alquiler tradicional:** un departamento de 1 dormitorio con cochera en Barrio Jara, alquilado a **Gs 3.400.000 por mes** ([ver el cálculo completo](/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)). Al tipo de cambio del BCP del 7 de octubre de 2026 (Gs 5.751,99), son unos **USD 591 por mes**.
+- **Alquiler temporal:** según [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview), el alquiler de corta duración en Asunción tuvo en los últimos doce meses (a setiembre de 2026) una tarifa promedio de **USD 42 por noche** y una ocupación del **66 %**. Sobre 30 noches, eso da unos **USD 832 por mes** de ingreso bruto.
+
+| | Tradicional | Temporal |
+| --- | --- | --- |
+| Ingreso bruto mensual | ≈ USD 591 | ≈ USD 832 |
+| Administración CALISTA | 5 % + IVA | 20 %, IVA incluido |
+| Después de la administración | ≈ USD 559 | ≈ USD 665 |
+| Servicios (luz, agua, internet) | A cargo del inquilino, según el contrato | A tu cargo |
+| Ocupación | Continua mientras dure el contrato | Variable según la temporada |
+
+La diferencia existe, pero es menor de lo que parece a primera vista: en temporal, todavía tenés que restar los servicios, el mobiliario y su reposición, y las comisiones de las plataformas. Además, el promedio de AirDNA mezcla todo tipo de alojamientos; tu departamento puede estar por encima o por debajo.
+
+## ¿Qué departamento funciona mejor en cada caso?
+
+- **El temporal** suele funcionar mejor con departamentos bien ubicados, cerca de zonas de oficinas, comercios o embajadas, bien amoblados y con buenas fotos. También te permite usar el departamento algunas semanas al año.
+- **El tradicional** conviene si buscás un ingreso estable, poca gestión y menos desgaste del inmueble, o si el reglamento del edificio no permite el alquiler temporal.
 
 ## ¿Cuánto cuesta la administración con CALISTA?
 

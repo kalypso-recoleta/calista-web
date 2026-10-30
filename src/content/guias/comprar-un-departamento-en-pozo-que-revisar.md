@@ -44,6 +44,31 @@ fr:
 
     L'immeuble doit disposer d'un règlement de copropriété établi par acte authentique et inscrit, avec le contenu minimum fixé par le Code civil (art. 2147) et un tableau de valeurs par lot. Ce tableau détermine vos charges et votre poids dans les assemblées. Demandez à le lire avant de signer.
 
+    **7. Qui vend et qui construit**
+
+    Avant de regarder les plans, regardez l'entreprise. Demandez la raison sociale et le RUC du vendeur, et vérifiez qu'ils correspondent à celui qui signe le compromis. Demandez quels chantiers il a déjà livrés et, si possible, visitez un immeuble terminé : les finitions, l'entretien des parties communes et l'avis des voisins en disent long.
+
+    **8. Le terrain et les autorisations**
+
+    Demandez à qui appartient le terrain et s'il est grevé d'hypothèques ou de saisies, avec un relevé récent du registre. Demandez aussi si les plans de l'immeuble ont déjà été approuvés par la municipalité. Un projet sans approbation peut subir des modifications ou des retards qui ne dépendent pas de vous.
+
+    **9. Ce qu'on vous vend, dans le détail**
+
+    Le compromis doit identifier précisément votre lot : étage, numéro, surface et, le cas échéant, parking et cave. Demandez en annexe les plans du logement et un descriptif des matériaux et finitions. Ce qui n'est pas écrit est difficile à réclamer à la livraison.
+
+    **10. Les paiements et les retards**
+
+    Vérifiez dans quelle monnaie vous payez, si des révisions sont prévues, comment les reçus sont remis, et ce qui se passe si le chantier ou une mensualité prend du retard. Demandez aussi si vous pouvez céder votre compromis avant la livraison, par exemple pour revendre, et à quel coût.
+
+    **En résumé : votre liste avant de signer**
+
+    - prix toutes taxes comprises et date de livraison, par écrit ;
+    - vendeur identifié, avec un historique vérifiable ;
+    - terrain sans charges et plans approuvés ;
+    - logement décrit avec plans et descriptif ;
+    - calendrier de paiement, monnaie et conséquences des retards ;
+    - règlement de copropriété et date prévue de l'acte.
+
     **Notre programme : Kalypso Recoleta**
 
     À Kalypso Recoleta, vous versez un apport de 10 %, puis le solde en 32 mensualités sans intérêts pendant le chantier. La livraison est prévue pour mai 2029.
@@ -92,6 +117,31 @@ en:
     **6. The condominium rules**
 
     The building must have condominium rules (_reglamento de copropiedad_) set out in a registered notarial deed. They must include the minimum content required by the Civil Code (art. 2147) and a table of values for each unit. That table determines your service charges and your voting weight at owners' meetings. Ask to read it before you sign.
+
+    **7. Who sells and who builds**
+
+    Before looking at the plans, look at the company. Ask for the seller's legal name and tax number (RUC), and check that they match whoever signs the sales agreement. Ask which projects it has already delivered and, if you can, visit a finished building: the finishes, the upkeep of the common areas and the neighbours' views say a lot.
+
+    **8. The land and the permits**
+
+    Ask who owns the land and whether it carries mortgages or liens, with a recent registry report. Also ask whether the building plans have already been approved by the municipality. A project without approval may face changes or delays that are out of your hands.
+
+    **9. What you are buying, in detail**
+
+    The sales agreement must identify your unit precisely: floor, number, area and, where applicable, parking space and storage room. Ask for the unit plans and a specification of materials and finishes as appendices. What is not in writing is hard to claim at handover.
+
+    **10. Payments and delays**
+
+    Check which currency you pay in, whether any adjustments are planned, how receipts are issued, and what happens if construction or an instalment runs late. Also ask whether you can assign your agreement before handover, for example to resell, and at what cost.
+
+    **In short: your checklist before signing**
+
+    - price including taxes and delivery date, in writing;
+    - an identified seller with a verifiable track record;
+    - land free of charges and approved plans;
+    - the unit described with plans and specifications;
+    - payment schedule, currency and consequences of delays;
+    - condominium rules and expected date of the deed.
 
     **Our development: Kalypso Recoleta**
 
@@ -142,6 +192,31 @@ pt:
 
     O edifício deve ter um **reglamento de copropiedad** (convenção de condomínio) por escritura pública registrada, com o conteúdo mínimo fixado pelo Código Civil (art. 2147) e uma tabela de valores por unidade. Essa tabela define suas expensas (taxa de condomínio) e seu peso nas assembleias. Peça para lê-lo antes de assinar.
 
+    ## 7. Quem vende e quem constrói
+
+    Antes de olhar as plantas, olhe a empresa. Peça a razão social e o RUC do vendedor e verifique se coincidem com quem assina o boleto. Pergunte quais obras ele já entregou e, se puder, visite um prédio pronto: o acabamento, a manutenção das áreas comuns e a opinião dos vizinhos dizem muito.
+
+    ## 8. O terreno e as licenças
+
+    Peça para ver em nome de quem está o terreno e se há hipotecas ou penhoras, com um relatório recente do registro. Pergunte também se as plantas do prédio já foram aprovadas pela prefeitura. Um projeto sem aprovação pode sofrer mudanças ou atrasos que não dependem de você.
+
+    ## 9. O que estão vendendo, em detalhe
+
+    O boleto deve identificar com precisão a sua unidade: andar, número, área e, se for o caso, vaga de garagem e depósito. Peça como anexo as plantas da unidade e um memorial descritivo com materiais e acabamentos. O que não está escrito é difícil de reclamar na entrega.
+
+    ## 10. Os pagamentos e os atrasos
+
+    Verifique em que moeda você paga, se há reajustes previstos, como são entregues os recibos e o que acontece se a obra ou uma parcela atrasar. Pergunte também se você pode ceder o boleto antes da entrega, por exemplo para revender, e com que custo.
+
+    ## Em resumo: sua lista antes de assinar
+
+    - preço com impostos incluídos e data de entrega, por escrito;
+    - vendedor identificado, com histórico verificável;
+    - terreno sem ônus e plantas aprovadas;
+    - unidade descrita com plantas e memorial descritivo;
+    - cronograma de pagamentos, moeda e consequências dos atrasos;
+    - regulamento de condomínio e data prevista da escritura.
+
     ## Nosso empreendimento: Kalypso Recoleta
 
     No Kalypso Recoleta, paga-se 10 % de entrada e o saldo em 32 parcelas sem juros durante a obra, com entrega prevista para maio de 2029.
@@ -188,6 +263,31 @@ El boleto de compraventa obliga a firmar la escritura, pero no transfiere la pro
 ## 6. El reglamento de copropiedad
 
 El edificio debe tener un **reglamento de copropiedad** por escritura pública inscripta, con el contenido mínimo que fija el Código Civil (art. 2147) y una tabla de valores por unidad. Esa tabla define tus expensas y tu peso en las asambleas. Pedí leerlo antes de firmar.
+
+## 7. Quién vende y quién construye
+
+Antes de mirar los planos, mirá a la empresa. Pedí la razón social y el RUC del vendedor, y verificá que coincidan con quien firma el boleto. Preguntá qué obras entregó antes y, si podés, visitá un edificio terminado: los acabados, el mantenimiento de las áreas comunes y la opinión de los vecinos dicen mucho.
+
+## 8. El terreno y los permisos
+
+Pedí que te muestren a nombre de quién está el terreno y si tiene hipotecas o embargos, con un informe reciente del registro. Preguntá también si los planos del edificio ya fueron aprobados por la municipalidad. Un proyecto sin aprobación puede sufrir cambios o demoras que no dependen de vos.
+
+## 9. Lo que te venden, en detalle
+
+El boleto tiene que identificar con precisión tu unidad: piso, número, superficie y, si corresponde, cochera y baulera. Pedí como anexo los planos de la unidad y una memoria descriptiva con los materiales y terminaciones. Lo que no está escrito es difícil de reclamar en la entrega.
+
+## 10. Los pagos y los atrasos
+
+Revisá en qué moneda pagás, si hay ajustes previstos, cómo se entregan los recibos y qué pasa si se atrasa la obra o se atrasa una cuota. Preguntá también si podés ceder tu boleto antes de la entrega, por ejemplo para revender, y con qué costo.
+
+## En resumen: tu lista antes de firmar
+
+- precio con impuestos incluidos y fecha de entrega, por escrito;
+- vendedor identificado, con trayectoria verificable;
+- terreno sin cargas y planos aprobados;
+- unidad descrita con planos y memoria descriptiva;
+- calendario de pagos, moneda y consecuencias de los atrasos;
+- reglamento de copropiedad y fecha prevista de escritura.
 
 ## Nuestro desarrollo: Kalypso Recoleta
 
