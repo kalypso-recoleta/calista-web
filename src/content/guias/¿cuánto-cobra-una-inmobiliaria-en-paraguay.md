@@ -120,6 +120,12 @@ fr:
     Choisir une agence immobilière, c’est aussi comprendre sa manière de travailler et les engagements qu’elle prend. Comparez **le coût total, les services inclus et les conditions du mandat**, au-delà du seul pourcentage.
 
     **Vous souhaitez vendre, louer ou déléguer la gestion de votre bien ? Contactez CALISTA Inmobiliaria pour recevoir une proposition adaptée, avec des services et des honoraires clairement détaillés dès le départ.**
+
+    ## Pour aller plus loin
+
+    - [Gestion locative](/fr/administracion/)
+    - [Vendre votre bien](/fr/propietarios/)
+    - [Estimations immobilières](/fr/tasaciones/)
 en:
   titulo: How much does a real estate agency charge in Paraguay?
   descripcion: 'Sales and rental commissions, who pays the fees and what the service includes: what to know before you commit.'
@@ -234,6 +240,12 @@ en:
     Choosing a real estate agency also means understanding how it works and what it commits to doing. Compare **the total cost, included services and terms of engagement**, as well as the percentage.
 
     **Looking to sell, rent out or delegate the management of your property? Contact CALISTA Inmobiliaria for a tailored proposal, with clearly defined services and fees from the outset.**
+
+    ## Further reading
+
+    - [Rental management](/en/administracion/)
+    - [Sell your property](/en/propietarios/)
+    - [Property valuations](/en/tasaciones/)
 pt:
   titulo: 'Quanto cobra uma imobiliária no Paraguai?'
   descripcion: 'Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar.'
@@ -350,6 +362,12 @@ pt:
     Escolher uma imobiliária também implica entender como ela trabalha e quais compromissos assume. Compare **o custo total, os serviços incluídos e as condições do mandato**, além da porcentagem.
 
     **Você quer vender, alugar ou delegar a administração do seu imóvel? Entre em contato com a CALISTA Inmobiliaria para receber uma proposta adaptada ao seu imóvel, com os serviços e honorários detalhados desde o início.**
+
+    ## Para saber mais
+
+    - [Administração de aluguéis](/pt/administracion/)
+    - [Vender seu imóvel](/pt/propietarios/)
+    - [Avaliações de imóveis](/pt/tasaciones/)
 ---
 
 _Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar._
@@ -464,3 +482,9 @@ Las respuestas deberían quedar en la autorización o en el contrato de servicio
 Elegir una inmobiliaria también implica entender cómo trabaja y qué compromisos asume. Compará **el costo total, los servicios incluidos y las condiciones del encargo**, además del porcentaje.
 
 **¿Querés vender, alquilar o delegar la administración de tu propiedad? Contactá a CALISTA Inmobiliaria para recibir una propuesta adaptada a tu inmueble, con los servicios y honorarios detallados desde el inicio.**
+
+## Para ir más lejos
+
+- [Administración de alquileres](/administracion/)
+- [Vender tu propiedad](/propietarios/)
+- [Tasaciones](/tasaciones/)

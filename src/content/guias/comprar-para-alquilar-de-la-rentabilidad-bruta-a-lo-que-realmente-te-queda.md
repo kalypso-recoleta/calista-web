@@ -115,6 +115,12 @@ fr:
     Vous voulez voir la fiche complète de l’appartement 304 de Zandoli, ou calculer le rendement de votre propre bien ? Écrivez-nous.
 
     _Cet article est informatif et ne constitue pas un conseil financier ou fiscal. Les calculs reposent sur les données et taux de change indiqués. Les charges de copropriété sont projetées à partir du décompte de septembre 2026 et peuvent varier. Les pourcentages présentés ne constituent pas un rendement garanti._
+
+    ## Pour aller plus loin
+
+    - [Gestion locative](/fr/administracion/)
+    - [Biens à vendre](/fr/comprar/)
+    - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 en:
   titulo: 'Buying to rent: from gross rental yield to what you actually keep'
   descripcion: When an apartment is advertised as “income-producing,” the first figure highlighted is usually its gross rental yield. It is useful, but it does not represent what the owner actually keeps.
@@ -224,6 +230,12 @@ en:
     Would you like to see the full listing for apartment 304 in Zandoli, or calculate the yield of your own property? Write to us.
 
     _This article is for information only and does not constitute financial or tax advice. The calculations use the data and exchange rates stated. Condominium fees are projected from the September 2026 statement and may vary. The percentages shown do not represent a guaranteed return._
+
+    ## Further reading
+
+    - [Rental management](/en/administracion/)
+    - [Properties for sale](/en/comprar/)
+    - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você'
   descripcion: 'Quando um apartamento é anunciado «com renda», o número que aparece primeiro costuma ser a rentabilidade bruta. Ela é útil, mas não representa o que fica no bolso do proprietário.'
@@ -336,6 +348,12 @@ pt:
 
 
     _Este artigo é informativo e não constitui assessoria financeira nem fiscal. Os cálculos utilizam os dados e as taxas de câmbio indicados. As expensas são projetadas a partir da liquidação de setembro de 2026 e podem variar. As porcentagens apresentadas não representam uma rentabilidade garantida._
+
+    ## Para saber mais
+
+    - [Administração de aluguéis](/pt/administracion/)
+    - [Imóveis à venda](/pt/comprar/)
+    - [Quanto cobra uma imobiliária no Paraguai?](/pt/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 ---
 
 Para verlo con un caso real, tomamos un departamento que tenemos en venta: el **304 del edificio Zandoli**, en Barrio Jara, Asunción. Tiene un dormitorio y cochera, y está alquilado hasta el **23 de junio de 2027**.
@@ -446,3 +464,9 @@ Un dólar más bajo puede mejorar esta relación para quien compra, siempre que 
 
 
 _Este artículo es informativo y no constituye asesoramiento financiero ni fiscal. Los cálculos utilizan los datos y tipos de cambio indicados. Las expensas se proyectan a partir de la liquidación de setiembre de 2026 y pueden variar. Los porcentajes presentados no representan una rentabilidad garantizada._
+
+## Para ir más lejos
+
+- [Administración de alquileres](/administracion/)
+- [Departamentos y casas en venta](/comprar/)
+- [¿Cuánto cobra una inmobiliaria en Paraguay?](/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)

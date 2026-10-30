@@ -94,6 +94,12 @@ fr:
     À l’angle de **Cruz del Chaco et Alfredo Seiferheld**, Kalypso Recoleta propose un paiement avec **10 % d’apport, puis le solde en 32 mensualités sans intérêts pendant le chantier**. La livraison est **prévue pour mai 2029**. www.kalypso.com.py
 
     **Vous souhaitez étudier cette option ? Contactez CALISTA Inmobiliaria pour recevoir les plans, les prix et les disponibilités, ainsi que les conditions détaillées du programme.**
+
+    ## Pour aller plus loin
+
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer](/fr/blog/comprar-un-departamento-en-pozo-que-revisar/)
+    - [Biens à vendre](/fr/comprar/)
 en:
   titulo: 'Buying off-plan or a completed apartment in Asunción: which is right for you?'
   descripcion: 'Price, timing, payment terms and rental income: the differences to consider when choosing an apartment that fits your plans.'
@@ -182,6 +188,12 @@ en:
     At the corner of **Cruz del Chaco and Alfredo Seiferheld**, Kalypso Recoleta offers payment terms of **10% upfront, followed by the balance in 32 interest-free monthly instalments during construction**. Handover is **scheduled for May 2029**. www.kalypso.com.py
 
     **Interested in exploring this option? Contact CALISTA Inmobiliaria for floor plans, prices and availability, along with the development’s detailed terms.**
+
+    ## Further reading
+
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Buying an off-plan apartment: what to check before you sign](/en/blog/comprar-un-departamento-en-pozo-que-revisar/)
+    - [Properties for sale](/en/comprar/)
 pt:
   titulo: 'Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?'
   descripcion: 'Preço, prazos, forma de pagamento e aluguel: as diferenças que vale a pena conhecer para escolher um apartamento de acordo com o seu projeto.'
@@ -270,6 +282,12 @@ pt:
     Na esquina da **Cruz del Chaco com a Alfredo Seiferheld**, o Kalypso Recoleta oferece uma forma de pagamento com **10 % de entrada e o saldo em 32 parcelas mensais sem juros durante a obra**. A entrega está **prevista para maio de 2029**. www.kalypso.com.py
 
     **Quer avaliar esta opção? Entre em contato com a CALISTA Inmobiliaria para receber as plantas, os preços e a disponibilidade, junto com as condições detalhadas do projeto.**
+
+    ## Para saber mais
+
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Comprar um apartamento na planta: o que verificar antes de assinar](/pt/blog/comprar-un-departamento-en-pozo-que-revisar/)
+    - [Imóveis à venda](/pt/comprar/)
 ---
 
 ¿Querés comprar un departamento en Asunción y dudás entre un proyecto en construcción — conocido como **en pozo** — y una unidad ya terminada?
@@ -356,3 +374,9 @@ Para profundizar en las cláusulas del contrato y las precauciones necesarias, c
 En la esquina de **Cruz del Chaco y Alfredo Seiferheld**, Kalypso Recoleta ofrece una forma de pago con **10 % de entrega inicial y el saldo en 32 cuotas mensuales sin intereses durante la obra**. La entrega está **prevista para mayo de 2029**. www.kalypso.com.py
 
 **¿Querés evaluar esta opción? Contactá a CALISTA Inmobiliaria para recibir los planos, los precios y la disponibilidad, junto con las condiciones detalladas del proyecto.**
+
+## Para ir más lejos
+
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Comprar un departamento en pozo: qué revisar antes de firmar](/blog/comprar-un-departamento-en-pozo-que-revisar/)
+- [Departamentos y casas en venta](/comprar/)

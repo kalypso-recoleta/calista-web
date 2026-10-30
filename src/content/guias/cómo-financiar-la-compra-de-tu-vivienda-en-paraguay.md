@@ -135,6 +135,12 @@ fr:
 
 
     _Ce guide est informatif. Il ne constitue pas un conseil financier ni une recommandation d’un établissement en particulier. Les taux et conditions peuvent évoluer et sont soumis à l’évaluation du dossier : vérifiez-les auprès de chaque établissement avant de signer._
+
+    ## Pour aller plus loin
+
+    - [Biens à vendre](/fr/comprar/)
+    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: How to finance your home purchase in Paraguay
   descripcion: 'There is no single “best bank” for a home loan in Paraguay: the best offer depends on your income, the currency you earn in, the property, and whether it is your first home.'
@@ -264,6 +270,12 @@ en:
 
 
     _This guide is for information purposes only. It does not constitute financial advice or a recommendation of any particular institution. Rates and conditions may change and are subject to credit assessment: confirm them with each lender before signing._
+
+    ## Further reading
+
+    - [Properties for sale](/en/comprar/)
+    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Como financiar a compra da sua moradia no Paraguai'
   descripcion: 'Não existe «o melhor banco» para um financiamento habitacional no Paraguai: a melhor oferta depende da sua renda, da moeda em que você recebe, do imóvel e de se é a sua primeira moradia.'
@@ -393,6 +405,12 @@ pt:
 
 
     _Este guia é informativo. Não constitui assessoria financeira nem recomendação de uma instituição em particular. As taxas e condições podem mudar e estão sujeitas à análise de crédito: verifique-as com cada instituição antes de assinar._
+
+    ## Para saber mais
+
+    - [Imóveis à venda](/pt/comprar/)
+    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 ---
 
 Por eso, en lugar de un ranking, te explicamos las principales opciones de financiación, qué comparar entre entidades y qué documentos preparar.
@@ -520,3 +538,9 @@ Escribinos y lo vemos juntos.
 
 
 _Esta guía es informativa. No constituye asesoramiento financiero ni una recomendación de una entidad en particular. Las tasas y condiciones pueden cambiar y están sujetas a evaluación crediticia: verificalas con cada entidad antes de firmar._
+
+## Para ir más lejos
+
+- [Departamentos y casas en venta](/comprar/)
+- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+- [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)

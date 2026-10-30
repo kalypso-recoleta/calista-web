@@ -49,6 +49,12 @@ fr:
     À Kalypso Recoleta, vous versez un apport de 10 %, puis le solde en 32 mensualités sans intérêts pendant le chantier. La livraison est prévue pour mai 2029.
 
     Découvrez Kalypso Recoleta, les appartements disponibles et les modalités de paiement sur kalypso.com.py.
+
+    ## Pour aller plus loin
+
+    - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying an off-plan apartment: what to check before you sign'
   descripcion: 'Price, delivery date, prohibited clauses, guarantees: the points to review in an off-plan purchase contract in Paraguay.'
@@ -92,6 +98,12 @@ en:
     At Kalypso Recoleta, you pay a 10% down payment, then the balance in 32 interest-free installments during construction. Delivery is scheduled for May 2029.
 
     Discover Kalypso Recoleta, the available units and payment options at kalypso.com.py.
+
+    ## Further reading
+
+    - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
   descripcion: 'Preço, data de entrega, cláusulas proibidas, garantias: os pontos a verificar em um contrato de pré-venda no Paraguai.'
@@ -135,6 +147,12 @@ pt:
     No Kalypso Recoleta, paga-se 10 % de entrada e o saldo em 32 parcelas sem juros durante a obra, com entrega prevista para maio de 2029.
 
     Conheça o Kalypso Recoleta, as unidades disponíveis e as formas de pagamento em kalypso.com.py.
+
+    ## Para saber mais
+
+    - [Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?](/pt/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 ---
 
 Comprar en pozo permite pagar en cuotas durante la obra y elegir tu unidad entre las primeras. A cambio, firmás un contrato sobre algo que todavía no existe. Estos son los puntos que conviene revisar.
@@ -176,3 +194,9 @@ El edificio debe tener un **reglamento de copropiedad** por escritura pública i
 En Kalypso Recoleta se paga un 10 % de entrega y el saldo en 32 cuotas sin intereses durante la obra, con entrega prevista para mayo de 2029.
 
 Conocé Kalypso Recoleta, las unidades disponibles y las formas de pago en kalypso.com.py.
+
+## Para ir más lejos
+
+- [Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?](/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)

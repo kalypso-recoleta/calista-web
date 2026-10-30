@@ -48,6 +48,12 @@ fr:
     ***
 
     _Cet article est informatif et ne constitue pas un conseil financier._
+
+    ## Pour aller plus loin
+
+    - [Gestion locative](/fr/administracion/)
+    - [Location meublée temporaire](/fr/alquiler-temporal/)
+    - [Préparer un appartement meublé pour la location](/fr/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 en:
   titulo: 'Traditional or short-term rentals in Asunción: which option is right for you?'
   descripcion: If you own an apartment in Asunción, you can rent it out under a traditional lease or offer it as a furnished short-term rental. Both options can work well, but they require different approaches to management.
@@ -90,6 +96,12 @@ en:
     ***
 
     _This article is for information only and does not constitute financial advice._
+
+    ## Further reading
+
+    - [Rental management](/en/administracion/)
+    - [Furnished short-term rentals](/en/alquiler-temporal/)
+    - [How to prepare a furnished apartment for rent](/en/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 pt:
   titulo: 'Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?'
   descripcion: 'Se você tem um apartamento em Assunção, pode alugá-lo com um contrato tradicional ou como aluguel de temporada mobiliado. As duas opções podem funcionar bem, mas exigem uma gestão diferente.'
@@ -132,6 +144,12 @@ pt:
     ***
 
     _Este artigo é informativo e não constitui consultoria financeira._
+
+    ## Para saber mais
+
+    - [Administração de aluguéis](/pt/administracion/)
+    - [Aluguel temporário mobiliado](/pt/alquiler-temporal/)
+    - [Como preparar um apartamento mobiliado para alugar](/pt/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 ---
 
 La elección depende de tu departamento, de tus objetivos y de la disponibilidad que querés conservar para usarlo.
@@ -172,3 +190,9 @@ Antes de empezar, verificá dos aspectos:
 ***
 
 _Este artículo es informativo y no constituye asesoramiento financiero._
+
+## Para ir más lejos
+
+- [Administración de alquileres](/administracion/)
+- [Alquiler temporal amoblado](/alquiler-temporal/)
+- [Cómo preparar un departamento amoblado para alquilar](/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)

@@ -61,6 +61,12 @@ fr:
 
 
     _Cet article est informatif et ne constitue pas un conseil financier._
+
+    ## Pour aller plus loin
+
+    - [Biens à vendre](/fr/comprar/)
+    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Acheter pour louer : du rendement brut à ce qu’il vous reste réellement](/fr/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 en:
   titulo: "The dollar is falling: who wins and who loses in Paraguay's real estate market?"
   descripcion: n recent weeks, two news headlines have summed up the situation. According to 5Días, the dollar “continues its decline, reaching G. 5,725 in the interbank market.”
@@ -116,6 +122,12 @@ en:
 
 
     _This article is for information purposes only and does not constitute financial advice._
+
+    ## Further reading
+
+    - [Properties for sale](/en/comprar/)
+    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Buying to rent: from gross rental yield to what you actually keep](/en/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 pt:
   titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
   descripcion: 'Nas últimas semanas, duas manchetes resumiram a situação. Segundo o 5Días, o dólar «aprofunda sua queda e chega a G. 5.725 no mercado interbancário».'
@@ -171,6 +183,12 @@ pt:
 
 
     _Este artigo é informativo e não constitui consultoria financeira._
+
+    ## Para saber mais
+
+    - [Imóveis à venda](/pt/comprar/)
+    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 ---
 
 780 AM / Mega TV publicó: **«Baja del dólar desafía al sector inmobiliario»**. En esa nota, Raúl Constantino, presidente de la Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca del **90 % de los costos de construcción están en guaraníes**. Según él, los costos de obra **subieron alrededor de un 20 % en dólares** respecto al año pasado.
@@ -224,3 +242,9 @@ Si el monto no cambia, un alquiler cobrado en dólares hoy rinde menos guaraníe
 
 
 _Este artículo es informativo y no constituye asesoramiento financiero._
+
+## Para ir más lejos
+
+- [Departamentos y casas en venta](/comprar/)
+- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+- [Comprar para alquilar: de la rentabilidad bruta a lo que realmente te queda](/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)

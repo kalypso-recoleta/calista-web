@@ -63,6 +63,12 @@ fr:
 
 
     _Cet article est informatif. L’exemple de calcul utilise des chiffres illustratifs et ne correspond pas à un bien réel._
+
+    ## Pour aller plus loin
+
+    - [Estimations immobilières](/fr/tasaciones/)
+    - [Vendre votre bien](/fr/propietarios/)
+    - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 en:
   titulo: How much is my property really worth? How a valuation works
   descripcion: “What price should I list it at?” This is the first question almost every property owner asks. The usual instinct is to look at listings in the neighborhood. But a listing shows what someone asks, not necessarily what a buyer or tenant pays.
@@ -120,6 +126,12 @@ en:
 
 
     _This article is for information purposes only. The calculation uses illustrative figures and does not relate to an actual property._
+
+    ## Further reading
+
+    - [Property valuations](/en/tasaciones/)
+    - [Sell your property](/en/propietarios/)
+    - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Quanto vale realmente o meu imóvel? Como é feita uma avaliação'
   descripcion: '«Por qual preço eu anuncio?» É a primeira pergunta de quase todos os proprietários. O habitual é olhar os anúncios do bairro. Mas um anúncio mostra o que alguém pede, não necessariamente o que um comprador ou um inquilino paga.'
@@ -177,6 +189,12 @@ pt:
 
 
     _Este artigo é informativo. O exemplo de cálculo utiliza números ilustrativos e não corresponde a um imóvel real._
+
+    ## Para saber mais
+
+    - [Avaliações de imóveis](/pt/tasaciones/)
+    - [Vender seu imóvel](/pt/propietarios/)
+    - [Quanto cobra uma imobiliária no Paraguai?](/pt/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 ---
 
 Una tasación sirve para determinar **un rango de valor coherente con el mercado y con tu proyecto**.
@@ -232,3 +250,9 @@ Realizamos tasaciones para vender y estimaciones para alquilar. Visitamos el inm
 
 
 _Este artículo es informativo. El ejemplo de cálculo utiliza cifras ilustrativas y no corresponde a un inmueble real._
+
+## Para ir más lejos
+
+- [Tasaciones](/tasaciones/)
+- [Vender tu propiedad](/propietarios/)
+- [¿Cuánto cobra una inmobiliaria en Paraguay?](/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)

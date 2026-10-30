@@ -72,6 +72,12 @@ fr:
 
 
     _Source de référence : Marcelo Wagner, « La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento », Forbes Paraguay, 3 octobre 2026. Cet article présente le regard et les recommandations de CALISTA Inmobiliaria._
+
+    ## Pour aller plus loin
+
+    - [Comment financer l’achat de votre logement au Paraguay](/fr/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Biens à vendre](/fr/comprar/)
+    - [Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?](/fr/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
 en:
   titulo: Is a mortgage enough to buy a home? Our perspective on the property market
   descripcion: Securing a mortgage and being able to buy a home are two separate steps. Understanding that difference helps buyers prepare their plans more effectively.
@@ -138,6 +144,12 @@ en:
 
 
     _Reference: Marcelo Wagner, “La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento,” Forbes Paraguay, October 3, 2026. This article presents CALISTA Inmobiliaria’s perspective and recommendations._
+
+    ## Further reading
+
+    - [How to finance your home purchase in Paraguay](/en/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Properties for sale](/en/comprar/)
+    - [The dollar is falling: who wins and who loses in Paraguay's real estate market?](/en/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
 pt:
   titulo: 'O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário'
   descripcion: 'Conseguir um crédito e poder comprar um imóvel são duas etapas distintas. Entender essa diferença permite preparar melhor um projeto de compra.'
@@ -204,6 +216,12 @@ pt:
 
 
     _Fonte de referência: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», Forbes Paraguay, 3 de outubro de 2026. Este artigo apresenta a leitura e as recomendações da CALISTA Inmobiliaria._
+
+    ## Para saber mais
+
+    - [Como financiar a compra da sua moradia no Paraguai](/pt/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Imóveis à venda](/pt/comprar/)
+    - [O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?](/pt/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_
@@ -268,3 +286,9 @@ Comprar requiere información, preparación y una elección ajustada a la realid
 
 
 _Fuente de referencia: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», Forbes Paraguay, 3 de octubre de 2026. Este artículo presenta la lectura y las recomendaciones de CALISTA Inmobiliaria._
+
+## Para ir más lejos
+
+- [Cómo financiar la compra de tu vivienda en Paraguay](/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+- [Departamentos y casas en venta](/comprar/)
+- [El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?](/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)

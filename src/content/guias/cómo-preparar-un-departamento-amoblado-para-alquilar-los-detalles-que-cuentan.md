@@ -104,6 +104,12 @@ fr:
     L’idée est que chacun trouve un logement où il fait bon séjourner. Les bons avis sont un résultat que nous attendons de ce travail, mais le soin commence bien avant que l’occupant ne donne son opinion.
 
     Vous avez un appartement meublé à louer à Asunción ? Chez **CALISTA**, nous pouvons vous accompagner dans sa préparation, sa mise en location, classique ou [temporaire](/fr/alquiler-temporal), et sa [gestion](/fr/administracion).
+
+    ## Pour aller plus loin
+
+    - [Location meublée temporaire](/fr/alquiler-temporal/)
+    - [Gestion locative](/fr/administracion/)
+    - [Location classique ou temporaire à Asunción : quelle option choisir ?](/fr/blog/alquilar-tu-departamento-tradicional-o-temporal/)
 en:
   titulo: How to prepare a furnished apartment for rent
   descripcion: 'Furniture, bedding, equipment, inventory and cleaning: how to prepare a furnished apartment for rent and keep it up to standard.'
@@ -202,6 +208,12 @@ en:
     The aim is for everyone to find a place where they enjoy staying. Good reviews are a result we expect from this work, but the care starts long before the guest leaves their opinion.
 
     Do you have a furnished apartment to rent out in Asunción? At **CALISTA**, we can help you prepare it, let it on a long-term or [short-term](/en/alquiler-temporal) basis, and [manage it](/en/administracion).
+
+    ## Further reading
+
+    - [Furnished short-term rentals](/en/alquiler-temporal/)
+    - [Rental management](/en/administracion/)
+    - [Traditional or short-term rentals in Asunción: which option is right for you?](/en/blog/alquilar-tu-departamento-tradicional-o-temporal/)
 pt:
   titulo: 'Como preparar um apartamento mobiliado para alugar'
   descripcion: 'Móveis, roupa de cama, equipamentos, inventário e limpeza: como preparar um apartamento mobiliado para alugar e manter seu padrão.'
@@ -300,6 +312,12 @@ pt:
     A ideia é que cada pessoa encontre uma hospedagem onde dê gosto ficar. As boas avaliações são um resultado que esperamos desse trabalho, mas o cuidado começa muito antes de o hóspede deixar sua opinião.
 
     Você tem um apartamento mobiliado para alugar em Assunção? Na **CALISTA** podemos acompanhar você na preparação, na colocação para aluguel, tradicional ou [por temporada](/pt/alquiler-temporal), e na [administração](/pt/administracion).
+
+    ## Para saber mais
+
+    - [Aluguel temporário mobiliado](/pt/alquiler-temporal/)
+    - [Administração de aluguéis](/pt/administracion/)
+    - [Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?](/pt/blog/alquilar-tu-departamento-tradicional-o-temporal/)
 ---
 
 No hace falta que todos los muebles sean nuevos ni que la decoración sea costosa. En nuestra experiencia, hemos recuperado muebles y los hemos hecho restaurar antes de instalarlos. Lo importante es que estén en buen estado y formen un conjunto cuidado y coherente.
@@ -396,3 +414,9 @@ Eso supone elegir muebles adecuados, restaurar lo que puede recuperarse, equipar
 La idea es que cada persona encuentre un alojamiento donde dé gusto quedarse. Las buenas reseñas son un resultado que esperamos de ese trabajo, pero el cuidado empieza mucho antes de que el huésped deje su opinión.
 
 ¿Tenés un departamento amoblado para alquilar en Asunción? En **CALISTA** podemos acompañarte en su preparación, su puesta en alquiler, tradicional o [temporal](/alquiler-temporal), y su [administración](/administracion).
+
+## Para ir más lejos
+
+- [Alquiler temporal amoblado](/alquiler-temporal/)
+- [Administración de alquileres](/administracion/)
+- [Alquiler tradicional o temporal en Asunción: ¿qué te conviene?](/blog/alquilar-tu-departamento-tradicional-o-temporal/)

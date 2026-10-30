@@ -95,6 +95,11 @@ fr:
     Areguá est aussi une ville que j’adore. Son artisanat, ses poteries utilitaires et décoratives, ses ateliers et ses lieux culturels lui donnent une identité particulière. Elle fait partie du [Réseau des villes créatives de l’UNESCO](https://www.unesco.org/en/creative-cities/aregua) dans la catégorie « Artisanat et arts populaires » depuis 2019. Avec le lac Ypacaraí et son atmosphère artistique, elle offre un cadre qui compte beaucoup dans l’envie de s’y installer.
 
     Sur la [page Areguá Forest](/fr/terrenos/aregua-forest/), vous trouverez la grille de prix par étape et un simulateur de mensualités. Nous vous accompagnons de la visite à l’acte, en français, en espagnol et en anglais.
+
+    ## Pour aller plus loin
+
+    - [Terrains à vendre](/fr/terrenos/)
+    - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
   descripcion: 'Utilities, amenities and a natural setting, but also long works, building rules and a developer who runs the community: what to know before buying a plot in a gated community in Paraguay.'
@@ -184,6 +189,11 @@ en:
     Areguá is also a town I love. Its crafts, its everyday and decorative pottery, its workshops and cultural venues give it a distinctive identity. It has been part of the [UNESCO Creative Cities Network](https://www.unesco.org/en/creative-cities/aregua) for Crafts and Folk Art since 2019. With Lake Ypacaraí and its artistic atmosphere, it offers a setting that weighs heavily in the wish to settle there.
 
     On the [Areguá Forest page](/en/terrenos/aregua-forest/) you will find the price list by stage and an instalment simulator. We support you from the visit to the deed, in English, French and Spanish.
+
+    ## Further reading
+
+    - [Plots for sale](/en/terrenos/)
+    - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
   descripcion: 'Infraestrutura, áreas de lazer e natureza, mas também obras longas, regras de construção e um desenvolvedor que administra: o que saber antes de comprar um lote em condomínio fechado no Paraguai.'
@@ -273,6 +283,11 @@ pt:
     Areguá também é uma cidade que eu adoro. O artesanato, a cerâmica utilitária e decorativa, os ateliês e os espaços culturais lhe dão uma identidade própria. Faz parte da [Rede de Cidades Criativas da UNESCO](https://www.unesco.org/en/creative-cities/aregua) na categoria Artesanato e Arte Popular desde 2019. Com o lago Ypacaraí e sua atmosfera artística, oferece um ambiente que pesa muito na vontade de morar ali.
 
     Na [página do Areguá Forest](/pt/terrenos/aregua-forest/) você encontra a tabela de preços por etapa e um simulador de parcelas. Acompanhamos você da visita à escritura, em espanhol, francês e inglês.
+
+    ## Para saber mais
+
+    - [Terrenos à venda](/pt/terrenos/)
+    - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 ---
 Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. Estos proyectos se multiplican alrededor de Asunción: en Luque, en Areguá y en todo el departamento Central.
 
@@ -359,3 +374,8 @@ En CALISTA Inmobiliaria comercializamos los lotes de [Areguá Forest](/terrenos/
 Areguá es además una ciudad que me encanta. Su artesanía, su cerámica utilitaria y decorativa, sus talleres y sus espacios culturales le dan una identidad propia. Forma parte de la [Red de Ciudades Creativas de la UNESCO](https://www.unesco.org/en/creative-cities/aregua) en la categoría Artesanía y Arte Popular desde 2019. Con el lago Ypacaraí y su ambiente artístico, ofrece un entorno que pesa mucho en las ganas de vivir ahí.
 
 En la [página de Areguá Forest](/terrenos/aregua-forest/) vas a encontrar la grilla de precios por etapa y un simulador de cuotas. Te acompañamos de la visita a la escritura, en español, francés e inglés.
+
+## Para ir más lejos
+
+- [Terrenos en venta](/terrenos/)
+- [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)

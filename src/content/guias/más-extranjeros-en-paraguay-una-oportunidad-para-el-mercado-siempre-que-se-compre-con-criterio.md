@@ -91,6 +91,12 @@ fr:
     _Vous envisagez d’investir à Asunción ? CALISTA vous accompagne pour comparer les biens, évaluer leur prix et construire un projet adapté à votre objectif._
 
     _Source de l’introduction : MarketData, « Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario », publication du 7 octobre 2026. Les observations et perspectives de marché présentées dans cet article expriment l’analyse de CALISTA Inmobiliaria._
+
+    ## Pour aller plus loin
+
+    - [Biens à vendre](/fr/comprar/)
+    - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+    - [Biens à louer](/fr/alquilar/)
 en:
   titulo: 'More foreigners in Paraguay: an opportunity for the market, provided buyers make informed decisions'
   descripcion: 'Paraguay is attracting more foreigners. For the real estate market, this trend represents an opportunity. But it also raises two questions: how can access to housing be preserved for local residents, and how can new investors avoid overpaying based on uncertain returns?'
@@ -176,6 +182,12 @@ en:
     _Thinking of investing in Asunción? CALISTA helps you compare properties, assess their prices and develop an investment plan suited to your goals._
 
     _Source for the introduction: MarketData, “Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario”, published on 7 October 2026. The market observations and outlook presented in this article reflect CALISTA Inmobiliaria’s analysis._
+
+    ## Further reading
+
+    - [Properties for sale](/en/comprar/)
+    - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+    - [Properties for rent](/en/alquilar/)
 pt:
   titulo: 'Mais estrangeiros no Paraguai: uma oportunidade para o mercado, desde que se compre com critério'
   descripcion: 'O Paraguai atrai cada vez mais estrangeiros. Para o mercado imobiliário, essa dinâmica representa uma oportunidade. Mas também levanta duas perguntas: como preservar o acesso à moradia para os habitantes e como evitar que os novos investidores paguem caro demais com base em rendimentos incertos?'
@@ -261,6 +273,12 @@ pt:
     _Está pensando em investir em Assunção? A CALISTA acompanha você para comparar imóveis, avaliar seus preços e construir um projeto adaptado ao seu objetivo._
 
     _Fonte da introdução: MarketData, «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario» (Mais estrangeiros escolhem o Paraguai para residir e sua chegada começa a movimentar o mercado imobiliário), publicação de 7 de outubro de 2026. As observações e perspectivas de mercado apresentadas neste artigo expressam a análise da CALISTA Inmobiliaria._
+
+    ## Para saber mais
+
+    - [Imóveis à venda](/pt/comprar/)
+    - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+    - [Imóveis para alugar](/pt/alquilar/)
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_
@@ -344,3 +362,9 @@ Nuestra convicción es simple: una inversión sostenible debe apoyarse en la rea
 _¿Estás pensando en invertir en Asunción? CALISTA te acompaña para comparar inmuebles, evaluar sus precios y construir un proyecto adaptado a tu objetivo._
 
 _Fuente de la introducción: MarketData, «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario», publicación del 7 de octubre de 2026. Las observaciones y perspectivas de mercado presentadas en este artículo expresan el análisis de CALISTA Inmobiliaria._
+
+## Para ir más lejos
+
+- [Departamentos y casas en venta](/comprar/)
+- [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+- [Propiedades en alquiler](/alquilar/)

@@ -103,6 +103,12 @@ fr:
     L’arrivée des résidences de marque ouvre une conversation intéressante. Leur réussite comme investissement dépendra de leur capacité à trouver une demande qui les apprécie et puisse les financer dans la durée.
 
     **La question n’est pas seulement de savoir si Asunción peut construire ce type de résidence, mais s’il existe un marché durable pour y vivre, les louer et les racheter.**
+
+    ## Pour aller plus loin
+
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Biens à vendre](/fr/comprar/)
+    - [Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?](/fr/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 en:
   titulo: 'Branded residences in Asunción: is there a market for this level of luxury?'
   descripcion: Royale by Pininfarina introduces a new residential offering in the capital. Beyond the international name, the question is whether there is enough demand to sustain it over time.
@@ -200,6 +206,12 @@ en:
     The arrival of branded residences opens an interesting discussion. Their success as investments will depend on finding demand that values the offering and can afford it over time.
 
     **The question is not simply whether Asunción can build this type of residence, but whether there is a lasting market to live in it, rent it and buy it again.**
+
+    ## Further reading
+
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Properties for sale](/en/comprar/)
+    - [Asunción is growing upwards: are we building what people need?](/en/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 pt:
   titulo: 'Branded residences em Assunção: existe mercado para este nível de luxo?'
   descripcion: 'O Royale by Pininfarina apresenta uma nova proposta residencial na capital. Para além da grife internacional, cabe perguntar se existe uma demanda capaz de sustentá-la ao longo do tempo.'
@@ -297,6 +309,12 @@ pt:
     A chegada das _branded residences_ abre uma conversa interessante. Seu sucesso como investimento dependerá de a proposta encontrar uma demanda que a valorize e possa pagar por ela ao longo do tempo.
 
     **A pergunta não é apenas se Assunção pode construir este tipo de residência, mas se existe um mercado duradouro para habitá-la, alugá-la e voltar a comprá-la.**
+
+    ## Para saber mais
+
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Imóveis à venda](/pt/comprar/)
+    - [Assunção cresce na vertical: estamos construindo o que as pessoas precisam?](/pt/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 ---
 
 Asunción suma una nueva propuesta al segmento residencial de lujo. Grupo Petra presentó **Royale by Pininfarina**, anunciado como la primera _branded residence_ de Paraguay y el primer proyecto de la casa italiana de diseño en el país. La presentación se realizó en Miami y fue difundida en septiembre de 2026.
@@ -392,3 +410,9 @@ Para el comprador que busca vivir allí, el diseño y los servicios pueden justi
 La llegada de las _branded residences_ abre una conversación interesante. Su éxito como inversión dependerá de que la propuesta encuentre una demanda que la valore y pueda pagarla en el tiempo.
 
 **La pregunta no es solamente si Asunción puede construir este tipo de residencia, sino si existe un mercado duradero para habitarla, alquilarla y volver a comprarla.**
+
+## Para ir más lejos
+
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Departamentos y casas en venta](/comprar/)
+- [Asunción crece en altura: ¿construimos lo que la gente necesita?](/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)

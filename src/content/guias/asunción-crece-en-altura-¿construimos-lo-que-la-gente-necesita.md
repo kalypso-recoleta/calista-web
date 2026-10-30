@@ -112,6 +112,11 @@ fr:
     - **Ministère du Travail, de l’Emploi et de la Sécurité sociale, 10 juillet 2026 :** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371) (en espagnol).
 
     _Les observations de CALISTA relèvent de son expérience professionnelle et ne constituent pas un indice statistique du marché. L’exemple est illustratif. Les scénarios présentés sont des risques à évaluer, pas des prévisions d’une baisse générale des prix ni des garanties de rendement._
+
+    ## Pour aller plus loin
+
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 en:
   titulo: 'Asunción is growing upwards: are we building what people need?'
   descripcion: 'New buildings, rents and included condominium fees: why selling an apartment does not guarantee renting it at the price the investor expects.'
@@ -218,6 +223,11 @@ en:
     - **Ministry of Labour, Employment and Social Security, July 10, 2026:** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371) (in Spanish).
 
     _CALISTA’s observations reflect its professional experience and do not constitute a statistical market index. The example is illustrative. The scenarios described are risks to assess, not forecasts of a general fall in prices or guarantees of returns._
+
+    ## Further reading
+
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 pt:
   titulo: 'Assunção cresce na vertical: estamos construindo o que as pessoas precisam?'
   descripcion: 'Novos edifícios, aluguéis e condomínio incluído: por que vender um apartamento não garante alugá-lo pelo preço que o investidor espera.'
@@ -324,6 +334,11 @@ pt:
     - **Ministerio de Trabajo, Empleo y Seguridad Social, 10 de julho de 2026:** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371).
 
     _As observações da CALISTA correspondem à sua experiência profissional e não constituem um índice estatístico do mercado. O exemplo é ilustrativo. Os cenários apresentados são riscos a avaliar, não previsões de uma queda generalizada de preços nem garantias de rentabilidade._
+
+    ## Para saber mais
+
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?](/pt/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 ---
 **Los edificios se venden a compradores e inversores. Pero su funcionamiento a largo plazo depende también de quienes van a vivir en ellos: sus necesidades, sus ingresos y el presupuesto que están dispuestos a destinar a la vivienda.**
 
@@ -427,3 +442,8 @@ Un departamento puede venderse bien y, aun así, resultar difícil de alquilar a
 - **Ministerio de Trabajo, Empleo y Seguridad Social, 10 de julio de 2026:** [MTESS reglamentó el reajuste de salarios y jornales mínimos](https://www.mtess.gov.py/?p=36371).
 
 _Las observaciones de CALISTA corresponden a su experiencia profesional y no constituyen un índice estadístico del mercado. El ejemplo es ilustrativo. Los escenarios planteados son riesgos a evaluar, no pronósticos de una caída generalizada de precios ni garantías de rentabilidad._
+
+## Para ir más lejos
+
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?](/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)

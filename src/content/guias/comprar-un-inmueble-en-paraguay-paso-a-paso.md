@@ -82,6 +82,12 @@ fr:
     Nous vous accompagnons en **espagnol, français et anglais** tout au long du processus, de la première visite à la signature devant l’escribano, puis au suivi de l’inscription.
 
     **Vous envisagez d’acheter au Paraguay ? Parlez-nous de ce que vous recherchez : nous vous aiderons à préparer votre projet, à connaître les frais et à avancer en comprenant chaque étape.**
+
+    ## Pour aller plus loin
+
+    - [Biens à vendre](/fr/comprar/)
+    - [Comment financer l’achat de votre logement au Paraguay](/fr/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer](/fr/blog/comprar-un-departamento-en-pozo-que-revisar/)
 en:
   titulo: 'Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed'
   descripcion: 'Buying Property in Paraguay: Steps, Costs and Documents'
@@ -158,6 +164,12 @@ en:
     We support you in **Spanish, French and English** throughout the process, from the first viewing to signing before the notary and following up on registration.
 
     **Thinking about buying in Paraguay? Tell us what you are looking for, and we will help you plan your purchase, understand the costs and move forward with clarity at every stage.**
+
+    ## Further reading
+
+    - [Properties for sale](/en/comprar/)
+    - [How to finance your home purchase in Paraguay](/en/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Buying an off-plan apartment: what to check before you sign](/en/blog/comprar-un-departamento-en-pozo-que-revisar/)
 pt:
   titulo: 'Comprar um imóvel no Paraguai: do boleto à escritura'
   descripcion: 'Comprar um imóvel no Paraguai: etapas, custos e documentos'
@@ -234,6 +246,12 @@ pt:
     Acompanhamos você em **português, espanhol, francês e inglês** durante todo o processo, desde a primeira visita até a assinatura perante o escribano e o acompanhamento do registro.
 
     **Está pensando em comprar no Paraguai? Conte-nos o que você procura e ajudamos a preparar seu projeto, conhecer os custos e avançar com clareza em cada etapa.**
+
+    ## Para saber mais
+
+    - [Imóveis à venda](/pt/comprar/)
+    - [Como financiar a compra da sua moradia no Paraguai](/pt/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+    - [Comprar um apartamento na planta: o que verificar antes de assinar](/pt/blog/comprar-un-departamento-en-pozo-que-revisar/)
 ---
 
 Comprar una casa o un departamento en Paraguay sigue un camino claro. Conocer cada etapa evita sorpresas y te permite saber, en cada momento, qué estás firmando y qué gastos tenés que prever.
@@ -308,3 +326,9 @@ En **CALISTA**, la comisión de venta es del **5 % del precio, IVA incluido**,
 Te acompañamos en **español, francés e inglés** durante todo el proceso, desde la primera visita hasta la firma ante el escribano y el seguimiento de la inscripción.
 
 **¿Estás pensando en comprar en Paraguay? Contanos qué buscás y te ayudamos a preparar tu proyecto, conocer los gastos y avanzar con claridad en cada etapa.**
+
+## Para ir más lejos
+
+- [Departamentos y casas en venta](/comprar/)
+- [Cómo financiar la compra de tu vivienda en Paraguay](/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
+- [Comprar un departamento en pozo: qué revisar antes de firmar](/blog/comprar-un-departamento-en-pozo-que-revisar/)
