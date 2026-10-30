@@ -10,7 +10,7 @@ fr:
   titulo: 'Résidences de marque à Asunción : existe-t-il un marché pour ce niveau de luxe ?'
   descripcion: 'Royale by Pininfarina introduit une nouvelle offre résidentielle dans la capitale. Au-delà de la signature internationale, une question se pose : existe-t-il une demande capable de la soutenir dans la durée ?'
   cuerpo: |-
-    Asunción accueille une nouvelle proposition dans le résidentiel de luxe. Grupo Petra a présenté **Royale by Pininfarina**, annoncé comme la première _branded residence_ du Paraguay et le premier projet de la maison italienne de design dans le pays. La présentation s’est tenue à Miami et a été relayée en septembre 2026.
+    Asunción accueille une nouvelle proposition dans le résidentiel de luxe. Grupo Petra a présenté **Royale by Pininfarina**, annoncé comme la première _branded residence_ du Paraguay et le premier projet de la maison italienne de design dans le pays. La présentation s’est tenue à Miami et a été relayée en septembre 2026 par [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
     Cette annonce suscite de l’intérêt, mais aussi une question : **existe-t-il à Asunción un marché suffisamment large et solvable pour ce type de résidence, au prix et avec les charges de fonctionnement qui seront les siens ?**
 
@@ -36,7 +36,7 @@ fr:
 
     Il s’agit d’une offre résidentielle associée à une marque reconnue. Selon le modèle, cette association peut apporter du design, une identité, des services ou des standards de fonctionnement.
 
-    ABC Color inscrit ce lancement dans une catégorie combinant design de créateur et services de type hôtelier, déjà présente dans des villes comme Miami, São Paulo et Panama.
+    [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/) inscrit ce lancement dans une catégorie combinant design de créateur et services de type hôtelier, déjà présente dans des villes comme Miami, São Paulo et Panama.
 
     L’acheteur doit toutefois connaître la portée exacte de cette association. **Concevoir un immeuble, superviser ses finitions et gérer ses services après la livraison sont des missions différentes.** Il faut demander lesquelles sont assurées par la marque, pour quelle durée et sous quelles conditions.
 
@@ -113,7 +113,7 @@ en:
   titulo: 'Branded residences in Asunción: is there a market for this level of luxury?'
   descripcion: Royale by Pininfarina introduces a new residential offering in the capital. Beyond the international name, the question is whether there is enough demand to sustain it over time.
   cuerpo: |-
-    Asunción is adding a new offering to its luxury residential market. Grupo Petra has presented **Royale by Pininfarina**, announced as Paraguay’s first branded residence and the Italian design house’s first project in the country. The presentation took place in Miami and was reported in September 2026.
+    Asunción is adding a new offering to its luxury residential market. Grupo Petra has presented **Royale by Pininfarina**, announced as Paraguay’s first branded residence and the Italian design house’s first project in the country. The presentation took place in Miami and was reported in September 2026 by [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
     The announcement attracts interest, but also raises a question: **does Asunción have a sufficiently large market with the purchasing power to support this type of residence, at its eventual price and running costs?**
 
@@ -139,7 +139,7 @@ en:
 
     It is a residential offering associated with a recognised brand. Depending on the model, that association may contribute design, identity, services or operating standards.
 
-    ABC Color places the launch within a category combining signature design and hotel-style services, already established in cities such as Miami, São Paulo and Panama City.
+    [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/) places the launch within a category combining signature design and hotel-style services, already established in cities such as Miami, São Paulo and Panama City.
 
     Buyers should nevertheless understand exactly what the association involves. **Designing a building, supervising its finishes and managing its services after handover are different roles.** Ask which responsibilities the brand will undertake, for how long and on what terms.
 
@@ -216,7 +216,7 @@ pt:
   titulo: 'Branded residences em Assunção: existe mercado para este nível de luxo?'
   descripcion: 'O Royale by Pininfarina apresenta uma nova proposta residencial na capital. Para além da grife internacional, cabe perguntar se existe uma demanda capaz de sustentá-la ao longo do tempo.'
   cuerpo: |-
-    Assunção ganha uma nova proposta no segmento residencial de luxo. O Grupo Petra apresentou o **Royale by Pininfarina**, anunciado como a primeira _branded residence_ do Paraguai e o primeiro projeto da casa italiana de design no país. A apresentação foi realizada em Miami e divulgada em setembro de 2026.
+    Assunção ganha uma nova proposta no segmento residencial de luxo. O Grupo Petra apresentou o **Royale by Pininfarina**, anunciado como a primeira _branded residence_ do Paraguai e o primeiro projeto da casa italiana de design no país. A apresentação foi realizada em Miami e divulgada em setembro de 2026 pelo [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
     A notícia desperta interesse, mas também uma pergunta: **existe em Assunção um mercado suficientemente amplo e solvente para este tipo de residência, ao preço e com os custos de funcionamento que ela terá?**
 
@@ -242,7 +242,7 @@ pt:
 
     É uma proposta residencial vinculada a uma marca reconhecida. Conforme o modelo, essa associação pode trazer design, identidade, serviços ou padrões de operação.
 
-    O ABC Color situa o lançamento dentro de uma categoria que combina design autoral e serviços de tipo hoteleiro, presente em cidades como Miami, São Paulo e Panamá.
+    O [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/) situa o lançamento dentro de uma categoria que combina design autoral e serviços de tipo hoteleiro, presente em cidades como Miami, São Paulo e Panamá.
 
     No entanto, o comprador deve conhecer o alcance concreto desse vínculo. **Projetar um edifício, supervisionar seus acabamentos e gerir seus serviços após a entrega são funções diferentes.** É preciso perguntar quais delas a marca assume, por quanto tempo e em que condições.
 
@@ -317,7 +317,7 @@ pt:
     - [Assunção cresce na vertical: estamos construindo o que as pessoas precisam?](/pt/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 ---
 
-Asunción suma una nueva propuesta al segmento residencial de lujo. Grupo Petra presentó **Royale by Pininfarina**, anunciado como la primera _branded residence_ de Paraguay y el primer proyecto de la casa italiana de diseño en el país. La presentación se realizó en Miami y fue difundida en septiembre de 2026.
+Asunción suma una nueva propuesta al segmento residencial de lujo. Grupo Petra presentó **Royale by Pininfarina**, anunciado como la primera _branded residence_ de Paraguay y el primer proyecto de la casa italiana de diseño en el país. La presentación se realizó en Miami y fue difundida en septiembre de 2026 por [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
 La noticia despierta interés, pero también una pregunta: **¿existe en Asunción un mercado suficientemente amplio y solvente para este tipo de residencia, al precio y con los costos de funcionamiento que tendrá?**
 
@@ -343,7 +343,7 @@ Las publicaciones consultadas no detallan precios ni fecha de entrega. Sin esos 
 
 Es una propuesta residencial vinculada a una marca reconocida. Según el modelo, esa asociación puede aportar diseño, identidad, servicios o estándares de operación.
 
-ABC Color sitúa el lanzamiento dentro de una categoría que combina diseño de autor y servicios de tipo hotelero, presente en ciudades como Miami, São Paulo y Panamá.
+[ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/) sitúa el lanzamiento dentro de una categoría que combina diseño de autor y servicios de tipo hotelero, presente en ciudades como Miami, São Paulo y Panamá.
 
 Sin embargo, el comprador debe conocer el alcance concreto de esa vinculación. **Diseñar un edificio, supervisar sus terminaciones y gestionar sus servicios después de la entrega son funciones diferentes.** Hay que preguntar cuáles asume la marca, durante cuánto tiempo y bajo qué condiciones.
 

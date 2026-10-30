@@ -36,7 +36,7 @@ fr:
     | Donnée | Montant |
     | --- | --- |
     | Prix de vente | 89 000 USD |
-    | Taux de change BCP du 8 septembre 2026 | 5 899,02 Gs pour 1 dollar |
+    | [Taux de change BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica) du 8 septembre 2026 | 5 899,02 Gs pour 1 dollar |
     | Prix converti en guaraníes | 525 012 780 Gs |
     | Loyer mensuel indiqué | 3 400 000 Gs |
     | Impôt immobilier 2026, appartement et stationnement | 834 700 Gs par an |
@@ -151,7 +151,7 @@ en:
     | Item | Amount |
     | --- | --- |
     | Sale price | USD 89,000 |
-    | BCP exchange rate on September 8, 2026 | Gs 5,899.02 per dollar |
+    | [BCP exchange rate](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica) on September 8, 2026 | Gs 5,899.02 per dollar |
     | Price converted into guaraníes | Gs 525,012,780 |
     | Reported monthly rent | Gs 3,400,000 |
     | 2026 property tax, apartment and parking space | Gs 834,700 per year |
@@ -266,7 +266,7 @@ pt:
     | Dado | Valor |
     | --- | --- |
     | Preço de venda | USD 89.000 |
-    | Taxa de câmbio do BCP (Banco Central del Paraguay) de 8 de setembro de 2026 | Gs 5.899,02 por dólar |
+    | [Taxa de câmbio do BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica) (Banco Central del Paraguay) de 8 de setembro de 2026 | Gs 5.899,02 por dólar |
     | Preço convertido em guaranis | Gs 525.012.780 |
     | Aluguel mensal informado | Gs 3.400.000 |
     | Impuesto inmobiliario (imposto imobiliário) 2026, apartamento e vaga de garagem | Gs 834.700 por ano |
@@ -382,7 +382,7 @@ Veamos cómo se calcula con el departamento 304 de Zandoli.
 | Dato | Valor |
 | --- | --- |
 | Precio de venta | USD 89.000 |
-| Tipo de cambio BCP del 8 de setiembre de 2026 | Gs 5.899,02 por dólar |
+| [Tipo de cambio BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica) del 8 de setiembre de 2026 | Gs 5.899,02 por dólar |
 | Precio convertido a guaraníes | Gs 525.012.780 |
 | Alquiler mensual informado | Gs 3.400.000 |
 | Impuesto inmobiliario 2026, departamento y cochera | Gs 834.700 por año |

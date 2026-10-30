@@ -56,7 +56,7 @@ fr:
 
     C’est ce décalage qui nous inquiète. Les décisions d’investissement prises hier alimentent l’offre d’aujourd’hui, alors que rien ne garantit une progression équivalente de la demande.
 
-    Les tarifs montrent déjà des signes de pression. Selon les données publiques d’AirDNA consultées en octobre 2026, le tarif moyen des locations de courte durée à Asunción s’établit à environ **42 dollars par nuit**, en baisse de **20,9 % sur un an**. Cette moyenne couvre des logements de différentes catégories sur Airbnb, Vrbo et Booking.com ; elle ne correspond pas nécessairement au prix final payé par le voyageur.
+    Les tarifs montrent déjà des signes de pression. Selon les données publiques d’[AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview) (mise à jour du 27 octobre 2026), le tarif moyen des locations de courte durée à Asunción s’établit à environ **42 dollars par nuit**, en baisse de **18,7 %** entre septembre 2025 et septembre 2026. Cette moyenne couvre des logements de différentes catégories sur Airbnb, Vrbo et Booking.com ; elle ne correspond pas nécessairement au prix final payé par le voyageur.
 
     Ces chiffres ne permettent pas, à eux seuls, d’attribuer la baisse aux nouvelles livraisons. Ils montrent toutefois pourquoi il serait imprudent de considérer les tarifs actuels comme acquis pour les années à venir.
 
@@ -90,7 +90,7 @@ fr:
 
     _Vous envisagez d’investir à Asunción ? CALISTA vous accompagne pour comparer les biens, évaluer leur prix et construire un projet adapté à votre objectif._
 
-    _Source de l’introduction : MarketData, « Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario », publication du 7 octobre 2026. Les observations et perspectives de marché présentées dans cet article expriment l’analyse de CALISTA Inmobiliaria._
+    _Source de l’introduction : [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/), « Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario », publication du 7 octobre 2026. Les observations et perspectives de marché présentées dans cet article expriment l’analyse de CALISTA Inmobiliaria._
 
     ## Pour aller plus loin
 
@@ -147,7 +147,7 @@ en:
 
     This time lag is what concerns us. Yesterday’s investment decisions are feeding today’s supply, while there is no guarantee that demand will grow at the same pace.
 
-    Rates are already showing signs of pressure. According to public AirDNA data consulted in October 2026, the average nightly rate for short-term rentals in Asunción is approximately **US$42**, down **20.9% year on year**. This average covers different categories of accommodation on Airbnb, Vrbo and Booking.com; it does not necessarily reflect the final price paid by the guest.
+    Rates are already showing signs of pressure. According to public [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview) data (updated October 27, 2026), the average nightly rate for short-term rentals in Asunción is approximately **US$42**, down **18.7%** between September 2025 and September 2026. This average covers different categories of accommodation on Airbnb, Vrbo and Booking.com; it does not necessarily reflect the final price paid by the guest.
 
     These figures alone do not establish that newly completed properties caused the decline. They do, however, show why it would be unwise to assume that current rates will hold in the years ahead.
 
@@ -181,7 +181,7 @@ en:
 
     _Thinking of investing in Asunción? CALISTA helps you compare properties, assess their prices and develop an investment plan suited to your goals._
 
-    _Source for the introduction: MarketData, “Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario”, published on 7 October 2026. The market observations and outlook presented in this article reflect CALISTA Inmobiliaria’s analysis._
+    _Source for the introduction: [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/), “Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario”, published on 7 October 2026. The market observations and outlook presented in this article reflect CALISTA Inmobiliaria’s analysis._
 
     ## Further reading
 
@@ -238,7 +238,7 @@ pt:
 
     É esse descompasso que nos preocupa. As decisões de investimento tomadas ontem alimentam a oferta de hoje, enquanto nada garante um crescimento equivalente da demanda.
 
-    As diárias já mostram sinais de pressão. Segundo os dados públicos da AirDNA consultados em outubro de 2026, a diária média dos aluguéis de curta duração em Assunção está em aproximadamente **42 dólares por noite**, com uma queda de **20,9 % em relação ao ano anterior**. Essa média abrange acomodações de diferentes categorias no Airbnb, Vrbo e Booking.com; não corresponde necessariamente ao preço final pago pelo hóspede.
+    As diárias já mostram sinais de pressão. Segundo os dados públicos da [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview) (atualizados em 27 de outubro de 2026), a diária média dos aluguéis de curta duração em Assunção está em aproximadamente **42 dólares por noite**, com uma queda de **18,7 %** entre setembro de 2025 e setembro de 2026. Essa média abrange acomodações de diferentes categorias no Airbnb, Vrbo e Booking.com; não corresponde necessariamente ao preço final pago pelo hóspede.
 
     Esses números, por si sós, não permitem atribuir a queda às novas entregas. No entanto, mostram por que seria imprudente presumir que as diárias atuais se manterão nos próximos anos.
 
@@ -272,7 +272,7 @@ pt:
 
     _Está pensando em investir em Assunção? A CALISTA acompanha você para comparar imóveis, avaliar seus preços e construir um projeto adaptado ao seu objetivo._
 
-    _Fonte da introdução: MarketData, «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario» (Mais estrangeiros escolhem o Paraguai para residir e sua chegada começa a movimentar o mercado imobiliário), publicação de 7 de outubro de 2026. As observações e perspectivas de mercado apresentadas neste artigo expressam a análise da CALISTA Inmobiliaria._
+    _Fonte da introdução: [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/), «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario» (Mais estrangeiros escolhem o Paraguai para residir e sua chegada começa a movimentar o mercado imobiliário), publicação de 7 de outubro de 2026. As observações e perspectivas de mercado apresentadas neste artigo expressam a análise da CALISTA Inmobiliaria._
 
     ## Para saber mais
 
@@ -327,7 +327,7 @@ En nuestro trabajo cotidiano, observamos que muchos inversores extranjeros compr
 
 Ese desfase es lo que nos preocupa. Las decisiones de inversión tomadas ayer alimentan la oferta de hoy, mientras que nada garantiza un crecimiento equivalente de la demanda.
 
-Las tarifas ya muestran señales de presión. Según los datos públicos de AirDNA consultados en octubre de 2026, la tarifa promedio de los alquileres de corta duración en Asunción se sitúa en aproximadamente **42 dólares por noche**, con una caída del **20,9 % interanual**. Este promedio abarca alojamientos de distintas categorías en Airbnb, Vrbo y Booking.com; no corresponde necesariamente al precio final que paga el huésped.
+Las tarifas ya muestran señales de presión. Según los datos públicos de [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview) (actualizados el 27 de octubre de 2026), la tarifa promedio de los alquileres de corta duración en Asunción se sitúa en aproximadamente **42 dólares por noche**, con una caída del **18,7 %** entre setiembre de 2025 y setiembre de 2026. Este promedio abarca alojamientos de distintas categorías en Airbnb, Vrbo y Booking.com; no corresponde necesariamente al precio final que paga el huésped.
 
 Estas cifras, por sí solas, no permiten atribuir la caída a las nuevas entregas. Sin embargo, muestran por qué sería imprudente dar por sentado que las tarifas actuales se mantendrán en los próximos años.
 
@@ -361,7 +361,7 @@ Nuestra convicción es simple: una inversión sostenible debe apoyarse en la rea
 
 _¿Estás pensando en invertir en Asunción? CALISTA te acompaña para comparar inmuebles, evaluar sus precios y construir un proyecto adaptado a tu objetivo._
 
-_Fuente de la introducción: MarketData, «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario», publicación del 7 de octubre de 2026. Las observaciones y perspectivas de mercado presentadas en este artículo expresan el análisis de CALISTA Inmobiliaria._
+_Fuente de la introducción: [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/), «Más extranjeros eligen Paraguay para residir y su llegada empieza a mover el mercado inmobiliario», publicación del 7 de octubre de 2026. Las observaciones y perspectivas de mercado presentadas en este artículo expresan el análisis de CALISTA Inmobiliaria._
 
 ## Para ir más lejos
 

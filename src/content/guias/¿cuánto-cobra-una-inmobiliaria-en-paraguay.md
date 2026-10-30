@@ -10,7 +10,7 @@ fr:
   titulo: Combien coûte une agence immobilière au Paraguay ?
   descripcion: 'Commissions de vente et de location, répartition des honoraires et services inclus : ce qu’il faut savoir avant de s’engager.'
   cuerpo: |-
-    Combien coûte la vente ou la mise en location d’un bien par une agence immobilière ? Au Paraguay, les références publiées situent la commission de vente autour de **5 % à 5,5 % du prix**. Pour la recherche d’un locataire, la pratique habituelle est **un mois de loyer, partagé à parts égales entre propriétaire et locataire**.
+    Combien coûte la vente ou la mise en location d’un bien par une agence immobilière ? Au Paraguay, les références publiées situent la commission de vente entre **3 % et 5,5 % du prix**. Pour la recherche d’un locataire, la pratique habituelle est **un mois de loyer, partagé à parts égales entre propriétaire et locataire**.
 
     Ces montants sont des références de marché, pas un tarif légal unique. Avant de vous engager, faites préciser par écrit le montant des honoraires, qui les paie, les services inclus et le moment du règlement.
 
@@ -18,12 +18,12 @@ fr:
 
     | Opération | Honoraires de référence | Qui paie ? |
     | --- | --- | --- |
-    | Vente | Environ 5 % à 5,5 % du prix, négociables | Généralement le vendeur |
+    | Vente | Entre 3 % et 5,5 % du prix, négociables | Généralement le vendeur |
     | Recherche d’un locataire | Un mois de loyer, une seule fois | Habituellement 50 % pour le propriétaire et 50 % pour le locataire |
     | Prolongation ou renouvellement | En général, aucune nouvelle commission d’intermédiation ; certaines agences facturent cette démarche | Vérifier les conditions de l’agence |
     | Gestion locative | Honoraires distincts de la recherche d’un locataire | Le propriétaire, selon le contrat de gestion |
 
-    Parmi les références publiées, ABC Color mentionne une commission de vente de 5,5 %, tandis que TuLugar indique 5 %. Pour les locations, Marilú Alsina & Asociados publie un partage d’un mois de loyer entre les deux parties et l’absence de commission de gestion lors du renouvellement. Ces conditions doivent être confirmées auprès de l’agence choisie.
+    Parmi les références publiées, [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/) mentionne une référence de 5,5 % par transaction, tandis que [ParaguayInmo](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario) indique généralement 3 % à 5 %, plus la TVA. Pour les locations, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas) publie un partage d’un mois de loyer entre les deux parties et l’absence de commission de gestion lors du renouvellement. Ces conditions doivent être confirmées auprès de l’agence choisie.
 
     ### Combien coûte la vente d’un bien ?
 
@@ -74,7 +74,7 @@ fr:
 
     ### Que prévoit le Code civil ?
 
-    Les articles 951 à 958 encadrent le contrat de courtage. Parmi leurs principales dispositions :
+    Les articles 951 à 958 du [Code civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf) encadrent le contrat de courtage. Parmi leurs principales dispositions :
 
     - Le courtier a droit à une rémunération si l’opération est conclue grâce à son intervention.
     - À défaut d’accord, de tarifs ou de barèmes professionnels, le juge détermine le montant et sa répartition selon les usages et, à défaut, l’équité.
@@ -130,7 +130,7 @@ en:
   titulo: How much does a real estate agency charge in Paraguay?
   descripcion: 'Sales and rental commissions, who pays the fees and what the service includes: what to know before you commit.'
   cuerpo: |-
-    How much does it cost to sell or rent out a property through a real estate agency? In Paraguay, published market references put sales commissions at around **5% to 5.5% of the sale price**. For finding a tenant, the usual practice is **one month’s rent, split equally between landlord and tenant**.
+    How much does it cost to sell or rent out a property through a real estate agency? In Paraguay, published market references put sales commissions at between **3% and 5.5% of the sale price**. For finding a tenant, the usual practice is **one month’s rent, split equally between landlord and tenant**.
 
     These figures are market references, not a single statutory fee. Before engaging an agency, confirm in writing how much it charges, who pays, what is included and when payment is due.
 
@@ -138,12 +138,12 @@ en:
 
     | Transaction or service | Reference fee | Who pays? |
     | --- | --- | --- |
-    | Sale | Around 5% to 5.5% of the sale price, negotiable | Usually the seller |
+    | Sale | Between 3% and 5.5% of the sale price, negotiable | Usually the seller |
     | Finding a tenant | One month’s rent, charged once | Usually 50% paid by the landlord and 50% by the tenant |
     | Lease extension or renewal | Generally no new brokerage commission; some agencies charge for handling the process | Check the agency’s terms |
     | Rental management | Fees separate from tenant placement | The landlord, under the management agreement |
 
-    Among published references, ABC Color cites a sales commission of 5.5%, while TuLugar indicates 5%. For rentals, Marilú Alsina & Asociados publishes a fee of one month’s rent shared between both parties and no management commission on renewal. Confirm the terms with your chosen agency.
+    Among published references, [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/) cites a benchmark of 5.5% per transaction, while [ParaguayInmo](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario) gives a typical 3% to 5%, plus VAT. For rentals, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas) publishes a fee of one month’s rent shared between both parties and no management commission on renewal. Confirm the terms with your chosen agency.
 
     ### How much does it cost to sell a property?
 
@@ -194,7 +194,7 @@ en:
 
     ### What does the Civil Code provide?
 
-    Articles 951 to 958 govern brokerage contracts. Their main provisions include:
+    Articles 951 to 958 of the [Civil Code](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf) govern brokerage contracts. Their main provisions include:
 
     - A broker is entitled to remuneration if the transaction is concluded as a result of their involvement.
     - In the absence of an agreement, professional tariffs or fee schedules, a judge determines the amount and its allocation according to customary practice or, failing that, equity.
@@ -252,7 +252,7 @@ pt:
   cuerpo: |-
     _Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar._
 
-    Quanto custa vender ou alugar um imóvel com uma imobiliária? No Paraguai, as referências publicadas situam a comissão de venda em torno de **5 % a 5,5 % do preço**. Para a busca de um inquilino, a prática habitual é **um mês de aluguel, dividido em partes iguais entre proprietário e inquilino**.
+    Quanto custa vender ou alugar um imóvel com uma imobiliária? No Paraguai, as referências publicadas situam a comissão de venda entre **3 % e 5,5 % do preço**. Para a busca de um inquilino, a prática habitual é **um mês de aluguel, dividido em partes iguais entre proprietário e inquilino**.
 
     Esses valores são referências de mercado, não uma tarifa legal única. Antes de contratar, convém deixar por escrito quanto será cobrado, quem paga, o que o serviço inclui e quando os honorários devem ser pagos.
 
@@ -260,12 +260,12 @@ pt:
 
     | Operação | Honorários de referência | Quem paga? |
     | --- | --- | --- |
-    | Venda | Em torno de 5 % a 5,5 % do preço, negociável | Geralmente o vendedor |
+    | Venda | Entre 3 % e 5,5 % do preço, negociável | Geralmente o vendedor |
     | Busca de inquilino | Um mês de aluguel, uma única vez | Habitualmente 50 % o proprietário e 50 % o inquilino |
     | Prorrogação ou renovação | Em geral, sem nova comissão de intermediação; algumas agências cobram pelo trâmite | Consultar as condições da agência |
     | Administração do aluguel | Honorários independentes da busca de inquilino | O proprietário, conforme o contrato de administração |
 
-    Como referências publicadas, o ABC Color indica uma comissão de venda de 5,5 %, enquanto o TuLugar menciona 5 %. Para aluguéis, a Marilú Alsina & Asociados publica a divisão de um mês entre as duas partes e a ausência de comissão de gestão por renovação. Essas condições devem ser confirmadas com a agência escolhida.
+    Como referências publicadas, o [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/) indica uma referência de 5,5 % por transação, enquanto o [ParaguayInmo](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario) aponta, em geral, de 3 % a 5 %, mais IVA. Para aluguéis, a [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas) publica a divisão de um mês entre as duas partes e a ausência de comissão de gestão por renovação. Essas condições devem ser confirmadas com a agência escolhida.
 
     ## Quanto se paga para vender um imóvel?
 
@@ -316,7 +316,7 @@ pt:
 
     ## O que estabelece o Código Civil?
 
-    Os artigos 951 a 958 regulam o contrato de corretagem. Entre suas principais regras:
+    Os artigos 951 a 958 do [Código Civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf) regulam o contrato de corretagem. Entre suas principais regras:
 
     - O corretor tem direito a remuneração se o negócio for concluído graças à sua intervenção.
     - Na falta de acordo, tarifas ou tabelas profissionais, o juiz determina o valor e sua divisão segundo os usos e, na falta destes, a equidade.
@@ -372,7 +372,7 @@ pt:
 
 _Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar._
 
-¿Cuánto cuesta vender o alquilar una propiedad con una inmobiliaria? En Paraguay, las referencias publicadas sitúan la comisión de venta alrededor del **5 % al 5,5 % del precio**. Para la búsqueda de un inquilino, la práctica habitual es **un mes de alquiler, compartido en partes iguales entre propietario e inquilino**.
+¿Cuánto cuesta vender o alquilar una propiedad con una inmobiliaria? En Paraguay, las referencias publicadas sitúan la comisión de venta entre el **3 % y el 5,5 % del precio**. Para la búsqueda de un inquilino, la práctica habitual es **un mes de alquiler, compartido en partes iguales entre propietario e inquilino**.
 
 Estos importes son referencias del mercado, no una tarifa legal única. Antes de contratar, conviene dejar por escrito cuánto se cobra, quién paga, qué incluye el servicio y cuándo corresponde abonar los honorarios.
 
@@ -380,12 +380,12 @@ Estos importes son referencias del mercado, no una tarifa legal única. Antes de
 
 | Operación | Honorarios de referencia | ¿Quién paga? |
 | --- | --- | --- |
-| Venta | Alrededor del 5 % al 5,5 % del precio, negociable | Generalmente el vendedor |
+| Venta | Entre el 3 % y el 5,5 % del precio, negociable | Generalmente el vendedor |
 | Búsqueda de inquilino | Un mes de alquiler, por única vez | Habitualmente 50 % el propietario y 50 % el inquilino |
 | Prórroga o renovación | En general, sin nueva comisión de intermediación; algunas agencias cobran por el trámite | Consultar las condiciones de la agencia |
 | Administración del alquiler | Honorarios independientes de la búsqueda de inquilino | El propietario, según el contrato de administración |
 
-Como referencias publicadas, ABC Color recoge una comisión de venta del 5,5 %, mientras que TuLugar menciona el 5 %. Para alquileres, Marilú Alsina & Asociados publica el reparto de un mes entre ambas partes y la ausencia de comisión de gestión por renovación. Estas condiciones deben confirmarse con la agencia elegida.
+Como referencias publicadas, [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/) recoge una referencia del 5,5 % por transacción, mientras que [ParaguayInmo](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario) indica habitualmente del 3 % al 5 %, más IVA. Para alquileres, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas) publica el reparto de un mes entre ambas partes y la ausencia de comisión de gestión por renovación. Estas condiciones deben confirmarse con la agencia elegida.
 
 ## ¿Cuánto se paga por vender una propiedad?
 
@@ -436,7 +436,7 @@ Estos servicios tienen honorarios propios. Si querés delegar la gestión del in
 
 ## ¿Qué establece el Código Civil?
 
-Los artículos 951 a 958 regulan el contrato de corretaje. Entre sus principales reglas:
+Los artículos 951 a 958 del [Código Civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf) regulan el contrato de corretaje. Entre sus principales reglas:
 
 - El corredor tiene derecho a remuneración si el negocio se concluye gracias a su intervención.
 - A falta de pacto, tarifas o aranceles profesionales, el juez determina el monto y su reparto según los usos y, en su defecto, la equidad.

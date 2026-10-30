@@ -10,13 +10,13 @@ fr:
   titulo: 'Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?'
   descripcion: Ces dernières semaines, deux titres de presse ont résumé la situation. Selon 5Días, le dollar « profundiza su caída y llega hasta G. 5.725 en el mercado interbancario » (« accentue sa chute et descend jusqu’à 5 725 guaraníes sur le marché interbancaire »).
   cuerpo: |-
-    780 AM / Mega TV a publié : **« Baja del dólar desafía al sector inmobiliario »** (« La baisse du dollar met au défi le secteur immobilier »). Dans cet article, Raúl Constantino, président de la Chambre paraguayenne des promoteurs immobiliers (CAPADEI), explique que près de **90 % des coûts de construction sont libellés en guaraníes**. Selon lui, les coûts de chantier ont **augmenté d’environ 20 % en dollars** par rapport à l’an dernier.
+    Le 11 septembre 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (groupe 780 AM / Mega TV) a publié : **« Baja del dólar desafía al sector inmobiliario »** (« La baisse du dollar met au défi le secteur immobilier »). Dans cet article, Raúl Constantino, président de la Chambre paraguayenne des promoteurs immobiliers (CAPADEI), explique que près de **90 % des coûts de construction sont libellés en guaraníes**. Selon lui, les coûts de chantier ont **augmenté d’environ 20 % en dollars** par rapport à l’an dernier. Dans un article d’[ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) de la même période, il situe entre 75 % et 80 % la part des coûts des promoteurs libellée en guaraníes.
 
     En tant qu’agence immobilière et promoteurs du programme Kalypso, nous le vivons au quotidien. Voici ce que nous observons.
 
     ## Les chiffres officiels
 
-    Selon le cours de référence de la Banque centrale du Paraguay (BCP) :
+    Selon le [cours de référence de la Banque centrale du Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica) :
 
     | Date | Guaraníes pour 1 dollar |
     | --- | --- |
@@ -71,13 +71,13 @@ en:
   titulo: "The dollar is falling: who wins and who loses in Paraguay's real estate market?"
   descripcion: n recent weeks, two news headlines have summed up the situation. According to 5Días, the dollar “continues its decline, reaching G. 5,725 in the interbank market.”
   cuerpo: |-
-    780 AM / Mega TV published an article titled **“Falling dollar challenges the property sector.”** In that article, Raúl Constantino, president of the Paraguayan Chamber of Real Estate Developers (CAPADEI), explains that around **90% of construction costs are denominated in guaraníes**. According to him, construction costs have **risen by approximately 20% in dollar terms** compared with last year.
+    On September 11, 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (the 780 AM / Mega TV group) published an article titled **“Falling dollar challenges the property sector.”** In that article, Raúl Constantino, president of the Paraguayan Chamber of Real Estate Developers (CAPADEI), explains that around **90% of construction costs are denominated in guaraníes**. According to him, construction costs have **risen by approximately 20% in dollar terms** compared with last year. In an [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) article from the same period, he puts the share of developers’ costs in guaraníes at 75% to 80%.
 
     As a real estate agency and the developers behind the Kalypso project, we experience this every day. Here is what we are seeing.
 
     ## The official figures
 
-    According to the reference exchange rate published by the Central Bank of Paraguay (BCP):
+    According to the [reference exchange rate published by the Central Bank of Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica):
 
     | Date | Guaraníes per US dollar |
     | --- | --- |
@@ -132,13 +132,13 @@ pt:
   titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
   descripcion: 'Nas últimas semanas, duas manchetes resumiram a situação. Segundo o 5Días, o dólar «aprofunda sua queda e chega a G. 5.725 no mercado interbancário».'
   cuerpo: |-
-    A 780 AM / Mega TV publicou: **«Queda do dólar desafia o setor imobiliário»**. Nessa matéria, Raúl Constantino, presidente da Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca de **90 % dos custos de construção estão em guaranis**. Segundo ele, os custos de obra **subiram cerca de 20 % em dólares** em relação ao ano passado.
+    Em 11 de setembro de 2026, o [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (grupo 780 AM / Mega TV) publicou: **«Queda do dólar desafia o setor imobiliário»**. Nessa matéria, Raúl Constantino, presidente da Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca de **90 % dos custos de construção estão em guaranis**. Segundo ele, os custos de obra **subiram cerca de 20 % em dólares** em relação ao ano passado. Numa matéria do [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) do mesmo período, ele situa entre 75 % e 80 % a parcela dos custos dos incorporadores em guaranis.
 
     Como imobiliária e como incorporadores do projeto Kalypso, vivemos isso todos os dias. Isto é o que observamos.
 
     ## Os números oficiais
 
-    Segundo a cotação de referência do Banco Central del Paraguay (BCP):
+    Segundo a [cotação de referência do Banco Central del Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica):
 
     | Data | Guaranis por dólar |
     | --- | --- |
@@ -191,13 +191,13 @@ pt:
     - [Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 ---
 
-780 AM / Mega TV publicó: **«Baja del dólar desafía al sector inmobiliario»**. En esa nota, Raúl Constantino, presidente de la Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca del **90 % de los costos de construcción están en guaraníes**. Según él, los costos de obra **subieron alrededor de un 20 % en dólares** respecto al año pasado.
+El 11 de setiembre de 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (grupo 780 AM / Mega TV) publicó: **«Baja del dólar desafía al sector inmobiliario»**. En esa nota, Raúl Constantino, presidente de la Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca del **90 % de los costos de construcción están en guaraníes**. Según él, los costos de obra **subieron alrededor de un 20 % en dólares** respecto al año pasado. En una nota de [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) del mismo período, ubica entre el 75 % y el 80 % la parte de los costos de los desarrolladores en guaraníes.
 
 Como inmobiliaria y como desarrolladores del proyecto Kalypso, lo vivimos todos los días. Esto es lo que vemos.
 
 ## Las cifras oficiales
 
-Según la cotización de referencia del Banco Central del Paraguay (BCP):
+Según la [cotización de referencia del Banco Central del Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica):
 
 | Fecha | Guaraníes por dólar |
 | --- | --- |

@@ -71,7 +71,7 @@ fr:
 
 
 
-    _Source de référence : Marcelo Wagner, « La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento », Forbes Paraguay, 3 octobre 2026. Cet article présente le regard et les recommandations de CALISTA Inmobiliaria._
+    _Source de référence : Marcelo Wagner, « La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento », [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349), 3 octobre 2026. Cet article présente le regard et les recommandations de CALISTA Inmobiliaria._
 
     ## Pour aller plus loin
 
@@ -143,7 +143,7 @@ en:
 
 
 
-    _Reference: Marcelo Wagner, “La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento,” Forbes Paraguay, October 3, 2026. This article presents CALISTA Inmobiliaria’s perspective and recommendations._
+    _Reference: Marcelo Wagner, “La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento,” [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349), October 3, 2026. This article presents CALISTA Inmobiliaria’s perspective and recommendations._
 
     ## Further reading
 
@@ -215,7 +215,7 @@ pt:
 
 
 
-    _Fonte de referência: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», Forbes Paraguay, 3 de outubro de 2026. Este artigo apresenta a leitura e as recomendações da CALISTA Inmobiliaria._
+    _Fonte de referência: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349), 3 de outubro de 2026. Este artigo apresenta a leitura e as recomendações da CALISTA Inmobiliaria._
 
     ## Para saber mais
 
@@ -285,7 +285,7 @@ Comprar requiere información, preparación y una elección ajustada a la realid
 
 
 
-_Fuente de referencia: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», Forbes Paraguay, 3 de octubre de 2026. Este artículo presenta la lectura y las recomendaciones de CALISTA Inmobiliaria._
+_Fuente de referencia: Marcelo Wagner, «La paradoja inmobiliaria: hay más crédito para vivienda, pero no alcanza para comprar el departamento», [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349), 3 de octubre de 2026. Este artículo presenta la lectura y las recomendaciones de CALISTA Inmobiliaria._
 
 ## Para ir más lejos
 
