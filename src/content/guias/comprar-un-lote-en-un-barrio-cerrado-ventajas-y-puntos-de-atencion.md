@@ -4,7 +4,8 @@ descripcion: 'Servicios, amenities y entorno natural, pero también obras largas
 categoria: guia
 tema: comprar
 borrador: false
-fecha: 2026-10-29
+fecha: 2026-10-29T20:20:00
+portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.png
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
   descripcion: "Réseaux, équipements et cadre naturel, mais aussi travaux longs, règles de construction et promoteur administrateur : ce qu’il faut savoir avant d’acheter un lot en résidence fermée au Paraguay."
