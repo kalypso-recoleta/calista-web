@@ -60,6 +60,7 @@ const parrafos = (e.descripcion ?? '').split(/\n\s*\n/).map((p) => p.trim()).fil
 
     <div class="texto">
       <div class="desc">
+        <p class="propio">{t('des.propio_largo')}</p>
         <h2>{e.nombre}</h2>
         {e.lema && <p class="lema">{e.lema}</p>}
         {parrafos.map((p) => <p>{p}</p>)}
@@ -97,6 +98,7 @@ const parrafos = (e.descripcion ?? '').split(/\n\s*\n/).map((p) => p.trim()).fil
 
 <style>
   .edificio { margin: 0 0 3rem; }
+  .propio { margin: 0 0 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--violet); }
   .carrusel { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--violet-soft); }
   .pista { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .pista::-webkit-scrollbar { display: none; }

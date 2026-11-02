@@ -1,4 +1,5 @@
 ---
+import { esKalypso } from '../lib/desarrollos';
 import { localizar, cuerpoTraducido } from '../lib/traduccion';
 import { slugify } from '../lib/slug';
 import type { CollectionEntry } from 'astro:content';
@@ -45,6 +46,9 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     <div class="tags">
       <span class="badge">{operacionLabel(d.operacion, lang)}</span>
       {d.desarrollo && <span class="badge">{t('badge.pozo')}</span>}
+      {d.desarrollo && (esKalypso(d)
+        ? <span class="badge badge--propio">{t('des.propio')}</span>
+        : d.promotor && <span class="badge">{t('des.de')} {d.promotor}</span>)}
       {
         d.exclusivo && (
           <span class="badge badge--exclusivo">
@@ -131,6 +135,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     flex-wrap: wrap;
     gap: 0.35rem;
   }
+  .tags .badge.badge--propio { background: var(--violet); color: #fff; }
   .tags .badge {
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(4px);

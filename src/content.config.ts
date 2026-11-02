@@ -106,6 +106,11 @@ const biens = defineCollection({
     financiacion: boolOpc(),
     // Si renseigné, la vignette envoie vers ce site externe (ex. kalypso.com.py)
     link_externo: strOpc(),
+    // Promotor del desarrollo : vide = Kalypso (El Solar SRL, notre propre programme).
+    // Rempli (ex. « Grupo X ») = programme d'un autre promoteur, commercialisé par CALISTA.
+    promotor: strOpc(),
+    // Nom du projet / de l'immeuble (ex. « Torre Aurora ») — sert à regrouper les unités.
+    proyecto: strOpc(),
 
     // --- Alquiler temporal (operacion = temporal) ---
     gama: z.enum(['kalypso', 'otros']).default('otros'),

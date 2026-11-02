@@ -64,7 +64,7 @@ collections:
       - { label: 'En venta (Comprar)', field: operacion, pattern: venta }
       - { label: 'En alquiler (Alquilar)', field: operacion, pattern: '^alquiler$' }
       - { label: 'Alquiler temporal', field: operacion, pattern: temporal }
-      - { label: 'Desarrollos Kalypso', field: desarrollo, pattern: true }
+      - { label: 'Comprar en pozo (todos)', field: desarrollo, pattern: true }
       - { label: 'Terrenos', field: tipo, pattern: terreno }
       - { label: 'Exclusivos', field: exclusivo, pattern: true }
       - { label: 'En la página de inicio', field: destacado, pattern: true }
@@ -76,7 +76,8 @@ collections:
     # Regroupements (bouton « Agrupar ») : par opération, par type, par état…
     view_groups:
       - { label: 'Operación', field: operacion }
-      - { label: '¿Desarrollo Kalypso?', field: desarrollo }
+      - { label: '¿En pozo?', field: desarrollo }
+      - { label: 'Desarrollador', field: promotor }
       - { label: 'Tipo', field: tipo }
       - { label: 'Estado', field: estado }
     fields:
@@ -209,6 +210,8 @@ collections:
       # --- Solo para desarrollos / pozo ---
       - { label: Fecha de entrega, name: entrega, widget: string, required: false, hint: 'Solo para pozo. Ej: Marzo 2027' }
       - { label: '¿Ofrece financiación?', name: financiacion, widget: boolean, default: false, required: false }
+      - { label: 'Desarrollador (vacío = Kalypso, nuestro)', name: promotor, widget: string, required: false, hint: 'Dejalo VACÍO para Kalypso (El Solar SRL): aparece arriba como « Nuestro desarrollo ». Si es un proyecto de otro desarrollador, escribí su nombre (ej. Grupo X): aparece en « Otros desarrollos en pozo » con la etiqueta « Desarrollo de Grupo X ».' }
+      - { label: 'Nombre del proyecto / edificio', name: proyecto, widget: string, required: false, hint: 'Solo para otros desarrolladores. Ej: Torre Aurora. Sirve para agrupar las unidades del mismo edificio.' }
       - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }
 
       # --- Imágenes (se suben a Cloudinary) ---
