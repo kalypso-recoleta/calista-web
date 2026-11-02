@@ -16,6 +16,7 @@ moneda: USD
 periodo: total
 ciudad: Asunción
 barrio: Jara
+entrega: 05/2027
 portada_foto: /uploads/mallorca/mallorca-fachada.jpg
 imagenes:
   - /uploads/mallorca/mallorca-fachada.jpg
@@ -29,12 +30,12 @@ imagenes:
   - /uploads/mallorca/mallorca-coworking.jpg
   - /uploads/mallorca/mallorca-laundry.jpg
 descripcion: |-
-  Edificio de departamentos en pozo sobre Av. Brasilia, en Barrio Jara, cerca de la Universidad Americana. Monoambientes de 26 y 33 m² y departamentos de 1 dormitorio de 51 m². Piscina y solárium en la azotea, quincho climatizado, coworking y laundry. Desde USD 44.200. Desarrollo de Mediterránea PY, comercializado por CALISTA.
+  Edificio de departamentos en pozo sobre Av. Brasilia, en Barrio Jara, cerca de la Universidad Americana. Monoambientes de 26 y 33 m² y departamentos de 1 dormitorio de 51 m². Piscina y solárium en la azotea, quincho climatizado, coworking y laundry. Entrega prevista: mayo 2027. Desde USD 44.200. Desarrollo de Mediterránea PY, comercializado por CALISTA.
 gama: otros
 fr:
   titulo: 'Edificio Mallorca : studios et 1 chambre sur plan à Barrio Jara'
   descripcion: |-
-    Immeuble d'appartements sur plan sur l'avenue Brasilia, dans le quartier Jara, près de l'Universidad Americana. Studios de 26 et 33 m² et appartements d'une chambre de 51 m². Piscine et solarium sur le toit, quincho climatisé, coworking et laverie. À partir de USD 44 200. Programme de Mediterránea PY, commercialisé par CALISTA.
+    Immeuble d'appartements sur plan sur l'avenue Brasilia, dans le quartier Jara, près de l'Universidad Americana. Studios de 26 et 33 m² et appartements d'une chambre de 51 m². Piscine et solarium sur le toit, quincho climatisé, coworking et laverie. Livraison prévue : mai 2027. À partir de USD 44 200. Programme de Mediterránea PY, commercialisé par CALISTA.
   cuerpo: |-
     **Edificio Mallorca** est un immeuble résidentiel neuf du promoteur **Mediterránea PY**, construit par Icon Houzze, dans le quartier Jara à Asunción. CALISTA le commercialise et vous accompagne dans l'achat, en français.
 
@@ -45,6 +46,7 @@ fr:
     **L'immeuble**
 
     - Rez-de-chaussée + 6 étages, avec espaces communs sur le toit
+    - Livraison prévue : **mai 2027**
     - Hall d'accueil avec réception
     - Parkings au rez-de-chaussée et en sous-sol (vendus séparément)
 
@@ -68,7 +70,7 @@ fr:
 en:
   titulo: 'Edificio Mallorca: off-plan studios and 1-bedroom apartments in Barrio Jara'
   descripcion: |-
-    Off-plan apartment building on Av. Brasilia, in the Jara neighbourhood, near Universidad Americana. Studios of 26 and 33 m² and 1-bedroom apartments of 51 m². Rooftop pool and sun deck, air-conditioned quincho, coworking and laundry. From USD 44,200. Developed by Mediterránea PY, marketed by CALISTA.
+    Off-plan apartment building on Av. Brasilia, in the Jara neighbourhood, near Universidad Americana. Studios of 26 and 33 m² and 1-bedroom apartments of 51 m². Rooftop pool and sun deck, air-conditioned quincho, coworking and laundry. Expected delivery: May 2027. From USD 44,200. Developed by Mediterránea PY, marketed by CALISTA.
   cuerpo: |-
     **Edificio Mallorca** is a new residential building by developer **Mediterránea PY**, built by Icon Houzze, in the Jara neighbourhood of Asunción. CALISTA markets it and guides you through the purchase, in English.
 
@@ -79,6 +81,7 @@ en:
     **The building**
 
     - Ground floor + 6 floors, with shared spaces on the roof
+    - Expected delivery: **May 2027**
     - Entrance lobby with reception
     - Parking on the ground floor and in the basement (sold separately)
 
@@ -102,7 +105,7 @@ en:
 pt:
   titulo: 'Edificio Mallorca: studios e 1 dormitório na planta no Barrio Jara'
   descripcion: |-
-    Edifício de apartamentos na planta na Av. Brasilia, no bairro Jara, perto da Universidad Americana. Studios de 26 e 33 m² e apartamentos de 1 dormitório de 51 m². Piscina e solário na cobertura, quincho climatizado, coworking e lavanderia. A partir de USD 44.200. Empreendimento da Mediterránea PY, comercializado pela CALISTA.
+    Edifício de apartamentos na planta na Av. Brasilia, no bairro Jara, perto da Universidad Americana. Studios de 26 e 33 m² e apartamentos de 1 dormitório de 51 m². Piscina e solário na cobertura, quincho climatizado, coworking e lavanderia. Entrega prevista: maio de 2027. A partir de USD 44.200. Empreendimento da Mediterránea PY, comercializado pela CALISTA.
   cuerpo: |-
     **Edificio Mallorca** é um edifício residencial novo da incorporadora **Mediterránea PY**, construído pela Icon Houzze, no bairro Jara, em Assunção. A CALISTA comercializa o empreendimento e acompanha você na compra, em português.
 
@@ -113,6 +116,7 @@ pt:
     **O edifício**
 
     - Térreo + 6 andares, com áreas comuns na cobertura
+    - Entrega prevista: **maio de 2027**
     - Hall de entrada com recepção
     - Vagas de garagem no térreo e no subsolo (vendidas separadamente)
 
@@ -145,6 +149,7 @@ fecha: 2026-11-02T13:00
 **El edificio**
 
 - Planta baja + 6 pisos, con amenities en la azotea
+- Entrega prevista: **mayo 2027**
 - Hall de acceso con recepción
 - Cocheras en planta baja y subsuelo (se venden por separado)
 
