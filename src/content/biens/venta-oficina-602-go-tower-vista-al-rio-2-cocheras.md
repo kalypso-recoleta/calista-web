@@ -8,10 +8,7 @@ destacado: false
 lateral: false
 portada: false
 exclusivo: true
-desarrollo: true
-promotor: Escala Desarrollos
-proyecto: Go Tower Business Center
-precio_unico: true
+desarrollo: false
 precio: 255000
 moneda: USD
 periodo: total
