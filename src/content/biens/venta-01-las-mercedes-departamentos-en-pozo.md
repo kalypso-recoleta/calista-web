@@ -9,14 +9,16 @@ lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-promotor: Vitrium Capital
-proyecto: 01 Las Mercedes
 precio: 60775
 moneda: USD
 periodo: total
 ciudad: Asunción
 barrio: Las Mercedes
+ubicacion: '{"type":"Point","coordinates":[-57.6123513,-25.2826621]}'
 entrega: 02/2027
+financiacion: false
+promotor: Vitrium Capital
+proyecto: 01 Las Mercedes
 portada_foto: /uploads/01-las-mercedes/01-las-mercedes-fachada.jpg
 imagenes:
   - /uploads/01-las-mercedes/01-las-mercedes-fachada.jpg
@@ -28,13 +30,11 @@ imagenes:
   - /uploads/01-las-mercedes/01-las-mercedes-jardin.jpg
   - /uploads/01-las-mercedes/01-las-mercedes-planta-baja.jpg
   - /uploads/01-las-mercedes/01-las-mercedes-cowork-sum.jpg
-descripcion: |-
-  Edificio de 62 departamentos en pozo en el barrio Las Mercedes, sobre Av. Padre E. Cardozo. Monoambientes, 1 y 2 dormitorios, todos con balcón o patio. Piscina y solárium, gym, coworking y cocheras en subsuelo. Entrega prevista: febrero 2027. Desde USD 60.775 al contado. Desarrollo de Vitrium Capital, comercializado por CALISTA.
+descripcion: 'Edificio de 62 departamentos en pozo en el barrio Las Mercedes, sobre Av. Padre E. Cardozo. Monoambientes, 1 y 2 dormitorios, todos con balcón o patio. Piscina y solárium, gym, coworking y cocheras en subsuelo. Entrega prevista: febrero 2027. Desde USD 60.775 al contado. Desarrollo de Vitrium Capital, comercializado por CALISTA.'
 gama: otros
 fr:
   titulo: '01 Las Mercedes : studios, 1 et 2 chambres sur plan'
-  descripcion: |-
-    Immeuble de 62 appartements sur plan dans le quartier Las Mercedes, sur l'avenue Padre E. Cardozo. Studios, 1 et 2 chambres, tous avec balcon ou patio. Piscine et solarium, salle de sport, coworking et parkings en sous-sol. Livraison prévue : février 2027. À partir de USD 60 775 au comptant. Programme de Vitrium Capital, commercialisé par CALISTA.
+  descripcion: "Immeuble de 62 appartements sur plan dans le quartier Las Mercedes, sur l'avenue Padre E. Cardozo. Studios, 1 et 2 chambres, tous avec balcon ou patio. Piscine et solarium, salle de sport, coworking et parkings en sous-sol. Livraison prévue : février 2027. À partir de USD 60 775 au comptant. Programme de Vitrium Capital, commercialisé par CALISTA."
   cuerpo: |-
     **01 Las Mercedes** est un immeuble résidentiel neuf du promoteur **Vitrium Capital**, dans le quartier Las Mercedes à Asunción. CALISTA le commercialise et vous accompagne dans l'achat, en français.
 
@@ -81,8 +81,7 @@ fr:
     *Informations du promoteur, à titre indicatif et non contractuel. Avant-projet approuvé par la Municipalité d'Asunción (Expediente N° 10.198/2023, Resolución N° 12/2023 AP). Le mobilier des images n'est pas inclus.*
 en:
   titulo: '01 Las Mercedes: off-plan studios, 1 and 2 bedrooms'
-  descripcion: |-
-    A 62-unit off-plan building in the Las Mercedes neighbourhood, on Av. Padre E. Cardozo. Studios, 1 and 2 bedrooms, all with a balcony or patio. Pool and sun deck, gym, coworking and underground parking. Expected delivery: February 2027. From USD 60,775 cash. Developed by Vitrium Capital, marketed by CALISTA.
+  descripcion: 'A 62-unit off-plan building in the Las Mercedes neighbourhood, on Av. Padre E. Cardozo. Studios, 1 and 2 bedrooms, all with a balcony or patio. Pool and sun deck, gym, coworking and underground parking. Expected delivery: February 2027. From USD 60,775 cash. Developed by Vitrium Capital, marketed by CALISTA.'
   cuerpo: |-
     **01 Las Mercedes** is a new residential building by developer **Vitrium Capital** in the Las Mercedes neighbourhood of Asunción. CALISTA markets it and guides you through the purchase, in English.
 
@@ -129,8 +128,7 @@ en:
     *Information provided by the developer, for guidance only and not contractual. Preliminary project approved by the Municipality of Asunción (Expediente N° 10.198/2023, Resolución N° 12/2023 AP). Furniture shown in the images is not included.*
 pt:
   titulo: '01 Las Mercedes: studios, 1 e 2 dormitórios na planta'
-  descripcion: |-
-    Edifício de 62 apartamentos na planta no bairro Las Mercedes, na Av. Padre E. Cardozo. Studios, 1 e 2 dormitórios, todos com sacada ou pátio. Piscina e solário, academia, coworking e garagem no subsolo. Entrega prevista: fevereiro de 2027. A partir de USD 60.775 à vista. Empreendimento da Vitrium Capital, comercializado pela CALISTA.
+  descripcion: 'Edifício de 62 apartamentos na planta no bairro Las Mercedes, na Av. Padre E. Cardozo. Studios, 1 e 2 dormitórios, todos com sacada ou pátio. Piscina e solário, academia, coworking e garagem no subsolo. Entrega prevista: fevereiro de 2027. A partir de USD 60.775 à vista. Empreendimento da Vitrium Capital, comercializado pela CALISTA.'
   cuerpo: |-
     **01 Las Mercedes** é um edifício residencial novo da incorporadora **Vitrium Capital**, no bairro Las Mercedes, em Assunção. A CALISTA comercializa o empreendimento e acompanha você na compra, em português.
 
