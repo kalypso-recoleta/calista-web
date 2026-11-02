@@ -106,7 +106,7 @@ fr:
 
     ## Pour aller plus loin
 
-    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Biens à vendre](/fr/comprar/)
     - [Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?](/fr/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 en:
@@ -209,7 +209,7 @@ en:
 
     ## Further reading
 
-    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Properties for sale](/en/comprar/)
     - [Asunción is growing upwards: are we building what people need?](/en/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 pt:
@@ -312,7 +312,7 @@ pt:
 
     ## Para saber mais
 
-    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Imóveis à venda](/pt/comprar/)
     - [Assunção cresce na vertical: estamos construindo o que as pessoas precisam?](/pt/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 ---
@@ -413,6 +413,6 @@ La llegada de las _branded residences_ abre una conversación interesante. Su 
 
 ## Para ir más lejos
 
-- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Departamentos y casas en venta](/comprar/)
 - [Asunción crece en altura: ¿construimos lo que la gente necesita?](/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)

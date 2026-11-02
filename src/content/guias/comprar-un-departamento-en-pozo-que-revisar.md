@@ -78,7 +78,7 @@ fr:
     ## Pour aller plus loin
 
     - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
-    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying an off-plan apartment: what to check before you sign'
@@ -152,7 +152,7 @@ en:
     ## Further reading
 
     - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
-    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
@@ -226,7 +226,7 @@ pt:
     ## Para saber mais
 
     - [Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?](/pt/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
-    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 ---
 
@@ -298,5 +298,5 @@ Conocé Kalypso Recoleta, las unidades disponibles y las formas de pag
 ## Para ir más lejos
 
 - [Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?](/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
-- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)

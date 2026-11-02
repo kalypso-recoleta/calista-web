@@ -97,7 +97,7 @@ fr:
 
     ## Pour aller plus loin
 
-    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer](/fr/blog/comprar-un-departamento-en-pozo-que-revisar/)
     - [Biens à vendre](/fr/comprar/)
 en:
@@ -191,7 +191,7 @@ en:
 
     ## Further reading
 
-    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Buying an off-plan apartment: what to check before you sign](/en/blog/comprar-un-departamento-en-pozo-que-revisar/)
     - [Properties for sale](/en/comprar/)
 pt:
@@ -285,7 +285,7 @@ pt:
 
     ## Para saber mais
 
-    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Comprar um apartamento na planta: o que verificar antes de assinar](/pt/blog/comprar-un-departamento-en-pozo-que-revisar/)
     - [Imóveis à venda](/pt/comprar/)
 ---
@@ -377,6 +377,6 @@ En la esquina de **Cruz del Chaco y Alfredo Seiferheld**, Kalypso Recoleta ofre
 
 ## Para ir más lejos
 
-- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Comprar un departamento en pozo: qué revisar antes de firmar](/blog/comprar-un-departamento-en-pozo-que-revisar/)
 - [Departamentos y casas en venta](/comprar/)

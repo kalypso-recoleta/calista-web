@@ -15,6 +15,8 @@ interface Props {
   mostrarBanos?: boolean;
   sinFiltros?: boolean;
   tituloLista?: string;
+  ocultarVacia?: boolean;
+  volver?: { href: string; label: string };
 }
 const {
   eyebrow,
@@ -25,12 +27,15 @@ const {
   mostrarBanos = true,
   sinFiltros = false,
   tituloLista,
+  ocultarVacia = false,
+  volver,
 } = Astro.props;
 ---
 
 <section class="section">
   <div class="container">
     <header class="cab">
+      {volver && <a class="volver" href={volver.href}>← {volver.label}</a>}
       <p class="eyebrow">{eyebrow}</p>
       <h1>{titulo}</h1>
       {intro && <p class="lead">{intro}</p>}
@@ -42,7 +47,7 @@ const {
 
     {
       biens.length === 0 ? (
-        <p class="lead">{t('lista.vacia')}</p>
+        !ocultarVacia && <p class="lead">{t('lista.vacia')}</p>
       ) : (
         <BienesFiltrados
           biens={biens}
@@ -54,7 +59,6 @@ const {
         </BienesFiltrados>
       )
     }
-    <slot name="despues" />
   </div>
 </section>
 
@@ -68,6 +72,8 @@ const {
     max-width: 62ch;
     margin-bottom: 2rem;
   }
+  .volver { display: inline-block; margin-bottom: 0.8rem; font-size: 0.9rem; font-weight: 600; color: var(--violet); text-decoration: none; }
+  .volver:hover { text-decoration: underline; }
   .cab h1 {
     margin-bottom: 0.4rem;
   }

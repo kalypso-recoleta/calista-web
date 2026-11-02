@@ -6,12 +6,12 @@ import PresentacionEdificio from '../PresentacionEdificio.astro';
 import BannerAregua from '../aregua/BannerAregua.astro';
 import PanelDestacados from '../temporal/PanelDestacados.astro';
 import { hayPanel } from '../temporal/datos';
-import PropertyCard from '../PropertyCard.astro';
+import BannerKalypso from '../BannerKalypso.astro';
 import { esKalypso } from '../../lib/desarrollos';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 
 interface Props {
-  kind: 'comprar' | 'alquilar' | 'terrenos' | 'desarrollos';
+  kind: 'comprar' | 'alquilar' | 'terrenos' | 'desarrollos' | 'kalypso';
 }
 const { kind } = Astro.props;
 
@@ -30,27 +30,25 @@ if (kind === 'comprar') {
 } else if (kind === 'terrenos') {
   biens = todos.filter((b) => b.data.tipo === 'terreno');
 } else if (kind === 'desarrollos') {
-  // Kalypso (notre propre programme) en tête ; les programmes d'autres promoteurs ensuite
-  biens = todos.filter((b) => esKalypso(b.data));
+  // Comprar en pozo : bandeau Kalypso (notre programme, page à part) + programmes des autres promoteurs,
+  // regroupés par projet puis par prix
+  biens = todos
+    .filter((b) => b.data.desarrollo && !esKalypso(b.data))
+    .sort((a, b) =>
+      (a.data.proyecto ?? a.data.promotor ?? '').localeCompare(b.data.proyecto ?? b.data.promotor ?? '') ||
+      a.data.precio - b.data.precio);
+} else if (kind === 'kalypso') {
+  // Page Kalypso Recoleta : nos propres unités, du moins cher au plus cher
+  biens = todos.filter((b) => esKalypso(b.data)).sort((a, b) => a.data.precio - b.data.precio);
 }
-// Programmes d'autres promoteurs, regroupés par projet puis par prix
-const otros = kind === 'desarrollos'
-  ? todos
-      .filter((b) => b.data.desarrollo && !esKalypso(b.data))
-      .sort((a, b) =>
-        (a.data.proyecto ?? a.data.promotor ?? '').localeCompare(b.data.proyecto ?? b.data.promotor ?? '') ||
-        a.data.precio - b.data.precio)
-  : [];
-// Desarrollos : les modèles du moins cher au plus cher ; ailleurs, les plus récents d'abord
-biens = kind === 'desarrollos'
-  ? biens.sort((a, b) => a.data.precio - b.data.precio)
-  : biens.sort((a, b) => +b.data.fecha - +a.data.fecha);
+if (kind !== 'desarrollos' && kind !== 'kalypso') biens = biens.sort((a, b) => +b.data.fecha - +a.data.fecha);
+const enPozo = kind === 'desarrollos' || kind === 'kalypso';
 
 const mostrarDormitorios = kind !== 'terrenos';
-const mostrarBanos = kind !== 'terrenos' && kind !== 'desarrollos';
+const mostrarBanos = kind !== 'terrenos' && !enPozo;
 
 // Bande « Destacados » sous les filtres (rien du tout s'il n'y en a pas)
-const conPanel = await hayPanel(kind);
+const conPanel = kind === 'kalypso' ? false : await hayPanel(kind);
 
 const titulo = t(`lista.${kind}_title`);
 const eyebrow = t(`lista.${kind}_eyebrow`);
@@ -65,30 +63,18 @@ const intro = t(`lista.${kind}_intro`);
     biens={biens}
     mostrarDormitorios={mostrarDormitorios}
     mostrarBanos={mostrarBanos}
-    sinFiltros={kind === 'desarrollos'}
-    tituloLista={kind === 'desarrollos' ? t('des.modelos') : undefined}
+    sinFiltros={enPozo}
+    ocultarVacia={kind === 'desarrollos'}
+    volver={kind === 'kalypso' ? { href: localizePath('/desarrollos', lang), label: t('nav.desarrollos') } : undefined}
+    tituloLista={kind === 'kalypso' ? t('des.modelos') : kind === 'desarrollos' && biens.length > 0 ? t('des.otros') : undefined}
   >
     {conPanel && <PanelDestacados slot="destacados" rubrica={kind} />}
     {/* Une seule expression pour le slot « intro » : deux expressions visant le même slot
          s'écrasaient, et la présentation Kalypso n'apparaissait pas. */}
-    {kind === 'desarrollos' ? <PresentacionEdificio slot="intro" />
+    {kind === 'desarrollos' ? <BannerKalypso slot="intro" />
+      : kind === 'kalypso' ? <PresentacionEdificio slot="intro" />
       : kind === 'terrenos' ? <BannerAregua slot="intro" /> : null}
-    {otros.length > 0 && (
-      <section slot="despues" class="otros">
-        <h2 class="titulo-lista">{t('des.otros')}</h2>
-        <p class="lead">{t('des.otros_d')}</p>
-        <div class="grid-otros">
-          {otros.map((b) => <PropertyCard bien={b} />)}
-        </div>
-      </section>
-    )}
   </ListadoBiens>
 </Layout>
 
 
-<style>
-  .otros { margin-top: 3.5rem; }
-  .otros .titulo-lista { margin: 0 0 0.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
-  .otros .lead { margin-bottom: 1.5rem; max-width: 62ch; }
-  .grid-otros { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; }
-</style>

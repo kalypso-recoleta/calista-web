@@ -1,0 +1,51 @@
+---
+/**
+ * Bandeau « Nuestro desarrollo » en tête de la page Comprar en pozo :
+ * présente Kalypso Recoleta et renvoie vers sa page (/desarrollos/kalypso-recoleta),
+ * pour laisser la place aux programmes des autres promoteurs sur la page principale.
+ */
+import { getCollection } from 'astro:content';
+import edificio from '../data/kalypso-recoleta.json';
+import { img } from '../lib/cloudinary';
+import { esKalypso } from '../lib/desarrollos';
+import { formatPrecio } from '../lib/format';
+import { getLangFromUrl, useTranslations, localizePath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+type Trad = { lema?: string };
+const e = edificio as { nombre: string; lema?: string; fotos?: { imagen: string }[]; fr?: Trad; en?: Trad; pt?: Trad };
+const tr: Trad = (lang === 'fr' ? e.fr : lang === 'en' ? e.en : lang === 'pt' ? e.pt : undefined) ?? {};
+const lema = tr.lema?.trim() || e.lema;
+const foto = e.fotos?.find((f) => f && f.imagen)?.imagen;
+const unidades = (await getCollection('biens', (b) => b.data.en_linea !== false && esKalypso(b.data)))
+  .filter((b) => b.data.estado === 'disponible' && b.data.precio > 0)
+  .sort((a, b) => a.data.precio - b.data.precio);
+const desde = unidades[0] ? formatPrecio(unidades[0].data, lang) : '';
+const href = localizePath('/desarrollos/kalypso-recoleta', lang);
+---
+
+<a class="banner" href={href}>
+  {foto && <img src={img(foto, { w: 1400, h: 440 })} alt="" width="1400" height="440" loading="eager" />}
+  <div class="txt">
+    <span class="sello">{t('des.propio_largo')}</span>
+    <strong>{e.nombre}</strong>
+    {lema && <span>{lema}</span>}
+    {desde && <span class="desde">{t('tar.desde')} {desde}</span>}
+    <em class="btn btn--primary">{t('des.ver_kalypso')} →</em>
+  </div>
+</a>
+
+<style>
+  .banner { position: relative; display: block; border-radius: var(--radius); overflow: hidden; margin: 0 0 3rem; color: #fff; box-shadow: var(--shadow-lg); text-decoration: none; background: var(--violet); min-height: 280px; }
+  .banner img { width: 100%; height: 300px; object-fit: cover; transition: transform 0.4s ease; display: block; }
+  .banner:hover img { transform: scale(1.03); }
+  .banner::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(62, 0, 85, 0.9) 0%, rgba(62, 0, 85, 0.6) 55%, rgba(0, 0, 0, 0) 100%); }
+  .txt { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: center; gap: 0.45rem; padding: 1.5rem 2rem; max-width: 580px; }
+  .sello { align-self: flex-start; padding: 0.25rem 0.7rem; border-radius: 20px; background: #fff; color: var(--violet); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .txt strong { font-size: clamp(1.4rem, 2.8vw, 2rem); line-height: 1.2; }
+  .txt span { opacity: 0.95; }
+  .desde { font-weight: 600; }
+  .txt em { font-style: normal; align-self: flex-start; margin-top: 0.4rem; background: #fff; color: var(--violet); }
+  @media (max-width: 600px) { .banner img { height: 360px; } .txt { padding: 1.2rem; } }
+</style>

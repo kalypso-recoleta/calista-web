@@ -42,7 +42,7 @@ fr:
 
     Pas nécessairement.
 
-    Le mécanisme décrit par Raúl Constantino aide à comprendre la pression actuelle : beaucoup de transactions sont référencées en dollars, alors qu’une part importante des coûts est payée en guaraníes. Quand le guaraní s’apprécie, ces coûts augmentent une fois exprimés en dollars et peuvent réduire les marges prévues. Nous l’avons analysé avec les cours de la BCP dans [Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?](/fr/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). En tant qu’agence immobilière et promoteurs du programme [Kalypso](/fr/desarrollos/), nous vivons cette tension de près.
+    Le mécanisme décrit par Raúl Constantino aide à comprendre la pression actuelle : beaucoup de transactions sont référencées en dollars, alors qu’une part importante des coûts est payée en guaraníes. Quand le guaraní s’apprécie, ces coûts augmentent une fois exprimés en dollars et peuvent réduire les marges prévues. Nous l’avons analysé avec les cours de la BCP dans [Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?](/fr/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). En tant qu’agence immobilière et promoteurs du programme [Kalypso](/fr/desarrollos/kalypso-recoleta/), nous vivons cette tension de près.
 
     Une remontée du dollar pourrait alléger cette pression, mais elle ne suffirait pas, à elle seule, à faire baisser les prix de vente. Le stock disponible, la concurrence, le rythme de commercialisation et les besoins financiers de chaque promoteur joueraient aussi.
 
@@ -121,7 +121,7 @@ en:
 
     Not necessarily.
 
-    The mechanism Raúl Constantino describes helps explain the current pressure: many transactions are priced in dollars, while a large share of costs is paid in guaraníes. When the guaraní appreciates, those costs rise in dollar terms and can squeeze expected margins. We analyzed this using Central Bank (BCP) exchange rates in [The dollar is falling: who wins and who loses in Paraguay’s real estate market?](/en/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). As a real estate agency and as developers of the [Kalypso](/en/desarrollos/) project, we feel this tension first-hand.
+    The mechanism Raúl Constantino describes helps explain the current pressure: many transactions are priced in dollars, while a large share of costs is paid in guaraníes. When the guaraní appreciates, those costs rise in dollar terms and can squeeze expected margins. We analyzed this using Central Bank (BCP) exchange rates in [The dollar is falling: who wins and who loses in Paraguay’s real estate market?](/en/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). As a real estate agency and as developers of the [Kalypso](/en/desarrollos/kalypso-recoleta/) project, we feel this tension first-hand.
 
     A recovery of the dollar could ease that pressure, but would not by itself lead to lower sale prices. Available stock, competition, the pace of sales and each developer’s financial needs would also play a role.
 
@@ -200,7 +200,7 @@ pt:
 
     Não necessariamente.
 
-    O mecanismo explicado por Raúl Constantino ajuda a entender a pressão atual: muitas operações são referenciadas em dólares, enquanto uma parte importante dos custos é paga em guaranis. Quando o guarani se valoriza, esses custos aumentam em dólares e podem reduzir as margens previstas. Analisamos isso com as cotações do BCP em [O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?](/pt/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). Como imobiliária e como incorporadores do projeto [Kalypso](/pt/desarrollos/), vivemos essa tensão de perto.
+    O mecanismo explicado por Raúl Constantino ajuda a entender a pressão atual: muitas operações são referenciadas em dólares, enquanto uma parte importante dos custos é paga em guaranis. Quando o guarani se valoriza, esses custos aumentam em dólares e podem reduzir as margens previstas. Analisamos isso com as cotações do BCP em [O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?](/pt/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). Como imobiliária e como incorporadores do projeto [Kalypso](/pt/desarrollos/kalypso-recoleta/), vivemos essa tensão de perto.
 
     Uma recuperação do dólar poderia aliviar essa pressão, mas não levaria, por si só, a uma redução dos preços de venda. Também influenciariam o estoque disponível, a concorrência, o ritmo de vendas e as necessidades financeiras de cada incorporador.
 
@@ -277,7 +277,7 @@ El alquiler anunciado no siempre es lo que queda para el propietario: expensas i
 
 No necesariamente.
 
-El mecanismo explicado por Constantino ayuda a entender la presión actual: muchas operaciones se referencian en dólares, mientras una parte importante de los costos se paga en guaraníes. Cuando el guaraní se aprecia, esos costos aumentan al expresarlos en dólares y pueden reducir los márgenes previstos. Lo analizamos con las cotizaciones del BCP en [El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?](/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). Como inmobiliaria y como desarrolladores del proyecto [Kalypso](/desarrollos/), vivimos esta tensión de cerca.
+El mecanismo explicado por Constantino ayuda a entender la presión actual: muchas operaciones se referencian en dólares, mientras una parte importante de los costos se paga en guaraníes. Cuando el guaraní se aprecia, esos costos aumentan al expresarlos en dólares y pueden reducir los márgenes previstos. Lo analizamos con las cotizaciones del BCP en [El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?](/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/). Como inmobiliaria y como desarrolladores del proyecto [Kalypso](/desarrollos/kalypso-recoleta/), vivimos esta tensión de cerca.
 
 Una recuperación del dólar podría aliviar esa presión, pero no determinaría por sí sola una reducción de los precios de venta. También influirían el stock disponible, la competencia, el ritmo de comercialización y las necesidades financieras de cada desarrollador.
 

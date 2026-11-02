@@ -115,7 +115,7 @@ fr:
 
     ## Pour aller plus loin
 
-    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/)
+    - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 en:
   titulo: 'Asunción is growing upwards: are we building what people need?'
@@ -226,7 +226,7 @@ en:
 
     ## Further reading
 
-    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/)
+    - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 pt:
   titulo: 'Assunção cresce na vertical: estamos construindo o que as pessoas precisam?'
@@ -337,7 +337,7 @@ pt:
 
     ## Para saber mais
 
-    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/)
+    - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?](/pt/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 ---
 **Los edificios se venden a compradores e inversores. Pero su funcionamiento a largo plazo depende también de quienes van a vivir en ellos: sus necesidades, sus ingresos y el presupuesto que están dispuestos a destinar a la vivienda.**
@@ -445,5 +445,5 @@ _Las observaciones de CALISTA corresponden a su experiencia profesional y no con
 
 ## Para ir más lejos
 
-- [Kalypso Recoleta: departamentos en pozo](/desarrollos/)
+- [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?](/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
