@@ -16,7 +16,7 @@ const t = useTranslations(lang);
 // Menu principal (ordinateur) : 6 rubriques. Terrenos et Areguá Forest sont sous « Comprar » ;
 // Reseñas, Historia et FAQ sont dans le menu mobile et le pied de page.
 const PROPIETARIOS = { es: 'Propietarios', fr: 'Propriétaires', en: 'Owners', pt: 'Proprietários' }[lang as 'es' | 'fr' | 'en' | 'pt'];
-const CASAS = { es: 'Casas y departamentos', fr: 'Maisons et appartements', en: 'Houses and apartments', pt: 'Casas e apartamentos' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const CASAS = { es: 'Casas, departamentos y oficinas', fr: 'Maisons, appartements et bureaux', en: 'Houses, apartments and offices', pt: 'Casas, apartamentos e escritórios' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const nav = [
   {
     href: '/comprar', label: t('nav.comprar'), tambien: ['/terrenos', '/terrenos/aregua-forest'],
