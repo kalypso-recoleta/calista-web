@@ -198,7 +198,7 @@ const specs = [
 
         <aside class="side">
           <div class="cta-card">
-            <p class="precio">{d.desarrollo && <small class="desde">{t('tar.desde')} </small>}{formatPrecio(d, lang)}</p>
+            <p class="precio">{d.desarrollo && !d.precio_unico && <small class="desde">{t('tar.desde')} </small>}{formatPrecio(d, lang)}</p>
             <p class="ref">{t('det.ref')} {slugify(bien.id)}</p>
             <WhatsAppButton href={wa} full />
             {

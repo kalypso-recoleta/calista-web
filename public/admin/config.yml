@@ -210,6 +210,7 @@ collections:
       # --- Solo para desarrollos / pozo ---
       - { label: Fecha de entrega, name: entrega, widget: string, required: false, hint: 'Solo para pozo. Ej: Marzo 2027' }
       - { label: '¿Ofrece financiación?', name: financiacion, widget: boolean, default: false, required: false }
+      - { label: 'Precio de una sola unidad (sin « Desde »)', name: precio_unico, widget: boolean, default: false, required: false, hint: 'Marcalo si el precio es el de una unidad precisa (por ejemplo una reventa en pozo). Si no, el precio aparece como « Desde … ».' }
       - { label: 'Desarrollador (vacío = Kalypso, nuestro)', name: promotor, widget: string, required: false, hint: 'Dejalo VACÍO para Kalypso (El Solar SRL): aparece arriba como « Nuestro desarrollo ». Si es un proyecto de otro desarrollador, escribí su nombre (ej. Grupo X): aparece en « Otros desarrollos en pozo » con la etiqueta « Desarrollo de Grupo X ».' }
       - { label: 'Nombre del proyecto / edificio', name: proyecto, widget: string, required: false, hint: 'Solo para otros desarrolladores. Ej: Torre Aurora. Sirve para agrupar las unidades del mismo edificio.' }
       - { label: 'Link externo (opcional)', name: link_externo, widget: string, required: false, hint: 'Si el desarrollo tiene su propia página (ej. https://kalypso.com.py), pegá el link acá: al hacer clic en la propiedad, el visitante irá directo a ese sitio.' }

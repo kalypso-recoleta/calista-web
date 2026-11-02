@@ -50,7 +50,7 @@ export async function rssResponse(
         titulo: d.titulo,
         link: `${base}/propiedad/${slugify(b.id)}/`,
         desc: d.descripcion,
-        precio: (d.desarrollo ? 'Desde ' : '') + formatPrecio(d, 'es'),
+        precio: (d.desarrollo && !d.precio_unico ? 'Desde ' : '') + formatPrecio(d, 'es'),
         foto: abs(d.portada_foto || d.imagenes[0]),
         fecha: d.fecha,
         categoria: `${operacionLabel(d.operacion, 'es')} · ${tipoLabel(d.tipo, 'es')} · ${formatUbicacion(d)}`,

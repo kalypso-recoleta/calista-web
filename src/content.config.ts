@@ -104,6 +104,8 @@ const biens = defineCollection({
     // --- Spécifique aux développements / pozo ---
     entrega: strOpc(), // ex. "Diciembre 2026"
     financiacion: boolOpc(),
+    // Pozo : coché = prix d'UNE unité précise (revente…) → pas de « Desde » devant le prix
+    precio_unico: boolOpc(),
     // Si renseigné, la vignette envoie vers ce site externe (ex. kalypso.com.py)
     link_externo: strOpc(),
     // Promotor del desarrollo : vide = Kalypso (El Solar SRL, notre propre programme).
