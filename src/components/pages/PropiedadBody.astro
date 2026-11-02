@@ -127,7 +127,12 @@ const specs = [
   d.dormitorios != null && { label: t('spec.dormitorios'), value: d.dormitorios },
   d.banos != null && { label: t('spec.banos_full'), value: d.banos },
   d.cocheras != null && { label: t('spec.cocheras'), value: d.cocheras },
-  superficie && { label: t('spec.superficie'), value: superficie },
+  // Surface : valeur courte (« 59 m² ») et précision dans le libellé, pour tenir sur une ligne sur téléphone
+  superficie && (d.tipo !== 'terreno' && d.superficie_construida
+    ? { label: t('spec.sup_construida'), value: `${d.superficie_construida} m²` }
+    : d.superficie_terreno
+      ? { label: t('spec.sup_terreno'), value: `${d.superficie_terreno} m²` }
+      : { label: t('spec.superficie'), value: superficie }),
   d.entrega && { label: t('spec.entrega'), value: d.entrega },
   d.financiacion && { label: t('spec.financiacion'), value: t('spec.financiacion_si') },
 ].filter(Boolean) as { label: string; value: string | number }[];
@@ -259,12 +264,16 @@ const specs = [
   .meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
   .specs {
     list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1px; padding: 0; margin: 0 0 2rem; background: var(--line);
+    gap: 0; padding: 0; margin: 0 0 2rem; background: var(--surface);
     border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
   }
+  /* Pas de fond gris derrière la grille : une case vide en fin de ligne reste blanche */
   .specs li {
     background: var(--surface); padding: 1rem 1.1rem; display: flex;
     flex-direction: column; gap: 0.15rem;
+  }
+  @media (max-width: 600px) {
+    .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   .specs .v {
     font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--brand);
