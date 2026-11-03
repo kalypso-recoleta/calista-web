@@ -43,3 +43,5 @@ status = 301
 from = "/en/propiedad/en-alquiler-1-dormitorio59-m2-en-barrio-jara"
 to = "/en/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
 status = 301
+
+# Relance du déploiement Netlify (3/11/2026) après un « Skipped »
