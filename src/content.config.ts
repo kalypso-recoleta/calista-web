@@ -33,7 +33,7 @@ const tarifasSchema = z
 const reservasSchema = z
   .preprocess((v) => (v == null ? [] : v), z.array(z.object({ desde: fechaTemp(), hasta: fechaTemp() })))
   .default([]);
-const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), descripcion: strOpc(), cuerpo: strOpc() }).optional());
+const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), titulo_seo: strOpc(), descripcion: strOpc(), cuerpo: strOpc() }).optional());
 const listaTxt = z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]);
 
 /**
@@ -233,7 +233,7 @@ const temporales = defineCollection({
  * (ou si « Toda la ciudad » est coché, ex. Luque). La page n'existe que s'il y a
  * au moins une annonce en ligne.
  */
-const textoTrad = z.preprocess((v) => (v == null ? undefined : v), z.object({ intro: strOpc() }).optional());
+const textoTrad = z.preprocess((v) => (v == null ? undefined : v), z.object({ intro: strOpc(), texto: strOpc() }).optional());
 const barrios = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/barrios' }),
   schema: z.object({
@@ -242,6 +242,8 @@ const barrios = defineCollection({
     toda_la_ciudad: z.boolean().default(false),
     alias: listaTxt,
     intro: strOpc(),
+    // Texte de présentation du quartier (markdown), affiché sous les annonces
+    texto: strOpc(),
     fr: textoTrad,
     en: textoTrad,
     pt: textoTrad,
@@ -256,6 +258,9 @@ const guias = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guias' }),
   schema: z.object({
     titulo: z.string(),
+    // Titre court pour Google (onglet + résultats de recherche, ~60 caractères max).
+    // Vide = le titre de l'article.
+    titulo_seo: strOpc(),
     descripcion: z.string(),
     borrador: z.boolean().default(true),
     // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes…

@@ -1,5 +1,6 @@
 ---
 titulo: 'El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?'
+titulo_seo: "El dólar baja: ganadores y perdedores del inmobiliario"
 descripcion: En las últimas semanas, dos titulares resumieron la situación. Según 5Días, el dólar «profundiza su caída y llega hasta G. 5.725 en el mercado interbancario».
 categoria: actualidad
 tema: mercado
@@ -8,6 +9,7 @@ fecha: 2026-10-08T06:27:00
 portada_foto: /uploads/Dollar en chute, construction en essor.png
 fr:
   titulo: 'Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?'
+  titulo_seo: "Le dollar baisse : gagnants et perdants de l’immobilier"
   descripcion: Ces dernières semaines, deux titres de presse ont résumé la situation. Selon 5Días, le dollar « profundiza su caída y llega hasta G. 5.725 en el mercado interbancario » (« accentue sa chute et descend jusqu’à 5 725 guaraníes sur le marché interbancaire »).
   cuerpo: |-
     Le 11 septembre 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (groupe 780 AM / Mega TV) a publié : **« Baja del dólar desafía al sector inmobiliario »** (« La baisse du dollar met au défi le secteur immobilier »). Dans cet article, Raúl Constantino, président de la Chambre paraguayenne des promoteurs immobiliers (CAPADEI), explique que près de **90 % des coûts de construction sont libellés en guaraníes**. Selon lui, les coûts de chantier ont **augmenté d’environ 20 % en dollars** par rapport à l’an dernier. Dans un article d’[ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) de la même période, il situe entre 75 % et 80 % la part des coûts des promoteurs libellée en guaraníes.
@@ -69,6 +71,7 @@ fr:
     - [Acheter pour louer : du rendement brut à ce qu’il vous reste réellement](/fr/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 en:
   titulo: "The dollar is falling: who wins and who loses in Paraguay's real estate market?"
+  titulo_seo: "The dollar is falling: who wins and loses in real estate?"
   descripcion: n recent weeks, two news headlines have summed up the situation. According to 5Días, the dollar “continues its decline, reaching G. 5,725 in the interbank market.”
   cuerpo: |-
     On September 11, 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (the 780 AM / Mega TV group) published an article titled **“Falling dollar challenges the property sector.”** In that article, Raúl Constantino, president of the Paraguayan Chamber of Real Estate Developers (CAPADEI), explains that around **90% of construction costs are denominated in guaraníes**. According to him, construction costs have **risen by approximately 20% in dollar terms** compared with last year. In an [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) article from the same period, he puts the share of developers’ costs in guaraníes at 75% to 80%.
@@ -130,6 +133,7 @@ en:
     - [Buying to rent: from gross rental yield to what you actually keep](/en/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 pt:
   titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
+  titulo_seo: "O dólar cai: quem ganha e quem perde no imobiliário"
   descripcion: 'Nas últimas semanas, duas manchetes resumiram a situação. Segundo o 5Días, o dólar «aprofunda sua queda e chega a G. 5.725 no mercado interbancário».'
   cuerpo: |-
     Em 11 de setembro de 2026, o [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (grupo 780 AM / Mega TV) publicou: **«Queda do dólar desafia o setor imobiliário»**. Nessa matéria, Raúl Constantino, presidente da Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca de **90 % dos custos de construção estão em guaranis**. Segundo ele, os custos de obra **subiram cerca de 20 % em dólares** em relação ao ano passado. Numa matéria do [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) do mesmo período, ele situa entre 75 % e 80 % a parcela dos custos dos incorporadores em guaranis.

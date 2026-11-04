@@ -52,7 +52,7 @@ export const textos = {
       ['Elegís con información', 'Te mostramos los lotes disponibles por etapa y ubicación, y coordinamos la visita al predio.'],
       ['Firmás sabiendo lo que firmás', 'Revisamos con vos el contrato antes de firmar: precio, cuotas, plazos de entrega y reserva de dominio.'],
       ['Te seguimos hasta el final', 'Seguimiento de tus pagos y de las entregas hasta la escritura a tu nombre.'],
-      ['Te hablamos en tu idioma', 'Atención en español, francés e inglés, también si vivís fuera del Paraguay.'],
+      ['Te hablamos en tu idioma', 'Atención en español, francés, inglés y portugués, también si vivís fuera del Paraguay.'],
     ],
     faq_t: 'Preguntas frecuentes',
     faq: [
@@ -131,7 +131,7 @@ export const textos = {
       ['Choisir en connaissance de cause', 'Nous vous montrons les lots disponibles par étape et emplacement, et organisons la visite.'],
       ['Signer en sachant ce que l’on signe', 'Nous relisons le contrat avec vous avant la signature : prix, mensualités, délais de livraison et réserve de propriété.'],
       ['Un suivi jusqu’au bout', 'Suivi de vos paiements et des livraisons jusqu’à l’acte (escritura) à votre nom.'],
-      ['Dans votre langue', 'Nous vous répondons en français, espagnol et anglais, même si vous vivez hors du Paraguay.'],
+      ['Dans votre langue', 'Nous vous répondons en français, espagnol, anglais et portugais, même si vous vivez hors du Paraguay.'],
     ],
     faq_t: 'Questions fréquentes',
     faq: [
@@ -210,7 +210,7 @@ export const textos = {
       ['Choose with full information', 'We show you the available plots by stage and location, and arrange the site visit.'],
       ['Know what you sign', 'We review the contract with you before signing: price, instalments, delivery dates and retention of title.'],
       ['Follow-up to the end', 'We follow your payments and the deliveries until the deed is signed in your name.'],
-      ['In your language', 'Service in English, French and Spanish, even if you live outside Paraguay.'],
+      ['In your language', 'Service in English, French, Spanish and Portuguese, even if you live outside Paraguay.'],
     ],
     faq_t: 'Frequently asked questions',
     faq: [
@@ -289,7 +289,7 @@ export const textos = {
       ['Escolha com informação', 'Mostramos os lotes disponíveis por etapa e localização, e organizamos a visita.'],
       ['Assine sabendo o que assina', 'Revisamos o contrato com você antes de assinar: preço, parcelas, prazos de entrega e reserva de domínio.'],
       ['Acompanhamento até o fim', 'Acompanhamos seus pagamentos e as entregas até a escritura em seu nome.'],
-      ['No seu idioma', 'Atendimento em espanhol, francês e inglês, mesmo se você mora fora do Paraguai.'],
+      ['No seu idioma', 'Atendimento em português, espanhol, francês e inglês, mesmo se você mora fora do Paraguai.'],
     ],
     faq_t: 'Perguntas frequentes',
     faq: [

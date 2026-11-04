@@ -1,5 +1,6 @@
 ---
 titulo: ¿Cuánto vale realmente mi inmueble? Cómo se hace una tasación
+titulo_seo: "¿Cuánto vale mi inmueble? Cómo se hace una tasación"
 descripcion: «¿A qué precio lo publico?» Es la primera pregunta de casi todos los propietarios. Lo habitual es mirar los anuncios del barrio. Pero un anuncio muestra lo que alguien pide, no necesariamente lo que un comprador o un inquilino paga.
 categoria: guia
 tema: propietarios
@@ -8,6 +9,7 @@ fecha: 2026-10-08T07:47:00
 portada_foto: /uploads/La valeur immobilière à la loupe.png
 fr:
   titulo: Combien vaut vraiment mon bien ? Comment se fait une estimation
+  titulo_seo: "Combien vaut mon bien ? Comment se fait une estimation"
   descripcion: « À quel prix je le mets en ligne ? » C’est la première question de presque tous les propriétaires. Le réflexe est souvent de regarder les annonces du quartier. Mais une annonce montre ce que quelqu’un demande, pas nécessairement ce qu’un acheteur ou un locataire paie.
   cuerpo: |-
     Une estimation (_tasación_) sert à déterminer **une fourchette de valeur cohérente avec le marché et votre projet**.
@@ -134,6 +136,7 @@ en:
     - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Quanto vale realmente o meu imóvel? Como é feita uma avaliação'
+  titulo_seo: "Quanto vale o meu imóvel? Como é feita uma avaliação"
   descripcion: '«Por qual preço eu anuncio?» É a primeira pergunta de quase todos os proprietários. O habitual é olhar os anúncios do bairro. Mas um anúncio mostra o que alguém pede, não necessariamente o que um comprador ou um inquilino paga.'
   cuerpo: |-
     Uma avaliação serve para determinar **uma faixa de valor coerente com o mercado e com o seu projeto**.

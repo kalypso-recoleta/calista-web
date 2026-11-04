@@ -1,5 +1,6 @@
 ---
 titulo: 'Comprar para alquilar: de la rentabilidad bruta a lo que realmente te queda'
+titulo_seo: "Comprar para alquilar: lo que realmente te queda"
 descripcion: Cuando un departamento se anuncia «con renta», el número que aparece primero suele ser la rentabilidad bruta. Es útil, pero no representa lo que queda en el bolsillo del propietario.
 categoria: guia
 tema: invertir
@@ -8,6 +9,7 @@ fecha: 2026-10-08T06:38:00
 portada_foto: /uploads/Le panier des loyers face aux charges.png
 fr:
   titulo: 'Acheter pour louer : du rendement brut à ce qu’il vous reste réellement'
+  titulo_seo: "Acheter pour louer : ce qu’il vous reste réellement"
   descripcion: Lorsqu’un appartement est annoncé « avec revenu locatif », le premier chiffre mis en avant est souvent le rendement brut. Il est utile, mais ne représente pas ce qui reste dans la poche du propriétaire.
   cuerpo: |-
     Pour l’illustrer avec un cas concret, prenons un appartement que nous proposons à la vente : le **304 de l’immeuble Zandoli**, à Barrio Jara, Asunción. Il comprend une chambre et une place de stationnement, et il est loué jusqu’au **23 juin 2027**.
@@ -123,6 +125,7 @@ fr:
     - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 en:
   titulo: 'Buying to rent: from gross rental yield to what you actually keep'
+  titulo_seo: "Buying to rent: what you actually keep"
   descripcion: When an apartment is advertised as “income-producing,” the first figure highlighted is usually its gross rental yield. It is useful, but it does not represent what the owner actually keeps.
   cuerpo: |-
     To illustrate this with a real example, let’s look at an apartment we currently have for sale: **unit 304 in the Zandoli building**, in Barrio Jara, Asunción. It has one bedroom and a parking space, and is rented until **June 23, 2027**.
@@ -238,6 +241,7 @@ en:
     - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você'
+  titulo_seo: "Comprar para alugar: o que realmente sobra para você"
   descripcion: 'Quando um apartamento é anunciado «com renda», o número que aparece primeiro costuma ser a rentabilidade bruta. Ela é útil, mas não representa o que fica no bolso do proprietário.'
   cuerpo: |-
     Para ver isso com um caso real, usamos um apartamento que temos à venda: o **304 do edifício Zandoli**, no Barrio Jara, em Assunção. Tem um quarto e vaga de garagem, e está alugado até **23 de junho de 2027**.

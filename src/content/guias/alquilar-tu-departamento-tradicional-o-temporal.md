@@ -1,5 +1,6 @@
 ---
 titulo: 'Alquiler tradicional o temporal en Asunción: ¿qué te conviene?'
+titulo_seo: "Alquiler tradicional o temporal en Asunción: ¿qué conviene?"
 descripcion: Si tenés un departamento en Asunción, podés alquilarlo con un contrato tradicional o en alquiler temporal amoblado. Las dos opciones pueden funcionar bien, pero requieren una gestión diferente.
 categoria: guia
 tema: alquilar
@@ -8,6 +9,7 @@ fecha: 2026-10-07
 portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.png
 fr:
   titulo: 'Location classique ou temporaire à Asunción : quelle option choisir ?'
+  titulo_seo: "Location classique ou temporaire à Asunción : que choisir ?"
   descripcion: Si vous possédez un appartement à Asunción, vous pouvez le louer avec un bail classique ou le proposer en location temporaire meublée. Les deux options peuvent fonctionner, mais elles nécessitent une gestion différente.
   cuerpo: |-
     Le choix dépend de votre appartement, de vos objectifs et du temps pendant lequel vous voulez pouvoir l’utiliser vous-même.
@@ -86,6 +88,7 @@ fr:
     - [Préparer un appartement meublé pour la location](/fr/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 en:
   titulo: 'Traditional or short-term rentals in Asunción: which option is right for you?'
+  titulo_seo: "Traditional or short-term rental in Asunción: which one?"
   descripcion: If you own an apartment in Asunción, you can rent it out under a traditional lease or offer it as a furnished short-term rental. Both options can work well, but they require different approaches to management.
   cuerpo: |-
     The right choice depends on your apartment, your goals and how much you want to be able to use it yourself.
@@ -164,6 +167,7 @@ en:
     - [How to prepare a furnished apartment for rent](/en/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 pt:
   titulo: 'Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?'
+  titulo_seo: "Aluguel tradicional ou de temporada em Assunção?"
   descripcion: 'Se você tem um apartamento em Assunção, pode alugá-lo com um contrato tradicional ou como aluguel de temporada mobiliado. As duas opções podem funcionar bem, mas exigem uma gestão diferente.'
   cuerpo: |-
     A escolha depende do seu apartamento, dos seus objetivos e da disponibilidade que você quer manter para usá-lo.

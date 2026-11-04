@@ -1,5 +1,6 @@
 ---
 titulo: 'Asunción crece en altura: ¿construimos lo que la gente necesita?'
+titulo_seo: "Asunción crece en altura: ¿construimos lo necesario?"
 descripcion: 'Nuevos edificios, alquileres y expensas incluidas: por qué vender un departamento no garantiza alquilarlo al precio que espera el inversor.'
 categoria: guia
 tema: invertir
@@ -8,6 +9,7 @@ fecha: 2026-10-25T18:00:00
 portada_foto: /uploads/asuncion-crece-en-altura.jpg
 fr:
   titulo: 'Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?'
+  titulo_seo: "Asunción grandit en hauteur : pour quels besoins ?"
   descripcion: 'Nouveaux immeubles, loyers et charges comprises : pourquoi vendre un appartement ne garantit pas de le louer au prix attendu par l’investisseur.'
   cuerpo: |-
     **Les immeubles se vendent à des acheteurs et à des investisseurs. Mais leur fonctionnement à long terme dépend aussi de ceux qui vont y vivre : leurs besoins, leurs revenus et le budget qu’ils sont prêts à consacrer au logement.**
@@ -119,6 +121,7 @@ fr:
     - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 en:
   titulo: 'Asunción is growing upwards: are we building what people need?'
+  titulo_seo: "Asunción is growing upwards: is it what people need?"
   descripcion: 'New buildings, rents and included condominium fees: why selling an apartment does not guarantee renting it at the price the investor expects.'
   cuerpo: |-
     **Buildings are sold to buyers and investors. But how they perform in the long run also depends on the people who will live in them: their needs, their incomes and the budget they are willing to spend on housing.**
@@ -230,6 +233,7 @@ en:
     - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 pt:
   titulo: 'Assunção cresce na vertical: estamos construindo o que as pessoas precisam?'
+  titulo_seo: "Assunção cresce na vertical: é o que as pessoas precisam?"
   descripcion: 'Novos edifícios, aluguéis e condomínio incluído: por que vender um apartamento não garante alugá-lo pelo preço que o investidor espera.'
   cuerpo: |-
     **Os edifícios são vendidos a compradores e investidores. Mas seu funcionamento a longo prazo depende também de quem vai morar neles: suas necessidades, sua renda e o orçamento que estão dispostos a destinar à moradia.**

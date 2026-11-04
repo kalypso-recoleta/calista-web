@@ -16,21 +16,24 @@
  * de Places API (New). On compte donc nous-mêmes les appels du jour
  * (Netlify Blobs) : au-delà de LIMITE_DIARIA, on ne contacte plus Google
  * et le site affiche simplement les avis saisis à la main.
- * 30/jour ≈ 900/mois, sous les 1 000 appels gratuits mensuels de Google.
+ * 30 appels Google/jour ≈ 900/mois, sous les 1 000 appels gratuits mensuels de Google.
+ * Chaque visite qui charge les avis consomme 2 appels (espagnol + anglais),
+ * donc environ 15 visites par jour reçoivent les avis Google ; au-delà, les
+ * avis saisis à la main s'affichent.
  */
 
 import { getStore } from '@netlify/blobs';
 
 const LIMITE_DIARIA = 30;
 
-/** Renvoie true si on peut encore appeler Google aujourd'hui (et compte l'appel). */
-async function cupoDisponible() {
+/** Renvoie true si on peut encore appeler Google aujourd'hui (et compte les appels). */
+async function cupoDisponible(llamadas = 1) {
   try {
     const store = getStore('google-resenas');
     const clave = `llamadas-${new Date().toISOString().slice(0, 10)}`; // jour UTC
     const n = Number((await store.get(clave)) ?? 0);
-    if (n >= LIMITE_DIARIA) return false;
-    await store.set(clave, String(n + 1));
+    if (n + llamadas > LIMITE_DIARIA) return false;
+    await store.set(clave, String(n + llamadas));
     return true;
   } catch {
     // Si le compteur est indisponible, on ne bloque pas le site.
@@ -54,15 +57,20 @@ export default async (req) => {
   const placeId = process.env.GOOGLE_PLACE_ID;
   if (!key || !placeId) return json({ error: 'sin-configurar' }, 503);
 
-  if (!(await cupoDisponible())) return json({ error: 'cupo-diario' }, 429);
+  if (!(await cupoDisponible(2))) return json({ error: 'cupo-diario' }, 429);
 
   const pedido = new URL(req.url).searchParams.get('lang');
   const lang = LANGS.includes(pedido) ? pedido : 'es';
 
-  let res;
-  try {
-    res = await fetch(
-      `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=${lang === 'pt' ? 'pt-BR' : lang}`,
+  // Google ne renvoie que 5 avis par appel, choisis selon la langue demandée.
+  // Pour afficher des avis de toutes les langues sur toutes les pages, on
+  // interroge Google en espagnol ET en anglais (2 appels), puis on fusionne.
+  // L'avis est toujours affiché dans sa langue d'origine.
+  const IDIOMAS_GOOGLE = ['es', 'en'];
+
+  const llamar = async (idioma) => {
+    const r = await fetch(
+      `https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}?languageCode=${idioma}`,
       {
         headers: {
           'X-Goog-Api-Key': key,
@@ -71,18 +79,29 @@ export default async (req) => {
         },
       }
     );
+    if (!r.ok) throw new Error(`google ${r.status}`);
+    return r.json();
+  };
+
+  let respuestas;
+  try {
+    respuestas = await Promise.allSettled(IDIOMAS_GOOGLE.map(llamar));
   } catch {
     return json({ error: 'red' }, 502);
   }
+  const ok = respuestas.filter((x) => x.status === 'fulfilled').map((x) => x.value);
   // Quota du jour atteint, clé invalide… : le site garde ses avis habituels.
-  if (!res.ok) return json({ error: 'google', status: res.status }, 502);
+  if (!ok.length) return json({ error: 'google' }, 502);
+  const d = ok[0];
 
-  const d = await res.json();
-  const resenas = (d.reviews ?? [])
+  const vistos = new Set();
+  const resenas = ok
+    .flatMap((x) => x.reviews ?? [])
     .map((r) => ({
       estrellas: r.rating ?? 0,
       // Texte original de l'avis (pas la traduction automatique)
       texto: r.originalText?.text ?? r.text?.text ?? '',
+      idioma: (r.originalText?.languageCode ?? '').slice(0, 2),
       cuando: r.relativePublishTimeDescription ?? '',
       publicado: r.publishTime ?? '',
       autor: r.authorAttribution?.displayName ?? '',
@@ -91,8 +110,15 @@ export default async (req) => {
       url: r.googleMapsUri ?? '',
       reportar: r.flagContentUri ?? '',
     }))
-    // Les plus récents d'abord
-    .sort((a, b) => (b.publicado > a.publicado ? 1 : -1));
+    // Un même avis peut revenir dans les deux appels : on le garde une fois
+    .filter((r) => {
+      const id = r.url || `${r.autor}|${r.publicado}`;
+      if (vistos.has(id)) return false;
+      vistos.add(id);
+      return true;
+    })
+    // D'abord les avis écrits dans la langue de la page, puis les plus récents
+    .sort((a, b) => (b.idioma === lang) - (a.idioma === lang) || (b.publicado > a.publicado ? 1 : -1));
 
   return json({
     nota: d.rating ?? null,

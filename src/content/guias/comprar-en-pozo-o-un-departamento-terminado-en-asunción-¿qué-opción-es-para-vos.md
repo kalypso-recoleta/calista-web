@@ -1,5 +1,6 @@
 ---
 titulo: 'Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?'
+titulo_seo: "¿Comprar en pozo o terminado en Asunción?"
 descripcion: 'Precio, plazos, forma de pago y alquiler: las diferencias que conviene conocer para elegir un departamento acorde a tu proyecto.'
 categoria: guia
 tema: comprar
@@ -8,6 +9,7 @@ fecha: 2026-10-09T18:56:00
 portada_foto: /uploads/Du plan à l’appartement d’Asunción.png
 fr:
   titulo: 'Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?'
+  titulo_seo: "Acheter sur plan ou livré à Asunción : que choisir ?"
   descripcion: 'Prix, calendrier, paiement et mise en location : les différences à connaître pour choisir un appartement adapté à votre projet.'
   cuerpo: |-
     Vous souhaitez acheter un appartement à Asunción, mais vous hésitez entre un programme en construction — appelé **en pozo** au Paraguay — et un logement déjà terminé ?
@@ -102,6 +104,7 @@ fr:
     - [Biens à vendre](/fr/comprar/)
 en:
   titulo: 'Buying off-plan or a completed apartment in Asunción: which is right for you?'
+  titulo_seo: "Off-plan or completed apartment in Asunción?"
   descripcion: 'Price, timing, payment terms and rental income: the differences to consider when choosing an apartment that fits your plans.'
   cuerpo: |-
     Are you looking to buy an apartment in Asunción and deciding between a development under construction — known locally as **en pozo** — and a completed property?
@@ -196,6 +199,7 @@ en:
     - [Properties for sale](/en/comprar/)
 pt:
   titulo: 'Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?'
+  titulo_seo: "Na planta ou pronto em Assunção: qual escolher?"
   descripcion: 'Preço, prazos, forma de pagamento e aluguel: as diferenças que vale a pena conhecer para escolher um apartamento de acordo com o seu projeto.'
   cuerpo: |-
     Você quer comprar um apartamento em Assunção e está em dúvida entre um projeto em construção — conhecido como **na planta** (em espanhol, *en pozo*) — e uma unidade já pronta?

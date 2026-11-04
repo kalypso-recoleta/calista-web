@@ -1,5 +1,6 @@
 ---
 titulo: 'Precios en alza y capital brasileño: ¿quién compra hoy en Paraguay?'
+titulo_seo: "Precios en alza y capital brasileño: ¿quién compra hoy?"
 descripcion: Los nuevos desarrollos suben hasta un 25% y Paraguay atrae capital brasileño. ¿Quién puede absorber estos precios y con qué rentabilidad?
 categoria: actualidad
 tema: invertir
@@ -8,6 +9,7 @@ fecha: 2026-10-31T08:00:00
 portada_foto: /uploads/precios-en-alza-capital-brasileno.jpg
 fr:
   titulo: 'Prix en hausse et capitaux brésiliens : qui achète aujourd’hui au Paraguay ?'
+  titulo_seo: "Prix en hausse et capitaux brésiliens : qui achète ?"
   descripcion: Les programmes neufs augmentent jusqu’à 25 % et le Paraguay attire les capitaux brésiliens. Qui peut suivre ces prix, et pour quel rendement ?
   cuerpo: |-
     ## Deux actualités à lire ensemble
@@ -87,6 +89,7 @@ fr:
     - [Pulso real estate: el 75% de las compras inmobiliarias son para inversión y 25% son de compradores finales](https://infonegocios.com.py/nota-principal/pulso-real-estate-el-75-de-las-compras-inmobiliarias-son-para-inversion-y-25-son-de-compradores-finales), InfoNegocios, 24 juin 2026.
 en:
   titulo: 'Rising prices and Brazilian capital: who is buying in Paraguay today?'
+  titulo_seo: "Rising prices and Brazilian capital: who is buying?"
   descripcion: New developments are up to 25% more expensive and Paraguay is drawing Brazilian capital. Who can absorb these prices, and at what return?
   cuerpo: |-
     ## Two news items worth reading together
@@ -166,6 +169,7 @@ en:
     - [Pulso real estate: el 75% de las compras inmobiliarias son para inversión y 25% son de compradores finales](https://infonegocios.com.py/nota-principal/pulso-real-estate-el-75-de-las-compras-inmobiliarias-son-para-inversion-y-25-son-de-compradores-finales), InfoNegocios, June 24, 2026.
 pt:
   titulo: 'Preços em alta e capital brasileiro: quem compra hoje no Paraguai?'
+  titulo_seo: "Preços em alta e capital brasileiro: quem compra hoje?"
   descripcion: Os novos empreendimentos sobem até 25% e o Paraguai atrai capital brasileiro. Quem consegue absorver esses preços, e com que rentabilidade?
   cuerpo: |-
     ## Duas notícias para ler juntas

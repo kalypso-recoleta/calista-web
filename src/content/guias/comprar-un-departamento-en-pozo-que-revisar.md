@@ -8,6 +8,7 @@ fecha: 2026-10-07
 portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.png
 fr:
   titulo: "Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer"
+  titulo_seo: "Acheter sur plan : quoi vérifier avant de signer"
   descripcion: 'Prix, date de livraison, clauses interdites, garanties : les points à contrôler dans un contrat de vente sur plan au Paraguay.'
   cuerpo: |-
     Acheter sur plan permet de payer en mensualités pendant le chantier et de choisir son logement parmi les premiers. En contrepartie, vous signez un contrat portant sur un bien qui n'existe pas encore. Voici les points à vérifier.
@@ -156,6 +157,7 @@ en:
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
+  titulo_seo: "Apartamento na planta: o que verificar antes de assinar"
   descripcion: 'Preço, data de entrega, cláusulas proibidas, garantias: os pontos a verificar em um contrato de pré-venda no Paraguai.'
   cuerpo: |-
     Comprar na planta permite pagar em parcelas durante a obra e escolher sua unidade entre as primeiras. Em troca, você assina um contrato sobre algo que ainda não existe. Estes são os pontos que vale a pena verificar.

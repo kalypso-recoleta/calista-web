@@ -1,5 +1,6 @@
 ---
 titulo: 'Comprar un lote en un barrio cerrado: ventajas y puntos de atención'
+titulo_seo: "Lote en barrio cerrado: ventajas y puntos de atención"
 descripcion: 'Servicios, amenities y entorno natural, pero también obras largas, reglas de construcción y un desarrollador que administra: lo que hay que saber antes de comprar un lote en un barrio cerrado en Paraguay.'
 categoria: guia
 tema: comprar
@@ -8,6 +9,7 @@ fecha: 2026-10-29T20:20:00
 portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.png
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
+  titulo_seo: "Terrain en résidence fermée : atouts et points de vigilance"
   descripcion: "Réseaux, équipements et cadre naturel, mais aussi travaux longs, règles de construction et promoteur administrateur : ce qu’il faut savoir avant d’acheter un lot en résidence fermée au Paraguay."
   cuerpo: |-
     Acheter un terrain dans une résidence fermée, ou barrio cerrado, permet d’envisager sa maison dans un ensemble aménagé, avec des espaces communs et un accès contrôlé. Ces projets se multiplient autour d’Asunción : à Luque, à Areguá et un peu partout dans le département Central.
@@ -102,6 +104,7 @@ fr:
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
+  titulo_seo: "Buying a plot in a gated community: pros and watch-outs"
   descripcion: 'Utilities, amenities and a natural setting, but also long works, building rules and a developer who runs the community: what to know before buying a plot in a gated community in Paraguay.'
   cuerpo: |-
     Buying a plot in a gated community, or barrio cerrado, lets you plan your home within a developed estate, with shared spaces and controlled access. These projects are multiplying around Asunción: in Luque, in Areguá and across the Central department.
@@ -196,6 +199,7 @@ en:
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
+  titulo_seo: "Lote em condomínio fechado: vantagens e pontos de atenção"
   descripcion: 'Infraestrutura, áreas de lazer e natureza, mas também obras longas, regras de construção e um desenvolvedor que administra: o que saber antes de comprar um lote em condomínio fechado no Paraguai.'
   cuerpo: |-
     Comprar um lote em condomínio fechado, ou barrio cerrado, permite planejar a sua casa num conjunto urbanizado, com áreas comuns e acesso controlado. Esses projetos se multiplicam ao redor de Assunção: em Luque, em Areguá e em todo o departamento Central.

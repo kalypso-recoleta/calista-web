@@ -424,6 +424,7 @@ collections:
     sortable_fields: [fecha, titulo]
     fields:
       - { label: Título, name: titulo, widget: string }
+      - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false, hint: 'Opcional. Título corto que aparece en Google y en la pestaña del navegador. Vacío = el título del artículo.' }
       - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
       - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
       - { label: Tema, name: tema, widget: select, required: false, hint: 'Agrupa el artículo en una página por tema (ej. calista.com.py/blog/tema/alquilar).', options: [{ label: 'Comprar', value: comprar }, { label: 'Alquilar (tradicional o temporal)', value: alquilar }, { label: 'Invertir (rentabilidad, renta)', value: invertir }, { label: 'Propietarios (vender, tasar, administrar)', value: propietarios }, { label: 'Vivir en Paraguay (extranjeros)', value: vivir }, { label: 'Mercado (precios, tendencias, economía)', value: mercado }] }
@@ -439,6 +440,7 @@ collections:
         hint: 'Lo que se ve en la versión francesa del sitio. Si un campo queda vacío, se muestra el español.'
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇬🇧 Traducción al inglés'
@@ -449,6 +451,7 @@ collections:
         hint: 'Lo que se ve en la versión inglesa del sitio. Si un campo queda vacío, se muestra el español.'
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇧🇷 Traducción al portugués (Brasil)'
@@ -459,6 +462,7 @@ collections:
         hint: 'Lo que se ve en la versión portuguesa del sitio. Si un campo queda vacío, se muestra el español.'
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
+          - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
 
@@ -481,6 +485,7 @@ collections:
       - { label: 'Toda la ciudad', name: toda_la_ciudad, widget: boolean, default: false, hint: 'Marcar para una ciudad entera (ej. Luque): incluye todas sus propiedades, sin importar el barrio.' }
       - { label: 'Otras formas de escribirlo', name: alias, widget: list, required: false, hint: 'Cómo puede aparecer el barrio en las propiedades, ej. "Villa Mora". Mayúsculas, acentos y la palabra «Barrio» no importan.' }
       - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+      - { label: 'Texto sobre el barrio', name: texto, widget: markdown, required: false, hint: 'Se muestra debajo de las propiedades: ubicación, servicios, ambiente. Empezá con un título «## Vivir en …».' }
       - label: '🇫🇷 Traducción al francés'
         name: fr
         widget: object
@@ -488,6 +493,7 @@ collections:
         required: false
         fields:
           - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+          - { label: 'Texto sobre el barrio', name: texto, widget: markdown, required: false }
       - label: '🇬🇧 Traducción al inglés'
         name: en
         widget: object
@@ -495,6 +501,7 @@ collections:
         required: false
         fields:
           - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+          - { label: 'Texto sobre el barrio', name: texto, widget: markdown, required: false }
       - label: '🇧🇷 Traducción al portugués (Brasil)'
         name: pt
         widget: object
@@ -502,3 +509,4 @@ collections:
         required: false
         fields:
           - { label: 'Texto de presentación', name: intro, widget: text, required: false }
+          - { label: 'Texto sobre el barrio', name: texto, widget: markdown, required: false }

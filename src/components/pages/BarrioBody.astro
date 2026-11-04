@@ -6,7 +6,8 @@
 import BannerAregua from '../aregua/BannerAregua.astro';
 import Layout from '../../layouts/Layout.astro';
 import ListadoBiens from '../ListadoBiens.astro';
-import { estaActivo } from '../../lib/format';
+import { marked } from 'marked';
+import { estaActivo, formatPrecio } from '../../lib/format';
 import { zonasConBienes, type Zona } from '../../lib/barrios';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
@@ -17,21 +18,44 @@ const L = (p: string) => localizePath(p, lang);
 
 const lugar = zona.nombre === zona.ciudad ? zona.nombre : `${zona.nombre}, ${zona.ciudad}`;
 const TXT = {
-  es: { eyebrow: 'Barrios', h1: `Propiedades en ${zona.nombre}`, meta: `Propiedades en venta y alquiler en ${lugar}`, otros: 'Otros barrios', todos: 'Ver todos los barrios' },
-  fr: { eyebrow: 'Quartiers', h1: `Biens à ${zona.nombre}`, meta: `Biens à vendre et à louer à ${lugar}`, otros: 'Autres quartiers', todos: 'Voir tous les quartiers' },
-  en: { eyebrow: 'Neighbourhoods', h1: `Properties in ${zona.nombre}`, meta: `Properties for sale and rent in ${lugar}`, otros: 'Other neighbourhoods', todos: 'See all neighbourhoods' },
-  pt: { eyebrow: 'Bairros', h1: `Imóveis em ${zona.nombre}`, meta: `Imóveis à venda e para alugar em ${lugar}`, otros: 'Outros bairros', todos: 'Ver todos os bairros' },
+  es: { eyebrow: 'Barrios', h1: `Propiedades en ${zona.nombre}`, meta: `Propiedades en venta y alquiler en ${lugar}`, otros: 'Otros barrios', todos: 'Ver todos los barrios', cifras: `${zona.nombre} con CALISTA, hoy`, venta: 'En venta', alquiler: 'En alquiler', prop: (n: number) => (n === 1 ? '1 propiedad' : `${n} propiedades`), desde: 'desde', hasta: 'hasta', nota: 'Datos calculados automáticamente a partir de nuestras propiedades publicadas.' },
+  fr: { eyebrow: 'Quartiers', h1: `Biens à ${zona.nombre}`, meta: `Biens à vendre et à louer à ${lugar}`, otros: 'Autres quartiers', todos: 'Voir tous les quartiers', cifras: `${zona.nombre} chez CALISTA, aujourd'hui`, venta: 'À vendre', alquiler: 'À louer', prop: (n: number) => (n === 1 ? '1 bien' : `${n} biens`), desde: 'à partir de', hasta: "jusqu'à", nota: 'Chiffres calculés automatiquement à partir de nos annonces en ligne.' },
+  en: { eyebrow: 'Neighbourhoods', h1: `Properties in ${zona.nombre}`, meta: `Properties for sale and rent in ${lugar}`, otros: 'Other neighbourhoods', todos: 'See all neighbourhoods', cifras: `${zona.nombre} at CALISTA, today`, venta: 'For sale', alquiler: 'For rent', prop: (n: number) => (n === 1 ? '1 property' : `${n} properties`), desde: 'from', hasta: 'up to', nota: 'Figures calculated automatically from our published listings.' },
+  pt: { eyebrow: 'Bairros', h1: `Imóveis em ${zona.nombre}`, meta: `Imóveis à venda e para alugar em ${lugar}`, otros: 'Outros bairros', todos: 'Ver todos os bairros', cifras: `${zona.nombre} na CALISTA, hoje`, venta: 'À venda', alquiler: 'Para alugar', prop: (n: number) => (n === 1 ? '1 imóvel' : `${n} imóveis`), desde: 'a partir de', hasta: 'até', nota: 'Dados calculados automaticamente a partir dos nossos anúncios publicados.' },
 }[lang as 'es' | 'fr' | 'en' | 'pt'] ?? null;
 const x = TXT!;
 
 const d = zona.entry.data;
 const intro = (lang !== 'es' ? d[lang]?.intro : undefined)?.trim() || d.intro || '';
+// Texte long sur le quartier (markdown) : celui de la langue, sinon l'espagnol.
+// Un « # Titre » devient un H2 (la page a déjà son H1).
+const textoMd = ((lang !== 'es' ? d[lang]?.texto : undefined)?.trim() || d.texto?.trim() || '').replace(/^# (?=\S)/gm, '## ');
+const textoHtml = textoMd ? (marked.parse(textoMd, { async: false }) as string) : '';
 
 // Disponibles d'abord, puis les plus récents
 const biens = [...zona.bienes].sort(
   (a, b) => Number(estaActivo(b.data)) - Number(estaActivo(a.data)) || +b.data.fecha - +a.data.fecha
 );
 const otras = (await zonasConBienes()).filter((z) => z.slug !== zona.slug);
+
+// Repères chiffrés, recalculés à chaque publication : nombre de biens actifs et fourchette de prix
+// par opération (vente / location) et par devise.
+const activos = zona.bienes.filter((b) => estaActivo(b.data) && b.data.precio > 0);
+const cifras = (['venta', 'alquiler'] as const)
+  .map((op) => {
+    const lista = activos.filter((b) => b.data.operacion === op);
+    const rangos = (['USD', 'PYG'] as const)
+      .map((moneda) => {
+        const precios = lista.filter((b) => b.data.moneda === moneda).sort((a, b) => a.data.precio - b.data.precio);
+        if (!precios.length) return null;
+        const min = formatPrecio(precios[0].data, lang as 'es');
+        const max = formatPrecio(precios[precios.length - 1].data, lang as 'es');
+        return min === max ? min : `${x.desde} ${min} ${x.hasta} ${max}`;
+      })
+      .filter(Boolean);
+    return lista.length ? { etiqueta: x[op], n: x.prop(lista.length), rangos } : null;
+  })
+  .filter(Boolean) as { etiqueta: string; n: string; rangos: string[] }[];
 const description = `${x.meta}. ${intro}`.trim();
 ---
 
@@ -39,6 +63,27 @@ const description = `${x.meta}. ${intro}`.trim();
   <ListadoBiens eyebrow={`${x.eyebrow} · ${zona.ciudad}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros>
     {zona.slug === 'aregua' && <BannerAregua slot="intro" />}
   </ListadoBiens>
+  {(textoHtml || cifras.length > 0) && (
+    <section class="section barrio-info">
+      <div class="container info-grid">
+        {textoHtml && <div class="prose texto-barrio"><Fragment set:html={textoHtml} /></div>}
+        {cifras.length > 0 && (
+          <aside class="cifras">
+            <h2>{x.cifras}</h2>
+            <dl>
+              {cifras.map((c) => (
+                <div>
+                  <dt>{c.etiqueta}</dt>
+                  <dd><strong>{c.n}</strong>{c.rangos.map((r) => <span>{r}</span>)}</dd>
+                </div>
+              ))}
+            </dl>
+            <p class="nota">{x.nota}</p>
+          </aside>
+        )}
+      </div>
+    </section>
+  )}
   {otras.length > 0 && (
     <section class="section otras">
       <div class="container">
@@ -53,6 +98,20 @@ const description = `${x.meta}. ${intro}`.trim();
 </Layout>
 
 <style>
+  .barrio-info { padding-top: 0; }
+  .info-grid { display: grid; gap: 2rem; align-items: start; }
+  @media (min-width: 900px) { .info-grid { grid-template-columns: minmax(0, 1fr) 320px; } }
+  .texto-barrio { max-width: 68ch; }
+  .texto-barrio :global(h2) { margin: 0 0 0.8rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); font-size: 1.3rem; }
+  .texto-barrio :global(p) { margin: 0 0 1rem; line-height: 1.65; }
+  .cifras { border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 1.2rem 1.3rem; }
+  .cifras h2 { margin: 0 0 0.9rem; font-size: 1.05rem; }
+  .cifras dl { margin: 0; display: grid; gap: 0.9rem; }
+  .cifras dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+  .cifras dd { margin: 0.2rem 0 0; display: flex; flex-direction: column; gap: 0.15rem; }
+  .cifras dd strong { color: var(--brand); }
+  .cifras dd span { font-size: 0.92rem; }
+  .cifras .nota { margin: 1rem 0 0; font-size: 0.78rem; color: var(--muted); }
   .otras { padding-top: 0; }
   .otras h2 { margin: 0 0 1rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); font-size: 1.3rem; }
   .chips { list-style: none; margin: 0 0 1rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
