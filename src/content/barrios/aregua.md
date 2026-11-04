@@ -11,6 +11,11 @@ texto: |-
 
   El cerro Kõi, declarado Monumento Natural en 1993, es famoso por sus formaciones de arenisca en forma de panal de abejas. La antigua estación de tren es hoy el centro cultural «Estación A», y cada año, en agosto, la ciudad celebra el Festival de la Frutilla.
 
+  ## Por qué vivir en Areguá
+
+  - **Una ciudad cultural y turística:** cerámica, arquitectura colonial, el cerro Kõi y el lago Ypacaraí.
+  - **Cerca de Luque y de Asunción:** naturaleza y tranquilidad sin alejarse de la capital.
+
   Antigua ciudad de veraneo de escritores y artistas, Areguá es una alternativa para quien busca naturaleza y tranquilidad cerca de la capital. Allí se encuentra [Areguá Forest](/terrenos/aregua-forest), un barrio cerrado de 39 hectáreas forestadas cuyos lotes comercializamos.
 fr:
   intro: Areguá est une ville du département Central, au bord du lac Ypacaraí.
@@ -20,6 +25,11 @@ fr:
     Areguá est le chef-lieu du département Central, au bord du lac Ypacaraí, à environ 22 km d'Asunción. Connue comme la ville de la céramique et de la fraise, elle conserve des maisons coloniales à larges galeries ; l'Avenida del Lago, qui descend vers le lac, a été déclarée patrimoine national en 1997.
 
     Le cerro Kõi, déclaré monument naturel en 1993, est célèbre pour ses formations de grès en nid d'abeilles. L'ancienne gare est aujourd'hui le centre culturel « Estación A », et chaque année, en août, la ville célèbre le Festival de la fraise.
+
+    ## Pourquoi vivre à Areguá
+
+    - **Une ville culturelle et touristique :** céramique, architecture coloniale, le cerro Kõi et le lac Ypacaraí.
+    - **Près de Luque et d'Asunción :** nature et calme sans s'éloigner de la capitale.
 
     Ancienne ville de villégiature d'écrivains et d'artistes, Areguá est une option pour qui cherche nature et tranquillité près de la capitale. C'est là que se trouve [Areguá Forest](/fr/terrenos/aregua-forest), une résidence fermée de 39 hectares boisés dont nous commercialisons les terrains.
 en:
@@ -31,6 +41,11 @@ en:
 
     Cerro Kõi, declared a Natural Monument in 1993, is famous for its honeycomb-shaped sandstone formations. The old railway station is now the "Estación A" cultural centre, and every August the town holds its Strawberry Festival.
 
+    ## Why live in Areguá
+
+    - **A cultural and tourist town:** ceramics, colonial architecture, Cerro Kõi and Lake Ypacaraí.
+    - **Close to Luque and Asunción:** nature and peace without moving away from the capital.
+
     Once a summer retreat for writers and artists, Areguá is an option for those looking for nature and peace close to the capital. It is home to [Areguá Forest](/en/terrenos/aregua-forest), a 39-hectare wooded gated community whose plots we market.
 pt:
   intro: Areguá é uma cidade do departamento Central, às margens do lago Ypacaraí.
@@ -40,6 +55,11 @@ pt:
     Areguá é a capital do departamento Central, às margens do lago Ypacaraí, a cerca de 22 km de Assunção. Conhecida como a cidade da cerâmica e do morango, conserva casas coloniais com amplas varandas; a Avenida del Lago, que desce até o lago, foi declarada Patrimônio Nacional em 1997.
 
     O cerro Kõi, declarado Monumento Natural em 1993, é famoso por suas formações de arenito em forma de favo de mel. A antiga estação de trem é hoje o centro cultural «Estación A», e todo ano, em agosto, a cidade celebra o Festival do Morango.
+
+    ## Por que morar em Areguá
+
+    - **Uma cidade cultural e turística:** cerâmica, arquitetura colonial, o cerro Kõi e o lago Ypacaraí.
+    - **Perto de Luque e de Assunção:** natureza e tranquilidade sem se afastar da capital.
 
     Antiga cidade de veraneio de escritores e artistas, Areguá é uma alternativa para quem busca natureza e tranquilidade perto da capital. Ali fica o [Areguá Forest](/pt/terrenos/aregua-forest), um condomínio fechado de 39 hectares arborizados cujos lotes comercializamos.
 ---
