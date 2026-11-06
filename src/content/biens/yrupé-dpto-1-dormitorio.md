@@ -32,7 +32,7 @@ imagenes:
 descripcion: 'Departamento amoblado de un dormitorio en Mburucuyá, primera Residencia Kalypso: un gran mural de yrupés, balcón, cocina equipada y aire acondicionado. De 7 días a 6 meses, en trato directo.'
 gama: kalypso
 residencia: YRUPÉ
-huespedes: 4
+huespedes: 2
 tarifas:
   - duracion: s1
     precio: 245
