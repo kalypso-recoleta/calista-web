@@ -3,7 +3,7 @@ titulo: "Depto 2 dorm · 81 m² – Edificio Life De Gaulle, Recoleta"
 en_linea: true
 operacion: alquiler
 tipo: departamento
-estado: disponible
+estado: alquilado
 destacado: true
 lateral: true
 portada: true

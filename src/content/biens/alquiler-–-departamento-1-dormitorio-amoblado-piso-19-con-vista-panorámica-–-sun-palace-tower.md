@@ -3,7 +3,7 @@ titulo: "Depto 1 dorm amoblado · 42,7 m² – Sun Palace Tower, Las Lomas"
 en_linea: true
 operacion: alquiler
 tipo: departamento
-estado: disponible
+estado: alquilado
 destacado: true
 lateral: true
 portada: false
