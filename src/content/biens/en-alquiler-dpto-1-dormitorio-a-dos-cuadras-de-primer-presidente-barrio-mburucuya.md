@@ -1,5 +1,5 @@
 ---
-titulo: En Alquiler dpto 1 dormitorio a dos cuadras de Primer presidente Barrio Mburucuya
+titulo: "Depto 1 dorm · 48 m² – Mburucuyá"
 en_linea: false
 operacion: alquiler
 tipo: departamento
@@ -35,7 +35,7 @@ descripcion: |-
   - Balcón
 gama: otros
 fr:
-  titulo: 'À louer : appartement 1 chambre à deux rues de Primer Presidente, quartier Mburucuyá'
+  titulo: "Appartement 1 ch. · 48 m² – Mburucuyá"
   descripcion: |-
     Appartement neuf et lumineux d'une chambre, idéal pour une personne ou un couple.
     Il comprend :
@@ -44,7 +44,7 @@ fr:
     - Chambre avec placard et climatisation
     - Balcon
 en:
-  titulo: 'For rent: 1-bedroom apartment two blocks from Primer Presidente, Mburucuyá'
+  titulo: "1-bed apartment · 48 m² – Mburucuyá"
   descripcion: |-
     Brand-new, bright 1-bedroom apartment, ideal for one person or a couple.
     It includes:

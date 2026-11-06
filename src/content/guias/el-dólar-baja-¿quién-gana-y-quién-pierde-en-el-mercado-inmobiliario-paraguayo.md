@@ -6,7 +6,7 @@ categoria: actualidad
 tema: mercado
 borrador: false
 fecha: 2026-10-08T06:27:00
-portada_foto: /uploads/Dollar en chute, construction en essor.png
+portada_foto: /uploads/Dollar en chute, construction en essor.jpg
 fr:
   titulo: 'Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?'
   titulo_seo: "Le dollar baisse : gagnants et perdants de l’immobilier"

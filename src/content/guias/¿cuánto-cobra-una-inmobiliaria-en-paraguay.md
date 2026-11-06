@@ -5,7 +5,7 @@ categoria: guia
 tema: propietarios
 borrador: false
 fecha: 2026-10-19T13:21:00
-portada_foto: /uploads/La clé d’une transaction réussie.png
+portada_foto: /uploads/La clé d’une transaction réussie.jpg
 fr:
   titulo: Combien coûte une agence immobilière au Paraguay ?
   descripcion: 'Commissions de vente et de location, répartition des honoraires et services inclus : ce qu’il faut savoir avant de s’engager.'

@@ -6,7 +6,7 @@ categoria: guia
 tema: alquilar
 borrador: false
 fecha: 2026-10-07
-portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.png
+portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.jpg
 fr:
   titulo: 'Location classique ou temporaire à Asunción : quelle option choisir ?'
   titulo_seo: "Location classique ou temporaire à Asunción : que choisir ?"

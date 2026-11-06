@@ -6,7 +6,7 @@ categoria: actualidad
 tema: mercado
 borrador: false
 fecha: 2026-10-19T14:13:00
-portada_foto: /uploads/Le joyau résidentiel sous verre.png
+portada_foto: /uploads/Le joyau résidentiel sous verre.jpg
 fr:
   titulo: 'Résidences de marque à Asunción : existe-t-il un marché pour ce niveau de luxe ?'
   titulo_seo: "Résidences de marque à Asunción : y a-t-il un marché ?"

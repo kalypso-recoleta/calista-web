@@ -1,5 +1,5 @@
 ---
-titulo: Espacio para toda la familia Dpto 2 dormitorios, en el corazón de Recoleta
+titulo: "Depto 2 dorm · 65 m² – Kalypso, Recoleta (en pozo)"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -32,17 +32,17 @@ descripcion: |-
   Desde Gs. 565.500.000 (USD 93.178) · 10 % de entrega + 32 cuotas sin intereses.
 gama: otros
 fr:
-  titulo: "De l'espace pour toute la famille : appartement 2 chambres au cœur de Recoleta"
+  titulo: "Appartement 2 ch. · 65 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
     Le plus grand de l'immeuble. 55,02 m² habitables + balcon de 10,48 m², avec 2 chambres indépendantes, 2 salles de bain complètes, grand séjour, cuisine avec buanderie et balcon privé. Idéal pour les familles ou les couples qui cherchent de l'espace en plein Recoleta.
     À partir de Gs. 565 500 000 (USD 93 178) · 10 % à la réservation + 32 mensualités sans intérêts.
 en:
-  titulo: 'Room for the whole family: 2-bedroom apartment in the heart of Recoleta'
+  titulo: "2-bed apartment · 65 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
     The largest in the building. 55.02 m² of living space + 10.48 m² balcony, with 2 separate bedrooms, 2 full bathrooms, a large living-dining room, kitchen with laundry and private balcony. Ideal for families or couples looking for space in the heart of Recoleta.
     From Gs. 565,500,000 (USD 93,178) · 10 % deposit + 32 interest-free instalments.
 pt:
-  titulo: 'Espaço para toda a família: apartamento de 2 quartos no coração de Recoleta'
+  titulo: "Apto 2 quartos · 65 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
     O maior do edifício. 55,02 m² internos + sacada de 10,48 m², com 2 quartos independentes, 2 banheiros completos, sala de estar e jantar ampla, cozinha com área de serviço e sacada privativa. Ideal para famílias ou casais que procuram espaço em plena Recoleta.
     A partir de Gs. 565.500.000 (USD 93.178) · 10 % de entrada + 32 parcelas sem juros.

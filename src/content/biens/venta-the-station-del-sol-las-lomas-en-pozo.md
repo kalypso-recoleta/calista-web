@@ -1,5 +1,5 @@
 ---
-titulo: 'The Station Del Sol: departamentos de 1 y 2 dormitorios en pozo, a 120 m del Shopping del Sol'
+titulo: "The Station Del Sol – Deptos 1 y 2 dorm en pozo, Las Lomas"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -28,7 +28,7 @@ descripcion: |-
   Edificio de 52 departamentos en pozo en Las Lomas, a 120 metros del Shopping del Sol. Departamentos de 1 dormitorio (36 a 41 m²) y de 2 dormitorios (78 m²), con aire acondicionado y cocina equipada. Piscina con solárium, coworking, quincho, recepción 24 hs. Certificación EDGE. Entrega estimada: enero 2028. Desde USD 83.800.
 gama: otros
 fr:
-  titulo: 'The Station Del Sol : appartements 1 et 2 chambres sur plan, à 120 m du Shopping del Sol'
+  titulo: "The Station Del Sol – Appartements 1 et 2 ch. sur plan, Las Lomas"
   descripcion: |-
     Immeuble de 52 appartements sur plan à Las Lomas, à 120 mètres du Shopping del Sol. Appartements d'une chambre (36 à 41 m²) et de deux chambres (78 m²), climatisés, cuisine équipée. Piscine avec solarium, coworking, quincho, réception 24 h/24. Certification EDGE. Livraison estimée : janvier 2028. À partir de USD 83 800.
   cuerpo: |-
@@ -71,7 +71,7 @@ fr:
 
     *Informations du promoteur, à titre indicatif et non contractuel. Les images sont des rendus et plans du projet.*
 en:
-  titulo: 'The Station Del Sol: off-plan 1 and 2-bedroom apartments, 120 m from Shopping del Sol'
+  titulo: "The Station Del Sol – Off-plan 1 and 2-bed apartments, Las Lomas"
   descripcion: |-
     52-unit off-plan building in Las Lomas, 120 metres from Shopping del Sol. 1-bedroom apartments (36 to 41 m²) and 2-bedroom apartments (78 m²), with air conditioning and fitted kitchen. Pool with sun deck, coworking, quincho, 24-hour reception. EDGE certification. Estimated delivery: January 2028. From USD 83,800.
   cuerpo: |-
@@ -114,7 +114,7 @@ en:
 
     *Information provided by the developer, for guidance only and not contractual. Images are project renderings and plans.*
 pt:
-  titulo: 'The Station Del Sol: apartamentos de 1 e 2 dormitórios na planta, a 120 m do Shopping del Sol'
+  titulo: "The Station Del Sol – Aptos 1 e 2 quartos na planta, Las Lomas"
   descripcion: |-
     Edifício de 52 apartamentos na planta em Las Lomas, a 120 metros do Shopping del Sol. Apartamentos de 1 dormitório (36 a 41 m²) e de 2 dormitórios (78 m²), com ar-condicionado e cozinha equipada. Piscina com solário, coworking, quincho, recepção 24 h. Certificação EDGE. Entrega estimada: janeiro de 2028. A partir de USD 83.800.
   cuerpo: |-

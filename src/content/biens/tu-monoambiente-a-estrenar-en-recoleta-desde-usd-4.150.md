@@ -1,5 +1,5 @@
 ---
-titulo: Tu monoambiente a estrenar en Recoleta
+titulo: "Monoambiente · 31 m² – Kalypso, Recoleta (en pozo)"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -34,7 +34,7 @@ descripcion: |-
   📞 Consultá la grilla de precios y tu simulación de cuotas.
 gama: otros
 fr:
-  titulo: Votre studio neuf à Recoleta, à partir de USD 4 150
+  titulo: "Studio · 31 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
     Kalypso Recoleta — Studios neufs à partir de USD 41 500
     Réservez aujourd'hui avec seulement USD 4 150 et payez le solde en 32 mensualités sans intérêts pendant les travaux. Emplacement imbattable à l'angle de Cruz del Chaco et Alfredo Seiferheld, à deux pas du Shopping Mariscal.
@@ -90,7 +90,7 @@ fr:
 
     Demandez la **grille complète des 40 appartements** avec les prix par unité. Nous vous envoyons les plans, les visuels et une simulation de mensualités personnalisée.
 en:
-  titulo: Your brand-new studio in Recoleta, from USD 4,150
+  titulo: "Studio · 31 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
     Kalypso Recoleta — Brand-new studios from USD 41,500
     Reserve today with only USD 4,150 and pay the balance in 32 interest-free instalments during construction. Unbeatable location on the corner of Cruz del Chaco and Alfredo Seiferheld, steps from Shopping Mariscal.
@@ -146,7 +146,7 @@ en:
 
     Ask for the **full price list of the 40 apartments** with prices per unit. We will send you plans, renderings and a personalised instalment simulation.
 pt:
-  titulo: 'O seu studio novo em Recoleta, a partir de USD 4.150'
+  titulo: "Studio · 31 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
     Kalypso Recoleta — Studios novos a partir de USD 41.500
     Reserve hoje com apenas USD 4.150 e pague o saldo em 32 parcelas sem juros durante a obra. Localização imbatível na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal.

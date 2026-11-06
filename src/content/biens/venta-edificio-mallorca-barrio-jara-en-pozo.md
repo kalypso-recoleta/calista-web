@@ -1,5 +1,5 @@
 ---
-titulo: 'Edificio Mallorca: monoambientes y 1 dormitorio en pozo en Barrio Jara'
+titulo: "Edificio Mallorca – Monoambientes y 1 dorm en pozo, Jara"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -33,7 +33,7 @@ descripcion: |-
   Edificio de departamentos en pozo sobre Av. Brasilia, en Barrio Jara, cerca de la Universidad Americana. Monoambientes de 26 y 33 m² y departamentos de 1 dormitorio de 51 m². Piscina y solárium en la azotea, quincho climatizado, coworking y laundry. Entrega prevista: mayo 2027. Desde USD 44.200. Desarrollo de Mediterránea PY, comercializado por CALISTA.
 gama: otros
 fr:
-  titulo: 'Edificio Mallorca : studios et 1 chambre sur plan à Barrio Jara'
+  titulo: "Edificio Mallorca – Studios et 1 ch. sur plan, Jara"
   descripcion: |-
     Immeuble d'appartements sur plan sur l'avenue Brasilia, dans le quartier Jara, près de l'Universidad Americana. Studios de 26 et 33 m² et appartements d'une chambre de 51 m². Piscine et solarium sur le toit, quincho climatisé, coworking et laverie. Livraison prévue : mai 2027. À partir de USD 44 200. Programme de Mediterránea PY, commercialisé par CALISTA.
   cuerpo: |-
@@ -68,7 +68,7 @@ fr:
 
     *Informations du promoteur, à titre indicatif et non contractuel. Le mobilier des images n'est pas inclus.*
 en:
-  titulo: 'Edificio Mallorca: off-plan studios and 1-bedroom apartments in Barrio Jara'
+  titulo: "Edificio Mallorca – Off-plan studios and 1-bed, Jara"
   descripcion: |-
     Off-plan apartment building on Av. Brasilia, in the Jara neighbourhood, near Universidad Americana. Studios of 26 and 33 m² and 1-bedroom apartments of 51 m². Rooftop pool and sun deck, air-conditioned quincho, coworking and laundry. Expected delivery: May 2027. From USD 44,200. Developed by Mediterránea PY, marketed by CALISTA.
   cuerpo: |-
@@ -103,7 +103,7 @@ en:
 
     *Information provided by the developer, for guidance only and not contractual. Furniture shown in the images is not included.*
 pt:
-  titulo: 'Edificio Mallorca: studios e 1 dormitório na planta no Barrio Jara'
+  titulo: "Edificio Mallorca – Studios e 1 quarto na planta, Jara"
   descripcion: |-
     Edifício de apartamentos na planta na Av. Brasilia, no bairro Jara, perto da Universidad Americana. Studios de 26 e 33 m² e apartamentos de 1 dormitório de 51 m². Piscina e solário na cobertura, quincho climatizado, coworking e lavanderia. Entrega prevista: maio de 2027. A partir de USD 44.200. Empreendimento da Mediterránea PY, comercializado pela CALISTA.
   cuerpo: |-

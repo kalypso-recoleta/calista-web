@@ -1,5 +1,5 @@
 ---
-titulo: Depto 2 dorm · 65 m² – Residence ROA, Herrera (Asunción)
+titulo: "Depto 2 dorm · 65 m² – Residence ROA, Herrera"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -41,7 +41,7 @@ descripcion: |-
   Amenities: 🏊 piscina · 🌇 terraza con quincho · 🧺 lavandería · 🛡️ guardia 24 hs
 gama: otros
 fr:
-  titulo: Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
+  titulo: "Appartement 2 ch. · 65 m² – Residence ROA, Herrera"
   descripcion: |-
     🏢 À VENDRE – Appartement 2 chambres · 65 m² – Residence ROA, Herrera (Asunción)
     💵 USD 129 000
@@ -74,7 +74,7 @@ fr:
 
     Une excellente opportunité d'investissement ou de résidence principale, dans un quartier en plein essor, facile d'accès et à deux pas des commerces, services et grandes avenues.
 en:
-  titulo: 2-bedroom apartment · 65 m² – Residence ROA, Herrera (Asunción)
+  titulo: "2-bed apartment · 65 m² – Residence ROA, Herrera"
   descripcion: |-
     🏢 FOR SALE – 2-bed apartment · 65 m² – Residence ROA, Herrera (Asunción)
     💵 USD 129,000
@@ -107,7 +107,7 @@ en:
 
     An excellent opportunity to invest or to live in, in a fast-growing area with easy access, steps from shops, services and main avenues.
 pt:
-  titulo: 'Apartamento de 2 quartos · 65 m² – Residence ROA, Herrera (Assunção)'
+  titulo: "Apto 2 quartos · 65 m² – Residence ROA, Herrera"
   descripcion: |-
     🏢 À VENDA – Apartamento de 2 quartos · 65 m² – Residence ROA, Herrera (Assunção)
     💵 USD 129.000

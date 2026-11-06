@@ -1,5 +1,5 @@
 ---
-titulo: Amplio y luminoso duplex en Lambaré
+titulo: "Dúplex 3 dorm · 180 m² – Santo Domingo, Lambaré"
 operacion: venta
 tipo: duplex
 estado: reservado
@@ -36,12 +36,12 @@ imagenes:
 descripcion: Cuenta en planta alta con 3 dormitorios uno en suite con A.A. y un baño más para compartir En planta baja cuenta con un comedor con A.A., una cocina semi abierta amoblada y semi equipada con un anafe y una campana, tiene un garage para dos coches, un patio con su parilla y una área de servicio (cuarto, lavadero, baño).
 fecha: 2026-07-15T10:37
 fr:
-  titulo: Duplex spacieux et lumineux à Lambaré
+  titulo: "Duplex 3 ch. · 180 m² – Santo Domingo, Lambaré"
   descripcion: 'À l''étage : 3 chambres, dont une suite climatisée, et une salle de bain partagée. Au rez-de-chaussée : salle à manger climatisée, cuisine semi-ouverte meublée et semi-équipée (plaque de cuisson et hotte), garage pour deux voitures, patio avec barbecue et espace de service (chambre, buanderie, salle de bain).'
 en:
-  titulo: Spacious, bright duplex in Lambaré
+  titulo: "3-bed duplex · 180 m² – Santo Domingo, Lambaré"
   descripcion: 'Upstairs: 3 bedrooms, one en suite with air conditioning, plus a shared bathroom. Downstairs: air-conditioned dining room, semi-open furnished kitchen, semi-equipped with hob and extractor hood, two-car garage, patio with barbecue and a service area (room, laundry, bathroom).'
 pt:
-  titulo: 'Duplex amplo e iluminado em Lambaré'
+  titulo: "Duplex 3 quartos · 180 m² – Santo Domingo, Lambaré"
   descripcion: 'No andar de cima: 3 quartos, um deles suíte, com ar-condicionado, e mais um banheiro compartilhado. No térreo: sala de jantar com ar-condicionado, cozinha semiaberta mobiliada e semiequipada com cooktop e coifa, garagem para dois carros, pátio com churrasqueira e área de serviço (quarto, lavanderia, banheiro).'
 ---

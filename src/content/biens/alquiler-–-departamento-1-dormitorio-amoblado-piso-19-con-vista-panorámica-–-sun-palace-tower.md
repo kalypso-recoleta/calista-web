@@ -1,5 +1,5 @@
 ---
-titulo: ALQUILER – Departamento 1 dormitorio amoblado, piso 19 con vista panorámica – Sun Palace Tower
+titulo: "Depto 1 dorm amoblado · 42,7 m² – Sun Palace Tower, Las Lomas"
 en_linea: true
 operacion: alquiler
 tipo: departamento
@@ -36,7 +36,7 @@ imagenes:
 descripcion: 1 dormitorio amoblado en el piso 19 del Sun Palace Tower (Avda. San Martín). 42,7 m² + balcón, luminoso, silencioso y con vista al atardecer.
 gama: otros
 fr:
-  titulo: À LOUER – Appartement 1 chambre meublé, 19ᵉ étage avec vue panoramique – Sun Palace Tower
+  titulo: "Appartement meublé 1 ch. · 42,7 m² – Sun Palace Tower, Las Lomas"
   descripcion: T2 meublé au 19ᵉ étage de la Sun Palace Tower (Avda. San Martín). 42,7 m² + balcon, lumineux, calme, avec vue sur le coucher de soleil.
   cuerpo: |-
     Appartement **1 chambre (T2), meublé et équipé**, au **19ᵉ étage** de la Sun Palace Tower, immeuble neuf à l'angle de l'Avda. San Martín et de la calle Dr. Migone.
@@ -70,7 +70,7 @@ fr:
 
     **Loyer : 850 USD par mois.** Contactez-nous pour les conditions et une visite.
 en:
-  titulo: FOR RENT – Furnished 1-bedroom apartment, 19th floor with panoramic views – Sun Palace Tower
+  titulo: "Furnished 1-bed apartment · 42.7 m² – Sun Palace Tower, Las Lomas"
   descripcion: Furnished 1-bedroom on the 19th floor of Sun Palace Tower (Avda. San Martín). 42.7 m² + balcony, bright, quiet, with sunset views.
   cuerpo: |-
     **Furnished and equipped 1-bedroom apartment** on the **19th floor** of Sun Palace Tower, a new building on the corner of Avda. San Martín and Calle Dr. Migone.
@@ -104,7 +104,7 @@ en:
 
     **Rent: USD 850 per month.** Contact us for terms and a viewing.
 pt:
-  titulo: 'PARA ALUGAR – Apartamento mobiliado de 1 quarto, 19º andar com vista panorâmica – Sun Palace Tower'
+  titulo: "Apto mobiliado 1 quarto · 42,7 m² – Sun Palace Tower, Las Lomas"
   descripcion: 'Apartamento mobiliado de 1 quarto no 19º andar do Sun Palace Tower (Avda. San Martín). 42,7 m² + sacada, iluminado, silencioso e com vista para o pôr do sol.'
   cuerpo: |-
     **Apartamento de 1 quarto, mobiliado e equipado**, no **19º andar** do Sun Palace Tower, edifício novo na esquina da Avda. San Martín com a calle Dr. Migone.

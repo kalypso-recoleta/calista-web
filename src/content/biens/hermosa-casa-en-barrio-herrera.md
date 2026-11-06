@@ -1,5 +1,5 @@
 ---
-titulo: Hermosa casa en Barrio Herrera
+titulo: "Casa 3 dorm · 418 m² – Herrera"
 en_linea: false
 operacion: venta
 tipo: casa
@@ -57,7 +57,7 @@ descripcion: |-
   Planta alta: sala de estar y 3 dormitorios en suite con vestidor.
 gama: otros
 fr:
-  titulo: Belle maison dans le quartier Herrera
+  titulo: "Maison 3 ch. · 418 m² – Herrera"
   descripcion: |-
     🏡 Maison moderne de style européen dans l'un des meilleurs quartiers d'Asunción
     📍 À 4 rues de l'avenue Mcal. López
@@ -113,7 +113,7 @@ fr:
 
     💰 Prix : 589 000 USD
 en:
-  titulo: Beautiful house in Barrio Herrera
+  titulo: "3-bed house · 418 m² – Herrera"
   descripcion: |-
     🏡 Modern European-style house in one of the best areas of Asunción
     📍 4 blocks from Av. Mcal. López

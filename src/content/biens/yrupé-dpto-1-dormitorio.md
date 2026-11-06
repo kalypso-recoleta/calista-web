@@ -1,5 +1,5 @@
 ---
-titulo: YRUPÉ - Dpto 1 dormitorio
+titulo: "Yrupé – Depto 1 dorm amoblado · 49 m², Mburucuyá"
 en_linea: true
 operacion: temporal
 tipo: departamento
@@ -20,15 +20,15 @@ superficie_construida: 49
 financiacion: false
 portada_foto: /uploads/IMG_9700.jpeg
 imagenes:
-  - /uploads/Capture d’écran 2026-10-04 à 7.45.33 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.45.45 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.01 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.12 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.23 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.33 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.43 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.46.57 AM.png
-  - /uploads/Capture d’écran 2026-10-04 à 7.50.35 AM.png
+  - /uploads/Capture d’écran 2026-10-04 à 7.45.33 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.45.45 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.01 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.12 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.23 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.33 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.43 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.46.57 AM.jpg
+  - /uploads/Capture d’écran 2026-10-04 à 7.50.35 AM.jpg
 descripcion: 'Departamento amoblado de un dormitorio en Mburucuyá, primera Residencia Kalypso: un gran mural de yrupés, balcón, cocina equipada y aire acondicionado. De 7 días a 6 meses, en trato directo.'
 gama: kalypso
 residencia: YRUPÉ
@@ -59,7 +59,7 @@ reservas:
   - desde: 2026-09-19
     hasta: 2026-12-18
 fr:
-  titulo: YRUPÉ – Appartement 1 chambre
+  titulo: "Yrupé – Appartement meublé 1 ch. · 49 m², Mburucuyá"
   descripcion: "Appartement meublé d'une chambre à Mburucuyá, première Résidence Kalypso : une grande fresque de yrupés, balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct."
   cuerpo: |-
     **Yrupé, la première Résidence Kalypso**
@@ -80,7 +80,7 @@ fr:
 
     Consultez les disponibilités dans le calendrier et écrivez-nous avec vos dates.
 en:
-  titulo: YRUPÉ – 1-bedroom apartment
+  titulo: "Yrupé – Furnished 1-bed apartment · 49 m², Mburucuyá"
   descripcion: 'Furnished 1-bedroom apartment in Mburucuyá, the first Kalypso Residence: a large water-lily mural, balcony, fitted kitchen and air conditioning. From 7 days to 6 months, booked directly with us.'
   cuerpo: |-
     **Yrupé, the first Kalypso Residence**
@@ -101,7 +101,7 @@ en:
 
     Check availability in the calendar and send us your dates.
 pt:
-  titulo: 'YRUPÉ – Apartamento de 1 quarto'
+  titulo: "Yrupé – Apto mobiliado 1 quarto · 49 m², Mburucuyá"
   descripcion: 'Apartamento mobiliado de 1 quarto em Mburucuyá, a primeira Residência Kalypso: um grande mural de vitórias-régias, sacada, cozinha equipada e ar-condicionado. De 7 dias a 6 meses, reservado diretamente conosco.'
   cuerpo: |-
     **Yrupé, a primeira Residência Kalypso**

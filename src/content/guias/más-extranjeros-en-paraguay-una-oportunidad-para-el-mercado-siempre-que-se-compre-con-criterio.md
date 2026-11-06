@@ -6,7 +6,7 @@ categoria: actualidad
 tema: vivir
 borrador: false
 fecha: 2026-10-13T18:30:00
-portada_foto: /uploads/Clé et loupe sur l’immobilier paraguayen.png
+portada_foto: /uploads/Clé et loupe sur l’immobilier paraguayen.jpg
 fr:
   titulo: 'Plus d’étrangers au Paraguay : une chance pour le marché, à condition d’acheter avec lucidité'
   titulo_seo: "Plus d’étrangers au Paraguay : une chance pour l’immobilier"

@@ -1,5 +1,5 @@
 ---
-titulo: 'ALQUILER – Las Mercedes: departamento con balcón y parrilla propia, 2 dormitorios (1 en suite), Edificio SOHO'
+titulo: "Depto 2 dorm · 72 m² – Edificio SOHO, Las Mercedes"
 en_linea: true
 operacion: alquiler
 tipo: departamento
@@ -39,7 +39,7 @@ imagenes:
 descripcion: Departamento de 72 m² propios (76,42 m² en total) en un edificio con piscina en la azotea y vista abierta a la ciudad. Incluye cochera y baulera.
 gama: otros
 fr:
-  titulo: 'À LOUER – Las Mercedes : appartement avec balcon et barbecue privatif, 2 chambres (dont 1 suite), Edificio SOHO'
+  titulo: "Appartement 2 ch. · 72 m² – Edificio SOHO, Las Mercedes"
   descripcion: Appartement de 72 m² privatifs (76,42 m² au total) dans un immeuble avec piscine sur le toit et vue dégagée sur la ville. Place de parking et cave incluses.
   cuerpo: |-
     Appartement de **72 m² privatifs** (76,42 m² au total) dans un immeuble avec piscine sur le toit et vue dégagée sur la ville. **Place de parking** et **cave** incluses.
@@ -67,7 +67,7 @@ fr:
     - Espace barbecue couvert (quincho) avec plan de travail, évier et grande table
     - Solarium avec transats et vue sur la ville et la baie
 en:
-  titulo: 'FOR RENT – Las Mercedes: apartment with balcony and private grill, 2 bedrooms (1 en suite), Edificio SOHO'
+  titulo: "2-bed apartment · 72 m² – Edificio SOHO, Las Mercedes"
   descripcion: 72 m² private area (76.42 m² total) in a building with a rooftop pool and open city views. Parking space and storage unit included.
   cuerpo: |-
     **72 m² private area** (76.42 m² total) in a building with a rooftop pool and open city views. **Parking space** and **storage unit** included.
@@ -95,7 +95,7 @@ en:
     - Covered barbecue area (quincho) with countertop, sink and large dining table
     - Sun deck with loungers and views over the city and the bay
 pt:
-  titulo: 'PARA ALUGAR – Las Mercedes: apartamento com sacada e churrasqueira própria, 2 quartos (1 suíte), Edificio SOHO'
+  titulo: "Apto 2 quartos · 72 m² – Edificio SOHO, Las Mercedes"
   descripcion: Apartamento de 72 m² privativos (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui vaga de garagem e depósito.
   cuerpo: |-
     **72 m² privativos** (76,42 m² no total) em um edifício com piscina na cobertura e vista aberta para a cidade. Inclui **vaga de garagem** e **depósito**.

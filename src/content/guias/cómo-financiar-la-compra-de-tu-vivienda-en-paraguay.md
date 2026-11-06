@@ -5,7 +5,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-08T09:25:00
-portada_foto: /uploads/La clé dorée vers la propriété.png
+portada_foto: /uploads/La clé dorée vers la propriété.jpg
 fr:
   titulo: Comment financer l’achat de votre logement au Paraguay
   descripcion: 'Il n’existe pas de « meilleure banque » pour un crédit immobilier au Paraguay : la meilleure offre dépend de vos revenus, de la monnaie dans laquelle vous êtes payé, du bien et du fait qu’il s’agisse ou non de votre premier logement.'

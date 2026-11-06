@@ -6,7 +6,7 @@ categoria: guia
 tema: invertir
 borrador: false
 fecha: 2026-10-08T06:38:00
-portada_foto: /uploads/Le panier des loyers face aux charges.png
+portada_foto: /uploads/Le panier des loyers face aux charges.jpg
 fr:
   titulo: 'Acheter pour louer : du rendement brut à ce qu’il vous reste réellement'
   titulo_seo: "Acheter pour louer : ce qu’il vous reste réellement"

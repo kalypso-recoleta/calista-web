@@ -1,5 +1,5 @@
 ---
-titulo: 'Go Tower, oficina 602: vista al río y 2 cocheras'
+titulo: "Oficina 602 · 65 m² · 2 cocheras – Go Tower, Jara"
 en_linea: true
 operacion: venta
 tipo: oficina
@@ -31,7 +31,7 @@ descripcion: |-
   Oficina en reventa exclusiva en el piso 6 de Go Tower Business Center (Avda. Artigas 1750): 65,26 m² propios, vista despejada al río, kitchenette y baño propio. Incluye 2 cocheras (N° 13 y 14). Edificio con certificación LEED. USD 255.000.
 gama: otros
 fr:
-  titulo: 'Go Tower, bureau 602 : vue sur le fleuve et 2 parkings'
+  titulo: "Bureau 602 · 65 m² · 2 parkings – Go Tower, Jara"
   descripcion: |-
     Bureau en revente exclusive au 6e étage de Go Tower Business Center (Avda. Artigas 1750) : 65,26 m² privatifs, vue dégagée sur le fleuve, kitchenette et salle d'eau privative. 2 places de parking incluses (n° 13 et 14). Immeuble certifié LEED. USD 255 000.
   cuerpo: |-
@@ -65,7 +65,7 @@ fr:
 
     *Le plan provient du promoteur. Les photos montrent l'immeuble et ses espaces communs.*
 en:
-  titulo: 'Go Tower, office 602: river view and 2 parking spaces'
+  titulo: "Office 602 · 65 m² · 2 parking spaces – Go Tower, Jara"
   descripcion: |-
     Exclusive resale office on the 6th floor of Go Tower Business Center (Avda. Artigas 1750): 65.26 m² private area, open river view, kitchenette and private bathroom. 2 parking spaces included (No. 13 and 14). LEED-certified building. USD 255,000.
   cuerpo: |-
@@ -99,7 +99,7 @@ en:
 
     *Floor plan provided by the developer. Photos show the building and its shared spaces.*
 pt:
-  titulo: 'Go Tower, sala 602: vista para o rio e 2 vagas'
+  titulo: "Sala 602 · 65 m² · 2 vagas – Go Tower, Jara"
   descripcion: |-
     Sala comercial em revenda exclusiva no 6º andar do Go Tower Business Center (Avda. Artigas 1750): 65,26 m² privativos, vista livre para o rio, copa e banheiro privativo. 2 vagas de garagem incluídas (nº 13 e 14). Edifício com certificação LEED. USD 255.000.
   cuerpo: |-

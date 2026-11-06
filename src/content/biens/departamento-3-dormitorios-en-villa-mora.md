@@ -1,5 +1,5 @@
 ---
-titulo: Departamento 3 Dormitorios en Villa Morra
+titulo: "Depto 3 dorm – Villa Morra"
 en_linea: false
 operacion: alquiler
 tipo: departamento
@@ -38,7 +38,7 @@ descripcion: |-
   Distribución:
 gama: otros
 fr:
-  titulo: Appartement 3 chambres à Villa Morra
+  titulo: "Appartement 3 ch. – Villa Morra"
   descripcion: |-
     LOCATION – VILLA MORRA
 
@@ -97,7 +97,7 @@ fr:
 
     💲 Loyer : ₲ 4 700 000 (charges incluses)
 en:
-  titulo: 3-bedroom apartment in Villa Morra
+  titulo: "3-bed apartment – Villa Morra"
   descripcion: |-
     FOR RENT – VILLA MORRA
 
@@ -156,7 +156,7 @@ en:
 
     💲 Rent: ₲ 4,700,000 (building fees included)
 pt:
-  titulo: Apartamento de 3 quartos em Villa Morra
+  titulo: "Apto 3 quartos – Villa Morra"
   descripcion: |-
     PARA ALUGAR – VILLA MORRA
 

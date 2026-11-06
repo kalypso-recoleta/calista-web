@@ -1,5 +1,5 @@
 ---
-titulo: ALQUILER – Departamento 2 dormitorios a estrenar, 87,5 m² con 2 cocheras – Edificio Ventura Hassler
+titulo: "Depto 2 dorm · 87,5 m² – Edificio Ventura Hassler, Herrera"
 en_linea: true
 operacion: alquiler
 tipo: departamento
@@ -39,7 +39,7 @@ imagenes:
 descripcion: 2 dormitorios y 2 baños a estrenar en el Ventura Hassler, piso 6. 87,5 m² con balcón y parrilla, 2 cocheras, piscina y gimnasio. Expensas incluidas.
 gama: otros
 fr:
-  titulo: À LOUER – Appartement 2 chambres neuf, 87,5 m² avec 2 places de parking – Edificio Ventura Hassler
+  titulo: "Appartement 2 ch. · 87,5 m² – Edificio Ventura Hassler, Herrera"
   descripcion: 2 chambres, 2 salles de bain, neuf, au 6ᵉ étage du Ventura Hassler. 87,5 m², balcon avec parrilla, 2 parkings, piscine et salle de sport. Charges comprises.
   cuerpo: |-
     Appartement **neuf, jamais habité**, de **2 chambres et 2 salles de bain** au **6ᵉ étage** de l'Edificio Ventura Hassler, immeuble récent à l'angle de la RI 6 Boquerón et de la calle Dr. Hassler, dans le quartier Herrera, à la limite de Villa Morra.
@@ -70,7 +70,7 @@ fr:
 
     **Loyer : 6 500 000 Gs par mois, charges (expensas) et IVA compris.** Contactez-nous pour organiser une visite.
 en:
-  titulo: FOR RENT – Brand-new 2-bedroom apartment, 87.5 m² with 2 parking spaces – Edificio Ventura Hassler
+  titulo: "2-bed apartment · 87.5 m² – Edificio Ventura Hassler, Herrera"
   descripcion: Brand-new 2-bed, 2-bath apartment on the 6th floor of Ventura Hassler. 87.5 m², balcony with grill, 2 parking spaces, pool and gym. Fees included.
   cuerpo: |-
     **Brand-new, never lived in** apartment with **2 bedrooms and 2 bathrooms** on the **6th floor** of Edificio Ventura Hassler, a new building on the corner of RI 6 Boquerón and Calle Dr. Hassler, in the Herrera neighbourhood, on the edge of Villa Morra.
@@ -101,7 +101,7 @@ en:
 
     **Rent: 6,500,000 Gs per month, building fees (expensas) and VAT included.** Contact us to arrange a viewing.
 pt:
-  titulo: 'PARA ALUGAR – Apartamento novo de 2 quartos, 87,5 m² com 2 vagas de garagem – Edificio Ventura Hassler'
+  titulo: "Apto 2 quartos · 87,5 m² – Edificio Ventura Hassler, Herrera"
   descripcion: 'Apartamento novo de 2 quartos e 2 banheiros no 6º andar do Ventura Hassler. 87,5 m², sacada com churrasqueira, 2 vagas, piscina e academia. Condomínio incluído.'
   cuerpo: |-
     Apartamento **novo, nunca habitado**, de **2 quartos e 2 banheiros** no **6º andar** do Edificio Ventura Hassler, edifício novo na esquina da RI 6 Boquerón com a calle Dr. Hassler, no bairro Herrera, na divisa com Villa Morra.

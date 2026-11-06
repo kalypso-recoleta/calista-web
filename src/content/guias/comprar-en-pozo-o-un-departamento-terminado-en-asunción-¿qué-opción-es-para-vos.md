@@ -6,7 +6,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-09T18:56:00
-portada_foto: /uploads/Du plan à l’appartement d’Asunción.png
+portada_foto: /uploads/Du plan à l’appartement d’Asunción.jpg
 fr:
   titulo: 'Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?'
   titulo_seo: "Acheter sur plan ou livré à Asunción : que choisir ?"

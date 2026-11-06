@@ -5,7 +5,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-07
-portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.png
+portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.jpg
 fr:
   titulo: "Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer"
   titulo_seo: "Acheter sur plan : quoi vérifier avant de signer"

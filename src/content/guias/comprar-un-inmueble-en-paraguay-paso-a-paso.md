@@ -5,7 +5,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-07T06:07:00
-portada_foto: /uploads/Signature notariale et remise des clés.png
+portada_foto: /uploads/Signature notariale et remise des clés.jpg
 fr:
   titulo: 'Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié'
   titulo_seo: "Acheter au Paraguay : de l’avant-contrat à l’acte notarié"

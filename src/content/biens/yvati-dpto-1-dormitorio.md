@@ -1,5 +1,5 @@
 ---
-titulo: YVATI - Dpto 1 dormitorio
+titulo: "Yvati – Depto 1 dorm amoblado · 49 m², Mburucuyá"
 en_linea: true
 operacion: temporal
 tipo: departamento
@@ -58,7 +58,7 @@ reservas:
   - desde: 2026-11-05
     hasta: 2026-11-25
 fr:
-  titulo: YVATI – Appartement 1 chambre
+  titulo: "Yvati – Appartement meublé 1 ch. · 49 m², Mburucuyá"
   descripcion: "Appartement meublé d'une chambre à Mburucuyá, Résidence Kalypso : une grande fresque de martin-pêcheur, balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct."
   cuerpo: |-
     **Yvati, une Résidence Kalypso**
@@ -79,7 +79,7 @@ fr:
 
     Consultez les disponibilités dans le calendrier et écrivez-nous avec vos dates.
 en:
-  titulo: YVATI – 1-bedroom apartment
+  titulo: "Yvati – Furnished 1-bed apartment · 49 m², Mburucuyá"
   descripcion: 'Furnished 1-bedroom apartment in Mburucuyá, a Kalypso Residence: a large kingfisher mural, balcony, fitted kitchen and air conditioning. From 7 days to 6 months, booked directly with us.'
   cuerpo: |-
     **Yvati, a Kalypso Residence**
@@ -100,7 +100,7 @@ en:
 
     Check availability in the calendar and send us your dates.
 pt:
-  titulo: 'YVATI – Apartamento de 1 quarto'
+  titulo: "Yvati – Apto mobiliado 1 quarto · 49 m², Mburucuyá"
   descripcion: 'Apartamento mobiliado de 1 quarto em Mburucuyá, Residência Kalypso: um grande mural de martim-pescador, sacada, cozinha equipada e ar-condicionado. De 7 dias a 6 meses, reservado diretamente conosco.'
   cuerpo: |-
     **Yvati, uma Residência Kalypso**

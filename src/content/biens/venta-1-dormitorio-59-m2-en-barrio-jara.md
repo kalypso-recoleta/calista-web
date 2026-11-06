@@ -1,5 +1,5 @@
 ---
-titulo: 1 Dormitorio 59 m2 en Barrio Jara
+titulo: "Depto 1 dorm · 59 m² – Jara"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -34,17 +34,17 @@ descripcion: |-
   1 dormitorio · 1 baño · Balcón · Sin cochera · Alquilado
 gama: otros
 fr:
-  titulo: 1 chambre 59 m² dans le quartier Jara
+  titulo: "Appartement 1 ch. · 59 m² – Jara"
   descripcion: |-
     Grand appartement lumineux d'une chambre dans un immeuble neuf avec ascenseur, avec une vue panoramique dégagée sur Asunción et le fleuve Paraguay. Séjour spacieux, cuisine équipée avec plaque infrarouge, chambre avec placard et climatisation, buanderie et grand balcon pour profiter du coucher de soleil sur le fleuve. Sol en grès cérame brillant. Idéal pour investir : vendu loué, avec un locataire en place à 3 400 000 Gs par mois.
     1 chambre · 1 salle de bain · Balcon · Sans parking · Loué
 en:
-  titulo: 1 bedroom, 59 m², in Barrio Jara
+  titulo: "1-bed apartment · 59 m² – Jara"
   descripcion: |-
     Bright, spacious 1-bedroom apartment in a new building with lift, with an open panoramic view over Asunción and the Paraguay River. Large living-dining room, fitted kitchen with infrared hob, bedroom with built-in wardrobe and air conditioning, laundry area and a large balcony to enjoy the sunset over the river. Glossy porcelain tile floors. Ideal investment: sold with a sitting tenant, currently let at Gs. 3,400,000 per month.
     1 bedroom · 1 bathroom · Balcony · No parking · Let
 pt:
-  titulo: '1 quarto, 59 m², no bairro Jara'
+  titulo: "Apto 1 quarto · 59 m² – Jara"
   descripcion: |-
     Apartamento de 1 quarto, amplo e iluminado, em edifício novo com elevador, com vista panorâmica aberta sobre Assunção e o rio Paraguai. Ampla sala de estar e jantar, cozinha equipada com cooktop infravermelho, quarto com armário embutido e ar-condicionado, área de serviço e uma grande sacada para curtir o pôr do sol sobre o rio. Piso de porcelanato brilhante. Investimento ideal: vendido com inquilino, alugado atualmente por Gs. 3.400.000 por mês.
     1 quarto · 1 banheiro · Sacada · Sem garagem · Alugado

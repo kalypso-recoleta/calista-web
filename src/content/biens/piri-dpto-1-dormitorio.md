@@ -1,5 +1,5 @@
 ---
-titulo: PIRÍ - Dpto 1 dormitorio
+titulo: "Pirí – Depto 1 dorm amoblado · 49 m², Mburucuyá"
 en_linea: true
 operacion: temporal
 tipo: departamento
@@ -61,7 +61,7 @@ reservas:
   - desde: 2026-11-01
     hasta: 2026-12-02
 fr:
-  titulo: PIRÍ – Appartement 1 chambre
+  titulo: "Pirí – Appartement meublé 1 ch. · 49 m², Mburucuyá"
   descripcion: "Appartement meublé d'une chambre à Mburucuyá, Résidence Kalypso : séjour lumineux avec vue, grand balcon, cuisine équipée et climatisation. De 7 jours à 6 mois, en direct."
   cuerpo: |-
     **Pirí, une Résidence Kalypso**
@@ -82,7 +82,7 @@ fr:
 
     Consultez les disponibilités dans le calendrier et écrivez-nous avec vos dates.
 en:
-  titulo: PIRÍ – 1-bedroom apartment
+  titulo: "Pirí – Furnished 1-bed apartment · 49 m², Mburucuyá"
   descripcion: 'Furnished 1-bedroom apartment in Mburucuyá, a Kalypso Residence: bright living room with a view, large balcony, fitted kitchen and air conditioning. From 7 days to 6 months, booked directly with us.'
   cuerpo: |-
     **Pirí, a Kalypso Residence**
@@ -103,7 +103,7 @@ en:
 
     Check availability in the calendar and send us your dates.
 pt:
-  titulo: 'PIRÍ – Apartamento de 1 quarto'
+  titulo: "Pirí – Apto mobiliado 1 quarto · 49 m², Mburucuyá"
   descripcion: 'Apartamento mobiliado de 1 quarto em Mburucuyá, Residência Kalypso: sala iluminada com vista, sacada ampla, cozinha equipada e ar-condicionado. De 7 dias a 6 meses, reservado diretamente conosco.'
   cuerpo: |-
     **Pirí, uma Residência Kalypso**

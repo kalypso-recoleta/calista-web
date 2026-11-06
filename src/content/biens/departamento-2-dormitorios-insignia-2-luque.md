@@ -1,5 +1,5 @@
 ---
-titulo: Departamento 2 dormitorios Insignia 2 Luque
+titulo: "Depto 2 dorm · 53 m² – Edificio Insignia 2, Luque"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -36,7 +36,7 @@ descripcion: |-
   2 dormitorios (1 en suite) · 2 baños (suite + social) ·
   sala-comedor con cocina integrada · 53 m² totales
 fr:
-  titulo: Appartement 2 chambres Insignia 2, Luque
+  titulo: "Appartement 2 ch. · 53 m² – Edificio Insignia 2, Luque"
   descripcion: |-
     Deux chambres, dont la principale en suite, plus une salle d'eau : deux salles de bain complètes sur 53 m², ce qui est rare pour cette typologie. Séjour avec cuisine intégrée.
 
@@ -57,7 +57,7 @@ fr:
 
     Luque, l'une des zones à la plus forte croissance de l'agglomération, avec un accès rapide à l'aéroport Silvio Pettirossi et aux grands axes vers Asunción.
 en:
-  titulo: 2-bedroom apartment Insignia 2, Luque
+  titulo: "2-bed apartment · 53 m² – Edificio Insignia 2, Luque"
   descripcion: |-
     Two bedrooms, the main one en suite, plus a guest bathroom: two full bathrooms in 53 m², rare for this layout. Living-dining room with integrated kitchen.
 
@@ -78,7 +78,7 @@ en:
 
     Luque, one of the fastest-growing areas of the metropolitan region, with quick access to Silvio Pettirossi airport and the main roads into Asunción.
 pt:
-  titulo: 'Apartamento de 2 quartos Insignia 2, Luque'
+  titulo: "Apto 2 quartos · 53 m² – Edificio Insignia 2, Luque"
   descripcion: |-
     Dois quartos, o principal com suíte, mais um banheiro social: dois banheiros completos em 53 m², algo pouco comum nesta tipologia. Sala de estar e jantar com cozinha integrada.
 

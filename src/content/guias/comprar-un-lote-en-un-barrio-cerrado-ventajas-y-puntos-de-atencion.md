@@ -6,7 +6,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-10-29T20:20:00
-portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.png
+portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.jpg
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
   titulo_seo: "Terrain en résidence fermée : atouts et points de vigilance"

@@ -1,5 +1,5 @@
 ---
-titulo: El 1 dormitorio más generoso de Kalypso
+titulo: "Depto 1 dorm · 57 m² – Kalypso, Recoleta (en pozo)"
 en_linea: true
 operacion: venta
 tipo: departamento
@@ -32,19 +32,19 @@ descripcion: |-
   www.kalypso.com.py
 gama: otros
 fr:
-  titulo: Le 1 chambre le plus généreux de Kalypso
+  titulo: "Appartement 1 ch. · 57 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
     Le 1 chambre le plus généreux : 48,13 m² habitables + balcon de 9,69 m². Grande chambre, séjour indépendant, cuisine avec buanderie et salle de bain complète. Presque le confort d'un 2 chambres, au prix d'un 1 chambre.
     À partir de Gs. 497 250 000 (USD 81 933) · 10 % à la réservation + 32 mensualités sans intérêts.
     www.kalypso.com.py
 en:
-  titulo: The most generous 1-bedroom at Kalypso
+  titulo: "1-bed apartment · 57 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
     The most generous 1-bedroom: 48.13 m² of living space + 9.69 m² balcony. Large bedroom, separate living-dining room, kitchen with laundry and full bathroom. Almost the comfort of a 2-bedroom at the price of a 1-bedroom.
     From Gs. 497,250,000 (USD 81,933) · 10 % deposit + 32 interest-free instalments.
     www.kalypso.com.py
 pt:
-  titulo: 'O apartamento de 1 quarto mais amplo do Kalypso'
+  titulo: "Apto 1 quarto · 57 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
     O apartamento de 1 quarto mais amplo: 48,13 m² internos + sacada de 9,69 m². Quarto amplo, sala de estar e jantar independente, cozinha com área de serviço e banheiro completo. Quase o conforto de um 2 quartos, pelo preço de um 1 quarto.
     A partir de Gs. 497.250.000 (USD 81.933) · 10 % de entrada + 32 parcelas sem juros.

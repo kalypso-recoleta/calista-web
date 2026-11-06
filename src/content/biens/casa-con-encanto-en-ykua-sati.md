@@ -1,5 +1,5 @@
 ---
-titulo: Casa con encanto en Ykua Sati
+titulo: "Casa 3 dorm · 270 m² – Ykuá Satí"
 operacion: venta
 tipo: casa
 estado: disponible
@@ -54,7 +54,7 @@ descripcion: |-
   Una propiedad excepcional que combina la calidez de la arquitectura tradicional con una vida orientada al jardín. Construida en 1998 y mantenida en perfecto estado, ofrece 270 m² construidos sobre un terreno de 531 m².
 fecha: 2026-07-09T14:01
 fr:
-  titulo: Maison de charme à Ykua Satí
+  titulo: "Maison 3 ch. · 270 m² – Ykuá Satí"
   descripcion: 'Une propriété exceptionnelle qui allie la chaleur de l''architecture traditionnelle à une vie tournée vers le jardin. Construite en 1998 et parfaitement entretenue : 270 m² construits sur un terrain de 531 m².'
   cuerpo: |-
     Maison de charme à Ycua Satí
@@ -73,7 +73,7 @@ fr:
 
     📩 Prenez rendez-vous pour une visite.
 en:
-  titulo: Charming house in Ykua Satí
+  titulo: "3-bed house · 270 m² – Ykuá Satí"
   descripcion: 'An exceptional property combining the warmth of traditional architecture with garden-oriented living. Built in 1998 and kept in perfect condition: 270 m² built on a 531 m² plot.'
   cuerpo: |-
     Charming house in Ycua Satí
@@ -92,7 +92,7 @@ en:
 
     📩 Book your visit.
 pt:
-  titulo: 'Casa charmosa em Ykua Satí'
+  titulo: "Casa 3 quartos · 270 m² – Ykuá Satí"
   descripcion: 'Um imóvel excepcional que une o aconchego da arquitetura tradicional a uma vida voltada para o jardim. Construída em 1998 e em perfeito estado: 270 m² construídos em um terreno de 531 m².'
   cuerpo: |-
     Casa charmosa em Ycua Satí

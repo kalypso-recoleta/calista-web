@@ -6,7 +6,7 @@ categoria: guia
 tema: propietarios
 borrador: false
 fecha: 2026-10-08T07:47:00
-portada_foto: /uploads/La valeur immobilière à la loupe.png
+portada_foto: /uploads/La valeur immobilière à la loupe.jpg
 fr:
   titulo: Combien vaut vraiment mon bien ? Comment se fait une estimation
   titulo_seo: "Combien vaut mon bien ? Comment se fait une estimation"

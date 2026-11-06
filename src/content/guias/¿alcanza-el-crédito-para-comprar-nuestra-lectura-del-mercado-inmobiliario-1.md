@@ -6,7 +6,7 @@ categoria: actualidad
 tema: comprar
 borrador: false
 fecha: 2026-10-10T06:59:00
-portada_foto: /uploads/Crédit approuvé, épargne à compléter.png
+portada_foto: /uploads/Crédit approuvé, épargne à compléter.jpg
 fr:
   titulo: Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier
   titulo_seo: "Le crédit suffit-il pour acheter un logement ?"

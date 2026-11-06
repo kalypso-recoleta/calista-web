@@ -1,5 +1,5 @@
 ---
-titulo: ALQUILER – Monoambiente amoblado y equipado, 6.º piso con balcón y vista abierta – Edificio Pampidos
+titulo: "Monoambiente amoblado · 34 m² – Edificio Pampidos, Herrera"
 en_linea: false
 operacion: temporal
 tipo: departamento
@@ -38,7 +38,7 @@ tarifas:
 incluye:
   - wifi
 fr:
-  titulo: À LOUER – Studio meublé et équipé, 6ᵉ étage avec balcon et vue dégagée – Edificio Pampidos
+  titulo: "Studio meublé · 34 m² – Edificio Pampidos, Herrera"
   descripcion: Studio de 34,38 m² privatifs (47,19 m² au total), entièrement meublé et équipé, prêt à vivre. Lumineux, avec baie vitrée et balcon offrant une vue dégagée sur un quartier arboré de la ville.
   cuerpo: |-
     Studio de **34,38 m² privatifs** (47,19 m² au total), **entièrement meublé et équipé**, prêt à vivre. Lumineux, avec baie vitrée et balcon offrant une vue dégagée sur un quartier arboré de la ville.
@@ -51,7 +51,7 @@ fr:
     - Balcon avec chaises, idéal pour le café du matin
     - Salle de bain avec meuble vasque suspendu en bois, grand miroir et revêtement effet marbre
 en:
-  titulo: FOR RENT – Furnished and fully equipped studio, 6th floor with balcony and open views – Edificio Pampidos
+  titulo: "Furnished studio · 34 m² – Edificio Pampidos, Herrera"
   descripcion: 34.38 m² private area (47.19 m² total), fully furnished and equipped, ready to move in. Bright, with a large window and a balcony overlooking a leafy part of the city.
   cuerpo: |-
     **34.38 m² private area** (47.19 m² total), **fully furnished and equipped**, ready to move in. Bright, with a large window and a balcony overlooking a leafy part of the city.
