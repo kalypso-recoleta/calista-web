@@ -45,3 +45,24 @@ to = "/en/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
 status = 301
 
 # Relance du déploiement Netlify (3/11/2026) après un « Skipped »
+
+# Ficha monoambiente Kalypso renombrada sin precio en la URL (11/11/2026): la antigua dirección redirige a la nueva
+[[redirects]]
+from = "/propiedad/tu-monoambiente-a-estrenar-en-recoleta-desde-usd-4150"
+to = "/propiedad/monoambiente-a-estrenar-en-recoleta-kalypso"
+status = 301
+
+[[redirects]]
+from = "/fr/propiedad/tu-monoambiente-a-estrenar-en-recoleta-desde-usd-4150"
+to = "/fr/propiedad/monoambiente-a-estrenar-en-recoleta-kalypso"
+status = 301
+
+[[redirects]]
+from = "/en/propiedad/tu-monoambiente-a-estrenar-en-recoleta-desde-usd-4150"
+to = "/en/propiedad/monoambiente-a-estrenar-en-recoleta-kalypso"
+status = 301
+
+[[redirects]]
+from = "/pt/propiedad/tu-monoambiente-a-estrenar-en-recoleta-desde-usd-4150"
+to = "/pt/propiedad/monoambiente-a-estrenar-en-recoleta-kalypso"
+status = 301
