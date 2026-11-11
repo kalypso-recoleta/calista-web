@@ -9,7 +9,7 @@ lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-precio: 276500000
+precio: 0
 moneda: PYG
 periodo: total
 ciudad: Asunción
@@ -27,8 +27,8 @@ imagenes:
   - /uploads/SALA 2.jpg
   - /uploads/SALA 4.jpg
 descripcion: |-
-  Kalypso Recoleta — Monoambientes a estrenar desde USD 41.500
-  Reservá hoy con solo USD 4.150 y pagá el saldo en 32 cuotas sin intereses durante la construcción. Ubicación imbatible en Cruz del Chaco esq. Alfredo Seiferheld, a pasos del Shopping Mariscal.
+  Kalypso Recoleta — Monoambientes a estrenar
+  Reservá con el 10 % y pagá el saldo en 32 cuotas sin intereses durante la construcción. Ubicación imbatible en Cruz del Chaco esq. Alfredo Seiferheld, a pasos del Shopping Mariscal.
   Monoambientes de 31 m² con balcón, cocina equipada y aire acondicionado. Amenities premium en la azotea: piscina, quincho climatizado, coworking y terraza panorámica.
   Entrega prevista: mayo 2029. Desarrollado por El Solar SRL: 20 edificios entregados, 100 % vendidos.
   📞 Consultá la grilla de precios y tu simulación de cuotas.
@@ -36,17 +36,17 @@ gama: otros
 fr:
   titulo: "Studio · 31 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
-    Kalypso Recoleta — Studios neufs à partir de USD 41 500
-    Réservez aujourd'hui avec seulement USD 4 150 et payez le solde en 32 mensualités sans intérêts pendant les travaux. Emplacement imbattable à l'angle de Cruz del Chaco et Alfredo Seiferheld, à deux pas du Shopping Mariscal.
+    Kalypso Recoleta — Studios neufs
+    Réservez avec 10 % et payez le solde en 32 mensualités sans intérêts pendant les travaux. Emplacement imbattable à l'angle de Cruz del Chaco et Alfredo Seiferheld, à deux pas du Shopping Mariscal.
     Studios de 31 m² avec balcon, cuisine équipée et climatisation. Équipements haut de gamme sur le toit : piscine, quincho climatisé, coworking et terrasse panoramique.
     Livraison prévue : mai 2029. Promoteur : El Solar SRL, 20 immeubles livrés, 100 % vendus.
     📞 Demandez la grille de prix et votre simulation de mensualités.
   cuerpo: |-
-    Oui, vous avez bien lu. Avec **USD 4 150**, vous réservez aujourd'hui votre studio neuf dans l'un des meilleurs quartiers d'Asunción.
+    Réservez dès aujourd'hui votre studio neuf dans l'un des meilleurs quartiers d'Asunción.
 
     👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
 
-    Le solde de USD 37 350 se paie en **32 mensualités sans intérêts** pendant les travaux. Prix total : **USD 41 500**.
+    Avec **10 %** à la signature, le solde se paie en **32 mensualités sans intérêts** pendant les travaux.
 
     **Pourquoi Kalypso Recoleta ?**
 
@@ -75,9 +75,9 @@ fr:
 
     **Un plan de paiement simple et accessible**
 
-    | **Apport initial** | USD 4 150 (10 %) à la signature |
+    | **Apport initial** | 10 % à la signature |
     | **Solde** | 32 mensualités sans intérêts |
-    | **Parking en option** | USD 15 000 |
+    | **Parking** | En option |
     | **Début des travaux** | Septembre 2026 |
     | **Livraison** | Mai 2029 |
 
@@ -92,17 +92,17 @@ fr:
 en:
   titulo: "Studio · 31 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
-    Kalypso Recoleta — Brand-new studios from USD 41,500
-    Reserve today with only USD 4,150 and pay the balance in 32 interest-free instalments during construction. Unbeatable location on the corner of Cruz del Chaco and Alfredo Seiferheld, steps from Shopping Mariscal.
+    Kalypso Recoleta — Brand-new studios
+    Reserve with 10 % and pay the balance in 32 interest-free instalments during construction. Unbeatable location on the corner of Cruz del Chaco and Alfredo Seiferheld, steps from Shopping Mariscal.
     31 m² studios with balcony, fitted kitchen and air conditioning. Premium rooftop amenities: pool, air-conditioned quincho, coworking and panoramic terrace.
     Delivery planned for May 2029. Developer: El Solar SRL, 20 buildings delivered, 100 % sold.
     📞 Ask for the price list and your instalment simulation.
   cuerpo: |-
-    Yes, you read that right. With **USD 4,150** you reserve your brand-new studio today in one of the best areas of Asunción.
+    Reserve your brand-new studio today in one of the best areas of Asunción.
 
     👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
 
-    The balance of USD 37,350 is paid in **32 interest-free monthly instalments** during construction. Total price: **USD 41,500**.
+    With **10 %** on signing, the balance is paid in **32 interest-free monthly instalments** during construction.
 
     **Why Kalypso Recoleta?**
 
@@ -131,9 +131,9 @@ en:
 
     **A simple, accessible payment plan**
 
-    | **Initial payment** | USD 4,150 (10 %) on signing |
+    | **Initial payment** | 10 % on signing |
     | **Balance** | 32 interest-free monthly instalments |
-    | **Optional parking space** | USD 15,000 |
+    | **Parking space** | Optional |
     | **Construction start** | September 2026 |
     | **Delivery** | May 2029 |
 
@@ -148,17 +148,17 @@ en:
 pt:
   titulo: "Studio · 31 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
-    Kalypso Recoleta — Studios novos a partir de USD 41.500
-    Reserve hoje com apenas USD 4.150 e pague o saldo em 32 parcelas sem juros durante a obra. Localização imbatível na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal.
+    Kalypso Recoleta — Studios novos
+    Reserve com 10 % e pague o saldo em 32 parcelas sem juros durante a obra. Localização imbatível na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal.
     Studios de 31 m² com sacada, cozinha equipada e ar-condicionado. Áreas comuns premium na cobertura: piscina, quincho climatizado, coworking e terraço panorâmico.
     Entrega prevista para maio de 2029. Incorporadora: El Solar SRL, 20 edifícios entregues, 100 % vendidos.
     📞 Peça a tabela de preços e a sua simulação de parcelas.
   cuerpo: |-
-    Sim, você leu certo. Com **USD 4.150** você reserva hoje o seu studio novo em uma das melhores regiões de Assunção.
+    Reserve hoje o seu studio novo em uma das melhores regiões de Assunção.
 
     👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
 
-    O saldo de USD 37.350 é pago em **32 parcelas mensais sem juros** durante a obra. Preço total: **USD 41.500**.
+    Com **10 %** na assinatura, o saldo é pago em **32 parcelas mensais sem juros** durante a obra.
 
     **Por que o Kalypso Recoleta?**
 
@@ -187,9 +187,9 @@ pt:
 
     **Um plano de pagamento simples e acessível**
 
-    | **Entrada** | USD 4.150 (10 %) na assinatura |
+    | **Entrada** | 10 % na assinatura |
     | **Saldo** | 32 parcelas mensais sem juros |
-    | **Vaga de garagem opcional** | USD 15.000 |
+    | **Vaga de garagem** | Opcional |
     | **Início da obra** | Setembro de 2026 |
     | **Entrega** | Maio de 2029 |
 
@@ -204,11 +204,11 @@ pt:
 fecha: 2026-07-15T11:42
 ---
 
-Sí, leíste bien. Con **USD 4.150** reservás hoy tu monoambiente a estrenar en una de las mejores zonas de Asunción.
+Reservá hoy tu monoambiente a estrenar en una de las mejores zonas de Asunción.
 
 👉 [www.kalypso.com.py](https://www.kalypso.com.py/)
 
-El saldo de USD 37.350 lo pagás en **32 cuotas mensuales sin intereses** durante la construcción. Precio total: **USD 41.500**.
+Con el **10 %** a la firma, el saldo lo pagás en **32 cuotas mensuales sin intereses** durante la construcción.
 
 **¿Por qué Kalypso Recoleta?**
 
@@ -237,9 +237,9 @@ El saldo de USD 37.350 lo pagás en **32 cuotas mensuales sin intereses** durant
 
 **Plan de pago simple y accesible**
 
-| **Entrega inicial** | USD 4.150 (10 %) a la firma |
+| **Entrega inicial** | 10 % a la firma |
 | **Saldo** | 32 cuotas mensuales sin intereses |
-| **Cochera opcional** | USD 15.000 |
+| **Cochera** | Opcional |
 | **Inicio de obra** | Septiembre 2026 |
 | **Entrega** | Mayo 2029 |
 

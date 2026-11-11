@@ -13,6 +13,8 @@ const LOCALE_NUM: Record<Lang, string> = {
 /** Prix formaté avec devise. */
 export function formatPrecio(bien: Bien, lang: Lang): string {
   const t = useTranslations(lang);
+  // Prix à 0 (ou vide) : « Precio a consultar » au lieu de « Gs. 0 »
+  if (!bien.precio || bien.precio <= 0) return t('tar.consultar');
   const numero = new Intl.NumberFormat(LOCALE_NUM[lang], {
     maximumFractionDigits: 0,
   }).format(bien.precio);

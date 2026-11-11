@@ -83,7 +83,7 @@ const inactivo = d.estado === 'vendido' || d.estado === 'alquilado';
     </ul>
 
     <div class="foot">
-      <span class="precio">{d.desarrollo && !d.precio_unico && <small class="desde">{t('tar.desde')} </small>}{formatPrecio(d, lang)}</span>
+      <span class="precio">{d.desarrollo && !d.precio_unico && d.precio > 0 && <small class="desde">{t('tar.desde')} </small>}{formatPrecio(d, lang)}</span>
       <a href={href} target={target} rel={rel} class="ver">{t('common.ver')}</a>
     </div>
   </div>

@@ -9,7 +9,7 @@ lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-precio: 356500000
+precio: 0
 moneda: PYG
 periodo: total
 ciudad: Asunción
@@ -28,22 +28,22 @@ imagenes:
   - /uploads/kalypso-plano-3d.jpg
 descripcion: |-
   Compacto y funcional: 31,13 m² internos + balcón de 7,45 m². Dormitorio independiente, sala/comedor, cocina equipada y baño completo. El equilibrio perfecto entre precio y comodidad — muy buscado para alquiler.
-  Desde Gs. 347.750.000 (USD 57.299) · 10 % de entrega + 32 cuotas sin intereses.
+  10 % de entrega + 32 cuotas sin intereses.
 gama: otros
 fr:
   titulo: "Appartement 1 ch. · 38 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
     Compact et fonctionnel : 31,13 m² habitables + balcon de 7,45 m². Chambre indépendante, séjour, cuisine équipée et salle de bain complète. L'équilibre parfait entre prix et confort — très recherché à la location.
-    À partir de Gs. 347 750 000 (USD 57 299) · 10 % à la réservation + 32 mensualités sans intérêts.
+    10 % à la réservation + 32 mensualités sans intérêts.
 en:
   titulo: "1-bed apartment · 38 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
     Compact and functional: 31.13 m² of living space + 7.45 m² balcony. Separate bedroom, living-dining room, fitted kitchen and full bathroom. The perfect balance between price and comfort — in high demand for rentals.
-    From Gs. 347,750,000 (USD 57,299) · 10 % deposit + 32 interest-free instalments.
+    10 % deposit + 32 interest-free instalments.
 pt:
   titulo: "Apto 1 quarto · 38 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
     Compacto e funcional: 31,13 m² internos + sacada de 7,45 m². Quarto independente, sala de estar e jantar, cozinha equipada e banheiro completo. O equilíbrio perfeito entre preço e conforto — muito procurado para aluguel.
-    A partir de Gs. 347.750.000 (USD 57.299) · 10 % de entrada + 32 parcelas sem juros.
+    10 % de entrada + 32 parcelas sem juros.
 fecha: 2026-07-15T12:01
 ---

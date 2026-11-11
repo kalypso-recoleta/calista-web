@@ -38,8 +38,9 @@ if (kind === 'comprar') {
       (a.data.proyecto ?? a.data.promotor ?? '').localeCompare(b.data.proyecto ?? b.data.promotor ?? '') ||
       a.data.precio - b.data.precio);
 } else if (kind === 'kalypso') {
-  // Page Kalypso Recoleta : nos propres unités, du moins cher au plus cher
-  biens = todos.filter((b) => esKalypso(b.data)).sort((a, b) => a.data.precio - b.data.precio);
+  // Page Kalypso Recoleta : nos propres unités, du moins cher au plus cher (prix masqués : de la plus petite à la plus grande)
+  biens = todos.filter((b) => esKalypso(b.data)).sort((a, b) =>
+    a.data.precio - b.data.precio || (a.data.superficie_construida ?? 0) - (b.data.superficie_construida ?? 0));
 }
 if (kind !== 'desarrollos' && kind !== 'kalypso') biens = biens.sort((a, b) => +b.data.fecha - +a.data.fecha);
 const enPozo = kind === 'desarrollos' || kind === 'kalypso';

@@ -9,7 +9,7 @@ lateral: false
 portada: false
 exclusivo: false
 desarrollo: true
-precio: 509750000
+precio: 0
 moneda: PYG
 periodo: total
 ciudad: Asunción
@@ -28,26 +28,26 @@ imagenes:
   - /uploads/kalypso-living-04.jpg
 descripcion: |-
   El 1 dormitorio más generoso: 48,13 m² internos + balcón de 9,69 m². Dormitorio amplio, sala/comedor independiente, cocina con lavadero y baño completo. Casi el confort de un 2 dormitorios, al precio de un 1 dormitorio.
-  Desde Gs. 497.250.000 (USD 81 933) · 10 % de entrega + 32 cuotas sin intereses.
+  10 % de entrega + 32 cuotas sin intereses.
   www.kalypso.com.py
 gama: otros
 fr:
   titulo: "Appartement 1 ch. · 57 m² – Kalypso, Recoleta (sur plan)"
   descripcion: |-
     Le 1 chambre le plus généreux : 48,13 m² habitables + balcon de 9,69 m². Grande chambre, séjour indépendant, cuisine avec buanderie et salle de bain complète. Presque le confort d'un 2 chambres, au prix d'un 1 chambre.
-    À partir de Gs. 497 250 000 (USD 81 933) · 10 % à la réservation + 32 mensualités sans intérêts.
+    10 % à la réservation + 32 mensualités sans intérêts.
     www.kalypso.com.py
 en:
   titulo: "1-bed apartment · 57 m² – Kalypso, Recoleta (off-plan)"
   descripcion: |-
     The most generous 1-bedroom: 48.13 m² of living space + 9.69 m² balcony. Large bedroom, separate living-dining room, kitchen with laundry and full bathroom. Almost the comfort of a 2-bedroom at the price of a 1-bedroom.
-    From Gs. 497,250,000 (USD 81,933) · 10 % deposit + 32 interest-free instalments.
+    10 % deposit + 32 interest-free instalments.
     www.kalypso.com.py
 pt:
   titulo: "Apto 1 quarto · 57 m² – Kalypso, Recoleta (na planta)"
   descripcion: |-
     O apartamento de 1 quarto mais amplo: 48,13 m² internos + sacada de 9,69 m². Quarto amplo, sala de estar e jantar independente, cozinha com área de serviço e banheiro completo. Quase o conforto de um 2 quartos, pelo preço de um 1 quarto.
-    A partir de Gs. 497.250.000 (USD 81.933) · 10 % de entrada + 32 parcelas sem juros.
+    10 % de entrada + 32 parcelas sem juros.
     www.kalypso.com.py
 fecha: 2026-07-15T12:17
 ---
