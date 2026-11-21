@@ -14,9 +14,9 @@ fr:
   cuerpo: |-
     Le Grand Asunción grandit, et la mobilité est devenue l’un de ses grands enjeux. Plusieurs projets publics sont en train de redessiner la façon de se déplacer entre la capitale, Luque et les villes de l’est, jusqu’au lac Ypacaraí et à San Bernardino. Voici où ils en sont, d’après les sources officielles.
 
-    ![Carte des projets de transport du Grand Asunción : Tren de Cercanías et Red Vial Estructurante](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
+    [![Carte des projets de transport du Grand Asunción : Tren de Cercanías et Red Vial Estructurante](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
 
-    _Carte indicative CALISTA : train (rouge) et routes (bleu). Trait plein : confirmé ou en travaux ; pointillés : étape suivante._
+    _Carte indicative CALISTA : train (rouge) et routes (bleu). Trait plein : confirmé ou en travaux ; pointillés : étape suivante. Cliquez sur la carte pour l’agrandir._
 
     ## Le Tren de Cercanías : le premier train électrique de l’agglomération
 
@@ -66,9 +66,9 @@ en:
   cuerpo: |-
     Greater Asunción is growing, and getting around has become one of its main challenges. Several public projects are reshaping travel between the capital, Luque and the towns to the east, as far as Lake Ypacaraí and San Bernardino. Here is where they stand, according to official sources.
 
-    ![Map of transport projects in Greater Asunción: commuter rail and new road network](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
+    [![Map of transport projects in Greater Asunción: commuter rail and new road network](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
 
-    _Indicative CALISTA map (labels in French): train in red, roads in blue. Solid line: confirmed or under way; dashed: next stage._
+    _Indicative CALISTA map (labels in French): train in red, roads in blue. Solid line: confirmed or under way; dashed: next stage. Click the map to enlarge it._
 
     ## The Tren de Cercanías: the metropolitan area’s first electric train
 
@@ -118,9 +118,9 @@ pt:
   cuerpo: |-
     A Grande Assunção está crescendo, e a mobilidade se tornou um dos seus grandes desafios. Vários projetos públicos estão redesenhando a forma de circular entre a capital, Luque e as cidades a leste, até o lago Ypacaraí e San Bernardino. Veja em que ponto estão, segundo as fontes oficiais.
 
-    ![Mapa dos projetos de transporte da Grande Assunção: trem metropolitano e nova rede viária](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
+    [![Mapa dos projetos de transporte da Grande Assunção: trem metropolitano e nova rede viária](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
 
-    _Mapa indicativo CALISTA (legendas em francês): trem em vermelho, rodovias em azul. Linha contínua: confirmado ou em obras; tracejado: próxima etapa._
+    _Mapa indicativo CALISTA (legendas em francês): trem em vermelho, rodovias em azul. Linha contínua: confirmado ou em obras; tracejado: próxima etapa. Clique no mapa para ampliá-lo._
 
     ## O Tren de Cercanías: o primeiro trem elétrico da região metropolitana
 
@@ -166,9 +166,9 @@ pt:
 ---
 El Gran Asunción crece, y la movilidad se convirtió en uno de sus grandes desafíos. Varios proyectos públicos están redibujando la forma de moverse entre la capital, Luque y las ciudades del este, hasta el lago Ypacaraí y San Bernardino. Este es su estado, según las fuentes oficiales.
 
-![Mapa de los proyectos de transporte del Gran Asunción: Tren de Cercanías y Red Vial Estructurante](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
+[![Mapa de los proyectos de transporte del Gran Asunción: Tren de Cercanías y Red Vial Estructurante](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)](/uploads/mapa-proyectos-transporte-gran-asuncion.jpg)
 
-_Mapa indicativo CALISTA (leyendas en francés): tren en rojo, rutas en azul. Línea continua: confirmado o en obras; punteada: próxima etapa._
+_Mapa indicativo CALISTA (leyendas en francés): tren en rojo, rutas en azul. Línea continua: confirmado o en obras; punteada: próxima etapa. Hacé clic en el mapa para ampliarlo._
 
 ## Tren de Cercanías: el primer tren eléctrico del área metropolitana
 
