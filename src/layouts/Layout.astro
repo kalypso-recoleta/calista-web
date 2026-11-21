@@ -85,6 +85,14 @@ const orgSchema = {
     addressLocality: 'Asunción',
     addressCountry: 'PY',
   },
+  geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+  // Jours absents (samedi, dimanche) = fermé
+  openingHoursSpecification: site.horarios.map((h) => ({
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: h.dias,
+    opens: h.abre,
+    closes: h.cierra,
+  })),
   areaServed: ['Asunción', 'Gran Asunción', 'Paraguay'],
   knowsLanguage: ['es', 'fr', 'en', 'pt'],
   // Description dans la langue de la page (mentionne les langues parlées)

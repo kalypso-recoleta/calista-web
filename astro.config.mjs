@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { readdirSync, readFileSync } from 'node:fs';
+import { tablaLastmod } from './sitemap-lastmod.mjs';
 
 // IMPORTANT : remplace cette URL par le domaine final de Calista
 // (ex. https://www.calista.com.py). Elle sert au sitemap et aux
@@ -25,6 +26,10 @@ const guiasSinPt = new Set(
     .map((f) => slugify(f.replace(/\.md$/, '')))
 );
 
+// Vraies dates de modification des fiches et articles (voir sitemap-lastmod.mjs)
+const LASTMOD = tablaLastmod();
+const sinIdioma = (url) => new URL(url).pathname.replace(/^\/(fr|en|pt)(?=\/)/, '').replace(/\/?$/, '/');
+
 export default defineConfig({
   site: SITE,
   integrations: [
@@ -43,6 +48,11 @@ export default defineConfig({
         defaultLocale: 'es',
         // Mêmes codes que les balises hreflang des pages (langue seule)
         locales: { es: 'es', fr: 'fr', en: 'en', pt: 'pt' },
+      },
+      // <lastmod> seulement pour les pages dont on connaît la vraie date de modification
+      serialize: (item) => {
+        const fecha = LASTMOD.get(sinIdioma(item.url));
+        return fecha ? { ...item, lastmod: fecha.toISOString() } : item;
       },
     }),
   ],

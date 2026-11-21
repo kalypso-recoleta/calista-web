@@ -19,6 +19,13 @@ export const site = {
   email: 'contacto@calista.com.py',
   telefono: '+595 994 385487',
   direccion: 'Auditores de la Guerra del Chaco esq. Tte. 2do Rufino Cañete, Barrio Mburucuyá, Asunción',
+  // Position exacte de l'agence = celle de la fiche Google (lien googleResenas), relevée le 21/11/2026.
+  // Sert aux données structurées (RealEstateAgent → geo). À changer si l'agence déménage.
+  geo: { lat: -25.2627085, lng: -57.5649317 },
+  // Horaires d'ouverture (données structurées) : lundi au vendredi 8 h – 17 h, fermé samedi et dimanche.
+  horarios: [
+    { dias: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], abre: '08:00', cierra: '17:00' },
+  ],
   ruc: '80109137-3',
   // Carte professionnelle de l'agence en France (CALISTA IMMOBILIER SARL, Martinique).
   // ⚠️ Valable jusqu'au 16/12/2027 : mettre à jour au renouvellement.
@@ -36,7 +43,7 @@ export const site = {
   // Note Google affichée en haut de l'accueil (écrite dans la page pour Google et les IA).
   // ⚠️ À METTRE À JOUR à la main quand la note ou le nombre d'avis change. Vide = masqué.
   googleNota: '5,0',
-  googleCantidad: 16,
+  googleCantidad: 17,
 
   // Réseaux (laisse vide pour masquer)
   instagram: '',

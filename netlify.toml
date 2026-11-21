@@ -66,3 +66,9 @@ status = 301
 from = "/pt/propiedad/tu-monoambiente-a-estrenar-en-recoleta-desde-usd-4150"
 to = "/pt/propiedad/monoambiente-a-estrenar-en-recoleta-kalypso"
 status = 301
+
+# /sitemap.xml (adresse que certains outils testent par défaut) → index du sitemap généré par Astro (21/11/2026)
+[[redirects]]
+from = "/sitemap.xml"
+to = "/sitemap-index.xml"
+status = 301
