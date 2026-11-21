@@ -31,7 +31,7 @@ fr:
 
     - **Deux corridors vers la PY02** : l’un depuis le km 41, qui relie Ypacaraí, Patiño, Areguá et Luque ; l’autre depuis le km 43, vers San Bernardino.
     - **En travaux** : la rénovation de 21 km de l’Ecovía entre Luque et San Bernardino, et l’élargissement à 2+2 voies de l’accès à San Bernardino depuis la PY02.
-    - **Prochaine étape** : le corridor Luque – Areguá – Ypacaraí, avec une nouvelle variante, dont le MOPC annonce les travaux pour le début de 2027 ([ABC Color, 19 septembre 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
+    - **Prochaine étape** : le corridor Luque–Areguá–Ypacaraí prévoit une nouvelle variante à Areguá. Selon le calendrier communiqué par le MOPC à ABC Color, les interventions dans le secteur d’Areguá sont prévues pour les premiers mois de 2027 ([ABC Color, 19 septembre 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
 
     En parallèle, le « Plan Central » du MOPC asphalte 48 km de rues de quartier à Luque et Areguá ([MOPC, 14 août 2026](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)).
 
@@ -79,7 +79,7 @@ en:
 
     - **Two corridors to the PY02**: one from km 41, connecting Ypacaraí, Patiño, Areguá and Luque; the other from km 43, towards San Bernardino.
     - **Under way**: resurfacing of 21 km of the Ecovía between Luque and San Bernardino, and widening of the access to San Bernardino from the PY02 to 2+2 lanes.
-    - **Next step**: the Luque – Areguá – Ypacaraí corridor, with a new bypass, for which the MOPC has announced works in early 2027 ([ABC Color, 19 September 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
+    - **Next step**: the Luque–Areguá–Ypacaraí corridor includes a new bypass at Areguá. According to the timetable the MOPC gave ABC Color, works in the Areguá area are planned for the first months of 2027 ([ABC Color, 19 September 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
 
     Alongside this, the MOPC’s “Plan Central” is paving 48 km of neighbourhood streets in Luque and Areguá ([MOPC, 14 August 2026](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)).
 
@@ -127,7 +127,7 @@ pt:
 
     - **Dois corredores até a PY02**: um a partir do km 41, que liga Ypacaraí, Patiño, Areguá e Luque; outro a partir do km 43, rumo a San Bernardino.
     - **Em obras**: a renovação de 21 km da Ecovía entre Luque e San Bernardino e a ampliação para 2+2 faixas do acesso a San Bernardino a partir da PY02.
-    - **Próxima etapa**: o corredor Luque – Areguá – Ypacaraí, com uma nova variante, cujas obras o MOPC anuncia para o início de 2027 ([ABC Color, 19 de setembro de 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
+    - **Próxima etapa**: o corredor Luque–Areguá–Ypacaraí prevê uma nova variante em Areguá. Segundo o cronograma informado pelo MOPC ao ABC Color, as intervenções no setor de Areguá estão previstas para os primeiros meses de 2027 ([ABC Color, 19 de setembro de 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
 
     Paralelamente, o “Plan Central” do MOPC está asfaltando 48 km de ruas de bairro em Luque e Areguá ([MOPC, 14 de agosto de 2026](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)).
 
@@ -171,7 +171,7 @@ El viaducto forma parte de un programa más amplio, la «Red Vial Estructurante 
 
 - **Dos corredores hacia la PY02**: uno desde el km 41, que conecta Ypacaraí, Patiño, Areguá y Luque; otro desde el km 43, hacia San Bernardino.
 - **En obras**: la renovación de 21 km de la Ecovía entre Luque y San Bernardino, y la ampliación a 2+2 carriles del acceso a San Bernardino desde la PY02.
-- **Próxima etapa**: el corredor Luque – Areguá – Ypacaraí, con una nueva variante, cuyas obras el MOPC anuncia para inicios de 2027 ([ABC Color, 19 de setiembre de 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
+- **Próxima etapa**: el corredor Luque–Areguá–Ypacaraí prevé una nueva variante en Areguá. Según el cronograma que el MOPC comunicó a ABC Color, las intervenciones en el sector de Areguá están previstas para los primeros meses de 2027 ([ABC Color, 19 de setiembre de 2026](https://www.abc.com.py/economia/2026/09/19/ruta-luque-aregua-ypacarai-el-tramo-incluido-en-la-app-de-la-py02-que-sigue-en-pesimo-estado/)).
 
 En paralelo, el «Plan Central» del MOPC asfalta 48 km de calles barriales en Luque y Areguá ([MOPC, 14 de agosto de 2026](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)).
 
