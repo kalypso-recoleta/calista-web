@@ -74,6 +74,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'RealEstateAgent',
   name: site.nombre,
+  legalName: site.razonSocial,
+  taxID: site.ruc,
   url: siteUrl,
   image: new URL('/og-default.png', Astro.site).toString(),
   logo: new URL('/logo-calista.png', Astro.site).toString(),

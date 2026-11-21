@@ -26,7 +26,9 @@ export const site = {
   horarios: [
     { dias: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], abre: '08:00', cierra: '17:00' },
   ],
-  ruc: '80109137-3',
+  // Société qui exploite la marque CALISTA (depuis nov. 2026 ; avant : CALISTA Inmobiliaria EIRL, RUC 80109137-3)
+  razonSocial: 'GRUPO METRIA E.A.S.',
+  ruc: '80181219-4',
   // Carte professionnelle de l'agence en France (CALISTA IMMOBILIER SARL, Martinique).
   // ⚠️ Valable jusqu'au 16/12/2027 : mettre à jour au renouvellement.
   cpiFrancia: 'CPI 9721 2018 000 024 298',

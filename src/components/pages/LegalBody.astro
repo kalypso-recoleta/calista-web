@@ -24,7 +24,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       lead: 'Información sobre el titular del sitio calista.com.py y las condiciones de uso.',
       secs: [
         { h: 'Titular del sitio', p: [
-          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `${site.razonSocial} — RUC ${site.ruc}. CALISTA Inmobiliaria es una marca (nombre de fantasía) de ${site.razonSocial}`,
           `Domicilio: ${site.direccion}, Paraguay.`,
           `Contacto: ${site.email} · ${telefonos}.`,
           'Responsable del contenido: Hélène Montourcy, fundadora.' ] },
@@ -42,7 +42,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       title: 'Política de privacidad',
       lead: 'Qué datos recogemos en este sitio, para qué los usamos y cómo podés ejercer tus derechos.',
       secs: [
-        { h: 'Responsable', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contacto: ${site.email}.`] },
+        { h: 'Responsable', p: [`${site.razonSocial} (CALISTA Inmobiliaria) — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contacto: ${site.email}.`] },
         { h: 'Datos que recogemos', p: [
           'Formularios del sitio (contacto, estimación de alquiler, preguntas del blog): nombre, email, teléfono o WhatsApp, tu mensaje y, en su caso, los datos de tu propiedad (barrio, tipo, dormitorios, superficie, amoblado).',
           'Mensajes de WhatsApp que nos envíes desde el sitio.',
@@ -71,7 +71,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       lead: 'Informations sur l’éditeur du site calista.com.py et conditions d’utilisation.',
       secs: [
         { h: 'Éditeur du site', p: [
-          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `${site.razonSocial} — RUC ${site.ruc}. CALISTA Inmobiliaria est une marque (nom commercial) de ${site.razonSocial}`,
           `Adresse : ${site.direccion}, Paraguay.`,
           `Contact : ${site.email} · ${telefonos}.`,
           'Responsable de la publication : Hélène Montourcy, fondatrice.' ] },
@@ -89,7 +89,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       title: 'Politique de confidentialité',
       lead: 'Les données que nous recueillons sur ce site, ce que nous en faisons et comment exercer vos droits.',
       secs: [
-        { h: 'Responsable', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact : ${site.email}.`] },
+        { h: 'Responsable', p: [`${site.razonSocial} (CALISTA Inmobiliaria) — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact : ${site.email}.`] },
         { h: 'Données recueillies', p: [
           'Formulaires du site (contact, estimation de loyer, questions du blog) : nom, e-mail, téléphone ou WhatsApp, votre message et, le cas échéant, les caractéristiques de votre bien (quartier, type, chambres, surface, meublé).',
           'Les messages WhatsApp que vous nous envoyez depuis le site.',
@@ -118,7 +118,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       lead: 'Information about the owner of calista.com.py and terms of use.',
       secs: [
         { h: 'Site owner', p: [
-          `CALISTA Inmobiliaria EIRL — RUC (tax ID) ${site.ruc}.`,
+          `${site.razonSocial} — RUC (tax ID) ${site.ruc}. CALISTA Inmobiliaria is a brand (trade name) of ${site.razonSocial}`,
           `Address: ${site.direccion}, Paraguay.`,
           `Contact: ${site.email} · ${telefonos}.`,
           'Responsible for content: Hélène Montourcy, founder.' ] },
@@ -136,7 +136,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       title: 'Privacy policy',
       lead: 'What data we collect on this site, what we use it for and how to exercise your rights.',
       secs: [
-        { h: 'Controller', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact: ${site.email}.`] },
+        { h: 'Controller', p: [`${site.razonSocial} (CALISTA Inmobiliaria) — RUC ${site.ruc} — ${site.direccion}, Paraguay. Contact: ${site.email}.`] },
         { h: 'Data we collect', p: [
           'Site forms (contact, rent estimate, blog questions): name, email, phone or WhatsApp, your message and, where relevant, details of your property (neighbourhood, type, bedrooms, floor area, furnished).',
           'WhatsApp messages you send us from the site.',
@@ -165,7 +165,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       lead: 'Informações sobre o titular do site calista.com.py e as condições de uso.',
       secs: [
         { h: 'Titular do site', p: [
-          `CALISTA Inmobiliaria EIRL — RUC ${site.ruc}.`,
+          `${site.razonSocial} — RUC ${site.ruc}. CALISTA Inmobiliaria é uma marca (nome fantasia) da ${site.razonSocial}`,
           `Endereço: ${site.direccion}, Paraguai.`,
           `Contato: ${site.email} · ${telefonos}.`,
           'Responsável pelo conteúdo: Hélène Montourcy, fundadora.' ] },
@@ -183,7 +183,7 @@ const T: Record<'es' | 'fr' | 'en' | 'pt', Record<'aviso' | 'privacidad', { titl
       title: 'Política de privacidade',
       lead: 'Quais dados coletamos neste site, para que os usamos e como você pode exercer os seus direitos.',
       secs: [
-        { h: 'Responsável', p: [`CALISTA Inmobiliaria EIRL — RUC ${site.ruc} — ${site.direccion}, Paraguai. Contato: ${site.email}.`] },
+        { h: 'Responsável', p: [`${site.razonSocial} (CALISTA Inmobiliaria) — RUC ${site.ruc} — ${site.direccion}, Paraguai. Contato: ${site.email}.`] },
         { h: 'Dados que coletamos', p: [
           'Formulários do site (contato, estimativa de aluguel, perguntas do blog): nome, e-mail, telefone ou WhatsApp, a sua mensagem e, se for o caso, os dados do seu imóvel (bairro, tipo, quartos, área, mobiliado).',
           'Mensagens de WhatsApp que você nos enviar a partir do site.',

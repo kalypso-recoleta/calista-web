@@ -49,7 +49,7 @@ const year = new Date().getFullYear();
       <a href={`mailto:${site.email}`}>{site.email}</a>
       <span>{site.telefono}</span>
       <span>{site.direccion}</span>
-      <span>RUC {site.ruc}</span>
+      <span>{({ es: 'CALISTA es una marca de', fr: 'CALISTA est une marque de', en: 'CALISTA is a brand of', pt: 'CALISTA é uma marca da' } as Record<string, string>)[lang] ?? 'CALISTA es una marca de'} {site.razonSocial} · RUC {site.ruc}</span>
     </div>
   </div>
 
