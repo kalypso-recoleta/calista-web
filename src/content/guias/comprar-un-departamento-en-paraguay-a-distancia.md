@@ -6,6 +6,7 @@ categoria: guia
 tema: comprar
 borrador: false
 fecha: 2026-11-21T08:00:00
+portada_foto: /uploads/comprar-un-departamento-a-distancia.jpg
 fr:
   titulo: "Acheter un appartement au Paraguay sans être sur place"
   titulo_seo: "Acheter un appartement au Paraguay à distance"
