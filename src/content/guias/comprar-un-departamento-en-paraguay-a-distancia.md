@@ -44,14 +44,14 @@ fr:
 
     Deux démarches sont possibles depuis l’étranger.
 
-    1. **Auprès du consulat paraguayen compétent.** Contactez-le pour confirmer qu’il peut établir la procuration dans votre situation et connaître les pièces à fournir (par exemple, la page [Poderes du consulat général à Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html)).
+    1. **Auprès du consulat paraguayen compétent.** Contactez-le pour confirmer qu’il peut établir la procuration dans votre situation et connaître les pièces à fournir.
     2. **Auprès d’un notaire dans votre pays de résidence.** Si la Convention Apostille s’applique entre le pays où l’acte est établi et le Paraguay, l’apostille remplace la légalisation consulaire. Dans les autres cas, faites confirmer la procédure de légalisation. La Convention est en vigueur pour le Paraguay depuis le 30 août 2014 ([HCCH](https://www.hcch.net/fr/instruments/conventions/status-table/?cid=41) ; [ministère paraguayen des Affaires étrangères](https://www.mre.gov.py/legalizaciones-apostilla/)).
 
     Faites valider le projet de procuration par l’escribano chargé de la vente avant de le signer à l’étranger. Il vous précisera si une traduction est requise et sous quelle forme le document doit lui parvenir. Prévoyez le délai du rendez-vous, de l’apostille ou de la légalisation, et de l’envoi de l’acte si nécessaire.
 
     ## Payer depuis l’étranger
 
-    Privilégiez un virement depuis un compte à votre nom et préparez les justificatifs d’origine des fonds. La [résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) impose des vérifications aux professionnels qui exercent habituellement une activité de vente ou d’achat de biens immobiliers. Selon le dossier, on pourra vous demander des relevés bancaires, un acte de vente, un justificatif de prêt ou des documents relatifs à une donation ou à une succession.
+    Privilégiez un virement depuis un compte à votre nom et préparez les justificatifs d’origine des fonds. La [résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) impose aux professionnels de l’immobilier qui y sont soumis un dispositif de prévention du blanchiment, dont la vérification de leurs clients ([SEPRELAD, 11 juin 2026](https://www.seprelad.gov.py/?p=4038)). Selon le dossier, on pourra vous demander des relevés bancaires, un acte de vente, un justificatif de prêt ou des documents relatifs à une donation ou à une succession.
 
     - **Confirmez les coordonnées bancaires** auprès du bénéficiaire en utilisant un numéro de téléphone déjà vérifié, surtout si les instructions changent en cours de transaction.
     - **Demandez à votre banque** le délai prévisible, les frais et le taux de change si une conversion est nécessaire. Faites préciser dans le contrat la devise et le montant que le bénéficiaire doit recevoir.
@@ -89,8 +89,8 @@ fr:
     - Code civil paraguayen (loi n° 1183/85), articles 700, 840 et 884 : [Livre III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br) ; article 1968 : [Livre IV](https://www.bacn.gov.py/leyes-paraguayas/524/ley-n-1183--codigo-civil--iv-parte--libro-cuarto) — Biblioteca y Archivo Central del Congreso Nacional.
     - [Loi n° 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) sur la zone de sécurité frontalière.
     - [Loi n° 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) sur le RUN, articles 122 et 123 ; [Poder Judicial, 14 janvier 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
-    - Procurations et documents étrangers : [consulat général du Paraguay à Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html) · [ministère paraguayen des Affaires étrangères](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convention Apostille, état présent (HCCH)](https://www.hcch.net/fr/instruments/conventions/status-table/?cid=41).
-    - [Résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) sur les obligations du secteur immobilier.
+    - Documents étrangers : [ministère paraguayen des Affaires étrangères](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convention Apostille, état présent (HCCH)](https://www.hcch.net/fr/instruments/conventions/status-table/?cid=41).
+    - [Résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) sur les obligations du secteur immobilier ; [SEPRELAD, 11 juin 2026](https://www.seprelad.gov.py/?p=4038).
     - [Loi n° 2828/2005 du tourisme](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, cadre légal](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
 en:
   titulo: "Buying an apartment in Paraguay without being there"
@@ -130,14 +130,14 @@ en:
 
     There are two ways to do this from abroad.
 
-    1. **At the competent Paraguayan consulate.** Contact it to confirm that it can draw up the power of attorney in your situation and which documents you need (for example, the [Poderes page of the Consulate General in Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html)).
+    1. **At the competent Paraguayan consulate.** Contact it to confirm that it can draw up the power of attorney in your situation and which documents you need.
     2. **Before a notary in your country of residence.** If the Apostille Convention applies between the country where the document is signed and Paraguay, the apostille replaces consular legalisation. Otherwise, have the legalisation procedure confirmed. The Convention has been in force for Paraguay since 30 August 2014 ([HCCH](https://www.hcch.net/en/instruments/conventions/status-table/?cid=41); [Paraguayan Ministry of Foreign Affairs](https://www.mre.gov.py/legalizaciones-apostilla/)).
 
     Have the escribano handling the sale approve the draft power of attorney before you sign it abroad. They will tell you whether a translation is required and in what form the document must reach them. Allow time for the appointment, the apostille or legalisation, and sending the document if needed.
 
     ## Paying from abroad
 
-    Pay by transfer from an account in your own name if possible, and prepare evidence of the source of funds. [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) requires checks by professionals who regularly buy or sell property. Depending on the case, you may be asked for bank statements, a sale deed, loan documents or papers relating to a gift or an inheritance.
+    Pay by transfer from an account in your own name if possible, and prepare evidence of the source of funds. [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) requires real estate professionals subject to it to apply anti-money-laundering controls, including customer due diligence ([SEPRELAD, 11 June 2026](https://www.seprelad.gov.py/?p=4038)). Depending on the case, you may be asked for bank statements, a sale deed, loan documents or papers relating to a gift or an inheritance.
 
     - **Confirm the bank details** with the payee using a phone number you have already verified, especially if the instructions change during the transaction.
     - **Ask your bank** about the expected timing, fees and exchange rate if a conversion is needed. Have the contract state the currency and the amount the payee must receive.
@@ -175,8 +175,8 @@ en:
     - Paraguayan Civil Code (Law No. 1183/85), articles 700, 840 and 884: [Book III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br); article 1968: [Book IV](https://www.bacn.gov.py/leyes-paraguayas/524/ley-n-1183--codigo-civil--iv-parte--libro-cuarto) — Biblioteca y Archivo Central del Congreso Nacional.
     - [Law No. 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) on the border security zone.
     - [Law No. 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) on the RUN, articles 122 and 123; [Poder Judicial, 14 January 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
-    - Powers of attorney and foreign documents: [Consulate General of Paraguay in Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html) · [Paraguayan Ministry of Foreign Affairs](https://www.mre.gov.py/legalizaciones-apostilla/) · [Apostille Convention, status table (HCCH)](https://www.hcch.net/en/instruments/conventions/status-table/?cid=41).
-    - [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) on real estate sector obligations.
+    - Foreign documents: [Paraguayan Ministry of Foreign Affairs](https://www.mre.gov.py/legalizaciones-apostilla/) · [Apostille Convention, status table (HCCH)](https://www.hcch.net/en/instruments/conventions/status-table/?cid=41).
+    - [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) on real estate sector obligations; [SEPRELAD, 11 June 2026](https://www.seprelad.gov.py/?p=4038).
     - [Tourism Law No. 2828/2005](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, legal framework](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
 pt:
   titulo: "Comprar um apartamento no Paraguai sem estar no país"
@@ -216,14 +216,14 @@ pt:
 
     Há dois caminhos a partir do exterior.
 
-    1. **No consulado paraguaio competente.** Entre em contato para confirmar que ele pode lavrar a procuração no seu caso e saber quais documentos apresentar (por exemplo, a página [Poderes do Consulado-Geral em Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html)).
+    1. **No consulado paraguaio competente.** Entre em contato para confirmar que ele pode lavrar a procuração no seu caso e saber quais documentos apresentar.
     2. **Com um tabelião no seu país de residência.** Se a Convenção da Apostila se aplicar entre o país onde o documento é lavrado e o Paraguai, a apostila substitui a legalização consular. Nos outros casos, confirme o procedimento de legalização. A Convenção está em vigor para o Paraguai desde 30 de agosto de 2014 ([HCCH](https://www.hcch.net/pt/instruments/conventions/status-table/?cid=41); [Ministério das Relações Exteriores do Paraguai](https://www.mre.gov.py/legalizaciones-apostilla/)).
 
     Peça ao escribano responsável pela venda que valide a minuta da procuração antes de você assiná-la no exterior. Ele dirá se é necessária uma tradução e de que forma o documento deve chegar até ele. Preveja o prazo do agendamento, da apostila ou da legalização e do envio do documento, se for o caso.
 
     ## Pagar do exterior
 
-    Prefira uma transferência de uma conta em seu nome e prepare os comprovantes de origem dos recursos. A [Resolução SEPRELAD nº 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) impõe verificações aos profissionais que se dedicam habitualmente à compra e venda de imóveis. Conforme o caso, podem pedir extratos bancários, uma escritura de venda, um comprovante de empréstimo ou documentos relativos a uma doação ou herança.
+    Prefira uma transferência de uma conta em seu nome e prepare os comprovantes de origem dos recursos. A [Resolução SEPRELAD nº 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) impõe aos profissionais do setor imobiliário sujeitos a ela um sistema de prevenção à lavagem de dinheiro, que inclui a verificação dos clientes ([SEPRELAD, 11 de junho de 2026](https://www.seprelad.gov.py/?p=4038)). Conforme o caso, podem pedir extratos bancários, uma escritura de venda, um comprovante de empréstimo ou documentos relativos a uma doação ou herança.
 
     - **Confirme os dados bancários** com o beneficiário usando um número de telefone já verificado, principalmente se as instruções mudarem durante a negociação.
     - **Pergunte ao seu banco** o prazo previsto, as tarifas e a taxa de câmbio, se houver conversão. Peça que o contrato indique a moeda e o valor que o beneficiário deve receber.
@@ -261,8 +261,8 @@ pt:
     - Código Civil paraguaio (Lei nº 1183/85), artigos 700, 840 e 884: [Livro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br); artigo 1968: [Livro IV](https://www.bacn.gov.py/leyes-paraguayas/524/ley-n-1183--codigo-civil--iv-parte--libro-cuarto) — Biblioteca y Archivo Central del Congreso Nacional.
     - [Lei nº 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) sobre a zona de segurança fronteiriça.
     - [Lei nº 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) sobre o RUN, artigos 122 e 123; [Poder Judicial, 14 de janeiro de 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
-    - Procurações e documentos estrangeiros: [Consulado-Geral do Paraguai em Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html) · [Ministério das Relações Exteriores do Paraguai](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convenção da Apostila, situação atual (HCCH)](https://www.hcch.net/pt/instruments/conventions/status-table/?cid=41).
-    - [Resolução SEPRELAD nº 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) sobre as obrigações do setor imobiliário.
+    - Documentos estrangeiros: [Ministério das Relações Exteriores do Paraguai](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convenção da Apostila, situação atual (HCCH)](https://www.hcch.net/pt/instruments/conventions/status-table/?cid=41).
+    - [Resolução SEPRELAD nº 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) sobre as obrigações do setor imobiliário; [SEPRELAD, 11 de junho de 2026](https://www.seprelad.gov.py/?p=4038).
     - [Lei do Turismo nº 2828/2005](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, marco legal](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
 ---
 ¿Vivís en el exterior y estás pensando en comprar un departamento en Asunción? Podés visitar el inmueble por video, encargar las verificaciones en el lugar y dar un poder a una persona de confianza para que firme la escritura. El calendario se prepara con anticipación, sobre todo si el precio se paga por transferencia internacional.
@@ -298,14 +298,14 @@ Una persona de confianza puede firmar la escritura en tu nombre. El Código Civi
 
 Desde el exterior hay dos caminos.
 
-1. **En el consulado paraguayo competente.** Contactalo para confirmar que puede otorgar el poder en tu situación y saber qué documentos presentar (por ejemplo, la página [Poderes del Consulado General en Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html)).
+1. **En el consulado paraguayo competente.** Contactalo para confirmar que puede otorgar el poder en tu situación y saber qué documentos presentar.
 2. **Ante un notario en tu país de residencia.** Si el Convenio de la Apostilla se aplica entre el país donde se otorga el documento y Paraguay, la apostilla reemplaza la legalización consular. En los demás casos, hacé confirmar el procedimiento de legalización. El Convenio está vigente para Paraguay desde el 30 de agosto de 2014 ([HCCH](https://www.hcch.net/es/instruments/conventions/status-table/?cid=41); [Ministerio de Relaciones Exteriores](https://www.mre.gov.py/legalizaciones-apostilla/)).
 
 Hacé validar el borrador del poder por el escribano a cargo de la venta antes de firmarlo en el exterior. Te dirá si hace falta una traducción y en qué forma debe llegarle el documento. Tené en cuenta el plazo del turno, de la apostilla o la legalización y del envío del documento si corresponde.
 
 ## Pagar desde el exterior
 
-Preferí una transferencia desde una cuenta a tu nombre y prepará los comprobantes del origen de los fondos. La [Resolución SEPRELAD N° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) impone verificaciones a quienes se dedican habitualmente a la compraventa de inmuebles. Según el caso, te pueden pedir extractos bancarios, una escritura de venta, un comprobante de préstamo o documentos sobre una donación o una sucesión.
+Preferí una transferencia desde una cuenta a tu nombre y prepará los comprobantes del origen de los fondos. La [Resolución SEPRELAD N° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf) establece para los sujetos obligados del sector inmobiliario un sistema de gestión de riesgos de lavado de activos, que incluye la debida diligencia del cliente ([SEPRELAD, 11 de junio de 2026](https://www.seprelad.gov.py/?p=4038)). Según el caso, te pueden pedir extractos bancarios, una escritura de venta, un comprobante de préstamo o documentos sobre una donación o una sucesión.
 
 - **Confirmá los datos bancarios** con el beneficiario usando un número de teléfono ya verificado, sobre todo si las instrucciones cambian durante la operación.
 - **Consultá a tu banco** el plazo previsto, las comisiones y el tipo de cambio si hay conversión. Hacé precisar en el contrato la moneda y el monto que debe recibir el beneficiario.
@@ -343,6 +343,6 @@ _Este artículo es informativo. Para tu caso, consultá con el escribano a cargo
 - Código Civil paraguayo (Ley N° 1183/85), artículos 700, 840 y 884: [Libro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br); artículo 1968: [Libro IV](https://www.bacn.gov.py/leyes-paraguayas/524/ley-n-1183--codigo-civil--iv-parte--libro-cuarto) — Biblioteca y Archivo Central del Congreso Nacional.
 - [Ley N° 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532), zona de seguridad fronteriza.
 - [Ley N° 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado), RUN, artículos 122 y 123; [Poder Judicial, 14 de enero de 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
-- Poderes y documentos extranjeros: [Consulado General del Paraguay en Málaga](https://www.mre.gov.py/congralpar-malaga/servicios-consulares/poderes.html) · [Ministerio de Relaciones Exteriores](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convenio de la Apostilla, estado actual (HCCH)](https://www.hcch.net/es/instruments/conventions/status-table/?cid=41).
-- [Resolución SEPRELAD N° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), sector inmobiliario.
+- Documentos extranjeros: [Ministerio de Relaciones Exteriores](https://www.mre.gov.py/legalizaciones-apostilla/) · [Convenio de la Apostilla, estado actual (HCCH)](https://www.hcch.net/es/instruments/conventions/status-table/?cid=41).
+- [Resolución SEPRELAD N° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), sector inmobiliario; [SEPRELAD, 11 de junio de 2026](https://www.seprelad.gov.py/?p=4038).
 - [Ley N° 2828/2005 del Turismo](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, marco legal](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
