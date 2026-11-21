@@ -15,16 +15,27 @@ const items = [1, 2, 3, 4, 5, 6].map((n) => ({ t: t(`adm.i${n}_t`), d: t(`adm.i$
 const waTemp = whatsappLink(t('adm.temp_wa'), site.whatsappTemporal);
 const tempItems = [1, 2, 3, 5, 4].map((n) => t(`adm.temp_i${n}`));
 // Chiffres donnés par Hélène (oct. 2026) et soucis du propriétaire à distance
+const anos = new Date().getFullYear() - 2015; // même calcul que l'accueil
+// Avis de propriétaires gérés : extraits mot pour mot, dans leur langue d'origine (Google / avis reçus)
+const resenas = [
+  { texto: 'Nous louons cet appartement par l’intermédiaire de CALISTA Inmobiliaria au tarif le plus élevé de l’immeuble. Nous recommandons vivement ses services. La gestion locative est impeccable et parfaitement optimisée.', autor: 'Fabien Annequin', fuente: 'Google' },
+  { texto: 'Calista also manages our rental properties and we have always been impressed by the quality of service provided.', autor: 'Sara and Yann', fuente: '' },
+];
 const y = {
   es: {
-    stats: [['< 15 días', 'para alquilar tu propiedad, en general'], ['Día 10', 'transferencia de tu alquiler, cada mes (lunes 11 si el 10 cae domingo)'], ['5 %', 'de lo cobrado, más IVA. Si no cobrás, no cobramos.']],
+    stats: [['< 15 días', 'para alquilar, en general'], ['Día 10', 'te transferimos el alquiler'], ['5 %', '+ IVA, solo sobre lo cobrado']],
+    tira: [`${anos} años en Asunción`, '+100 propiedades gestionadas'],
+    resenas_t: 'Lo que dicen los propietarios',
+    buscas: '¿Buscás un departamento para alquilar?', buscas_cta: 'Ver los disponibles',
+    detalle: 'Ver el detalle', temp_inc: 'Qué incluye',
+    dia10: 'Te transferimos el alquiler el día 10 de cada mes (o el día hábil más cercano si cae sábado, domingo o feriado).',
     estimar: 'Estimar mi alquiler gratis',
     pre_eyebrow: 'Propietarios a distancia',
     pre_t: '¿Vivís lejos? Esto es lo que te preocupa, y cómo lo resolvemos.',
     pre: [
       ['¿Va a quedar vacía?', 'En general la alquilamos en menos de 15 días: la publicamos en todos nuestros canales y en los portales.'],
       ['¿Y si el inquilino no paga?', 'Controlamos las garantías antes de firmar y seguimos cualquier atraso con el inquilino. Además, podés asegurar tus alquileres contra el impago (ver más abajo).'],
-      ['¿Cuándo y cómo cobro?', 'Te transferimos el alquiler el día 10 de cada mes, con la rendición de cuentas: lo cobrado, lo pagado y nuestra comisión, en guaraníes y en dólares por separado.'],
+      ['¿Cuándo y cómo cobro?', 'Te transferimos el alquiler el día 10 de cada mes (o el día hábil más cercano), con la rendición de cuentas: lo cobrado, lo pagado y nuestra comisión, en guaraníes y en dólares por separado.'],
       ['¿Quién se ocupa de los arreglos?', 'Nosotros: coordinamos el mantenimiento y las reparaciones. Tu inquilino tiene un solo interlocutor, y vos también.'],
       ['¿Cómo sé lo que pasa con mi propiedad?', 'Recibís cada mes el detalle de todo, sin tener que pedirlo, y nos podés escribir en español, francés, inglés o portugués.'],
     ],
@@ -36,14 +47,19 @@ const y = {
     est_d: 'Contanos cómo es tu propiedad: te enviamos un rango de alquiler y lo que te quedaría después de la administración.',
   },
   fr: {
-    stats: [['< 15 jours', 'pour louer votre bien, en général'], ['Le 10', 'virement de votre loyer, chaque mois (le lundi 11 si le 10 tombe un dimanche)'], ['5 %', 'des loyers encaissés, plus TVA. Pas de loyer encaissé, pas de commission.']],
+    stats: [['< 15 jours', 'pour louer, en général'], ['Le 10', 'nous vous virons le loyer'], ['5 %', '+ TVA, sur les loyers encaissés']],
+    tira: [`${anos} ans à Asunción`, '+100 biens gérés'],
+    resenas_t: 'Ce qu’en disent les propriétaires',
+    buscas: 'Vous cherchez un logement à louer ?', buscas_cta: 'Voir les biens disponibles',
+    detalle: 'Voir le détail', temp_inc: 'Ce qui est inclus',
+    dia10: 'Nous vous virons le loyer le 10 de chaque mois (ou le jour ouvré le plus proche si le 10 tombe un samedi, un dimanche ou un jour férié).',
     estimar: 'Estimer mon loyer gratuitement',
     pre_eyebrow: 'Propriétaires à distance',
     pre_t: 'Vous vivez loin ? Voici ce qui vous inquiète, et comment nous le réglons.',
     pre: [
       ['Mon bien va-t-il rester vide ?', 'En général, nous le louons en moins de 15 jours : nous le publions sur tous nos canaux et sur les portails.'],
       ['Et si le locataire ne paie pas ?', 'Nous contrôlons les garanties avant la signature et suivons tout retard avec le locataire. Vous pouvez aussi assurer vos loyers contre les impayés (voir plus bas).'],
-      ['Quand et comment suis-je payé ?', 'Nous vous virons le loyer le 10 de chaque mois, avec le relevé : ce qui a été encaissé, payé, et notre commission, en guaraníes et en dollars séparément.'],
+      ['Quand et comment suis-je payé ?', 'Nous vous virons le loyer le 10 de chaque mois (ou le jour ouvré le plus proche), avec le relevé : ce qui a été encaissé, payé, et notre commission, en guaraníes et en dollars séparément.'],
       ['Qui s’occupe des réparations ?', 'Nous : nous coordonnons l’entretien et les réparations. Votre locataire a un seul interlocuteur, et vous aussi.'],
       ['Comment savoir ce qui se passe chez moi ?', 'Vous recevez chaque mois le détail de tout, sans avoir à le demander, et vous pouvez nous écrire en français, espagnol, anglais ou portugais.'],
     ],
@@ -55,14 +71,19 @@ const y = {
     est_d: 'Décrivez-nous votre bien : nous vous envoyons une fourchette de loyer et ce qu’il vous resterait après gestion.',
   },
   en: {
-    stats: [['< 15 days', 'to rent out your property, as a rule'], ['10th', 'of the month: your rent transferred (Monday the 11th if the 10th is a Sunday)'], ['5 %', 'of the rent collected, plus VAT. No rent collected, no fee.']],
+    stats: [['< 15 days', 'to rent it out, as a rule'], ['10th', 'of the month: rent transferred'], ['5 %', '+ VAT, on rent collected']],
+    tira: [`${anos} years in Asunción`, '100+ properties managed'],
+    resenas_t: 'What owners say',
+    buscas: 'Looking for a place to rent?', buscas_cta: 'See available properties',
+    detalle: 'See the details', temp_inc: 'What’s included',
+    dia10: 'We transfer your rent on the 10th of every month (or the nearest working day if the 10th falls on a Saturday, Sunday or public holiday).',
     estimar: 'Estimate my rent for free',
     pre_eyebrow: 'Owners abroad',
     pre_t: 'Live far away? Here is what worries you, and how we handle it.',
     pre: [
       ['Will it stay empty?', 'As a rule, we rent it out in less than 15 days: we list it on all our channels and on the property portals.'],
       ['What if the tenant doesn’t pay?', 'We check the guarantees before signing and follow up any late payment with the tenant. You can also insure your rent against non-payment (see below).'],
-      ['When and how do I get paid?', 'We transfer the rent on the 10th of every month, with the statement: what was collected, what was paid and our fee, in guaraníes and dollars separately.'],
+      ['When and how do I get paid?', 'We transfer the rent on the 10th of every month (or the nearest working day), with the statement: what was collected, what was paid and our fee, in guaraníes and dollars separately.'],
       ['Who handles repairs?', 'We do: we coordinate maintenance and repairs. Your tenant has a single point of contact, and so do you.'],
       ['How do I know what’s going on?', 'Every month you receive the full detail, without having to ask, and you can write to us in English, Spanish, French or Portuguese.'],
     ],
@@ -74,14 +95,19 @@ const y = {
     est_d: 'Tell us about your property: we send you a rent range and what you would keep after management.',
   },
   pt: {
-    stats: [['< 15 dias', 'para alugar o seu imóvel, em geral'], ['Dia 10', 'transferência do seu aluguel, todo mês (segunda-feira, dia 11, se o dia 10 cair num domingo)'], ['5 %', 'dos aluguéis recebidos, mais IVA. Se você não recebe, nós não cobramos.']],
+    stats: [['< 15 dias', 'para alugar, em geral'], ['Dia 10', 'transferimos o seu aluguel'], ['5 %', '+ IVA, sobre o que recebemos']],
+    tira: [`${anos} anos em Assunção`, '+100 imóveis administrados'],
+    resenas_t: 'O que dizem os proprietários',
+    buscas: 'Procura um imóvel para alugar?', buscas_cta: 'Ver os disponíveis',
+    detalle: 'Ver o detalhe', temp_inc: 'O que está incluído',
+    dia10: 'Transferimos o aluguel no dia 10 de cada mês (ou no dia útil mais próximo se cair num sábado, domingo ou feriado).',
     estimar: 'Estimar o meu aluguel grátis',
     pre_eyebrow: 'Proprietários à distância',
     pre_t: 'Mora longe? Veja o que preocupa você e como resolvemos.',
     pre: [
       ['O meu imóvel vai ficar vazio?', 'Em geral, alugamos em menos de 15 dias: anunciamos em todos os nossos canais e nos portais.'],
       ['E se o inquilino não pagar?', 'Verificamos as garantias antes da assinatura e acompanhamos qualquer atraso com o inquilino. Você também pode segurar os seus aluguéis contra inadimplência (veja abaixo).'],
-      ['Quando e como eu recebo?', 'Transferimos o aluguel no dia 10 de cada mês, com a prestação de contas: o que foi recebido, o que foi pago e a nossa comissão, em guaranis e em dólares separadamente.'],
+      ['Quando e como eu recebo?', 'Transferimos o aluguel no dia 10 de cada mês (ou no dia útil mais próximo), com a prestação de contas: o que foi recebido, o que foi pago e a nossa comissão, em guaranis e em dólares separadamente.'],
       ['Quem cuida dos reparos?', 'Nós: coordenamos a manutenção e os reparos. O seu inquilino tem um único interlocutor, e você também.'],
       ['Como sei o que acontece no meu imóvel?', 'Todo mês você recebe o detalhe de tudo, sem precisar pedir, e pode nos escrever em português, espanhol, francês ou inglês.'],
     ],
@@ -102,13 +128,35 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
       <p class="eyebrow">{t('adm.eyebrow')}</p>
       <h1>{t('adm.title')}</h1>
       <p class="lead">{t('adm.lead')}</p>
+      <!-- Preuves : note Google (site.ts), ancienneté, nombre de biens gérés (mêmes chiffres que l'accueil) -->
+      <ul class="tira">
+        {site.googleNota && (
+          <li><a href={site.googleResenas} target="_blank" rel="noopener"><span class="estrella" aria-hidden="true">★</span> <strong>{site.googleNota}</strong> Google · {site.googleCantidad} {t('res.g_resenas')}</a></li>
+        )}
+        {y.tira.map((x) => <li>{x}</li>)}
+      </ul>
       <ul class="stats">
         {y.stats.map(([v, l]) => <li><span class="sv">{v}</span><span class="sl">{l}</span></li>)}
       </ul>
       <div class="cta-linea">
         <a href="#estimacion" class="btn btn--primary">{y.estimar}</a>
         <WhatsAppButton href={wa} label={t('adm.cta_wa')} />
-        <a href="#tarifas" class="btn btn--ghost">{t('adm.cta_tarifas')}</a>
+      </div>
+      <p class="buscas">{y.buscas} <a href={L('/alquilar')}>{y.buscas_cta} →</a></p>
+    </div>
+  </section>
+
+  <section class="section resenas-sec">
+    <div class="container">
+      <h2 class="tit">{y.resenas_t}</h2>
+      <div class="resenas">
+        {resenas.map((r) => (
+          <figure class="resena">
+            <div class="r-estrellas" aria-label="5/5">★★★★★</div>
+            <blockquote>« {r.texto} »</blockquote>
+            <figcaption>{r.autor}{r.fuente && <span> · {r.fuente}</span>}</figcaption>
+          </figure>
+        ))}
       </div>
     </div>
   </section>
@@ -123,7 +171,34 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
     </div>
   </section>
 
-  <section class="section alt">
+  <section class="section alt" id="tarifas">
+    <div class="container">
+      <h2 class="tit">{t('adm.tarifas_title')}</h2>
+      <div class="tarifas">
+        {tarifas.map((x, i) => (
+          <div class:list={['tarifa', { destacada: i === 0 }]}>
+            <p class="t-label">{x.label}</p>
+            <p class="t-val">{x.val}</p>
+            <p class="t-d">{x.d}</p>
+          </div>
+        ))}
+      </div>
+      <p class="dia10">{y.dia10}</p>
+    </div>
+  </section>
+
+  <section class="section est-sec" id="estimacion">
+    <div class="container est-grid">
+      <div>
+        <p class="eyebrow">{y.est_eyebrow}</p>
+        <h2>{y.est_t}</h2>
+        <p class="lead">{y.est_d}</p>
+      </div>
+      <EstimacionForm />
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container">
       <h2 class="tit">{t('adm.incluye_title')}</h2>
       <ul class="items">
@@ -151,42 +226,19 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
     </div>
   </section>
 
-  <section class="section" id="tarifas">
-    <div class="container">
-      <h2 class="tit">{t('adm.tarifas_title')}</h2>
-      <div class="tarifas">
-        {tarifas.map((x, i) => (
-          <div class:list={['tarifa', { destacada: i === 0 }]}>
-            <p class="t-label">{x.label}</p>
-            <p class="t-val">{x.val}</p>
-            <p class="t-d">{x.d}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section seg-sec pegada" id="seguro-alquiler">
+  <section class="section seg-sec" id="seguro-alquiler">
     <div class="container">
       <div class="seg">
         <p class="eyebrow">{y.seg.eyebrow}</p>
         <h2>{y.seg.t}</h2>
         <p class="seg-d">{y.seg.d}</p>
-        <ul class="seg-list">{y.seg.items.map((i) => <li>{i}</li>)}</ul>
-        <p class="seg-nota">{y.seg.nota}</p>
+        <details class="mas">
+          <summary>{y.detalle}</summary>
+          <ul class="seg-list">{y.seg.items.map((i) => <li>{i}</li>)}</ul>
+          <p class="seg-nota">{y.seg.nota}</p>
+        </details>
         <div class="cta-linea"><WhatsAppButton href={whatsappLink(y.seg.wa, site.whatsappTemporal)} label={y.seg.btn} /></div>
       </div>
-    </div>
-  </section>
-
-  <section class="section est-sec" id="estimacion">
-    <div class="container est-grid">
-      <div>
-        <p class="eyebrow">{y.est_eyebrow}</p>
-        <h2>{y.est_t}</h2>
-        <p class="lead">{y.est_d}</p>
-      </div>
-      <EstimacionForm />
     </div>
   </section>
 
@@ -197,9 +249,12 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
           <p class="eyebrow">{t('adm.temp_eyebrow')}</p>
           <h2>{t('adm.temp_t')}</h2>
           <p class="temp-d">{t('adm.temp_d')}</p>
-          <ul class="temp-list">
-            {tempItems.map((i) => <li>{i}</li>)}
-          </ul>
+          <details class="mas">
+            <summary>{y.temp_inc}</summary>
+            <ul class="temp-list">
+              {tempItems.map((i) => <li>{i}</li>)}
+            </ul>
+          </details>
           <div class="cta-linea">
             <WhatsAppButton href={waTemp} label={t('adm.temp_btn')} />
             <a href={L('/alquiler-temporal/otros-departamentos')} class="btn btn--ghost">{t('adm.temp_cta')}</a>
@@ -230,6 +285,25 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
 
 <style>
   .hero-c > h1, .hero-c > .lead { max-width: 820px; }
+  /* Bande de preuves sous le titre */
+  .tira { list-style: none; margin: 1.1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; font-size: 0.92rem; color: var(--muted); }
+  .tira li { display: flex; align-items: center; }
+  .tira li:not(:first-child)::before { content: '✓'; color: var(--violet); font-weight: 700; margin-right: 0.35rem; }
+  .tira a { color: inherit; text-decoration: none; }
+  .tira strong { color: var(--brand); }
+  .estrella { color: #f5b301; }
+  .buscas { margin: 1rem 0 0; font-size: 0.9rem; color: var(--muted); }
+  .buscas a { color: var(--violet); font-weight: 600; }
+  .resenas-sec { padding-top: clamp(2rem, 4vw, 3rem); }
+  .resenas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+  .resena { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.4rem; box-shadow: var(--shadow); }
+  .r-estrellas { color: #f5b301; letter-spacing: 0.1em; }
+  .resena blockquote { margin: 0.5rem 0 0.8rem; font-style: italic; line-height: 1.6; }
+  .resena figcaption { font-weight: 700; color: var(--brand); font-size: 0.92rem; }
+  .resena figcaption span { font-weight: 400; color: var(--muted); }
+  .dia10 { margin: 1.2rem 0 0; font-size: 0.9rem; color: var(--muted); }
+  .mas { margin: 0 0 0.5rem; }
+  .mas summary { cursor: pointer; color: var(--violet); font-weight: 600; margin-bottom: 0.6rem; }
   .alt { background: var(--surface); border-block: 1px solid var(--line); }
   .tit { margin: 0 0 1.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); }
   .items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
@@ -293,5 +367,13 @@ const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm
   .est-grid h2 { margin: 0 0 0.6rem; }
   @media (max-width: 820px) { .tarifas, .temp, .est-grid { grid-template-columns: 1fr; } }
   @media (max-width: 820px) { .preocupaciones div { grid-template-columns: 1fr; } }
-  @media (max-width: 600px) { .stats { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .items { gap: 0.6rem; }
+    .items li { padding: 0.9rem 1rem 0.9rem 2.8rem; box-shadow: none; }
+    .items li::before { left: 1.1rem; top: 1.15rem; }
+    .stats { gap: 0.5rem; }
+    .stats li { padding: 0.7rem 0.6rem; }
+    .sv { font-size: 1.15rem; }
+    .sl { font-size: 0.76rem; }
+  }
 </style>
