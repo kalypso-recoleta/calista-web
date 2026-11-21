@@ -39,7 +39,7 @@ const textos = {
 <div class="testimonios" data-manuales>
   {
     resenas.map((r) => (
-      <figure class="testi">
+      <figure class="testi" data-fecha={r.data.fecha.toISOString()} data-nombre={r.data.nombre}>
         <div class="estrellas" aria-label={`${r.data.estrellas} de 5`}>
           {Array.from({ length: 5 }).map((_, i) => (
             <svg
@@ -133,6 +133,7 @@ const textos = {
     const lista = box.querySelector('[data-g-lista]')!;
     for (const r of d.resenas) {
       const fig = el('figure', 'testi g-testi');
+      fig.dataset.fecha = r.publicado || '';
       // Les cartes arrivent après le chargement : on les marque visibles tout de suite,
       // sinon l'animation d'apparition au scroll (global.css) les laisse transparentes.
       fig.classList.add('is-visible');
@@ -181,7 +182,23 @@ const textos = {
 
     box.hidden = false;
     if (box.dataset.reemplazar === '1') {
-      box.parentElement?.querySelector<HTMLElement>('[data-manuales]')?.setAttribute('hidden', '');
+      // Google ne renvoie que 5 avis (choisis par Google, pas forcément les plus récents).
+      // Les avis saisis à la main qui ne figurent pas dans cette liste (ex. un avis tout neuf)
+      // rejoignent la liste Google ; les doublons (même auteur) sont masqués. Tri : plus récent d'abord.
+      const manuales = box.parentElement?.querySelector<HTMLElement>('[data-manuales]');
+      if (manuales) {
+        const norm = (s: string) => s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+        const autores = new Set((d.resenas as any[]).map((r) => norm(r.autor || '')));
+        manuales.querySelectorAll<HTMLElement>('figure[data-nombre]').forEach((f) => {
+          if (autores.has(norm(f.dataset.nombre || ''))) return;
+          f.classList.add('is-visible');
+          lista.append(f);
+        });
+        manuales.setAttribute('hidden', '');
+        [...lista.children]
+          .sort((a, b) => ((b as HTMLElement).dataset.fecha || '').localeCompare((a as HTMLElement).dataset.fecha || ''))
+          .forEach((f) => lista.append(f));
+      }
     }
   }
 
