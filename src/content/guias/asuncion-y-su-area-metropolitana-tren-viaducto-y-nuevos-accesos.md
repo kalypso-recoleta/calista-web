@@ -42,7 +42,7 @@ fr:
 
     ## Ce que cela dit de l’agglomération
 
-    Ces projets dessinent un Grand Asunción plus étendu et mieux relié : Luque et la zone de l’aéroport se rapprochent du centre de la capitale, et les villes de l’est gagnent en accessibilité. Pour le marché immobilier, ce sont de vraies perspectives pour la zone, mais à moyen et long terme : nous ne vous conseillerions pas d’acheter en comptant dessus.
+    Ces projets dessinent un Grand Asunción plus étendu et mieux relié : Luque et la zone de l’aéroport se rapprochent du centre de la capitale, et les villes de l’est gagnent en accessibilité. Pour le marché immobilier, ce sont de vraies perspectives pour la zone, mais à moyen et long terme : nous ne vous conseillerions pas d’acheter en comptant dessus. Attention aussi à la spéculation : un prix qui intègre déjà ces projets peut se révéler trop élevé. Comparez avec des biens similaires du secteur avant de vous décider.
 
     Nous suivons ces projets de près pour conseiller nos clients, acheteurs comme propriétaires, sur les quartiers et les villes de l’agglomération.
 
@@ -94,7 +94,7 @@ en:
 
     ## What it says about the metropolitan area
 
-    These projects point to a larger, better-connected Greater Asunción: Luque and the airport area are moving closer to the city centre, and the towns to the east are becoming easier to reach. For the property market, these are real prospects for the area, but over the medium and long term: we would not advise buying on the strength of them.
+    These projects point to a larger, better-connected Greater Asunción: Luque and the airport area are moving closer to the city centre, and the towns to the east are becoming easier to reach. For the property market, these are real prospects for the area, but over the medium and long term: we would not advise buying on the strength of them. Beware of speculation too: a price that already factors in these projects may turn out to be too high. Compare with similar properties in the area before deciding.
 
     We follow these projects closely to advise our clients, both buyers and owners, on the neighbourhoods and towns of the metropolitan area.
 
@@ -146,7 +146,7 @@ pt:
 
     ## O que isso mostra sobre a região metropolitana
 
-    Esses projetos desenham uma Grande Assunção mais extensa e mais bem conectada: Luque e a região do aeroporto se aproximam do centro da capital, e as cidades a leste ficam mais acessíveis. Para o mercado imobiliário, são perspectivas reais para a região, mas a médio e longo prazo: não aconselharíamos comprar contando com elas.
+    Esses projetos desenham uma Grande Assunção mais extensa e mais bem conectada: Luque e a região do aeroporto se aproximam do centro da capital, e as cidades a leste ficam mais acessíveis. Para o mercado imobiliário, são perspectivas reais para a região, mas a médio e longo prazo: não aconselharíamos comprar contando com elas. Atenção também à especulação: um preço que já embute esses projetos pode se revelar alto demais. Compare com imóveis semelhantes da região antes de decidir.
 
     Acompanhamos esses projetos de perto para orientar nossos clientes, compradores e proprietários, sobre os bairros e as cidades da região metropolitana.
 
@@ -194,7 +194,7 @@ En paralelo, el «Plan Central» del MOPC asfalta 48 km de calles barriales en L
 
 ## Lo que esto dice del área metropolitana
 
-Estos proyectos dibujan un Gran Asunción más extenso y mejor conectado: Luque y la zona del aeropuerto se acercan al centro de la capital, y las ciudades del este ganan en accesibilidad. Para el mercado inmobiliario, son perspectivas reales para la zona, pero a mediano y largo plazo: no te aconsejaríamos comprar contando con eso.
+Estos proyectos dibujan un Gran Asunción más extenso y mejor conectado: Luque y la zona del aeropuerto se acercan al centro de la capital, y las ciudades del este ganan en accesibilidad. Para el mercado inmobiliario, son perspectivas reales para la zona, pero a mediano y largo plazo: no te aconsejaríamos comprar contando con eso. Atención también a la especulación: un precio que ya incluye estos proyectos puede resultar demasiado alto. Compará con inmuebles similares de la zona antes de decidir.
 
 Seguimos de cerca estos proyectos para asesorar a nuestros clientes, compradores y propietarios, sobre los barrios y las ciudades del área metropolitana.
 
