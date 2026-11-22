@@ -1,17 +1,16 @@
 ---
-titulo: "Invertir en inmuebles en Paraguay: la guía para hacerlo con criterio"
-titulo_seo: "Invertir en inmuebles en Paraguay: guía completa"
-descripcion: "Qué puede comprar un extranjero, cómo calcular la rentabilidad real, alquiler temporal o tradicional, tipo de cambio, pasos y costos: lo esencial para invertir en Paraguay."
-descripcion_seo: "Qué puede comprar un extranjero, la rentabilidad real, alquiler temporal o tradicional, tipo de cambio, pasos y costos: lo esencial para invertir."
+titulo: 'Invertir en inmuebles en Paraguay: la guía para hacerlo con criterio'
+titulo_seo: 'Invertir en inmuebles en Paraguay: guía completa'
+descripcion: 'Qué puede comprar un extranjero, cómo calcular la rentabilidad real, alquiler temporal o tradicional, tipo de cambio, pasos y costos: lo esencial para invertir en Paraguay.'
 categoria: guia
 tema: invertir
-borrador: true
-fecha: 2026-11-22T10:00:00
+borrador: false
+fecha: 2026-11-22T18:20:00
+portada_foto: /uploads/Maquette et clé, horizon doré.png
 fr:
-  titulo: "Investir dans l’immobilier au Paraguay : le guide pour bien démarrer"
-  slug: investir-au-paraguay-dans-l-immobilier-le-guide
-  titulo_seo: "Investir au Paraguay dans l’immobilier : le guide complet"
-  descripcion: "Ce qu’un étranger peut acheter, le vrai rendement locatif, courte ou longue durée, taux de change, étapes et frais : l’essentiel pour investir au Paraguay."
+  titulo: 'Investir dans l’immobilier au Paraguay : le guide pour bien démarrer'
+  titulo_seo: 'Investir au Paraguay dans l’immobilier : le guide complet'
+  descripcion: 'Ce qu’un étranger peut acheter, le vrai rendement locatif, courte ou longue durée, taux de change, étapes et frais : l’essentiel pour investir au Paraguay.'
   cuerpo: |-
     Vous envisagez d’investir dans l’immobilier au Paraguay ? Ce guide rassemble, étape par étape, ce que nous avons expliqué en détail dans nos articles : ce qu’un étranger peut acheter, comment calculer le vrai rendement, les risques de la location courte durée et du taux de change, le parcours d’achat et ses frais. Chaque partie renvoie vers l’article complet et ses sources.
 
@@ -108,11 +107,11 @@ fr:
     - [Banque centrale du Paraguay, cours de référence](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica).
     - [Loi n° 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) · [loi n° 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) · [Code civil, livre III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br) · [loi n° 6380/2019](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional), art. 90 — Biblioteca y Archivo Central del Congreso Nacional.
     - [Résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf).
+  slug: investir-au-paraguay-dans-l-immobilier-le-guide
 en:
-  titulo: "Investing in real estate in Paraguay: a guide to getting started"
-  slug: investing-in-paraguay-real-estate-guide
-  titulo_seo: "Investing in Paraguay real estate: the complete guide"
-  descripcion: "What foreigners can buy, real rental yields, short- or long-term rentals, exchange rate, buying steps and costs: the essentials for investing in Paraguay."
+  titulo: 'Investing in real estate in Paraguay: a guide to getting started'
+  titulo_seo: 'Investing in Paraguay real estate: the complete guide'
+  descripcion: 'What foreigners can buy, real rental yields, short- or long-term rentals, exchange rate, buying steps and costs: the essentials for investing in Paraguay.'
   cuerpo: |-
     Thinking about investing in real estate in Paraguay? This guide brings together, step by step, what we have explained in detail in our articles: what a foreigner can buy, how to calculate the real return, the risks of short-term rentals and the exchange rate, the buying process and its costs. Each section links to the full article and its sources.
 
@@ -209,12 +208,11 @@ en:
     - [Central Bank of Paraguay, reference rates](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica).
     - [Law No. 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) · [Law No. 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) · [Civil Code, Book III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br) · [Law No. 6380/2019](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional), art. 90 — Biblioteca y Archivo Central del Congreso Nacional.
     - [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf).
+  slug: investing-in-paraguay-real-estate-guide
 pt:
-  titulo: "Investir em imóveis no Paraguai: o guia para começar"
-  slug: investir-no-paraguai-em-imoveis-o-guia
-  titulo_seo: "Investir no Paraguai em imóveis: o guia completo"
-  descripcion: "O que um estrangeiro pode comprar, a rentabilidade real, aluguel por temporada ou tradicional, câmbio, etapas e custos: o essencial para investir no Paraguai."
-  descripcion_seo: "O que um estrangeiro pode comprar, a rentabilidade real, aluguel por temporada ou tradicional, câmbio, etapas e custos: o essencial para investir."
+  titulo: 'Investir em imóveis no Paraguai: o guia para começar'
+  titulo_seo: 'Investir no Paraguai em imóveis: o guia completo'
+  descripcion: 'O que um estrangeiro pode comprar, a rentabilidade real, aluguel por temporada ou tradicional, câmbio, etapas e custos: o essencial para investir no Paraguai.'
   cuerpo: |-
     Está pensando em investir em imóveis no Paraguai? Este guia reúne, passo a passo, o que explicamos em detalhe nos nossos artigos: o que um estrangeiro pode comprar, como calcular a rentabilidade real, os riscos do aluguel por temporada e do câmbio, o processo de compra e os seus custos. Cada parte remete ao artigo completo e às suas fontes.
 
@@ -311,6 +309,9 @@ pt:
     - [Banco Central do Paraguai, cotações de referência](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica).
     - [Lei n.º 2532/2005](https://www.bacn.gov.py/leyes-paraguayas/4025/ley-n-2532) · [Lei n.º 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado) · [Código Civil, livro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br) · [Lei n.º 6380/2019](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional), art. 90 — Biblioteca y Archivo Central del Congreso Nacional.
     - [Resolução SEPRELAD n.º 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf).
+  descripcion_seo: 'O que um estrangeiro pode comprar, a rentabilidade real, aluguel por temporada ou tradicional, câmbio, etapas e custos: o essencial para investir.'
+  slug: investir-no-paraguai-em-imoveis-o-guia
+descripcion_seo: 'Qué puede comprar un extranjero, la rentabilidad real, alquiler temporal o tradicional, tipo de cambio, pasos y costos: lo esencial para invertir.'
 ---
 
 ¿Estás pensando en invertir en inmuebles en Paraguay? Esta guía reúne, paso a paso, lo que explicamos en detalle en nuestros artículos: qué puede comprar un extranjero, cómo calcular la rentabilidad real, los riesgos del alquiler temporal y del tipo de cambio, el proceso de compra y sus costos. Cada parte remite al artículo completo y a sus fuentes.
