@@ -1,6 +1,7 @@
 ---
 titulo: 'Comprar un inmueble en Paraguay: del boleto a la escritura'
 descripcion: 'Comprar un inmueble en Paraguay: etapas, gastos y documentos'
+descripcion_seo: "Verificaciones en el RUN, boleto y seña, escritura, inscripción, gastos de transferencia y origen de los fondos: las etapas para comprar en Paraguay."
 categoria: guia
 tema: comprar
 borrador: false
@@ -11,6 +12,7 @@ fr:
   slug: acheter-un-bien-immobilier-au-paraguay-du-contrat-preliminaire-a-l-acte-notarie
   titulo_seo: "Acheter au Paraguay : de l’avant-contrat à l’acte notarié"
   descripcion: 'Acheter un bien immobilier au Paraguay : étapes, frais et documents'
+  descripcion_seo: "Vérifications au RUN, contrat préliminaire et arrhes, acte notarié, inscription, frais et origine des fonds : les étapes pour acheter au Paraguay."
   cuerpo: |-
     Acheter une maison ou un appartement au Paraguay suit un parcours précis. Connaître chaque étape permet d’éviter les surprises et de comprendre, à chaque moment, ce que vous signez et les frais à prévoir.
 
@@ -95,6 +97,7 @@ en:
   slug: buying-property-in-paraguay-from-the-preliminary-agreement-to-the-notarial-deed
   titulo_seo: "Buying property in Paraguay: from agreement to deed"
   descripcion: 'Buying Property in Paraguay: Steps, Costs and Documents'
+  descripcion_seo: "RUN checks, preliminary agreement and deposit, deed, registration, transfer costs and source of funds: the steps to buying property in Paraguay."
   cuerpo: |-
     Buying a house or an apartment in Paraguay follows a clear process. Understanding each stage helps you avoid surprises and know exactly what you are signing and which costs to budget for.
 
@@ -178,6 +181,7 @@ pt:
   titulo: 'Comprar um imóvel no Paraguai: do boleto à escritura'
   slug: comprar-um-imovel-no-paraguai-do-boleto-a-escritura
   descripcion: 'Comprar um imóvel no Paraguai: etapas, custos e documentos'
+  descripcion_seo: "Verificações no RUN, contrato preliminar e sinal, escritura, registro, custos e origem dos recursos: as etapas para comprar imóvel no Paraguai."
   cuerpo: |-
     Comprar uma casa ou um apartamento no Paraguai segue um caminho claro. Conhecer cada etapa evita surpresas e permite que você saiba, a cada momento, o que está assinando e quais custos precisa prever.
 

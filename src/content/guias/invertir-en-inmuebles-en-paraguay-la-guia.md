@@ -6,7 +6,7 @@ categoria: guia
 tema: invertir
 borrador: false
 fecha: 2026-11-22T18:20:00
-portada_foto: /uploads/Maquette et clé, horizon doré.png
+portada_foto: /uploads/invertir-en-paraguay-guia.jpg
 fr:
   titulo: 'Investir dans l’immobilier au Paraguay : le guide pour bien démarrer'
   titulo_seo: 'Investir au Paraguay dans l’immobilier : le guide complet'

@@ -2,6 +2,7 @@
 titulo: 'Branded residences en Asunción: ¿hay mercado para este nivel de lujo?'
 titulo_seo: "Branded residences en Asunción: ¿hay mercado?"
 descripcion: Royale by Pininfarina introduce una nueva propuesta residencial en la capital. Más allá de la firma internacional, cabe preguntarse si existe una demanda capaz de sostenerla en el tiempo.
+descripcion_seo: "Royale by Pininfarina, primera branded residence anunciada en Paraguay: qué es, quién podría vivir allí y qué preguntar antes de invertir en el lujo."
 categoria: actualidad
 tema: mercado
 borrador: false
@@ -12,6 +13,7 @@ fr:
   slug: residences-de-marque-a-asuncion-existe-t-il-un-marche-pour-ce-niveau-de-luxe
   titulo_seo: "Résidences de marque à Asunción : y a-t-il un marché ?"
   descripcion: 'Royale by Pininfarina introduit une nouvelle offre résidentielle dans la capitale. Au-delà de la signature internationale, une question se pose : existe-t-il une demande capable de la soutenir dans la durée ?'
+  descripcion_seo: "Royale by Pininfarina, première branded residence annoncée au Paraguay : de quoi s’agit-il, qui y vivra et que vérifier avant d’investir dans le luxe ?"
   cuerpo: |-
     Asunción accueille une nouvelle proposition dans le résidentiel de luxe. Grupo Petra a présenté **Royale by Pininfarina**, annoncé comme la première _branded residence_ du Paraguay et le premier projet de la maison italienne de design dans le pays. La présentation s’est tenue à Miami et a été relayée en septembre 2026 par [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
@@ -117,6 +119,7 @@ en:
   slug: branded-residences-in-asuncion-is-there-a-market-for-this-level-of-luxury
   titulo_seo: "Branded residences in Asunción: is there a market?"
   descripcion: Royale by Pininfarina introduces a new residential offering in the capital. Beyond the international name, the question is whether there is enough demand to sustain it over time.
+  descripcion_seo: "Royale by Pininfarina, the first branded residence announced in Paraguay: what it is, who might live there and what to ask before investing in luxury."
   cuerpo: |-
     Asunción is adding a new offering to its luxury residential market. Grupo Petra has presented **Royale by Pininfarina**, announced as Paraguay’s first branded residence and the Italian design house’s first project in the country. The presentation took place in Miami and was reported in September 2026 by [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
@@ -222,6 +225,7 @@ pt:
   slug: branded-residences-em-assuncao-existe-mercado-para-este-nivel-de-luxo
   titulo_seo: "Branded residences em Assunção: existe mercado?"
   descripcion: 'O Royale by Pininfarina apresenta uma nova proposta residencial na capital. Para além da grife internacional, cabe perguntar se existe uma demanda capaz de sustentá-la ao longo do tempo.'
+  descripcion_seo: "Royale by Pininfarina, a primeira branded residence anunciada no Paraguai: o que é, quem poderia morar lá e o que perguntar antes de investir no luxo."
   cuerpo: |-
     Assunção ganha uma nova proposta no segmento residencial de luxo. O Grupo Petra apresentou o **Royale by Pininfarina**, anunciado como a primeira _branded residence_ do Paraguai e o primeiro projeto da casa italiana de design no país. A apresentação foi realizada em Miami e divulgada em setembro de 2026 pelo [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
 
