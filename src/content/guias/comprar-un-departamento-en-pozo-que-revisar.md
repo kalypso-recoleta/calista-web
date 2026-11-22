@@ -82,6 +82,11 @@ fr:
     - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
     - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources officielles
+
+    - [Code civil (loi n° 1183/85), livre III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), articles 700 à 702, 782 et 860 — Biblioteca y Archivo Central del Congreso Nacional. L’article 2147 (règlement de copropriété) figure au livre IV du Code civil.
+    - Loi n° 1334/98 de défense du consommateur et de l’usager, articles 4, 10, 14 et 28.
 en:
   titulo: 'Buying an off-plan apartment: what to check before you sign'
   slug: buying-an-off-plan-apartment-what-to-check-before-you-sign
@@ -157,6 +162,11 @@ en:
     - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
     - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Official sources
+
+    - [Civil Code (Law No. 1183/85), Book III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), articles 700 to 702, 782 and 860 — Biblioteca y Archivo Central del Congreso Nacional. Article 2147 (building rules) is in Book IV of the Civil Code.
+    - Law No. 1334/98 on Consumer and User Protection, articles 4, 10, 14 and 28.
 pt:
   titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
   slug: comprar-um-apartamento-na-planta-o-que-verificar-antes-de-assinar
@@ -233,6 +243,11 @@ pt:
     - [Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?](/pt/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
     - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Fontes oficiais
+
+    - [Código Civil (Lei n.º 1183/85), livro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), artigos 700 a 702, 782 e 860 — Biblioteca y Archivo Central del Congreso Nacional. O artigo 2147 (regulamento de condomínio) está no livro IV do Código Civil.
+    - Lei n.º 1334/98 de Defesa do Consumidor e do Usuário, artigos 4, 10, 14 e 28.
 ---
 
 Comprar en pozo permite pagar en cuotas durante la obra y elegir tu unidad entre las primeras. A cambio, firmás un contrato sobre algo que todavía no existe. Estos son los puntos que conviene revisar.
@@ -305,3 +320,8 @@ Conocé Kalypso Recoleta, las unidades disponibles y las formas de pag
 - [Comprar en pozo o un departamento terminado en Asunción: ¿qué opción es para vos?](/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 - [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+## Fuentes oficiales
+
+- [Código Civil (Ley N.º 1183/85), libro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), arts. 700 a 702, 782 y 860 — Biblioteca y Archivo Central del Congreso Nacional. El art. 2147 (reglamento de copropiedad) figura en el libro IV del Código Civil.
+- Ley N.º 1334/98 de Defensa del Consumidor y del Usuario, arts. 4, 10, 14 y 28.

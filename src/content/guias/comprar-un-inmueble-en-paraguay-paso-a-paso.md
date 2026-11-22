@@ -92,6 +92,12 @@ fr:
     - [Biens à vendre](/fr/comprar/)
     - [Comment financer l’achat de votre logement au Paraguay](/fr/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer](/fr/blog/comprar-un-departamento-en-pozo-que-revisar/)
+
+    ## Sources officielles
+
+    - [Code civil (loi n° 1183/85), livre III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), articles 700, 701, 702 et 723 — Biblioteca y Archivo Central del Congreso Nacional.
+    - [Loi n° 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado), qui crée le Registre unifié national ; [Poder Judicial, 14 janvier 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
+    - [Résolution SEPRELAD n° 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), obligations du secteur immobilier.
 en:
   titulo: 'Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed'
   slug: buying-property-in-paraguay-from-the-preliminary-agreement-to-the-notarial-deed
@@ -177,6 +183,12 @@ en:
     - [Properties for sale](/en/comprar/)
     - [How to finance your home purchase in Paraguay](/en/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Buying an off-plan apartment: what to check before you sign](/en/blog/comprar-un-departamento-en-pozo-que-revisar/)
+
+    ## Official sources
+
+    - [Civil Code (Law No. 1183/85), Book III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), articles 700, 701, 702 and 723 — Biblioteca y Archivo Central del Congreso Nacional.
+    - [Law No. 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado), creating the Registro Unificado Nacional; [Poder Judicial, 14 January 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
+    - [SEPRELAD Resolution No. 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), obligations of the real estate sector.
 pt:
   titulo: 'Comprar um imóvel no Paraguai: do boleto à escritura'
   slug: comprar-um-imovel-no-paraguai-do-boleto-a-escritura
@@ -261,6 +273,12 @@ pt:
     - [Imóveis à venda](/pt/comprar/)
     - [Como financiar a compra da sua moradia no Paraguai](/pt/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Comprar um apartamento na planta: o que verificar antes de assinar](/pt/blog/comprar-un-departamento-en-pozo-que-revisar/)
+
+    ## Fontes oficiais
+
+    - [Código Civil (Lei n.º 1183/85), livro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), artigos 700, 701, 702 e 723 — Biblioteca y Archivo Central del Congreso Nacional.
+    - [Lei n.º 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado), que cria o Registro Unificado Nacional; [Poder Judicial, 14 de janeiro de 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
+    - [Resolução SEPRELAD n.º 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), obrigações do setor imobiliário.
 ---
 
 Comprar una casa o un departamento en Paraguay sigue un camino claro. Conocer cada etapa evita sorpresas y te permite saber, en cada momento, qué estás firmando y qué gastos tenés que prever.
@@ -341,3 +359,9 @@ Te acompañamos en **español, francés e inglés** durante todo el proceso, d
 - [Departamentos y casas en venta](/comprar/)
 - [Cómo financiar la compra de tu vivienda en Paraguay](/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
 - [Comprar un departamento en pozo: qué revisar antes de firmar](/blog/comprar-un-departamento-en-pozo-que-revisar/)
+
+## Fuentes oficiales
+
+- [Código Civil (Ley N.º 1183/85), libro III](https://www.bacn.gov.py/leyes-paraguayas/522/ley-n-1183-codigo-civil-iii-parte-libro-tercero-br), arts. 700, 701, 702 y 723 — Biblioteca y Archivo Central del Congreso Nacional.
+- [Ley N.º 7424/2025](https://www.bacn.gov.py/leyes-paraguayas/12672/ley-n-74242025-que-crea-el-sistema-nacional-unificado), que crea el Registro Unificado Nacional; [Poder Judicial, 14 de enero de 2026](https://www.pj.gov.py/notas/29290-historico-entra-en-funcionamiento-el-registro-unificado-nacional-en-todo-el-pais).
+- [Resolución SEPRELAD N.º 201/2020](https://www.seprelad.gov.py/resoluciones/resoluciones/res-n201-2020-reglamentacion-para-inmobiliarias.pdf), obligaciones del sector inmobiliario.
