@@ -6,8 +6,8 @@
  */
 export const textos = {
   es: {
-    seo_t: 'Areguá Forest: lotes en barrio cerrado a 32 km de Asunción',
-    seo_d: 'Lotes desde 360 m² en Areguá Forest, barrio cerrado de 39 ha de bosque con club house, piscina tipo playa y seguridad 24/7. Asesoramiento CALISTA.',
+    seo_t: 'Areguá Forest: lotes desde USD 68/m², precios y cuotas',
+    seo_d: 'Precios por etapa, 36 cuotas sin intereses y simulador de lotes en Areguá Forest, barrio cerrado de 39 ha de bosque a 32 km de Asunción.',
     eyebrow: 'Barrio cerrado · Areguá',
     h1: 'Lotes en Areguá Forest',
     lema: 'Tu lote en 39 hectáreas de bosque nativo, a 32 km de Asunción.',
@@ -85,8 +85,8 @@ export const textos = {
     banner_btn: 'Descubrir el proyecto',
   },
   fr: {
-    seo_t: 'Areguá Forest : terrains en résidence fermée à 32 km d’Asunción',
-    seo_d: 'Terrains à partir de 360 m² à Areguá Forest, résidence fermée de 39 ha de forêt avec club house, piscine façon plage et sécurité 24h/24. Conseil CALISTA.',
+    seo_t: 'Areguá Forest : terrains dès 68 USD/m², prix et mensualités',
+    seo_d: 'Prix par étape, 36 mensualités sans intérêts et simulateur de lots à Areguá Forest, résidence fermée de 39 ha de forêt à 32 km d’Asunción.',
     eyebrow: 'Résidence fermée · Areguá',
     h1: 'Terrains à Areguá Forest',
     lema: 'Votre terrain dans 39 hectares de forêt naturelle, à 32 km d’Asunción.',
@@ -164,8 +164,8 @@ export const textos = {
     banner_btn: 'Découvrir le projet',
   },
   en: {
-    seo_t: 'Areguá Forest: plots in a gated community 32 km from Asunción',
-    seo_d: 'Plots from 360 m² at Areguá Forest, a 39-ha wooded gated community with club house, beach-style pool and 24/7 security. Advice from CALISTA.',
+    seo_t: 'Areguá Forest: plots from USD 68/m², prices and payments',
+    seo_d: 'Prices by stage, 36 interest-free instalments and a plot simulator for Areguá Forest, a 39-ha wooded gated community 32 km from Asunción.',
     eyebrow: 'Gated community · Areguá',
     h1: 'Plots at Areguá Forest',
     lema: 'Your plot in 39 hectares of native forest, 32 km from Asunción.',
@@ -243,8 +243,8 @@ export const textos = {
     banner_btn: 'Discover the project',
   },
   pt: {
-    seo_t: 'Areguá Forest: terrenos em condomínio fechado a 32 km de Assunção',
-    seo_d: 'Lotes a partir de 360 m² no Areguá Forest, condomínio fechado de 39 ha de mata com club house, piscina estilo praia e segurança 24 h. Assessoria CALISTA.',
+    seo_t: 'Areguá Forest: lotes desde USD 68/m², preços e parcelas',
+    seo_d: 'Preços por etapa, 36 parcelas sem juros e simulador de lotes no Areguá Forest, condomínio fechado de 39 ha de mata a 32 km de Assunção.',
     eyebrow: 'Condomínio fechado · Areguá',
     h1: 'Lotes no Areguá Forest',
     lema: 'Seu lote em 39 hectares de mata nativa, a 32 km de Assunção.',

@@ -33,7 +33,7 @@ const tarifasSchema = z
 const reservasSchema = z
   .preprocess((v) => (v == null ? [] : v), z.array(z.object({ desde: fechaTemp(), hasta: fechaTemp() })))
   .default([]);
-const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), titulo_seo: strOpc(), descripcion: strOpc(), cuerpo: strOpc() }).optional());
+const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), titulo_seo: strOpc(), descripcion: strOpc(), descripcion_seo: strOpc(), slug: strOpc(), cuerpo: strOpc() }).optional());
 const listaTxt = z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]);
 
 /**
@@ -262,6 +262,8 @@ const guias = defineCollection({
     // Vide = le titre de l'article.
     titulo_seo: strOpc(),
     descripcion: z.string(),
+    // Description courte pour Google (~155 caractères). Vide = le résumé.
+    descripcion_seo: strOpc(),
     borrador: z.boolean().default(true),
     // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes…
     categoria: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.enum(['guia', 'actualidad']).default('guia')),

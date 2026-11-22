@@ -8,6 +8,7 @@ fecha: 2026-10-07T06:07:00
 portada_foto: /uploads/Signature notariale et remise des clés.jpg
 fr:
   titulo: 'Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié'
+  slug: acheter-un-bien-immobilier-au-paraguay-du-contrat-preliminaire-a-l-acte-notarie
   titulo_seo: "Acheter au Paraguay : de l’avant-contrat à l’acte notarié"
   descripcion: 'Acheter un bien immobilier au Paraguay : étapes, frais et documents'
   cuerpo: |-
@@ -91,6 +92,7 @@ fr:
     - [Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer](/fr/blog/comprar-un-departamento-en-pozo-que-revisar/)
 en:
   titulo: 'Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed'
+  slug: buying-property-in-paraguay-from-the-preliminary-agreement-to-the-notarial-deed
   titulo_seo: "Buying property in Paraguay: from agreement to deed"
   descripcion: 'Buying Property in Paraguay: Steps, Costs and Documents'
   cuerpo: |-
@@ -174,6 +176,7 @@ en:
     - [Buying an off-plan apartment: what to check before you sign](/en/blog/comprar-un-departamento-en-pozo-que-revisar/)
 pt:
   titulo: 'Comprar um imóvel no Paraguai: do boleto à escritura'
+  slug: comprar-um-imovel-no-paraguai-do-boleto-a-escritura
   descripcion: 'Comprar um imóvel no Paraguai: etapas, custos e documentos'
   cuerpo: |-
     Comprar uma casa ou um apartamento no Paraguai segue um caminho claro. Conhecer cada etapa evita surpresas e permite que você saiba, a cada momento, o que está assinando e quais custos precisa prever.

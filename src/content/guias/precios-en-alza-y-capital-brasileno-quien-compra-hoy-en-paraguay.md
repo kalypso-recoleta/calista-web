@@ -9,6 +9,7 @@ fecha: 2026-10-31T08:00:00
 portada_foto: /uploads/precios-en-alza-capital-brasileno.jpg
 fr:
   titulo: 'Prix en hausse et capitaux brésiliens : qui achète aujourd’hui au Paraguay ?'
+  slug: prix-en-hausse-et-capitaux-bresiliens-qui-achete-aujourd-hui-au-paraguay
   titulo_seo: "Prix en hausse et capitaux brésiliens : qui achète ?"
   descripcion: Les programmes neufs augmentent jusqu’à 25 % et le Paraguay attire les capitaux brésiliens. Qui peut suivre ces prix, et pour quel rendement ?
   cuerpo: |-
@@ -89,6 +90,7 @@ fr:
     - [Pulso real estate: el 75% de las compras inmobiliarias son para inversión y 25% son de compradores finales](https://infonegocios.com.py/nota-principal/pulso-real-estate-el-75-de-las-compras-inmobiliarias-son-para-inversion-y-25-son-de-compradores-finales), InfoNegocios, 24 juin 2026.
 en:
   titulo: 'Rising prices and Brazilian capital: who is buying in Paraguay today?'
+  slug: rising-prices-and-brazilian-capital-who-is-buying-in-paraguay-today
   titulo_seo: "Rising prices and Brazilian capital: who is buying?"
   descripcion: New developments are up to 25% more expensive and Paraguay is drawing Brazilian capital. Who can absorb these prices, and at what return?
   cuerpo: |-
@@ -169,6 +171,7 @@ en:
     - [Pulso real estate: el 75% de las compras inmobiliarias son para inversión y 25% son de compradores finales](https://infonegocios.com.py/nota-principal/pulso-real-estate-el-75-de-las-compras-inmobiliarias-son-para-inversion-y-25-son-de-compradores-finales), InfoNegocios, June 24, 2026.
 pt:
   titulo: 'Preços em alta e capital brasileiro: quem compra hoje no Paraguai?'
+  slug: precos-em-alta-e-capital-brasileiro-quem-compra-hoje-no-paraguai
   titulo_seo: "Preços em alta e capital brasileiro: quem compra hoje?"
   descripcion: Os novos empreendimentos sobem até 25% e o Paraguai atrai capital brasileiro. Quem consegue absorver esses preços, e com que rentabilidade?
   cuerpo: |-

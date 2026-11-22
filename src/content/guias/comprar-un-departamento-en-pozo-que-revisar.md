@@ -8,6 +8,7 @@ fecha: 2026-10-07
 portada_foto: /uploads/Maquette Kalypso sur plans architecturaux.jpg
 fr:
   titulo: "Acheter un appartement sur plan : ce qu'il faut vérifier avant de signer"
+  slug: acheter-un-appartement-sur-plan-ce-qu-il-faut-verifier-avant-de-signer
   titulo_seo: "Acheter sur plan : quoi vérifier avant de signer"
   descripcion: 'Prix, date de livraison, clauses interdites, garanties : les points à contrôler dans un contrat de vente sur plan au Paraguay.'
   cuerpo: |-
@@ -83,6 +84,7 @@ fr:
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying an off-plan apartment: what to check before you sign'
+  slug: buying-an-off-plan-apartment-what-to-check-before-you-sign
   descripcion: 'Price, delivery date, prohibited clauses, guarantees: the points to review in an off-plan purchase contract in Paraguay.'
   cuerpo: |-
     Buying off-plan lets you pay in installments during construction and choose your unit among the first buyers. In return, you sign a contract for something that does not exist yet. Here are the points worth checking.
@@ -157,6 +159,7 @@ en:
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um apartamento na planta: o que verificar antes de assinar'
+  slug: comprar-um-apartamento-na-planta-o-que-verificar-antes-de-assinar
   titulo_seo: "Apartamento na planta: o que verificar antes de assinar"
   descripcion: 'Preço, data de entrega, cláusulas proibidas, garantias: os pontos a verificar em um contrato de pré-venda no Paraguai.'
   cuerpo: |-

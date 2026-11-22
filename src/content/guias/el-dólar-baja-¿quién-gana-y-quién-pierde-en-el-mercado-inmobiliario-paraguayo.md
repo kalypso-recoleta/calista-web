@@ -9,6 +9,7 @@ fecha: 2026-10-08T06:27:00
 portada_foto: /uploads/Dollar en chute, construction en essor.jpg
 fr:
   titulo: 'Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?'
+  slug: le-dollar-baisse-qui-gagne-et-qui-perd-sur-le-marche-immobilier-paraguayen
   titulo_seo: "Le dollar baisse : gagnants et perdants de l’immobilier"
   descripcion: Ces dernières semaines, deux titres de presse ont résumé la situation. Selon 5Días, le dollar « profundiza su caída y llega hasta G. 5.725 en el mercado interbancario » (« accentue sa chute et descend jusqu’à 5 725 guaraníes sur le marché interbancaire »).
   cuerpo: |-
@@ -67,10 +68,11 @@ fr:
     ## Pour aller plus loin
 
     - [Biens à vendre](/fr/comprar/)
-    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Acheter pour louer : du rendement brut à ce qu’il vous reste réellement](/fr/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 en:
   titulo: "The dollar is falling: who wins and who loses in Paraguay's real estate market?"
+  slug: the-dollar-is-falling-who-wins-and-who-loses-in-paraguay-s-real-estate-market
   titulo_seo: "The dollar is falling: who wins and loses in real estate?"
   descripcion: n recent weeks, two news headlines have summed up the situation. According to 5Días, the dollar “continues its decline, reaching G. 5,725 in the interbank market.”
   cuerpo: |-
@@ -129,10 +131,11 @@ en:
     ## Further reading
 
     - [Properties for sale](/en/comprar/)
-    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Buying to rent: from gross rental yield to what you actually keep](/en/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 pt:
   titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
+  slug: o-dolar-cai-quem-ganha-e-quem-perde-no-mercado-imobiliario-paraguaio
   titulo_seo: "O dólar cai: quem ganha e quem perde no imobiliário"
   descripcion: 'Nas últimas semanas, duas manchetes resumiram a situação. Segundo o 5Días, o dólar «aprofunda sua queda e chega a G. 5.725 no mercado interbancário».'
   cuerpo: |-
@@ -191,7 +194,7 @@ pt:
     ## Para saber mais
 
     - [Imóveis à venda](/pt/comprar/)
-    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
 ---
 
@@ -250,5 +253,5 @@ _Este artículo es informativo y no constituye asesoramiento financiero._
 ## Para ir más lejos
 
 - [Departamentos y casas en venta](/comprar/)
-- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
 - [Comprar para alquilar: de la rentabilidad bruta a lo que realmente te queda](/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)

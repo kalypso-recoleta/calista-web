@@ -12,6 +12,8 @@ import {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+// Adresses de la page dans chaque langue quand elles diffèrent (articles du blog à adresse traduite)
+const { alternos } = Astro.props as { alternos?: Partial<Record<string, string>> };
 
 // Menu principal (ordinateur) : 6 rubriques. Terrenos et Areguá Forest sont sous « Comprar » ;
 // Reseñas, Historia et FAQ sont dans le menu mobile et le pied de page.
@@ -105,7 +107,7 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
         {
           LOCALES.map((l) => (
             <a
-              href={localizePath(basePath, l)}
+              href={alternos?.[l] ?? localizePath(basePath, l)}
               class:list={['lang', { on: l === lang }]}
               hreflang={l}
               aria-current={l === lang ? 'true' : undefined}
@@ -132,7 +134,7 @@ const wa = whatsappLink(t('nav.wa_consulta'), numeroPorRuta(basePath));
       {
         LOCALES.map((l) => (
           <a
-            href={localizePath(basePath, l)}
+            href={alternos?.[l] ?? localizePath(basePath, l)}
             class:list={['lang', { on: l === lang }]}
             hreflang={l}
           >

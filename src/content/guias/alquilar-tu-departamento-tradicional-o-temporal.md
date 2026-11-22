@@ -9,6 +9,7 @@ fecha: 2026-10-07
 portada_foto: /uploads/Fresque florale Kalypso au-dessus du canapé.jpg
 fr:
   titulo: 'Location classique ou temporaire à Asunción : quelle option choisir ?'
+  slug: location-classique-ou-temporaire-a-asuncion-quelle-option-choisir
   titulo_seo: "Location classique ou temporaire à Asunción : que choisir ?"
   descripcion: Si vous possédez un appartement à Asunción, vous pouvez le louer avec un bail classique ou le proposer en location temporaire meublée. Les deux options peuvent fonctionner, mais elles nécessitent une gestion différente.
   cuerpo: |-
@@ -88,6 +89,7 @@ fr:
     - [Préparer un appartement meublé pour la location](/fr/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 en:
   titulo: 'Traditional or short-term rentals in Asunción: which option is right for you?'
+  slug: traditional-or-short-term-rentals-in-asuncion-which-option-is-right-for-you
   titulo_seo: "Traditional or short-term rental in Asunción: which one?"
   descripcion: If you own an apartment in Asunción, you can rent it out under a traditional lease or offer it as a furnished short-term rental. Both options can work well, but they require different approaches to management.
   cuerpo: |-
@@ -167,6 +169,7 @@ en:
     - [How to prepare a furnished apartment for rent](/en/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
 pt:
   titulo: 'Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?'
+  slug: aluguel-tradicional-ou-de-temporada-em-assuncao-o-que-vale-mais-a-pena-para-voce
   titulo_seo: "Aluguel tradicional ou de temporada em Assunção?"
   descripcion: 'Se você tem um apartamento em Assunção, pode alugá-lo com um contrato tradicional ou como aluguel de temporada mobiliado. As duas opções podem funcionar bem, mas exigem uma gestão diferente.'
   cuerpo: |-

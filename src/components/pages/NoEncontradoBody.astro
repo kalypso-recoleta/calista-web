@@ -1,0 +1,39 @@
+---
+/** Page « introuvable » (404), dans la langue de la partie du site visitée. */
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, localizePath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const L = (p: string) => localizePath(p, lang);
+const x = {
+  es: { t: 'Página no encontrada', d: 'La página que buscás no existe o cambió de dirección. Quizás la propiedad ya fue vendida o alquilada.', ir: 'Te puede interesar', inicio: 'Inicio', comprar: 'Propiedades en venta', alquilar: 'Propiedades en alquiler', blog: 'Blog', contacto: 'Contacto' },
+  fr: { t: 'Page introuvable', d: 'La page que vous cherchez n’existe pas ou a changé d’adresse. Le bien a peut-être déjà été vendu ou loué.', ir: 'Vous pouvez aller vers', inicio: 'Accueil', comprar: 'Biens à vendre', alquilar: 'Biens à louer', blog: 'Blog', contacto: 'Contact' },
+  en: { t: 'Page not found', d: 'The page you are looking for does not exist or has moved. The property may already have been sold or rented.', ir: 'You may want to visit', inicio: 'Home', comprar: 'Properties for sale', alquilar: 'Properties for rent', blog: 'Blog', contacto: 'Contact' },
+  pt: { t: 'Página não encontrada', d: 'A página que você procura não existe ou mudou de endereço. O imóvel pode já ter sido vendido ou alugado.', ir: 'Talvez você queira ver', inicio: 'Início', comprar: 'Imóveis à venda', alquilar: 'Imóveis para alugar', blog: 'Blog', contacto: 'Contato' },
+}[lang as 'es' | 'fr' | 'en' | 'pt']!;
+const enlaces = [
+  [L('/'), x.inicio],
+  [L('/comprar'), x.comprar],
+  [L('/alquilar'), x.alquilar],
+  [L('/blog'), x.blog],
+  [L('/contacto'), x.contacto],
+];
+---
+
+<Layout title={x.t} description={x.d} noindex>
+  <section class="section">
+    <div class="container nf">
+      <h1>{x.t}</h1>
+      <p class="lead">{x.d}</p>
+      <h2>{x.ir}</h2>
+      <ul>{enlaces.map(([href, txt]) => <li><a href={href}>{txt}</a></li>)}</ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .nf { max-width: 720px; padding-block: 2rem 3rem; }
+  .nf h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .nf ul { padding-left: 1.2rem; }
+  .nf a { color: var(--violet); font-weight: 600; }
+</style>

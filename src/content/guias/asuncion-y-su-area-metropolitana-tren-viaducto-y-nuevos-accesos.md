@@ -9,6 +9,7 @@ fecha: 2026-11-21T12:00:00
 portada_foto: /uploads/asuncion-en-movimiento.jpg
 fr:
   titulo: "Asunción et son agglomération se transforment : train électrique, viaduc et nouveaux accès"
+  slug: asuncion-et-son-agglomeration-se-transforment-train-electrique-viaduc-et-nouveaux-acces
   titulo_seo: "Grand Asunción : train électrique, viaduc et nouveaux accès"
   descripcion: "Tren de Cercanías, viaduc de Luque et Red Vial Estructurante : les projets qui transforment la mobilité du Grand Asunción, avec calendrier et sources officielles."
   cuerpo: |-
@@ -61,6 +62,7 @@ fr:
     - [MOPC, 14 août 2026 : Plan Central](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)
 en:
   titulo: "Asunción and its metropolitan area are changing: electric train, viaduct and new access roads"
+  slug: asuncion-and-its-metropolitan-area-are-changing-electric-train-viaduct-and-new-access-roads
   titulo_seo: "Greater Asunción: electric train, viaduct and new roads"
   descripcion: "Commuter rail, the Luque viaduct and the new road network: the projects reshaping mobility in Greater Asunción, with timelines and official sources."
   cuerpo: |-
@@ -113,6 +115,7 @@ en:
     - [MOPC, 14 August 2026: Plan Central](https://mopc.gov.py/ministra-centurion-verifica-obras-del-plan-central-en-aregua-y-luque/)
 pt:
   titulo: "Assunção e sua região metropolitana se transformam: trem elétrico, viaduto e novos acessos"
+  slug: assuncao-e-sua-regiao-metropolitana-se-transformam-trem-eletrico-viaduto-e-novos-acessos
   titulo_seo: "Grande Assunção: trem elétrico, viaduto e novos acessos"
   descripcion: "Trem metropolitano, viaduto de Luque e nova rede viária: os projetos que transformam a mobilidade da Grande Assunção, com prazos e fontes oficiais."
   cuerpo: |-

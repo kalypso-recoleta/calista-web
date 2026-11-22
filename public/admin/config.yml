@@ -426,6 +426,7 @@ collections:
       - { label: Título, name: titulo, widget: string }
       - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false, hint: 'Opcional. Título corto que aparece en Google y en la pestaña del navegador. Vacío = el título del artículo.' }
       - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
+      - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false, hint: 'Opcional. Texto que aparece debajo del título en Google. Vacío = el resumen.' }
       - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
       - { label: Tema, name: tema, widget: select, required: false, hint: 'Agrupa el artículo en una página por tema (ej. calista.com.py/blog/tema/alquilar).', options: [{ label: 'Comprar', value: comprar }, { label: 'Alquilar (tradicional o temporal)', value: alquilar }, { label: 'Invertir (rentabilidad, renta)', value: invertir }, { label: 'Propietarios (vender, tasar, administrar)', value: propietarios }, { label: 'Vivir en Paraguay (extranjeros)', value: vivir }, { label: 'Mercado (precios, tendencias, economía)', value: mercado }] }
       - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
@@ -441,7 +442,9 @@ collections:
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
           - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
+          - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇬🇧 Traducción al inglés'
         name: en
@@ -452,7 +455,9 @@ collections:
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
           - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
+          - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇧🇷 Traducción al portugués (Brasil)'
         name: pt
@@ -463,7 +468,9 @@ collections:
         fields:
           - { label: 'Título', name: titulo, widget: string, required: false }
           - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false }
+          - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
+          - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
 
   # ─── Barrios (pages par quartier) ───

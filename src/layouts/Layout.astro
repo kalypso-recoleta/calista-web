@@ -23,6 +23,8 @@ interface Props {
   publishedTime?: Date; // date de publication (articles)
   zona?: boolean; // true = ajoute « en Asunción » au <title> (pages commerciales : comprar, alquilar, terrenos…)
   tituloCompleto?: boolean; // true = titre déjà complet (fiches de biens) : pas de « · Calista Inmobiliaria »
+  // Adresses de la page dans chaque langue quand elles diffèrent (ex. articles du blog à adresse traduite)
+  alternos?: Partial<Record<'es' | 'fr' | 'en' | 'pt', string>>;
 }
 
 const lang = getLangFromUrl(Astro.url);
@@ -37,6 +39,7 @@ const {
   publishedTime,
   tituloCompleto = false,
   zona = false,
+  alternos,
 } = Astro.props;
 
 // « en Asunción » si zona ; suffixe « · CALISTA » seulement si le titre reste ≤ 60 caractères (Google coupe au-delà)
@@ -59,7 +62,7 @@ const basePath = stripLocale(Astro.url.pathname);
 const alternates = LOCALES.map((l) => ({
   lang: l,
   // « / » final : c'est l'adresse servie par Netlify (sans, elle redirige) et celle du canonical
-  href: new URL(localizePath(basePath, l).replace(/\/?$/, '/'), Astro.site).toString(),
+  href: new URL((alternos?.[l] ?? localizePath(basePath, l)).replace(/\/?$/, '/'), Astro.site).toString(),
 }));
 
 // og:locale (langue de la page + langues alternatives)
@@ -166,7 +169,7 @@ const orgSchema = {
   </head>
   <body data-wa={numeroPorRuta(basePath.replace(/\/$/, '') || '/')}>
     <a href="#contenido" class="skip-link">{t('nav.skip')}</a>
-    <Header />
+    <Header alternos={alternos} />
     <main id="contenido">
       <slot />
     </main>

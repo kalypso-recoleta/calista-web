@@ -9,6 +9,7 @@ fecha: 2026-10-13T18:30:00
 portada_foto: /uploads/Clé et loupe sur l’immobilier paraguayen.jpg
 fr:
   titulo: 'Plus d’étrangers au Paraguay : une chance pour le marché, à condition d’acheter avec lucidité'
+  slug: plus-d-etrangers-au-paraguay-une-chance-pour-le-marche-a-condition-d-acheter-avec-lucidite
   titulo_seo: "Plus d’étrangers au Paraguay : une chance pour l’immobilier"
   descripcion: 'Le Paraguay attire davantage d’étrangers. Pour le marché immobilier, cette dynamique représente une opportunité. Mais elle pose aussi deux questions : comment préserver l’accès au logement pour les habitants, et comment éviter que les nouveaux investisseurs achètent trop cher sur la base de rendements incertains ?'
   cuerpo: |-
@@ -101,6 +102,7 @@ fr:
     - [Biens à louer](/fr/alquilar/)
 en:
   titulo: 'More foreigners in Paraguay: an opportunity for the market, provided buyers make informed decisions'
+  slug: more-foreigners-in-paraguay-an-opportunity-for-the-market-provided-buyers-make-informed-decisions
   titulo_seo: "More foreigners in Paraguay: a property market opportunity"
   descripcion: 'Paraguay is attracting more foreigners. For the real estate market, this trend represents an opportunity. But it also raises two questions: how can access to housing be preserved for local residents, and how can new investors avoid overpaying based on uncertain returns?'
   cuerpo: |-
@@ -193,6 +195,7 @@ en:
     - [Properties for rent](/en/alquilar/)
 pt:
   titulo: 'Mais estrangeiros no Paraguai: uma oportunidade para o mercado, desde que se compre com critério'
+  slug: mais-estrangeiros-no-paraguai-uma-oportunidade-para-o-mercado-desde-que-se-compre-com-criterio
   titulo_seo: "Mais estrangeiros no Paraguai: oportunidade imobiliária"
   descripcion: 'O Paraguai atrai cada vez mais estrangeiros. Para o mercado imobiliário, essa dinâmica representa uma oportunidade. Mas também levanta duas perguntas: como preservar o acesso à moradia para os habitantes e como evitar que os novos investidores paguem caro demais com base em rendimentos incertos?'
   cuerpo: |-

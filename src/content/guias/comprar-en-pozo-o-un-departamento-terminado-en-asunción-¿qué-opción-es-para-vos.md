@@ -9,6 +9,7 @@ fecha: 2026-10-09T18:56:00
 portada_foto: /uploads/Du plan à l’appartement d’Asunción.jpg
 fr:
   titulo: 'Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?'
+  slug: acheter-sur-plan-ou-deja-livre-a-asuncion-quel-choix-pour-vous
   titulo_seo: "Acheter sur plan ou livré à Asunción : que choisir ?"
   descripcion: 'Prix, calendrier, paiement et mise en location : les différences à connaître pour choisir un appartement adapté à votre projet.'
   cuerpo: |-
@@ -104,6 +105,7 @@ fr:
     - [Biens à vendre](/fr/comprar/)
 en:
   titulo: 'Buying off-plan or a completed apartment in Asunción: which is right for you?'
+  slug: buying-off-plan-or-a-completed-apartment-in-asuncion-which-is-right-for-you
   titulo_seo: "Off-plan or completed apartment in Asunción?"
   descripcion: 'Price, timing, payment terms and rental income: the differences to consider when choosing an apartment that fits your plans.'
   cuerpo: |-
@@ -199,6 +201,7 @@ en:
     - [Properties for sale](/en/comprar/)
 pt:
   titulo: 'Comprar na planta ou um apartamento pronto em Assunção: qual opção é para você?'
+  slug: comprar-na-planta-ou-um-apartamento-pronto-em-assuncao-qual-opcao-e-para-voce
   titulo_seo: "Na planta ou pronto em Assunção: qual escolher?"
   descripcion: 'Preço, prazos, forma de pagamento e aluguel: as diferenças que vale a pena conhecer para escolher um apartamento de acordo com o seu projeto.'
   cuerpo: |-

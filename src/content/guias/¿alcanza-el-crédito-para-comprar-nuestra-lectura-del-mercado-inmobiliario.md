@@ -9,6 +9,7 @@ fecha: 2026-10-10T06:59:00
 portada_foto: /uploads/Crédit approuvé, épargne à compléter.jpg
 fr:
   titulo: Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier
+  slug: le-credit-suffit-il-pour-acheter-notre-regard-sur-le-marche-immobilier
   titulo_seo: "Le crédit suffit-il pour acheter un logement ?"
   descripcion: Obtenir un crédit et pouvoir acheter un logement sont deux étapes distinctes. Comprendre cette différence permet de mieux préparer son projet.
   cuerpo: |-
@@ -82,6 +83,7 @@ fr:
     - [Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?](/fr/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
 en:
   titulo: Is a mortgage enough to buy a home? Our perspective on the property market
+  slug: is-a-mortgage-enough-to-buy-a-home-our-perspective-on-the-property-market
   titulo_seo: "Is a mortgage enough to buy a home?"
   descripcion: Securing a mortgage and being able to buy a home are two separate steps. Understanding that difference helps buyers prepare their plans more effectively.
   cuerpo: |-
@@ -155,6 +157,7 @@ en:
     - [The dollar is falling: who wins and who loses in Paraguay's real estate market?](/en/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
 pt:
   titulo: 'O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário'
+  slug: o-credito-e-suficiente-para-comprar-nossa-leitura-do-mercado-imobiliario
   titulo_seo: "O crédito é suficiente para comprar um imóvel?"
   descripcion: 'Conseguir um crédito e poder comprar um imóvel são duas etapas distintas. Entender essa diferença permite preparar melhor um projeto de compra.'
   cuerpo: |-

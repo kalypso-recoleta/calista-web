@@ -5,7 +5,7 @@
  */
 import { marked } from 'marked';
 
-type Trad = { titulo?: string; titulo_seo?: string; descripcion?: string; cuerpo?: string } | undefined;
+type Trad = { titulo?: string; titulo_seo?: string; descripcion?: string; descripcion_seo?: string; cuerpo?: string } | undefined;
 
 export function localizar<T extends { titulo: string; descripcion: string }>(data: T, lang: string): T {
   if (lang === 'es') return data;
@@ -18,6 +18,8 @@ export function localizar<T extends { titulo: string; descripcion: string }>(dat
     // (jamais le titre court espagnol au-dessus d'un article traduit)
     titulo_seo: tr.titulo_seo?.trim() || (tr.titulo?.trim() ? undefined : (data as { titulo_seo?: string }).titulo_seo),
     descripcion: tr.descripcion?.trim() || data.descripcion,
+    // Description pour Google : celle de la langue ; sinon (traduction présente) le résumé traduit
+    descripcion_seo: tr.descripcion_seo?.trim() || (tr.descripcion?.trim() ? undefined : (data as { descripcion_seo?: string }).descripcion_seo),
   };
 }
 

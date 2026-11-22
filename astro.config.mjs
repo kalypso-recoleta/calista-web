@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { readdirSync, readFileSync } from 'node:fs';
 import { tablaLastmod } from './sitemap-lastmod.mjs';
+import seoPostbuild from './integrations/seo-postbuild.mjs';
 
 // IMPORTANT : remplace cette URL par le domaine final de Calista
 // (ex. https://www.calista.com.py). Elle sert au sitemap et aux
@@ -38,8 +39,8 @@ export default defineConfig({
       // + articles en portugais pas encore traduits (voir guiasSinPt)
       filter: (page) => {
         if (/\/guias\//.test(page)) return false;
-        // Page de remerciement (noindex) : hors sitemap
-        if (/\/gracias\/?$/.test(page)) return false;
+        // Page de remerciement et pages « introuvable » (noindex) : hors sitemap
+        if (/\/(gracias|404)\/?$/.test(page)) return false;
         const m = page.match(/\/pt\/blog\/(?!tema\/)([^/]+)\/?$/);
         return !(m && guiasSinPt.has(m[1]));
       },
@@ -55,6 +56,8 @@ export default defineConfig({
         return fecha ? { ...item, lastmod: fecha.toISOString() } : item;
       },
     }),
+    // Après le sitemap : liens avec « / » final, adresses traduites du blog, hreflang du sitemap
+    seoPostbuild({ site: SITE }),
   ],
   // Site en 4 langues : espagnol par défaut (sans préfixe), /fr/, /en/ et /pt/ (portugais du Brésil)
   i18n: {

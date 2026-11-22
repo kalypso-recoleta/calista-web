@@ -11,20 +11,26 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
 
-# Article supprimé puis republié avec « -1 » : l'ancienne adresse (déjà partagée) renvoie vers la nouvelle
+# Article supprimé puis republié avec « -1 » (oct. 2026), puis remis à son adresse d'origine (22/11/2026) :
+# l'adresse « -1 » renvoie vers l'adresse définitive (en fr / en / pt : adresse traduite)
 [[redirects]]
-  from = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
-  to = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  from = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  to = "/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/"
   status = 301
 
 [[redirects]]
-  from = "/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
-  to = "/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  from = "/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  to = "/fr/blog/le-credit-suffit-il-pour-acheter-notre-regard-sur-le-marche-immobilier/"
   status = 301
 
 [[redirects]]
-  from = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario"
-  to = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  from = "/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  to = "/en/blog/is-a-mortgage-enough-to-buy-a-home-our-perspective-on-the-property-market/"
+  status = 301
+
+[[redirects]]
+  from = "/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1"
+  to = "/pt/blog/o-credito-e-suficiente-para-comprar-nossa-leitura-do-mercado-imobiliario/"
   status = 301
 
 
@@ -43,6 +49,13 @@ status = 301
 from = "/en/propiedad/en-alquiler-1-dormitorio59-m2-en-barrio-jara"
 to = "/en/propiedad/venta-1-dormitorio-59-m2-en-barrio-jara"
 status = 301
+
+# Adresse avec « www » → adresse principale sans « www » (une seule adresse pour Google)
+[[redirects]]
+  from = "https://www.calista.com.py/*"
+  to = "https://calista.com.py/:splat"
+  status = 301
+  force = true
 
 # Relance du déploiement Netlify (3/11/2026) après un « Skipped »
 
@@ -72,3 +85,20 @@ status = 301
 from = "/sitemap.xml"
 to = "/sitemap-index.xml"
 status = 301
+
+# Pages « introuvable » dans la langue visitée (à garder EN DERNIER : ne s'applique
+# que si aucune page ni aucune redirection ci-dessus ne correspond). L'espagnol utilise /404.html.
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/404/"
+  status = 404
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404/"
+  status = 404
+
+[[redirects]]
+  from = "/pt/*"
+  to = "/pt/404/"
+  status = 404

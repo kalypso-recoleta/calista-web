@@ -1,6 +1,8 @@
 ---
 titulo: ¿Cuánto cobra una inmobiliaria en Paraguay?
+titulo_seo: "Comisión inmobiliaria en Paraguay: venta y alquiler"
 descripcion: 'Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar.'
+descripcion_seo: "Referencias del mercado: venta, entre 3 % y 5,5 % del precio; alquiler, un mes compartido entre propietario e inquilino. Quién paga, IVA y qué preguntar."
 categoria: guia
 tema: propietarios
 borrador: false
@@ -8,7 +10,10 @@ fecha: 2026-10-19T13:21:00
 portada_foto: /uploads/La clé d’une transaction réussie.jpg
 fr:
   titulo: Combien coûte une agence immobilière au Paraguay ?
+  slug: combien-coute-une-agence-immobiliere-au-paraguay
+  titulo_seo: "Commission d’agence au Paraguay : vente et location"
   descripcion: 'Commissions de vente et de location, répartition des honoraires et services inclus : ce qu’il faut savoir avant de s’engager.'
+  descripcion_seo: "Références du marché : vente, entre 3 % et 5,5 % du prix ; location, un mois de loyer partagé entre propriétaire et locataire. Qui paie, TVA, questions."
   cuerpo: |-
     Combien coûte la vente ou la mise en location d’un bien par une agence immobilière ? Au Paraguay, les références publiées situent la commission de vente entre **3 % et 5,5 % du prix**. Pour la recherche d’un locataire, la pratique habituelle est **un mois de loyer, partagé à parts égales entre propriétaire et locataire**.
 
@@ -128,7 +133,10 @@ fr:
     - [Estimations immobilières](/fr/tasaciones/)
 en:
   titulo: How much does a real estate agency charge in Paraguay?
+  slug: how-much-does-a-real-estate-agency-charge-in-paraguay
+  titulo_seo: "Real estate commission in Paraguay: sales and rentals"
   descripcion: 'Sales and rental commissions, who pays the fees and what the service includes: what to know before you commit.'
+  descripcion_seo: "Market references: sales, 3% to 5.5% of the price; rentals, one month’s rent split between landlord and tenant. Who pays, VAT and what to ask."
   cuerpo: |-
     How much does it cost to sell or rent out a property through a real estate agency? In Paraguay, published market references put sales commissions at between **3% and 5.5% of the sale price**. For finding a tenant, the usual practice is **one month’s rent, split equally between landlord and tenant**.
 
@@ -248,7 +256,10 @@ en:
     - [Property valuations](/en/tasaciones/)
 pt:
   titulo: 'Quanto cobra uma imobiliária no Paraguai?'
+  slug: quanto-cobra-uma-imobiliaria-no-paraguai
+  titulo_seo: "Comissão imobiliária no Paraguai: venda e aluguel"
   descripcion: 'Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar.'
+  descripcion_seo: "Referências do mercado: venda, entre 3% e 5,5% do preço; aluguel, um mês dividido entre proprietário e inquilino. Quem paga, IVA e o que perguntar."
   cuerpo: |-
     _Comissões de venda e aluguel, divisão dos honorários e serviços incluídos: o que convém saber antes de contratar._
 

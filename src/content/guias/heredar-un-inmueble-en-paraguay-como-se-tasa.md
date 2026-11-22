@@ -9,6 +9,7 @@ fecha: 2026-11-08T08:00:00
 portada_foto: /uploads/heredar-un-inmueble-en-paraguay.jpg
 fr:
   titulo: "J’ai hérité d’un bien au Paraguay. Comment l’estimer et à quoi sert cette estimation ?"
+  slug: j-ai-herite-d-un-bien-au-paraguay-comment-l-estimer-et-a-quoi-sert-cette-estimation
   titulo_seo: "Bien hérité au Paraguay : comment l’estimer"
   descripcion: "Étapes du juicio sucesorio, avalúo judiciaire et valeur de marché, impôts et documents : ce qu’il faut savoir quand on hérite d’un bien au Paraguay."
   cuerpo: |-
@@ -81,6 +82,7 @@ fr:
     - [Acheter un bien au Paraguay, étape par étape](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: "I inherited a property in Paraguay. How do I value it, and what is the valuation for?"
+  slug: i-inherited-a-property-in-paraguay-how-do-i-value-it-and-what-is-the-valuation-for
   titulo_seo: "Inherited property in Paraguay: how it is valued"
   descripcion: "Probate steps, court appraisal and market value, taxes and documents: what to know when you inherit a property in Paraguay."
   cuerpo: |-
@@ -153,6 +155,7 @@ en:
     - [Buying a property in Paraguay, step by step](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: "Herdei um imóvel no Paraguai. Como avaliá-lo e para que serve a avaliação?"
+  slug: herdei-um-imovel-no-paraguai-como-avalia-lo-e-para-que-serve-a-avaliacao
   titulo_seo: "Imóvel herdado no Paraguai: como é avaliado"
   descripcion: "Etapas do inventário, avaliação judicial e valor de mercado, impostos e documentos: o que saber ao herdar um imóvel no Paraguai."
   cuerpo: |-

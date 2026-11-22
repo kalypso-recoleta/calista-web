@@ -9,10 +9,13 @@ fecha: 2026-11-05T08:00:00
 portada_foto: /uploads/caso-ueno-bank.jpg
 fr:
   titulo: "Affaire Ueno Bank : ce qui change pour propriétaires, locataires et acheteurs"
+  slug: affaire-ueno-bank-ce-qui-change-pour-proprietaires-locataires-et-acheteurs
   titulo_seo: "Affaire Ueno Bank : ce qui change pour les bailleurs"
   descripcion: "Garantie des dépôts, avance de 40 salaires minimums, loyers, señas, alias : que faire après la résolution d’Ueno Bank, et les questions posées."
   cuerpo: |-
     La mise en résolution d’Ueno Bank soulève des questions sur la sécurité des dépôts bancaires et a des conséquences concrètes pour les opérations immobilières. Voici ce que propriétaires, locataires et acheteurs doivent savoir.
+
+    Pour notre lecture des effets de cette crise sur le marché immobilier, consultez [Ueno Bank et le marché immobilier : ce qui change pour acheteurs et investisseurs au Paraguay](/fr/blog/ueno-bank-y-el-mercado-inmobiliario/).
 
     Le 2 novembre 2026, le Directoire de la Banque centrale du Paraguay (BCP) a décidé à l’unanimité d’ouvrir la procédure de résolution d’Ueno Bank, comme elle l’a [annoncé officiellement](https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank) le lendemain. Selon la BCP, les ajustements apportés aux états financiers de la banque pendant la procédure de régularisation ont fait apparaître un ratio de solvabilité inférieur à 50 % du minimum exigé.
 
@@ -140,10 +143,13 @@ fr:
     - ABC Color, [Informe del BCP: estas son las 31 preguntas y respuestas](https://www.abc.com.py/politica/2026/10/08/informe-del-bcp-estas-son-las-31-preguntas-y-respuestas/), 8 octobre 2026.
 en:
   titulo: "The Ueno Bank case: what changes for landlords, tenants and buyers"
+  slug: the-ueno-bank-case-what-changes-for-landlords-tenants-and-buyers
   titulo_seo: "Ueno Bank case: what changes for landlords and tenants"
   descripcion: "Deposit guarantee, 40-minimum-wage advance, rent, deposits and aliases: what to do after the resolution of Ueno Bank, and the questions it raises."
   cuerpo: |-
     The resolution of Ueno Bank raises questions about the safety of bank deposits and has concrete consequences for property transactions. Here is what owners, tenants and buyers need to know.
+
+    For our view of how this crisis affects the property market, read [Ueno Bank and the property market: what changes for buyers and investors in Paraguay](/en/blog/ueno-bank-y-el-mercado-inmobiliario/).
 
     On 2 November 2026, the Board of the Central Bank of Paraguay (BCP) unanimously decided to open resolution proceedings against Ueno Bank, as it [officially announced](https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank) the following day. According to the BCP, adjustments made to the bank’s financial statements during the regularisation process showed that its solvency ratio had fallen below 50% of the required minimum.
 
@@ -271,10 +277,13 @@ en:
     - ABC Color, [Informe del BCP: estas son las 31 preguntas y respuestas](https://www.abc.com.py/politica/2026/10/08/informe-del-bcp-estas-son-las-31-preguntas-y-respuestas/), 8 October 2026.
 pt:
   titulo: "Caso Ueno Bank: o que muda para proprietários, inquilinos e compradores"
+  slug: caso-ueno-bank-o-que-muda-para-proprietarios-inquilinos-e-compradores
   titulo_seo: "Caso Ueno Bank: o que muda para proprietários e inquilinos"
   descripcion: "Garantia de depósitos, adiantamento de 40 salários mínimos, aluguéis, sinais e aliases: o que fazer após a resolução do Ueno Bank e as perguntas que ficam."
   cuerpo: |-
     A resolução do Ueno Bank levanta dúvidas sobre a segurança dos depósitos bancários e tem consequências concretas para as operações imobiliárias. Veja o que proprietários, inquilinos e compradores precisam saber.
+
+    Para a nossa leitura dos efeitos desta crise no mercado imobiliário, consulte [Ueno Bank e o mercado imobiliário: o que muda para compradores e investidores no Paraguai](/pt/blog/ueno-bank-y-el-mercado-inmobiliario/).
 
     Em 2 de novembro de 2026, a Diretoria do Banco Central do Paraguai (BCP) decidiu por unanimidade iniciar o procedimento de resolução do Ueno Bank, como [informou oficialmente](https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank) no dia seguinte. Segundo o BCP, os ajustes feitos nas demonstrações financeiras do banco durante o processo de regularização mostraram que seu índice de solvência havia caído abaixo de 50% do mínimo exigido.
 
@@ -403,6 +412,8 @@ pt:
 ---
 
 La resolución de Ueno Bank plantea interrogantes sobre la seguridad de los depósitos bancarios y tiene consecuencias concretas para las operaciones inmobiliarias. Analizamos qué deben tener en cuenta propietarios, inquilinos y compradores.
+
+Para nuestra lectura de los efectos de esta crisis en el mercado inmobiliario, consulte [Ueno Bank y el mercado inmobiliario: qué cambia para compradores e inversores en Paraguay](/blog/ueno-bank-y-el-mercado-inmobiliario/).
 
 El 2 de noviembre de 2026, el Directorio del Banco Central del Paraguay (BCP) decidió por unanimidad iniciar el procedimiento de resolución de Ueno Bank, según [informó oficialmente](https://www.bcp.gov.py/web/institucional/w/banco-central-inicia-el-procedimiento-de-resolucion-de-ueno-bank) al día siguiente. De acuerdo con el BCP, los ajustes realizados a los estados financieros de la entidad durante el proceso de regularización revelaron que su índice de solvencia había caído por debajo del 50 % del mínimo exigido.
 

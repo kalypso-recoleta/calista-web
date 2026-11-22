@@ -8,6 +8,7 @@ fecha: 2026-10-08T09:25:00
 portada_foto: /uploads/La clé dorée vers la propriété.jpg
 fr:
   titulo: Comment financer l’achat de votre logement au Paraguay
+  slug: comment-financer-l-achat-de-votre-logement-au-paraguay
   descripcion: 'Il n’existe pas de « meilleure banque » pour un crédit immobilier au Paraguay : la meilleure offre dépend de vos revenus, de la monnaie dans laquelle vous êtes payé, du bien et du fait qu’il s’agisse ou non de votre premier logement.'
   cuerpo: |-
     Plutôt qu’un classement, nous vous présentons les principales possibilités de financement, les points à comparer entre établissements et les documents à préparer.
@@ -139,10 +140,11 @@ fr:
     ## Pour aller plus loin
 
     - [Biens à vendre](/fr/comprar/)
-    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: How to finance your home purchase in Paraguay
+  slug: how-to-finance-your-home-purchase-in-paraguay
   descripcion: 'There is no single “best bank” for a home loan in Paraguay: the best offer depends on your income, the currency you earn in, the property, and whether it is your first home.'
   cuerpo: |-
     Rather than a ranking, we explain the main financing options, what to compare between lenders, and which documents to prepare.
@@ -274,10 +276,11 @@ en:
     ## Further reading
 
     - [Properties for sale](/en/comprar/)
-    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Como financiar a compra da sua moradia no Paraguai'
+  slug: como-financiar-a-compra-da-sua-moradia-no-paraguai
   descripcion: 'Não existe «o melhor banco» para um financiamento habitacional no Paraguai: a melhor oferta depende da sua renda, da moeda em que você recebe, do imóvel e de se é a sua primeira moradia.'
   cuerpo: |-
     Por isso, em vez de um ranking, explicamos as principais opções de financiamento, o que comparar entre as instituições e quais documentos preparar.
@@ -409,7 +412,7 @@ pt:
     ## Para saber mais
 
     - [Imóveis à venda](/pt/comprar/)
-    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+    - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 ---
 
@@ -542,5 +545,5 @@ _Esta guía es informativa. No constituye asesoramiento financiero ni una recome
 ## Para ir más lejos
 
 - [Departamentos y casas en venta](/comprar/)
-- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario-1/)
+- [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)

@@ -8,6 +8,7 @@ fecha: 2026-10-26T10:00:00
 portada_foto: /uploads/departamento-amoblado-silla.jpg
 fr:
   titulo: Préparer un appartement meublé pour la location
+  slug: preparer-un-appartement-meuble-pour-la-location
   descripcion: 'Meubles, literie, équipement, inventaire et ménage : comment préparer un appartement meublé à louer et maintenir son niveau.'
   cuerpo: |-
     Il n’est pas nécessaire que tous les meubles soient neufs ni que la décoration soit coûteuse. De notre côté, nous avons récupéré des meubles et les avons fait restaurer avant de les installer. L’essentiel est qu’ils soient en bon état et forment un ensemble soigné et cohérent.
@@ -112,6 +113,7 @@ fr:
     - [Location classique ou temporaire à Asunción : quelle option choisir ?](/fr/blog/alquilar-tu-departamento-tradicional-o-temporal/)
 en:
   titulo: How to prepare a furnished apartment for rent
+  slug: how-to-prepare-a-furnished-apartment-for-rent
   descripcion: 'Furniture, bedding, equipment, inventory and cleaning: how to prepare a furnished apartment for rent and keep it up to standard.'
   cuerpo: |-
     Not every piece of furniture needs to be new, and the decoration does not have to be expensive. In our experience, we have salvaged furniture and had it restored before putting it in. What matters is that everything is in good condition and forms a coherent, well-kept whole.
@@ -216,6 +218,7 @@ en:
     - [Traditional or short-term rentals in Asunción: which option is right for you?](/en/blog/alquilar-tu-departamento-tradicional-o-temporal/)
 pt:
   titulo: 'Como preparar um apartamento mobiliado para alugar'
+  slug: como-preparar-um-apartamento-mobiliado-para-alugar
   descripcion: 'Móveis, roupa de cama, equipamentos, inventário e limpeza: como preparar um apartamento mobiliado para alugar e manter seu padrão.'
   cuerpo: |-
     Não é preciso que todos os móveis sejam novos nem que a decoração seja cara. Em nossa experiência, já recuperamos móveis e mandamos restaurá-los antes de instalá-los. O importante é que estejam em bom estado e formem um conjunto cuidado e coerente.

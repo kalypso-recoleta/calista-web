@@ -9,6 +9,7 @@ fecha: 2026-11-17T08:00:00
 portada_foto: /uploads/ueno-bank-mercado-inmobiliario.jpg
 fr:
   titulo: "Ueno Bank et le marché immobilier : ce qui change pour acheteurs et investisseurs au Paraguay"
+  slug: ueno-bank-et-le-marche-immobilier-ce-qui-change-pour-acheteurs-et-investisseurs-au-paraguay
   titulo_seo: "Ueno Bank et le marché immobilier au Paraguay"
   descripcion: "Che Róga Porã, agences de notation, économistes et ce que nous voyons chez CALISTA : ce que change la crise Ueno pour acheter ou investir au Paraguay."
   cuerpo: |-
@@ -77,6 +78,7 @@ fr:
     - 5Días, [Crisis de ueno Bank desafía la inversión inmobiliaria en Paraguay](https://5dias.com.py/article/crisis-de-ueno-bank-desafa-la-inversin-inmobiliaria-en-paraguay), 12 novembre 2026 (accès abonnés).
 en:
   titulo: "Ueno Bank and the property market: what changes for buyers and investors in Paraguay"
+  slug: ueno-bank-and-the-property-market-what-changes-for-buyers-and-investors-in-paraguay
   titulo_seo: "Ueno Bank and the property market in Paraguay"
   descripcion: "Che Róga Porã, rating agencies, economists and what we see at CALISTA: what the Ueno Bank crisis changes for buying or investing in Paraguay."
   cuerpo: |-
@@ -145,6 +147,7 @@ en:
     - 5Días, [Crisis de ueno Bank desafía la inversión inmobiliaria en Paraguay](https://5dias.com.py/article/crisis-de-ueno-bank-desafa-la-inversin-inmobiliaria-en-paraguay), 12 November 2026 (subscribers only).
 pt:
   titulo: "Ueno Bank e o mercado imobiliário: o que muda para compradores e investidores no Paraguai"
+  slug: ueno-bank-e-o-mercado-imobiliario-o-que-muda-para-compradores-e-investidores-no-paraguai
   titulo_seo: "Ueno Bank e o mercado imobiliário no Paraguai"
   descripcion: "Che Róga Porã, agências de classificação, economistas e o que vemos na CALISTA: o que a crise do Ueno Bank muda para comprar ou investir no Paraguai."
   cuerpo: |-

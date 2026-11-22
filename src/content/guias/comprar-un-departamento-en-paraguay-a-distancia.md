@@ -9,6 +9,7 @@ fecha: 2026-11-21T08:00:00
 portada_foto: /uploads/comprar-un-departamento-a-distancia.jpg
 fr:
   titulo: "Acheter un appartement au Paraguay sans être sur place"
+  slug: acheter-un-appartement-au-paraguay-sans-etre-sur-place
   titulo_seo: "Acheter un appartement au Paraguay à distance"
   descripcion: "Visite vidéo, vérifications, procuration, paiement depuis l’étranger et remise des clés : comment acheter un appartement à Asunción en vivant à l’étranger."
   cuerpo: |-
@@ -95,6 +96,7 @@ fr:
     - [Loi n° 2828/2005 du tourisme](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, cadre légal](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
 en:
   titulo: "Buying an apartment in Paraguay without being there"
+  slug: buying-an-apartment-in-paraguay-without-being-there
   titulo_seo: "Buying an apartment in Paraguay from abroad"
   descripcion: "Video viewings, checks, power of attorney, paying from abroad and key handover: how to buy an apartment in Asunción while living in another country."
   cuerpo: |-
@@ -181,6 +183,7 @@ en:
     - [Tourism Law No. 2828/2005](https://www.bacn.gov.py/leyes-paraguayas/1914/del-turismo) · [SENATUR, legal framework](https://senatur.gov.py/marco-legal/) · [REGISTUR](https://registur.gov.py).
 pt:
   titulo: "Comprar um apartamento no Paraguai sem estar no país"
+  slug: comprar-um-apartamento-no-paraguai-sem-estar-no-pais
   titulo_seo: "Comprar apartamento no Paraguai a distância"
   descripcion: "Visita por vídeo, verificações, procuração, pagamento do exterior e entrega das chaves: como comprar um apartamento em Assunção morando fora do país."
   cuerpo: |-

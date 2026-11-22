@@ -9,6 +9,7 @@ fecha: 2026-10-29T20:20:00
 portada_foto: /uploads/Lot résidentiel au cœur d’Areguá.jpg
 fr:
   titulo: "Acheter un terrain dans une résidence fermée : les atouts et les points de vigilance"
+  slug: acheter-un-terrain-dans-une-residence-fermee-les-atouts-et-les-points-de-vigilance
   titulo_seo: "Terrain en résidence fermée : atouts et points de vigilance"
   descripcion: "Réseaux, équipements et cadre naturel, mais aussi travaux longs, règles de construction et promoteur administrateur : ce qu’il faut savoir avant d’acheter un lot en résidence fermée au Paraguay."
   cuerpo: |-
@@ -104,6 +105,7 @@ fr:
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
+  slug: buying-a-plot-in-a-gated-community-the-upsides-and-what-to-watch
   titulo_seo: "Buying a plot in a gated community: pros and watch-outs"
   descripcion: 'Utilities, amenities and a natural setting, but also long works, building rules and a developer who runs the community: what to know before buying a plot in a gated community in Paraguay.'
   cuerpo: |-
@@ -199,6 +201,7 @@ en:
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
+  slug: comprar-um-lote-em-condominio-fechado-vantagens-e-pontos-de-atencao
   titulo_seo: "Lote em condomínio fechado: vantagens e pontos de atenção"
   descripcion: 'Infraestrutura, áreas de lazer e natureza, mas também obras longas, regras de construção e um desenvolvedor que administra: o que saber antes de comprar um lote em condomínio fechado no Paraguai.'
   cuerpo: |-

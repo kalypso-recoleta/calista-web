@@ -9,6 +9,7 @@ fecha: 2026-10-19T14:13:00
 portada_foto: /uploads/Le joyau résidentiel sous verre.jpg
 fr:
   titulo: 'Résidences de marque à Asunción : existe-t-il un marché pour ce niveau de luxe ?'
+  slug: residences-de-marque-a-asuncion-existe-t-il-un-marche-pour-ce-niveau-de-luxe
   titulo_seo: "Résidences de marque à Asunción : y a-t-il un marché ?"
   descripcion: 'Royale by Pininfarina introduit une nouvelle offre résidentielle dans la capitale. Au-delà de la signature internationale, une question se pose : existe-t-il une demande capable de la soutenir dans la durée ?'
   cuerpo: |-
@@ -113,6 +114,7 @@ fr:
     - [Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?](/fr/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 en:
   titulo: 'Branded residences in Asunción: is there a market for this level of luxury?'
+  slug: branded-residences-in-asuncion-is-there-a-market-for-this-level-of-luxury
   titulo_seo: "Branded residences in Asunción: is there a market?"
   descripcion: Royale by Pininfarina introduces a new residential offering in the capital. Beyond the international name, the question is whether there is enough demand to sustain it over time.
   cuerpo: |-
@@ -217,6 +219,7 @@ en:
     - [Asunción is growing upwards: are we building what people need?](/en/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
 pt:
   titulo: 'Branded residences em Assunção: existe mercado para este nível de luxo?'
+  slug: branded-residences-em-assuncao-existe-mercado-para-este-nivel-de-luxo
   titulo_seo: "Branded residences em Assunção: existe mercado?"
   descripcion: 'O Royale by Pininfarina apresenta uma nova proposta residencial na capital. Para além da grife internacional, cabe perguntar se existe uma demanda capaz de sustentá-la ao longo do tempo.'
   cuerpo: |-

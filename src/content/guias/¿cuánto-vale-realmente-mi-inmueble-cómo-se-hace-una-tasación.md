@@ -1,7 +1,8 @@
 ---
 titulo: ¿Cuánto vale realmente mi inmueble? Cómo se hace una tasación
-titulo_seo: "¿Cuánto vale mi inmueble? Cómo se hace una tasación"
+titulo_seo: "Tasación de inmuebles: métodos, valor y errores a evitar"
 descripcion: «¿A qué precio lo publico?» Es la primera pregunta de casi todos los propietarios. Lo habitual es mirar los anuncios del barrio. Pero un anuncio muestra lo que alguien pide, no necesariamente lo que un comprador o un inquilino paga.
+descripcion_seo: "Cómo se tasa una casa o un departamento: los tres métodos de tasación, qué influye más en el valor y los errores frecuentes al fijar el precio."
 categoria: guia
 tema: propietarios
 borrador: false
@@ -9,8 +10,10 @@ fecha: 2026-10-08T07:47:00
 portada_foto: /uploads/La valeur immobilière à la loupe.jpg
 fr:
   titulo: Combien vaut vraiment mon bien ? Comment se fait une estimation
-  titulo_seo: "Combien vaut mon bien ? Comment se fait une estimation"
+  slug: combien-vaut-vraiment-mon-bien-comment-se-fait-une-estimation
+  titulo_seo: "Estimation immobilière : méthodes, valeur et erreurs"
   descripcion: « À quel prix je le mets en ligne ? » C’est la première question de presque tous les propriétaires. Le réflexe est souvent de regarder les annonces du quartier. Mais une annonce montre ce que quelqu’un demande, pas nécessairement ce qu’un acheteur ou un locataire paie.
+  descripcion_seo: "Comment estimer une maison ou un appartement : les trois méthodes d’estimation, ce qui pèse le plus sur la valeur et les erreurs fréquentes sur le prix."
   cuerpo: |-
     Une estimation (_tasación_) sert à déterminer **une fourchette de valeur cohérente avec le marché et votre projet**.
 
@@ -73,7 +76,10 @@ fr:
     - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 en:
   titulo: How much is my property really worth? How a valuation works
+  slug: how-much-is-my-property-really-worth-how-a-valuation-works
+  titulo_seo: "Property valuation: methods, value and mistakes to avoid"
   descripcion: “What price should I list it at?” This is the first question almost every property owner asks. The usual instinct is to look at listings in the neighborhood. But a listing shows what someone asks, not necessarily what a buyer or tenant pays.
+  descripcion_seo: "How a house or apartment is valued: the three valuation methods, what affects value most and the common mistakes when setting a price."
   cuerpo: |-
     A property valuation aims to establish **a value range consistent with the market and your plans**.
 
@@ -136,8 +142,10 @@ en:
     - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Quanto vale realmente o meu imóvel? Como é feita uma avaliação'
-  titulo_seo: "Quanto vale o meu imóvel? Como é feita uma avaliação"
+  slug: quanto-vale-realmente-o-meu-imovel-como-e-feita-uma-avaliacao
+  titulo_seo: "Avaliação de imóveis: métodos, valor e erros a evitar"
   descripcion: '«Por qual preço eu anuncio?» É a primeira pergunta de quase todos os proprietários. O habitual é olhar os anúncios do bairro. Mas um anúncio mostra o que alguém pede, não necessariamente o que um comprador ou um inquilino paga.'
+  descripcion_seo: "Como se avalia uma casa ou um apartamento: os três métodos de avaliação, o que mais influencia o valor e os erros frequentes ao definir o preço."
   cuerpo: |-
     Uma avaliação serve para determinar **uma faixa de valor coerente com o mercado e com o seu projeto**.
 

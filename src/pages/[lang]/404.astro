@@ -1,0 +1,7 @@
+---
+import NoEncontradoBody from '../../components/pages/NoEncontradoBody.astro';
+export function getStaticPaths() {
+  return [{ params: { lang: 'fr' } }, { params: { lang: 'en' } }, { params: { lang: 'pt' } }];
+}
+---
+<NoEncontradoBody />

@@ -7,7 +7,7 @@ import Compartir from '../Compartir.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
-import { guiasPublicadas, CATEGORIAS, TEMA_TXT } from '../../lib/guias';
+import { guiasPublicadas, CATEGORIAS, TEMA_TXT, hrefGuia, alternosGuia } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
 interface Props { guia: CollectionEntry<'guias'>; slug: string }
@@ -27,7 +27,7 @@ const locale = { es: 'es-PY', fr: 'fr-FR', en: 'en-US', pt: 'pt-BR' }[lang as 'e
 const wa = whatsappLink(`Hola Calista, leí el artículo "${guia.data.titulo}" y tengo una consulta.`);
 // Autres articles : d'abord ceux du même thème, puis de la même catégorie (guide / actualité), puis les plus récents
 const proximidad = (g: { entry: CollectionEntry<'guias'> }) => (guia.data.tema && g.entry.data.tema === guia.data.tema ? 2 : 0) + (g.entry.data.categoria === guia.data.categoria ? 1 : 0);
-const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, b) => proximidad(b) - proximidad(a)).slice(0, 3).map((g) => ({ slug: g.slug, titulo: localizar(g.entry.data, lang).titulo }));
+const otras = (await guiasPublicadas()).filter((g) => g.slug !== slug).sort((a, b) => proximidad(b) - proximidad(a)).slice(0, 3).map((g) => ({ href: hrefGuia(g.entry, lang), titulo: localizar(g.entry.data, lang).titulo }));
 const url = new URL(Astro.url.pathname, Astro.site).toString();
 // Auteure des articles (signature visible + données structurées)
 const AUTORA = 'Hélène Montourcy';
@@ -47,7 +47,7 @@ const ld = {
 };
 ---
 
-<Layout title={d.titulo_seo || d.titulo} tituloCompleto description={d.descripcion} image={d.portada_foto} ogType="article" publishedTime={d.fecha} noindex={lang === 'pt' && !html}>
+<Layout title={d.titulo_seo || d.titulo} tituloCompleto description={d.descripcion_seo || d.descripcion} alternos={alternosGuia(guia)} image={d.portada_foto} ogType="article" publishedTime={d.fecha} noindex={lang === 'pt' && !html}>
   <article class="section">
     <div class="container art">
       <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span>{guia.data.tema && <a class="tema" href={L(`/blog/tema/${guia.data.tema}`)}>{(TEMA_TXT[lang] ?? TEMA_TXT.es)[guia.data.tema].n}</a>}</p>
@@ -85,7 +85,7 @@ const ld = {
       {otras.length > 0 && (
         <nav class="otras">
           <h2>{x.otras}</h2>
-          <ul>{otras.map((o) => <li><a href={L(`/blog/${o.slug}`)}>{o.titulo}</a></li>)}</ul>
+          <ul>{otras.map((o) => <li><a href={o.href}>{o.titulo}</a></li>)}</ul>
         </nav>
       )}
     </div>

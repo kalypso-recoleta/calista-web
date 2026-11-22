@@ -9,6 +9,7 @@ fecha: 2026-10-08T06:38:00
 portada_foto: /uploads/Le panier des loyers face aux charges.jpg
 fr:
   titulo: 'Acheter pour louer : du rendement brut à ce qu’il vous reste réellement'
+  slug: acheter-pour-louer-du-rendement-brut-a-ce-qu-il-vous-reste-reellement
   titulo_seo: "Acheter pour louer : ce qu’il vous reste réellement"
   descripcion: Lorsqu’un appartement est annoncé « avec revenu locatif », le premier chiffre mis en avant est souvent le rendement brut. Il est utile, mais ne représente pas ce qui reste dans la poche du propriétaire.
   cuerpo: |-
@@ -125,6 +126,7 @@ fr:
     - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 en:
   titulo: 'Buying to rent: from gross rental yield to what you actually keep'
+  slug: buying-to-rent-from-gross-rental-yield-to-what-you-actually-keep
   titulo_seo: "Buying to rent: what you actually keep"
   descripcion: When an apartment is advertised as “income-producing,” the first figure highlighted is usually its gross rental yield. It is useful, but it does not represent what the owner actually keeps.
   cuerpo: |-
@@ -241,6 +243,7 @@ en:
     - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
 pt:
   titulo: 'Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você'
+  slug: comprar-para-alugar-da-rentabilidade-bruta-ao-que-realmente-sobra-para-voce
   titulo_seo: "Comprar para alugar: o que realmente sobra para você"
   descripcion: 'Quando um apartamento é anunciado «com renda», o número que aparece primeiro costuma ser a rentabilidade bruta. Ela é útil, mas não representa o que fica no bolso do proprietário.'
   cuerpo: |-

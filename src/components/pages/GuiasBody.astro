@@ -8,7 +8,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { img } from '../../lib/cloudinary';
 import { localizar } from '../../lib/traduccion';
-import { guiasPublicadas, CATEGORIAS, TEMA_TXT, temasConArticulos, type Tema } from '../../lib/guias';
+import { guiasPublicadas, CATEGORIAS, TEMA_TXT, temasConArticulos, hrefGuia, type Tema } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
 
 interface Props { tema?: Tema }
@@ -64,7 +64,7 @@ const conFiltro = new Set(guias.map((g) => g.d.categoria)).size > 1;
         <ul class="guias">
           {guias.map((g) => (
             <li data-categoria={g.d.categoria}>
-              <a href={L(`/blog/${g.slug}`)}>
+              <a href={hrefGuia(g.entry, lang)}>
                 {g.d.portada_foto && <img src={img(g.d.portada_foto, { w: 640, h: 360 })} alt={g.d.titulo} width="640" height="360" loading="lazy" />}
                 <span class="txt">
                   <span class="meta"><span class:list={['cat', g.d.categoria]}>{cat[g.d.categoria]}</span>{!tema && g.entry.data.tema && <span class="tema">{TT[g.entry.data.tema].n}</span>}<time datetime={g.d.fecha.toISOString()}>{g.d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></span>

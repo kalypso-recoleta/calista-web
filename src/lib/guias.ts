@@ -1,10 +1,38 @@
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import { slugify } from './slug';
+import { localizePath, type Lang } from '../i18n/utils';
 
 /** Articles du blog publiés (« borrador » décoché), les plus récents d'abord */
 export async function guiasPublicadas() {
   const g = await getCollection('guias', (x) => !x.data.borrador);
   return g.sort((a, b) => +b.data.fecha - +a.data.fecha).map((entry) => ({ entry, slug: slugify(entry.id) }));
+}
+
+/**
+ * Adresse d'un article dans une langue (SEO : adresse traduite).
+ * - espagnol : nom du fichier ;
+ * - fr / en / pt : champ « Dirección web » de la traduction s'il est rempli, sinon le titre traduit ;
+ * - article pas encore traduit (texte vide dans cette langue) : même adresse que l'espagnol.
+ * Les anciennes adresses (slug espagnol sous /fr/, /en/, /pt/) redirigent en 301 vers la nouvelle
+ * (redirections générées au build, voir integrations/seo-postbuild.mjs).
+ */
+export function slugGuia(entry: CollectionEntry<'guias'>, lang: Lang | string): string {
+  const base = slugify(entry.id);
+  if (lang === 'es') return base;
+  const tr = (entry.data as unknown as Record<string, { titulo?: string; slug?: string; cuerpo?: string } | undefined>)[lang];
+  if (!tr?.cuerpo?.trim()) return base;
+  const fuente = tr.slug?.trim() || tr.titulo?.trim();
+  return fuente ? slugify(fuente) || base : base;
+}
+
+/** Lien vers un article dans une langue (avec « / » final, adresse servie par Netlify) */
+export function hrefGuia(entry: CollectionEntry<'guias'>, lang: Lang): string {
+  return localizePath(`/blog/${slugGuia(entry, lang)}`, lang) + '/';
+}
+
+/** Adresses de l'article dans les 4 langues (balises hreflang et sélecteur de langue) */
+export function alternosGuia(entry: CollectionEntry<'guias'>): Record<Lang, string> {
+  return { es: hrefGuia(entry, 'es'), fr: hrefGuia(entry, 'fr'), en: hrefGuia(entry, 'en'), pt: hrefGuia(entry, 'pt') };
 }
 
 /** Nom des catégories, par langue */

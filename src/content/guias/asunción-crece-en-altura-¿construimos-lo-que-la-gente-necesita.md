@@ -9,6 +9,7 @@ fecha: 2026-10-25T18:00:00
 portada_foto: /uploads/asuncion-crece-en-altura.jpg
 fr:
   titulo: 'Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?'
+  slug: asuncion-grandit-en-hauteur-construit-on-ce-dont-les-gens-ont-besoin
   titulo_seo: "Asunción grandit en hauteur : pour quels besoins ?"
   descripcion: 'Nouveaux immeubles, loyers et charges comprises : pourquoi vendre un appartement ne garantit pas de le louer au prix attendu par l’investisseur.'
   cuerpo: |-
@@ -121,6 +122,7 @@ fr:
     - [Acheter sur plan ou déjà livré à Asunción : quel choix pour vous ?](/fr/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 en:
   titulo: 'Asunción is growing upwards: are we building what people need?'
+  slug: asuncion-is-growing-upwards-are-we-building-what-people-need
   titulo_seo: "Asunción is growing upwards: is it what people need?"
   descripcion: 'New buildings, rents and included condominium fees: why selling an apartment does not guarantee renting it at the price the investor expects.'
   cuerpo: |-
@@ -233,6 +235,7 @@ en:
     - [Buying off-plan or a completed apartment in Asunción: which is right for you?](/en/blog/comprar-en-pozo-o-un-departamento-terminado-en-asuncion-que-opcion-es-para-vos/)
 pt:
   titulo: 'Assunção cresce na vertical: estamos construindo o que as pessoas precisam?'
+  slug: assuncao-cresce-na-vertical-estamos-construindo-o-que-as-pessoas-precisam
   titulo_seo: "Assunção cresce na vertical: é o que as pessoas precisam?"
   descripcion: 'Novos edifícios, aluguéis e condomínio incluído: por que vender um apartamento não garante alugá-lo pelo preço que o investidor espera.'
   cuerpo: |-
