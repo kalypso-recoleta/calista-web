@@ -1,6 +1,6 @@
 ---
-titulo: "Depto 2 dorm · 81 m² – Edificio Life De Gaulle, Recoleta"
-en_linea: true
+titulo: Depto 2 dorm · 81 m² – Edificio Life De Gaulle, Recoleta
+en_linea: false
 operacion: alquiler
 tipo: departamento
 estado: alquilado
@@ -20,6 +20,7 @@ banos: 2
 cocheras: 1
 superficie_construida: 81
 financiacion: false
+precio_unico: false
 portada_foto: /uploads/IMG_0060lrEFZ2.avif
 imagenes:
   - /uploads/IMG_0050NHu48t.avif
@@ -39,7 +40,7 @@ imagenes:
 descripcion: A pasos de La Cuadrita, departamento a estrenar, luminoso y con vista abierta, de 81,5 m² con cochera n.º 7.
 gama: otros
 fr:
-  titulo: "Appartement 2 ch. · 81 m² – Edificio Life De Gaulle, Recoleta"
+  titulo: Appartement 2 ch. · 81 m² – Edificio Life De Gaulle, Recoleta
   descripcion: À quelques pas de La Cuadrita, appartement neuf et lumineux de 81,5 m², avec vue dégagée et place de parking n° 7.
   cuerpo: |-
     **Agencement :**
@@ -61,7 +62,7 @@ fr:
 
     **Équipements de la résidence :** piscine, salle de sport et espace couvert pour les barbecues et les repas.
 en:
-  titulo: "2-bed apartment · 81 m² – Edificio Life De Gaulle, Recoleta"
+  titulo: 2-bed apartment · 81 m² – Edificio Life De Gaulle, Recoleta
   descripcion: Just steps from La Cuadrita, this bright, brand-new 81.5 m² apartment offers unobstructed views and comes with parking space No. 7.
   cuerpo: |-
     **Layout:**
@@ -83,7 +84,7 @@ en:
 
     **Building amenities:** swimming pool, gym, and a covered barbecue and dining area.
 pt:
-  titulo: "Apto 2 quartos · 81 m² – Edificio Life De Gaulle, Recoleta"
+  titulo: Apto 2 quartos · 81 m² – Edificio Life De Gaulle, Recoleta
   descripcion: A poucos passos da La Cuadrita, apartamento novo, iluminado e com vista aberta, de 81,5 m², com a vaga de garagem nº 7.
   cuerpo: |-
     **Distribuição:**
