@@ -1,5 +1,5 @@
 ---
-titulo: "Alquiler departamento 1 dormitorio a estrenar con cochera – Nostrum Trinidad, Mburucuyá"
+titulo: Alquiler departamento 1 dormitorio a estrenar con cochera – Nostrum Trinidad, Mburucuyá
 en_linea: true
 operacion: alquiler
 tipo: departamento
@@ -14,10 +14,12 @@ moneda: PYG
 periodo: mes
 ciudad: Asunción
 barrio: Mburucuya
+ubicacion: '{"type":"Point","coordinates":[-57.5653841,-25.2681056]}'
 dormitorios: 1
 banos: 1
 cocheras: 1
 financiacion: false
+precio_unico: false
 portada_foto: /uploads/nostrum-trinidad-1907-01.jpg
 imagenes:
   - /uploads/nostrum-trinidad-1907-01.jpg
@@ -29,11 +31,11 @@ imagenes:
   - /uploads/nostrum-trinidad-1907-07.jpg
   - /uploads/nostrum-trinidad-1907-08.jpg
   - /uploads/nostrum-trinidad-1907-09.jpg
-descripcion: "Departamento de 1 dormitorio con cochera, a estrenar, en Nostrum Trinidad (Altius Group), Barrio Mburucuyá. Gs. 3.900.000/mes, expensas incluidas (con ESSAP)."
+descripcion: Departamento de 1 dormitorio con cochera, a estrenar, en Nostrum Trinidad (Altius Group), Barrio Mburucuyá. Gs. 3.900.000/mes, expensas incluidas (con ESSAP).
 gama: otros
 fr:
-  titulo: "Location appartement 1 chambre neuf avec parking – Nostrum Trinidad, Mburucuyá"
-  descripcion: "Appartement neuf d'une chambre avec parking à Nostrum Trinidad (Altius Group), quartier Mburucuyá. 3 900 000 Gs/mois, charges (expensas) comprises, eau (ESSAP) incluse."
+  titulo: Location appartement 1 chambre neuf avec parking – Nostrum Trinidad, Mburucuyá
+  descripcion: Appartement neuf d'une chambre avec parking à Nostrum Trinidad (Altius Group), quartier Mburucuyá. 3 900 000 Gs/mois, charges (expensas) comprises, eau (ESSAP) incluse.
   cuerpo: |-
     Appartement **neuf, jamais habité**, d'**une chambre** avec **place de parking**, à Nostrum Trinidad, le nouvel immeuble d'Altius Group dans le quartier Mburucuyá, près du Shopping del Sol, du Paseo La Galería et du World Trade Center.
 
@@ -62,8 +64,8 @@ fr:
 
     *Photos des espaces communs et de l'appartement décoré : illustratives, avec l'aimable autorisation d'Altius Group ; photos réelles de l'unité prochainement.*
 en:
-  titulo: "For rent: brand-new 1-bedroom apartment with parking – Nostrum Trinidad, Mburucuyá"
-  descripcion: "Brand-new 1-bedroom apartment with parking at Nostrum Trinidad (Altius Group), Mburucuyá. Gs 3,900,000/month, building fees (expensas) included, water (ESSAP) included."
+  titulo: 'For rent: brand-new 1-bedroom apartment with parking – Nostrum Trinidad, Mburucuyá'
+  descripcion: Brand-new 1-bedroom apartment with parking at Nostrum Trinidad (Altius Group), Mburucuyá. Gs 3,900,000/month, building fees (expensas) included, water (ESSAP) included.
   cuerpo: |-
     **Brand-new, never lived in** **1-bedroom** apartment with a **parking space** at Nostrum Trinidad, Altius Group's new building in the Mburucuyá neighbourhood, close to Shopping del Sol, Paseo La Galería and the World Trade Center.
 
@@ -92,8 +94,8 @@ en:
 
     *Photos of common areas and the decorated apartment: for illustration only, courtesy of Altius Group; real photos of the unit coming soon.*
 pt:
-  titulo: "Aluguel apartamento 1 quarto novo com vaga – Nostrum Trinidad, Mburucuyá"
-  descripcion: "Apartamento novo de 1 quarto com vaga de garagem no Nostrum Trinidad (Altius Group), bairro Mburucuyá. Gs. 3.900.000/mês, condomínio (expensas) incluído, com água (ESSAP)."
+  titulo: Aluguel apartamento 1 quarto novo com vaga – Nostrum Trinidad, Mburucuyá
+  descripcion: Apartamento novo de 1 quarto com vaga de garagem no Nostrum Trinidad (Altius Group), bairro Mburucuyá. Gs. 3.900.000/mês, condomínio (expensas) incluído, com água (ESSAP).
   cuerpo: |-
     Apartamento **novo, nunca habitado**, de **1 quarto** com **vaga de garagem**, no Nostrum Trinidad, o novo edifício da Altius Group no bairro Mburucuyá, perto do Shopping del Sol, do Paseo La Galería e do World Trade Center.
 
