@@ -289,7 +289,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.p_py_a':
       'En 2014 la familia descubrió Paraguay, y en 2015 se instaló definitivamente — con los primeros proyectos en marcha desde el primer día. De ese impulso nacieron la desarrolladora ',
     'hist.p_py_b':
-      ', empresa distinta de nuestra agencia, que construye y desarrolla sus propios proyectos (17 obras entregadas desde 2002 entre Martinica y Paraguay, 379 viviendas, 100 % vendidas), y Calista Inmobiliaria, nuestra agencia en Asunción. Hoy, entre Francia y Paraguay, gestionamos más de cien propiedades.',
+      ', empresa distinta de nuestra agencia, que construye y desarrolla sus propios proyectos (18 obras entregadas desde 2002 entre Martinica y Paraguay, 388 viviendas, 100 % vendidas), y Calista Inmobiliaria, nuestra agencia en Asunción. Hoy, entre Francia y Paraguay, gestionamos más de cien propiedades.',
     'hist.h2_creemos': 'En qué creemos',
     'hist.p_creemos':
       'Conocemos bien el mercado paraguayo, también sus zonas grises. Por eso elegimos hacer las cosas de otra manera. Cuando un cliente del exterior se acerca, lo asesoramos con la misma honestidad que a cualquiera: explicamos el proceso y lo derivamos a profesionales legales independientes para escrituras, residencia y trámites. Nunca atamos un servicio a otro ni usamos los trámites como excusa para empujar una propiedad.',
@@ -773,7 +773,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.p_py_a':
       "En 2014, la famille a découvert le Paraguay ; en 2015, elle s'y est installée — et les premiers projets ont démarré aussitôt. De cet élan sont nés le promoteur ",
     'hist.p_py_b':
-      ", société distincte de notre agence, qui construit et développe ses propres programmes (17 réalisations livrées depuis 2002 entre la Martinique et le Paraguay, 379 logements, 100 % vendus), et Calista Inmobiliaria, notre agence à Asunción. Aujourd'hui, entre la France et le Paraguay, nous gérons plus de cent biens.",
+      ", société distincte de notre agence, qui construit et développe ses propres programmes (18 réalisations livrées depuis 2002 entre la Martinique et le Paraguay, 388 logements, 100 % vendus), et Calista Inmobiliaria, notre agence à Asunción. Aujourd'hui, entre la France et le Paraguay, nous gérons plus de cent biens.",
     'hist.h2_creemos': 'Ce en quoi nous croyons',
     'hist.p_creemos':
       "Nous connaissons bien le marché paraguayen, y compris ses zones grises. C'est pourquoi nous faisons les choses autrement. Quand un client de l'étranger nous contacte, nous le conseillons avec la même honnêteté que tout le monde : nous expliquons le processus et l'orientons vers des juristes indépendants pour les actes, la résidence et les démarches. Nous ne lions jamais un service à un autre et n'utilisons jamais les démarches comme prétexte pour pousser un bien.",
@@ -1256,7 +1256,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.p_py_a':
       'In 2014 the family discovered Paraguay; in 2015 they settled for good — with the first projects underway from day one. From that drive were born the developer ',
     'hist.p_py_b':
-      ', a company separate from our agency that builds and develops its own projects (17 projects delivered since 2002 in Martinique and Paraguay, 379 homes, 100% sold), and Calista Inmobiliaria, our agency in Asunción. Today, between France and Paraguay, we manage more than one hundred properties.',
+      ', a company separate from our agency that builds and develops its own projects (18 projects delivered since 2002 in Martinique and Paraguay, 388 homes, 100% sold), and Calista Inmobiliaria, our agency in Asunción. Today, between France and Paraguay, we manage more than one hundred properties.',
     'hist.h2_creemos': 'What we believe',
     'hist.p_creemos':
       "We know the Paraguayan market well, including its grey areas. That's why we do things differently. When a client from abroad reaches out, we advise them with the same honesty as anyone: we explain the process and refer them to independent legal professionals for deeds, residency and paperwork. We never tie one service to another, nor use paperwork as an excuse to push a property.",
@@ -1740,7 +1740,7 @@ export const ui: Record<Lang, Record<string, string>> = {
     'hist.p_py_a':
       'Em 2014 a família descobriu o Paraguai e, em 2015, se instalou definitivamente — com os primeiros projetos em andamento desde o primeiro dia. Desse impulso nasceram a incorporadora ',
     'hist.p_py_b':
-      ', empresa distinta da nossa imobiliária, que constrói e desenvolve os seus próprios projetos (17 obras entregues desde 2002 entre a Martinica e o Paraguai, 379 moradias, 100 % vendidas), e a Calista Inmobiliaria, a nossa imobiliária em Assunção. Hoje, entre a França e o Paraguai, administramos mais de cem imóveis.',
+      ', empresa distinta da nossa imobiliária, que constrói e desenvolve os seus próprios projetos (18 obras entregues desde 2002 entre a Martinica e o Paraguai, 388 moradias, 100 % vendidas), e a Calista Inmobiliaria, a nossa imobiliária em Assunção. Hoje, entre a França e o Paraguai, administramos mais de cem imóveis.',
     'hist.h2_creemos': 'No que acreditamos',
     'hist.p_creemos':
       'Conhecemos bem o mercado paraguaio, inclusive as suas zonas cinzentas. Por isso escolhemos fazer as coisas de outro jeito. Quando um cliente do exterior nos procura, orientamos com a mesma honestidade que a qualquer pessoa: explicamos o processo e indicamos profissionais jurídicos independentes para escrituras, residência e trâmites. Nunca amarramos um serviço a outro nem usamos os trâmites como desculpa para empurrar um imóvel.',

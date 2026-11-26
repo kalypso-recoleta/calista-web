@@ -5,8 +5,8 @@
  *  - zone desservie : Asunción, Luque, Lambaré, Mariano Roque Alonso ;
  *  - El Solar SRL : société distincte de l'agence (pas une société sœur) ;
  *  - CALISTA Immobilier (Martinique) : agence sœur.
- * Chiffres El Solar validés le 26/11/2026 : 17 réalisations livrées depuis 2002
- * (11 en Martinique, 6 au Paraguay), 379 logements, 100 % vendus.
+ * Chiffres El Solar validés le 26/11/2026 : 18 réalisations livrées depuis 2002
+ * (11 en Martinique, 7 au Paraguay), 388 logements, 100 % vendus.
  */
 const BASE = 'https://calista.com.py';
 
@@ -32,7 +32,7 @@ export const elSolarLd = {
   name: 'El Solar SRL',
   url: 'https://elsolar.com.py/',
   description:
-    'Constructora y desarrolladora inmobiliaria, empresa distinta de CALISTA: 17 obras entregadas desde 2002 (11 en Martinica, 6 en Paraguay), 379 viviendas.',
+    'Constructora y desarrolladora inmobiliaria, empresa distinta de CALISTA: 18 obras entregadas desde 2002 (11 en Martinica, 7 en Paraguay), 388 viviendas.',
   founder: { '@id': ID.helene },
 };
 
