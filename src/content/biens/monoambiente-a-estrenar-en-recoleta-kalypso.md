@@ -30,7 +30,7 @@ descripcion: |-
   Kalypso Recoleta — Monoambientes a estrenar
   Reservá con el 10 % y pagá el saldo en 32 cuotas sin intereses durante la construcción. Ubicación imbatible en Cruz del Chaco esq. Alfredo Seiferheld, a pasos del Shopping Mariscal.
   Monoambientes de 31 m² con balcón, cocina equipada y aire acondicionado. Amenities premium en la azotea: piscina, quincho climatizado, coworking y terraza panorámica.
-  Entrega prevista: mayo 2029. Desarrollado por El Solar SRL: 20 edificios entregados, 100 % vendidos.
+  Entrega prevista: mayo 2029. Desarrollado por El Solar SRL: 17 obras entregadas, 100 % vendidas.
   📞 Consultá la grilla de precios y tu simulación de cuotas.
 gama: otros
 fr:
@@ -39,7 +39,7 @@ fr:
     Kalypso Recoleta — Studios neufs
     Réservez avec 10 % et payez le solde en 32 mensualités sans intérêts pendant les travaux. Emplacement imbattable à l'angle de Cruz del Chaco et Alfredo Seiferheld, à deux pas du Shopping Mariscal.
     Studios de 31 m² avec balcon, cuisine équipée et climatisation. Équipements haut de gamme sur le toit : piscine, quincho climatisé, coworking et terrasse panoramique.
-    Livraison prévue : mai 2029. Promoteur : El Solar SRL, 20 immeubles livrés, 100 % vendus.
+    Livraison prévue : mai 2029. Promoteur : El Solar SRL, 17 réalisations livrées, 100 % vendues.
     📞 Demandez la grille de prix et votre simulation de mensualités.
   cuerpo: |-
     Réservez dès aujourd'hui votre studio neuf dans l'un des meilleurs quartiers d'Asunción.
@@ -52,7 +52,7 @@ fr:
 
     📍 **Emplacement imbattable** À l'angle de Cruz del Chaco et Alfredo Seiferheld. À deux pas du Shopping Mariscal, entouré des meilleurs restaurants d'Asunción et relié à tous les pôles d'affaires de la ville.
 
-    🏗️ **Un promoteur de confiance** El Solar SRL : 20 immeubles livrés (3 au Paraguay, 17 en France), 338 appartements et plus de 52 000 m² construits. **100 % vendus sur tous ses projets précédents.**
+    🏗️ **Un promoteur de confiance** El Solar SRL : 17 réalisations livrées depuis 2002 (6 au Paraguay, 11 en Martinique), 379 logements. **100 % vendus sur tous ses projets précédents.**
 
     **L'appartement — 31 m² au total**
 
@@ -95,7 +95,7 @@ en:
     Kalypso Recoleta — Brand-new studios
     Reserve with 10 % and pay the balance in 32 interest-free instalments during construction. Unbeatable location on the corner of Cruz del Chaco and Alfredo Seiferheld, steps from Shopping Mariscal.
     31 m² studios with balcony, fitted kitchen and air conditioning. Premium rooftop amenities: pool, air-conditioned quincho, coworking and panoramic terrace.
-    Delivery planned for May 2029. Developer: El Solar SRL, 20 buildings delivered, 100 % sold.
+    Delivery planned for May 2029. Developer: El Solar SRL, 17 projects delivered, 100 % sold.
     📞 Ask for the price list and your instalment simulation.
   cuerpo: |-
     Reserve your brand-new studio today in one of the best areas of Asunción.
@@ -108,7 +108,7 @@ en:
 
     📍 **Unbeatable location** Corner of Cruz del Chaco and Alfredo Seiferheld. Steps from Shopping Mariscal, surrounded by the best restaurants in Asunción and connected to all the city's business hubs.
 
-    🏗️ **A trusted developer** El Solar SRL: 20 buildings delivered (3 in Paraguay, 17 in France), 338 apartments and more than 52,000 m² built. **100 % sold on all previous projects.**
+    🏗️ **A trusted developer** El Solar SRL: 17 projects delivered since 2002 (6 in Paraguay, 11 in Martinique), 379 homes. **100 % sold on all previous projects.**
 
     **The apartment — 31 m² in total**
 
@@ -151,7 +151,7 @@ pt:
     Kalypso Recoleta — Studios novos
     Reserve com 10 % e pague o saldo em 32 parcelas sem juros durante a obra. Localização imbatível na esquina da Cruz del Chaco com a Alfredo Seiferheld, a poucos passos do Shopping Mariscal.
     Studios de 31 m² com sacada, cozinha equipada e ar-condicionado. Áreas comuns premium na cobertura: piscina, quincho climatizado, coworking e terraço panorâmico.
-    Entrega prevista para maio de 2029. Incorporadora: El Solar SRL, 20 edifícios entregues, 100 % vendidos.
+    Entrega prevista para maio de 2029. Incorporadora: El Solar SRL, 17 obras entregues, 100 % vendidas.
     📞 Peça a tabela de preços e a sua simulação de parcelas.
   cuerpo: |-
     Reserve hoje o seu studio novo em uma das melhores regiões de Assunção.
@@ -164,7 +164,7 @@ pt:
 
     📍 **Localização imbatível** Esquina da Cruz del Chaco com a Alfredo Seiferheld. A poucos passos do Shopping Mariscal, cercado pelos melhores restaurantes de Assunção e conectado a todos os polos empresariais da cidade.
 
-    🏗️ **Uma incorporadora de confiança** El Solar SRL: 20 edifícios entregues (3 no Paraguai, 17 na França), 338 apartamentos e mais de 52.000 m² construídos. **100 % vendidos em todos os projetos anteriores.**
+    🏗️ **Uma incorporadora de confiança** El Solar SRL: 17 obras entregues desde 2002 (6 no Paraguai, 11 na Martinica), 379 moradias. **100 % vendidos em todos os projetos anteriores.**
 
     **O apartamento — 31 m² no total**
 
@@ -214,7 +214,7 @@ Con el **10 %** a la firma, el saldo lo pagás en **32 cuotas mensuales sin inte
 
 📍 **Ubicación imbatible** Esquina Cruz del Chaco y Alfredo Seiferheld. A pasos del Shopping Mariscal, rodeado de la mejor gastronomía de Asunción y conectado con todos los ejes corporativos de la ciudad.
 
-🏗️ **Desarrollador de confianza** El Solar SRL: 20 edificios entregados (3 en Paraguay, 17 en Francia), 338 departamentos y más de 52.000 m² construidos. **100 % vendidos en todos sus proyectos anteriores.**
+🏗️ **Desarrollador de confianza** El Solar SRL: 17 obras entregadas desde 2002 (6 en Paraguay, 11 en Martinica), 379 viviendas. **100 % vendidos en todos sus proyectos anteriores.**
 
 **El departamento — 31 m² totales**
 

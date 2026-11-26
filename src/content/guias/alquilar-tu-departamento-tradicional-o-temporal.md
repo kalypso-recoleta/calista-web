@@ -46,7 +46,7 @@ fr:
     | | Classique | Temporaire |
     | --- | --- | --- |
     | Revenu brut mensuel | ≈ 591 USD | ≈ 832 USD |
-    | Gestion CALISTA | 5 % + TVA | 20 %, TVA comprise |
+    | Gestion CALISTA | 5,5 %, TVA comprise | 20 %, TVA comprise |
     | Après gestion | ≈ 559 USD | ≈ 665 USD |
     | Charges (électricité, eau, internet) | À la charge du locataire, selon le bail | À votre charge |
     | Occupation | Continue pendant la durée du bail | Variable selon la saison |
@@ -68,7 +68,7 @@ fr:
 
     ## Combien coûte la gestion avec CALISTA ?
 
-    **Location classique :** nous facturons **5 % des loyers réellement encaissés, plus TVA**. La mise en location coûte l’équivalent d’un mois de loyer, réparti à 50 % pour le propriétaire et 50 % pour le locataire, et comprend l’état des lieux d’entrée.
+    **Location classique :** nous facturons **5,5 % des loyers réellement encaissés, TVA comprise**. La mise en location coûte l’équivalent d’un mois de loyer, réparti à 50 % pour le propriétaire et 50 % pour le locataire, et comprend l’état des lieux d’entrée.
 
     **Location meublée temporaire :** nous facturons **20 % des revenus locatifs, TVA incluse**. Ce pourcentage comprend le ménage et le lavage du linge de lit entre chaque séjour.
 
@@ -126,7 +126,7 @@ en:
     | | Traditional | Short-term |
     | --- | --- | --- |
     | Gross monthly income | ≈ US$591 | ≈ US$832 |
-    | CALISTA management | 5% + VAT | 20%, VAT included |
+    | CALISTA management | 5.5%, VAT included | 20%, VAT included |
     | After management | ≈ US$559 | ≈ US$665 |
     | Utilities (power, water, internet) | Paid by the tenant, per the lease | Paid by you |
     | Occupancy | Continuous for the term of the lease | Varies with the season |
@@ -148,7 +148,7 @@ en:
 
     ## How much does management with CALISTA cost?
 
-    **Traditional rental:** we charge **5 % of the rent actually collected, plus VAT**. Letting the property costs the equivalent of one month’s rent, split 50 % owner and 50 % tenant, and includes the move-in inventory.
+    **Traditional rental:** we charge **5.5 % of the rent actually collected, VAT included**. Letting the property costs the equivalent of one month’s rent, split 50 % owner and 50 % tenant, and includes the move-in inventory.
 
     **Furnished short-term rental:** we charge **20 % of the rental income, VAT included**. This percentage includes cleaning and laundering bed linen between stays.
 
@@ -206,7 +206,7 @@ pt:
     | | Tradicional | Temporada |
     | --- | --- | --- |
     | Receita bruta mensal | ≈ USD 591 | ≈ USD 832 |
-    | Administração CALISTA | 5 % + IVA | 20 %, IVA incluído |
+    | Administração CALISTA | 5,5 %, IVA incluído | 20 %, IVA incluído |
     | Depois da administração | ≈ USD 559 | ≈ USD 665 |
     | Contas (luz, água, internet) | Por conta do inquilino, conforme o contrato | Por sua conta |
     | Ocupação | Contínua durante o contrato | Variável conforme a temporada |
@@ -228,7 +228,7 @@ pt:
 
     ## Quanto custa a administração com a CALISTA?
 
-    **Aluguel tradicional:** cobramos **5 % dos aluguéis efetivamente recebidos, mais IVA**. A colocação para aluguel custa o equivalente a um mês de aluguel, dividido em 50 % a cargo do proprietário e 50 % a cargo do inquilino, e inclui o inventário de entrada.
+    **Aluguel tradicional:** cobramos **5,5 % dos aluguéis efetivamente recebidos, IVA incluído**. A colocação para aluguel custa o equivalente a um mês de aluguel, dividido em 50 % a cargo do proprietário e 50 % a cargo do inquilino, e inclui o inventário de entrada.
 
     **Aluguel de temporada mobiliado:** cobramos **20 % das receitas de aluguel, IVA incluído**. Esse percentual inclui a limpeza e a lavagem da roupa de cama entre cada estadia.
 
@@ -282,7 +282,7 @@ Para tener un orden de magnitud, comparemos dos referencias reales:
 | | Tradicional | Temporal |
 | --- | --- | --- |
 | Ingreso bruto mensual | ≈ USD 591 | ≈ USD 832 |
-| Administración CALISTA | 5 % + IVA | 20 %, IVA incluido |
+| Administración CALISTA | 5,5 %, IVA incluido | 20 %, IVA incluido |
 | Después de la administración | ≈ USD 559 | ≈ USD 665 |
 | Servicios (luz, agua, internet) | A cargo del inquilino, según el contrato | A tu cargo |
 | Ocupación | Continua mientras dure el contrato | Variable según la temporada |
@@ -304,7 +304,7 @@ Antes de decidir, conviene estimar estos gastos para tu departamento. Además, e
 
 ## ¿Cuánto cuesta la administración con CALISTA?
 
-**Alquiler tradicional:** cobramos el **5 % de los alquileres efectivamente cobrados, más IVA**. La puesta en alquiler cuesta el equivalente a un mes de alquiler, repartido en un 50 % a cargo del propietario y un 50 % a cargo del inquilino, e incluye el inventario de entrada.
+**Alquiler tradicional:** cobramos el **5,5 % de los alquileres efectivamente cobrados, IVA incluido**. La puesta en alquiler cuesta el equivalente a un mes de alquiler, repartido en un 50 % a cargo del propietario y un 50 % a cargo del inquilino, e incluye el inventario de entrada.
 
 **Alquiler temporal amoblado:** cobramos el **20 % de los ingresos por alquiler, IVA incluido**. Este porcentaje incluye la limpieza y el lavado de la ropa de cama entre cada estadía.
 

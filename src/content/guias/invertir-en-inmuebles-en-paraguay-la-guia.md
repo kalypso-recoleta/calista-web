@@ -79,7 +79,7 @@ fr:
 
     ## 8. Après l’achat : gérer à distance
 
-    Depuis l’étranger, il faut quelqu’un pour trouver les locataires, encaisser les loyers, suivre les charges et intervenir en cas de panne. Ce coût fait partie du calcul. Chez CALISTA, la gestion d’une location classique est facturée 5 % des loyers encaissés, plus TVA, et celle d’une location meublée temporaire 20 % des revenus, TVA comprise.
+    Depuis l’étranger, il faut quelqu’un pour trouver les locataires, encaisser les loyers, suivre les charges et intervenir en cas de panne. Ce coût fait partie du calcul. Chez CALISTA, la gestion d’une location classique est facturée 5,5 % des loyers encaissés, TVA comprise, et celle d’une location meublée temporaire 20 % des revenus, TVA comprise.
 
     → [Gestion locative](/fr/administracion/)
     → [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
@@ -180,7 +180,7 @@ en:
 
     ## 8. After the purchase: managing from abroad
 
-    From abroad, you need someone to find tenants, collect rent, keep track of building charges and step in when something breaks. That cost is part of the calculation. At CALISTA, managing a long-term rental costs 5% of the rent collected, plus VAT, and a furnished short-term rental 20% of revenue, VAT included.
+    From abroad, you need someone to find tenants, collect rent, keep track of building charges and step in when something breaks. That cost is part of the calculation. At CALISTA, managing a long-term rental costs 5.5% of the rent collected, VAT included, and a furnished short-term rental 20% of revenue, VAT included.
 
     → [Property management](/en/administracion/)
     → [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
@@ -281,7 +281,7 @@ pt:
 
     ## 8. Depois da compra: administrar à distância
 
-    Do exterior, você precisa de alguém para encontrar inquilinos, receber os aluguéis, acompanhar o condomínio e agir em caso de problema. Esse custo faz parte da conta. Na CALISTA, a administração de um aluguel tradicional custa 5% dos aluguéis recebidos, mais IVA, e a de um aluguel mobiliado por temporada 20% das receitas, IVA incluído.
+    Do exterior, você precisa de alguém para encontrar inquilinos, receber os aluguéis, acompanhar o condomínio e agir em caso de problema. Esse custo faz parte da conta. Na CALISTA, a administração de um aluguel tradicional custa 5,5% dos aluguéis recebidos, IVA incluído, e a de um aluguel mobiliado por temporada 20% das receitas, IVA incluído.
 
     → [Administração de aluguéis](/pt/administracion/)
     → [Quanto cobra uma imobiliária no Paraguai?](/pt/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
@@ -381,7 +381,7 @@ Pedí un presupuesto detallado de los costos antes de firmar. En CALISTA, la com
 
 ## 8. Después de la compra: administrar a distancia
 
-Desde el exterior, necesitás a alguien que busque inquilinos, cobre los alquileres, controle las expensas e intervenga ante una avería. Ese costo forma parte del cálculo. En CALISTA, la administración de un alquiler tradicional cuesta el 5 % de los alquileres cobrados, más IVA, y la de un alquiler temporal amoblado el 20 % de los ingresos, IVA incluido.
+Desde el exterior, necesitás a alguien que busque inquilinos, cobre los alquileres, controle las expensas e intervenga ante una avería. Ese costo forma parte del cálculo. En CALISTA, la administración de un alquiler tradicional cuesta el 5,5 % de los alquileres cobrados, IVA incluido, y la de un alquiler temporal amoblado el 20 % de los ingresos, IVA incluido.
 
 → [Administración de alquileres](/administracion/)
 → [¿Cuánto cobra una inmobiliaria en Paraguay?](/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)

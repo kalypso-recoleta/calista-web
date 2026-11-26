@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import WhatsAppButton from '../WhatsAppButton.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { site } from '../../lib/site';
+import { ID } from '../../lib/entidades';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -20,10 +21,10 @@ const cifras = {
   pt: [[anos.promo, 'anos de incorporação imobiliária'], [anos.mq, 'anos de imobiliária na Martinica'], [anos.py, 'anos no Paraguai'], ['+100', 'imóveis administrados']],
 }[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const fundadora = {
-  es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español y francés' },
-  fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français et en espagnol' },
-  en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), Calista Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
-  pt: { rol: 'Fundadora e diretora', detalle: 'CALISTA Inmobiliaria (Paraguai), Calista Immobilier (Martinica) e a incorporadora EL SOLAR', idiomas: 'Atende em espanhol e francês' },
+  es: { rol: 'Fundadora y directora', detalle: 'CALISTA Inmobiliaria (Paraguay), CALISTA Immobilier (Martinica) y la desarrolladora EL SOLAR', idiomas: 'Atiende en español y francés' },
+  fr: { rol: 'Fondatrice et dirigeante', detalle: 'CALISTA Inmobiliaria (Paraguay), CALISTA Immobilier (Martinique) et le promoteur EL SOLAR', idiomas: 'Vous reçoit en français et en espagnol' },
+  en: { rol: 'Founder and director', detalle: 'CALISTA Inmobiliaria (Paraguay), CALISTA Immobilier (Martinique) and the developer EL SOLAR', idiomas: 'Speaks Spanish and French' },
+  pt: { rol: 'Fundadora e diretora', detalle: 'CALISTA Inmobiliaria (Paraguai), CALISTA Immobilier (Martinica) e a incorporadora EL SOLAR', idiomas: 'Atende em espanhol e francês' },
 }[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const louis = {
   es: { rol: 'Responsable de ventas', detalle: 'Compra y venta de propiedades y desarrollos Kalypso', idiomas: 'Atiende en español, francés, inglés y portugués' },
@@ -34,10 +35,12 @@ const louis = {
 const persona = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': ID.helene,
   name: 'Hélène Montourcy',
   jobTitle: fundadora.rol,
+  description: fundadora.detalle,
   image: new URL('/equipo/helene-montourcy.jpg', Astro.site).toString(),
-  worksFor: { '@type': 'RealEstateAgent', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() },
+  worksFor: [{ '@id': ID.agencia }, { '@id': ID.calistaMq }, { '@id': ID.elSolar }],
   knowsLanguage: ['es', 'fr'],
 };
 ---
@@ -79,7 +82,7 @@ const persona = {
           {t('hist.p_martinica')}<a
             href="https://www.calista.immo"
             target="_blank"
-            rel="noopener">Calista Immobilier</a
+            rel="noopener">CALISTA Immobilier</a
           >{t('hist.p_mq_b')}
         </p>
         <p>

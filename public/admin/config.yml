@@ -431,6 +431,7 @@ collections:
       - { label: Tema, name: tema, widget: select, required: false, hint: 'Agrupa el artículo en una página por tema (ej. calista.com.py/blog/tema/alquilar).', options: [{ label: 'Comprar', value: comprar }, { label: 'Alquilar (tradicional o temporal)', value: alquilar }, { label: 'Invertir (rentabilidad, renta)', value: invertir }, { label: 'Propietarios (vender, tasar, administrar)', value: propietarios }, { label: 'Vivir en Paraguay (extranjeros)', value: vivir }, { label: 'Mercado (precios, tendencias, economía)', value: mercado }] }
       - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
+      - { label: Fecha de actualización, name: actualizado, widget: datetime, required: false, picker_utc: false, hint: 'Solo si el contenido cambió de verdad (cifras, ley, fuentes). Vacío = no se muestra.' }
       - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }
       - { label: Texto, name: body, widget: markdown }
       - label: '🇫🇷 Traducción al francés'

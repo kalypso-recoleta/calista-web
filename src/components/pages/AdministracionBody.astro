@@ -4,6 +4,7 @@ import WhatsAppButton from '../WhatsAppButton.astro';
 import EstimacionForm from '../EstimacionForm.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { site } from '../../lib/site';
+import { ID, areaServedLd } from '../../lib/entidades';
 import { getLangFromUrl, useTranslations, localizePath } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -23,7 +24,7 @@ const resenas = [
 ];
 const y = {
   es: {
-    stats: [['< 15 días', 'para alquilar, en general'], ['Día 10', 'te transferimos el alquiler'], ['5 %', '+ IVA, solo sobre lo cobrado']],
+    stats: [['< 15 días', 'para alquilar, en general'], ['Día 10', 'te transferimos el alquiler'], ['5,5 %', 'IVA incluido, solo sobre lo cobrado']],
     tira: [`${anos} años en Asunción`, '+100 propiedades gestionadas'],
     resenas_t: 'Lo que dicen los propietarios',
     buscas: '¿Buscás un departamento para alquilar?', buscas_cta: 'Ver los disponibles',
@@ -47,7 +48,7 @@ const y = {
     est_d: 'Contanos cómo es tu propiedad: te enviamos un rango de alquiler y lo que te quedaría después de la administración.',
   },
   fr: {
-    stats: [['< 15 jours', 'pour louer, en général'], ['Le 10', 'nous vous virons le loyer'], ['5 %', '+ TVA, sur les loyers encaissés']],
+    stats: [['< 15 jours', 'pour louer, en général'], ['Le 10', 'nous vous virons le loyer'], ['5,5 %', 'TVA comprise, sur les loyers encaissés']],
     tira: [`${anos} ans à Asunción`, '+100 biens gérés'],
     resenas_t: 'Ce qu’en disent les propriétaires',
     buscas: 'Vous cherchez un logement à louer ?', buscas_cta: 'Voir les biens disponibles',
@@ -71,7 +72,7 @@ const y = {
     est_d: 'Décrivez-nous votre bien : nous vous envoyons une fourchette de loyer et ce qu’il vous resterait après gestion.',
   },
   en: {
-    stats: [['< 15 days', 'to rent it out, as a rule'], ['10th', 'of the month: rent transferred'], ['5 %', '+ VAT, on rent collected']],
+    stats: [['< 15 days', 'to rent it out, as a rule'], ['10th', 'of the month: rent transferred'], ['5.5 %', 'VAT included, on rent collected']],
     tira: [`${anos} years in Asunción`, '100+ properties managed'],
     resenas_t: 'What owners say',
     buscas: 'Looking for a place to rent?', buscas_cta: 'See available properties',
@@ -95,7 +96,7 @@ const y = {
     est_d: 'Tell us about your property: we send you a rent range and what you would keep after management.',
   },
   pt: {
-    stats: [['< 15 dias', 'para alugar, em geral'], ['Dia 10', 'transferimos o seu aluguel'], ['5 %', '+ IVA, sobre o que recebemos']],
+    stats: [['< 15 dias', 'para alugar, em geral'], ['Dia 10', 'transferimos o seu aluguel'], ['5,5 %', 'IVA incluído, sobre o que recebemos']],
     tira: [`${anos} anos em Assunção`, '+100 imóveis administrados'],
     resenas_t: 'O que dizem os proprietários',
     buscas: 'Procura um imóvel para alugar?', buscas_cta: 'Ver os disponíveis',
@@ -120,9 +121,24 @@ const y = {
   },
 }[lang as 'es' | 'fr' | 'en' | 'pt']!;
 const tarifas = [1, 2, 3].map((n) => ({ label: t(`adm.t${n}_label`), val: t(`adm.t${n}_val`), d: t(`adm.t${n}_d`) }));
+// Données structurées : service d'administration de locations (tarif validé le 26/11/2026 : 5,5 % IVA incluido)
+const servicioLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: t('adm.eyebrow'),
+  description: t('adm.lead'),
+  serviceType: 'Administración de alquileres',
+  areaServed: areaServedLd,
+  provider: { '@id': ID.agencia },
+  offers: {
+    '@type': 'Offer',
+    description: `${t('adm.t1_val')} ${t('adm.t1_d')}`,
+  },
+};
 ---
 
 <Layout zona title={t('adm.eyebrow')} description={t('adm.lead')}>
+  <script type="application/ld+json" set:html={JSON.stringify(servicioLd)} />
   <section class="section hero">
     <div class="container hero-c">
       <p class="eyebrow">{t('adm.eyebrow')}</p>

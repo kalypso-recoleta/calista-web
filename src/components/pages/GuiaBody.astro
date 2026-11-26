@@ -9,6 +9,7 @@ import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
 import { guiasPublicadas, CATEGORIAS, TEMA_TXT, hrefGuia, alternosGuia } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
+import { ID } from '../../lib/entidades';
 
 interface Props { guia: CollectionEntry<'guias'>; slug: string }
 const { guia, slug } = Astro.props;
@@ -42,9 +43,22 @@ const ld = {
   inLanguage: html || lang === 'es' ? lang : 'es',
   mainEntityOfPage: url,
   ...(d.portada_foto ? { image: new URL(d.portada_foto, Astro.site).toString() } : {}),
-  author: { '@type': 'Person', name: AUTORA, jobTitle: rol, url: new URL(L('/historia'), Astro.site).toString(), worksFor: { '@type': 'Organization', name: 'CALISTA Inmobiliaria', url: new URL('/', Astro.site).toString() } },
-  publisher: { '@type': 'Organization', name: 'CALISTA Inmobiliaria', logo: { '@type': 'ImageObject', url: new URL('/logo-calista.png', Astro.site).toString() } },
+  ...(d.actualizado ? { dateModified: d.actualizado.toISOString() } : {}),
+  author: { '@type': 'Person', '@id': ID.helene, name: AUTORA, jobTitle: rol, url: new URL(L('/historia').replace(/\/?$/, '/'), Astro.site).toString() },
+  publisher: { '@id': ID.agencia },
 };
+// Fil d'Ariane (données structurées) : Accueil › Blog › article
+const migasLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'CALISTA', item: new URL(L('/').replace(/\/?$/, '/'), Astro.site).toString() },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL(L('/blog').replace(/\/?$/, '/'), Astro.site).toString() },
+    { '@type': 'ListItem', position: 3, name: d.titulo, item: url },
+  ],
+};
+const actTxt = { es: 'Actualizado el', fr: 'Mis à jour le', en: 'Updated', pt: 'Atualizado em' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const fmt = (f: Date) => f.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
 
 <Layout title={d.titulo_seo || d.titulo} tituloCompleto description={d.descripcion_seo || d.descripcion} alternos={alternosGuia(guia)} image={d.portada_foto} ogType="article" publishedTime={d.fecha} noindex={lang === 'pt' && !html}>
@@ -53,7 +67,7 @@ const ld = {
       <p class="migas"><a href={L('/blog')}>← {x.volver}</a><span class:list={['cat', d.categoria]}>{(CATEGORIAS[lang] ?? CATEGORIAS.es)[d.categoria]}</span>{guia.data.tema && <a class="tema" href={L(`/blog/tema/${guia.data.tema}`)}>{(TEMA_TXT[lang] ?? TEMA_TXT.es)[guia.data.tema].n}</a>}</p>
       <h1>{d.titulo}</h1>
       <p class="lead">{d.descripcion}</p>
-      <p class="firma">{por} <a href={L('/historia')}>{AUTORA}</a>, {rol} · <time datetime={d.fecha.toISOString()}>{d.fecha.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></p>
+      <p class="firma">{por} <a href={L('/historia')}>{AUTORA}</a>, {rol} · <time datetime={d.fecha.toISOString()}>{fmt(d.fecha)}</time>{d.actualizado && <> · {actTxt} <time datetime={d.actualizado.toISOString()}>{fmt(d.actualizado)}</time></>}</p>
       <Compartir titulo={d.titulo} url={url} />
       {d.portada_foto && <img class="portada" src={img(d.portada_foto, { w: 1200, h: 630 })} alt={d.titulo} width="1200" height="630" />}
       <div class="prose">
@@ -91,6 +105,7 @@ const ld = {
     </div>
   </article>
   <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+  <script type="application/ld+json" set:html={JSON.stringify(migasLd)} />
 </Layout>
 
 <style>

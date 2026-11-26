@@ -271,6 +271,9 @@ const guias = defineCollection({
     tema: z.preprocess(vacio, z.enum(['comprar', 'alquilar', 'invertir', 'propietarios', 'vivir', 'mercado']).optional()),
     portada_foto: strOpc(),
     fecha: z.preprocess((v) => (v === '' || v === null ? undefined : v), z.coerce.date()).default(() => new Date()),
+    // Date de mise à jour (facultative) : à remplir quand le contenu de l'article change vraiment
+    // (chiffres, loi, sources). Affichée sous la date de publication + dateModified pour Google.
+    actualizado: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.coerce.date().optional()),
     fr: tradSchema,
     en: tradSchema,
     pt: tradSchema,

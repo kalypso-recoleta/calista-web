@@ -1,5 +1,6 @@
 ---
 import { site } from '../lib/site';
+import { ID, areaServedLd, elSolarLd, calistaMqLd } from '../lib/entidades';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BarraMovil from '../components/BarraMovil.astro';
@@ -75,35 +76,63 @@ const ogLocaleAlt = LOCALES.filter((l) => l !== lang).map((l) => OG_LOCALE[l]);
 const siteUrl = new URL('/', Astro.site).toString().replace(/\/$/, '');
 const orgSchema = {
   '@context': 'https://schema.org',
-  '@type': 'RealEstateAgent',
-  name: site.nombre,
-  legalName: site.razonSocial,
-  taxID: site.ruc,
-  url: siteUrl,
-  image: new URL('/og-default.png', Astro.site).toString(),
-  logo: new URL('/logo-calista.png', Astro.site).toString(),
-  telephone: '+' + site.whatsapp,
-  email: site.email,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Auditores de la Guerra del Chaco esq. Tte. 2do Rufino Cañete, Barrio Mburucuyá',
-    addressLocality: 'Asunción',
-    addressCountry: 'PY',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
-  // Jours absents (samedi, dimanche) = fermé
-  openingHoursSpecification: site.horarios.map((h) => ({
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: h.dias,
-    opens: h.abre,
-    closes: h.cierra,
-  })),
-  areaServed: ['Asunción', 'Gran Asunción', 'Paraguay'],
-  knowsLanguage: ['es', 'fr', 'en', 'pt'],
-  // Description dans la langue de la page (mentionne les langues parlées)
-  description: t('seo.home_desc'),
-  // Profils officiels de l'agence (aide les moteurs et les IA à relier les sources)
-  sameAs: [site.googleResenas, site.instagram, site.facebook].filter(Boolean),
+  '@graph': [
+    {
+      '@type': 'RealEstateAgent',
+      '@id': ID.agencia,
+      name: site.nombre,
+      alternateName: 'CALISTA',
+      legalName: site.razonSocial,
+      taxID: site.ruc,
+      url: siteUrl + '/',
+      image: new URL('/og-default.png', Astro.site).toString(),
+      logo: new URL('/logo-calista.png', Astro.site).toString(),
+      telephone: '+' + site.whatsapp,
+      email: site.email,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Auditores de la Guerra del Chaco esq. Tte. 2do Rufino Cañete, Barrio Mburucuyá',
+        addressLocality: 'Asunción',
+        addressCountry: 'PY',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+      // Jours absents (samedi, dimanche) = fermé
+      openingHoursSpecification: site.horarios.map((h) => ({
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: h.dias,
+        opens: h.abre,
+        closes: h.cierra,
+      })),
+      // Zone réellement desservie (validée par Hélène le 26/11/2026)
+      areaServed: areaServedLd,
+      knowsLanguage: ['es', 'fr', 'en', 'pt'],
+      // Description dans la langue de la page (mentionne les langues parlées)
+      description: t('seo.home_desc'),
+      founder: { '@id': ID.helene },
+      // Profils officiels de l'agence (aide les moteurs et les IA à relier les sources)
+      sameAs: [site.googleResenas, site.instagram, site.facebook].filter(Boolean),
+    },
+    {
+      '@type': 'Person',
+      '@id': ID.helene,
+      name: 'Hélène Montourcy',
+      url: siteUrl + '/historia/',
+      image: siteUrl + '/equipo/helene-montourcy.jpg',
+      jobTitle: 'Fundadora y directora de CALISTA',
+      worksFor: [{ '@id': ID.agencia }, { '@id': ID.calistaMq }, { '@id': ID.elSolar }],
+      knowsLanguage: ['es', 'fr'],
+    },
+    calistaMqLd,
+    elSolarLd,
+    {
+      '@type': 'WebSite',
+      '@id': ID.web,
+      url: siteUrl + '/',
+      name: site.nombre,
+      inLanguage: ['es', 'fr', 'en', 'pt'],
+      publisher: { '@id': ID.agencia },
+    },
+  ],
 };
 ---
 
