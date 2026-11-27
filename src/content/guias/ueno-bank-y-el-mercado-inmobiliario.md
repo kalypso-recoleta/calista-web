@@ -2,7 +2,7 @@
 titulo: "Ueno Bank y el mercado inmobiliario: qué cambia para compradores e inversores en Paraguay"
 titulo_seo: "Ueno Bank y el mercado inmobiliario en Paraguay"
 descripcion: "Che Róga Porã, calificadoras, economistas y lo que vemos en CALISTA: qué cambia la crisis de Ueno Bank para quien compra o invierte en Paraguay."
-categoria: actualidad
+categoria: opinion
 tema: mercado
 borrador: false
 fecha: 2026-11-17T08:00:00

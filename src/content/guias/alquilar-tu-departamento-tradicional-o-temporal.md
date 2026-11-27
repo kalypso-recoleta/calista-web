@@ -87,6 +87,10 @@ fr:
     - [Gestion locative](/fr/administracion/)
     - [Location meublée temporaire](/fr/alquiler-temporal/)
     - [Préparer un appartement meublé pour la location](/fr/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
+
+    ## Sources
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
 en:
   titulo: 'Traditional or short-term rentals in Asunción: which option is right for you?'
   slug: traditional-or-short-term-rentals-in-asuncion-which-option-is-right-for-you
@@ -167,6 +171,10 @@ en:
     - [Rental management](/en/administracion/)
     - [Furnished short-term rentals](/en/alquiler-temporal/)
     - [How to prepare a furnished apartment for rent](/en/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
+
+    ## Sources
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
 pt:
   titulo: 'Aluguel tradicional ou de temporada em Assunção: o que vale mais a pena para você?'
   slug: aluguel-tradicional-ou-de-temporada-em-assuncao-o-que-vale-mais-a-pena-para-voce
@@ -247,6 +255,10 @@ pt:
     - [Administração de aluguéis](/pt/administracion/)
     - [Aluguel temporário mobiliado](/pt/alquiler-temporal/)
     - [Como preparar um apartamento mobiliado para alugar](/pt/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
+
+    ## Fontes
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
 ---
 
 La elección depende de tu departamento, de tus objetivos y de la disponibilidad que querés conservar para usarlo.
@@ -323,3 +335,7 @@ _Este artículo es informativo y no constituye asesoramiento financiero._
 - [Administración de alquileres](/administracion/)
 - [Alquiler temporal amoblado](/alquiler-temporal/)
 - [Cómo preparar un departamento amoblado para alquilar](/blog/como-preparar-un-departamento-amoblado-para-alquilar-los-detalles-que-cuentan/)
+
+## Fuentes
+
+- [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)

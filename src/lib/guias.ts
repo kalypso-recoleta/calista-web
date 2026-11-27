@@ -36,12 +36,24 @@ export function alternosGuia(entry: CollectionEntry<'guias'>): Record<Lang, stri
 }
 
 /** Nom des catégories, par langue */
-export const CATEGORIAS: Record<string, Record<'guia' | 'actualidad', string>> = {
-  es: { guia: 'Guías', actualidad: 'Actualidad' },
-  fr: { guia: 'Guides', actualidad: 'Actualité' },
-  en: { guia: 'Guides', actualidad: 'News' },
-  pt: { guia: 'Guias', actualidad: 'Notícias' },
+export type Categoria = 'guia' | 'actualidad' | 'opinion';
+export const CATEGORIAS: Record<string, Record<Categoria, string>> = {
+  es: { guia: 'Guías', actualidad: 'Actualidad', opinion: 'La mirada de CALISTA' },
+  fr: { guia: 'Guides', actualidad: 'Actualité', opinion: 'Le regard de CALISTA' },
+  en: { guia: 'Guides', actualidad: 'News', opinion: 'CALISTA’s view' },
+  pt: { guia: 'Guias', actualidad: 'Notícias', opinion: 'O olhar da CALISTA' },
 };
+/** Ordre des catégories (boutons de filtre du blog) */
+export const ORDEN_CATEGORIAS: Categoria[] = ['guia', 'actualidad', 'opinion'];
+
+/** « Lo esencial » de l'article dans une langue (vide si la traduction n'en a pas : jamais l'espagnol sous un texte traduit) */
+export function esencialGuia(entry: CollectionEntry<'guias'>, lang: string): string[] {
+  const d = entry.data as unknown as { esencial?: string[] } & Record<string, { esencial?: string[]; cuerpo?: string } | undefined>;
+  if (lang === 'es') return d.esencial ?? [];
+  const tr = d[lang];
+  if (tr?.cuerpo?.trim()) return tr.esencial ?? [];
+  return d.esencial ?? []; // article non traduit : texte espagnol, donc encadré espagnol
+}
 
 /** Thèmes du blog (une page par thème : /blog/tema/<clé>). L'ordre = ordre d'affichage. */
 export const TEMAS = ['comprar', 'alquilar', 'invertir', 'propietarios', 'vivir', 'mercado'] as const;

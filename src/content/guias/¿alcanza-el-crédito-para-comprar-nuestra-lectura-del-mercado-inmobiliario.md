@@ -81,6 +81,10 @@ fr:
     - [Comment financer l’achat de votre logement au Paraguay](/fr/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Biens à vendre](/fr/comprar/)
     - [Le dollar baisse : qui gagne et qui perd sur le marché immobilier paraguayen ?](/fr/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
+
+    ## Sources
+
+    - [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349)
 en:
   titulo: Is a mortgage enough to buy a home? Our perspective on the property market
   slug: is-a-mortgage-enough-to-buy-a-home-our-perspective-on-the-property-market
@@ -155,6 +159,10 @@ en:
     - [How to finance your home purchase in Paraguay](/en/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Properties for sale](/en/comprar/)
     - [The dollar is falling: who wins and who loses in Paraguay's real estate market?](/en/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
+
+    ## Sources
+
+    - [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349)
 pt:
   titulo: 'O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário'
   slug: o-credito-e-suficiente-para-comprar-nossa-leitura-do-mercado-imobiliario
@@ -229,6 +237,10 @@ pt:
     - [Como financiar a compra da sua moradia no Paraguai](/pt/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
     - [Imóveis à venda](/pt/comprar/)
     - [O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?](/pt/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
+
+    ## Fontes
+
+    - [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349)
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_
@@ -299,3 +311,7 @@ _Fuente de referencia: Marcelo Wagner, «La paradoja inmobiliaria: hay más cré
 - [Cómo financiar la compra de tu vivienda en Paraguay](/blog/como-financiar-la-compra-de-tu-vivienda-en-paraguay/)
 - [Departamentos y casas en venta](/comprar/)
 - [El dólar baja: ¿quién gana y quién pierde en el mercado inmobiliario paraguayo?](/blog/el-dolar-baja-quien-gana-y-quien-pierde-en-el-mercado-inmobiliario-paraguayo/)
+
+## Fuentes
+
+- [Forbes Paraguay](https://www.forbes.com.py/macroeconomia/la-paradoja-inmobiliaria-hay-mas-credito-vivienda-pero-alcanza-comprar-departamento-n99349)

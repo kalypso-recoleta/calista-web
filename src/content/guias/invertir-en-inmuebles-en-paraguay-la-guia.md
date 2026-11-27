@@ -4,6 +4,13 @@ titulo_seo: 'Invertir en inmuebles en Paraguay: guía completa'
 descripcion: 'Qué puede comprar un extranjero, cómo calcular la rentabilidad real, alquiler temporal o tradicional, tipo de cambio, pasos y costos: lo esencial para invertir en Paraguay.'
 categoria: guia
 tema: invertir
+referencia: true
+esencial:
+  - "Un extranjero puede comprar un departamento urbano en Asunción: la restricción de la Ley N.º 2532/2005 se refiere a inmuebles rurales en la zona de seguridad de frontera."
+  - "La rentabilidad bruta es solo un punto de partida: en nuestro ejemplo de Barrio Jara pasa del 7,77 % bruto al 5,82 % después de impuestos municipales, expensas y un mes sin inquilino."
+  - "Verificá que el inmueble siga siendo rentable en alquiler tradicional, sin depender solo del alquiler temporal."
+  - "Calculá tu proyecto en dólares y en guaraníes: entre el 2 de enero y el 7 de octubre de 2026, el guaraní se apreció un 15,2 % frente al dólar."
+  - "En pozo, mirá los proyectos que el desarrollador ya entregó, el avance de la obra y cómo financiará las etapas que faltan."
 borrador: false
 fecha: 2026-11-22T18:20:00
 portada_foto: /uploads/invertir-en-paraguay-guia.jpg
@@ -11,6 +18,12 @@ fr:
   titulo: 'Investir dans l’immobilier au Paraguay : le guide pour bien démarrer'
   titulo_seo: 'Investir au Paraguay dans l’immobilier : le guide complet'
   descripcion: 'Ce qu’un étranger peut acheter, le vrai rendement locatif, courte ou longue durée, taux de change, étapes et frais : l’essentiel pour investir au Paraguay.'
+  esencial:
+    - "Un étranger peut acheter un appartement urbain à Asunción : la restriction de la loi n° 2532/2005 concerne les biens ruraux situés dans la zone de sécurité frontalière."
+    - "Le rendement brut n’est qu’un point de départ : dans notre exemple à Barrio Jara, il passe de 7,77 % brut à 5,82 % après impôts municipaux, charges et un mois sans locataire."
+    - "Vérifiez que le bien reste rentable en location classique, sans dépendre uniquement de la location temporaire."
+    - "Calculez votre projet en dollars et en guaraníes : entre le 2 janvier et le 7 octobre 2026, le guaraní s’est apprécié de 15,2 % face au dollar."
+    - "Sur plan, regardez les projets que le promoteur a déjà livrés, l’avancement du chantier et la façon dont il financera les étapes restantes."
   cuerpo: |-
     Vous envisagez d’investir dans l’immobilier au Paraguay ? Ce guide rassemble, étape par étape, ce que nous avons expliqué en détail dans nos articles : ce qu’un étranger peut acheter, comment calculer le vrai rendement, les risques de la location courte durée et du taux de change, le parcours d’achat et ses frais. Chaque partie renvoie vers l’article complet et ses sources.
 
@@ -112,6 +125,12 @@ en:
   titulo: 'Investing in real estate in Paraguay: a guide to getting started'
   titulo_seo: 'Investing in Paraguay real estate: the complete guide'
   descripcion: 'What foreigners can buy, real rental yields, short- or long-term rentals, exchange rate, buying steps and costs: the essentials for investing in Paraguay.'
+  esencial:
+    - "A foreigner can buy an urban apartment in Asunción: the restriction in Law No. 2532/2005 concerns rural property in the border security zone."
+    - "Gross yield is only a starting point: in our Barrio Jara example, it falls from 7.77% gross to 5.82% after municipal taxes, building fees and one month without a tenant."
+    - "Check that the property still pays off as a long-term rental, without relying only on short-term rentals."
+    - "Run your numbers in both dollars and guaraníes: between 2 January and 7 October 2026, the guaraní rose 15.2% against the dollar."
+    - "Off-plan, look at the projects the developer has already delivered, how far the works have progressed and how the remaining stages will be financed."
   cuerpo: |-
     Thinking about investing in real estate in Paraguay? This guide brings together, step by step, what we have explained in detail in our articles: what a foreigner can buy, how to calculate the real return, the risks of short-term rentals and the exchange rate, the buying process and its costs. Each section links to the full article and its sources.
 
@@ -213,6 +232,12 @@ pt:
   titulo: 'Investir em imóveis no Paraguai: o guia para começar'
   titulo_seo: 'Investir no Paraguai em imóveis: o guia completo'
   descripcion: 'O que um estrangeiro pode comprar, a rentabilidade real, aluguel por temporada ou tradicional, câmbio, etapas e custos: o essencial para investir no Paraguai.'
+  esencial:
+    - "Um estrangeiro pode comprar um apartamento urbano em Assunção: a restrição da Lei n.º 2532/2005 se refere a imóveis rurais na zona de segurança de fronteira."
+    - "A rentabilidade bruta é só um ponto de partida: no nosso exemplo no Barrio Jara, ela passa de 7,77 % bruta para 5,82 % depois dos impostos municipais, do condomínio e de um mês sem inquilino."
+    - "Verifique se o imóvel continua rentável no aluguel tradicional, sem depender só do aluguel por temporada."
+    - "Calcule seu projeto em dólares e em guaranis: entre 2 de janeiro e 7 de outubro de 2026, o guarani se valorizou 15,2 % frente ao dólar."
+    - "Na planta, veja os projetos que a construtora já entregou, o avanço da obra e como ela vai financiar as etapas que faltam."
   cuerpo: |-
     Está pensando em investir em imóveis no Paraguai? Este guia reúne, passo a passo, o que explicamos em detalhe nos nossos artigos: o que um estrangeiro pode comprar, como calcular a rentabilidade real, os riscos do aluguel por temporada e do câmbio, o processo de compra e os seus custos. Cada parte remete ao artigo completo e às suas fontes.
 

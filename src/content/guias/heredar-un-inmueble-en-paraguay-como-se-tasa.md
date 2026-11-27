@@ -80,6 +80,14 @@ fr:
 
     - [Combien vaut vraiment mon bien ? Comment se fait une estimation](/fr/blog/cuanto-vale-realmente-mi-inmueble-como-se-hace-una-tasacion/)
     - [Acheter un bien au Paraguay, étape par étape](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [Code de procédure civile, loi n° 1337/88](https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br)
+    - [Estudio Contable Mueller, Lic. Elisabeth Neufeld de Müller](https://www.ecmueller.com.py/es/impuesto-a-la-herencia-anticipo-de-herencia-disfrazado/)
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [loi n° 6380/19](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional)
+    - Légifrance, [Code général des impôts, art. 761](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006305376)
+    - [Poder Judicial, 16 septembre 2026](https://www.pj.gov.py/notas/30592-run-presentan-el-certificado-catastro-registral-inmobiliario-digital)
 en:
   titulo: "I inherited a property in Paraguay. How do I value it, and what is the valuation for?"
   slug: i-inherited-a-property-in-paraguay-how-do-i-value-it-and-what-is-the-valuation-for
@@ -153,6 +161,14 @@ en:
 
     - [What is my property really worth? How a valuation is done](/en/blog/cuanto-vale-realmente-mi-inmueble-como-se-hace-una-tasacion/)
     - [Buying a property in Paraguay, step by step](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [Code of Civil Procedure, Law 1337/88](https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br)
+    - [Estudio Contable Mueller, Lic. Elisabeth Neufeld de Müller](https://www.ecmueller.com.py/es/impuesto-a-la-herencia-anticipo-de-herencia-disfrazado/)
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [Law 6380/19](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional)
+    - Légifrance, [French General Tax Code, art. 761](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006305376)
+    - [Poder Judicial, 16 September 2026](https://www.pj.gov.py/notas/30592-run-presentan-el-certificado-catastro-registral-inmobiliario-digital)
 pt:
   titulo: "Herdei um imóvel no Paraguai. Como avaliá-lo e para que serve a avaliação?"
   slug: herdei-um-imovel-no-paraguai-como-avalia-lo-e-para-que-serve-a-avaliacao
@@ -226,6 +242,14 @@ pt:
 
     - [Quanto vale realmente o meu imóvel? Como se faz uma avaliação](/pt/blog/cuanto-vale-realmente-mi-inmueble-como-se-hace-una-tasacion/)
     - [Comprar um imóvel no Paraguai, passo a passo](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Fontes
+
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [Código de Processo Civil, Lei nº 1337/88](https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br)
+    - [Estudio Contable Mueller, Lic. Elisabeth Neufeld de Müller](https://www.ecmueller.com.py/es/impuesto-a-la-herencia-anticipo-de-herencia-disfrazado/)
+    - Biblioteca y Archivo Central del Congreso Nacional (BACN), [Lei nº 6380/19](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional)
+    - Légifrance, [Código Geral dos Impostos francês, art. 761](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006305376)
+    - [Poder Judicial, 16 de setembro de 2026](https://www.pj.gov.py/notas/30592-run-presentan-el-certificado-catastro-registral-inmobiliario-digital)
 ---
 Heredar un departamento, una casa o un terreno en Paraguay plantea rápido dos preguntas: ¿cómo funciona la sucesión? y ¿cuánto vale el inmueble? Estos son los puntos clave, con los textos legales correspondientes.
 
@@ -294,3 +318,11 @@ _Este artículo es informativo. Para los trámites propios de tu sucesión, cons
 
 - [¿Cuánto vale realmente mi inmueble? Cómo se hace una tasación](/blog/cuanto-vale-realmente-mi-inmueble-como-se-hace-una-tasacion/)
 - [Comprar un inmueble en Paraguay, paso a paso](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+## Fuentes
+
+- Biblioteca y Archivo Central del Congreso Nacional (BACN), [Código Procesal Civil, Ley N.º 1337/88](https://www.bacn.gov.py/leyes-paraguayas/3038/ley-n-1337-codigo-procesal-civil-br)
+- [Estudio Contable Mueller, Lic. Elisabeth Neufeld de Müller](https://www.ecmueller.com.py/es/impuesto-a-la-herencia-anticipo-de-herencia-disfrazado/)
+- Biblioteca y Archivo Central del Congreso Nacional (BACN), [Ley N.º 6380/19](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional)
+- Légifrance, [Código General de Impuestos de Francia, art. 761](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006305376)
+- [Poder Judicial, 16 de setiembre de 2026](https://www.pj.gov.py/notas/30592-run-presentan-el-certificado-catastro-registral-inmobiliario-digital)

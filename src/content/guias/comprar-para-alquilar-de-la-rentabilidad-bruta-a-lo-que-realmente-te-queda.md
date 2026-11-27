@@ -124,6 +124,10 @@ fr:
     - [Gestion locative](/fr/administracion/)
     - [Biens à vendre](/fr/comprar/)
     - [Combien coûte une agence immobilière au Paraguay ?](/fr/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
+
+    ## Sources
+
+    - Banco Central del Paraguay (BCP), [Taux de change BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 en:
   titulo: 'Buying to rent: from gross rental yield to what you actually keep'
   slug: buying-to-rent-from-gross-rental-yield-to-what-you-actually-keep
@@ -241,6 +245,10 @@ en:
     - [Rental management](/en/administracion/)
     - [Properties for sale](/en/comprar/)
     - [How much does a real estate agency charge in Paraguay?](/en/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
+
+    ## Sources
+
+    - Banco Central del Paraguay (BCP), [BCP exchange rate](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 pt:
   titulo: 'Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você'
   slug: comprar-para-alugar-da-rentabilidade-bruta-ao-que-realmente-sobra-para-voce
@@ -361,6 +369,10 @@ pt:
     - [Administração de aluguéis](/pt/administracion/)
     - [Imóveis à venda](/pt/comprar/)
     - [Quanto cobra uma imobiliária no Paraguai?](/pt/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
+
+    ## Fontes
+
+    - Banco Central del Paraguay (BCP), [Taxa de câmbio do BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 ---
 
 Para verlo con un caso real, tomamos un departamento que tenemos en venta: el **304 del edificio Zandoli**, en Barrio Jara, Asunción. Tiene un dormitorio y cochera, y está alquilado hasta el **23 de junio de 2027**.
@@ -477,3 +489,7 @@ _Este artículo es informativo y no constituye asesoramiento financiero ni fisca
 - [Administración de alquileres](/administracion/)
 - [Departamentos y casas en venta](/comprar/)
 - [¿Cuánto cobra una inmobiliaria en Paraguay?](/blog/cuanto-cobra-una-inmobiliaria-en-paraguay/)
+
+## Fuentes
+
+- Banco Central del Paraguay (BCP), [Tipo de cambio BCP](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)

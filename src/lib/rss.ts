@@ -84,7 +84,7 @@ export async function rssResponse(
         precio: '',
         foto: abs(d.portada_foto),
         fecha: d.fecha,
-        categoria: d.categoria === 'actualidad' ? 'Blog · Actualidad' : 'Blog · Guía',
+        categoria: d.categoria === 'actualidad' ? 'Blog · Actualidad' : d.categoria === 'opinion' ? 'Blog · La mirada de CALISTA' : 'Blog · Guía',
       });
     }
   }

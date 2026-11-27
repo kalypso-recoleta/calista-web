@@ -427,12 +427,14 @@ collections:
       - { label: 'Título para Google (máx. 60 caracteres)', name: titulo_seo, widget: string, required: false, hint: 'Opcional. Título corto que aparece en Google y en la pestaña del navegador. Vacío = el título del artículo.' }
       - { label: 'Resumen (1 o 2 frases)', name: descripcion, widget: text, hint: 'Aparece en la lista del blog, en Google y al compartir.' }
       - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false, hint: 'Opcional. Texto que aparece debajo del título en Google. Vacío = el resumen.' }
-      - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }] }
+      - { label: Categoría, name: categoria, widget: select, default: guia, options: [{ label: 'Guía (consejos, leyes, trámites)', value: guia }, { label: 'Actualidad', value: actualidad }, { label: 'La mirada de CALISTA (análisis y opinión)', value: opinion }] }
       - { label: Tema, name: tema, widget: select, required: false, hint: 'Agrupa el artículo en una página por tema (ej. calista.com.py/blog/tema/alquilar).', options: [{ label: 'Comprar', value: comprar }, { label: 'Alquilar (tradicional o temporal)', value: alquilar }, { label: 'Invertir (rentabilidad, renta)', value: invertir }, { label: 'Propietarios (vender, tasar, administrar)', value: propietarios }, { label: 'Vivir en Paraguay (extranjeros)', value: vivir }, { label: 'Mercado (precios, tendencias, economía)', value: mercado }] }
+      - { label: 'Artículo de referencia', name: referencia, widget: boolean, required: false, default: false, hint: 'Marcado = aparece destacado arriba de la página Blog, sea cual sea su fecha (ej. la guía Invertir).' }
       - { label: 'Borrador (no publicado)', name: borrador, widget: boolean, default: true, hint: 'Desmarcá para publicar el artículo en el sitio.' }
       - { label: Fecha, name: fecha, widget: datetime, required: false, picker_utc: false }
       - { label: Fecha de actualización, name: actualizado, widget: datetime, required: false, picker_utc: false, hint: 'Solo si el contenido cambió de verdad (cifras, ley, fuentes). Vacío = no se muestra.' }
       - { label: 'Foto de portada', name: portada_foto, widget: image, required: false }
+      - { label: 'Lo esencial (3 a 5 puntos)', name: esencial, widget: list, required: false, hint: 'Opcional, para artículos largos. Cada punto en una línea: aparece en un recuadro arriba del texto.' }
       - { label: Texto, name: body, widget: markdown }
       - label: '🇫🇷 Traducción al francés'
         name: fr
@@ -446,6 +448,7 @@ collections:
           - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
+          - { label: 'Lo esencial (3 a 5 puntos)', name: esencial, widget: list, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇬🇧 Traducción al inglés'
         name: en
@@ -459,6 +462,7 @@ collections:
           - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
+          - { label: 'Lo esencial (3 a 5 puntos)', name: esencial, widget: list, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
       - label: '🇧🇷 Traducción al portugués (Brasil)'
         name: pt
@@ -472,6 +476,7 @@ collections:
           - { label: 'Dirección web (slug)', name: slug, widget: string, required: false, hint: 'Opcional. Final de la dirección del artículo en este idioma (ej. combien-coute-une-agence). Vacío = se genera desde el título. No cambiar una vez publicado: la dirección cambiaría.' }
           - { label: 'Resumen', name: descripcion, widget: text, required: false }
           - { label: 'Descripción para Google (máx. 155 caracteres)', name: descripcion_seo, widget: text, required: false }
+          - { label: 'Lo esencial (3 a 5 puntos)', name: esencial, widget: list, required: false }
           - { label: 'Texto', name: cuerpo, widget: markdown, required: false }
 
   # ─── Barrios (pages par quartier) ───

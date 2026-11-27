@@ -142,6 +142,17 @@ fr:
     - [Biens à vendre](/fr/comprar/)
     - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - [Che Róga Porã](https://www.cherogapora.gov.py/)
+    - Che Róga Porã, [projets approuvés](https://www.cherogapora.gov.py/seleccionar-proyecto)
+    - Agencia Financiera de Desarrollo (AFD), [Mi Casa AFD](https://www.afd.gov.py/producto/mi-casa)
+    - Agencia Financiera de Desarrollo (AFD), [taux publiés par l’AFD](https://www.afd.gov.py/tasas-de-interes)
+    - [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda)
+    - [Itaú Paraguay](https://www.micasa.itau.com.py/)
+    - [Sudameris Bank](https://www.sudameris.com.py/prestamos-personas)
+    - [Banque centrale du Paraguay](https://www.bcp.gov.py/web/institucional/tasas-de-interes)
 en:
   titulo: How to finance your home purchase in Paraguay
   slug: how-to-finance-your-home-purchase-in-paraguay
@@ -278,6 +289,17 @@ en:
     - [Properties for sale](/en/comprar/)
     - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - [Che Róga Porã](https://www.cherogapora.gov.py/)
+    - Che Róga Porã, [approved projects](https://www.cherogapora.gov.py/seleccionar-proyecto)
+    - Agencia Financiera de Desarrollo (AFD), [Mi Casa AFD](https://www.afd.gov.py/producto/mi-casa)
+    - Agencia Financiera de Desarrollo (AFD), [AFD’s published rates](https://www.afd.gov.py/tasas-de-interes)
+    - [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda)
+    - [Itaú Paraguay](https://www.micasa.itau.com.py/)
+    - [Sudameris Bank](https://www.sudameris.com.py/prestamos-personas)
+    - [Central Bank of Paraguay](https://www.bcp.gov.py/web/institucional/tasas-de-interes)
 pt:
   titulo: 'Como financiar a compra da sua moradia no Paraguai'
   slug: como-financiar-a-compra-da-sua-moradia-no-paraguai
@@ -414,6 +436,17 @@ pt:
     - [Imóveis à venda](/pt/comprar/)
     - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Fontes
+
+    - [Che Róga Porã](https://www.cherogapora.gov.py/)
+    - Che Róga Porã, [projetos aprovados](https://www.cherogapora.gov.py/seleccionar-proyecto)
+    - Agencia Financiera de Desarrollo (AFD), [Mi Casa AFD](https://www.afd.gov.py/producto/mi-casa)
+    - Agencia Financiera de Desarrollo (AFD), [taxas publicadas pela AFD](https://www.afd.gov.py/tasas-de-interes)
+    - [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda)
+    - [Itaú Paraguay](https://www.micasa.itau.com.py/)
+    - [Sudameris Bank](https://www.sudameris.com.py/prestamos-personas)
+    - [Banco Central del Paraguay](https://www.bcp.gov.py/web/institucional/tasas-de-interes)
 ---
 
 Por eso, en lugar de un ranking, te explicamos las principales opciones de financiación, qué comparar entre entidades y qué documentos preparar.
@@ -547,3 +580,14 @@ _Esta guía es informativa. No constituye asesoramiento financiero ni una recome
 - [Departamentos y casas en venta](/comprar/)
 - [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+## Fuentes
+
+- [Che Róga Porã](https://www.cherogapora.gov.py/)
+- Che Róga Porã, [proyectos aprobados](https://www.cherogapora.gov.py/seleccionar-proyecto)
+- Agencia Financiera de Desarrollo (AFD), [Mi Casa AFD](https://www.afd.gov.py/producto/mi-casa)
+- Agencia Financiera de Desarrollo (AFD), [tasas publicadas por la AFD](https://www.afd.gov.py/tasas-de-interes)
+- [Banco Familiar](https://www.familiar.com.py/prestamo-vivienda)
+- [Itaú Paraguay](https://www.micasa.itau.com.py/)
+- [Sudameris Bank](https://www.sudameris.com.py/prestamos-personas)
+- [Banco Central del Paraguay](https://www.bcp.gov.py/web/institucional/tasas-de-interes)

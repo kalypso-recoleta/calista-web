@@ -100,6 +100,11 @@ fr:
     - [Biens à vendre](/fr/comprar/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
     - [Biens à louer](/fr/alquilar/)
+
+    ## Sources
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
+    - [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/)
 en:
   titulo: 'More foreigners in Paraguay: an opportunity for the market, provided buyers make informed decisions'
   slug: more-foreigners-in-paraguay-an-opportunity-for-the-market-provided-buyers-make-informed-decisions
@@ -193,6 +198,11 @@ en:
     - [Properties for sale](/en/comprar/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
     - [Properties for rent](/en/alquilar/)
+
+    ## Sources
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
+    - [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/)
 pt:
   titulo: 'Mais estrangeiros no Paraguai: uma oportunidade para o mercado, desde que se compre com critério'
   slug: mais-estrangeiros-no-paraguai-uma-oportunidade-para-o-mercado-desde-que-se-compre-com-criterio
@@ -286,6 +296,11 @@ pt:
     - [Imóveis à venda](/pt/comprar/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
     - [Imóveis para alugar](/pt/alquilar/)
+
+    ## Fontes
+
+    - [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
+    - [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/)
 ---
 
 _Por Hélène Montourcy — CALISTA Inmobiliaria_
@@ -375,3 +390,8 @@ _Fuente de la introducción: [MarketData](https://marketdata.com.py/noticias/mas
 - [Departamentos y casas en venta](/comprar/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
 - [Propiedades en alquiler](/alquilar/)
+
+## Fuentes
+
+- [AirDNA](https://www.airdna.co/vacation-rental-data/app/py/default/asuncion/overview)
+- [MarketData](https://marketdata.com.py/noticias/mas-extranjeros-eligen-paraguay-para-residir-y-su-llegada-empieza-a-mover-el-mercado-inmobiliario-156182/)

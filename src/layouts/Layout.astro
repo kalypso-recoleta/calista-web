@@ -1,6 +1,6 @@
 ---
 import { site } from '../lib/site';
-import { ID, areaServedLd, elSolarLd, calistaMqLd } from '../lib/entidades';
+import { ID, areaServedLd, elSolarLd, calistaMqLd, bioHelene } from '../lib/entidades';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BarraMovil from '../components/BarraMovil.astro';
@@ -119,6 +119,7 @@ const orgSchema = {
       url: siteUrl + '/historia/',
       image: siteUrl + '/equipo/helene-montourcy.jpg',
       jobTitle: 'Fundadora y directora de CALISTA',
+      description: bioHelene(lang),
       worksFor: [{ '@id': ID.agencia }, { '@id': ID.calistaMq }, { '@id': ID.elSolar }],
       knowsLanguage: ['es', 'fr'],
     },

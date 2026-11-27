@@ -70,6 +70,12 @@ fr:
     - [Biens à vendre](/fr/comprar/)
     - [Le crédit suffit-il pour acheter ? Notre regard sur le marché immobilier](/fr/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Acheter pour louer : du rendement brut à ce qu’il vous reste réellement](/fr/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
+
+    ## Sources
+
+    - [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/)
+    - [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/)
+    - [cours de référence de la Banque centrale du Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 en:
   titulo: "The dollar is falling: who wins and who loses in Paraguay's real estate market?"
   slug: the-dollar-is-falling-who-wins-and-who-loses-in-paraguay-s-real-estate-market
@@ -133,6 +139,12 @@ en:
     - [Properties for sale](/en/comprar/)
     - [Is a mortgage enough to buy a home? Our perspective on the property market](/en/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Buying to rent: from gross rental yield to what you actually keep](/en/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
+
+    ## Sources
+
+    - [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/)
+    - [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/)
+    - [reference exchange rate published by the Central Bank of Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 pt:
   titulo: 'O dólar cai: quem ganha e quem perde no mercado imobiliário paraguaio?'
   slug: o-dolar-cai-quem-ganha-e-quem-perde-no-mercado-imobiliario-paraguaio
@@ -196,6 +208,12 @@ pt:
     - [Imóveis à venda](/pt/comprar/)
     - [O crédito é suficiente para comprar? Nossa leitura do mercado imobiliário](/pt/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
     - [Comprar para alugar: da rentabilidade bruta ao que realmente sobra para você](/pt/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
+
+    ## Fontes
+
+    - [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/)
+    - [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/)
+    - [cotação de referência do Banco Central del Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)
 ---
 
 El 11 de setiembre de 2026, [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/) (grupo 780 AM / Mega TV) publicó: **«Baja del dólar desafía al sector inmobiliario»**. En esa nota, Raúl Constantino, presidente de la Cámara Paraguaya de Desarrolladores Inmobiliarios (CAPADEI), explica que cerca del **90 % de los costos de construcción están en guaraníes**. Según él, los costos de obra **subieron alrededor de un 20 % en dólares** respecto al año pasado. En una nota de [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/) del mismo período, ubica entre el 75 % y el 80 % la parte de los costos de los desarrolladores en guaraníes.
@@ -255,3 +273,9 @@ _Este artículo es informativo y no constituye asesoramiento financiero._
 - [Departamentos y casas en venta](/comprar/)
 - [¿Alcanza el crédito para comprar? Nuestra lectura del mercado inmobiliario](/blog/alcanza-el-credito-para-comprar-nuestra-lectura-del-mercado-inmobiliario/)
 - [Comprar para alquilar: de la rentabilidad bruta a lo que realmente te queda](/blog/comprar-para-alquilar-de-la-rentabilidad-bruta-a-lo-que-realmente-te-queda/)
+
+## Fuentes
+
+- [Megacadena](https://megacadena.com.py/baja-del-dolar-desafia-al-sector-inmobiliario/)
+- [ABC Color](https://www.abc.com.py/economia/2026/09/10/baja-del-dolar-tambien-desafia-al-sector-inmobiliario-reporta-capadei/)
+- [cotización de referencia del Banco Central del Paraguay (BCP)](https://www.bcp.gov.py/webapps/web/cotizacion/monedas-historica)

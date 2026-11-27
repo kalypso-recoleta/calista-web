@@ -131,6 +131,13 @@ fr:
     - [Gestion locative](/fr/administracion/)
     - [Vendre votre bien](/fr/propietarios/)
     - [Estimations immobilières](/fr/tasaciones/)
+
+    ## Sources
+
+    - [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/)
+    - [paraguayinmo.com](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario)
+    - Alsina Inmuebles, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas)
+    - Corte Suprema de Justicia del Paraguay, [Code civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf)
 en:
   titulo: How much does a real estate agency charge in Paraguay?
   slug: how-much-does-a-real-estate-agency-charge-in-paraguay
@@ -254,6 +261,13 @@ en:
     - [Rental management](/en/administracion/)
     - [Sell your property](/en/propietarios/)
     - [Property valuations](/en/tasaciones/)
+
+    ## Sources
+
+    - [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/)
+    - [paraguayinmo.com](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario)
+    - Alsina Inmuebles, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas)
+    - Corte Suprema de Justicia del Paraguay, [Civil Code](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf)
 pt:
   titulo: 'Quanto cobra uma imobiliária no Paraguai?'
   slug: quanto-cobra-uma-imobiliaria-no-paraguai
@@ -379,6 +393,13 @@ pt:
     - [Administração de aluguéis](/pt/administracion/)
     - [Vender seu imóvel](/pt/propietarios/)
     - [Avaliações de imóveis](/pt/tasaciones/)
+
+    ## Fontes
+
+    - [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/)
+    - [paraguayinmo.com](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario)
+    - Alsina Inmuebles, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas)
+    - Corte Suprema de Justicia del Paraguay, [Código Civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf)
 ---
 
 _Comisiones de venta y alquiler, reparto de los honorarios y servicios incluidos: lo que conviene saber antes de contratar._
@@ -499,3 +520,10 @@ Elegir una inmobiliaria también implica entender cómo trabaja y qué compromis
 - [Administración de alquileres](/administracion/)
 - [Vender tu propiedad](/propietarios/)
 - [Tasaciones](/tasaciones/)
+
+## Fuentes
+
+- [ABC Color](https://www.abc.com.py/negocios/2026/10/18/de-oficio-a-industria-brokers-agentes-y-comisiones-redefinen-el-negocio-inmobiliario/)
+- [paraguayinmo.com](https://paraguayinmo.com/aprende/como-trabajar-con-un-agente-inmobiliario)
+- Alsina Inmuebles, [Marilú Alsina & Asociados](https://alsina-inmuebles.com.py/index.php?pagina=tarifas)
+- Corte Suprema de Justicia del Paraguay, [Código Civil](https://www.csj.gov.py/cache/lederes/EDICI%C3%93N%20OFICIAL%20C%C3%B3digo%20Civil%20Paraguayo.pdf)

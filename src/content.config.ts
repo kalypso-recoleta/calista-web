@@ -33,7 +33,8 @@ const tarifasSchema = z
 const reservasSchema = z
   .preprocess((v) => (v == null ? [] : v), z.array(z.object({ desde: fechaTemp(), hasta: fechaTemp() })))
   .default([]);
-const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), titulo_seo: strOpc(), descripcion: strOpc(), descripcion_seo: strOpc(), slug: strOpc(), cuerpo: strOpc() }).optional());
+const listaOpc = () => z.preprocess((v) => (v == null || (Array.isArray(v) && v.length === 0) ? undefined : v), z.array(z.string()).optional());
+const tradSchema = z.preprocess((v) => (v == null ? undefined : v), z.object({ titulo: strOpc(), titulo_seo: strOpc(), descripcion: strOpc(), descripcion_seo: strOpc(), slug: strOpc(), cuerpo: strOpc(), esencial: listaOpc() }).optional());
 const listaTxt = z.preprocess((v) => (v == null ? [] : v), z.array(z.string())).default([]);
 
 /**
@@ -265,8 +266,13 @@ const guias = defineCollection({
     // Description courte pour Google (~155 caractères). Vide = le résumé.
     descripcion_seo: strOpc(),
     borrador: z.boolean().default(true),
-    // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes…
-    categoria: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.enum(['guia', 'actualidad']).default('guia')),
+    // guia = conseils pratiques et juridiques ; actualidad = nouvelles du marché, lois récentes… ;
+    // opinion = « La mirada de CALISTA » : analyses et opinions professionnelles signées
+    categoria: z.preprocess((v) => (v === '' || v == null ? undefined : v), z.enum(['guia', 'actualidad', 'opinion']).default('guia')),
+    // Article de référence : mis en avant en tête du blog, quelle que soit sa date
+    referencia: boolOpc(),
+    // « Lo esencial » : 3 à 5 points clés affichés en encadré en haut de l'article (articles longs)
+    esencial: listaOpc(),
     // Thème (page /blog/tema/…) : voir TEMAS dans src/lib/guias.ts
     tema: z.preprocess(vacio, z.enum(['comprar', 'alquilar', 'invertir', 'propietarios', 'vivir', 'mercado']).optional()),
     portada_foto: strOpc(),

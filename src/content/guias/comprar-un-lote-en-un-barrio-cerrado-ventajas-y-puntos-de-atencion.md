@@ -103,6 +103,10 @@ fr:
 
     - [Terrains à vendre](/fr/terrenos/)
     - [Acheter un bien immobilier au Paraguay : du contrat préliminaire à l’acte notarié](/fr/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - [Réseau des villes créatives de l’UNESCO](https://www.unesco.org/en/creative-cities/aregua)
 en:
   titulo: 'Buying a plot in a gated community: the upsides and what to watch'
   slug: buying-a-plot-in-a-gated-community-the-upsides-and-what-to-watch
@@ -199,6 +203,10 @@ en:
 
     - [Plots for sale](/en/terrenos/)
     - [Buying Property in Paraguay: From the Preliminary Agreement to the Notarial Deed](/en/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Sources
+
+    - [UNESCO Creative Cities Network](https://www.unesco.org/en/creative-cities/aregua)
 pt:
   titulo: 'Comprar um lote em condomínio fechado: vantagens e pontos de atenção'
   slug: comprar-um-lote-em-condominio-fechado-vantagens-e-pontos-de-atencao
@@ -295,6 +303,10 @@ pt:
 
     - [Terrenos à venda](/pt/terrenos/)
     - [Comprar um imóvel no Paraguai: do boleto à escritura](/pt/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+    ## Fontes
+
+    - [Rede de Cidades Criativas da UNESCO](https://www.unesco.org/en/creative-cities/aregua)
 ---
 Comprar un lote en un barrio cerrado permite proyectar tu casa dentro de un conjunto urbanizado, con espacios comunes y acceso controlado. Estos proyectos se multiplican alrededor de Asunción: en Luque, en Areguá y en todo el departamento Central.
 
@@ -386,3 +398,7 @@ En la [página de Areguá Forest](/terrenos/aregua-forest/) vas a encontrar la g
 
 - [Terrenos en venta](/terrenos/)
 - [Comprar un inmueble en Paraguay: del boleto a la escritura](/blog/comprar-un-inmueble-en-paraguay-paso-a-paso/)
+
+## Fuentes
+
+- [Red de Ciudades Creativas de la UNESCO](https://www.unesco.org/en/creative-cities/aregua)

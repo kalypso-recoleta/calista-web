@@ -7,9 +7,9 @@ import Compartir from '../Compartir.astro';
 import { whatsappLink } from '../../lib/whatsapp';
 import { img } from '../../lib/cloudinary';
 import { localizar, cuerpoTraducido } from '../../lib/traduccion';
-import { guiasPublicadas, CATEGORIAS, TEMA_TXT, hrefGuia, alternosGuia } from '../../lib/guias';
+import { guiasPublicadas, CATEGORIAS, TEMA_TXT, hrefGuia, alternosGuia, esencialGuia } from '../../lib/guias';
 import { getLangFromUrl, localizePath } from '../../i18n/utils';
-import { ID } from '../../lib/entidades';
+import { ID, bioHelene } from '../../lib/entidades';
 
 interface Props { guia: CollectionEntry<'guias'>; slug: string }
 const { guia, slug } = Astro.props;
@@ -34,6 +34,7 @@ const url = new URL(Astro.url.pathname, Astro.site).toString();
 const AUTORA = 'Hélène Montourcy';
 const rol = { es: 'Fundadora de CALISTA', fr: 'Fondatrice de CALISTA', en: 'Founder of CALISTA', pt: 'Fundadora da CALISTA' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const por = { es: 'Por', fr: 'Par', en: 'By', pt: 'Por' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const bio = bioHelene(lang);
 const ld = {
   '@context': 'https://schema.org',
   '@type': d.categoria === 'actualidad' ? 'NewsArticle' : 'Article',
@@ -44,7 +45,7 @@ const ld = {
   mainEntityOfPage: url,
   ...(d.portada_foto ? { image: new URL(d.portada_foto, Astro.site).toString() } : {}),
   ...(d.actualizado ? { dateModified: d.actualizado.toISOString() } : {}),
-  author: { '@type': 'Person', '@id': ID.helene, name: AUTORA, jobTitle: rol, url: new URL(L('/historia').replace(/\/?$/, '/'), Astro.site).toString() },
+  author: { '@type': 'Person', '@id': ID.helene, name: AUTORA, jobTitle: rol, description: bio, url: new URL(L('/historia').replace(/\/?$/, '/'), Astro.site).toString() },
   publisher: { '@id': ID.agencia },
 };
 // Fil d'Ariane (données structurées) : Accueil › Blog › article
@@ -57,6 +58,10 @@ const migasLd = {
     { '@type': 'ListItem', position: 3, name: d.titulo, item: url },
   ],
 };
+const esencial = esencialGuia(guia, lang);
+const esencialTxt = { es: 'Lo esencial', fr: 'L’essentiel à retenir', en: 'Key takeaways', pt: 'O essencial' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const bioTxt = { es: 'Sobre la autora', fr: 'À propos de l’auteure', en: 'About the author', pt: 'Sobre a autora' }[lang as 'es' | 'fr' | 'en' | 'pt'];
+const trayectoriaTxt = { es: 'Conocer su trayectoria', fr: 'Découvrir son parcours', en: 'Read her background', pt: 'Conhecer sua trajetória' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const actTxt = { es: 'Actualizado el', fr: 'Mis à jour le', en: 'Updated', pt: 'Atualizado em' }[lang as 'es' | 'fr' | 'en' | 'pt'];
 const fmt = (f: Date) => f.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
@@ -70,9 +75,23 @@ const fmt = (f: Date) => f.toLocaleDateString(locale, { day: 'numeric', month: '
       <p class="firma">{por} <a href={L('/historia')}>{AUTORA}</a>, {rol} · <time datetime={d.fecha.toISOString()}>{fmt(d.fecha)}</time>{d.actualizado && <> · {actTxt} <time datetime={d.actualizado.toISOString()}>{fmt(d.actualizado)}</time></>}</p>
       <Compartir titulo={d.titulo} url={url} />
       {d.portada_foto && <img class="portada" src={img(d.portada_foto, { w: 1200, h: 630 })} alt={d.titulo} width="1200" height="630" />}
+      {esencial.length > 0 && (
+        <aside class="esencial" aria-label={esencialTxt}>
+          <h2>{esencialTxt}</h2>
+          <ul>{esencial.map((e) => <li>{e}</li>)}</ul>
+        </aside>
+      )}
       <div class="prose">
         {html ? <Fragment set:html={html} /> : <Content />}
       </div>
+      <aside class="autora" aria-label={bioTxt}>
+        <img src="/equipo/helene-montourcy.jpg" alt={AUTORA} width="72" height="72" loading="lazy" />
+        <div>
+          <p class="autora-t">{bioTxt}</p>
+          <p><strong>{AUTORA}</strong>. {bio}</p>
+          <p><a href={L('/historia')}>{trayectoriaTxt} →</a></p>
+        </div>
+      </aside>
       <p class="aviso">{x.aviso}</p>
       <div class="share-fin"><Compartir titulo={d.titulo} url={url} /></div>
       <div class="cta" id="pregunta">
@@ -114,6 +133,16 @@ const fmt = (f: Date) => f.toLocaleDateString(locale, { day: 'numeric', month: '
   .migas { display: flex; align-items: center; gap: 0.8rem; }
   .cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--violet-soft); color: var(--violet); }
   .cat.actualidad { background: #e6f4ea; color: #1e7a3c; }
+  .cat.opinion { background: #fdf0e1; color: #9a5512; }
+  .esencial { margin: 0 0 1.8rem; padding: 1.1rem 1.4rem; background: var(--violet-soft); border-left: 5px solid var(--violet); border-radius: var(--radius); }
+  .esencial h2 { margin: 0 0 0.5rem; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--violet); }
+  .esencial ul { margin: 0; padding-left: 1.2rem; }
+  .esencial li { margin: 0.35rem 0; line-height: 1.55; }
+  .autora { display: flex; gap: 1rem; align-items: flex-start; margin-top: 2.2rem; padding: 1.2rem 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); }
+  .autora img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; }
+  .autora p { margin: 0 0 0.4rem; font-size: 0.95rem; line-height: 1.6; }
+  .autora .autora-t { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .autora a { color: var(--violet); font-weight: 600; text-decoration: none; }
   .migas a.tema { font-weight: 600; font-size: 0.85rem; color: var(--muted); }
   .migas a { color: var(--violet); text-decoration: none; font-weight: 600; }
   h1 { margin-bottom: 0.6rem; }

@@ -114,6 +114,11 @@ fr:
     - [Kalypso Recoleta : appartements sur plan](/fr/desarrollos/kalypso-recoleta/)
     - [Biens à vendre](/fr/comprar/)
     - [Asunción grandit en hauteur : construit-on ce dont les gens ont besoin ?](/fr/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
+
+    ## Sources
+
+    - [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/)
+    - [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/)
 en:
   titulo: 'Branded residences in Asunción: is there a market for this level of luxury?'
   slug: branded-residences-in-asuncion-is-there-a-market-for-this-level-of-luxury
@@ -220,6 +225,11 @@ en:
     - [Kalypso Recoleta: off-plan apartments](/en/desarrollos/kalypso-recoleta/)
     - [Properties for sale](/en/comprar/)
     - [Asunción is growing upwards: are we building what people need?](/en/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
+
+    ## Sources
+
+    - [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/)
+    - [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/)
 pt:
   titulo: 'Branded residences em Assunção: existe mercado para este nível de luxo?'
   slug: branded-residences-em-assuncao-existe-mercado-para-este-nivel-de-luxo
@@ -326,6 +336,11 @@ pt:
     - [Kalypso Recoleta: apartamentos na planta](/pt/desarrollos/kalypso-recoleta/)
     - [Imóveis à venda](/pt/comprar/)
     - [Assunção cresce na vertical: estamos construindo o que as pessoas precisam?](/pt/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
+
+    ## Fontes
+
+    - [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/)
+    - [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/)
 ---
 
 Asunción suma una nueva propuesta al segmento residencial de lujo. Grupo Petra presentó **Royale by Pininfarina**, anunciado como la primera _branded residence_ de Paraguay y el primer proyecto de la casa italiana de diseño en el país. La presentación se realizó en Miami y fue difundida en septiembre de 2026 por [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/).
@@ -427,3 +442,8 @@ La llegada de las _branded residences_ abre una conversación interesante. Su 
 - [Kalypso Recoleta: departamentos en pozo](/desarrollos/kalypso-recoleta/)
 - [Departamentos y casas en venta](/comprar/)
 - [Asunción crece en altura: ¿construimos lo que la gente necesita?](/blog/asuncion-crece-en-altura-construimos-lo-que-la-gente-necesita/)
+
+## Fuentes
+
+- [ABC Color](https://www.abc.com.py/empresariales/2026/09/25/grupo-petra-y-pininfarina-presentan-la-primera-branded-residence-en-paraguay/)
+- [ABC Color](https://www.abc.com.py/nacionales/2026/09/29/confianza-de-marca-global-en-una-empresa-paraguaya-sella-un-hito-en-el-real-estate/)

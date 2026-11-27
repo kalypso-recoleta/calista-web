@@ -45,3 +45,19 @@ export const calistaMqLd = {
   address: { '@type': 'PostalAddress', addressLocality: 'Schœlcher', addressRegion: 'Martinique', addressCountry: 'FR' },
   founder: { '@id': ID.helene },
 };
+
+/**
+ * Biographie courte d'Hélène Montourcy (fin des articles + données structurées Person).
+ * Années calculées au moment du build : promotion immobilière depuis 2001, au Paraguay depuis 2015
+ * (mêmes repères que la page Historia).
+ */
+export function bioHelene(lang: string): string {
+  const anos = new Date().getFullYear() - 2001;
+  const textos: Record<string, string> = {
+    es: `Fundadora y directora de CALISTA Inmobiliaria – GRUPO METRIA. ${anos} años de experiencia en el sector inmobiliario y la promoción inmobiliaria. Instalada en Paraguay desde 2015, acompaña a propietarios e inversores nacionales e internacionales en sus proyectos inmobiliarios.`,
+    fr: `Fondatrice et directrice de CALISTA Inmobiliaria – GRUPO METRIA. ${anos} ans d’expérience dans le secteur immobilier et la promotion immobilière. Installée au Paraguay depuis 2015, elle accompagne les propriétaires et les investisseurs nationaux et internationaux dans leurs projets immobiliers.`,
+    en: `Founder and director of CALISTA Inmobiliaria – GRUPO METRIA. ${anos} years of experience in real estate and property development. Based in Paraguay since 2015, she supports local and international owners and investors in their real estate projects.`,
+    pt: `Fundadora e diretora da CALISTA Inmobiliaria – GRUPO METRIA. ${anos} anos de experiência no setor imobiliário e na incorporação imobiliária. Radicada no Paraguai desde 2015, acompanha proprietários e investidores nacionais e internacionais em seus projetos imobiliários.`,
+  };
+  return textos[lang] ?? textos.es;
+}
