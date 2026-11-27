@@ -21,6 +21,12 @@ texto: |-
   - **Calles tranquilas:** muchas calles internas empedradas, lejos del tránsito de las avenidas.
 
   En Recoleta construimos [Kalypso Recoleta](/desarrollos/kalypso-recoleta), nuestro propio edificio en pozo. Arriba encontrás las propiedades que tenemos hoy en el barrio, actualizadas automáticamente.
+
+  ## Por qué invertir en Recoleta
+
+  - **Un barrio de moda**, con muchos eventos culturales.
+  - **Comercios y gastronomía a pasos:** el Shopping Mariscal y La Cuadrita, una calle peatonal con cafés y restaurantes.
+  - **Una fuerte demanda de alquiler**, con precios que siguen siendo razonables frente a los barrios vecinos.
 fr:
   intro: Recoleta est un quartier résidentiel d'Asunción, voisin de Villa Morra. C'est là que nous construisons Kalypso Recoleta.
   texto: |-
@@ -40,6 +46,12 @@ fr:
     - **Des rues calmes :** beaucoup de rues intérieures pavées, à l'écart de la circulation des avenues.
 
     C'est à Recoleta que nous construisons [Kalypso Recoleta](/fr/desarrollos/kalypso-recoleta), notre propre immeuble sur plan. Plus haut, vous trouvez nos biens actuels dans le quartier, mis à jour automatiquement.
+
+    ## Pourquoi investir à Recoleta
+
+    - **Un quartier qui a le vent en poupe**, avec de nombreux événements culturels.
+    - **Commerces et restaurants à deux pas :** le Shopping Mariscal et La Cuadrita, une rue piétonne bordée de cafés et de restaurants.
+    - **Une forte demande locative**, avec des prix encore raisonnables par rapport aux quartiers voisins.
 en:
   intro: Recoleta is a residential neighbourhood of Asunción, next to Villa Morra. It is where we are building Kalypso Recoleta.
   texto: |-
@@ -59,6 +71,12 @@ en:
     - **Quiet streets:** many cobbled inner streets, away from the avenue traffic.
 
     Recoleta is where we are building [Kalypso Recoleta](/en/desarrollos/kalypso-recoleta), our own off-plan development. Above, you will find the properties we currently have in the neighbourhood, updated automatically.
+
+    ## Why invest in Recoleta
+
+    - **An up-and-coming neighbourhood**, with many cultural events.
+    - **Shops and restaurants nearby:** Shopping Mariscal and La Cuadrita, a pedestrian street lined with cafés and restaurants.
+    - **Strong rental demand**, with prices still reasonable compared with neighbouring areas.
 pt:
   intro: Recoleta é um bairro residencial de Assunção, vizinho de Villa Morra. É lá que estamos construindo o Kalypso Recoleta.
   texto: |-
@@ -78,4 +96,10 @@ pt:
     - **Ruas tranquilas:** muitas ruas internas de paralelepípedo, longe do trânsito das avenidas.
 
     É em Recoleta que estamos construindo o [Kalypso Recoleta](/pt/desarrollos/kalypso-recoleta), nosso próprio edifício na planta. Acima, você encontra os imóveis que temos hoje no bairro, atualizados automaticamente.
+
+    ## Por que investir em Recoleta
+
+    - **Um bairro em alta**, com muitos eventos culturais.
+    - **Comércio e gastronomia a poucos passos:** o Shopping Mariscal e La Cuadrita, uma rua de pedestres com cafés e restaurantes.
+    - **Forte demanda de aluguel**, com preços ainda razoáveis em comparação com os bairros vizinhos.
 ---

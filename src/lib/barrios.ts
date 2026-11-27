@@ -28,7 +28,8 @@ function coincide(z: CollectionEntry<'barrios'>, b: CollectionEntry<'biens'>): b
 
 let cache: Zona[] | null = null;
 
-/** Zones ayant au moins une annonce en ligne (hors alquiler temporal), triées par nombre d'annonces */
+/** Zones publiées : au moins une annonce en ligne (hors alquiler temporal) OU un texte de présentation.
+ *  Triées par nombre d'annonces (les zones sans annonce, présentes pour le référencement, en dernier). */
 export async function zonasConBienes(): Promise<Zona[]> {
   if (cache) return cache;
   const [zonas, biens] = await Promise.all([
@@ -43,7 +44,7 @@ export async function zonasConBienes(): Promise<Zona[]> {
       ciudad: z.data.ciudad,
       bienes: biens.filter((b) => coincide(z, b)),
     }))
-    .filter((z) => z.bienes.length > 0)
+    .filter((z) => z.bienes.length > 0 || !!z.entry.data.texto?.trim())
     .sort((a, b) => b.bienes.length - a.bienes.length || a.nombre.localeCompare(b.nombre));
   return cache;
 }

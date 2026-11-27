@@ -9,10 +9,10 @@ import { getLangFromUrl, localizePath } from '../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const L = (p: string) => localizePath(p, lang);
 const x = {
-  es: { eyebrow: 'Barrios', h1: 'Propiedades por barrio', lead: 'Elegí un barrio de Asunción o una ciudad de Gran Asunción y mirá todas nuestras propiedades en esa zona.', n: (k: number) => `${k} ${k === 1 ? 'propiedad' : 'propiedades'}` },
-  fr: { eyebrow: 'Quartiers', h1: 'Nos biens par quartier', lead: 'Choisissez un quartier d’Asunción ou une ville du Grand Asunción pour voir tous nos biens dans ce secteur.', n: (k: number) => `${k} ${k === 1 ? 'bien' : 'biens'}` },
-  en: { eyebrow: 'Neighbourhoods', h1: 'Properties by neighbourhood', lead: 'Choose a neighbourhood of Asunción or a city of Greater Asunción to see all our properties there.', n: (k: number) => `${k} ${k === 1 ? 'property' : 'properties'}` },
-  pt: { eyebrow: 'Bairros', h1: 'Imóveis por bairro', lead: 'Escolha um bairro de Assunção ou uma cidade da Grande Assunção e veja todos os nossos imóveis nessa região.', n: (k: number) => `${k} ${k === 1 ? 'imóvel' : 'imóveis'}` },
+  es: { eyebrow: 'Barrios', h1: 'Propiedades por barrio', lead: 'Elegí un barrio de Asunción o una ciudad de Gran Asunción y mirá todas nuestras propiedades en esa zona.', n: (k: number) => `${k} ${k === 1 ? 'propiedad' : 'propiedades'}`, guia: 'Guía del barrio', tabla: '¿Qué barrio elegir en Asunción?', tablaLead: 'Cada barrio tiene su perfil. Elegí según lo que buscás: vivir, alquilar o invertir a largo plazo.', cols: ['Barrio', 'En pocas palabras', 'Ideal para'] },
+  fr: { eyebrow: 'Quartiers', h1: 'Nos biens par quartier', lead: 'Choisissez un quartier d’Asunción ou une ville du Grand Asunción pour voir tous nos biens dans ce secteur.', n: (k: number) => `${k} ${k === 1 ? 'bien' : 'biens'}`, guia: 'Guide du quartier', tabla: 'Quel quartier choisir à Asunción ?', tablaLead: 'Chaque quartier a son profil. Choisissez selon ce que vous cherchez : habiter, louer ou investir à long terme.', cols: ['Quartier', 'En quelques mots', 'Idéal pour'] },
+  en: { eyebrow: 'Neighbourhoods', h1: 'Properties by neighbourhood', lead: 'Choose a neighbourhood of Asunción or a city of Greater Asunción to see all our properties there.', n: (k: number) => `${k} ${k === 1 ? 'property' : 'properties'}`, guia: 'Neighbourhood guide', tabla: 'Which neighbourhood to choose in Asunción?', tablaLead: 'Each neighbourhood has its own profile. Choose according to what you are looking for: living, renting out or investing for the long term.', cols: ['Neighbourhood', 'In a few words', 'Best for'] },
+  pt: { eyebrow: 'Bairros', h1: 'Imóveis por bairro', lead: 'Escolha um bairro de Assunção ou uma cidade da Grande Assunção e veja todos os nossos imóveis nessa região.', n: (k: number) => `${k} ${k === 1 ? 'imóvel' : 'imóveis'}`, guia: 'Guia do bairro', tabla: 'Qual bairro escolher em Assunção?', tablaLead: 'Cada bairro tem seu perfil. Escolha de acordo com o que você procura: morar, alugar ou investir a longo prazo.', cols: ['Bairro', 'Em poucas palavras', 'Ideal para'] },
 }[lang as 'es' | 'fr' | 'en' | 'pt']!;
 
 const zonas = (await zonasConBienes()).map((z) => {
@@ -20,6 +20,25 @@ const zonas = (await zonasConBienes()).map((z) => {
     .find((b) => b.data.portada_foto || b.data.imagenes[0]);
   return { ...z, foto: conFoto ? conFoto.data.portada_foto || conFoto.data.imagenes[0] : undefined };
 });
+// Tableau comparatif des quartiers d'Asunción : qualités seulement, sans prix (rien à mettre à jour).
+// Un quartier sans page publiée s'affiche sans lien.
+type Fila = { slug: string; nombre: string; t: Record<'es' | 'fr' | 'en' | 'pt', [string, string]> };
+const FILAS: Fila[] = [
+  { slug: 'villa-morra', nombre: 'Villa Morra', t: { es: ['El barrio de moda: bares, restaurantes, vida nocturna', 'Asegurar el capital y revender fácil'], fr: ['Le quartier à la mode : bars, restaurants, vie nocturne', 'Sécuriser son capital et revendre facilement'], en: ['The trendy neighbourhood: bars, restaurants, nightlife', 'Protecting your capital and reselling easily'], pt: ['O bairro da moda: bares, restaurantes, vida noturna', 'Proteger o capital e revender com facilidade'] } },
+  { slug: 'ycua-sati', nombre: 'Ycuá Satí', t: { es: ['El eje corporativo, el «nuevo centro» de Asunción', 'Alquilar a profesionales, siempre con cochera'], fr: ["L'eje corporativo, le « nouveau centre » d'Asunción", 'Louer à des professionnels, toujours avec parking'], en: ["The business district, Asunción's \"new downtown\"", 'Renting to professionals, always with parking'], pt: ['O eixo corporativo, o «novo centro» de Assunção', 'Alugar para profissionais, sempre com vaga de garagem'] } },
+  { slug: 'las-lomas', nombre: 'Las Lomas', t: { es: ['Residencial, con muy buena reputación, cerca del Shopping del Sol', 'Vivir o alquilar en una zona estratégica'], fr: ['Résidentiel, très bonne réputation, près du Shopping del Sol', 'Habiter ou louer dans un emplacement stratégique'], en: ['Residential, highly regarded, close to Shopping del Sol', 'Living or renting in a strategic location'], pt: ['Residencial, com ótima reputação, perto do Shopping del Sol', 'Morar ou alugar em uma localização estratégica'] } },
+  { slug: 'manora', nombre: 'Manorá', t: { es: ['Residencial, con casas muy lindas', 'Familias y direcciones buscadas'], fr: ['Résidentiel, avec de très belles maisons', 'Les familles, une adresse recherchée'], en: ['Residential, with beautiful houses', 'Families, a sought-after address'], pt: ['Residencial, com casas muito bonitas', 'Famílias, um endereço valorizado'] } },
+  { slug: 'recoleta', nombre: 'Recoleta', t: { es: ['Un barrio de moda, cerca del Shopping Mariscal y La Cuadrita', 'Alquilar e invertir'], fr: ['Un quartier qui a le vent en poupe, près du Shopping Mariscal et de La Cuadrita', 'Louer et investir'], en: ['An up-and-coming area near Shopping Mariscal and La Cuadrita', 'Renting out and investing'], pt: ['Um bairro em alta, perto do Shopping Mariscal e de La Cuadrita', 'Alugar e investir'] } },
+  { slug: 'las-carmelitas', nombre: 'Las Carmelitas', t: { es: ['Vida a toda hora: restaurantes, bares, oficinas', 'Alquilar a jóvenes profesionales'], fr: ['Vivant à toute heure : restaurants, bars, bureaux', 'Louer à de jeunes actifs'], en: ['Lively around the clock: restaurants, bars, offices', 'Renting to young professionals'], pt: ['Movimentado a qualquer hora: restaurantes, bares, escritórios', 'Alugar para jovens profissionais'] } },
+  { slug: 'mburucuya', nombre: 'Mburucuyá', t: { es: ['Quizás el barrio más verde, con muchas plazas', 'Vivir y buscar oportunidades'], fr: ['Sans doute le quartier le plus vert, avec de nombreuses places', 'Habiter et chercher les bonnes affaires'], en: ['Probably the greenest neighbourhood, with many squares', 'Living and finding good deals'], pt: ['Talvez o bairro mais verde, com muitas praças', 'Morar e encontrar boas oportunidades'] } },
+  { slug: 'trinidad', nombre: 'Trinidad', t: { es: ['Tranquilo y verde, vecino de Mburucuyá', 'Vivir en familia'], fr: ['Calme et vert, voisin de Mburucuyá', 'Habiter en famille'], en: ['Quiet and green, next to Mburucuyá', 'Family living'], pt: ['Tranquilo e verde, vizinho de Mburucuyá', 'Morar em família'] } },
+  { slug: 'jara', nombre: 'Jara', t: { es: ['En pleno desarrollo, cerca de colegios y universidades', 'Invertir antes de la suba'], fr: ['En plein développement, près des écoles et universités', 'Investir avant la hausse'], en: ['Developing fast, close to schools and universities', 'Investing before prices rise'], pt: ['Em pleno desenvolvimento, perto de escolas e universidades', 'Investir antes da valorização'] } },
+  { slug: 'las-mercedes', nombre: 'Las Mercedes', t: { es: ['Un barrio en ascenso, con cada vez más comercios', 'Invertir y alquilar'], fr: ['Un quartier qui monte, avec de plus en plus de commerces', 'Investir et louer'], en: ['An up-and-coming area with more and more shops', 'Investing and renting out'], pt: ['Um bairro em alta, com cada vez mais comércio', 'Investir e alugar'] } },
+  { slug: 'herrera', nombre: 'Herrera', t: { es: ['Todavía poco buscado, junto a las zonas más demandadas', 'Apostar a la valorización'], fr: ['Encore boudé, voisin des zones les plus demandées', 'Parier sur la plus-value'], en: ['Still overlooked, next to the most sought-after areas', 'Betting on capital growth'], pt: ['Ainda pouco procurado, ao lado das áreas mais disputadas', 'Apostar na valorização'] } },
+  { slug: 'centro', nombre: 'Centro', t: { es: ['Histórico, con una arquitectura muy linda, en revitalización', 'Invertir a largo plazo'], fr: ['Historique, très belle architecture, en revitalisation', 'Investir à long terme'], en: ['Historic, beautiful architecture, under revitalisation', 'Long-term investment'], pt: ['Histórico, com arquitetura muito bonita, em revitalização', 'Investir a longo prazo'] } },
+];
+const L2 = (lang as 'es' | 'fr' | 'en' | 'pt') in FILAS[0].t ? (lang as 'es' | 'fr' | 'en' | 'pt') : 'es';
+const conPagina = new Set(zonas.map((z) => z.slug));
 ---
 
 <Layout title={x.h1} description={x.lead}>
@@ -37,12 +56,30 @@ const zonas = (await zonasConBienes()).map((z) => {
               {z.foto && <img src={img(z.foto, { w: 600, h: 400 })} alt={z.nombre} width="600" height="400" loading="lazy" />}
               <span class="txt">
                 <strong>{z.nombre}</strong>
-                <span>{z.nombre !== z.ciudad ? `${z.ciudad} · ` : ''}{x.n(z.bienes.length)}</span>
+                <span>{z.nombre !== z.ciudad ? `${lang === 'pt' ? z.ciudad.replace('Asunción', 'Assunção') : z.ciudad} · ` : ''}{z.bienes.length > 0 ? x.n(z.bienes.length) : x.guia}</span>
               </span>
             </a>
           </li>
         ))}
       </ul>
+      <section class="comparativa">
+        <h2>{x.tabla}</h2>
+        <p>{x.tablaLead}</p>
+        <div class="tabla-wrap">
+          <table>
+            <thead><tr>{x.cols.map((c) => <th scope="col">{c}</th>)}</tr></thead>
+            <tbody>
+              {FILAS.map((f) => (
+                <tr>
+                  <th scope="row">{conPagina.has(f.slug) ? <a href={L(`/barrios/${f.slug}`)}>{f.nombre}</a> : f.nombre}</th>
+                  <td>{f.t[L2][0]}</td>
+                  <td>{f.t[L2][1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
   </section>
 </Layout>
@@ -56,4 +93,13 @@ const zonas = (await zonasConBienes()).map((z) => {
   .txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem 1.1rem; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: #fff; display: flex; flex-direction: column; }
   .txt strong { font-size: 1.25rem; }
   .txt span { font-size: 0.9rem; opacity: 0.9; }
+  .comparativa { margin-top: 3rem; max-width: 980px; }
+  .comparativa h2 { margin: 0 0 0.6rem; padding-left: 0.9rem; border-left: 4px solid var(--violet); font-size: 1.3rem; }
+  .comparativa p { margin: 0 0 1.2rem; color: var(--muted); }
+  .tabla-wrap { overflow-x: auto; }
+  .comparativa table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .comparativa th, .comparativa td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .comparativa thead th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+  .comparativa tbody th { white-space: nowrap; }
+  .comparativa tbody th a { color: var(--violet); font-weight: 600; text-decoration: none; }
 </style>

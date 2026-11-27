@@ -231,8 +231,8 @@ const temporales = defineCollection({
  * avec un court texte et toutes les annonces de la zone, mises à jour seules.
  * Une annonce appartient à la zone si sa « Ciudad » correspond et si son
  * « Barrio » correspond au nom ou à une « Otra forma de escribirlo »
- * (ou si « Toda la ciudad » est coché, ex. Luque). La page n'existe que s'il y a
- * au moins une annonce en ligne.
+ * (ou si « Toda la ciudad » est coché, ex. Luque). La page existe s'il y a au moins
+ * une annonce en ligne, ou un texte de présentation (pages quartier pour le référencement).
  */
 const textoTrad = z.preprocess((v) => (v == null ? undefined : v), z.object({ intro: strOpc(), texto: strOpc() }).optional());
 const barrios = defineCollection({

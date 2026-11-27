@@ -20,6 +20,11 @@ texto: |-
   - **Ubicación central:** entre el Centro Histórico y Villa Morra, a pasos de la avenida España y cerca de la bahía y la Costanera.
   - **Servicios a mano:** universidades, sanatorios, embajadas y sedes institucionales dentro del mismo barrio, y el Paseo Las Mercedes para las compras.
   - **Encanto y renovación:** calles arboladas y casonas antiguas junto a edificios nuevos, con una oferta de restaurantes y ocio en crecimiento.
+
+  ## Por qué invertir en Las Mercedes
+
+  - **Un barrio en ascenso**, cerca del centro.
+  - **Cada vez más comercios de barrio**, que le dan vida y lo vuelven atractivo para vivir y alquilar.
 fr:
   intro: Las Mercedes est un quartier d'Asunción, entre le centre historique et Villa Morra, près de la Costanera.
   texto: |-
@@ -36,6 +41,11 @@ fr:
     - **Une situation centrale :** entre le centre historique et Villa Morra, à deux pas de l'avenue España et près de la baie et de la Costanera.
     - **Les services à portée de main :** universités, cliniques, ambassades et sièges institutionnels dans le quartier même, et le Paseo Las Mercedes pour les courses.
     - **Charme et renouveau :** rues arborées et vieilles demeures à côté d'immeubles neufs, avec une offre de restaurants et de loisirs en plein essor.
+
+    ## Pourquoi investir à Las Mercedes
+
+    - **Un quartier qui monte**, proche du centre.
+    - **De plus en plus de commerces de proximité**, qui l'animent et le rendent attractif pour habiter et louer.
 en:
   intro: Las Mercedes is a neighbourhood of Asunción, between the historic centre and Villa Morra, close to the Costanera.
   texto: |-
@@ -52,6 +62,11 @@ en:
     - **Central location:** between the historic centre and Villa Morra, steps from España Avenue and close to the bay and the Costanera.
     - **Services at hand:** universities, clinics, embassies and institutional headquarters within the neighbourhood itself, plus Paseo Las Mercedes for shopping.
     - **Charm and renewal:** tree-lined streets and old mansions next to new buildings, with a growing choice of restaurants and leisure.
+
+    ## Why invest in Las Mercedes
+
+    - **An up-and-coming neighbourhood**, close to downtown.
+    - **More and more local shops**, making it lively and attractive for living and renting.
 pt:
   intro: Las Mercedes é um bairro de Assunção, entre o Centro Histórico e Villa Morra, perto da Costanera.
   texto: |-
@@ -68,4 +83,9 @@ pt:
     - **Localização central:** entre o Centro Histórico e Villa Morra, a poucos passos da avenida España e perto da baía e da Costanera.
     - **Serviços à mão:** universidades, sanatórios, embaixadas e sedes institucionais dentro do próprio bairro, e o Paseo Las Mercedes para as compras.
     - **Charme e renovação:** ruas arborizadas e casarões antigos ao lado de prédios novos, com uma oferta crescente de restaurantes e lazer.
+
+    ## Por que investir em Las Mercedes
+
+    - **Um bairro em alta**, perto do centro.
+    - **Cada vez mais comércio de bairro**, que dá vida à região e a torna atraente para morar e alugar.
 ---

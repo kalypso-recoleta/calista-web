@@ -16,7 +16,9 @@ const { zona } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const L = (p: string) => localizePath(p, lang);
 
-const lugar = zona.nombre === zona.ciudad ? zona.nombre : `${zona.nombre}, ${zona.ciudad}`;
+// En portugais, la ville s'écrit « Assunção » (c'est ce que cherchent les Brésiliens)
+const ciudadTxt = lang === 'pt' ? zona.ciudad.replace('Asunción', 'Assunção') : zona.ciudad;
+const lugar = zona.nombre === zona.ciudad ? zona.nombre : `${zona.nombre}, ${ciudadTxt}`;
 const TXT = {
   es: { eyebrow: 'Barrios', h1: `Propiedades en ${zona.nombre}`, meta: `Propiedades en venta y alquiler en ${lugar}`, otros: 'Otros barrios', todos: 'Ver todos los barrios', cifras: `${zona.nombre} con CALISTA, hoy`, venta: 'En venta', alquiler: 'En alquiler', prop: (n: number) => (n === 1 ? '1 propiedad' : `${n} propiedades`), desde: 'desde', hasta: 'hasta', nota: 'Datos calculados automáticamente a partir de nuestras propiedades publicadas.' },
   fr: { eyebrow: 'Quartiers', h1: `Biens à ${zona.nombre}`, meta: `Biens à vendre et à louer à ${lugar}`, otros: 'Autres quartiers', todos: 'Voir tous les quartiers', cifras: `${zona.nombre} chez CALISTA, aujourd'hui`, venta: 'À vendre', alquiler: 'À louer', prop: (n: number) => (n === 1 ? '1 bien' : `${n} biens`), desde: 'à partir de', hasta: "jusqu'à", nota: 'Chiffres calculés automatiquement à partir de nos annonces en ligne.' },
@@ -60,7 +62,7 @@ const description = `${x.meta}. ${intro}`.trim();
 ---
 
 <Layout title={x.meta} description={description}>
-  <ListadoBiens eyebrow={`${x.eyebrow} · ${zona.ciudad}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros>
+  <ListadoBiens eyebrow={`${x.eyebrow} · ${ciudadTxt}`} titulo={x.h1} intro={intro} biens={biens} sinFiltros>
     {zona.slug === 'aregua' && <BannerAregua slot="intro" />}
   </ListadoBiens>
   {(textoHtml || cifras.length > 0) && (
@@ -89,7 +91,7 @@ const description = `${x.meta}. ${intro}`.trim();
       <div class="container">
         <h2>{x.otros}</h2>
         <ul class="chips">
-          {otras.map((z) => <li><a href={L(`/barrios/${z.slug}`)}>{z.nombre} <span>{z.bienes.length}</span></a></li>)}
+          {otras.map((z) => <li><a href={L(`/barrios/${z.slug}`)}>{z.nombre} {z.bienes.length > 0 && <span>{z.bienes.length}</span>}</a></li>)}
         </ul>
         <p><a class="todos" href={L('/barrios')}>{x.todos} →</a></p>
       </div>

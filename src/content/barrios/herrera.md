@@ -3,7 +3,7 @@ nombre: Herrera
 ciudad: Asunción
 toda_la_ciudad: false
 alias: []
-intro: Herrera es un barrio residencial de Asunción.
+intro: Herrera es un barrio residencial de Asunción, junto a las zonas más demandadas de la ciudad.
 texto: |-
   ## Vivir en Herrera
 
@@ -18,8 +18,13 @@ texto: |-
   - **Muy central:** cerca de la avenida Madame Lynch, del Shopping Mariscal y de los shoppings de Santa Teresa y Aviadores del Chaco.
   - **Grandes avenidas a mano:** Mariscal López y Madame Lynch para moverse rápido por la ciudad.
   - **Ambiente residencial:** calles arboladas, casas amplias y comercios de barrio sobre Mariscal López.
+
+  ## Por qué invertir en Herrera
+
+  - **Todavía poco buscado**, con precios interesantes.
+  - **Junto a las zonas con mayor demanda** de Asunción: un barrio con potencial de valorización.
 fr:
-  intro: Herrera est un quartier résidentiel d'Asunción.
+  intro: Herrera est un quartier résidentiel d'Asunción, voisin des zones les plus demandées de la ville.
   texto: |-
     ## Vivre à Herrera
 
@@ -34,8 +39,13 @@ fr:
     - **Très central :** près de l'avenue Madame Lynch, du Shopping Mariscal et des centres commerciaux de Santa Teresa et d'Aviadores del Chaco.
     - **Les grands axes à portée :** Mariscal López et Madame Lynch pour circuler vite dans la ville.
     - **Une ambiance résidentielle :** rues arborées, maisons spacieuses et commerces de proximité sur Mariscal López.
+
+    ## Pourquoi investir à Herrera
+
+    - **Encore boudé**, donc des prix intéressants.
+    - **Voisin des zones les plus demandées** d'Asunción : un quartier au fort potentiel de valorisation.
 en:
-  intro: Herrera is a residential neighbourhood of Asunción.
+  intro: Herrera is a residential neighbourhood of Asunción, next to the city's most sought-after areas.
   texto: |-
     ## Living in Herrera
 
@@ -50,8 +60,13 @@ en:
     - **Very central:** close to Madame Lynch Avenue, Shopping Mariscal and the malls on Santa Teresa and Aviadores del Chaco.
     - **Major avenues at hand:** Mariscal López and Madame Lynch to get around the city quickly.
     - **Residential feel:** tree-lined streets, spacious houses and local shops along Mariscal López.
+
+    ## Why invest in Herrera
+
+    - **Still overlooked**, so prices remain attractive.
+    - **Next to the most sought-after areas** of Asunción: strong potential for capital growth.
 pt:
-  intro: Herrera é um bairro residencial de Assunção.
+  intro: Herrera é um bairro residencial de Assunção, ao lado das áreas mais disputadas da cidade.
   texto: |-
     ## Morar em Herrera
 
@@ -66,4 +81,9 @@ pt:
     - **Muito central:** perto da avenida Madame Lynch, do Shopping Mariscal e dos shoppings da Santa Teresa e da Aviadores del Chaco.
     - **Grandes avenidas à mão:** Mariscal López e Madame Lynch para circular rápido pela cidade.
     - **Clima residencial:** ruas arborizadas, casas amplas e comércio de bairro na Mariscal López.
+
+    ## Por que investir em Herrera
+
+    - **Ainda pouco procurado**, com preços interessantes.
+    - **Ao lado das áreas mais disputadas** de Assunção: um bairro com forte potencial de valorização.
 ---

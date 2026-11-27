@@ -3,7 +3,7 @@ nombre: Jara
 ciudad: Asunción
 toda_la_ciudad: false
 alias: []
-intro: Jara es un barrio de Asunción.
+intro: Jara es un barrio de Asunción en pleno desarrollo, con el Distrito Perseverancia, colegios y universidades a pocas cuadras.
 texto: |-
   ## Vivir en Jara
 
@@ -19,8 +19,15 @@ texto: |-
   - **Distrito Perseverancia en el barrio:** sobre la avenida Brasilia esquina Artigas, este nuevo polo abierto al público reúne más de 150 marcas de moda, deporte, diseño y bienestar, más de 25 propuestas gastronómicas, una agenda semanal de eventos y residencias en altura.
   - **Colegios de referencia:** entre ellos el Lycée Français International Marcel Pagnol y el Colegio de la Universidad Americana.
   - **Todo a mano sobre Brasilia:** restaurantes, farmacias y supermercados.
+
+  ## Por qué invertir en Jara
+
+  - **Un barrio en pleno desarrollo**, todavía accesible.
+  - **El Distrito Perseverancia**, que le da un fuerte impulso al barrio.
+  - **Educación y salud cerca:** colegios y universidades de referencia, y el Sanatorio La Costa sobre la avenida Artigas.
+  - **Una demanda de alquiler constante** de familias y estudiantes.
 fr:
-  intro: Jara est un quartier d'Asunción.
+  intro: Jara est un quartier d'Asunción en plein développement, avec le Distrito Perseverancia, des écoles et des universités à quelques rues.
   texto: |-
     ## Vivre à Jara
 
@@ -36,8 +43,15 @@ fr:
     - **Distrito Perseverancia dans le quartier :** à l'angle des avenues Brasilia et Artigas, ce nouveau pôle ouvert au public réunit plus de 150 marques de mode, sport, design et bien-être, plus de 25 adresses gourmandes, un programme d'événements chaque semaine et des résidences en hauteur.
     - **Des écoles de référence :** dont le Lycée Français International Marcel Pagnol et le Colegio de la Universidad Americana.
     - **Tout à portée sur Brasilia :** restaurants, pharmacies et supermarchés.
+
+    ## Pourquoi investir à Jara
+
+    - **Un quartier en plein développement**, encore abordable.
+    - **Le Distrito Perseverancia**, qui donne un vrai coup d'accélérateur au quartier.
+    - **Écoles et santé à proximité :** des écoles et universités de référence, et l'hôpital La Costa sur l'avenue Artigas.
+    - **Une demande locative constante** des familles et des étudiants.
 en:
-  intro: Jara is a neighbourhood of Asunción.
+  intro: Jara is a fast-developing neighbourhood of Asunción, with Distrito Perseverancia, schools and universities within a few blocks.
   texto: |-
     ## Living in Jara
 
@@ -53,8 +67,15 @@ en:
     - **Distrito Perseverancia in the neighbourhood:** on the corner of Brasilia and Artigas avenues, this new open-air destination brings together more than 150 fashion, sport, design and wellness brands, more than 25 food concepts, a weekly events programme and residential towers.
     - **Leading schools:** including the Lycée Français International Marcel Pagnol and the Colegio de la Universidad Americana.
     - **Everything at hand on Brasilia:** restaurants, pharmacies and supermarkets.
+
+    ## Why invest in Jara
+
+    - **A fast-developing neighbourhood**, still affordable.
+    - **Distrito Perseverancia**, giving the area a real boost.
+    - **Schools and healthcare nearby:** leading schools and universities, and La Costa hospital on Artigas Avenue.
+    - **Steady rental demand** from families and students.
 pt:
-  intro: Jara é um bairro de Assunção.
+  intro: Jara é um bairro de Assunção em pleno desenvolvimento, com o Distrito Perseverancia, escolas e universidades a poucas quadras.
   texto: |-
     ## Morar em Jara
 
@@ -70,4 +91,11 @@ pt:
     - **Distrito Perseverancia no bairro:** na esquina das avenidas Brasilia e Artigas, este novo polo aberto ao público reúne mais de 150 marcas de moda, esporte, design e bem-estar, mais de 25 propostas gastronômicas, uma agenda semanal de eventos e residências em altura.
     - **Escolas de referência:** entre elas o Lycée Français International Marcel Pagnol e o Colegio de la Universidad Americana.
     - **Tudo à mão na Brasilia:** restaurantes, farmácias e supermercados.
+
+    ## Por que investir em Jara
+
+    - **Um bairro em pleno desenvolvimento**, ainda acessível.
+    - **O Distrito Perseverancia**, que dá um forte impulso ao bairro.
+    - **Escolas e saúde por perto:** escolas e universidades de referência, e o hospital La Costa na avenida Artigas.
+    - **Demanda de aluguel constante** de famílias e estudantes.
 ---

@@ -6,7 +6,7 @@ alias:
 - Ykua Sati
 - Ycua Sati
 - Ykuá Satí
-intro: Ycuá Satí es un barrio residencial de Asunción, cerca de la avenida Santa Teresa.
+intro: Ycuá Satí es el eje corporativo de Asunción, el «nuevo centro» de la ciudad, con oficinas, servicios y comercios.
 texto: |-
   ## Vivir en Ycuá Satí
 
@@ -22,8 +22,14 @@ texto: |-
   - **Los grandes shoppings a mano:** el Paseo La Galería sobre la avenida Santa Teresa y el Shopping del Sol a pocas cuadras.
   - **Una de las zonas más cotizadas del país:** el eje Santa Teresa – Aviadores del Chaco concentra empresas, hoteles y restaurantes.
   - **Calles interiores tranquilas:** casas y edificios residenciales lejos del movimiento de las avenidas.
+
+  ## Por qué invertir en Ycuá Satí
+
+  - **El eje corporativo**, el «nuevo centro» de Asunción, con oficinas, servicios y comercios.
+  - **Muy buscado** por profesionales y empresas.
+  - **Nuestro consejo:** hay poco estacionamiento en el barrio, así que comprá siempre con cochera. Es lo primero que piden los inquilinos.
 fr:
-  intro: Ycuá Satí est un quartier résidentiel d'Asunción, près de l'avenue Santa Teresa.
+  intro: Ycuá Satí est l'eje corporativo d'Asunción, le « nouveau centre » de la ville, avec bureaux, services et commerces.
   texto: |-
     ## Vivre à Ycuá Satí
 
@@ -39,8 +45,14 @@ fr:
     - **Les grands centres commerciaux à portée :** le Paseo La Galería sur l'avenue Santa Teresa et le Shopping del Sol à quelques rues.
     - **L'un des secteurs les plus prisés du pays :** l'axe Santa Teresa – Aviadores del Chaco concentre entreprises, hôtels et restaurants.
     - **Des rues intérieures calmes :** maisons et immeubles résidentiels à l'écart de l'animation des avenues.
+
+    ## Pourquoi investir à Ycuá Satí
+
+    - **L'eje corporativo**, le « nouveau centre » d'Asunción, avec bureaux, services et commerces.
+    - **Très recherché** par les professionnels et les entreprises.
+    - **Notre conseil :** le stationnement y est rare, achetez toujours avec une place de parking. C'est la première chose que demandent les locataires.
 en:
-  intro: Ycuá Satí is a residential neighbourhood of Asunción, close to Santa Teresa Avenue.
+  intro: Ycuá Satí is Asunción's business district, the city's "new downtown", with offices, services and shops.
   texto: |-
     ## Living in Ycuá Satí
 
@@ -56,8 +68,14 @@ en:
     - **The big malls at hand:** Paseo La Galería on Santa Teresa Avenue and Shopping del Sol a few blocks away.
     - **One of the most sought-after areas in the country:** the Santa Teresa – Aviadores del Chaco axis concentrates companies, hotels and restaurants.
     - **Quiet inner streets:** houses and residential buildings away from the bustle of the avenues.
+
+    ## Why invest in Ycuá Satí
+
+    - **The business district**, Asunción's "new downtown", with offices, services and shops.
+    - **In high demand** among professionals and companies.
+    - **Our advice:** parking is scarce, so always buy with a parking space. It is the first thing tenants ask for.
 pt:
-  intro: Ycuá Satí é um bairro residencial de Assunção, perto da avenida Santa Teresa.
+  intro: Ycuá Satí é o eixo corporativo de Assunção, o «novo centro» da cidade, com escritórios, serviços e comércio.
   texto: |-
     ## Morar em Ycuá Satí
 
@@ -73,4 +91,10 @@ pt:
     - **Os grandes shoppings à mão:** o Paseo La Galería na avenida Santa Teresa e o Shopping del Sol a poucas quadras.
     - **Uma das regiões mais valorizadas do país:** o eixo Santa Teresa – Aviadores del Chaco concentra empresas, hotéis e restaurantes.
     - **Ruas internas tranquilas:** casas e prédios residenciais longe do movimento das avenidas.
+
+    ## Por que investir em Ycuá Satí
+
+    - **O eixo corporativo**, o «novo centro» de Assunção, com escritórios, serviços e comércio.
+    - **Muito procurado** por profissionais e empresas.
+    - **Nossa dica:** há pouco estacionamento no bairro, então compre sempre com vaga de garagem. É a primeira coisa que os inquilinos pedem.
 ---
