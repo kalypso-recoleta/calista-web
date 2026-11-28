@@ -15,6 +15,8 @@ export const site = {
   // Numéro d'Hélène : propriétaires (Administración, Vender/Tasar, Tasaciones),
   // Alquiler temporal et Historia — voir numeroPorRuta() dans src/lib/whatsapp.ts
   whatsappTemporal: '595984333003',
+  // Chaîne WhatsApp « CALISTA Inmobiliaria · Blog » : bouton « Suivre » sur le blog (vide = bouton masqué)
+  whatsappCanal: 'https://whatsapp.com/channel/0029Vapib3QG3R3jBiau240L',
 
   email: 'contacto@calista.com.py',
   telefono: '+595 994 385487',

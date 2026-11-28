@@ -1,4 +1,5 @@
 ---
+import SeguirCanal from '../SeguirCanal.astro';
 /**
  * Page Blog : guides et actualité (admin « Blog »).
  * - Sans « tema » : tous les articles. Avec « tema » : page d'un thème (/blog/tema/comprar…).
@@ -49,6 +50,7 @@ const referencias = tema ? [] : guias.filter((g) => g.entry.data.referencia);
         <h1>{h1}</h1>
         <p class="lead">{lead}</p>
       </header>
+      <SeguirCanal compacto />
       {temas.length > 1 && (
         <nav class="temas" aria-label={x.temas}>
           <a href={L('/blog')} aria-current={!tema ? 'page' : undefined}>{x.todos_temas}</a>

@@ -1,0 +1,35 @@
+---
+/** Encadré « Suivre la chaîne WhatsApp du blog » (articles + page Blog). Lien dans src/lib/site.ts → whatsappCanal. */
+import WhatsAppButton from './WhatsAppButton.astro';
+import { site } from '../lib/site';
+import { getLangFromUrl } from '../i18n/utils';
+
+interface Props { compacto?: boolean }
+const { compacto = false } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const x = {
+  es: { t: 'Recibí cada nuevo artículo en WhatsApp', d: 'Seguí el canal de CALISTA: te avisamos de cada publicación. Tu número queda privado.', b: 'Seguir el canal' },
+  fr: { t: 'Recevez chaque nouvel article sur WhatsApp', d: 'Suivez la chaîne CALISTA : nous vous prévenons à chaque publication. Votre numéro reste privé.', b: 'Suivre la chaîne' },
+  en: { t: 'Get every new article on WhatsApp', d: 'Follow the CALISTA channel: we let you know each time we publish. Your number stays private.', b: 'Follow the channel' },
+  pt: { t: 'Receba cada novo artigo no WhatsApp', d: 'Siga o canal da CALISTA: avisamos a cada publicação. Seu número fica privado.', b: 'Seguir o canal' },
+}[lang as 'es' | 'fr' | 'en' | 'pt'] ?? { t: '', d: '', b: '' };
+---
+{site.whatsappCanal && (
+  <aside class:list={['canal', { compacto }]} aria-label={x.t}>
+    <div class="canal-txt">
+      <p class="canal-t">{x.t}</p>
+      <p class="canal-d">{x.d}</p>
+    </div>
+    <WhatsAppButton href={site.whatsappCanal} label={x.b} />
+  </aside>
+)}
+
+<style>
+  .canal { display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.4rem; flex-wrap: wrap; max-width: 780px; margin: 2rem 0 0; padding: 1.1rem 1.4rem; border: 1px solid #cfe9d6; background: #f1faf3; border-radius: var(--radius); }
+  .canal.compacto { max-width: none; margin: 0 0 1.6rem; padding: 0.8rem 1.2rem; }
+  .canal-txt { flex: 1 1 260px; }
+  .canal p { margin: 0; }
+  .canal-t { font-weight: 700; color: var(--brand); }
+  .canal-d { margin-top: 0.25rem !important; font-size: 0.92rem; color: var(--muted); line-height: 1.5; }
+  .canal.compacto .canal-d { font-size: 0.88rem; }
+</style>
